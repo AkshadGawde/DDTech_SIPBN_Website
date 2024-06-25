@@ -22,7 +22,7 @@ const Hero = () => {
           <div className="heading-title">
             <img
               src="https://res.cloudinary.com/duv9rw1wg/image/upload/v1719264632/homePage/umjk3phquvd4jwbknig2.png"
-              height="350px"
+              height="110px"
               className="presImg"
             />
             <Title title="Message from our President" />

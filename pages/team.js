@@ -6,7 +6,7 @@ const team = () => {
   return (
     <>
       <Head>
-        <title>Team -SIPBN</title>
+        <title>Team | SIPBN</title>
       </Head>
       <Team />
     </>
