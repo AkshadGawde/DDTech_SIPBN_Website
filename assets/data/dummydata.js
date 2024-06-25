@@ -12,25 +12,25 @@ export const expertise = [
   {
     id: 1,
     title: "Active Network Connectivity",
-    cover: "../images/connections.jpeg",
+    cover: "../images/connections.jpg",
     desc: [{ text: "Web design" }, { text: "Web development" }, { text: "Custom icons & illustrations" }, { text: "Hosting" }, { text: "Website audit" }],
   },
   {
     id: 2,
     title: "Continuous High Value Deal flow",
-    cover: "../images/deals.jpeg",
+    cover: "../images/deal.jpg",
     desc: [{ text: "Social media marketing" }, { text: "Marketing campaigns" }, { text: "Markting management" }, { text: "SEO" }],
   },
   {
     id: 3,
     title: "Cross Border Business Match Making and Trade Assistance",
-    cover: "../images/cross.jpeg",
+    cover: "../images/cross.jpg",
     desc: [{ text: "E-Commerce website design" }, { text: "WooCommerce" }, { text: "Content management" }, { text: "Hosting" }],
   },
   {
     id: 4,
     title: "Targeted Advocacy to Media and Government",
-    cover: "../images/media.jpeg",
+    cover: "../images/media.jpg",
     desc: [{ text: "Visual identity" }, { text: "Branding for social media" }, { text: "Custom illustrations" }],
   },
 ]
@@ -67,66 +67,79 @@ export const testimonial = [
 export const showcase = [
   {
     id: 1,
-    title: "Neon Lights",
+    title: "Membership",
     cover: "../images/s1.jpg",
-    catgeory: "DIGITAL MARKETING",
   },
   {
     id: 2,
-    title: "Futuristic Furniture",
-    catgeory: "WEBSITES",
+    title: "Events",
     cover: "../images/s2.jpg",
   },
   {
     id: 3,
-    title: "Smart Living",
+    title: "Subscribe",
     cover: "../images/s3.jpg",
-    catgeory: "WEBSITES",
-  },
-  {
-    id: 4,
-    title: "Light Painting",
-    cover: "../images/s4.jpg",
-    catgeory: "BRANDING	",
-  },
-  {
-    id: 5,
-    title: "Ideabox",
-    cover: "../images/s5.jpg",
-    catgeory: "BRANDING	",
-  },
-  {
-    id: 5,
-    title: "VR Experience",
-    cover: "../images/s6.jpg",
-    catgeory: "WEBSITES	",
-  },
+  }
 ]
 export const brand = [
   {
     id: 1,
-    cover: "../images/l1.svg",
+    cover: "../images/l1.png",
   },
   {
     id: 2,
-    cover: "../images/l2.svg",
+    cover: "../images/l2.png",
   },
   {
     id: 3,
-    cover: "../images/l3.svg",
+    cover: "../images/l3.png",
   },
   {
     id: 4,
-    cover: "../images/l4.svg",
+    cover: "../images/l4.png",
   },
   {
     id: 5,
-    cover: "../images/l5.svg",
+    cover: "../images/l5.png",
   },
   {
     id: 6,
-    cover: "../images/l6.svg",
+    cover: "../images/l6.png",
   },
+  {
+    id: 6,
+    cover: "../images/l7.png",
+  } 
+]
+export const brand2 = [
+  {
+    id: 1,
+    cover: "../images/m1.png",
+  },
+  {
+    id: 2,
+    cover: "../images/m2.png",
+  },
+  {
+    id: 3,
+    cover: "../images/m3.png",
+  },
+  {
+    id: 4,
+    cover: "../images/m4.png",
+  },
+  {
+    id: 5,
+    cover: "../images/m5.png",
+  },
+  {
+    id: 6,
+    cover: "../images/m6.png",
+  },
+  {
+    id: 6,
+    cover: "../images/m7.png",
+  } 
 ]
 export const blogdata = [
   {

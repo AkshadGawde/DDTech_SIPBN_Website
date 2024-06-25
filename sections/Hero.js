@@ -36,14 +36,26 @@ const Hero = () => {
       </section>
       <Expertise />
       <Banner />
-      <Testimonial />
-      <ShowCase />
+      {/* <Testimonial /> */}
+      <div className="container">
+        <div className="heading-title">
+          <Title title={"Upcoming Events"}/>
+        </div>
+        <div className="eventContainer">
+          <a href="https://www.eventbrite.com.au/e/captech2024-discover-connect-execute-venue-icc-sydney-tickets-772015889307">
+            <img src="https://res.cloudinary.com/duv9rw1wg/image/upload/v1719326603/homePage/tvndvw12ujvsbg0dmvaq.png" height={"700px"}/>
+          </a>
+          <a href="https://www.eventbrite.com.au/e/captech2024-discover-connect-execute-venue-icc-sydney-tickets-772015889307">
+            <img src="https://res.cloudinary.com/duv9rw1wg/image/upload/v1719326603/homePage/qo7dq9u1cfptxijtlsly.png" height={"700px"}/>
+          </a>
+        </div>
+      </div>
       <Brand />
 
-      <div className='text-center'>
+      {/* <div className='text-center'>
         <Title title='Latest news & articles' />
-      </div>
-      <BlogCard />
+      </div> */}
+      {/* <BlogCard /> */}
     </>
   )
 }

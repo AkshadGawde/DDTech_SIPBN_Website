@@ -1,6 +1,7 @@
 import React from "react"
 import { Title } from "./common/Title"
 import { brand } from "@/assets/data/dummydata"
+import { brand2 } from "@/assets/data/dummydata"
 
 const Brand = () => {
   return (
@@ -8,10 +9,20 @@ const Brand = () => {
       <section className='brand'>
         <div className='container'>
           <div className='heading-title'>
-            <Title title='WE ARE PROUD TO WORK WITH THESE COMPANIES' />
+            <Title title='Our Partners' />
           </div>
-          <div className='brand-content grid-6 py'>
+          <div className='brand-content grid-7 py'>
             {brand.map((item) => (
+              <div className='images' key={item.id}>
+                <img src={item.cover} alt={item.id} width='100%' height='100%' />
+              </div>
+            ))}
+          </div>
+          <div className='heading-title'>
+            <Title title='Media Partners' />
+          </div>
+          <div className='brand-content grid-7 py'>
+            {brand2.map((item) => (
               <div className='images' key={item.id}>
                 <img src={item.cover} alt={item.id} width='100%' height='100%' />
               </div>
