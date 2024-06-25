@@ -13,13 +13,8 @@ const Hero = () => {
       <section className="hero">
         <div className="container">
           <TitleLogo title="SIPBN" caption="" className="logobg" />
-          <h1 className="hero-title">WE BUILD AMBITIOUS CONNECTIONS</h1>
-
-          <div className="sub-heading">
-            <TitleSm title="DISCOVER" /> <span>.</span>
-            <TitleSm title="CONNECT" /> <span>.</span>
-            <TitleSm title="EXECUTE" />
-          </div>
+          <h1 className="hero-title">Discover Connect, Execute!</h1>
+      
         </div>
       </section>
       <section className="hero-sec">
