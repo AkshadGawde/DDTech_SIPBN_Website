@@ -167,7 +167,7 @@
   padding-bottom: 30px;
   p {
     margin: $xl-6 0;
-    color: rgba($white, 0.5);
+    color: rgba($white, 1);
   }
 }
 .card {
@@ -228,7 +228,6 @@
 .aboutTitle {
   font-size: 2rem;
   margin-bottom: 25px;
-  color: #333;
 }
 
 .advisoryContainer {
@@ -448,10 +447,32 @@ ul {
   .eventCard {
       flex-basis: calc(50% - 20px); /* Two eventCards per row, subtracting margin */
   }
+
 }
 
 @media (max-width: 480px) {
   .eventCard {
       flex-basis: calc(100% - 20px); /* One eventCard per row, subtracting margin */
   }
+
+}
+.video-background {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the video covers the container */
+}
+.capImg {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Removes bottom space in images */
+  object-fit: cover; /* Ensures images cover the container */
+}
+.capContainer{
+  text-align: justify;
+  max-width: 800px;
+  padding: 50px;
+}
+.capMain{
+  display: flex;
+  justify-content: center;
 }
