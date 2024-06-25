@@ -12,8 +12,12 @@ const Team = () => {
     <>
       <section className="agency bg-top">
         <div className="container">
+          <br />
+          <br />
           <Title title={"CapTech2024"} />
+          <br />
           <TitleSm title={"Dicover Connect Execute"} />
+          <br />
           <ul>
             <li>25th November 2024 – Welcome Drinks at NSW Parliament House</li>
             <li>26th November 2024 – Global Summit at ICC Sydney</li>
