@@ -165,7 +165,7 @@ const Agency = () => {
       </section>
 
       <Testimonial />
-      <Banner />
+
       <br />
       <br />
       <br />

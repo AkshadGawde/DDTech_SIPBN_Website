@@ -17,9 +17,23 @@
   }
 }
 .titleSm {
-  font-size: $xl-3;
+  font-size: $xl-3; // Default font size for larger devices
   font-weight: 500;
   letter-spacing: 2px;
+
+  // Media query for tablets
+  @media (max-width: 768px) {
+    font-size: $lg; // Slightly smaller font size for tablets
+    font-weight: 400; // Optionally adjust the font weight for tablets
+    letter-spacing: 1.5px; // Adjust letter spacing for tablets
+  }
+
+  // Media query for mobile devices
+  @media (max-width: 480px) {
+    font-size: $lg; // Even smaller font size for mobile devices
+    font-weight: 300; // Optionally adjust the font weight for mobiles
+    letter-spacing: 1px; // Adjust letter spacing for mobiles
+  }
 }
 .title {
   font-size: $xl-5;
@@ -63,6 +77,7 @@
   border-radius: 50%;
   margin-bottom: 20px;
 }
+
 .heading-title {
   text-align: center;
   max-width: 65%;
@@ -116,6 +131,9 @@
     margin-bottom: $xl-2;
     opacity: 0.5;
   }
+
+
+
   .title-link {
     display: block !important;
     color: $white;
@@ -158,5 +176,47 @@
   .heading-title {
     max-width: 100%;
     padding: 50px 0;
+  }
+}
+/* Base styles */
+.hero, .hero-sec, .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.eventImg{
+  max-height: 700px;
+  flex: 1;
+}
+
+.heading-title img, .eventContainer img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive Typography */
+h1.hero-title, .sub-heading, .heading-title p, .heading-title h2 {
+  font-size: calc(16px + (24 - 16) * ((100vw - 300px) / (1600 - 300)));
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .hero, .hero-sec {
+    padding: 20px;
+  }
+
+  .heading-title, .eventContainer {
+    flex-direction: column;
+  }
+
+  .sub-heading span {
+    display: none; /* Hide dots on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .presImg {
+    width: 90%; /* Adjust image size on very small screens */
   }
 }

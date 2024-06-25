@@ -20,7 +20,7 @@ const ShowCase = () => {
           </div>
           <div className='card links'>
             <Link href='/'>
-              VIEW ALL CASES <HiOutlineArrowRight className='link-icon' />
+               <HiOutlineArrowRight className='link-icon' />
             </Link>
           </div>
         </div>
