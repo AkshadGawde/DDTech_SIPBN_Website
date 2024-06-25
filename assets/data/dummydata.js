@@ -87,19 +87,34 @@ export const testimonial = [
 export const showcase = [
   {
     id: 1,
-    title: "Membership",
-    cover: "../images/s1.jpg",
+    title: "Economic Update- Opportunities and ChallengesEconomic Update- Opportunities and Challenges",
+    cover: "../images/n1.png",
+    catgeory: "June | 2024",
   },
   {
     id: 2,
-    title: "Events",
+    title: "Futuristic Furniture",
+    catgeory: "WEBSITES",
     cover: "../images/s2.jpg",
   },
   {
     id: 3,
-    title: "Subscribe",
+    title: "Smart Living",
     cover: "../images/s3.jpg",
+    catgeory: "WEBSITES",
   },
+  {
+    id: 4,
+    title: "Light Painting",
+    cover: "../images/s4.jpg",
+    catgeory: "BRANDING	",
+  },
+  {
+    id: 5,
+    title: "Ideabox",
+    cover: "../images/s5.jpg",
+    catgeory: "BRANDING	",
+  }
 ];
 export const brand = [
   {

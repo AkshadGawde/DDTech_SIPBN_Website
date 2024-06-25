@@ -412,3 +412,46 @@ hr{
     }
   }
 }
+
+.event-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /* Aligns eventCards with space around them */
+  padding: 20px;
+  margin-top: 10px;
+}
+
+.eventImg{
+  max-width: 60%;
+}
+
+.eventCard {
+  flex: 1 0 300px; /* Flex grow, shrink, basis */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+}
+
+.event-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.event-description {
+  font-size: 16px;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .eventCard {
+      flex-basis: calc(50% - 20px); /* Two eventCards per row, subtracting margin */
+  }
+}
+
+@media (max-width: 480px) {
+  .eventCard {
+      flex-basis: calc(100% - 20px); /* One eventCard per row, subtracting margin */
+  }
+}
