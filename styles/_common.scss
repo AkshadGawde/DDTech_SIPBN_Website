@@ -1,4 +1,5 @@
 @import "function";
+@import "_color_palette";
 
 .title-logo {
   font-size: $xl-6;
@@ -125,7 +126,7 @@
 /* Description styling */
 .aboutDescription {
   font-size: 1.3rem;
-  color: #d2d2d2; /* Slightly lighter color for the description */
+  color: #dddbdb;; /* Slightly lighter color for the description */
 }
 
 /* Responsive Design */
@@ -211,9 +212,6 @@
     margin-bottom: $xl-2;
     opacity: 0.5;
   }
-
-
-
   .title-link {
     display: block !important;
     color: $white;
@@ -276,29 +274,82 @@
   max-width: 100%;
   height: auto;
 }
+.event-info {
+  background: $dark;
+  padding: 50px;
+  margin-bottom: 30px;
+  color: $white;
 
-/* Responsive Typography */
-h1.hero-title, .sub-heading, .heading-title p, .heading-title h2 {
-  font-size: calc(16px + (24 - 16) * ((100vw - 300px) / (1600 - 300)));
+  h2 {
+    color: $white;
+    margin-bottom: 20px;
+  }
+
+  p,
+  ul {
+    color: rgba($white, 0.8);
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    
+    li {
+      margin-bottom: 10px;
+    }
+  }
 }
 
-/* Media Queries */
-@media (max-width: 768px) {
-  .hero, .hero-sec {
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin: 50px 0;
+
+  .box {
+    background: $dark;
+    color: $white;
     padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    h3 {
+      font-size: 1.25rem;
+    }
   }
 
-  .heading-title, .eventContainer {
-    flex-direction: column;
-  }
-
-  .sub-heading span {
-    display: none; /* Hide dots on smaller screens */
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
   }
 }
 
-@media (max-width: 480px) {
-  .presImg {
-    width: 70%; /* Adjust image size on very small screens */
+.agency {
+  .heading-title {
+    margin-bottom: 50px;
+    
+    .title-bg {
+      font-size: 2.5rem;
+    }
+  }
+
+  .grid-4 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .py {
+    padding: 20px 0;
+  }
+  
+  @media (max-width: 768px) {
+    .heading-title {
+      text-align: center;
+    }
   }
 }
