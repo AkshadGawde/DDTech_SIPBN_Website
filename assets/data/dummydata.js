@@ -5,45 +5,32 @@ import { BiUser } from "react-icons/bi"
 
 export const home = [
   {
-    icon: <AiOutlineCalendar size={25} />,
-    title: "10+ years of market experience",
-  },
-  {
-    icon: <TfiRulerPencil size={25} />,
-    title: "Unique technologies & modern approach ",
-  },
-  {
-    icon: <VscFileSubmodule size={25} />,
-    title: "100+ cuccessful cases in portfolio",
-  },
-  {
-    icon: <BiUser size={25} />,
-    title: "Customer satisfaction is our top priority",
-  },
+    title: "Raman Bhalla",
+  }
 ]
 export const expertise = [
   {
     id: 1,
-    title: "Web Design & Development",
-    cover: "../images/e1.jpg",
+    title: "Active Network Connectivity",
+    cover: "../images/connections.jpeg",
     desc: [{ text: "Web design" }, { text: "Web development" }, { text: "Custom icons & illustrations" }, { text: "Hosting" }, { text: "Website audit" }],
   },
   {
     id: 2,
-    title: "Digital Marketing",
-    cover: "../images/e2.jpg",
+    title: "Continuous High Value Deal flow",
+    cover: "../images/deals.jpeg",
     desc: [{ text: "Social media marketing" }, { text: "Marketing campaigns" }, { text: "Markting management" }, { text: "SEO" }],
   },
   {
     id: 3,
-    title: "E-Commerce",
-    cover: "../images/e3.jpg",
+    title: "Cross Border Business Match Making and Trade Assistance",
+    cover: "../images/cross.jpeg",
     desc: [{ text: "E-Commerce website design" }, { text: "WooCommerce" }, { text: "Content management" }, { text: "Hosting" }],
   },
   {
     id: 4,
-    title: "Branding & Creative Services",
-    cover: "../images/e4.jpg",
+    title: "Targeted Advocacy to Media and Government",
+    cover: "../images/media.jpeg",
     desc: [{ text: "Visual identity" }, { text: "Branding for social media" }, { text: "Custom illustrations" }],
   },
 ]

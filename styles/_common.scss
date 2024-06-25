@@ -59,12 +59,16 @@
     color: $green;
   }
 }
+.presImg{
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
 .heading-title {
   text-align: center;
   max-width: 65%;
   margin: auto;
-  padding-top: $xll-3;
-  padding-bottom: $xl-4;
+  padding-top: 60px;
+  padding-bottom: 30px;
   p {
     margin: $xl-6 0;
     color: rgba($white, 0.5);

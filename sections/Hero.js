@@ -12,30 +12,25 @@ const Hero = () => {
     <>
       <section className='hero'>
         <div className='container'>
-          <TitleLogo title='creative' caption='7' className='logobg' />
-          <h1 className='hero-title'>WE BUILD DIGITAL EXPERIENCES</h1>
+          <TitleLogo title='SIPBN' caption='' className='logobg' />
+          <h1 className='hero-title'>WE BUILD AMBITIOUS CONNECTIONS</h1>
 
           <div className='sub-heading'>
-            <TitleSm title='WEBSITES' /> <span>.</span>
-            <TitleSm title='BRANDING' /> <span>.</span>
-            <TitleSm title='DIGITAL MARKETING' />
+            <TitleSm title='DISCOVER' /> <span>.</span>
+            <TitleSm title='CONNECT' /> <span>.</span>
+            <TitleSm title='EXECUTE' />
           </div>
         </div>
       </section>
       <section className='hero-sec'>
         <div className='container'>
           <div className='heading-title'>
-            <Title title='The last digital agency you ll ever need' />
-            <p>Suspendisse ut magna porttitor, sollicitudin ligula at, molestie dolor. Vivamus a ligula ut velit placerat egestas at id leo. Nulla ac volutpat nunc. Nulla facilisi. Pellentesque tempus tellusut magna porttitor scelerisque.</p>
-          </div>
-          <div className='hero-content grid-4'>
-            {home.map((item, i) => (
-              <div className='box' key={i}>
-                <span className='green'>{item.icon}</span> <br />
-                <br />
-                <h3>{item.title}</h3>
-              </div>
-            ))}
+            <img src="https://res.cloudinary.com/duv9rw1wg/image/upload/v1719264632/homePage/umjk3phquvd4jwbknig2.png" height="350px" className="presImg"/>
+            <Title title='Message from our President' />
+            <p>Sydney Investors, Professionals and Business Networking Group Incorporated (SIPBN) aims to facilitate business and opportunity exchange between individuals and organizations in various countries. 
+              SIPBN provides access to networks, data, and tools for growth in new markets. With a wide range of connections in trade, business, and government sectors, SIPBN facilitates engagement and departure from Australia through trade missions,
+             visits, information sessions, and receptions.</p>
+             <h2>- Ramman Bhalla</h2>
           </div>
         </div>
       </section>
