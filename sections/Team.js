@@ -11,6 +11,15 @@ const Team = () => {
   return (
     <>
       <section className="agency bg-top">
+        <video autoPlay muted loop className="video-background">
+          <source
+            src={
+              "https://res.cloudinary.com/dq23wxdum/video/upload/v1719355178/SIPBN/ojkenqfaxbfhewi3djn8.mp4"
+            }
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
         <div className="container">
           <br />
           <br />

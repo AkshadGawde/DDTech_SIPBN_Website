@@ -345,7 +345,7 @@ hr{
   }
 
   p,
-  ul {
+ul {
     color: rgba($white, 0.8);
   }
 
@@ -411,4 +411,30 @@ hr{
       text-align: center;
     }
   }
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Adjust as needed */
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .gallery-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}
+
+
+.capList{
+  text-align: left;
+  font-size: 18px;
 }
