@@ -24,8 +24,8 @@ const Services = () => {
         </div>
       </section>
 
-      <section className="agency bg-top">
-        <div className="container">
+      <section className="agency bg-top capMain">
+        <div className="capContainer">
           <h2>What is #CapTech2023</h2>
           <p>
             Sydney Investors, Professionals and Business Networking Group (SIPBN
@@ -39,15 +39,7 @@ const Services = () => {
           </p>
 
           <h2>Sectors</h2>
-          <ul>
-            <li className="capList"> Education</li>
-            <li className="capList"> Healthcare</li>
-            <li className="capList"> Real Estate</li>
-            <li className="capList"> Critical Minerals</li>
-            <li className="capList"> Clean Energy</li>
-            <li className="capList"> AI</li>
-            <li className="capList"> Financial Services</li>
-          </ul>
+          <p>Education, Healthcare, Real Estate, Critical Minerals, Clean Energy, AI, Financial Services</p>
           <br />
           <h2>Who Will Attend</h2>
           <p>
@@ -56,15 +48,6 @@ const Services = () => {
             and accelerators and tech firms.
           </p>
 
-          <h2>Activities</h2>
-          <ul>
-            <li>– Key note session</li>
-            <li>– Panel discussion</li>
-            <li>– Industry sessions</li>
-            <li>– Global pitching session</li>
-            <li>– Post event drinks</li>
-            <li>– Private Dinner (invitation only)</li>
-          </ul>
           <br />
           <h2>Global Pitching Session</h2>
           <p>
@@ -74,67 +57,61 @@ const Services = () => {
           </p>
 
           <h2>Activities</h2>
-          <ul>
-            <li>– Key note session</li>
-            <li>– Panel discussion</li>
-            <li>– Industry sessions</li>
-            <li>– Global pitching session</li>
-            <li>– Post event drinks</li>
-            <li>– Private Dinner (invitation only)</li>
-          </ul>
+          <p>Key note session, Panel discussion, Industry sessions, Global pitching session, Post event drinks, Private Dinner(invitation only)</p>
         </div>
       </section>
       <br />
       <section className="gallery">
         <div className="container">
           <h2>Gallery</h2>
+          <br/>
           <div className="gallery-grid">
             <div className="gallery-item">
-              <img
+              <img className="capImg"
                 src="https://res.cloudinary.com/dq23wxdum/image/upload/v1719353786/SIPBN/zoraxhbivj15xvoyfulc.jpg"
                 alt="Gallery item 1"
               />
             </div>
             <div className="gallery-item">
-              <img
+              <img className="capImg"
                 src="https://res.cloudinary.com/dq23wxdum/image/upload/v1719353786/SIPBN/rg3ff2uib0llmxpvuci3.jpg"
                 alt="Gallery item 2"
               />
             </div>
             <div className="gallery-item">
-              <img
+              <img className="capImg"
                 src="https://res.cloudinary.com/dq23wxdum/image/upload/v1719353786/SIPBN/ha3giwnbhynytzuzf8zy.jpg"
                 alt="Gallery item 3"
               />
             </div>
 
             <div className="gallery-item">
-              <img
+              <img className="capImg"
                 src="https://res.cloudinary.com/dq23wxdum/image/upload/v1719353911/SIPBN/ekifkljdix5hpywaxhhq.jpg"
                 alt="Gallery item 1"
               />
             </div>
             <div className="gallery-item">
-              <img
+              <img className="capImg"
                 src="https://res.cloudinary.com/dq23wxdum/image/upload/v1719354035/SIPBN/nyxcteuwntqrp7wti0o7.jpg"
                 alt="Gallery item 2"
               />
             </div>
 
             <div className="gallery-item">
-              <img
+              <img className="capImg"
                 src="https://res.cloudinary.com/dq23wxdum/image/upload/v1719354135/SIPBN/n6x1h9ejtlwgdxskkd2s.jpg"
                 alt="Gallery item 3"
               />
             </div>
             <div className="gallery-item">
-              <img
+              <img className="capImg"
                 src="https://res.cloudinary.com/dq23wxdum/image/upload/v1719354506/SIPBN/nkoahbw8c4nm5cvwftuk.jpg"
                 alt="Gallery item 3"
               />
             </div>
             <div className="gallery-item">
-              <img
+              <img className="capImg"
                 src="https://res.cloudinary.com/dq23wxdum/image/upload/v1719354506/SIPBN/c9i5gwfgh2lqrlrskesk.jpg"
                 alt="Gallery item 3"
               />
