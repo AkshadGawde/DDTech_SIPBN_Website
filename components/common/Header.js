@@ -56,7 +56,7 @@ const Header = () => {
           >
             Contact Us
           </Link>
-          <button className="button-primary">Apply for membership </button>
+          <button className="button-primary">Apply for Membership</button>
         </nav>
         <button className="menu-toggle" onClick={() => setOpen(!open)}>
           {open ? <AiOutlineClose size={25} /> : <RiMenu4Line size={25} />}

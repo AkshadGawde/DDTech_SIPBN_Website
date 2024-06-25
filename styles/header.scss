@@ -63,39 +63,37 @@ header {
 }
 
 @media screen and (max-width: 800px) {
-  header {
-    .container {
-      nav {
-        display: none;
-      }
+  header .container {
+    nav {
+      display: none;
+    }
 
-      .menu-toggle {
-        display: block;
-      }
+    .menu-toggle {
+      display: block;
+    }
 
-      .openMenu {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        top: 60px;
-        left: 0;
+    .openMenu {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background-color: black;
+      padding: 20px;
+
+      a {
+        margin-bottom: 16px;
         width: 100%;
-        background-color: black;
-        padding: 20px;
+        text-align: center;
 
-        a {
-          margin-bottom: 16px;
-          width: 100%;
-          text-align: center;
-
-          &.activeLink::after {
-            display: none;
-          }
-        }
-
-        .button-primary {
+        &.activeLink::after {
           display: none;
         }
+      }
+
+      .button-primary {
+        display: none;
       }
     }
   }
