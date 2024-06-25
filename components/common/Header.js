@@ -36,13 +36,13 @@ const Header = () => {
             href="/team"
             className={activeLink === "/team" ? "activeLink" : ""}
           >
-            Captech 2024
+            CapTech 2024
           </Link>
           <Link
             href="/services"
             className={activeLink === "/services" ? "activeLink" : ""}
           >
-            Captech 2023
+            CapTech 2023
           </Link>
           <Link
             href="/showcase"
