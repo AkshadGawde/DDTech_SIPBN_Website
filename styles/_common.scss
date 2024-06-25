@@ -79,31 +79,85 @@
   padding-top: 20px;
   width: 200px;
 }
-.aboutContainer{
-  display:flex;
-  justify-content: space-evenly;
-  align-items: center;
+
+//about
+
+// /* Section styling */
+.aboutSection {
+  padding: 40px 20px;
 }
-.aboutItem{
-  flex:1;
-  margin: 50px 80px;
-  max-width: fit-content;
+
+/* Flex container for the about items */
+.aboutContainer {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping to control the layout */
+  justify-content: space-around;
+  gap: 20px; /* Space between the items */
+  margin-top: 20px; 
 }
-.aboutTitle{
-  font-size: 30px;
-}
-.aboutDescription{
-  font-size: 18px;
-}
-.aboutList{
-  list-style-type: disc;
-  font-size: 16px;
+
+/* Styling for individual about items */
+.aboutItem {
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
   margin: 10px;
+  flex: 1 1 calc(50% - 40px); /* Two items per row, accounting for gap */
+  max-width: calc(50% - 40px); /* Ensure items fit within their half-width */
+  text-align: center; /* Center text alignment for better readability */
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effects */
+  min-height: 250px;
+  max-width: 600px;
 }
-.aboutImg{
-  border-top-left-radius: 10% ;
-  border-bottom-right-radius: 10% ;
+
+.aboutItem:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgb(193, 60, 246);
 }
+
+/* Title styling */
+.aboutTitle {
+  font-size: 1.75rem;
+  margin-bottom: 10px;
+  color: #ffffff; /* Darker color for the title */
+}
+
+/* Description styling */
+.aboutDescription {
+  font-size: 1.3rem;
+  color: #d2d2d2; /* Slightly lighter color for the description */
+}
+
+/* Responsive Design */
+/* For screens up to 768px */
+@media (max-width: 768px) {
+  .aboutContainer {
+    justify-content: center;
+  }
+
+  .aboutItem {
+    flex: 1 1 45%; /* Slightly less than half to account for gaps */
+    max-width: 45%; /* Ensure items fit nicely on smaller screens */
+  }
+}
+
+/* For screens up to 480px */
+/* Items stack into a single column */
+@media (max-width: 480px) {
+  .aboutItem {
+    flex: 1 1 100%; /* Full width for each item on smaller screens */
+    max-width: 100%; /* Keep full width */
+    padding: 15px; /* Adjust padding for smaller screens */
+  }
+}
+
+.missionText{
+  text-align: left;
+  width: 600px;
+}
+
+//rest
+
 .heading-title {
   text-align: center;
   max-width: 65%;
@@ -215,6 +269,7 @@
   max-height: 700px;
   margin: 0px 20px;
   flex: 1;
+  margin: 0px 10px;
 }
 
 .heading-title img, .eventContainer img {

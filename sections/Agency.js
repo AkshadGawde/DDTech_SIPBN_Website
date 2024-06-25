@@ -9,7 +9,7 @@ const Agency = () => {
             <section className="agency bg-top">
                 <div className="container">
                     <div className="heading-title">
-                        <TitleSm title="What is SIPBN" />
+                        <Title title="What is SIPBN?" />
                         <p>
                             SIPBN Inc is a non-profit organization that offers a global platform for Australian businesses to access capital and business opportunities, thereby enhancing trade, innovation, and business growth in Australia.
                         </p>
@@ -24,53 +24,31 @@ const Agency = () => {
                             Affiliate offices are located in Sydney, New South Wales, Sunshine Coast, Queensland, India, Hong Kong, and the Middle East.
                         </p>
 
-                        <Title title="The only digital agency you will ever need!" className="title-bg" />
-                        <div className="aboutContainer">
-                            <div className="aboutItem">
-                                <h1 className="aboutTitle">How we achieve this</h1>
-                                <p className="aboutDescription">We achieve outcome through our four enabling pillars:</p>
-                                <u className="aboutList">
-                                    <li>Active Network Connectivity</li>
-                                    <li>Active Network Connectivity</li>
-                                    <li>Active Network Connectivity</li>
-                                    <li>Active Network Connectivity</li>
-                                </u>
-                            </div>
-                            <div className="aboutItem">
-                                <img className="aboutImg" src="/images/s1.jpg"/>
-                            </div>
-                        </div>
+                        <Title title="We achieve this through four enabling pillars!" className="title-bg" />
                     </div>
 
-                    <Section title="What we provide">
-                        <ul className="desc-list">
-                            <li>Regular business presentations and pitching sessions with Australian businesses and connecting with potential local and overseas investors</li>
-                            <li>Dedicated business and project matching sessions</li>
-                            <li>Investment and Trade delegations to other countries</li>
-                            <li>Networking events</li>
-                            <li>An annual CAPTECH conference</li>
-                        </ul>
-                    </Section>
+                    <section className="aboutSection">
+                        <div className="aboutContainer">
+                            <div className="aboutItem">
+                                <h2 className="aboutTitle">Active Network Connectivity</h2>
+                                <p className="aboutDescription">SIPBN membership grants you access via events and strategic introductions to an exclusive network of peers in business leaders, investors, mergers & acquisitions,
+                                     private equity, family offices, government agencies and peer reviewed service providers.</p>
+                            </div>
+                            <div className="aboutItem">
+                                <h2 className="aboutTitle">Cross Border Business Match Making and Trade Assistance</h2>
+                                <p className="aboutDescription">SIPBN links members with businesses and reliable service providers to enable effective investment and trade outcomes. E.g: How to enter a country, the required etiquette, language services and market intelligence.</p>
+                            </div>
+                            <div className="aboutItem">
+                                <h2 className="aboutTitle">Continuous High Value Deal flow</h2>
+                                <p className="aboutDescription">The SIPBN platform provides members with the opportunity to exchange information on high value business, investment and trade deals.</p>
+                            </div>
+                            <div className="aboutItem">
+                                <h2 className="aboutTitle">Targeted Advocacy to Media and Government</h2>
+                                <p className="aboutDescription">SIPBN champions initiatives and lobby for policy approaches that foster increased investment and trade opportunities for the betterment of all Australians.</p>
+                            </div>
+                        </div>
+                    </section>
 
-                    <Section title="Membership Benefits">
-                        <ul className="desc-list">
-                            <li>3 Strategic Introductions</li>
-                            <li>20% member discount on #CapTech2023 & India business delegation</li>
-                            <li>Attend all our standard events at no cost</li>
-                            <li>Promotion of your services, projects and business</li>
-                            <li>Access to high quality deal flow & projects</li>
-                        </ul>
-                    </Section>
-
-                    <Section title="Affiliate Offices">
-                        <ul className="desc-list">
-                            <li>Sydney, New South Wales</li>
-                            <li>Sunshine Coast, Queensland</li>
-                            <li>India</li>
-                            <li>Hong Kong</li>
-                            <li>Middle East</li>
-                        </ul>
-                    </Section>
 
                     <MissionVision 
                         title="Our mission" 
@@ -86,8 +64,6 @@ const Agency = () => {
                 </div>
             </section>
 
-            {/* Spacing, might be unnecessary if handled by CSS */}
-            <div style={{ height: '200px' }} />
         </>
     );
 };
@@ -103,10 +79,10 @@ const Section = ({ title, children }) => (
 
 const MissionVision = ({ title, description, imgSrc }) => (
     <div className="content flex">
-        <div className="left w-40 py">
+        <div className="w-40 py">
             <img src={imgSrc} alt="Image" className="round" width="100%" height="100%" />
         </div>
-        <div className="right w-60 ml">
+        <div className="missionText w-60 ml">
             <TitleSm title={title} />
             <br />
             <p className="mission-p">{description}</p>
