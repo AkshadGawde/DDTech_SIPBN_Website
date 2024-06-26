@@ -278,59 +278,136 @@ footer {
 
 //contact
 .contact {
+  display: flex;
+  flex-direction: row; // Default layout for larger screens
+  justify-content: space-between;
+  flex-wrap: wrap; // Allows wrapping of items in case they don't fit in one line
+
+  .left, .right {
+    flex: 1;
+    min-width: 300px; // Ensures that elements don't shrink too much
+    padding: 20px; // Default padding for all screen sizes
+  }
+
   .left {
-    padding-right: 60px;
+    padding-right: 30px; // Reduced padding for better responsiveness
+
     ul {
-      @include flex(center, space-between, none);
-      margin-top: $xll;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap; // Allows items to wrap to the next line if needed
+      margin-top: 30px; // Use fixed margin for consistency across screen sizes
     }
+
     .icon {
       width: 50px;
       height: 50px;
-      border: 1px solid rgba($white, 0.2);
+      border: 1px solid rgba(255, 255, 255, 0.2);
       border-radius: 10px 0 10px 0;
-      @include flex(center, center, none);
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
+
     .box {
-      margin-bottom: $xll;
+      margin-bottom: 30px; // Use fixed margin for consistency
+
       .icons {
         color: $green;
       }
+
       h3 {
-        padding: $xl-2 0;
+        padding: 10px 0; // Use smaller, fixed padding
       }
+
       span {
         opacity: 0.5;
       }
     }
   }
+
   .right {
     border-radius: 50px 0 50px 0;
-    padding: $xll;
+    padding: 30px; // Use smaller, fixed padding
     background-color: #171e20;
+    height: 700px;
+
+
     form {
-      margin-top: $xll;
+      margin-top: 30px; // Use fixed margin for consistency
     }
+
     .inputs {
-      margin-bottom: $xl-6;
+      margin-bottom: 20px; // Use smaller, fixed margin
+
       span {
         text-transform: uppercase;
       }
+
       textarea,
       input {
         width: 100%;
-        background-color: $white;
+        background-color: #fff;
         padding: 15px;
-        margin-top: $sm;
-        color: $dark;
+        margin-top: 10px; // Use smaller, fixed margin
+        color: #000;
       }
     }
+
     button {
       width: 100%;
       padding: 18px;
     }
   }
+
+  // Media Queries for Responsiveness
+  @media (max-width: 1200px) {
+    .left {
+      padding-right: 20px; // Adjust padding for medium screens
+    }
+
+    .right {
+      padding: 20px; // Adjust padding for medium screens
+    }
+  }
+
+  @media (max-width: 800px) {
+    flex-direction: column; // Stack elements vertically on smaller screens
+
+    .left, .right {
+      padding: 15px; // Adjust padding for smaller screens
+    }
+
+    .left {
+      padding-right: 0; // Remove right padding for smaller screens
+    }
+
+    .right {
+      padding: 15px; // Use consistent padding for both sections
+    }
+  }
+
+  @media (max-width: 500px) {
+    .icon {
+      width: 40px; // Adjust icon size for very small screens
+      height: 40px;
+    }
+
+    .box {
+      margin-bottom: 20px; // Reduce margin for very small screens
+
+      h3 {
+        padding: 8px 0; // Adjust padding for very small screens
+      }
+    }
+
+    .inputs {
+      margin-bottom: 15px; // Reduce margin for very small screens
+    }
+  }
 }
+
 
 //single page
 .post-details {

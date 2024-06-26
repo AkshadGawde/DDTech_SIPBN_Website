@@ -26,7 +26,7 @@ const Team = () => {
             <Title title="#CapTech2024 Festival" className="title-bg" />
           </div>
           <br />
-          <Title title="Discover Connect Execute" />
+          <Title title="Discover .Connect .Execute"/>
           <br />
           <ul>
             <li>25th November 2024 – Welcome Drinks at NSW Parliament House</li>
@@ -44,14 +44,14 @@ const Team = () => {
             uniquely convenes an elite ensemble of business leaders,
             policymakers, and investors, fostering a rare environment for
             high-level networking and collaborative ventures across eight key
-            sectors. In its third year, ##CapTech2024 will place Australia at
+            sectors. In its third year, #CapTech2024 will place Australia at
             the centre of future focussed industries by bringing together
             accomplished business leaders and subject matter experts to
             collaboratively pursue shared objectives and nurture unique business
             relationships in an exclusive setting.
           </p>
           <br />
-          <Title title="##CapTech2024 – Key Features" />
+          <Title title="#CapTech2024 – Key Features" />
           <ul>
             <li>
               A focus on growing and expanding businesses, deal-making and great
@@ -102,7 +102,7 @@ const Team = () => {
             visionary speakers, thought leaders, and innovative resolutions that
             shape the landscape of tomorrow. Dive into the unfolding changes,
             emerging trends, and exceptional opportunities that define the
-            future. ##CapTech2024 cultivates a collaborative ecosystem shaping
+            future. #CapTech2024 cultivates a collaborative ecosystem shaping
             the trajectory of future focused industries, paving the way for a
             transformative and forward-thinking future.
           </li>

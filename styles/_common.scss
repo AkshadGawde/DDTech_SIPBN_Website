@@ -48,6 +48,10 @@
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
+  @media (max-width : 480px) {
+    text-align: center;
+    // font-size: $xl-3;
+  }
 }
 .title-bg {
   font-size: 40px;
@@ -60,7 +64,6 @@
   background-color: $green;
   font-size: $md;
   border-radius: 50px;
-  box-shadow: $shadow-md;
   cursor: pointer;
 }
 .secondary-button {
@@ -89,6 +92,7 @@
 // /* Section styling */
 .aboutSection {
   padding: 40px 20px;
+  margin-bottom: 0px;
 }
 
 /* Flex container for the about items */
@@ -190,9 +194,7 @@
 .heading-title {
   text-align: center;
   max-width: 65%;
-  margin: auto;
   padding-top: 60px;
-  padding-bottom: 30px;
   p {
     margin: $xl-6 0;
     color: rgba($white, 1);
@@ -496,6 +498,10 @@ ul {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+  }
+
+  .bannerTitle{
+    font-size: 1.8em;
   }
 
   .gallery-grid {

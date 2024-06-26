@@ -33,7 +33,7 @@ const Services = () => {
             Inc) presents a monumental Global Summit at Sydney’s iconic
             International Convention Centre connecting movers and shakers from
             the business world.
-            <br /> ##CapTech2023 aims to place Australia at the centre of
+            <br /> #CapTech2023 aims to place Australia at the centre of
             innovation and entrepreneurship by connecting and bringing together
             the brightest minds, industry leaders, ventures, technology and
             capital from Australia and globally.

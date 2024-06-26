@@ -1,5 +1,5 @@
 import React from "react";
-import { Title, TitleLogo } from "./common/Title";
+import { Title, TitleSm, TitleLogo } from "./common/Title";
 
 const Banner = () => {
   return (
@@ -7,7 +7,7 @@ const Banner = () => {
       <section className="banner">
         <div className="container">
           <div>
-            <Title title="Secure your ##CapTech2024 ticket" /> <br />
+            <h2 className="bannerTitle">Secure your #CapTech2024 ticket!</h2> <br />
             <TitleLogo title="Early bird discount 20% till 30th June 2024" />
           </div>
           <div>

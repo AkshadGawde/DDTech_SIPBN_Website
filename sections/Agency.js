@@ -39,7 +39,7 @@ const Agency = () => {
               investors. <br />
               <br />
               Membership offers strategic introductions, 20% discount on
-              ##CapTech2023 and India business delegation, free event
+              #CapTech2023 and India business delegation, free event
               attendance, promotion of services, projects, and business, and
               access to high-quality deal flow. <br />
               <br />
@@ -47,11 +47,11 @@ const Agency = () => {
               Coast, Queensland, India, Hong Kong, and the Middle East.
             </p>
 
+          </div>
             <Title
               title="We achieve this through four enabling pillars!"
               className="title-bg"
             />
-          </div>
 
           <section className="aboutSection">
             <div className="aboutContainer">
@@ -680,10 +680,10 @@ const Agency = () => {
             <div className="advisoryContainer">
               <div>
                 <h2 className="advisoryTitle">
-                  Sarah Morgan, CEO ##CapTech2024
+                  Sarah Morgan, CEO #CapTech2024
                 </h2>
                 <p className="advisoryDescription">
-                  Sarah is a dynamic entrepreneur and CEO of ##CapTech2024,
+                  Sarah is a dynamic entrepreneur and CEO of #CapTech2024,
                   specializing in guiding SME organizations through strategic
                   business development and leadership enhancement. With
                   accreditations in psychometrics, emotional quotient, and

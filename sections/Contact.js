@@ -55,20 +55,6 @@ const Contact = () => {
                   <span>Career at Seven Creative</span>
                 </div>
               </div>
-              <ul>
-                <li className="icon">
-                  <BsFacebook size={25} />
-                </li>
-                <li className="icon">
-                  <AiFillBehanceCircle size={25} />
-                </li>
-                <li className="icon">
-                  <AiFillInstagram size={25} />
-                </li>
-                <li className="icon">
-                  <AiFillLinkedin size={25} />
-                </li>
-              </ul>
             </div>
             <div className="right w-70">
               <TitleSm title="Make an online enquiry" />
@@ -76,6 +62,8 @@ const Contact = () => {
                 Got questions? Ideas? Fill out the form below to get our
                 proposal.{" "}
               </p>
+
+
 
               <form>
                 <div className="grid-2">

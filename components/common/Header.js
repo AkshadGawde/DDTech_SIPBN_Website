@@ -33,16 +33,15 @@ const Header = () => {
 
   return (
     <header>
+            <Link href='/'>
+              <img
+                className="sipLogo"
+                src='https://res.cloudinary.com/dq23wxdum/image/upload/v1719265063/SIPBN/acssi7dnvshtv6u9igie.png'
+                alt='logo'
+                height={"60px"}
+              />
+            </Link>
       <div className='container'>
-        <div className='logo'>
-          <Link href='/'>
-            <img
-              src='https://res.cloudinary.com/dq23wxdum/image/upload/v1719265063/SIPBN/acssi7dnvshtv6u9igie.png'
-              alt='logo'
-              height={"60px"}
-            />
-          </Link>
-        </div>
         <nav ref={navRef} className={open ? "openMenu" : "closeMenu"}>
           <Link
             href='/'
@@ -54,7 +53,7 @@ const Header = () => {
             href='/agency'
             onClick={handleLinkClick}
             className={activeLink === "/agency" ? "activeLink" : ""}>
-            Agency
+            About
           </Link>
           <Link
             href='/team'

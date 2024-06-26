@@ -49,7 +49,7 @@ const ShowCase = () => {
                 />
               </a>
               <h2 class="event-title">25 Nov 2024 – 27 Nov 2024</h2>
-              <p class="event-description">##CapTech2024</p>
+              <p class="event-description">#CapTech2024</p>
             </div>
             <div class="eventCard">
               <img
@@ -73,7 +73,7 @@ const ShowCase = () => {
                 />
               </a>
               <h2 class="event-title">February 2024</h2>
-              <p class="event-description">Pitching Session ##CapTech2024</p>
+              <p class="event-description">Pitching Session #CapTech2024</p>
             </div>
             <div class="eventCard">
               <a href="https://www.eventbrite.com.au/e/global-pitching-session-preliminary-round-#CapTech2023-tickets-694439807157">
@@ -86,7 +86,7 @@ const ShowCase = () => {
               <h2 class="event-title">September 2023</h2>
               <p class="event-description">
                 {" "}
-                Global Pitching Session – Preliminary Round ##CapTech2023
+                Global Pitching Session – Preliminary Round #CapTech2023
               </p>
             </div>
             <div class="eventCard">
@@ -99,7 +99,7 @@ const ShowCase = () => {
               </a>
               <h2 class="event-title">October 2023</h2>
               <p class="event-description">
-                ##CapTech2023 Welcome Drinks at NSW Parliament House
+                #CapTech2023 Welcome Drinks at NSW Parliament House
               </p>
             </div>
             <div class="eventCard">
@@ -111,7 +111,7 @@ const ShowCase = () => {
                 />
               </a>
               <h2 class="event-title">October 2023</h2>
-              <p class="event-description">##CapTech2023</p>
+              <p class="event-description">#CapTech2023</p>
             </div>
           </div>
         </div>

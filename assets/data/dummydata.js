@@ -367,7 +367,7 @@ export const moderatordata = [
     title: "Sarah Morgan",
     cover:
       "https://res.cloudinary.com/dq23wxdum/image/upload/v1719271717/SIPBN/tcrzhy1er8gl24zfiepw.png",
-    post: "CEO at ##CapTech2024",
+    post: "CEO at #CapTech2024",
   },
   {
     id: 2,
