@@ -19,7 +19,11 @@ const Header = () => {
       <div className="container">
         <div className="logo">
           <Link href="/">
-            <TitleLogo title="creative" caption="7" className="logomin" />
+            <img
+              src="https://res.cloudinary.com/dq23wxdum/image/upload/v1719265063/SIPBN/acssi7dnvshtv6u9igie.png"
+              alt="logo"
+              height={"60px"}
+            />
           </Link>
         </div>
         <nav className={open ? "openMenu" : "closeMenu"}>

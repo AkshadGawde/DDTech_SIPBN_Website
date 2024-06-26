@@ -24,7 +24,11 @@ const Footer = () => {
 
 const CompanyInfo = () => (
   <div className="company-info">
-    <TitleLogo title="creative" caption="7" className="logo-background" />
+    <img
+      src="https://res.cloudinary.com/dq23wxdum/image/upload/v1719265063/SIPBN/acssi7dnvshtv6u9igie.png"
+      alt="logo"
+      height={"60px"}
+    />
     <p>
       Questions? Reach us <br /> Monday–Friday from 9 am to 6 pm
     </p>

@@ -12,9 +12,8 @@ const Hero = () => {
     <>
       <section className="hero">
         <div className="container">
-          <TitleLogo title="SIPBN" caption="" className="logobg" />
-          <h1 className="hero-title">Discover Connect, Execute!</h1>
-      
+          <TitleLogo title="S I P B N" caption="" className="logobg" />
+          <h1 className="hero-title">DISCOVER CONNECT EXECUTE</h1>
         </div>
       </section>
       <section className="hero-sec">
