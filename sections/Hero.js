@@ -12,8 +12,10 @@ const Hero = () => {
     <>
       <section className="hero">
         <div className="container">
-          <TitleLogo title="S I P B N" caption="" className="logobg" />
-          <h1 className="hero-title">DISCOVER CONNECT EXECUTE</h1>
+          <TitleLogo title="#CapTech2024" caption="" className="logobg" />
+          <h1 className="hero-title">DISCOVER . CONNECT . EXECUTE</h1>
+          <TitleSm title="Venue: ICC Sydney 14 Darling Drive Sydney, NSW 2000 Australia" />
+          <p>Tue, 26 Nov 2024 9:00 AM - Wed, 27 Nov 2024 9:00 PM AEDT</p>
         </div>
       </section>
       <section className="hero-sec">
