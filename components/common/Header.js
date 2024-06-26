@@ -1,7 +1,6 @@
 import Link from "next/link";
-import { TitleLogo } from "./Title";
 import { useRouter } from "next/router";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { RiMenu4Line } from "react-icons/ri";
 import { AiOutlineClose } from "react-icons/ai";
 
@@ -10,59 +9,80 @@ const Header = () => {
   const [open, setOpen] = useState(false);
 
   const router = useRouter();
+  const navRef = useRef(null);
+
   useEffect(() => {
     setActiveLink(router.pathname);
+
+    const handleClickOutside = (event) => {
+      if (navRef.current && !navRef.current.contains(event.target)) {
+        setOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
   }, [router.pathname]);
+
+  const handleLinkClick = () => {
+    setOpen(false);
+  };
 
   return (
     <header>
-      <div className="container">
-        <div className="logo">
-          <Link href="/">
+      <div className='container'>
+        <div className='logo'>
+          <Link href='/'>
             <img
-              src="https://res.cloudinary.com/dq23wxdum/image/upload/v1719265063/SIPBN/acssi7dnvshtv6u9igie.png"
-              alt="logo"
+              src='https://res.cloudinary.com/dq23wxdum/image/upload/v1719265063/SIPBN/acssi7dnvshtv6u9igie.png'
+              alt='logo'
               height={"60px"}
             />
           </Link>
         </div>
-        <nav className={open ? "openMenu" : "closeMenu"}>
-          <Link href="/" className={activeLink === "/" ? "activeLink" : ""}>
+        <nav ref={navRef} className={open ? "openMenu" : "closeMenu"}>
+          <Link
+            href='/'
+            onClick={handleLinkClick}
+            className={activeLink === "/" ? "activeLink" : ""}>
             Home
           </Link>
           <Link
-            href="/agency"
-            className={activeLink === "/agency" ? "activeLink" : ""}
-          >
-            About Us
+            href='/agency'
+            onClick={handleLinkClick}
+            className={activeLink === "/agency" ? "activeLink" : ""}>
+            Agency
           </Link>
           <Link
-            href="/team"
-            className={activeLink === "/team" ? "activeLink" : ""}
-          >
+            href='/team'
+            onClick={handleLinkClick}
+            className={activeLink === "/team" ? "activeLink" : ""}>
             CapTech 2024
           </Link>
           <Link
-            href="/services"
-            className={activeLink === "/services" ? "activeLink" : ""}
-          >
+            href='/services'
+            onClick={handleLinkClick}
+            className={activeLink === "/services" ? "activeLink" : ""}>
             CapTech 2023
           </Link>
           <Link
-            href="/showcase"
-            className={activeLink === "/showcase" ? "activeLink" : ""}
-          >
+            href='/showcase'
+            onClick={handleLinkClick}
+            className={activeLink === "/showcase" ? "activeLink" : ""}>
             Events
           </Link>
           <Link
-            href="/contact"
-            className={activeLink === "/contact" ? "activeLink" : ""}
-          >
+            href='/contact'
+            onClick={handleLinkClick}
+            className={activeLink === "/contact" ? "activeLink" : ""}>
             Contact Us
           </Link>
-          <button className="button-primary">Apply for Membership</button>
+          <button className='button-primary'>Apply for Membership</button>
         </nav>
-        <button className="menu-toggle" onClick={() => setOpen(!open)}>
+        <button className='menu-toggle' onClick={() => setOpen(!open)}>
           {open ? <AiOutlineClose size={25} /> : <RiMenu4Line size={25} />}
         </button>
       </div>
