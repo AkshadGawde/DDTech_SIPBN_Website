@@ -39,25 +39,24 @@ const Agency = () => {
               investors. <br />
               <br />
               Membership offers strategic introductions, 20% discount on
-              #CapTech2023 and India business delegation, free event
-              attendance, promotion of services, projects, and business, and
-              access to high-quality deal flow. <br />
+              #CapTech2023 and India business delegation, free event attendance,
+              promotion of services, projects, and business, and access to
+              high-quality deal flow. <br />
               <br />
               Affiliate offices are located in Sydney, New South Wales, Sunshine
               Coast, Queensland, India, Hong Kong, and the Middle East.
             </p>
-
           </div>
-            <Title
-              title="We achieve this through four enabling pillars!"
-              className="title-bg"
-            />
+          <Title
+            title="We achieve this through four enabling pillars!"
+            className="title-bg"
+          />
 
           <section className="aboutSection">
             <div className="aboutContainer">
               <div className="aboutItem">
                 <h2 className="aboutTitle">Active Network Connectivity</h2>
-                <p className="advisoryDescription">
+                <p className="aboutDescription">
                   SIPBN membership grants you access via events and strategic
                   introductions to an exclusive network of peers in business
                   leaders, investors, mergers & acquisitions, private equity,
@@ -69,7 +68,7 @@ const Agency = () => {
                 <h2 className="aboutTitle">
                   Cross Border Business Match Making and Trade Assistance
                 </h2>
-                <p className="advisoryDescription">
+                <p className="aboutDescription">
                   SIPBN links members with businesses and reliable service
                   providers to enable effective investment and trade outcomes.
                   E.g: How to enter a country, the required etiquette, language
@@ -78,7 +77,7 @@ const Agency = () => {
               </div>
               <div className="aboutItem">
                 <h2 className="aboutTitle">Continuous High Value Deal flow</h2>
-                <p className="advisoryDescription">
+                <p className="aboutDescription">
                   The SIPBN platform provides members with the opportunity to
                   exchange information on high value business, investment and
                   trade deals.
@@ -88,7 +87,7 @@ const Agency = () => {
                 <h2 className="aboutTitle">
                   Targeted Advocacy to Media and Government
                 </h2>
-                <p className="advisoryDescription">
+                <p className="aboutDescription">
                   SIPBN champions initiatives and lobby for policy approaches
                   that foster increased investment and trade opportunities for
                   the betterment of all Australians.

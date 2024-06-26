@@ -36,23 +36,18 @@ const Contact = () => {
                 </div>
                 <div className="box">
                   <FiHeadphones size={30} className="icons" />
-                  <h3>1-001-234-5678</h3>
-                  <span>Call us: Mon - Fri 9:00 - 19:00</span>
+                  <h3>Call Us:</h3>
+                  <span>+61 29659 4339</span>
                 </div>
                 <div className="box">
                   <IoLocationOutline size={30} className="icons" />
-                  <h3>ICC Sydney </h3>
-                  <span>14 Darling Drive Sydney, NSW 2000 Australi</span>
+                  <h3>Find Us</h3>
+                  <span>G01, 8 Merriville Road, Kellyville Ridge NSW 2155</span>
                 </div>
                 <div className="box">
                   <FiHelpCircle size={30} className="icons" />
-                  <h3>info@dream-theme.com</h3>
+                  <h3>info@sipbn.com.au</h3>
                   <span>Drop us a line anytime!</span>
-                </div>
-                <div className="box">
-                  <BiUserCircle size={30} className="icons" />
-                  <h3>hr@dream-theme.com</h3>
-                  <span>Career at Seven Creative</span>
                 </div>
               </div>
             </div>
@@ -62,8 +57,6 @@ const Contact = () => {
                 Got questions? Ideas? Fill out the form below to get our
                 proposal.{" "}
               </p>
-
-
 
               <form>
                 <div className="grid-2">

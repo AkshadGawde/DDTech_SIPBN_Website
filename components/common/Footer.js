@@ -30,9 +30,9 @@ const CompanyInfo = () => (
       height={"60px"}
     />
     <p>
-      Questions? Reach us <br /> Monday–Friday from 9 am to 6 pm
+      Questions? <br /> Reach us at:
     </p>
-    <h3>+1 001 234 5678</h3>
+    <h3>info@sipbn.com.au</h3>
     <button className="button-primary">Apply for Membership</button>
   </div>
 );
