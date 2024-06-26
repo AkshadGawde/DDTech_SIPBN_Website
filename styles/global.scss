@@ -34,7 +34,7 @@
   
     // Media query for mobile devices
     @media (max-width: 480px) {
-      font-size: $lg; // Even smaller font size for mobile devices
+      font-size: $md; // Even smaller font size for mobile devices
       line-height: 70px; // Adjust line height accordingly
       padding-bottom : 150px;
     }

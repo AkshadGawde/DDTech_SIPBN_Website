@@ -13,6 +13,9 @@
 }
 .logobg {
   font-size: $xll;
+  @media (max-width: 480px){
+    font-size: 45px;
+  }
   span {
     font-size: 50px;
   }
@@ -158,6 +161,31 @@
 }
 
 //rest
+
+.presContainer{
+  display: flex;
+  text-align: left;
+  padding: 20px;
+  margin-bottom: 0;
+  @media (max-width: 480px) {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  justify-content: space-evenly;
+}
+
+.presImgContainer{
+  min-width: fit-content ;
+  flex:1;
+  text-align: center;
+  margin-right: 50px;
+  @media (max-width : 480px) {
+    margin: 0;
+  }
+}
+
 
 .heading-title {
   text-align: center;

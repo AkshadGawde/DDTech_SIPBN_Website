@@ -21,23 +21,27 @@ const Hero = () => {
       <section className="hero-sec">
         <div className="container">
           <div className="heading-title">
-            <img
-              src="https://res.cloudinary.com/duv9rw1wg/image/upload/v1719264632/homePage/umjk3phquvd4jwbknig2.png"
-              height="110px"
-              className="presImg"
-            />
-            <Title title="Message from our President" />
-            <p>
-              Sydney Investors, Professionals and Business Networking Group
-              Incorporated (SIPBN) aims to facilitate business and opportunity
-              exchange between individuals and organizations in various
-              countries. SIPBN provides access to networks, data, and tools for
-              growth in new markets. With a wide range of connections in trade,
-              business, and government sectors, SIPBN facilitates engagement and
-              departure from Australia through trade missions, visits,
-              information sessions, and receptions.
-            </p>
-            <h2>- Ramman Bhalla</h2>
+              <Title title="Message from our President" />
+            <div className="presContainer">
+              <div className="presImgContainer">
+                <img
+                  src="https://res.cloudinary.com/duv9rw1wg/image/upload/v1719264632/homePage/umjk3phquvd4jwbknig2.png"
+                  height="110px"
+                  className="presImg"
+                />
+                <h2> - Ramman Bhalla</h2>
+              </div>
+              <p>
+                Sydney Investors, Professionals and Business Networking Group
+                Incorporated (SIPBN) aims to facilitate business and opportunity
+                exchange between individuals and organizations in various
+                countries. SIPBN provides access to networks, data, and tools for
+                growth in new markets. With a wide range of connections in trade,
+                business, and government sectors, SIPBN facilitates engagement and
+                departure from Australia through trade missions, visits,
+                information sessions, and receptions.
+              </p>
+            </div>
           </div>
         </div>
       </section>
