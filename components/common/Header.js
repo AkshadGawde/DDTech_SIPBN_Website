@@ -73,6 +73,19 @@ const Header = () => {
             className={activeLink === "/showcase" ? "activeLink" : ""}>
             Events
           </Link>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSdiA6YPJaorTgxsvt-ZMMePCMLIbKnI3fS971sxMZeSaPewoQ/viewform"
+             onClick={handleLinkClick}
+             className={activeLink === "/showcase" ? "activeLink" : ""}
+          >
+            Global Pitching 
+          </a>
+          <Link
+            href="#"
+            onClick={handleLinkClick}
+            className={activeLink === "/showcase" ? "activeLink" : ""}
+          >
+            Blogs
+          </Link>
           <Link
             href='/contact'
             onClick={handleLinkClick}
