@@ -12,52 +12,10 @@ const Contact = () => {
       <section className='contact bg-top'>
         <div className='container'>
           <div className='heading-title'>
-            <TitleSm title='CONTACT' /> <br />
-            <br />
-            <Title title="Let's start right now!" className='title-bg' />
-          </div>
-          <div className='content py flex1'>
-            <div className='left w-30'>
-              <div className='contact-deatils'>
-                <div className='box'>
-                  <FiHeadphones size={30} className='icons' />
-                  <h3>1-001-234-5678</h3>
-                  <span>Call us: Mon - Fri 9:00 - 19:00</span>
-                </div>
-                <div className='box'>
-                  <IoLocationOutline size={30} className='icons' />
-                  <h3>New York</h3>
-                  <span>990 Madison Ave, Midtown Manhattan, 2th Floor, NY 10022</span>
-                </div>
-                <div className='box'>
-                  <FiHelpCircle size={30} className='icons' />
-                  <h3>info@dream-theme.com</h3>
-                  <span>Drop us a line anytime!</span>
-                </div>
-                <div className='box'>
-                  <BiUserCircle size={30} className='icons' />
-                  <h3>hr@dream-theme.com</h3>
-                  <span>Career at Seven Creative</span>
-                </div>
-              </div>
-              <ul>
-                <li className='icon'>
-                  <BsFacebook size={25} />
-                </li>
-                <li className='icon'>
-                  <AiFillBehanceCircle size={25} />
-                </li>
-                <li className='icon'>
-                  <AiFillInstagram size={25} />
-                </li>
-                <li className='icon'>
-                  <AiFillLinkedin size={25} />
-                </li>
-              </ul>
-            </div>
+            
             <div className='right w-70'>
-              <TitleSm title='Make an online enquiry' />
-              <p className='desc-p'>Got questions? Ideas? Fill out the form below to get our proposal. </p>
+              <TitleSm title='Get in Touch' />
+              <p className='desc-p'>Don’t be shy. Let us know if you have any questions!</p>
 
               <form>
                 <div className='grid-2'>
@@ -72,16 +30,16 @@ const Contact = () => {
                 </div>
                 <div className='grid-2'>
                   <div className='inputs'>
-                    <span>your budget</span>
+                    <span>Phone No</span>
                     <input type='text' />
                   </div>
                   <div className='inputs'>
-                    <span>timeframe</span>
+                    <span>Subject</span>
                     <input type='text' />
                   </div>
                 </div>
                 <div className='inputs'>
-                  <span>TELL US A BIT ABOUT YOUR PROJECT*</span>
+                  <span>Message*</span>
                   <textarea cols='30' rows='10'></textarea>
                 </div>
                 <button className='button-primary'>Submit</button>
