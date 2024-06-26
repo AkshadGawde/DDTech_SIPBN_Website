@@ -417,7 +417,7 @@ ul {
 .agency {
   .heading-title {
     margin-bottom: 50px;
-    
+
     .title-bg {
       font-size: 2.5rem;
     }
@@ -489,18 +489,60 @@ ul {
   height: 100%;
   object-fit: cover; /* Ensures the video covers the container */
 }
-.capImg {
-  width: 100%;
-  height: auto; /* Maintain aspect ratio */
-  display: block; /* Removes bottom space in images */
-  object-fit: cover; /* Ensures images cover the container */
+.gallery {
+  padding: 20px;
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 20px;
+
+    @media (max-width: 992px) {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+    }
+
+    @media (max-width: 576px) {
+      grid-template-columns: 1fr; /* 1 column on small screens */
+    }
+  }
+
+  .gallery-item {
+    overflow: hidden; /* Ensure images fit within their container */
+    border-radius: 10px; /* Optional: Add border-radius for a nicer look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for a 3D effect */
+
+    .capImg {
+      width: 100%;
+      height: auto; /* Maintain aspect ratio */
+      display: block; /* Removes bottom space in images */
+      object-fit: cover; /* Ensures images cover the container */
+    }
+  }
 }
-.capContainer{
-  text-align: justify;
+
+.capContainer {
+  text-align: left; /* Changed from justify to left */
   max-width: 800px;
-  padding: 50px;
+  padding: 20px; /* Adjusted padding for better responsiveness */
 }
-.capMain{
+
+.capMain {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start; /* Changed from center to flex-start */
+  padding: 20px; /* Add padding for responsiveness */
+}
+
+@media (max-width: 768px) {
+  .capContainer {
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+}
+.advisoryDescription {
+  text-align: left;
 }

@@ -10,15 +10,15 @@ const Agency = () => {
         <div className="container">
           <div className="heading-title">
             <Title title="What is SIPBN?" />
-            <p>
+            <p className="advisoryDescription">
               SIPBN Inc is a non-profit organization that offers a global
               platform for Australian businesses to access capital and business
               opportunities, thereby enhancing trade, innovation, and business
               growth in Australia.
             </p>
 
-            <TitleSm title="About Us" />
-            <p>
+            <Title title="About Us" />
+            <p className="advisoryDescription">
               The aim is to serve as a premium meeting place for the Sydney
               community, including business leaders, investors, regulators, and
               government representatives, focusing on international investment
@@ -39,9 +39,9 @@ const Agency = () => {
               investors. <br />
               <br />
               Membership offers strategic introductions, 20% discount on
-              #CapTech2023 and India business delegation, free event attendance,
-              promotion of services, projects, and business, and access to
-              high-quality deal flow. <br />
+              ##CapTech2023 and India business delegation, free event
+              attendance, promotion of services, projects, and business, and
+              access to high-quality deal flow. <br />
               <br />
               Affiliate offices are located in Sydney, New South Wales, Sunshine
               Coast, Queensland, India, Hong Kong, and the Middle East.
@@ -57,7 +57,7 @@ const Agency = () => {
             <div className="aboutContainer">
               <div className="aboutItem">
                 <h2 className="aboutTitle">Active Network Connectivity</h2>
-                <p className="aboutDescription">
+                <p className="advisoryDescription">
                   SIPBN membership grants you access via events and strategic
                   introductions to an exclusive network of peers in business
                   leaders, investors, mergers & acquisitions, private equity,
@@ -69,7 +69,7 @@ const Agency = () => {
                 <h2 className="aboutTitle">
                   Cross Border Business Match Making and Trade Assistance
                 </h2>
-                <p className="aboutDescription">
+                <p className="advisoryDescription">
                   SIPBN links members with businesses and reliable service
                   providers to enable effective investment and trade outcomes.
                   E.g: How to enter a country, the required etiquette, language
@@ -78,7 +78,7 @@ const Agency = () => {
               </div>
               <div className="aboutItem">
                 <h2 className="aboutTitle">Continuous High Value Deal flow</h2>
-                <p className="aboutDescription">
+                <p className="advisoryDescription">
                   The SIPBN platform provides members with the opportunity to
                   exchange information on high value business, investment and
                   trade deals.
@@ -88,7 +88,7 @@ const Agency = () => {
                 <h2 className="aboutTitle">
                   Targeted Advocacy to Media and Government
                 </h2>
-                <p className="aboutDescription">
+                <p className="advisoryDescription">
                   SIPBN champions initiatives and lobby for policy approaches
                   that foster increased investment and trade opportunities for
                   the betterment of all Australians.
@@ -680,10 +680,10 @@ const Agency = () => {
             <div className="advisoryContainer">
               <div>
                 <h2 className="advisoryTitle">
-                  Sarah Morgan, CEO #CapTech2024
+                  Sarah Morgan, CEO ##CapTech2024
                 </h2>
                 <p className="advisoryDescription">
-                  Sarah is a dynamic entrepreneur and CEO of #CapTech2024,
+                  Sarah is a dynamic entrepreneur and CEO of ##CapTech2024,
                   specializing in guiding SME organizations through strategic
                   business development and leadership enhancement. With
                   accreditations in psychometrics, emotional quotient, and
@@ -718,8 +718,8 @@ const Agency = () => {
             <hr />
 
             <Title title={"Committees"} />
-
-            <TitleSm title={"Health and wellBeing"} />
+            <br />
+            <Title title={"Health and wellBeing"} />
             <div className="advisoryContainer">
               <div>
                 <h2 className="advisoryTitle">Dean Kilby</h2>
@@ -748,7 +748,7 @@ const Agency = () => {
 
             <hr />
 
-            <TitleSm title={"INTERIOR DESIGN AND RENOVATION"} />
+            <Title title={"INTERIOR DESIGN AND RENOVATION"} />
             <div className="advisoryContainer">
               <div>
                 <h2 className="advisoryTitle"> Ozge Fettahlioglu</h2>
@@ -804,7 +804,7 @@ const Agency = () => {
 
             <hr />
 
-            <TitleSm title={"RENEWABLE ENERGY"} />
+            <Title title={"RENEWABLE ENERGY"} />
             <div className="advisoryContainer">
               <div>
                 <h2 className="advisoryTitle">Reza Khademlou</h2>

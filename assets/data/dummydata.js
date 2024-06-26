@@ -87,7 +87,8 @@ export const testimonial = [
 export const showcase = [
   {
     id: 1,
-    title: "Economic Update- Opportunities and ChallengesEconomic Update- Opportunities and Challenges",
+    title:
+      "Economic Update- Opportunities and ChallengesEconomic Update- Opportunities and Challenges",
     cover: "../images/n1.png",
     catgeory: "June | 2024",
   },
@@ -114,7 +115,7 @@ export const showcase = [
     title: "Ideabox",
     cover: "../images/s5.jpg",
     catgeory: "BRANDING	",
-  }
+  },
 ];
 export const brand = [
   {
@@ -366,7 +367,7 @@ export const moderatordata = [
     title: "Sarah Morgan",
     cover:
       "https://res.cloudinary.com/dq23wxdum/image/upload/v1719271717/SIPBN/tcrzhy1er8gl24zfiepw.png",
-    post: "CEO at #CapTech2024",
+    post: "CEO at ##CapTech2024",
   },
   {
     id: 2,

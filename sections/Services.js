@@ -19,29 +19,33 @@ const Services = () => {
         <div className="container">
           <div className="heading-title">
             <TitleSm title="" />
-            <Title title="CapTech2023 Festival" className="title-bg" />
+            <Title title="#CapTech2023 Festival" className="title-bg" />
           </div>
         </div>
       </section>
 
       <section className="agency bg-top capMain">
         <div className="capContainer">
-          <h2>What is #CapTech2023</h2>
+          <Title title="What is #CapTech2023" />
+
           <p>
             Sydney Investors, Professionals and Business Networking Group (SIPBN
             Inc) presents a monumental Global Summit at Sydney’s iconic
             International Convention Centre connecting movers and shakers from
             the business world.
-            <br /> #CapTech2023 aims to place Australia at the centre of
+            <br /> ##CapTech2023 aims to place Australia at the centre of
             innovation and entrepreneurship by connecting and bringing together
             the brightest minds, industry leaders, ventures, technology and
             capital from Australia and globally.
           </p>
 
-          <h2>Sectors</h2>
-          <p>Education, Healthcare, Real Estate, Critical Minerals, Clean Energy, AI, Financial Services</p>
+          <Title title="Sectors" />
+          <p>
+            Education, Healthcare, Real Estate, Critical Minerals, Clean Energy,
+            AI, Financial Services
+          </p>
           <br />
-          <h2>Who Will Attend</h2>
+          <Title title="Who Will Attend" />
           <p>
             Investors, finance houses, private equity, banks, start ups, venture
             capital, media, Government bodies, professional bodies, incubation
@@ -49,70 +53,88 @@ const Services = () => {
           </p>
 
           <br />
-          <h2>Global Pitching Session</h2>
+          <Title title="Global Pitching Sessions" />
           <p>
             Witness a global pitching session with entrants from India, Hong
             Kong, and Australia all vying for an opportunity to secure funding
             from prominent global investors.
           </p>
 
-          <h2>Activities</h2>
-          <p>Key note session, Panel discussion, Industry sessions, Global pitching session, Post event drinks, Private Dinner(invitation only)</p>
+          <Title title="Activities" />
+          <p>
+            Key note session, Panel discussion, Industry sessions, Global
+            pitching session, Post event drinks, Private Dinner(invitation only)
+          </p>
         </div>
       </section>
       <br />
       <section className="gallery">
         <div className="container">
-          <h2>Gallery</h2>
-          <br/>
+          <Title title="Gallery" />
+          <br />
           <div className="gallery-grid">
             <div className="gallery-item">
-              <img className="capImg"
+              <img
+                className="capImg"
                 src="https://res.cloudinary.com/dq23wxdum/image/upload/v1719353786/SIPBN/zoraxhbivj15xvoyfulc.jpg"
                 alt="Gallery item 1"
               />
             </div>
             <div className="gallery-item">
-              <img className="capImg"
+              <img
+                className="capImg"
                 src="https://res.cloudinary.com/dq23wxdum/image/upload/v1719353786/SIPBN/rg3ff2uib0llmxpvuci3.jpg"
                 alt="Gallery item 2"
               />
             </div>
             <div className="gallery-item">
-              <img className="capImg"
+              <img
+                className="capImg"
                 src="https://res.cloudinary.com/dq23wxdum/image/upload/v1719353786/SIPBN/ha3giwnbhynytzuzf8zy.jpg"
                 alt="Gallery item 3"
               />
             </div>
 
             <div className="gallery-item">
-              <img className="capImg"
+              <img
+                className="capImg"
                 src="https://res.cloudinary.com/dq23wxdum/image/upload/v1719353911/SIPBN/ekifkljdix5hpywaxhhq.jpg"
                 alt="Gallery item 1"
               />
             </div>
             <div className="gallery-item">
-              <img className="capImg"
+              <img
+                className="capImg"
                 src="https://res.cloudinary.com/dq23wxdum/image/upload/v1719354035/SIPBN/nyxcteuwntqrp7wti0o7.jpg"
                 alt="Gallery item 2"
               />
             </div>
 
             <div className="gallery-item">
-              <img className="capImg"
+              <img
+                className="capImg"
                 src="https://res.cloudinary.com/dq23wxdum/image/upload/v1719354135/SIPBN/n6x1h9ejtlwgdxskkd2s.jpg"
                 alt="Gallery item 3"
               />
             </div>
             <div className="gallery-item">
-              <img className="capImg"
+              <img
+                className="capImg"
                 src="https://res.cloudinary.com/dq23wxdum/image/upload/v1719354506/SIPBN/nkoahbw8c4nm5cvwftuk.jpg"
                 alt="Gallery item 3"
               />
             </div>
             <div className="gallery-item">
-              <img className="capImg"
+              <img
+                className="capImg"
                 src="https://res.cloudinary.com/dq23wxdum/image/upload/v1719354506/SIPBN/c9i5gwfgh2lqrlrskesk.jpg"
+                alt="Gallery item 3"
+              />
+            </div>
+            <div className="gallery-item">
+              <img
+                className="capImg"
+                src="https://res.cloudinary.com/dq23wxdum/image/upload/v1719422131/SIPBN/pd97xw3brpkruc076oer.jpg"
                 alt="Gallery item 3"
               />
             </div>

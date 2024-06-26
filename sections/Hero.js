@@ -12,7 +12,7 @@ const Hero = () => {
     <>
       <section className="hero">
         <div className="container">
-          <TitleLogo title="#CapTech2024" caption="" className="logobg" />
+          <TitleLogo title="##CapTech2024" caption="" className="logobg" />
           <h1 className="hero-title">DISCOVER . CONNECT . EXECUTE</h1>
           <TitleSm title="Venue: ICC Sydney 14 Darling Drive Sydney, NSW 2000 Australia" />
           <p>Tue, 26 Nov 2024 9:00 AM - Wed, 27 Nov 2024 9:00 PM AEDT</p>
@@ -21,7 +21,7 @@ const Hero = () => {
       <section className="hero-sec">
         <div className="container">
           <div className="heading-title">
-              <Title title="Message from our President" />
+            <Title title="Message from our President" />
             <div className="presContainer">
               <div className="presImgContainer">
                 <img
@@ -35,11 +35,11 @@ const Hero = () => {
                 Sydney Investors, Professionals and Business Networking Group
                 Incorporated (SIPBN) aims to facilitate business and opportunity
                 exchange between individuals and organizations in various
-                countries. SIPBN provides access to networks, data, and tools for
-                growth in new markets. With a wide range of connections in trade,
-                business, and government sectors, SIPBN facilitates engagement and
-                departure from Australia through trade missions, visits,
-                information sessions, and receptions.
+                countries. SIPBN provides access to networks, data, and tools
+                for growth in new markets. With a wide range of connections in
+                trade, business, and government sectors, SIPBN facilitates
+                engagement and departure from Australia through trade missions,
+                visits, information sessions, and receptions.
               </p>
             </div>
           </div>
@@ -53,13 +53,13 @@ const Hero = () => {
           <Title title={"Upcoming Events"} />
         </div>
         <div className="eventContainer">
-          <a href="https://www.eventbrite.com.au/e/captech2024-discover-connect-execute-venue-icc-sydney-tickets-772015889307">
+          <a href="https://www.eventbrite.com.au/e/#CapTech2024-discover-connect-execute-venue-icc-sydney-tickets-772015889307">
             <img
               className="eventImg"
               src="https://res.cloudinary.com/duv9rw1wg/image/upload/v1719326603/homePage/tvndvw12ujvsbg0dmvaq.png"
             />
           </a>
-          <a href="https://www.eventbrite.com.au/e/captech2024-discover-connect-execute-venue-icc-sydney-tickets-772015889307">
+          <a href="https://www.eventbrite.com.au/e/#CapTech2024-discover-connect-execute-venue-icc-sydney-tickets-772015889307">
             <img
               className="eventImg"
               src="https://res.cloudinary.com/duv9rw1wg/image/upload/v1719326603/homePage/qo7dq9u1cfptxijtlsly.png"

@@ -48,7 +48,7 @@ const CompanyLinks = () => (
       <Link href="/showcase">CapTech 2024</Link>
     </li>
     <li>
-      <Link href="/services">CapTech2023</Link>
+      <Link href="/services">#CapTech2023</Link>
     </li>
     <li>
       <Link href="/showcase">Events</Link>

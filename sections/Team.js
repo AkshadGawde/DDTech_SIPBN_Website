@@ -21,11 +21,12 @@ const Team = () => {
           Your browser does not support the video tag.
         </video>
         <div className="container">
+          <div className="heading-title">
+            <TitleSm title="" />
+            <Title title="#CapTech2024 Festival" className="title-bg" />
+          </div>
           <br />
-          <br />
-          <Title title={"CapTech2024"} />
-          <br />
-          <TitleSm title={"Dicover Connect Execute"} />
+          <Title title="Discover Connect Execute" />
           <br />
           <ul>
             <li>25th November 2024 – Welcome Drinks at NSW Parliament House</li>
@@ -35,21 +36,22 @@ const Team = () => {
             <li>28th November 2024 – Business Matching</li>
           </ul>
           <br />
-          <h2>What is #CapTech2024</h2>
+          <Title title="What is #CapTech2024" />
           <p>
-            CapTech2024 is your gateway to the forefront of innovation, offering
-            an unparalleled opportunity to engage directly with the luminaries
-            of future-focused industries. This premium summit uniquely convenes
-            an elite ensemble of business leaders, policymakers, and investors,
-            fostering a rare environment for high-level networking and
-            collaborative ventures across eight key sectors. In its third year,
-            #CapTech2024 will place Australia at the centre of future focussed
-            industries by bringing together accomplished business leaders and
-            subject matter experts to collaboratively pursue shared objectives
-            and nurture unique business relationships in an exclusive setting.
+            #CapTech2024 is your gateway to the forefront of innovation,
+            offering an unparalleled opportunity to engage directly with the
+            luminaries of future-focused industries. This premium summit
+            uniquely convenes an elite ensemble of business leaders,
+            policymakers, and investors, fostering a rare environment for
+            high-level networking and collaborative ventures across eight key
+            sectors. In its third year, ##CapTech2024 will place Australia at
+            the centre of future focussed industries by bringing together
+            accomplished business leaders and subject matter experts to
+            collaboratively pursue shared objectives and nurture unique business
+            relationships in an exclusive setting.
           </p>
           <br />
-          <h2>#CapTech2024 – Key Features</h2>
+          <Title title="##CapTech2024 – Key Features" />
           <ul>
             <li>
               A focus on growing and expanding businesses, deal-making and great
@@ -92,7 +94,7 @@ const Team = () => {
         </div>
       </div>
       <div className="container">
-        <h2>Why you should be a part of #CapTech in 2024</h2>
+        <Title title="Why you should be a part of #CapTech in 2024" />
         <br />
         <ul>
           <li className="capList">
@@ -100,7 +102,7 @@ const Team = () => {
             visionary speakers, thought leaders, and innovative resolutions that
             shape the landscape of tomorrow. Dive into the unfolding changes,
             emerging trends, and exceptional opportunities that define the
-            future. #CapTech2024 cultivates a collaborative ecosystem shaping
+            future. ##CapTech2024 cultivates a collaborative ecosystem shaping
             the trajectory of future focused industries, paving the way for a
             transformative and forward-thinking future.
           </li>
@@ -166,7 +168,6 @@ const Team = () => {
           </div>
         </div>
       </section>
-      <showcase />
     </>
   );
 };
