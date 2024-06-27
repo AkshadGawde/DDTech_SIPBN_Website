@@ -62,15 +62,15 @@ const Header = () => {
             onClick={handleLinkClick}
             className={activeLink === "/team" ? "activeLink" : ""}
           >
-            CapTech 2024
+            #CapTech 2024
           </Link>
-          <Link
+          {/* <Link
             href="/services"
             onClick={handleLinkClick}
             className={activeLink === "/services" ? "activeLink" : ""}
           >
             CapTech 2023
-          </Link>
+          </Link> */}
           <Link
             href="/showcase"
             onClick={handleLinkClick}
