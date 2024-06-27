@@ -249,10 +249,10 @@ export const memberdata = [
   },
   {
     id: 2,
-    title: "Roderick H. McGeoch AO, LLB",
+    title: "Roderick H .McGeoch AO, LLB",
     cover:
       "https://res.cloudinary.com/dq23wxdum/image/upload/v1719275860/SIPBN/o3icsmvryenqqclxicbu.png",
-    post: "Chairman and Director of a wide range of major corporations ",
+    post: "Chairman and Director of a wide range of majorcorporations",
   },
   {
     id: 3,

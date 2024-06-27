@@ -204,7 +204,6 @@
   h1 {
     transition: 0.5s;
     &:hover {
-      color: $green;
       cursor: pointer;
     }
   }
@@ -219,10 +218,9 @@
   }
   a {
     display: flex;
-    align-items: center;
+    align-items: left;
     color: $indigo;
     text-transform: uppercase;
-    letter-spacing: 2px;
     margin-top: $sm;
     .link-icon {
       margin-left: $sm;

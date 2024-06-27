@@ -6,6 +6,7 @@ import {
 import { Card } from "@/components/common/Card";
 import { Title, TitleSm } from "@/components/common/Title";
 import React from "react";
+import Link from "next/link";
 
 const Team = () => {
   return (
@@ -26,7 +27,7 @@ const Team = () => {
             <Title title="#CapTech2024 Festival" className="title-bg" />
           </div>
           <br />
-          <Title title="Discover .Connect .Execute"/>
+          <Title title="Discover .Connect .Execute" />
           <br />
           <ul>
             <li>25th November 2024 – Welcome Drinks at NSW Parliament House</li>
@@ -44,8 +45,8 @@ const Team = () => {
             uniquely convenes an elite ensemble of business leaders,
             policymakers, and investors, fostering a rare environment for
             high-level networking and collaborative ventures across eight key
-            sectors. In its third year, #CapTech2024 will place Australia at
-            the centre of future focussed industries by bringing together
+            sectors. In its third year, #CapTech2024 will place Australia at the
+            centre of future focussed industries by bringing together
             accomplished business leaders and subject matter experts to
             collaboratively pursue shared objectives and nurture unique business
             relationships in an exclusive setting.
@@ -135,11 +136,13 @@ const Team = () => {
               className="title-bg"
             />
           </div>
-          <div className="grid-4 py">
-            {patronsdata.map((item) => (
-              <Card data={item} key={item.id} caption={item.post} />
-            ))}
-          </div>
+          <Link href="/">
+            <div className="grid-4 py">
+              {patronsdata.map((item) => (
+                <Card data={item} key={item.id} caption={item.post} />
+              ))}
+            </div>
+          </Link>
 
           <div className="heading-title">
             <TitleSm title="World Class Speakers" /> <br />
