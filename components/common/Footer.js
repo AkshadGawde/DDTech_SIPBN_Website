@@ -1,11 +1,7 @@
 import Link from "next/link";
 import { TitleLogo } from "./Title";
 import { BsFacebook } from "react-icons/bs";
-import {
-  AiFillBehanceCircle,
-  AiFillInstagram,
-  AiFillLinkedin,
-} from "react-icons/ai";
+import { AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
 
 const Footer = () => {
   return (
@@ -46,7 +42,7 @@ const CompanyLinks = () => (
       <Link href="/team">About Us</Link>
     </li>
     <li>
-      <Link href="/showcase">CapTech 2024</Link>
+      <Link href="/showcase">#CapTech 2024</Link>
     </li>
     <li>
       <Link href="/services">#CapTech2023</Link>
@@ -55,7 +51,12 @@ const CompanyLinks = () => (
       <Link href="/showcase">Events</Link>
     </li>
     <li>
-      <Link href="/contact">Contact</Link>
+      <Link href="https://docs.google.com/forms/d/e/1FAIpQLSdiA6YPJaorTgxsvt-ZMMePCMLIbKnI3fS971sxMZeSaPewoQ/viewform">
+        Global Pitching
+      </Link>
+    </li>
+    <li>
+      <Link href="/contact">Contact Us</Link>
     </li>
   </ul>
 );
@@ -95,11 +96,6 @@ const SocialLinks = () => (
     <li>
       <Link href="https://facebook.com" aria-label="Facebook">
         <BsFacebook size={25} />
-      </Link>
-    </li>
-    <li>
-      <Link href="https://behance.net" aria-label="Behance">
-        <AiFillBehanceCircle size={25} />
       </Link>
     </li>
     <li>
