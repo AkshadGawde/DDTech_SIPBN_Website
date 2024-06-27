@@ -12,6 +12,7 @@ const Footer = () => {
           <CompanyLinks />
           {/* <ServiceLinks /> */}
           <SocialLinks />
+          <NewsLetter/>
         </div>
       </div>
     </footer>
@@ -58,6 +59,17 @@ const CompanyLinks = () => (
       <Link href="/contact">Contact Us</Link>
     </li>
   </ul>
+);
+
+const NewsLetter = () =>(
+  <div class="newsletter-container">
+        <h2>Subscribe to Our Newsletter</h2>
+        <p>Get the latest updates and offers.</p>
+        <form class="newsletter-form" action="#" method="post">
+            <input type="email" name="email" placeholder="Enter your email" required/>
+            <button type="submit">Subscribe</button>
+        </form>
+    </div>
 );
 
 // const ServiceLinks = () => (
