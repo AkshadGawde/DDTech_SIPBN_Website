@@ -3,6 +3,8 @@ import { useRouter } from "next/router";
 import { useEffect, useState, useRef } from "react";
 import { RiMenu4Line } from "react-icons/ri";
 import { AiOutlineClose } from "react-icons/ai";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCaretDown } from '@fortawesome/free-solid-svg-icons';
 
 const Header = () => {
   const [activeLink, setActiveLink] = useState("");
@@ -67,7 +69,7 @@ const Header = () => {
               onClick={handleLinkClick}
               className={activeLink === "/agency" ? "activeLink" : ""}
             >
-              About
+              About <FontAwesomeIcon icon={faCaretDown} />
             </Link>
 
             {dropdownOpen && (
@@ -95,7 +97,7 @@ const Header = () => {
               onClick={handleLinkClick}
               className={activeLink === "/team" ? "activeLink" : ""}
             >
-              #CapTech2024
+              #CapTech2024 <FontAwesomeIcon icon={faCaretDown} />
             </Link>
 
             {dropdownOpen && (
