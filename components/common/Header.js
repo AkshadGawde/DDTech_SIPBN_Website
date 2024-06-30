@@ -7,6 +7,7 @@ import { AiOutlineClose } from "react-icons/ai";
 const Header = () => {
   const [activeLink, setActiveLink] = useState("");
   const [open, setOpen] = useState(false);
+  const [dropdownOpen, setDropdownOpen] = useState(false);
 
   const router = useRouter();
   const navRef = useRef(null);
@@ -29,6 +30,11 @@ const Header = () => {
 
   const handleLinkClick = () => {
     setOpen(false);
+    setDropdownOpen(false);
+  };
+
+  const handleDropdownHover = (state) => {
+    setDropdownOpen(state);
   };
 
   return (
@@ -50,13 +56,32 @@ const Header = () => {
           >
             Home
           </Link>
-          <Link
-            href="/agency"
-            onClick={handleLinkClick}
-            className={activeLink === "/agency" ? "activeLink" : ""}
+          <div
+            className="dropdown"
+            onMouseEnter={() => handleDropdownHover(true)}
+            onMouseLeave={() => handleDropdownHover(false)}
           >
-            About
-          </Link>
+            <Link
+              href="#"
+              onClick={(e) => e.preventDefault()}
+              className={activeLink === "/about" ? "activeLink" : ""}
+            >
+              About
+            </Link>
+            {dropdownOpen && (
+              <div className="dropdown-content">
+                <Link href="/advisory_board" onClick={handleLinkClick}>
+                  Advisory Board
+                </Link>
+                <Link href="/executive_board" onClick={handleLinkClick}>
+                  Executive Board
+                </Link>
+                <Link href="/committees" onClick={handleLinkClick}>
+                  Committees
+                </Link>
+              </div>
+            )}
+          </div>
           <Link
             href="/team"
             onClick={handleLinkClick}
@@ -64,13 +89,6 @@ const Header = () => {
           >
             #CapTech 2024
           </Link>
-          {/* <Link
-            href="/services"
-            onClick={handleLinkClick}
-            className={activeLink === "/services" ? "activeLink" : ""}
-          >
-            CapTech 2023
-          </Link> */}
           <Link
             href="/showcase"
             onClick={handleLinkClick}

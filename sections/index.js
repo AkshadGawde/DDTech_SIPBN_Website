@@ -4,5 +4,8 @@ import ShowCase from "./ShowCase";
 import Team from "./Team";
 import Blog from "./Blog";
 import Contact from "./Contact";
+import Advisory_board from "./Advisory_board";
+import Executive_board from "./Executive_board";
+import Committees from "./Committees";
 
-export { Hero, Agency, Team, ShowCase, Blog, Contact };
+export { Hero, Agency, Team, ShowCase, Blog, Contact, Advisory_board, Executive_board, Committees };
