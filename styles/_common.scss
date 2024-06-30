@@ -20,6 +20,72 @@
     font-size: 50px;
   }
 }
+
+//* Ensure the styles are specific enough to avoid conflicts */
+.ctTextWrapper {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  justify-content: space-between;
+  gap: 20px; /* Space between text and image */
+  padding: 20px;
+  /* Ensure a border box model for consistent padding and margin */
+  box-sizing: border-box;
+}
+
+/* Styling for the text content */
+.text-content {
+  flex: 1; /* Allow the text content to take up available space */
+}
+
+/* Make the text more readable and aesthetically pleasing */
+.event-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Styling for the image container */
+.ctImg {
+  flex-shrink: 0; /* Prevent the image from shrinking */
+}
+
+/* Ensure the image scales nicely and reduce its size */
+.ctImg img {
+  max-width: 150px; /* Set a maximum width for the image */
+  height: auto;
+  border-radius: 8px; /* Optional: Add rounded corners for a modern look */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  /* Stack elements vertically on smaller screens */
+  .ctTextWrapper {
+    flex-direction: column;
+    text-align: center; /* Center the text */
+  }
+
+  /* Adjust spacing for smaller screens */
+  .text-content,
+  .ctImg {
+    margin-bottom: 20px;
+  }
+
+  /* Reset margin for the last child */
+  .ctImg {
+    margin-bottom: 0;
+  }
+
+  /* Make the image slightly smaller on smaller screens */
+  .ctImg img {
+    max-width: 120px; /* Smaller max-width for mobile devices */
+  }
+}
+
+
+
 .titleSm {
   font-size: $xl-5; // Default font size for larger devices
   font-weight: 500;
@@ -421,6 +487,10 @@ ul {
     .title-bg {
       font-size: 2.5rem;
     }
+  }
+
+  .container{
+    text-align: left;
   }
 
   .grid-4 {

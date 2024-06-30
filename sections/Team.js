@@ -30,17 +30,18 @@ const Team = () => {
           <Title title="Discover .Connect .Execute" />
           <br />
 
-            <div className="ctTextWrapper">
-
-              <ul>
-                <li>25th November 2024 – Welcome Drinks at NSW Parliament House</li>
-                <li>26th November 2024 – Global Summit at ICC Sydney</li>
-                <li>26th November 2024 – Global Summit Post Event Drinks</li>
-                <li>27th November 2024 – “Invitation Only” Private Dinner</li>
-                <li>28th November 2024 – Business Matching</li>
-              </ul>
-
-            </div>
+          <div className="ctTextWrapper">
+      <div className="text-content">
+        <ul className="event-list">
+          <li>25th November 2024 – Welcome Drinks at NSW Parliament House</li>
+          <li>26th November 2024 – Global Summit at ICC Sydney</li>
+          <li>26th November 2024 – Global Summit Post Event Drinks</li>
+          <li>27th November 2024 – “Invitation Only” Private Dinner</li>
+          <li>28th November 2024 – Business Matching</li>
+        </ul>
+      </div>
+    
+    </div>
 
           <br />
           <Title title="What is #CapTech2024" />
