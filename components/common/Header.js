@@ -56,18 +56,22 @@ const Header = () => {
           >
             Home
           </Link>
+
+
           <div
             className="dropdown"
             onMouseEnter={() => handleDropdownHover(true)}
             onMouseLeave={() => handleDropdownHover(false)}
           >
             <Link
-              href="#"
-              onClick={(e) => e.preventDefault()}
-              className={activeLink === "/about" ? "activeLink" : ""}
+              href="/agency"
+              onClick={handleLinkClick}
+              className={activeLink === "/agency" ? "activeLink" : ""}
             >
               About
             </Link>
+
+
             {dropdownOpen && (
               <div className="dropdown-content">
                 <Link href="/advisory_board" onClick={handleLinkClick}>
@@ -82,13 +86,39 @@ const Header = () => {
               </div>
             )}
           </div>
-          <Link
-            href="/team"
-            onClick={handleLinkClick}
-            className={activeLink === "/team" ? "activeLink" : ""}
+
+
+          <div
+            className="dropdown"
+            onMouseEnter={() => handleDropdownHover(true)}
+            onMouseLeave={() => handleDropdownHover(false)}
           >
-            #CapTech 2024
-          </Link>
+            <Link
+              href="/team"
+              onClick={handleLinkClick}
+              className={activeLink === "/team" ? "activeLink" : ""}
+            >
+              #CapTech2024
+            </Link>
+
+
+            {dropdownOpen && (
+              <div className="dropdown-content">
+                <Link href="/advisory_board" onClick={handleLinkClick}>
+                  #CapTech2024 Patrons
+                </Link>
+                <Link href="/executive_board" onClick={handleLinkClick}>
+                  #CapTech2024 Panelists and Speakers
+                </Link>
+                <Link href="/committees" onClick={handleLinkClick}>
+                  #CapTech2023 Highlights
+                </Link>
+              </div>
+            )}
+          </div>
+
+            
+
           <Link
             href="/showcase"
             onClick={handleLinkClick}
