@@ -1,61 +1,10 @@
-import { home } from "@/assets/data/dummydata";
 import Banner from "@/components/Banner";
 import Expertise from "@/components/Expertise";
-import ShowCase from "@/components/ShowCase";
-import Testimonial from "@/components/Testimonial";
 import { Title, TitleLogo, TitleSm } from "@/components/common/Title";
-import { BlogCard, Brand } from "@/components/router";
-import { React, useEffect } from "react";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import { Brand } from "@/components/router";
+import { React } from "react";
 
 const Hero = () => {
-  useEffect(() => {
-    // Ensure ScrollTrigger is enabled
-    gsap.registerPlugin(ScrollTrigger);
-
-    // Define animations and triggers here
-    gsap.utils.toArray(".animate").forEach((element) => {
-      gsap.from(element, {
-        opacity: 0,
-        y: 100,
-        duration: 1,
-        scrollTrigger: {
-          trigger: element,
-          start: "top 80%",
-          end: "bottom 20%",
-          scrub: true, // smooth animation
-        },
-      });
-    });
-
-    // Parallax effect example
-    gsap.utils.toArray(".parallax").forEach((element) => {
-      gsap.to(element, {
-        yPercent: -20,
-        scrollTrigger: {
-          trigger: element,
-          scrub: true,
-          start: "top bottom",
-          end: "bottom top",
-        },
-      });
-    });
-
-    // Fade in example
-    gsap.utils.toArray(".fade-in").forEach((element) => {
-      gsap.from(element, {
-        opacity: 0,
-        duration: 1,
-        scrollTrigger: {
-          trigger: element,
-          start: "top 80%",
-          end: "bottom 20%",
-          scrub: true,
-        },
-      });
-    });
-  }, []);
 
   return (
     <>

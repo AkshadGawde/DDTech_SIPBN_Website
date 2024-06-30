@@ -101,12 +101,12 @@ const Header = () => {
             {dropdownOpen && (
               <div className="dropdown-content">
                 <Link href="/patrons" onClick={handleLinkClick}>
-                  #CapTech2024 Patrons
+                   Patrons
                 </Link>
                 <Link href="/speakers" onClick={handleLinkClick}>
-                  #CapTech2024 Panelists and Speakers
+                   Panelists and Speakers
                 </Link>
-                <Link href="/committees" onClick={handleLinkClick}>
+                <Link href="/captech2023" onClick={handleLinkClick}>
                   Highlights
                 </Link>
               </div>
