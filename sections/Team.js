@@ -31,17 +31,18 @@ const Team = () => {
           <br />
 
           <div className="ctTextWrapper">
-      <div className="text-content">
-        <ul className="event-list">
-          <li>25th November 2024 – Welcome Drinks at NSW Parliament House</li>
-          <li>26th November 2024 – Global Summit at ICC Sydney</li>
-          <li>26th November 2024 – Global Summit Post Event Drinks</li>
-          <li>27th November 2024 – “Invitation Only” Private Dinner</li>
-          <li>28th November 2024 – Business Matching</li>
-        </ul>
-      </div>
-    
-    </div>
+            <div className="text-content">
+              <ul className="event-list">
+                <li>
+                  25th November 2024 – Welcome Drinks at NSW Parliament House
+                </li>
+                <li>26th November 2024 – Global Summit at ICC Sydney</li>
+                <li>26th November 2024 – Global Summit Post Event Drinks</li>
+                <li>27th November 2024 – “Invitation Only” Private Dinner</li>
+                <li>28th November 2024 – Business Matching</li>
+              </ul>
+            </div>
+          </div>
 
           <br />
           <Title title="What is #CapTech2024" />
@@ -132,52 +133,27 @@ const Team = () => {
           </li>
           <br />
         </ul>
-      </div>
-
-      <section className="agency bg-top">
-        <div className="container">
-          <div className="heading-title">
-            <TitleSm title="MEET OUR PATRONS" /> <br />
-            <Title
-              title="A team of smart & passionate individuals"
-              className="title-bg"
-            />
-          </div>
-          <Link href="/">
-            <div className="grid-4 py">
-              {patronsdata.map((item) => (
-                <Card data={item} key={item.id} caption={item.post} />
-              ))}
-            </div>
-          </Link>
-
-          <div className="heading-title">
-            <TitleSm title="World Class Speakers" /> <br />
-            <Title
-              title="A team of smart & passionate speakers"
-              className="title-bg"
-            />
-          </div>
-          <div className="grid-4 py">
-            {memberdata.map((item) => (
-              <Card data={item} key={item.id} caption={item.post} />
-            ))}
-          </div>
-
-          <div className="heading-title">
-            <TitleSm title="Our Exemplary Moderators" /> <br />
-            <Title
-              title="A team of smart & passionate moderators"
-              className="title-bg"
-            />
-          </div>
-          <div className="grid-4 py">
-            {moderatordata.map((item) => (
-              <Card data={item} key={item.id} caption={item.post} />
-            ))}
-          </div>
+        <div className="button-holder">
+          <button
+            className="button button-primary"
+            onClick={() => (window.location.href = "/patrons")}
+          >
+            Patrons{" "}
+          </button>
+          <button
+            className="button button-primary"
+            onClick={() => (window.location.href = "/speakers")}
+          >
+            Panelist and Speakers
+          </button>
+          <button
+            className="button button-primary"
+            onClick={() => (window.location.href = "/captech2023")}
+          >
+            #CapTech2023
+          </button>
         </div>
-      </section>
+      </div>
     </>
   );
 };

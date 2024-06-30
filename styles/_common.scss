@@ -131,6 +131,7 @@
   font-size: $md;
   border-radius: 50px;
   cursor: pointer;
+  margin: 10px;
 }
 .secondary-button {
   background-color: #171e20;
@@ -146,6 +147,12 @@
     color: $green;
   }
 }
+button-holder {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
 .presImg{
   border-radius: 50%;
   margin-bottom: 20px;
