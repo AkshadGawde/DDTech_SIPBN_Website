@@ -5,14 +5,63 @@ import ShowCase from "@/components/ShowCase";
 import Testimonial from "@/components/Testimonial";
 import { Title, TitleLogo, TitleSm } from "@/components/common/Title";
 import { BlogCard, Brand } from "@/components/router";
-import React from "react";
+import { React, useEffect } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 const Hero = () => {
+  useEffect(() => {
+    // Ensure ScrollTrigger is enabled
+    gsap.registerPlugin(ScrollTrigger);
+
+    // Define animations and triggers here
+    gsap.utils.toArray(".animate").forEach((element) => {
+      gsap.from(element, {
+        opacity: 0,
+        y: 100,
+        duration: 1,
+        scrollTrigger: {
+          trigger: element,
+          start: "top 80%",
+          end: "bottom 20%",
+          scrub: true, // smooth animation
+        },
+      });
+    });
+
+    // Parallax effect example
+    gsap.utils.toArray(".parallax").forEach((element) => {
+      gsap.to(element, {
+        yPercent: -20,
+        scrollTrigger: {
+          trigger: element,
+          scrub: true,
+          start: "top bottom",
+          end: "bottom top",
+        },
+      });
+    });
+
+    // Fade in example
+    gsap.utils.toArray(".fade-in").forEach((element) => {
+      gsap.from(element, {
+        opacity: 0,
+        duration: 1,
+        scrollTrigger: {
+          trigger: element,
+          start: "top 80%",
+          end: "bottom 20%",
+          scrub: true,
+        },
+      });
+    });
+  }, []);
+
   return (
     <>
       <section className="hero">
         <div className="container">
-          <TitleLogo title="#CapTech2024" caption="" className="logobg" />
+          <TitleLogo title="#CapTech2024" caption="" className="logobg " />
           <h1 className="hero-title">DISCOVER . CONNECT . EXECUTE</h1>
           <TitleSm title="Venue: ICC Sydney 14 Darling Drive Sydney, NSW 2000 Australia" />
           <p>Tue, 26 Nov 2024 9:00 AM - Wed, 27 Nov 2024 9:00 PM AEDT</p>
@@ -29,7 +78,7 @@ const Hero = () => {
                   height="110px"
                   className="presImg"
                 />
-                <h2> - Ramman Bhalla</h2>
+                <h2> - Raman Bhalla</h2>
               </div>
               <p>
                 Sydney Investors, Professionals and Business Networking Group

@@ -57,7 +57,6 @@ const Header = () => {
             Home
           </Link>
 
-
           <div
             className="dropdown"
             onMouseEnter={() => handleDropdownHover(true)}
@@ -70,7 +69,6 @@ const Header = () => {
             >
               About
             </Link>
-
 
             {dropdownOpen && (
               <div className="dropdown-content">
@@ -87,7 +85,6 @@ const Header = () => {
             )}
           </div>
 
-
           <div
             className="dropdown"
             onMouseEnter={() => handleDropdownHover(true)}
@@ -101,23 +98,20 @@ const Header = () => {
               #CapTech2024
             </Link>
 
-
             {dropdownOpen && (
               <div className="dropdown-content">
                 <Link href="/advisory_board" onClick={handleLinkClick}>
-                  #CapTech2024 Patrons
+                  Patrons
                 </Link>
                 <Link href="/executive_board" onClick={handleLinkClick}>
-                  #CapTech2024 Panelists and Speakers
+                  Panelists and Speakers
                 </Link>
                 <Link href="/committees" onClick={handleLinkClick}>
-                  #CapTech2023 Highlights
+                  Highlights
                 </Link>
               </div>
             )}
           </div>
-
-            
 
           <Link
             href="/showcase"
