@@ -107,7 +107,7 @@ const Header = () => {
                    Panelists and Speakers
                 </Link>
                 <Link href="/captech2023" onClick={handleLinkClick}>
-                  Highlights
+                  #CapTech2023 Highlights
                 </Link>
               </div>
             )}
