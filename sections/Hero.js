@@ -56,12 +56,7 @@ const Hero = () => {
           <Title title={"Upcoming Events"} />
         </div>
         <div className="eventContainer">
-          <a href="https://www.eventbrite.com.au/e/#CapTech2024-discover-connect-execute-venue-icc-sydney-tickets-772015889307">
-            <img
-              className="eventImg"
-              src="https://res.cloudinary.com/duv9rw1wg/image/upload/v1719326603/homePage/tvndvw12ujvsbg0dmvaq.png"
-            />
-          </a>
+          
           <a href="https://www.eventbrite.com.au/e/#CapTech2024-discover-connect-execute-venue-icc-sydney-tickets-772015889307">
             <img
               className="eventImg"

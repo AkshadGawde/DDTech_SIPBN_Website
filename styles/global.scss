@@ -3,7 +3,7 @@
   text-align: center;
   padding: $xl-6 0;
   padding-top: $xll-3;
-  height: 90vh !important;
+  height: 80vh !important;
   overflow: hidden !important;
   position: relative;
   &::before {
@@ -20,7 +20,7 @@
     overflow-x: hidden !important;
   }
   .hero-title {
-    font-size: $xll-3; // Default font size for larger devices
+    font-size: $xll-2; // Default font size for larger devices
     line-height: 115px; // Default line height for larger devices
     font-weight: 600;
     margin: $xl-6 0;
@@ -60,9 +60,19 @@
 
 // expertise
 .expertise {
+  .card{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 50px 0 50px 0;
+  }
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgb(193, 60, 246);
+  }
   .card-img {
     height: 300px;
   }
+ 
 }
 
 //banner
@@ -77,8 +87,23 @@
     background: $gradient;
     @include flex(center, space-between, none);
   }
+  .button-primary {
+    text-transform: capitalize;
+    color: $dark;
+    padding: 13px 40px;
+    background-color: $green;
+    font-size: $md;
+    border-radius: 50px;
+    cursor: pointer;
+    margin: 10px;
+    box-shadow: rgba($dark, 5) 0px 7px 29px 0px;
+    transition: 0.5s ease-in-out;
+    &:hover {
+      scale: 1.05;
+    }
+  }
 }
-
+ 
 //testimonial
 .testimonial {
   .card {
@@ -169,7 +194,7 @@
 // footer
 footer {
   position: relative;
-  padding: $xll-3 0 0 0;
+  padding: 10vh 0 0 0;
   border-top: 1px solid rgba($white, 0.2);
   overflow: hidden;
   .logobg {
@@ -181,7 +206,7 @@ footer {
     font-weight: 400;
     letter-spacing: 2px;
     font-size: $lg;
-    margin-bottom: $xl-6;
+    margin-bottom: $xl-4;
   }
   span,
   p {
@@ -190,7 +215,7 @@ footer {
   ul li a {
     color: rgba($white, 0.5);
     transition: 0.5s ease-in-out;
-    margin-bottom: $xl-2;
+    margin-bottom: $xl-1;
     display: block;
     &:hover {
       color: $green;

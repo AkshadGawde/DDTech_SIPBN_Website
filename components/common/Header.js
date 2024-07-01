@@ -130,14 +130,14 @@ const Header = () => {
             <a
               href="https://docs.google.com/forms/d/e/1FAIpQLSdiA6YPJaorTgxsvt-ZMMePCMLIbKnI3fS971sxMZeSaPewoQ/viewform"
               onClick={handleLinkClick}
-              className={activeLink === "/showcase" ? "activeLink" : ""}
+              className={activeLink === "/glob" ? "activeLink" : ""}
             >
               Global Pitching
             </a>
             <Link
               href="#"
               onClick={handleLinkClick}
-              className={activeLink === "/showcase" ? "activeLink" : ""}
+              className={activeLink === "/blog" ? "activeLink" : ""}//activeLink === "/link to redirect yaad rakho"
             >
               Blogs
             </Link>

@@ -132,6 +132,7 @@
   border-radius: 50px;
   cursor: pointer;
   margin: 10px;
+  
 }
 .secondary-button {
   background-color: #171e20;
@@ -251,6 +252,7 @@ button-holder {
     align-items: center;
   }
   justify-content: space-evenly;
+  p{font-size: 1.2em;}
 }
 
 .presImgContainer{
@@ -270,9 +272,11 @@ button-holder {
   padding-top: 60px;
   p {
     margin: $xl-6 0;
+    
     color: rgba($white, 1);
   }
 }
+
 .card {
   h1 {
     transition: 0.5s;
@@ -291,13 +295,14 @@ button-holder {
   }
   a {
     display: flex;
-    align-items: left;
+    align-items: center;
     color: $indigo;
     text-transform: uppercase;
     margin-top: $sm;
     .link-icon {
       margin-left: $sm;
     }
+    justify-content: center;
   }
   span {
     color: rgba($white, 0.4);
@@ -319,6 +324,10 @@ button-holder {
     letter-spacing: 0px !important;
     text-transform: capitalize;
   }
+  .titleSm{
+    font-size: 1em;
+  }
+ 
 }
 
 /* Section styling */
@@ -432,6 +441,7 @@ hr{
 .heading-title img, .eventContainer img {
   max-width: 100%;
   height: auto;
+  max-height: 80vh;
 }
 .event-info {
   background: $dark;

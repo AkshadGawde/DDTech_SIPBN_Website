@@ -8,7 +8,7 @@ const Banner = () => {
         <div className="container">
           <div>
             <h2 className="bannerTitle">Secure your #CapTech2024 ticket!</h2> <br />
-            <TitleLogo title="Early bird discount 20% till 30th June 2024" />
+            <TitleSm title="Early bird discount 20% till 31th July 2024" />
           </div>
           <div>
             <button className="button-primary">Learn More</button>
