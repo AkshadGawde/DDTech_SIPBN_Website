@@ -3,6 +3,7 @@ import Expertise from "@/components/Expertise";
 import { Title, TitleLogo, TitleSm } from "@/components/common/Title";
 import { Brand } from "@/components/router";
 import { React } from "react";
+import Marqueee from "@/components/common/Marqueee";
 
 const Hero = () => {
 
@@ -10,7 +11,7 @@ const Hero = () => {
     <>
       <section className="hero">
         <div className="container">
-          <TitleLogo title="#CapTech2024" caption="" className="logobg " />
+          <TitleLogo title="#CapTech2024" caption="" className="logobg" />
           <h1 className="hero-title">DISCOVER . CONNECT . EXECUTE</h1>
           <TitleSm title="Venue: ICC Sydney 14 Darling Drive Sydney, NSW 2000 Australia" />
           <p>Tue, 26 Nov 2024 9:00 AM - Wed, 27 Nov 2024 9:00 PM AEDT</p>
@@ -40,6 +41,7 @@ const Hero = () => {
                 visits, information sessions, and receptions.
               </p>
             </div>
+            <button className="button-primary">Apply for Membership!</button>
           </div>
         </div>
       </section>
