@@ -1,27 +1,21 @@
 header {
   padding: 16px 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  position: relative;
+  position: fixed; /* Changed to fixed for better positioning */
+  width: 100%; /* Ensure it spans the full width */
   top: 0;
   backdrop-filter: blur(10px);
   z-index: 999;
   display: flex;
   background-color: #0d0d0d;
 
-  @media (max-width : 800px) {
-    border-bottom: none;
-    .dropdown{
-      margin-bottom: 20px;
-    }
-  }
-
   .container {
     display: flex;
     justify-content: space-between;
-    /* Adjusted */
     align-items: center;
+    width: 100%;
+    padding: 0 20px; /* Added padding for better alignment */
 
-    /* Ensure nav stays horizontal in large screens */
     nav {
       display: flex;
       align-items: center;
@@ -51,7 +45,6 @@ header {
       .dropdown {
         position: relative;
         display: inline-block;
-      
 
         .dropdown-content {
           display: none;
@@ -61,7 +54,6 @@ header {
           box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
           z-index: 1;
           padding-top: 20px;
-          
 
           a {
             color: white;
@@ -79,7 +71,7 @@ header {
           display: block;
         }
       }
-      
+
       .button-primary {
         margin-left: 16px;
         padding: 8px 16px;
@@ -96,15 +88,11 @@ header {
       }
     }
 
-    
   }
-
-  .sipLogo {
-    display: inline;
-    /* Ensure the logo is inline */
-    margin: 0 16px;
-    /* Space between logo and nav */
-  }
+}
+.sipLogo {
+  display: inline;
+  margin: 0 16px;
 }
 
 .menu-toggle {
@@ -115,58 +103,65 @@ header {
   color: white;
 }
 
-@media screen and (max-width: 800px) {
-
-  .dropdown-content{
-    background-color: #575757;
-  }
-x
-
-  header .container {
-    nav {
-      display: none;
-    }
-
+@media (max-width: 800px) {
+  header {
+    border-bottom: none;
     .menu-toggle {
-      display: inline;
+      display: inline; /* Show menu toggle on mobile */
       margin: 0 10px;
     }
 
-    .openMenu {
-      display: flex;
-      flex-direction: column;
-      position: absolute;
-      top: 98px;
-      left: 0;
-      width: 100%;
-      background-color: #0d0d0d;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-      padding: 20px;
-      backdrop-filter: blur(10px);
+    .container {
+      nav {
+        display: none; /* Hide nav on mobile */
+      }
 
-      a {
-        margin-bottom: 16px;
+
+      .openMenu {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 64px; /* Adjusted to match the header height */
+        left: 0;
         width: 100%;
-        text-align: center;
-
-        &.activeLink::after {
-          display: none;
-        }
-      }
-
-      .button-primary {
-        display: none;
-      }
-
-      .dropdown .dropdown-content {
-        position: relative;
-        box-shadow: none;
-        background-color: transparent;
+        background-color: #0d0d0d;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        padding: 20px;
+        backdrop-filter: blur(10px);
 
         a {
-          padding: 8px 0;
+          margin-bottom: 16px;
+          width: 100%;
           text-align: center;
+
+          &.activeLink::after {
+            display: none;
+          }
         }
+
+        .button-primary {
+          display: none;
+        }
+
+        .dropdown .dropdown-content {
+          position: relative;
+          box-shadow: none;
+          background-color: transparent;
+          
+          a {
+            padding: 8px 0;
+            text-align: center;
+          }
+        }
+      }
+    }
+    
+    .dropdown {
+      margin-bottom: 16px;
+      .dropdown-content {
+        background-color: #575757;
+        position: static; /* Change position to static for mobile */
+        box-shadow: none;
       }
     }
   }
