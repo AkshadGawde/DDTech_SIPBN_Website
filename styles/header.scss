@@ -79,38 +79,7 @@ header {
           display: block;
         }
       }
-
-      .dropdown2 {
-        position: relative;
-        display: inline-block;
-
-        .dropdown-content2 {
-          display: none;
-          position: absolute;
-          background-color: #0d0d0d;
-          min-width: 200px;
-          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-          z-index: 1;
-          padding-top: 20px;
-
-          a {
-            color: white;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-
-            &:hover {
-              background-color: #575757;
-            }
-          }
-        }
-
-        &:hover .dropdown-content {
-          display: block;
-        }
-      }
       
-
       .button-primary {
         margin-left: 16px;
         padding: 8px 16px;
@@ -127,13 +96,7 @@ header {
       }
     }
 
-    .menu-toggle {
-      display: none;
-      background: none;
-      border: none;
-      cursor: pointer;
-      color: white;
-    }
+    
   }
 
   .sipLogo {
@@ -142,6 +105,14 @@ header {
     margin: 0 16px;
     /* Space between logo and nav */
   }
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: white;
 }
 
 @media screen and (max-width: 800px) {
