@@ -241,7 +241,7 @@ export const patronsdata = [
 
 export const memberdata = [
   {
-   path:"/team/",
+  
     id: 1, 
     title: "The Hon Victor Dominello",
     cover:
@@ -249,7 +249,7 @@ export const memberdata = [
     post: "Former NSW Government Minister ",
   },
   {
-   path:"/team/",
+  
     id: 2,
     title: "Roderick H .McGeoch AO, LLB",
     cover:
@@ -257,7 +257,7 @@ export const memberdata = [
     post: "Chairman and Director of a wide range of majorcorporations",
   },
   {
-   path:"/team/",
+  
     id: 3,
     title: "Dr Joseph Rizk AM",
     cover:
@@ -265,7 +265,7 @@ export const memberdata = [
     post: "CEO & Managing Director of Arab Bank Australia",
   },
   {
-   path:"/team/",
+  
     id: 4,
     title: "Carmel Monaghan",
     cover:
@@ -273,7 +273,7 @@ export const memberdata = [
     post: "CEO of Ramsay Health Care",
   },
   {
-   path:"/team/",
+  
     id: 5,
     title: "Dr. Christian Baylis",
     cover:
@@ -281,7 +281,7 @@ export const memberdata = [
     post: "Founder and CIO at Fortlake Asset Management",
   },
   {
-   path:"/team/",
+  
     id: 6,
     title: "Stephen Bali MP",
     cover:
@@ -289,7 +289,7 @@ export const memberdata = [
     post: "Member of the Legislative Assembly Member for Blacktown",
   },
   {
-   path:"/team/",
+  
     id: 7,
     title: "Ankit Jain",
     cover:
@@ -297,7 +297,7 @@ export const memberdata = [
     post: "CEO of CIMET",
   },
   {
-   path:"/team/",
+  
     id: 8,
     title: "The Hon David Elliott",
     cover:
@@ -305,7 +305,7 @@ export const memberdata = [
     post: "CEO of Ramsay Health Care",
   },
   {
-   path:"/team/",
+  
     id: 9,
     title: "Dr Jim Taggart OAM",
     cover:
@@ -313,7 +313,7 @@ export const memberdata = [
     post: "CEO of Ramsay Health Care",
   },
   {
-   path:"/team/",
+  
     id: 10,
     title: "Helen Liossis",
     cover:
@@ -321,7 +321,7 @@ export const memberdata = [
     post: "CEO of Ramsay Health Care",
   },
   {
-   path:"/team/",
+  
     id: 11,
     title: "Kunwar Aditya Saxena",
     cover:
@@ -329,7 +329,7 @@ export const memberdata = [
     post: "CFO of CIMET",
   },
   {
-   path:"/team/",
+  
     id: 12,
     title: "Sarah Fairhurst",
     cover:
@@ -337,7 +337,7 @@ export const memberdata = [
     post: "Board roles as a Non-Executive Director (NED) covering four companies",
   },
   {
-   path:"/team/",
+  
     id: 13,
     title: "Dr George Margelis",
     cover:
@@ -345,7 +345,7 @@ export const memberdata = [
     post: "Chief Technology Advisor, Digital Health Advisor & Board Member",
   },
   {
-   path:"/team/",
+  
     id: 14,
     title: "Stephen Walters",
     cover:
@@ -353,7 +353,7 @@ export const memberdata = [
     post: "Chief Economist for the Business Council of Australia",
   },
   {
-   path:"/team/",
+  
     id: 15,
     title: "Michael Kollo",
     cover:
@@ -361,7 +361,7 @@ export const memberdata = [
     post: "CEO of Evolved AI",
   },
   {
-   path:"/team/",
+  
     id: 16,
     title: "Besa Deda",
     cover:
@@ -369,7 +369,7 @@ export const memberdata = [
     post: "Chief Economist of Westpac’s Business Bank",
   },
   {
-   path:"/team/",
+  
     id: 17,
     title: "The Hon Mark Coure MP",
     cover:
@@ -401,3 +401,161 @@ export const moderatordata = [
     post: "Founder and CEO of Cocoplum Design Studio and Boxareno Modular Constructions",
   },
 ];
+
+export const membersdata = [
+  {
+  
+    id: '1', 
+    name: "The Hon Victor Dominello",
+  
+        description: "Victor is a seasoned government leader, having served as a Minister in NSW for 12 years, and is best known for his role as Minister for Customer Service and Digital Government.\nHe is considered a pioneer of digital government in Australia, and his achievements have been admired, studied and modelled by other governments around the world.\nSince retiring from politics in 2023, Victor has been appointed to Accenture’s Global Luminaries Program to champion the cause of digital government around the world.\nVictor is the inaugural Chair of the Commonwealth Government’s Digital Identity Expert Panel.\nVictor is also the inaugural Chair of the Commonwealth Government’s Independent Advisory Panel for MyGov and Services Australia.\nIn addition, Victor is a Professor at UNSW and Director of the Trustworthy Digital Society Hub, a joint initiative of UNSW and UTS.\nVictor is a board member of the Tech Council of Australia and Adviser to the Brain and Mind Institute based at the University of Sydney.\nIn 2023 Victor launched ServiceGen, a firm that provides advice to governments and complex organisations with a mission of profoundly reimagining services for the digital age.",
+    image:
+      "https://res.cloudinary.com/dq23wxdum/image/upload/v1719275738/SIPBN/wh9v21toua7dvkgndz9s.png",
+    title: "Former NSW Government Minister ",
+  },
+  {
+  
+    id: "2",
+    name: "Roderick H .McGeoch AO, LLB",
+        description: "Victor is a seasoned government leader, having served as a Minister in NSW for 12 years, and is best known for his role as Minister for Customer Service and Digital Government.\nHe is considered a pioneer of digital government in Australia, and his achievements have been admired, studied and modelled by other governments around the world.\nSince retiring from politics in 2023, Victor has been appointed to Accenture’s Global Luminaries Program to champion the cause of digital government around the world.\nVictor is the inaugural Chair of the Commonwealth Government’s Digital Identity Expert Panel.\nVictor is also the inaugural Chair of the Commonwealth Government’s Independent Advisory Panel for MyGov and Services Australia.\nIn addition, Victor is a Professor at UNSW and Director of the Trustworthy Digital Society Hub, a joint initiative of UNSW and UTS.\nVictor is a board member of the Tech Council of Australia and Adviser to the Brain and Mind Institute based at the University of Sydney.\nIn 2023 Victor launched ServiceGen, a firm that provides advice to governments and complex organisations with a mission of profoundly reimagining services for the digital age.",
+    image:
+      "https://res.cloudinary.com/dq23wxdum/image/upload/v1719275860/SIPBN/o3icsmvryenqqclxicbu.png",
+    title: "Chairman and Director of a wide range of majorcorporations",
+  },
+  {
+  
+    id: "3",
+    name: "Dr Joseph Rizk AM",
+        description: "Victor is a seasoned government leader, having served as a Minister in NSW for 12 years, and is best known for his role as Minister for Customer Service and Digital Government.\nHe is considered a pioneer of digital government in Australia, and his achievements have been admired, studied and modelled by other governments around the world.\nSince retiring from politics in 2023, Victor has been appointed to Accenture’s Global Luminaries Program to champion the cause of digital government around the world.\nVictor is the inaugural Chair of the Commonwealth Government’s Digital Identity Expert Panel.\nVictor is also the inaugural Chair of the Commonwealth Government’s Independent Advisory Panel for MyGov and Services Australia.\nIn addition, Victor is a Professor at UNSW and Director of the Trustworthy Digital Society Hub, a joint initiative of UNSW and UTS.\nVictor is a board member of the Tech Council of Australia and Adviser to the Brain and Mind Institute based at the University of Sydney.\nIn 2023 Victor launched ServiceGen, a firm that provides advice to governments and complex organisations with a mission of profoundly reimagining services for the digital age.",
+    image:
+      "https://res.cloudinary.com/dq23wxdum/image/upload/v1719275404/SIPBN/lb7c21yo9bvx03ifekqf.png",
+    title: "CEO & Managing Director of Arab Bank Australia",
+  },
+  {
+  
+    id: "4",
+    name: "Carmel Monaghan",
+        description: "Victor is a seasoned government leader, having served as a Minister in NSW for 12 years, and is best known for his role as Minister for Customer Service and Digital Government.\nHe is considered a pioneer of digital government in Australia, and his achievements have been admired, studied and modelled by other governments around the world.\nSince retiring from politics in 2023, Victor has been appointed to Accenture’s Global Luminaries Program to champion the cause of digital government around the world.\nVictor is the inaugural Chair of the Commonwealth Government’s Digital Identity Expert Panel.\nVictor is also the inaugural Chair of the Commonwealth Government’s Independent Advisory Panel for MyGov and Services Australia.\nIn addition, Victor is a Professor at UNSW and Director of the Trustworthy Digital Society Hub, a joint initiative of UNSW and UTS.\nVictor is a board member of the Tech Council of Australia and Adviser to the Brain and Mind Institute based at the University of Sydney.\nIn 2023 Victor launched ServiceGen, a firm that provides advice to governments and complex organisations with a mission of profoundly reimagining services for the digital age.",
+    image:
+      "https://res.cloudinary.com/dq23wxdum/image/upload/v1719275958/SIPBN/fbggytdpkc5vubq2yqhi.png",
+    title: "CEO of Ramsay Health Care",
+  },
+  {
+  
+    id: "5",
+    name: "Dr. Christian Baylis",
+        description: "Victor is a seasoned government leader, having served as a Minister in NSW for 12 years, and is best known for his role as Minister for Customer Service and Digital Government.\nHe is considered a pioneer of digital government in Australia, and his achievements have been admired, studied and modelled by other governments around the world.\nSince retiring from politics in 2023, Victor has been appointed to Accenture’s Global Luminaries Program to champion the cause of digital government around the world.\nVictor is the inaugural Chair of the Commonwealth Government’s Digital Identity Expert Panel.\nVictor is also the inaugural Chair of the Commonwealth Government’s Independent Advisory Panel for MyGov and Services Australia.\nIn addition, Victor is a Professor at UNSW and Director of the Trustworthy Digital Society Hub, a joint initiative of UNSW and UTS.\nVictor is a board member of the Tech Council of Australia and Adviser to the Brain and Mind Institute based at the University of Sydney.\nIn 2023 Victor launched ServiceGen, a firm that provides advice to governments and complex organisations with a mission of profoundly reimagining services for the digital age.",
+    image:
+      "https://res.cloudinary.com/dq23wxdum/image/upload/v1719276024/SIPBN/glvavu3wrenwjyw44o3j.png",
+    title: "Founder and CIO at Fortlake Asset Management",
+  },
+  {
+  
+    id: '6',
+    name: "Stephen Bali MP",
+        description: "Victor is a seasoned government leader, having served as a Minister in NSW for 12 years, and is best known for his role as Minister for Customer Service and Digital Government.\nHe is considered a pioneer of digital government in Australia, and his achievements have been admired, studied and modelled by other governments around the world.\nSince retiring from politics in 2023, Victor has been appointed to Accenture’s Global Luminaries Program to champion the cause of digital government around the world.\nVictor is the inaugural Chair of the Commonwealth Government’s Digital Identity Expert Panel.\nVictor is also the inaugural Chair of the Commonwealth Government’s Independent Advisory Panel for MyGov and Services Australia.\nIn addition, Victor is a Professor at UNSW and Director of the Trustworthy Digital Society Hub, a joint initiative of UNSW and UTS.\nVictor is a board member of the Tech Council of Australia and Adviser to the Brain and Mind Institute based at the University of Sydney.\nIn 2023 Victor launched ServiceGen, a firm that provides advice to governments and complex organisations with a mission of profoundly reimagining services for the digital age.",
+    image:
+      "https://res.cloudinary.com/dq23wxdum/image/upload/v1719345293/SIPBN/ygs7bdnevhaicspq7go6.png",
+    title: "Member of the Legislative Assembly Member for Blacktown",
+  },
+  {
+  
+    id: '7',
+    name: "Ankit Jain",
+        description: "Victor is a seasoned government leader, having served as a Minister in NSW for 12 years, and is best known for his role as Minister for Customer Service and Digital Government.\nHe is considered a pioneer of digital government in Australia, and his achievements have been admired, studied and modelled by other governments around the world.\nSince retiring from politics in 2023, Victor has been appointed to Accenture’s Global Luminaries Program to champion the cause of digital government around the world.\nVictor is the inaugural Chair of the Commonwealth Government’s Digital Identity Expert Panel.\nVictor is also the inaugural Chair of the Commonwealth Government’s Independent Advisory Panel for MyGov and Services Australia.\nIn addition, Victor is a Professor at UNSW and Director of the Trustworthy Digital Society Hub, a joint initiative of UNSW and UTS.\nVictor is a board member of the Tech Council of Australia and Adviser to the Brain and Mind Institute based at the University of Sydney.\nIn 2023 Victor launched ServiceGen, a firm that provides advice to governments and complex organisations with a mission of profoundly reimagining services for the digital age.",
+    image:
+      "https://res.cloudinary.com/dq23wxdum/image/upload/v1719345294/SIPBN/g2wq6dq9tcxvbd2w275c.png",
+    title: "CEO of CIMET",
+  },
+  {
+  
+    id: '8',
+    name: "The Hon David Elliott",
+        description: "Victor is a seasoned government leader, having served as a Minister in NSW for 12 years, and is best known for his role as Minister for Customer Service and Digital Government.\nHe is considered a pioneer of digital government in Australia, and his achievements have been admired, studied and modelled by other governments around the world.\nSince retiring from politics in 2023, Victor has been appointed to Accenture’s Global Luminaries Program to champion the cause of digital government around the world.\nVictor is the inaugural Chair of the Commonwealth Government’s Digital Identity Expert Panel.\nVictor is also the inaugural Chair of the Commonwealth Government’s Independent Advisory Panel for MyGov and Services Australia.\nIn addition, Victor is a Professor at UNSW and Director of the Trustworthy Digital Society Hub, a joint initiative of UNSW and UTS.\nVictor is a board member of the Tech Council of Australia and Adviser to the Brain and Mind Institute based at the University of Sydney.\nIn 2023 Victor launched ServiceGen, a firm that provides advice to governments and complex organisations with a mission of profoundly reimagining services for the digital age.",
+    image:
+      "https://res.cloudinary.com/dq23wxdum/image/upload/v1719345440/SIPBN/d1i7rarmrnxyqjwyb0xx.png",
+    title: "CEO of Ramsay Health Care",
+  },
+  {
+  
+    id: '9',
+    name: "Dr Jim Taggart OAM",
+        description: "Victor is a seasoned government leader, having served as a Minister in NSW for 12 years, and is best known for his role as Minister for Customer Service and Digital Government.\nHe is considered a pioneer of digital government in Australia, and his achievements have been admired, studied and modelled by other governments around the world.\nSince retiring from politics in 2023, Victor has been appointed to Accenture’s Global Luminaries Program to champion the cause of digital government around the world.\nVictor is the inaugural Chair of the Commonwealth Government’s Digital Identity Expert Panel.\nVictor is also the inaugural Chair of the Commonwealth Government’s Independent Advisory Panel for MyGov and Services Australia.\nIn addition, Victor is a Professor at UNSW and Director of the Trustworthy Digital Society Hub, a joint initiative of UNSW and UTS.\nVictor is a board member of the Tech Council of Australia and Adviser to the Brain and Mind Institute based at the University of Sydney.\nIn 2023 Victor launched ServiceGen, a firm that provides advice to governments and complex organisations with a mission of profoundly reimagining services for the digital age.",
+    image:
+      "https://res.cloudinary.com/dq23wxdum/image/upload/v1719275468/SIPBN/cijoveqoqnuyfz6y1nrx.png",
+    title: "CEO of Ramsay Health Care",
+  },
+  {
+  
+    id: '10',
+    name: "Helen Liossis",
+        description: "Victor is a seasoned government leader, having served as a Minister in NSW for 12 years, and is best known for his role as Minister for Customer Service and Digital Government.\nHe is considered a pioneer of digital government in Australia, and his achievements have been admired, studied and modelled by other governments around the world.\nSince retiring from politics in 2023, Victor has been appointed to Accenture’s Global Luminaries Program to champion the cause of digital government around the world.\nVictor is the inaugural Chair of the Commonwealth Government’s Digital Identity Expert Panel.\nVictor is also the inaugural Chair of the Commonwealth Government’s Independent Advisory Panel for MyGov and Services Australia.\nIn addition, Victor is a Professor at UNSW and Director of the Trustworthy Digital Society Hub, a joint initiative of UNSW and UTS.\nVictor is a board member of the Tech Council of Australia and Adviser to the Brain and Mind Institute based at the University of Sydney.\nIn 2023 Victor launched ServiceGen, a firm that provides advice to governments and complex organisations with a mission of profoundly reimagining services for the digital age.",
+    image:
+      "https://res.cloudinary.com/dq23wxdum/image/upload/v1719270127/SIPBN/clzucgjysl0nweyvrbhs.png",
+    title: "CEO of Ramsay Health Care",
+  },
+  {
+  
+    id: '11',
+    name: "Kunwar Aditya Saxena",
+        description: "Victor is a seasoned government leader, having served as a Minister in NSW for 12 years, and is best known for his role as Minister for Customer Service and Digital Government.\nHe is considered a pioneer of digital government in Australia, and his achievements have been admired, studied and modelled by other governments around the world.\nSince retiring from politics in 2023, Victor has been appointed to Accenture’s Global Luminaries Program to champion the cause of digital government around the world.\nVictor is the inaugural Chair of the Commonwealth Government’s Digital Identity Expert Panel.\nVictor is also the inaugural Chair of the Commonwealth Government’s Independent Advisory Panel for MyGov and Services Australia.\nIn addition, Victor is a Professor at UNSW and Director of the Trustworthy Digital Society Hub, a joint initiative of UNSW and UTS.\nVictor is a board member of the Tech Council of Australia and Adviser to the Brain and Mind Institute based at the University of Sydney.\nIn 2023 Victor launched ServiceGen, a firm that provides advice to governments and complex organisations with a mission of profoundly reimagining services for the digital age.",
+    image:
+      "https://res.cloudinary.com/dq23wxdum/image/upload/v1719346273/SIPBN/wmpdfxlaf47ngy1egtxi.png",
+    title: "CFO of CIMET",
+  },
+  {
+  
+    id: '12',
+    name: "Sarah Fairhurst",
+        description: "Victor is a seasoned government leader, having served as a Minister in NSW for 12 years, and is best known for his role as Minister for Customer Service and Digital Government.\nHe is considered a pioneer of digital government in Australia, and his achievements have been admired, studied and modelled by other governments around the world.\nSince retiring from politics in 2023, Victor has been appointed to Accenture’s Global Luminaries Program to champion the cause of digital government around the world.\nVictor is the inaugural Chair of the Commonwealth Government’s Digital Identity Expert Panel.\nVictor is also the inaugural Chair of the Commonwealth Government’s Independent Advisory Panel for MyGov and Services Australia.\nIn addition, Victor is a Professor at UNSW and Director of the Trustworthy Digital Society Hub, a joint initiative of UNSW and UTS.\nVictor is a board member of the Tech Council of Australia and Adviser to the Brain and Mind Institute based at the University of Sydney.\nIn 2023 Victor launched ServiceGen, a firm that provides advice to governments and complex organisations with a mission of profoundly reimagining services for the digital age.",
+    image:
+      "https://res.cloudinary.com/dq23wxdum/image/upload/v1719346273/SIPBN/h6bqf9man7u8bry9szsh.png",
+    title: "Board roles as a Non-Executive Director (NED) imageing four companies",
+  },
+  {
+  
+    id: '13',
+    name: "Dr George Margelis",
+        description: "Victor is a seasoned government leader, having served as a Minister in NSW for 12 years, and is best known for his role as Minister for Customer Service and Digital Government.\nHe is considered a pioneer of digital government in Australia, and his achievements have been admired, studied and modelled by other governments around the world.\nSince retiring from politics in 2023, Victor has been appointed to Accenture’s Global Luminaries Program to champion the cause of digital government around the world.\nVictor is the inaugural Chair of the Commonwealth Government’s Digital Identity Expert Panel.\nVictor is also the inaugural Chair of the Commonwealth Government’s Independent Advisory Panel for MyGov and Services Australia.\nIn addition, Victor is a Professor at UNSW and Director of the Trustworthy Digital Society Hub, a joint initiative of UNSW and UTS.\nVictor is a board member of the Tech Council of Australia and Adviser to the Brain and Mind Institute based at the University of Sydney.\nIn 2023 Victor launched ServiceGen, a firm that provides advice to governments and complex organisations with a mission of profoundly reimagining services for the digital age.",
+    image:
+      "https://res.cloudinary.com/dq23wxdum/image/upload/v1719346364/SIPBN/m53unxyoyhc7phvqb2au.png",
+    title: "Chief Technology Advisor, Digital Health Advisor & Board Member",
+  },
+  {
+  
+    id: '14',
+    name: "Stephen Walters",
+        description: "Victor is a seasoned government leader, having served as a Minister in NSW for 12 years, and is best known for his role as Minister for Customer Service and Digital Government.\nHe is considered a pioneer of digital government in Australia, and his achievements have been admired, studied and modelled by other governments around the world.\nSince retiring from politics in 2023, Victor has been appointed to Accenture’s Global Luminaries Program to champion the cause of digital government around the world.\nVictor is the inaugural Chair of the Commonwealth Government’s Digital Identity Expert Panel.\nVictor is also the inaugural Chair of the Commonwealth Government’s Independent Advisory Panel for MyGov and Services Australia.\nIn addition, Victor is a Professor at UNSW and Director of the Trustworthy Digital Society Hub, a joint initiative of UNSW and UTS.\nVictor is a board member of the Tech Council of Australia and Adviser to the Brain and Mind Institute based at the University of Sydney.\nIn 2023 Victor launched ServiceGen, a firm that provides advice to governments and complex organisations with a mission of profoundly reimagining services for the digital age.",
+    image:
+      "https://res.cloudinary.com/dq23wxdum/image/upload/v1719346364/SIPBN/vnkev1xjdwgzzb1nirnk.png",
+    title: "Chief Economist for the Business Council of Australia",
+  },
+  {
+  
+    id: '15',
+    name: "Michael Kollo",
+        description: "Victor is a seasoned government leader, having served as a Minister in NSW for 12 years, and is best known for his role as Minister for Customer Service and Digital Government.\nHe is considered a pioneer of digital government in Australia, and his achievements have been admired, studied and modelled by other governments around the world.\nSince retiring from politics in 2023, Victor has been appointed to Accenture’s Global Luminaries Program to champion the cause of digital government around the world.\nVictor is the inaugural Chair of the Commonwealth Government’s Digital Identity Expert Panel.\nVictor is also the inaugural Chair of the Commonwealth Government’s Independent Advisory Panel for MyGov and Services Australia.\nIn addition, Victor is a Professor at UNSW and Director of the Trustworthy Digital Society Hub, a joint initiative of UNSW and UTS.\nVictor is a board member of the Tech Council of Australia and Adviser to the Brain and Mind Institute based at the University of Sydney.\nIn 2023 Victor launched ServiceGen, a firm that provides advice to governments and complex organisations with a mission of profoundly reimagining services for the digital age.",
+    image:
+      "https://res.cloudinary.com/dq23wxdum/image/upload/v1719346520/SIPBN/wogpn1o7k1mwnv9zllvt.png",
+    title: "CEO of Evolved AI",
+  },
+  {
+  
+    id: '16',
+    name: "Besa Deda",
+        description: "Victor is a seasoned government leader, having served as a Minister in NSW for 12 years, and is best known for his role as Minister for Customer Service and Digital Government.\nHe is considered a pioneer of digital government in Australia, and his achievements have been admired, studied and modelled by other governments around the world.\nSince retiring from politics in 2023, Victor has been appointed to Accenture’s Global Luminaries Program to champion the cause of digital government around the world.\nVictor is the inaugural Chair of the Commonwealth Government’s Digital Identity Expert Panel.\nVictor is also the inaugural Chair of the Commonwealth Government’s Independent Advisory Panel for MyGov and Services Australia.\nIn addition, Victor is a Professor at UNSW and Director of the Trustworthy Digital Society Hub, a joint initiative of UNSW and UTS.\nVictor is a board member of the Tech Council of Australia and Adviser to the Brain and Mind Institute based at the University of Sydney.\nIn 2023 Victor launched ServiceGen, a firm that provides advice to governments and complex organisations with a mission of profoundly reimagining services for the digital age.",
+    image:
+      "https://res.cloudinary.com/dq23wxdum/image/upload/v1719346591/SIPBN/qf5p2kvpdni7unkvdgwt.png",
+    title: "Chief Economist of Westpac’s Business Bank",
+  },
+  {
+  
+    id: '17',
+    name: "The Hon Mark Coure MP",
+        description: "Victor is a seasoned government leader, having served as a Minister in NSW for 12 years, and is best known for his role as Minister for Customer Service and Digital Government.\nHe is considered a pioneer of digital government in Australia, and his achievements have been admired, studied and modelled by other governments around the world.\nSince retiring from politics in 2023, Victor has been appointed to Accenture’s Global Luminaries Program to champion the cause of digital government around the world.\nVictor is the inaugural Chair of the Commonwealth Government’s Digital Identity Expert Panel.\nVictor is also the inaugural Chair of the Commonwealth Government’s Independent Advisory Panel for MyGov and Services Australia.\nIn addition, Victor is a Professor at UNSW and Director of the Trustworthy Digital Society Hub, a joint initiative of UNSW and UTS.\nVictor is a board member of the Tech Council of Australia and Adviser to the Brain and Mind Institute based at the University of Sydney.\nIn 2023 Victor launched ServiceGen, a firm that provides advice to governments and complex organisations with a mission of profoundly reimagining services for the digital age.",
+    image:
+      "https://res.cloudinary.com/dq23wxdum/image/upload/v1719346591/SIPBN/j58spx3bezirxl4wehwh.png",
+    title: "Member for Oatley; Shadow Minister for Multiculturalism; Shadow Minister for Jobs, Industry, Innovation, Science and Technology; Shadow Minister for South-Western Sydney",
+  },
+];
+
