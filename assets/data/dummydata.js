@@ -241,13 +241,15 @@ export const patronsdata = [
 
 export const memberdata = [
   {
-    id: 1,
+   path:"/team/",
+    id: 1, 
     title: "The Hon Victor Dominello",
     cover:
       "https://res.cloudinary.com/dq23wxdum/image/upload/v1719275738/SIPBN/wh9v21toua7dvkgndz9s.png",
     post: "Former NSW Government Minister ",
   },
   {
+   path:"/team/",
     id: 2,
     title: "Roderick H .McGeoch AO, LLB",
     cover:
@@ -255,6 +257,7 @@ export const memberdata = [
     post: "Chairman and Director of a wide range of majorcorporations",
   },
   {
+   path:"/team/",
     id: 3,
     title: "Dr Joseph Rizk AM",
     cover:
@@ -262,6 +265,7 @@ export const memberdata = [
     post: "CEO & Managing Director of Arab Bank Australia",
   },
   {
+   path:"/team/",
     id: 4,
     title: "Carmel Monaghan",
     cover:
@@ -269,6 +273,7 @@ export const memberdata = [
     post: "CEO of Ramsay Health Care",
   },
   {
+   path:"/team/",
     id: 5,
     title: "Dr. Christian Baylis",
     cover:
@@ -276,6 +281,7 @@ export const memberdata = [
     post: "Founder and CIO at Fortlake Asset Management",
   },
   {
+   path:"/team/",
     id: 6,
     title: "Stephen Bali MP",
     cover:
@@ -283,6 +289,7 @@ export const memberdata = [
     post: "Member of the Legislative Assembly Member for Blacktown",
   },
   {
+   path:"/team/",
     id: 7,
     title: "Ankit Jain",
     cover:
@@ -290,6 +297,7 @@ export const memberdata = [
     post: "CEO of CIMET",
   },
   {
+   path:"/team/",
     id: 8,
     title: "The Hon David Elliott",
     cover:
@@ -297,6 +305,7 @@ export const memberdata = [
     post: "CEO of Ramsay Health Care",
   },
   {
+   path:"/team/",
     id: 9,
     title: "Dr Jim Taggart OAM",
     cover:
@@ -304,6 +313,7 @@ export const memberdata = [
     post: "CEO of Ramsay Health Care",
   },
   {
+   path:"/team/",
     id: 10,
     title: "Helen Liossis",
     cover:
@@ -311,6 +321,7 @@ export const memberdata = [
     post: "CEO of Ramsay Health Care",
   },
   {
+   path:"/team/",
     id: 11,
     title: "Kunwar Aditya Saxena",
     cover:
@@ -318,6 +329,7 @@ export const memberdata = [
     post: "CFO of CIMET",
   },
   {
+   path:"/team/",
     id: 12,
     title: "Sarah Fairhurst",
     cover:
@@ -325,6 +337,7 @@ export const memberdata = [
     post: "Board roles as a Non-Executive Director (NED) covering four companies",
   },
   {
+   path:"/team/",
     id: 13,
     title: "Dr George Margelis",
     cover:
@@ -332,6 +345,7 @@ export const memberdata = [
     post: "Chief Technology Advisor, Digital Health Advisor & Board Member",
   },
   {
+   path:"/team/",
     id: 14,
     title: "Stephen Walters",
     cover:
@@ -339,6 +353,7 @@ export const memberdata = [
     post: "Chief Economist for the Business Council of Australia",
   },
   {
+   path:"/team/",
     id: 15,
     title: "Michael Kollo",
     cover:
@@ -346,6 +361,7 @@ export const memberdata = [
     post: "CEO of Evolved AI",
   },
   {
+   path:"/team/",
     id: 16,
     title: "Besa Deda",
     cover:
@@ -353,6 +369,7 @@ export const memberdata = [
     post: "Chief Economist of Westpac’s Business Bank",
   },
   {
+   path:"/team/",
     id: 17,
     title: "The Hon Mark Coure MP",
     cover:
