@@ -5,9 +5,12 @@ import Marquee from 'react-fast-marquee'
 function Marqueee() {
   return (
     <div>
-    <Marquee pauseOnHover="true">
-    I can be a React component, multiple React components, or just some text.
+      <a href="https://sipbn.com.au/captech2024/">
+      
+    <Marquee pauseOnHover="true" style={{fontSize:24,padding:10}}>
+      #CapTech2024- "Discover. Connect. Execute"- Monday 25th November 2024 to Thursday 28th November 2024 -ICC Sydney Australia
         </Marquee>  
+      </a>
     </div>
   );
 }

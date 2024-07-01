@@ -9,6 +9,9 @@ const Hero = () => {
 
   return (
     <>
+    {/* <div className="marquee-holder">
+      <Marqueee className="marquee"/>
+    </div> */}
       <section className="hero">
         <div className="container">
           <TitleLogo title="#CapTech2024" caption="" className="logobg" />

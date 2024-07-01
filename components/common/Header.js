@@ -5,7 +5,7 @@ import { RiMenu4Line } from "react-icons/ri";
 import { AiOutlineClose } from "react-icons/ai";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCaretDown } from '@fortawesome/free-solid-svg-icons';
-import Marquee from "react-fast-marquee";
+import Marqueee from "./Marqueee";
 
 const Header = () => {
   const [activeLink, setActiveLink] = useState("");
@@ -42,6 +42,9 @@ const Header = () => {
 
   return (
     <div>
+       <div className="marquee-holder">
+      <Marqueee className="marquee"/>
+    </div>
         <header>
         <Link href="/">
           <img
@@ -152,9 +155,6 @@ const Header = () => {
             {open ? <AiOutlineClose size={25} /> : <RiMenu4Line size={25} />}
           </button>
       </header>
-      <Marquee>
-        I can be a React component, multiple React components, or just some text.
-      </Marquee>
     </div>
   );
 };
