@@ -210,28 +210,28 @@ export const blogdata = [
 ];
 export const patronsdata = [
   {
-    id: 1,
+    id: 2,
     title: "Roderick H. McGeoch AO, LL",
     cover:
       "https://res.cloudinary.com/dq23wxdum/image/upload/v1719275343/SIPBN/ipijnqwmz6qq4e41iklb.png",
     post: "Chairman and Director of a wide range of major corporations ",
   },
   {
-    id: 2,
+    id: 3,
     title: "Dr Joseph Rizk AM",
     cover:
       "https://res.cloudinary.com/dq23wxdum/image/upload/v1719275404/SIPBN/lb7c21yo9bvx03ifekqf.png",
     post: "CEO & Managing Director of Arab Bank Australia",
   },
   {
-    id: 3,
+    id: 9,
     title: "Dr Jim Taggart OAM",
     cover:
       "https://res.cloudinary.com/dq23wxdum/image/upload/v1719275468/SIPBN/cijoveqoqnuyfz6y1nrx.png",
     post: "Board Member and Committee Member to a number of profit and not profit organisations",
   },
   {
-    id: 4,
+    id: 10,
     title: "Helen Liossis",
     cover:
       "https://res.cloudinary.com/dq23wxdum/image/upload/v1719270127/SIPBN/clzucgjysl0nweyvrbhs.png",
@@ -380,21 +380,21 @@ export const memberdata = [
 
 export const moderatordata = [
   {
-    id: 1,
+    id: 18,
     title: "Sarah Morgan",
     cover:
       "https://res.cloudinary.com/dq23wxdum/image/upload/v1719271717/SIPBN/tcrzhy1er8gl24zfiepw.png",
     post: "CEO at #CapTech2024",
   },
   {
-    id: 2,
+    id: 19,
     title: "Anuraj Gambhir",
     cover:
       "https://res.cloudinary.com/dq23wxdum/image/upload/v1719346088/SIPBN/mb1msnrpqqogtjjtjcld.png",
     post: "Strategic Innovation Advisor",
   },
   {
-    id: 3,
+    id: 20,
     title: "Ozge Fettahlioglu",
     cover:
       "https://res.cloudinary.com/dq23wxdum/image/upload/v1719346088/SIPBN/eipieb1mjb5ogepvqpa0.png",
@@ -556,6 +556,30 @@ export const membersdata = [
     image:
       "https://res.cloudinary.com/dq23wxdum/image/upload/v1719346591/SIPBN/j58spx3bezirxl4wehwh.png",
     title: "Member for Oatley; Shadow Minister for Multiculturalism; Shadow Minister for Jobs, Industry, Innovation, Science and Technology; Shadow Minister for South-Western Sydney",
+  },
+  {
+    id: '18',
+    name: "Sarah Morgan",
+     description: "Victor is a seasoned government leader, having served as a Minister in NSW for 12 years, and is best known for his role as Minister for Customer Service and Digital Government.\nHe is considered a pioneer of digital government in Australia, and his achievements have been admired, studied and modelled by other governments around the world.\nSince retiring from politics in 2023, Victor has been appointed to Accenture’s Global Luminaries Program to champion the cause of digital government around the world.\nVictor is the inaugural Chair of the Commonwealth Government’s Digital Identity Expert Panel.\nVictor is also the inaugural Chair of the Commonwealth Government’s Independent Advisory Panel for MyGov and Services Australia.\nIn addition, Victor is a Professor at UNSW and Director of the Trustworthy Digital Society Hub, a joint initiative of UNSW and UTS.\nVictor is a board member of the Tech Council of Australia and Adviser to the Brain and Mind Institute based at the University of Sydney.\nIn 2023 Victor launched ServiceGen, a firm that provides advice to governments and complex organisations with a mission of profoundly reimagining services for the digital age.",
+    image:
+      "https://res.cloudinary.com/dq23wxdum/image/upload/v1719271717/SIPBN/tcrzhy1er8gl24zfiepw.png",
+    title: "CEO at #CapTech2024",
+  },
+  {
+    id: '19',
+    name: "Anuraj Gambhir",
+     description: "Victor is a seasoned government leader, having served as a Minister in NSW for 12 years, and is best known for his role as Minister for Customer Service and Digital Government.\nHe is considered a pioneer of digital government in Australia, and his achievements have been admired, studied and modelled by other governments around the world.\nSince retiring from politics in 2023, Victor has been appointed to Accenture’s Global Luminaries Program to champion the cause of digital government around the world.\nVictor is the inaugural Chair of the Commonwealth Government’s Digital Identity Expert Panel.\nVictor is also the inaugural Chair of the Commonwealth Government’s Independent Advisory Panel for MyGov and Services Australia.\nIn addition, Victor is a Professor at UNSW and Director of the Trustworthy Digital Society Hub, a joint initiative of UNSW and UTS.\nVictor is a board member of the Tech Council of Australia and Adviser to the Brain and Mind Institute based at the University of Sydney.\nIn 2023 Victor launched ServiceGen, a firm that provides advice to governments and complex organisations with a mission of profoundly reimagining services for the digital age.",
+    image:
+      "https://res.cloudinary.com/dq23wxdum/image/upload/v1719346088/SIPBN/mb1msnrpqqogtjjtjcld.png",
+    title: "Strategic Innovation Advisor",
+  },
+  {
+    id: '20',
+    name: "Ozge Fettahlioglu",
+     description: "Victor is a seasoned government leader, having served as a Minister in NSW for 12 years, and is best known for his role as Minister for Customer Service and Digital Government.\nHe is considered a pioneer of digital government in Australia, and his achievements have been admired, studied and modelled by other governments around the world.\nSince retiring from politics in 2023, Victor has been appointed to Accenture’s Global Luminaries Program to champion the cause of digital government around the world.\nVictor is the inaugural Chair of the Commonwealth Government’s Digital Identity Expert Panel.\nVictor is also the inaugural Chair of the Commonwealth Government’s Independent Advisory Panel for MyGov and Services Australia.\nIn addition, Victor is a Professor at UNSW and Director of the Trustworthy Digital Society Hub, a joint initiative of UNSW and UTS.\nVictor is a board member of the Tech Council of Australia and Adviser to the Brain and Mind Institute based at the University of Sydney.\nIn 2023 Victor launched ServiceGen, a firm that provides advice to governments and complex organisations with a mission of profoundly reimagining services for the digital age.",
+    image:
+      "https://res.cloudinary.com/dq23wxdum/image/upload/v1719346088/SIPBN/eipieb1mjb5ogepvqpa0.png",
+    title: "Founder and CEO of Cocoplum Design Studio and Boxareno Modular Constructions",
   },
 ];
 
