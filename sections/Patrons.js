@@ -14,10 +14,7 @@ return (
   <div className='container'>
       <div className="heading-title">
           <TitleSm title="MEET OUR PATRONS" /> <br />
-          <Title
-            title="A team of smart & passionate individuals"
-            className="title-bg"
-          />
+          
         </div>
         <Link href="/">
           <div className="grid-4 py">
@@ -29,10 +26,7 @@ return (
 
         <div className="heading-title">
           <TitleSm title="World Class Speakers" /> <br />
-          <Title
-            title="A team of smart & passionate speakers"
-            className="title-bg"
-          />
+         
         </div>
         <div className="grid-4 py">
           {memberdata.map((item) => (
@@ -42,10 +36,7 @@ return (
 
         <div className="heading-title">
           <TitleSm title="Our Exemplary Moderators" /> <br />
-          <Title
-            title="A team of smart & passionate moderators"
-            className="title-bg"
-          />
+         
         </div>
         <div className="grid-4 py">
           {moderatordata.map((item) => (
