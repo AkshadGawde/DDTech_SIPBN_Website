@@ -18,6 +18,7 @@ const Hero = () => {
           <h1 className="hero-title">DISCOVER . CONNECT . EXECUTE</h1>
           <TitleSm title="Venue: ICC Sydney 14 Darling Drive Sydney, NSW 2000 Australia" />
           <p>Tue, 26 Nov 2024 9:00 AM - Wed, 27 Nov 2024 9:00 PM AEDT</p>
+          <button className="button-primary">Apply for Membership!</button>
         </div>
       </section>
       <section className="hero-sec">
