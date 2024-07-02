@@ -43,7 +43,7 @@ const Header = () => {
   return (
     <div>
        <div className="marquee-holder">
-      <Marqueee className="marquee"/>
+      
     </div>
         <header>
         <Link href="/">

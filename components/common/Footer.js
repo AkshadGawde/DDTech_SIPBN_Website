@@ -27,7 +27,7 @@ const CompanyInfo = () => (
       height={"60px"}
     />
     <p>
-      Questions? <br /> Reach us at:
+      Questions? Reach us at:
     </p>
     <h3>info@sipbn.com.au</h3>
     <button className="button-primary">Apply for Membership</button>
@@ -39,7 +39,7 @@ const CompanyLinks = () => (
     <h3>COMPANY</h3>
 
     <li>
-      <Link href="/team">About Us</Link>
+      <Link href="/agency">About Us</Link>
     </li>
     <li>
       <Link href="/showcase">#CapTech 2024</Link>

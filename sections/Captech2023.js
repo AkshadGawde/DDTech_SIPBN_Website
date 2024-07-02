@@ -9,7 +9,7 @@ function Captech2023() {
               <section className="agency bg-top">
         <div className="container">
           <TitleSm title="" />
-          <TitleSm title="#CapTech2023 Festival" className="title-bg" />
+          <TitleSm title="#CapTech2023 Summit" className="title-bg" />
         </div>
 
         <video autoPlay muted loop className="video-background">
