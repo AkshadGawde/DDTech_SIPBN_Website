@@ -52,10 +52,10 @@ const Agency = () => {
             className="title-bg"
           />
 
-          <section className="aboutSection">
+          <section className="aboutSection">  
             <div className="aboutContainer">
               <div className="aboutItem">
-                <h2 className="aboutTitle">Active Network Connectivity</h2>
+                <h2 className="aboutTitle">Networking</h2>
                 <p className="aboutDescription">
                   SIPBN membership grants you access via events and strategic
                   introductions to an exclusive network of peers in business
@@ -66,7 +66,7 @@ const Agency = () => {
               </div>
               <div className="aboutItem">
                 <h2 className="aboutTitle">
-                  Cross Border Business Match Making and Trade Assistance
+                  Cross Border Business Opportunities
                 </h2>
                 <p className="aboutDescription">
                   SIPBN links members with businesses and reliable service
@@ -76,7 +76,7 @@ const Agency = () => {
                 </p>
               </div>
               <div className="aboutItem">
-                <h2 className="aboutTitle">Continuous High Value Deal flow</h2>
+                <h2 className="aboutTitle">High Value Deal flow</h2>
                 <p className="aboutDescription">
                   The SIPBN platform provides members with the opportunity to
                   exchange information on high value business, investment and
@@ -85,7 +85,7 @@ const Agency = () => {
               </div>
               <div className="aboutItem">
                 <h2 className="aboutTitle">
-                  Targeted Advocacy to Media and Government
+                  Targeted Advocacy
                 </h2>
                 <p className="aboutDescription">
                   SIPBN champions initiatives and lobby for policy approaches
