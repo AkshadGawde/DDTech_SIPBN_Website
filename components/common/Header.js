@@ -53,7 +53,7 @@ const Header = () => {
         <Link href="/">
           <img
             className="sipLogo"
-            src="https://res.cloudinary.com/dq23wxdum/image/upload/v1719265063/SIPBN/acssi7dnvshtv6u9igie.png"
+            src="https://res.cloudinary.com/dq23wxdum/image/upload/v1719933691/SIPBN/ll3eflx5ib4bnsjmpn8z.png "
             alt="logo"
             height={"60px"}
           />
