@@ -1,5 +1,5 @@
 import { Title, TitleSm } from "@/components/common/Title";
-import React from "react";
+import React, { useState } from "react";
 import {
   AiFillBehanceCircle,
   AiFillInstagram,
@@ -9,8 +9,18 @@ import { BiUserCircle } from "react-icons/bi";
 import { BsFacebook } from "react-icons/bs";
 import { FiHeadphones, FiHelpCircle } from "react-icons/fi";
 import { IoLocationOutline } from "react-icons/io5";
+import ReCAPTCHA from "react-google-recaptcha";
 
 const Contact = () => {
+
+  const [verfied, setVerifed] = useState(false);
+
+  //recaptcha function
+  function onChange(value) {
+    console.log("Captcha value:", value);
+    setVerifed(true);
+  }
+
   return (
     <>
     
@@ -60,6 +70,7 @@ const Contact = () => {
               </p>
 
               <form>
+                
                 <div className="grid-2">
                   <div className="inputs">
                     <span>Name</span>
@@ -84,7 +95,15 @@ const Contact = () => {
                   <span>TELL US A BIT ABOUT YOUR PROJECT*</span>
                   <textarea cols="30" rows="10"></textarea>
                 </div>
-                <button className="button-primary">Submit</button>
+               
+                <button type="submit" className="button-primary" disabled={!verfied}
+        >
+          Submit
+        </button>
+        <ReCAPTCHA
+          sitekey="6LdwtAYqAAAAANzG309fIVxUp2eKz272HwV9SNuR"
+          onChange={onChange}
+        />
               </form>
             </div>
           </div>
