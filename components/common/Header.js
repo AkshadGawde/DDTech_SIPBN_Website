@@ -5,12 +5,14 @@ import { RiMenu4Line } from "react-icons/ri";
 import { AiOutlineClose } from "react-icons/ai";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCaretDown } from '@fortawesome/free-solid-svg-icons';
-import Marqueee from "./Marqueee";
 
 const Header = () => {
   const [activeLink, setActiveLink] = useState("");
   const [open, setOpen] = useState(false);
-  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [dropdownOpen, setDropdownOpen] = useState({
+    about: false,
+    captech: false
+  });
 
   const router = useRouter();
   const navRef = useRef(null);
@@ -21,6 +23,7 @@ const Header = () => {
     const handleClickOutside = (event) => {
       if (navRef.current && !navRef.current.contains(event.target)) {
         setOpen(false);
+        setDropdownOpen({ about: false, captech: false });
       }
     };
 
@@ -33,23 +36,24 @@ const Header = () => {
 
   const handleLinkClick = () => {
     setOpen(false);
-    setDropdownOpen(false);
+    setDropdownOpen({ about: false, captech: false });
   };
 
-  const handleDropdownHover = (state) => {
-    setDropdownOpen(state);
+  const toggleDropdown = (menu) => {
+    setDropdownOpen((prev) => ({
+      ...prev,
+      [menu]: !prev[menu]
+    }));
   };
 
   return (
     <div>
-       <div className="marquee-holder">
-      <Marqueee className="marquee"/>
-    </div>
-        <header>
+      <div className="marquee-holder"></div>
+      <header>
         <Link href="/">
           <img
             className="sipLogo"
-            src="https://res.cloudinary.com/dq23wxdum/image/upload/v1719265063/SIPBN/acssi7dnvshtv6u9igie.png"
+            src="https://res.cloudinary.com/dq23wxdum/image/upload/v1719933691/SIPBN/ll3eflx5ib4bnsjmpn8z.png "
             alt="logo"
             height={"60px"}
           />
@@ -64,20 +68,17 @@ const Header = () => {
               Home
             </Link>
 
-            <div
-              className="dropdown"
-              onMouseEnter={() => handleDropdownHover(true)}
-              onMouseLeave={() => handleDropdownHover(false)}
-            >
+            <div className="dropdown">
               <Link
                 href="/agency"
                 onClick={handleLinkClick}
                 className={activeLink === "/agency" ? "activeLink" : ""}
               >
-                About <FontAwesomeIcon icon={faCaretDown} />
+                About
               </Link>
+              <FontAwesomeIcon icon={faCaretDown} onClick={() => toggleDropdown('about')} />
 
-              {dropdownOpen && (
+              {dropdownOpen.about && (
                 <div className="dropdown-content">
                   <Link href="/advisory_board" onClick={handleLinkClick}>
                     Advisory Board
@@ -92,20 +93,17 @@ const Header = () => {
               )}
             </div>
 
-            <div
-              className="dropdown"
-              onMouseEnter={() => handleDropdownHover(true)}
-              onMouseLeave={() => handleDropdownHover(false)}
-            >
+            <div className="dropdown">
               <Link
-                href="/team"
+                href="/captech"
                 onClick={handleLinkClick}
-                className={activeLink === "/team" ? "activeLink" : ""}
+                className={activeLink === "/captech" ? "activeLink" : ""}
               >
-                #CapTech2024 <FontAwesomeIcon icon={faCaretDown} />
+                #CapTech2024
               </Link>
+              <FontAwesomeIcon icon={faCaretDown} onClick={() => toggleDropdown('captech')} />
 
-              {dropdownOpen && (
+              {dropdownOpen.captech && (
                 <div className="dropdown-content">
                   <Link href="/patrons" onClick={handleLinkClick}>
                     Patrons

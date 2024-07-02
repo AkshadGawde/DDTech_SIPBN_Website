@@ -11,7 +11,7 @@ export const home = [
 export const expertise = [
   {
     id: 1,
-    title: "Active Network Connectivity",
+    title: "Networking",
     cover: "../images/connections.jpg",
     desc: [
       { text: "Web design" },
@@ -20,10 +20,11 @@ export const expertise = [
       { text: "Hosting" },
       { text: "Website audit" },
     ],
+    
   },
   {
     id: 2,
-    title: "Continuous High Value Deal flow",
+    title: "High Value Deal flow",
     cover: "../images/deal.jpg",
     desc: [
       { text: "Social media marketing" },
@@ -34,7 +35,7 @@ export const expertise = [
   },
   {
     id: 3,
-    title: "Cross Border Business Match Making and Trade Assistance",
+    title: "Cross Border Business Opportunities",
     cover: "../images/cross.jpg",
     desc: [
       { text: "E-Commerce website design" },
@@ -45,7 +46,7 @@ export const expertise = [
   },
   {
     id: 4,
-    title: "Targeted Advocacy to Media and Government",
+    title: "Targeted Advocacy",
     cover: "../images/media.jpg",
     desc: [
       { text: "Visual identity" },

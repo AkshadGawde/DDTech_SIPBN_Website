@@ -22,12 +22,12 @@ const Footer = () => {
 const CompanyInfo = () => (
   <div className="company-info">
     <img
-      src="https://res.cloudinary.com/dq23wxdum/image/upload/v1719265063/SIPBN/acssi7dnvshtv6u9igie.png"
+      src="https://res.cloudinary.com/dq23wxdum/image/upload/v1719933691/SIPBN/ll3eflx5ib4bnsjmpn8z.png "
       alt="logo"
-      height={"60px"}
+      height={"80px"}
     />
     <p>
-      Questions? <br /> Reach us at:
+      Questions? Reach us at:
     </p>
     <h3>info@sipbn.com.au</h3>
     <button className="button-primary">Apply for Membership</button>
@@ -39,7 +39,7 @@ const CompanyLinks = () => (
     <h3>COMPANY</h3>
 
     <li>
-      <Link href="/team">About Us</Link>
+      <Link href="/agency">About Us</Link>
     </li>
     <li>
       <Link href="/showcase">#CapTech 2024</Link>
@@ -91,24 +91,29 @@ const NewsLetter = () =>(
 // );
 
 const SocialLinks = () => (
-  <ul className="social-links">
+  <div className="social-links">
     <h3>CONNECT</h3>
-    <li>
-      <Link href="https://facebook.com" aria-label="Facebook">
-        <BsFacebook size={25} />
-      </Link>
-    </li>
-    <li>
-      <Link href="https://instagram.com" aria-label="Instagram">
-        <AiFillInstagram size={25} />
-      </Link>
-    </li>
-    <li>
-      <Link href="https://linkedin.com" aria-label="LinkedIn">
-        <AiFillLinkedin size={25} />
-      </Link>
-    </li>
-  </ul>
+    <ul>
+      <li>
+        <Link href="https://facebook.com" aria-label="Facebook">
+          <BsFacebook size={25} />
+          <span>Facebook</span>
+        </Link>
+      </li>
+      <li>
+        <Link href="https://instagram.com" aria-label="Instagram">
+          <AiFillInstagram size={25} />
+          <span>Instagram</span>
+        </Link>
+      </li>
+      <li>
+        <Link href="https://linkedin.com" aria-label="LinkedIn">
+          <AiFillLinkedin size={25} />
+          <span>Linkedin</span>
+        </Link>
+      </li>
+    </ul>
+  </div>
 );
 
 export default Footer;

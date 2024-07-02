@@ -13,6 +13,7 @@ import { IoLocationOutline } from "react-icons/io5";
 const Contact = () => {
   return (
     <>
+    
       <section className="contact bg-top">
         <div className="container">
           <div className="heading-title">
