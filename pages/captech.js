@@ -2,7 +2,7 @@ import { Team } from "@/sections";
 import Head from "next/head";
 import React from "react";
 
-const team = () => {
+const captech = () => {
   return (
     <>
       <Head>
@@ -13,4 +13,4 @@ const team = () => {
   );
 };
 
-export default team;
+export default captech;
