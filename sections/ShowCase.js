@@ -119,7 +119,7 @@ const ShowCase = () => {
         </div>
       </section>
 
-      <section className="agency bg-top">
+     {/* <section className="agency bg-top">
         <div className="container">
           <TitleSm title="" />
           <Title title="#CapTech2023 Festival" className="title-bg" />
@@ -257,7 +257,7 @@ const ShowCase = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section>*/}
     </>
   );
 };
