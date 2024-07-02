@@ -9,23 +9,23 @@ const Member = ({ member }) => {
           <div className='heading-title'>
             <Title title={member.name} className='title-bg' />
           </div>
-          <div className='content flex'>
-            <div className='left w-40 py'>
-              <img src={member.image} alt={member.name} className='round' width='100%' height='100%' />
-            </div>
-            <div className='right w-60 ml'>
-              <TitleSm title={member.title} />
-              <br/>
-              <p className='mission-p'>
-                {member.description.split('\n').map((line, index) => (
-                  <React.Fragment key={index}>
-                    {line}
-                    <br />
-                  </React.Fragment>
-                ))}
-              </p>
-            </div>
-          </div>
+          <div className='content flex' style={{ display: 'flex', alignItems: 'flex-start' }}>
+  <div className='left' style={{ width: '40%', paddingTop: '1rem' }}>
+    <img src={member.image} alt={member.name} className='round' style={{ width: '100%', height: 'auto', borderRadius: '50%' }} />
+  </div>
+  <div className='right' style={{ width: '60%', marginLeft: '1rem' }}>
+    <TitleSm title={member.title} />
+    <p className='mission-p'>
+      {member.description.split('\n').map((line, index) => (
+        <React.Fragment key={index}>
+          {line}
+          <br />
+        </React.Fragment>
+      ))}
+    </p>
+  </div>
+</div>
+
         </div>
       </section>
     </>
