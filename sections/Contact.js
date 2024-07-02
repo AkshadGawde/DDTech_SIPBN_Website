@@ -64,10 +64,7 @@ const Contact = () => {
             </div>
             <div className="right w-70">
               <TitleSm title="Make an online enquiry" />
-              <p className="desc-p">
-                Got questions? Ideas? Fill out the form below to get our
-                proposal.{" "}
-              </p>
+             
 
               <form>
                 
@@ -101,7 +98,7 @@ const Contact = () => {
           Submit
         </button>
         <ReCAPTCHA
-          sitekey="6LdwtAYqAAAAANzG309fIVxUp2eKz272HwV9SNuR"
+          sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
           onChange={onChange}
         />
               </form>
