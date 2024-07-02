@@ -33,7 +33,7 @@ import {
         </div>
         <div className="grid-4 py">
           {moderatordata.map((item) => (
-            <Card data={item} key={item.id} caption={item.post} path="/" />
+            <Card data={item} key={item.id} caption={item.post} path="/team" />
           ))}
         </div>
       </div>
