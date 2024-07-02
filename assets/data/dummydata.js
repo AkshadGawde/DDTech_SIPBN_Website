@@ -20,6 +20,7 @@ export const expertise = [
       { text: "Hosting" },
       { text: "Website audit" },
     ],
+    
   },
   {
     id: 2,
