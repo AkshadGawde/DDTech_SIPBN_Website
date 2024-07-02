@@ -24,7 +24,7 @@ const Team = () => {
         <div className="container">
           <div className="heading-title">
             <TitleSm title="" />
-            <Title title="#CapTech2024 Festival" className="title-bg" />
+            <Title title="#CapTech2024 Summit" className="title-bg" />
           </div>
           <br />
           <Title title="Discover .Connect .Execute" />

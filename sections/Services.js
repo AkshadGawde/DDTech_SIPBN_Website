@@ -19,7 +19,7 @@ const Services = () => {
         <div className="container">
           <div className="heading-title">
             <TitleSm title="" />
-            <Title title="#CapTech2023 Festival" className="title-bg" />
+            <Title title="#CapTech2023 Summit" className="title-bg" />
           </div>
         </div>
       </section>
