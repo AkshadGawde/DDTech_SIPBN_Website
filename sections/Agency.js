@@ -2,10 +2,14 @@ import Banner from "@/components/Banner";
 import Brand from "@/components/Brand";
 import Testimonial from "@/components/Testimonial";
 import { Title, TitleSm } from "@/components/common/Title";
+import Marqueee from "@/components/common/Marqueee";
 
 const Agency = () => {
   return (
     <>
+    <div className="marquee-hero">
+      <Marqueee className="marquee"/>
+      </div>
       <section className="agency bg-top">
         <div className="container">
           <div className="heading-title">

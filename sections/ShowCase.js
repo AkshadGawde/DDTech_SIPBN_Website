@@ -2,10 +2,14 @@ import { Title, TitleSm } from "@/components/common/Title";
 import { expertise } from "@/assets/data/dummydata";
 import { Card } from "@/components/common/Card";
 import React from "react";
+import Marqueee from "@/components/common/Marqueee";
 
 const ShowCase = () => {
   return (
     <>
+    <div className="marquee-hero">
+      <Marqueee className="marquee"/>
+      </div>
       <section>
         <div className="container ">
           <br />

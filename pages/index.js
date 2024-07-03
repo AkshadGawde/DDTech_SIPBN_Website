@@ -8,9 +8,6 @@ export default function Home() {
         <title>SIPBN</title>
       </Head>
       
-      <div className="marquee-hero">
-      <Marqueee className="marquee"/>
-      </div>
     
       <Hero />
     </>
