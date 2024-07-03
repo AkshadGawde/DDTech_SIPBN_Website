@@ -39,7 +39,7 @@ const Hero = () => {
                   height="110px"
                   className="presImg"
                 />
-                <h2> - Raman Bhalla</h2>
+                <h2>  Raman Bhalla</h2>
               </div>
               <p>
                 Sydney Investors, Professionals and Business Networking Group
