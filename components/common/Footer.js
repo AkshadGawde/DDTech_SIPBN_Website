@@ -12,7 +12,7 @@ const Footer = () => {
           <CompanyLinks />
           {/* <ServiceLinks /> */}
           <SocialLinks />
-          <NewsLetter/>
+          <NewsLetter />
         </div>
       </div>
     </footer>
@@ -26,11 +26,17 @@ const CompanyInfo = () => (
       alt="logo"
       height={"80px"}
     />
-    <p>
-      Questions? Reach us at:
-    </p>
+    <p>Questions? Reach us at:</p>
     <h3>info@sipbn.com.au</h3>
-    <button className="button-primary">Apply for Membership</button>
+    <a
+      href="https://forms.gle/GLbvrFiTyUjfmadF7"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="button-primary"
+    >
+      {" "}
+      Apply for Membership
+    </a>
   </div>
 );
 
@@ -61,15 +67,20 @@ const CompanyLinks = () => (
   </ul>
 );
 
-const NewsLetter = () =>(
+const NewsLetter = () => (
   <div class="newsletter-container">
-        <h2>Subscribe to Our Newsletter</h2>
-        <p>Get the latest updates and offers.</p>
-        <form class="newsletter-form" action="#" method="post">
-            <input type="email" name="email" placeholder="Enter your email" required/>
-            <button type="submit">Subscribe</button>
-        </form>
-    </div>
+    <h2>Subscribe to Our Newsletter</h2>
+    <p>Get the latest updates and offers.</p>
+    <form class="newsletter-form" action="#" method="post">
+      <input
+        type="email"
+        name="email"
+        placeholder="Enter your email"
+        required
+      />
+      <button type="submit">Subscribe</button>
+    </form>
+  </div>
 );
 
 // const ServiceLinks = () => (

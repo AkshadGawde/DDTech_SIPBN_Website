@@ -3,15 +3,16 @@ import { useRouter } from "next/router";
 import { useEffect, useState, useRef } from "react";
 import { RiMenu4Line } from "react-icons/ri";
 import { AiOutlineClose } from "react-icons/ai";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCaretDown } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCaretDown } from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
   const [activeLink, setActiveLink] = useState("");
   const [open, setOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState({
     about: false,
-    captech: false
+    captech: false,
+    contact: false, // Added contact dropdown state
   });
 
   const router = useRouter();
@@ -23,7 +24,7 @@ const Header = () => {
     const handleClickOutside = (event) => {
       if (navRef.current && !navRef.current.contains(event.target)) {
         setOpen(false);
-        setDropdownOpen({ about: false, captech: false });
+        setDropdownOpen({ about: false, captech: false, contact: false }); // Reset contact dropdown state
       }
     };
 
@@ -36,13 +37,13 @@ const Header = () => {
 
   const handleLinkClick = () => {
     setOpen(false);
-    setDropdownOpen({ about: false, captech: false });
+    setDropdownOpen({ about: false, captech: false, contact: false }); // Reset contact dropdown state
   };
 
   const toggleDropdown = (menu) => {
     setDropdownOpen((prev) => ({
       ...prev,
-      [menu]: !prev[menu]
+      [menu]: !prev[menu],
     }));
   };
 
@@ -67,7 +68,6 @@ const Header = () => {
             >
               Home
             </Link>
-
             <div className="dropdown">
               <Link
                 href="/agency"
@@ -76,7 +76,10 @@ const Header = () => {
               >
                 About
               </Link>
-              <FontAwesomeIcon icon={faCaretDown} onClick={() => toggleDropdown('about')} />
+              <FontAwesomeIcon
+                icon={faCaretDown}
+                onClick={() => toggleDropdown("about")}
+              />
 
               {dropdownOpen.about && (
                 <div className="dropdown-content">
@@ -92,7 +95,6 @@ const Header = () => {
                 </div>
               )}
             </div>
-
             <div className="dropdown">
               <Link
                 href="/captech"
@@ -101,7 +103,10 @@ const Header = () => {
               >
                 #CapTech2024
               </Link>
-              <FontAwesomeIcon icon={faCaretDown} onClick={() => toggleDropdown('captech')} />
+              <FontAwesomeIcon
+                icon={faCaretDown}
+                onClick={() => toggleDropdown("captech")}
+              />
 
               {dropdownOpen.captech && (
                 <div className="dropdown-content">
@@ -117,7 +122,6 @@ const Header = () => {
                 </div>
               )}
             </div>
-
             <Link
               href="/showcase"
               onClick={handleLinkClick}
@@ -135,23 +139,48 @@ const Header = () => {
             <Link
               href="#"
               onClick={handleLinkClick}
-              className={activeLink === "/blog" ? "activeLink" : ""}//activeLink === "/link to redirect yaad rakho"
+              className={activeLink === "/blog" ? "activeLink" : ""}
             >
-              Blogs
+              Success Stories
             </Link>
-            <Link
-              href="/contact"
-              onClick={handleLinkClick}
-              className={activeLink === "/contact" ? "activeLink" : ""}
+            <div className="dropdown">
+              <Link
+                href="/contact"
+                onClick={handleLinkClick}
+                className={activeLink === "/contact" ? "activeLink" : ""}
+              >
+                Contact Us
+              </Link>
+              <FontAwesomeIcon
+                icon={faCaretDown}
+                onClick={() => toggleDropdown("contact")}
+              />
+
+              {dropdownOpen.contact && (
+                <div className="dropdown-content">
+                  <Link
+                    href="https://www.linkedin.com/posts/sydney-investors-professionals-and-business-networking-group-sipbn_sipbn-debtfunding-venturecapital-activity-7210813060758831104-Fy0c?utm_source=share&utm_medium=member_android"
+                    onClick={handleLinkClick}
+                  >
+                    Blog
+                  </Link>
+                </div>
+              )}
+            </div>
+            <a
+              href="https://forms.gle/GLbvrFiTyUjfmadF7"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="button-primary"
             >
-              Contact Us
-            </Link>
-            <button className="button-primary">Apply for Membership</button>
+              {" "}
+              Apply for Membership
+            </a>
           </nav>
         </div>
-          <button className="menu-toggle" onClick={() => setOpen(!open)}>
-            {open ? <AiOutlineClose size={25} /> : <RiMenu4Line size={25} />}
-          </button>
+        <button className="menu-toggle" onClick={() => setOpen(!open)}>
+          {open ? <AiOutlineClose size={25} /> : <RiMenu4Line size={25} />}
+        </button>
       </header>
     </div>
   );
