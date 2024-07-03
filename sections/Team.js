@@ -62,27 +62,24 @@ const Team = () => {
           <br />
           <Title title="#CapTech2024 – Key Features" />
           <ul>
-            <li>
+            <p>
               A focus on growing and expanding businesses, deal-making and great
-              customer experience
-            </li>
-            <li>
-              Global exposure as evidenced by physical attendees from Australia,
-              India, Middle East, China, Austria, Hong Kong, Europe, Indonesia,
-              Hong Kong, Malta and many others
-            </li>
+              customer experience Global exposure as evidenced by physical
+              attendees from Australia, India, Middle East, China, Austria, Hong
+              Kong, Europe, Indonesia, Hong Kong, Malta and many others.
+            </p>
             <li>
               World-class global pitching sessions throughout the year provide
               the platform for talent, scale ups, capital and global exposure,
-              culminating in the “best of the best” in November at CapTech
+              culminating in the “best of the best” in November at CapTech.
             </li>
             <li>
               Focused business matching sessions are tailored to get you the
-              results
+              results.
             </li>
             <li>
               Welcome drinks at NSW Parliament House and an exclusive private
-              dinner event provide unique connections and networks
+              dinner event provide unique connections and networks.
             </li>
           </ul>
         </div>
