@@ -2,7 +2,6 @@ import Hero from "./Hero";
 import Agency from "./Agency";
 import ShowCase from "./ShowCase";
 import Team from "./Team";
-import Blog from "./Blog";
 import Contact from "./Contact";
 import Advisory_board from "./Advisory_board";
 import Executive_board from "./Executive_board";
@@ -16,7 +15,6 @@ export {
   Agency,
   Team,
   ShowCase,
-  Blog,
   Contact,
   Advisory_board,
   Executive_board,
