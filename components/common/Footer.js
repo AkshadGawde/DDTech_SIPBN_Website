@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { TitleLogo } from "./Title";
 import { BsFacebook } from "react-icons/bs";
-import { AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
+import { AiFillInstagram, AiFillLinkedin, AiFillYoutube } from "react-icons/ai";
 
 const Footer = () => {
   return (
@@ -123,6 +123,11 @@ const SocialLinks = () => (
           <span>Linkedin</span>
         </Link>
       </li>
+      <Link href="https://youtube.com" aria-label="Youtube">
+        <AiFillYoutube size={25} />
+        <span>Youtube </span>
+      </Link>
+      <li></li>
     </ul>
   </div>
 );
