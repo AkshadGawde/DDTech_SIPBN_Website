@@ -1,0 +1,46 @@
+.blogsContainer {
+  display: flex;
+  flex-direction: column; /* Stack items vertically on small screens */
+  align-items: center; /* Center items horizontally */
+  text-align: left;
+  margin: 30px 10px;
+  width: 100%;
+}
+
+.blogsItem {
+  max-width: 100%; /* Take full width on smaller screens */
+  text-align: center; /* Center text on small screens */
+  margin-bottom: 20px; /* Add space between items */
+}
+
+.blogsImg {
+  width: 50%; /* Adjust width of image */
+  border-radius: 50%;
+  margin-top: 20px; /* Add space above the image */
+}
+
+@media (min-width: 768px) {
+  .blogsContainer {
+      flex-direction: row; /* Display items side by side on larger screens */
+      justify-content: space-between; /* Align items with space between them */
+      align-items: flex-start; /* Align items to the top vertically */
+  }
+
+  .blogsItem {
+      max-width: 70%; /* Limit width of text content on larger screens */
+      text-align: left; /* Align text to the left on larger screens */
+  }
+
+  .blogsImg {
+      width: 25%; /* Adjust width of image on larger screens */
+      margin-top: 0; /* Remove margin above the image on larger screens */
+      margin-left: 20px; /* Add space between text and image on larger screens */
+  }
+}
+.blogsDescription {
+  text-align: left;
+}
+.blogsDescription2 {
+  text-align: left;
+  font-size: 3v;
+}

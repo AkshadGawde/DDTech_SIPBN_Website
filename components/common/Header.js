@@ -158,7 +158,7 @@ const Header = () => {
 
               {dropdownOpen.contact && (
                 <div className="dropdown-content">
-                  <Link href="/blog" onClick={handleLinkClick}>
+                  <Link href="/blogs" onClick={handleLinkClick}>
                     Blog
                   </Link>
                 </div>
