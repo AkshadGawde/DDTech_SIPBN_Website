@@ -106,24 +106,40 @@ const SocialLinks = () => (
     <h3>CONNECT</h3>
     <ul>
       <li>
-        <Link href="https://facebook.com" aria-label="Facebook">
+        <Link
+          href="https://www.facebook.com/share/FkeVvzovKpn77kQy/?mibextid=qi2Omg
+
+"
+          aria-label="Facebook"
+        >
           <BsFacebook size={25} />
           <span>Facebook</span>
         </Link>
       </li>
       <li>
-        <Link href="https://instagram.com" aria-label="Instagram">
+        <Link
+          href="https://www.instagram.com/captech_events?igsh=b3NqbWIxOGd6dDU0
+"
+          aria-label="Instagram"
+        >
           <AiFillInstagram size={25} />
           <span>Instagram</span>
         </Link>
       </li>
       <li>
-        <Link href="https://linkedin.com" aria-label="LinkedIn">
+        <Link
+          href="https://www.linkedin.com/company/sydney-investors-professionals-and-business-networking-group-sipbn/
+"
+          aria-label="LinkedIn"
+        >
           <AiFillLinkedin size={25} />
           <span>Linkedin</span>
         </Link>
       </li>
-      <Link href="https://youtube.com" aria-label="Youtube">
+      <Link
+        href="https://youtube.com/@sipbn?si=qtTIuexllZ9Sv8f7"
+        aria-label="Youtube"
+      >
         <AiFillYoutube size={25} />
         <span>Youtube </span>
       </Link>

@@ -158,10 +158,7 @@ const Header = () => {
 
               {dropdownOpen.contact && (
                 <div className="dropdown-content">
-                  <Link
-                    href="https://www.linkedin.com/posts/sydney-investors-professionals-and-business-networking-group-sipbn_sipbn-debtfunding-venturecapital-activity-7210813060758831104-Fy0c?utm_source=share&utm_medium=member_android"
-                    onClick={handleLinkClick}
-                  >
+                  <Link href="/blog" onClick={handleLinkClick}>
                     Blog
                   </Link>
                 </div>

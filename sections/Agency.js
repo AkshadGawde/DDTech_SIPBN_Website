@@ -1,6 +1,3 @@
-import Banner from "@/components/Banner";
-import Brand from "@/components/Brand";
-import Testimonial from "@/components/Testimonial";
 import { Title, TitleSm } from "@/components/common/Title";
 
 const Agency = () => {
@@ -52,7 +49,7 @@ const Agency = () => {
             className="title-bg"
           />
 
-          <section className="aboutSection">  
+          <section className="aboutSection">
             <div className="aboutContainer">
               <div className="aboutItem">
                 <h2 className="aboutTitle">Networking</h2>
@@ -84,9 +81,7 @@ const Agency = () => {
                 </p>
               </div>
               <div className="aboutItem">
-                <h2 className="aboutTitle">
-                  Targeted Advocacy
-                </h2>
+                <h2 className="aboutTitle">Targeted Advocacy</h2>
                 <p className="aboutDescription">
                   SIPBN champions initiatives and lobby for policy approaches
                   that foster increased investment and trade opportunities for
