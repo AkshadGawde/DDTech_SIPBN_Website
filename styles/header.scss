@@ -46,7 +46,8 @@ header {
       .dropdown {
         position: relative;
         display: inline-block;
-
+        align-self: center;
+        
         .dropdown-content {
           display: none;
           position: absolute;

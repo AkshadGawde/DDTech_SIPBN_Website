@@ -8,9 +8,9 @@ import Marqueee from "@/components/common/Marqueee";
 const Hero = () => {
   return (
     <>
-      {/* <div className="marquee-holder">
+      <div className="marquee-hero">
       <Marqueee className="marquee"/>
-    </div> */}
+      </div>
       <section className="hero">
         <div className="container">
           <TitleLogo title="#CapTech2024" caption="" className="logobg" />
@@ -39,7 +39,7 @@ const Hero = () => {
                   height="110px"
                   className="presImg"
                 />
-                <h2> - Raman Bhalla</h2>
+                <h2>  Raman Bhalla</h2>
               </div>
               <p>
                 Sydney Investors, Professionals and Business Networking Group
