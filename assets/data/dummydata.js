@@ -359,35 +359,32 @@ export const memberdata = [
       "https://res.cloudinary.com/dq23wxdum/image/upload/v1719346591/SIPBN/j58spx3bezirxl4wehwh.png",
     post: "Member for Oatley; Shadow Minister for Multiculturalism; Shadow Minister for Jobs, Industry, Innovation, Science and Technology; Shadow Minister for South-Western Sydney",
   },
-
-
-  
   {
     id: 21,
     title: "Craig Scroggie",
     cover:
-      "https://res.cloudinary.com/dq23wxdum/image/upload/v1720158934/SIPBN/w3ol5wtgvaqeatmjj9w8.jpg",
+      "https://res.cloudinary.com/dq23wxdum/image/upload/v1720161307/SIPBN/nl5lkzm2srjmiufy8zgr.png",
     post: "CEO and Managing Director of NEXTDC",
   },
   {
     id: 22,
     title: "Dr. Janakiraman",
     cover:
-      "https://res.cloudinary.com/dq23wxdum/image/upload/v1720158935/SIPBN/rm42ukqmz9oc5totcjcb.png",
+      "https://res.cloudinary.com/dq23wxdum/image/upload/v1720161307/SIPBN/b5unnyqdkakq8t1ubrvc.png",
     post: "Career diplomat, joined the Indian Foreign Service in 2002.",
   },
   {
     id: 23,
     title: "Stela Scolar",
     cover:
-      "https://res.cloudinary.com/dq23wxdum/image/upload/v1720158934/SIPBN/alnsctuapiqlgxib6vod.jpg",
+      "https://res.cloudinary.com/dq23wxdum/image/upload/v1720161307/SIPBN/jpkaqsnatjd5mubyh6sm.png",
     post: "Inaugural Director of Australia’s National AI Centre (NAIC).",
   },
   {
     id: 24,
     title: "Lee Heckin",
     cover:
-      "https://res.cloudinary.com/dq23wxdum/image/upload/v1720159076/SIPBN/qjdaovahogkrsbpajo7k.png",
+      "https://res.cloudinary.com/dq23wxdum/image/upload/v1720161306/SIPBN/dqqtv5cwyt5htkjaeif7.png",
     post: " AI Technology & Policy Lead, Microsoft Asia",
   },
 ];
@@ -638,44 +635,77 @@ Carmel is a respected leader with the ability to build an experienced and loyal 
       "Founder and CEO of Cocoplum Design Studio and Boxareno Modular Constructions",
   },
 
-
   {
     id: "21",
     name: "Craig Scroggie",
-    description: ``,
+    description: `Craig Scroggie is the Chief Executive Officer and Managing Director of NEXTDC, Australia’s leading
+Data-Centre-as-a-Service provider. Prior to becoming CEO in June 2012, Mr Scroggie served on the
+Board of Directors since IPO (2010) as a Non-Executive Director, including as Chairman of the Audit and
+Risk Management Committee.
+Mr Scroggie has more than 25 years’ experience in the ICT industry, having held senior positions with
+Symantec, Veritas Software, Computer Associates, EMC Corporation and Fujitsu. Prior to joining
+NEXTDC, Mr Scroggie was Symantec’s Vice President & Managing Director for the Pacific Region.
+Mr Scroggie currently serves on the Board of Sovereign Cloud Holdings (ASX:SOV) and also serves on the
+University of Southern Queensland Business School Advisory Board and is Chairman of the La Trobe
+University Business School Advisory Board and holds the position of Adjunct Professor.
+Mr Scroggie is a Graduate of the University of Southern Queensland and holds an Advanced Certificate
+in Information Technology, a Graduate Certificate in Management, a Postgraduate Diploma in
+Management, a Master of Business Administration; and is a Graduate and Fellow of the Australian
+Institute of Company Directors.
+In 2013 Mr Scroggie was awarded the University of Southern Queensland Faculty of Business & Law
+Alumnus of the Year and in 2015 was inducted into the ARN ICT Industry Awards Hall of Fame.`,
     image:
-     "https://res.cloudinary.com/dq23wxdum/image/upload/v1720158934/SIPBN/w3ol5wtgvaqeatmjj9w8.jpg",
-    title:
-      "CEO and Managing Director of NEXTDC",
+      "https://res.cloudinary.com/dq23wxdum/image/upload/v1720161307/SIPBN/nl5lkzm2srjmiufy8zgr.png",
+    title: "CEO and Managing Director of NEXTDC",
   },
 
   {
     id: "22",
-    name: "CEO and Managing Director of NEXTDC",
-    description: ``,
+    name: "Dr. Janakriaman",
+    description: `
+Dr. S. Janakiraman is a career diplomat, joined the Indian Foreign Service in 2002.
+ 
+He has served in various capacities in Diplomatic Missions in Brasilia, Lisbon, Yangon
+and Pretoria: served as Second Secretary Political, Commercial and Administration in Brasilia from 2004-2008; as First Secretary Political,
+Commercial, Consular and Administration in Lisbon from 2008-2011; and as Counsellor, headed the Commercial Wing in the Embassy of India  in Yangon
+ from 2013-2016. He has served as Deputy High Commissioner in Pretoria (South Africa) with concurrent accreditation to Kingdom of Lesotho, from 2016-2019.
+Before joining as Consul General of CGI, Sydney he served as Ambassador of India to the Republic of Cuba from July 2021 to November 2023.
+ 
+As the Joint Secretary, he led the e-Governance and IT Division as well as the Cyber Diplomacy Division at the Ministry of External Affairs from 2019 to 2021.
+He also represented India as an expert in the 6th UNGGE on advancing state behavior and the 1st OEWG for ICT developments in the context of International
+Security during the same period. During his tenure at the Ministry of External Affairs in New Delhi, he served in various capacities, including Deputy Secretary
+in the Latin American Division and Director for Eurasian Affairs.
+ 
+Dr. Janakiraman completed a Bachelor of Science degree in Agriculture from Tamil Nadu Agricultural University from 1991-1995, followed by a Master of Science
+in Agricultural Entomology from the same university from 1996-1998. He then obtained his PhD from the Indian Agricultural Research Institute (IARI) in New Delhi in 2002.
+He speaks English, Tamil, Hindi and Portuguese. He is a keen golfer. He is married and has two daughters.
+ 
+`,
     image:
-      "https://res.cloudinary.com/dq23wxdum/image/upload/v1720158935/SIPBN/rm42ukqmz9oc5totcjcb.png",
-    title:
-      "Career diplomat, joined the Indian Foreign Service in 2002",
+      "https://res.cloudinary.com/dq23wxdum/image/upload/v1720161307/SIPBN/b5unnyqdkakq8t1ubrvc.png",
+    title: "Career diplomat, joined the Indian Foreign Service in 2002",
   },
   {
     id: "23",
     name: "Stela Scolar",
-    description: ``,
+    description: ` 
+Stela Solar is the Inaugural Director of Australia’s National AI Centre (NAIC) that was incubated by CSIRO and now resides at the Department of Industry, Science and Resources. NAIC’s mission is to accelerate positive AI adoption and innovation that benefits business and community. Currently, Stela also serves as Co-chair of the Commonwealth AI Consortium. She has previously held roles at Microsoft including Global Director of AI Solution Sales, as well as roles across IT distributors and technology startups. Over the past 15 years, Stela has led business model transformations which enable organisations to capture new revenue opportunities and build competitive advantage with emerging technologies such as Cloud, IoT and AI. With a background in sustainability and creative industries, Stela thrives in ambiguity, change and purpose-led organisations. Outside of the technology arena, Stela enjoys the challenge of competitive sailing and tries to find time to play cello and piano. 
+ `,
     image:
-      "https://res.cloudinary.com/dq23wxdum/image/upload/v1720158934/SIPBN/alnsctuapiqlgxib6vod.jpg",
-    title:
-      "Inaugural Director of Australia’s National AI Centre (NAIC).",
+      "https://res.cloudinary.com/dq23wxdum/image/upload/v1720161307/SIPBN/jpkaqsnatjd5mubyh6sm.png",
+    title: "Director, National AI Centre, CSIRO ",
   },
   {
     id: "24",
     name: "Lee Heckin",
-    description: ``,
+    description: `Lee has over 30 years’ experience in the technology industry, having been in technical sales, business development roles and most recently as the CTO for Microsoft ANZ.
+Lee has worked across the UK, Asia, and Australia, before joining Microsoft, Lee led the Internet of Things team for Amazon Web Services in Asia Pacific. Earlier in his career, he was a CISSP security architect with RSA Security and worked at both Tivoli and IBM.
+His work today spans Asia engaging with Government, regulators, policy makers and think tanks on strengthening the understanding of Artificial Intelligence, Large Language models & Machine Learning technology and the responsible ways in which it can be governed and operated.
+He has supported Governments around the world as an independent contributor; being a member of the Singapore AI-Verify committee and a founding member of the NSW AI Advisory Committee. In addition, Lee has supported the Australian Federal Government’s AI Action plan and the National Quantum Strategy working directly with the Department of Industry and the Office of the Chief Scientist. He continues to work in collaboration with the National AI Centre in the Responsible AI Think Tank.
+Lee believes in the potential of technology to help build a brighter and more inclusive future and is a regular speaker on innovation and Artificial Intelligence.
+ `,
     image:
-      "https://res.cloudinary.com/dq23wxdum/image/upload/v1720159076/SIPBN/qjdaovahogkrsbpajo7k.png",
-    title:
-      "AI Technology & Policy Lead, Microsoft Asia",
+      "https://res.cloudinary.com/dq23wxdum/image/upload/v1720161306/SIPBN/dqqtv5cwyt5htkjaeif7.png",
+    title: "AI Technology & Policy Lead, Microsoft Asia",
   },
-
-
 ];

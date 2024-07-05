@@ -12,7 +12,8 @@ const Header = () => {
   const [dropdownOpen, setDropdownOpen] = useState({
     about: false,
     captech: false,
-    contact: false, // Added contact dropdown state
+    contact: false,
+    globalPitching: false,
   });
 
   const router = useRouter();
@@ -24,7 +25,12 @@ const Header = () => {
     const handleClickOutside = (event) => {
       if (navRef.current && !navRef.current.contains(event.target)) {
         setOpen(false);
-        setDropdownOpen({ about: false, captech: false, contact: false }); // Reset contact dropdown state
+        setDropdownOpen({
+          about: false,
+          captech: false,
+          contact: false,
+          globalPitching: false,
+        }); // Reset contact dropdown state
       }
     };
 
@@ -37,7 +43,12 @@ const Header = () => {
 
   const handleLinkClick = () => {
     setOpen(false);
-    setDropdownOpen({ about: false, captech: false, contact: false }); // Reset contact dropdown state
+    setDropdownOpen({
+      about: false,
+      captech: false,
+      contact: false,
+      globalPitching: false,
+    }); // Reset contact dropdown state
   };
 
   const toggleDropdown = (menu) => {
@@ -136,6 +147,7 @@ const Header = () => {
             >
               Global Pitching
             </a>
+
             <Link
               href="/success"
               onClick={handleLinkClick}
