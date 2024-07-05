@@ -13,7 +13,7 @@ const Header = () => {
     about: false,
     captech: false,
     contact: false,
-    globalPitching: false,
+    globalPitching: false, // Added globalPitching dropdown state
   });
 
   const router = useRouter();
@@ -29,8 +29,8 @@ const Header = () => {
           about: false,
           captech: false,
           contact: false,
-          globalPitching: false,
-        }); // Reset contact dropdown state
+          globalPitching: false, // Reset globalPitching dropdown state
+        });
       }
     };
 
@@ -47,8 +47,8 @@ const Header = () => {
       about: false,
       captech: false,
       contact: false,
-      globalPitching: false,
-    }); // Reset contact dropdown state
+      globalPitching: false, // Reset globalPitching dropdown state
+    });
   };
 
   const toggleDropdown = (menu) => {
@@ -65,7 +65,7 @@ const Header = () => {
         <Link href="/">
           <img
             className="sipLogo"
-            src="https://res.cloudinary.com/dq23wxdum/image/upload/v1719933691/SIPBN/ll3eflx5ib4bnsjmpn8z.png "
+            src="https://res.cloudinary.com/dq23wxdum/image/upload/v1719933691/SIPBN/ll3eflx5ib4bnsjmpn8z.png"
             alt="logo"
             height={"60px"}
           />
@@ -140,14 +140,27 @@ const Header = () => {
             >
               Events
             </Link>
-            <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLSdiA6YPJaorTgxsvt-ZMMePCMLIbKnI3fS971sxMZeSaPewoQ/viewform"
-              onClick={handleLinkClick}
-              className={activeLink === "/glob" ? "activeLink" : ""}
-            >
-              Global Pitching
-            </a>
+            <div className="dropdown">
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSdiA6YPJaorTgxsvt-ZMMePCMLIbKnI3fS971sxMZeSaPewoQ/viewform"
+                onClick={handleLinkClick}
+                className={activeLink === "/glob" ? "activeLink" : ""}
+              >
+                Global Pitching
+              </a>
+              <FontAwesomeIcon
+                icon={faCaretDown}
+                onClick={() => toggleDropdown("globalPitching")}
+              />
 
+              {dropdownOpen.globalPitching && (
+                <div className="dropdown-content">
+                  <Link href="/companies" onClick={handleLinkClick}>
+                    Presenting Companies
+                  </Link>
+                </div>
+              )}
+            </div>
             <Link
               href="/success"
               onClick={handleLinkClick}

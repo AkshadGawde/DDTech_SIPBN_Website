@@ -755,3 +755,19 @@ ul {
 .blogsTitle{
   font-size: auto;
 }
+
+.imageGallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+  background-color: #f8f9fa; // Assuming this fits your theme
+}
+  .image {
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
