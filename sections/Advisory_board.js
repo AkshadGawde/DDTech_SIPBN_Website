@@ -9,6 +9,27 @@ const Advisory_board = () => {
        <div className="container">
         <br/>
         <Title title={"Advisory Board"} />
+
+        <div className="advisoryContainer">
+              <div>
+                <h2 className="advisoryTitle">"Roderick H. McGeoch AO, LLB"</h2>
+                <p className="advisoryDescription">
+                Rod McGeoch has had and continues to enjoy a remarkable career at the forefront of business, sports administration and the legal profession.
+He unites exemplary senior level management experience with an unparalleled commitment to achievement.
+Perhaps best known as the leader of Sydney’s successful Olympics 2000 bid, he is Chairman or Director of a wide range of major corporations and past Chairman of Corrs Chambers Westgarth, one of Australia’s largest law firms.
+He was described in an ABN AMRO report as one of Australasia’s most influential Directors. His appointments include Chairman of Chubb Insurance Australia Limited, and Vantage Private Equity Growth Limited. He is a Consultant of the Group Board of Corporation America and a Director of Corporacion America International S.a.r.l, and Corporacion America Airports S.A. He is Chairman of Australasian Media Co, a member of the Board of Destination NSW. He Chairman of SureVision and APP Corporation Pty Ltd. He completed lengthy terms as a Director of Ramsay Health Care Limited, Chairman of Skycity Entertainment Group Ltd and Mediaworks Ltd two major New Zealand companies and continues that connection as Honorary Chairman of the Trans-Tasman Business Circle and immediate Past Chairman of the Australia New Zealand Leadership Forum. He is a Trustee and Deputy Chairman of the Sydney Cricket Ground & Sports Ground Trust.
+He is a past President of the Law Society of NSW and a Member of the Order of Australia, awarded in recognition of his invaluable services to the legal profession. On 26 January 2013 Mr McGeoch became an Officer of the Order of Australia in recognition of his “distinguished service to the community through contributions to a range of organisations and to sport.”
+In 2014 Mr McGeoch was appointed Honorary Consul of Luxembourg in Australia. He completed his term of office in April 2021.
+                </p>
+              </div>
+              <img
+                className="advisoryImg"
+                src="https://res.cloudinary.com/dq23wxdum/image/upload/v1719275860/SIPBN/o3icsmvryenqqclxicbu.png"
+              />
+            </div>
+
+            <hr />
+
             <div className="advisoryContainer">
               <div className="advisoryItem">
                 <h2 className="advisoryTitle">Stephen Harrison B.Ec, CPA</h2>
@@ -33,104 +54,6 @@ const Advisory_board = () => {
                 className="advisoryImg"
                 src="https://res.cloudinary.com/dq23wxdum/image/upload/v1719269658/SIPBN/wtors8w4kktwnxazinjs.png"
                 alt="Profile Image"
-              />
-            </div>
-
-            <hr />
-
-            <div className="advisoryContainer">
-              <div>
-                <h2 className="advisoryTitle">Dr Sandra Krishnan</h2>
-                <p className="advisoryDescription">
-                  Dr Sandra Krishnan is a surgeon, and beyond this, an educator,
-                  mentor, writer, and speaker. She is a Senior Consultant,
-                  Surgical Oncologist; Breast, Melanoma and General Surgeon and
-                  Senior Clinical Lecturer ANU, based in Sydney and Canberra.
-                  She is Co-President of the Provincial Surgeons Association of
-                  Australia and Co-Convenor for the ACT Annual Scientific
-                  Meeting in August 2022 in Canberra. Dr Krishnan is a Member of
-                  RACS Special Groups — Surgical Oncology, Women in Surgery; has
-                  memberships with BreastSurgANZ, ANZ Breast Cancer Trials
-                  Group, Australasian Society for Breast Disease, ACT & SE NSW
-                  Breast Cancer Treatment Group, ANZ Melanoma Trials Group. She
-                  is also a CHASM (Collaborating Hospitals’ Audit of Surgical
-                  Mortality) First Line Assessor and a Senior Instructor for
-                  Early Management of Severe Trauma.
-                  <br />
-                  <br />
-                  Dr Krishnan is a Non-Executive Director – Board of So Brave
-                  Australia’s Young Women’s Breast Cancer Charity. She is a
-                  Mentor for ASSA, Australasian Students’ Surgical Association
-                  (ASSA). She has partnerships with Healthcert Education and is
-                  an op Ed Writer for Oncology and Medical Republic, Staff Lead
-                  for ‘The Link,’ an ANU program to connect global healthcare
-                  workers. She is the Founder of ‘Note to Myself,’ What I wish I
-                  knew in my 20s, and empowering chapter series for women
-                  empowering women while raising funds for charity.
-                </p>
-              </div>
-              <img
-                className="advisoryImg"
-                src="https://res.cloudinary.com/dq23wxdum/image/upload/v1719269761/SIPBN/rs2ps9luclezitrbsfzc.png"
-              />
-            </div>
-
-            <hr />
-
-            <div className="advisoryContainer">
-              <div>
-                <h2 className="advisoryTitle">Malcolm Edwards</h2>
-                <p className="advisoryDescription">
-                  Malcolm Edwards is currently a Director of a number of private
-                  companies focussing on industry and venture capital and is a
-                  Board Member of several community organisations including the
-                  Commercial Education Society of Australia, previously of Royal
-                  Far West Children’s Hospital and the National Drug and Alcohol
-                  Authority and inaugural National Vice President of the
-                  Australian Institute of Company Directors.
-                  <br />
-                  <br />
-                  Previously was Managing Director of ASX-listed companies and
-                  served on public company boards in Australia and
-                  internationally.
-                </p>
-              </div>
-              <img
-                className="advisoryImg"
-                src="https://res.cloudinary.com/dq23wxdum/image/upload/v1719269793/SIPBN/n4mafjlos7wpsjb4xtjk.png"
-              />
-            </div>
-
-            <hr />
-
-            <div className="advisoryContainer">
-              <div>
-                <h2 className="advisoryTitle">Dianne Tipping </h2>
-                <p className="advisoryDescription">
-                  Dianne has enjoyed a long and varied career in international
-                  trade promotion and facilitation. Dianne has been Chair of the
-                  Export Council of Australia for 6 years.
-                  <br />
-                  <br />
-                  She is a commercially astute senior leader with a proven track
-                  record within the trade community. With over 40 years’
-                  experience and a background in both the business ownership and
-                  project management of greenfield projects is helping guide the
-                  growth of Australian trade by serving on several Boards and
-                  sharing critical knowledge and insights.
-                  <br />
-                  <br />
-                  Dianne is involved with many public and private organisations
-                  dedicated to the betterment of international trade as well as
-                  a participant on numerous Government and Non-Government
-                  Committees including the Dept. of Home Affairs’ National
-                  Committee on Trade Facilitation and the Dept. of Agriculture
-                  and Water Resources’ DAWR Cargo Consultative Committee.
-                </p>
-              </div>
-              <img
-                className="advisoryImg"
-                src="https://res.cloudinary.com/dq23wxdum/image/upload/v1719270127/SIPBN/fkfym7xbawuijukrmcs6.png"
               />
             </div>
 
@@ -175,7 +98,119 @@ const Advisory_board = () => {
 
             <hr />
 
+            <div className="advisoryContainer">
+              <div>
+                <h2 className="advisoryTitle">Dianne Tipping </h2>
+                <p className="advisoryDescription">
+                  Dianne has enjoyed a long and varied career in international
+                  trade promotion and facilitation. Dianne has been Chair of the
+                  Export Council of Australia for 6 years.
+                  <br />
+                  <br />
+                  She is a commercially astute senior leader with a proven track
+                  record within the trade community. With over 40 years’
+                  experience and a background in both the business ownership and
+                  project management of greenfield projects is helping guide the
+                  growth of Australian trade by serving on several Boards and
+                  sharing critical knowledge and insights.
+                  <br />
+                  <br />
+                  Dianne is involved with many public and private organisations
+                  dedicated to the betterment of international trade as well as
+                  a participant on numerous Government and Non-Government
+                  Committees including the Dept. of Home Affairs’ National
+                  Committee on Trade Facilitation and the Dept. of Agriculture
+                  and Water Resources’ DAWR Cargo Consultative Committee.
+                </p>
+              </div>
+              <img
+                className="advisoryImg"
+                src="https://res.cloudinary.com/dq23wxdum/image/upload/v1719270127/SIPBN/fkfym7xbawuijukrmcs6.png"
+              />
+            </div>
 
+            <hr />
+
+            <div className="advisoryContainer">
+              <div>
+                <h2 className="advisoryTitle">Malcolm Edwards</h2>
+                <p className="advisoryDescription">
+                  Malcolm Edwards is currently a Director of a number of private
+                  companies focussing on industry and venture capital and is a
+                  Board Member of several community organisations including the
+                  Commercial Education Society of Australia, previously of Royal
+                  Far West Children’s Hospital and the National Drug and Alcohol
+                  Authority and inaugural National Vice President of the
+                  Australian Institute of Company Directors.
+                  <br />
+                  <br />
+                  Previously was Managing Director of ASX-listed companies and
+                  served on public company boards in Australia and
+                  internationally.
+                </p>
+              </div>
+              <img
+                className="advisoryImg"
+                src="https://res.cloudinary.com/dq23wxdum/image/upload/v1719269793/SIPBN/n4mafjlos7wpsjb4xtjk.png"
+              />
+            </div>
+
+            <hr />
+
+            <div className="advisoryContainer">
+              <div>
+                <h2 className="advisoryTitle">Sarah Fairhurst</h2>
+                <p className="advisoryDescription">
+                Sarah Fairhurst has a portfolio of Board roles as a Non-Executive Director (NED) covering four companies in the energy sector and was recently on the Advisory Board of a company providing ESG services. She has lived and worked in the UK, Asia, and Australia and understands the electricity and gas markets, cultures, and cross-border complexities of this region. A hallmark of her Executive career was co-founding TLG in 2010 – a boutique energy economic and strategy advisory firm. Sarah combines strong strategic, commercial, and analytical thinking together with pragmatism and practical experience across many countries to solve complex energy problems.
+                </p>
+              </div>
+              <img
+                className="advisoryImg"
+                src="https://res.cloudinary.com/dq23wxdum/image/upload/v1719346273/SIPBN/h6bqf9man7u8bry9szsh.png"
+              />
+            </div>
+
+            <hr/>
+
+            <div className="advisoryContainer">
+              <div>
+                <h2 className="advisoryTitle">Dr Sandra Krishnan</h2>
+                <p className="advisoryDescription">
+                  Dr Sandra Krishnan is a surgeon, and beyond this, an educator,
+                  mentor, writer, and speaker. She is a Senior Consultant,
+                  Surgical Oncologist; Breast, Melanoma and General Surgeon and
+                  Senior Clinical Lecturer ANU, based in Sydney and Canberra.
+                  She is Co-President of the Provincial Surgeons Association of
+                  Australia and Co-Convenor for the ACT Annual Scientific
+                  Meeting in August 2022 in Canberra. Dr Krishnan is a Member of
+                  RACS Special Groups — Surgical Oncology, Women in Surgery; has
+                  memberships with BreastSurgANZ, ANZ Breast Cancer Trials
+                  Group, Australasian Society for Breast Disease, ACT & SE NSW
+                  Breast Cancer Treatment Group, ANZ Melanoma Trials Group. She
+                  is also a CHASM (Collaborating Hospitals’ Audit of Surgical
+                  Mortality) First Line Assessor and a Senior Instructor for
+                  Early Management of Severe Trauma.
+                  <br />
+                  <br />
+                  Dr Krishnan is a Non-Executive Director – Board of So Brave
+                  Australia’s Young Women’s Breast Cancer Charity. She is a
+                  Mentor for ASSA, Australasian Students’ Surgical Association
+                  (ASSA). She has partnerships with Healthcert Education and is
+                  an op Ed Writer for Oncology and Medical Republic, Staff Lead
+                  for ‘The Link,’ an ANU program to connect global healthcare
+                  workers. She is the Founder of ‘Note to Myself,’ What I wish I
+                  knew in my 20s, and empowering chapter series for women
+                  empowering women while raising funds for charity.
+                </p>
+              </div>
+              <img
+                className="advisoryImg"
+                src="https://res.cloudinary.com/dq23wxdum/image/upload/v1719269761/SIPBN/rs2ps9luclezitrbsfzc.png"
+              />
+            </div>
+
+            <hr />
+            
             <div className="advisoryContainer">
               <div>
                 <h2 className="advisoryTitle">Schon D Condon RFD</h2>
@@ -201,47 +236,7 @@ const Advisory_board = () => {
                 src="https://res.cloudinary.com/dq23wxdum/image/upload/v1719270393/SIPBN/lc7pxpwl8dqwftsavjbd.png"
               />
             </div>
-
             
-            <hr />
-
-            <div className="advisoryContainer">
-              <div>
-                <h2 className="advisoryTitle">"Roderick H. McGeoch AO, LLB"</h2>
-                <p className="advisoryDescription">
-                Rod McGeoch has had and continues to enjoy a remarkable career at the forefront of business, sports administration and the legal profession.
-He unites exemplary senior level management experience with an unparalleled commitment to achievement.
-Perhaps best known as the leader of Sydney’s successful Olympics 2000 bid, he is Chairman or Director of a wide range of major corporations and past Chairman of Corrs Chambers Westgarth, one of Australia’s largest law firms.
-He was described in an ABN AMRO report as one of Australasia’s most influential Directors. His appointments include Chairman of Chubb Insurance Australia Limited, and Vantage Private Equity Growth Limited. He is a Consultant of the Group Board of Corporation America and a Director of Corporacion America International S.a.r.l, and Corporacion America Airports S.A. He is Chairman of Australasian Media Co, a member of the Board of Destination NSW. He Chairman of SureVision and APP Corporation Pty Ltd. He completed lengthy terms as a Director of Ramsay Health Care Limited, Chairman of Skycity Entertainment Group Ltd and Mediaworks Ltd two major New Zealand companies and continues that connection as Honorary Chairman of the Trans-Tasman Business Circle and immediate Past Chairman of the Australia New Zealand Leadership Forum. He is a Trustee and Deputy Chairman of the Sydney Cricket Ground & Sports Ground Trust.
-He is a past President of the Law Society of NSW and a Member of the Order of Australia, awarded in recognition of his invaluable services to the legal profession. On 26 January 2013 Mr McGeoch became an Officer of the Order of Australia in recognition of his “distinguished service to the community through contributions to a range of organisations and to sport.”
-In 2014 Mr McGeoch was appointed Honorary Consul of Luxembourg in Australia. He completed his term of office in April 2021.
-                </p>
-              </div>
-              <img
-                className="advisoryImg"
-                src="https://res.cloudinary.com/dq23wxdum/image/upload/v1719275860/SIPBN/o3icsmvryenqqclxicbu.png"
-              />
-            </div>
-
-            <hr />
-
-            <div className="advisoryContainer">
-              <div>
-                <h2 className="advisoryTitle">Sarah Fairhurst</h2>
-                <p className="advisoryDescription">
-                Sarah Fairhurst has a portfolio of Board roles as a Non-Executive Director (NED) covering four companies in the energy sector and was recently on the Advisory Board of a company providing ESG services. She has lived and worked in the UK, Asia, and Australia and understands the electricity and gas markets, cultures, and cross-border complexities of this region. A hallmark of her Executive career was co-founding TLG in 2010 – a boutique energy economic and strategy advisory firm. Sarah combines strong strategic, commercial, and analytical thinking together with pragmatism and practical experience across many countries to solve complex energy problems.
-                </p>
-              </div>
-              <img
-                className="advisoryImg"
-                src="https://res.cloudinary.com/dq23wxdum/image/upload/v1719346273/SIPBN/h6bqf9man7u8bry9szsh.png"
-              />
-            </div>
-
-            
-            
-
-
             </div>
             </>
 
