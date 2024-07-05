@@ -7,6 +7,15 @@ import { Card } from "@/components/common/Card";
 import { Title, TitleSm } from "@/components/common/Title";
 import React from "react";
 import Link from "next/link";
+import Timeline from '@mui/lab/Timeline';
+import TimelineItem from '@mui/lab/TimelineItem';
+import TimelineSeparator from '@mui/lab/TimelineSeparator';
+import TimelineConnector from '@mui/lab/TimelineConnector';
+import TimelineContent from '@mui/lab/TimelineContent';
+import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
+import TimelineDot from '@mui/lab/TimelineDot';
+
+import Typography from '@mui/material/Typography';
 
 const Team = () => {
   return (
@@ -30,21 +39,77 @@ const Team = () => {
           <Title title="Discover .Connect .Execute" />
           <br />
 
-          <div className="ctTextWrapper">
-            <div className="text-content">
-              <ul className="event-list">
-                <li>
-                  25th November 2024 – Welcome Drinks at NSW Parliament House
-                </li>
-                <li>26th November 2024 – Global Summit at ICC Sydney</li>
-                <li>26th November 2024 – Global Summit Post Event Drinks</li>
-                <li>27th November 2024 – “Invitation Only” Private Dinner</li>
-                <li>28th November 2024 – Business Matching</li>
-              </ul>
-            </div>
-          </div>
+          <Timeline position="alternate" className="timeline">
+      <TimelineItem>
+        <TimelineOppositeContent className="timeline-content" align="right">
+          <Typography variant="body2" color="text.secondary"></Typography>
+        </TimelineOppositeContent>
+        <TimelineSeparator>
+          <TimelineConnector />
+          <TimelineDot color="primary" />
+          <TimelineConnector />
+        </TimelineSeparator>
+        <TimelineContent className="timeline-content">
+          <Typography variant="h6" component="span">
+            25th November 2024
+          </Typography>
+          <Typography>Welcome Drinks at NSW Parliament House</Typography>
+        </TimelineContent>
+      </TimelineItem>
+      <TimelineItem>
+        <TimelineOppositeContent className="timeline-content">
+          <Typography variant="body2" color="text.secondary"></Typography>
+        </TimelineOppositeContent>
+        <TimelineSeparator>
+          <TimelineConnector />
+          <TimelineDot color="primary" />
+          <TimelineConnector />
+        </TimelineSeparator>
+        <TimelineContent className="timeline-content">
+          <Typography variant="h6" component="span">
+            26th November 2024
+          </Typography>
+          <Typography >Global Summit at ICC Sydney Global Summit Post Event Drinks</Typography>
+        </TimelineContent>
+      </TimelineItem>
+      <TimelineItem>
+        <TimelineOppositeContent className="timeline-content">
+          <Typography variant="body2" color="text.secondary"></Typography>
+        </TimelineOppositeContent>
+        <TimelineSeparator>
+          <TimelineConnector />
+          <TimelineDot color="primary" />
+          <TimelineConnector className="secondary-connector" />
+        </TimelineSeparator>
+        <TimelineContent className="timeline-content">
+          <Typography variant="h6" component="span">
+            27th November 2024
+          </Typography>
+          <Typography>“Invitation Only” Private Dinner</Typography>
+        </TimelineContent>
+      </TimelineItem>
+      <TimelineItem>
+        <TimelineOppositeContent className="timeline-content">
+          <Typography variant="body2" color="text.secondary"></Typography>
+        </TimelineOppositeContent>
+        <TimelineSeparator>
+          <TimelineConnector className="secondary-connector" />
+          <TimelineDot color="primary" />
+          <TimelineConnector />
+        </TimelineSeparator>
+        <TimelineContent className="timeline-content">
+          <Typography variant="h6" component="span">
+            28th November 2024
+          </Typography>
+          <Typography>Business Matching</Typography>
+        </TimelineContent>
+      </TimelineItem>
+    </Timeline>
 
-          <br />
+
+
+
+         
           <Title title="What is #CapTech2024" />
           <p>
             #CapTech2024 is your gateway to the forefront of innovation,
