@@ -137,9 +137,9 @@ const Header = () => {
               Global Pitching
             </a>
             <Link
-              href="#"
+              href="/success"
               onClick={handleLinkClick}
-              className={activeLink === "/blog" ? "activeLink" : ""}
+              className={activeLink === "/success" ? "activeLink" : ""}
             >
               Success Stories
             </Link>
