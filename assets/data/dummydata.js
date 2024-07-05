@@ -359,29 +359,32 @@ export const memberdata = [
       "https://res.cloudinary.com/dq23wxdum/image/upload/v1719346591/SIPBN/j58spx3bezirxl4wehwh.png",
     post: "Member for Oatley; Shadow Minister for Multiculturalism; Shadow Minister for Jobs, Industry, Innovation, Science and Technology; Shadow Minister for South-Western Sydney",
   },
+
+
+  
   {
-    id: 18,
+    id: 21,
     title: "Craig Scroggie",
     cover:
       "https://res.cloudinary.com/dq23wxdum/image/upload/v1720158934/SIPBN/w3ol5wtgvaqeatmjj9w8.jpg",
     post: "CEO and Managing Director of NEXTDC",
   },
   {
-    id: 19,
+    id: 22,
     title: "Dr. Janakiraman",
     cover:
       "https://res.cloudinary.com/dq23wxdum/image/upload/v1720158935/SIPBN/rm42ukqmz9oc5totcjcb.png",
     post: "Career diplomat, joined the Indian Foreign Service in 2002.",
   },
   {
-    id: 20,
+    id: 23,
     title: "Stela Scolar",
     cover:
       "https://res.cloudinary.com/dq23wxdum/image/upload/v1720158934/SIPBN/alnsctuapiqlgxib6vod.jpg",
     post: "Inaugural Director of Australia’s National AI Centre (NAIC).",
   },
   {
-    id: 21,
+    id: 24,
     title: "Lee Heckin",
     cover:
       "https://res.cloudinary.com/dq23wxdum/image/upload/v1720159076/SIPBN/qjdaovahogkrsbpajo7k.png",
@@ -634,4 +637,45 @@ Carmel is a respected leader with the ability to build an experienced and loyal 
     title:
       "Founder and CEO of Cocoplum Design Studio and Boxareno Modular Constructions",
   },
+
+
+  {
+    id: "21",
+    name: "Craig Scroggie",
+    description: ``,
+    image:
+     "https://res.cloudinary.com/dq23wxdum/image/upload/v1720158934/SIPBN/w3ol5wtgvaqeatmjj9w8.jpg",
+    title:
+      "CEO and Managing Director of NEXTDC",
+  },
+
+  {
+    id: "22",
+    name: "CEO and Managing Director of NEXTDC",
+    description: ``,
+    image:
+      "https://res.cloudinary.com/dq23wxdum/image/upload/v1720158935/SIPBN/rm42ukqmz9oc5totcjcb.png",
+    title:
+      "Career diplomat, joined the Indian Foreign Service in 2002",
+  },
+  {
+    id: "23",
+    name: "Stela Scolar",
+    description: ``,
+    image:
+      "https://res.cloudinary.com/dq23wxdum/image/upload/v1720158934/SIPBN/alnsctuapiqlgxib6vod.jpg",
+    title:
+      "Inaugural Director of Australia’s National AI Centre (NAIC).",
+  },
+  {
+    id: "24",
+    name: "Lee Heckin",
+    description: ``,
+    image:
+      "https://res.cloudinary.com/dq23wxdum/image/upload/v1720159076/SIPBN/qjdaovahogkrsbpajo7k.png",
+    title:
+      "AI Technology & Policy Lead, Microsoft Asia",
+  },
+
+
 ];
