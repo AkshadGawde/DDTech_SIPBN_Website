@@ -75,7 +75,7 @@ const Contact = () => {
                   </div>
                   <div className="inputs">
                     <span>Email</span>
-                    <input type="text" />
+                    <input type="email" />
                   </div>
                 </div>
                 <div className="grid-2">
@@ -98,7 +98,8 @@ const Contact = () => {
           Submit
         </button>
         <ReCAPTCHA
-          sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
+        className="captcha"
+          sitekey="6Ldu3ggqAAAAAOxYno4zfSKarTV8K415AB6x7SWf"
           onChange={onChange}
         />
               </form>
