@@ -6,18 +6,26 @@ import { React } from "react";
 import Marqueee from "@/components/common/Marqueee";
 
 const Hero = () => {
-
   return (
     <>
-    {/* <div className="marquee-holder">
+      <div className="marquee-hero">
       <Marqueee className="marquee"/>
-    </div> */}
+      </div>
       <section className="hero">
         <div className="container">
           <TitleLogo title="#CapTech2024" caption="" className="logobg" />
           <h1 className="hero-title">DISCOVER . CONNECT . EXECUTE</h1>
           <TitleSm title="Venue: ICC Sydney 14 Darling Drive Sydney, NSW 2000 Australia" />
           <p>Tue, 26 Nov 2024 9:00 AM - Wed, 27 Nov 2024 9:00 PM AEDT</p>
+          <a
+            href="https://forms.gle/GLbvrFiTyUjfmadF7"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="button-primary"
+          >
+            {" "}
+            Apply for Membership
+          </a>
         </div>
       </section>
       <section className="hero-sec">
@@ -31,7 +39,7 @@ const Hero = () => {
                   height="110px"
                   className="presImg"
                 />
-                <h2> - Raman Bhalla</h2>
+                <h2>  Raman Bhalla</h2>
               </div>
               <p>
                 Sydney Investors, Professionals and Business Networking Group
@@ -44,7 +52,15 @@ const Hero = () => {
                 visits, information sessions, and receptions.
               </p>
             </div>
-            <button className="button-primary">Apply for Membership!</button>
+            <a
+              href="https://forms.gle/GLbvrFiTyUjfmadF7"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="button-primary"
+            >
+              {" "}
+              Apply for Membership
+            </a>
           </div>
         </div>
       </section>
@@ -56,12 +72,6 @@ const Hero = () => {
           <Title title={"Upcoming Events"} />
         </div>
         <div className="eventContainer">
-          <a href="https://www.eventbrite.com.au/e/#CapTech2024-discover-connect-execute-venue-icc-sydney-tickets-772015889307">
-            <img
-              className="eventImg"
-              src="https://res.cloudinary.com/duv9rw1wg/image/upload/v1719326603/homePage/tvndvw12ujvsbg0dmvaq.png"
-            />
-          </a>
           <a href="https://www.eventbrite.com.au/e/#CapTech2024-discover-connect-execute-venue-icc-sydney-tickets-772015889307">
             <img
               className="eventImg"

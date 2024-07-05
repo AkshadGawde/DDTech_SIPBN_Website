@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { TitleLogo } from "./Title";
 import { BsFacebook } from "react-icons/bs";
-import { AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
+import { AiFillInstagram, AiFillLinkedin, AiFillYoutube } from "react-icons/ai";
 
 const Footer = () => {
   return (
@@ -12,7 +12,7 @@ const Footer = () => {
           <CompanyLinks />
           {/* <ServiceLinks /> */}
           <SocialLinks />
-          <NewsLetter/>
+          <NewsLetter />
         </div>
       </div>
     </footer>
@@ -22,15 +22,21 @@ const Footer = () => {
 const CompanyInfo = () => (
   <div className="company-info">
     <img
-      src="https://res.cloudinary.com/dq23wxdum/image/upload/v1719265063/SIPBN/acssi7dnvshtv6u9igie.png"
+      src="https://res.cloudinary.com/dq23wxdum/image/upload/v1719933691/SIPBN/ll3eflx5ib4bnsjmpn8z.png "
       alt="logo"
-      height={"60px"}
+      height={"80px"}
     />
-    <p>
-      Questions? <br /> Reach us at:
-    </p>
+    <p>Questions? Reach us at:</p>
     <h3>info@sipbn.com.au</h3>
-    <button className="button-primary">Apply for Membership</button>
+    <a
+      href="https://forms.gle/GLbvrFiTyUjfmadF7"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="button-primary"
+    >
+      {" "}
+      Apply for Membership
+    </a>
   </div>
 );
 
@@ -39,7 +45,7 @@ const CompanyLinks = () => (
     <h3>COMPANY</h3>
 
     <li>
-      <Link href="/team">About Us</Link>
+      <Link href="/agency">About Us</Link>
     </li>
     <li>
       <Link href="/showcase">#CapTech 2024</Link>
@@ -61,15 +67,20 @@ const CompanyLinks = () => (
   </ul>
 );
 
-const NewsLetter = () =>(
+const NewsLetter = () => (
   <div class="newsletter-container">
-        <h2>Subscribe to Our Newsletter</h2>
-        <p>Get the latest updates and offers.</p>
-        <form class="newsletter-form" action="#" method="post">
-            <input type="email" name="email" placeholder="Enter your email" required/>
-            <button type="submit">Subscribe</button>
-        </form>
-    </div>
+    <h2>Subscribe to Our Newsletter</h2>
+    <p>Get the latest updates and offers.</p>
+    <form class="newsletter-form" action="#" method="post">
+      <input
+        type="email"
+        name="email"
+        placeholder="Enter your email"
+        required
+      />
+      <button type="submit">Subscribe</button>
+    </form>
+  </div>
 );
 
 // const ServiceLinks = () => (
@@ -91,24 +102,50 @@ const NewsLetter = () =>(
 // );
 
 const SocialLinks = () => (
-  <ul className="social-links">
+  <div className="social-links">
     <h3>CONNECT</h3>
-    <li>
-      <Link href="https://facebook.com" aria-label="Facebook">
-        <BsFacebook size={25} />
+    <ul>
+      <li>
+        <Link
+          href="https://www.facebook.com/share/FkeVvzovKpn77kQy/?mibextid=qi2Omg
+
+"
+          aria-label="Facebook"
+        >
+          <BsFacebook size={25} />
+          <span>Facebook</span>
+        </Link>
+      </li>
+      <li>
+        <Link
+          href="https://www.instagram.com/captech_events?igsh=b3NqbWIxOGd6dDU0
+"
+          aria-label="Instagram"
+        >
+          <AiFillInstagram size={25} />
+          <span>Instagram</span>
+        </Link>
+      </li>
+      <li>
+        <Link
+          href="https://www.linkedin.com/company/sydney-investors-professionals-and-business-networking-group-sipbn/
+"
+          aria-label="LinkedIn"
+        >
+          <AiFillLinkedin size={25} />
+          <span>Linkedin</span>
+        </Link>
+      </li>
+      <Link
+        href="https://youtube.com/@sipbn?si=qtTIuexllZ9Sv8f7"
+        aria-label="Youtube"
+      >
+        <AiFillYoutube size={25} />
+        <span>Youtube </span>
       </Link>
-    </li>
-    <li>
-      <Link href="https://instagram.com" aria-label="Instagram">
-        <AiFillInstagram size={25} />
-      </Link>
-    </li>
-    <li>
-      <Link href="https://linkedin.com" aria-label="LinkedIn">
-        <AiFillLinkedin size={25} />
-      </Link>
-    </li>
-  </ul>
+      <li></li>
+    </ul>
+  </div>
 );
 
 export default Footer;

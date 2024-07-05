@@ -1,8 +1,8 @@
 header {
   padding: 16px 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  position: fixed; /* Changed to fixed for better positioning */
-  width: 100%; /* Ensure it spans the full width */
+  position: fixed;
+  width: 100%;
   top: 0;
   backdrop-filter: blur(10px);
   z-index: 999;
@@ -14,11 +14,12 @@ header {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 0 20px; /* Added padding for better alignment */
+    padding: 0 20px;
 
     nav {
       display: flex;
       align-items: center;
+      margin-left: auto;
 
       a {
         margin: 0 8px;
@@ -45,7 +46,8 @@ header {
       .dropdown {
         position: relative;
         display: inline-block;
-
+        align-self: center;
+        
         .dropdown-content {
           display: none;
           position: absolute;
@@ -87,9 +89,64 @@ header {
         }
       }
     }
+  }
 
+  .menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  @media (max-width: 800px) {
+    .container {
+      flex-direction: column;
+      align-items: flex-start;
+
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+
+        .dropdown .dropdown-content {
+          position: relative;
+          box-shadow: none;
+          background-color: transparent;
+          padding-top: 0;
+
+          a {
+            padding: 8px 0;
+          }
+        }
+      }
+    }
+
+    .menu-toggle {
+      display: block;
+    }
+
+    .openMenu {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      position: absolute;
+      top: 64px;
+      left: 0;
+      background-color: #0d0d0d;
+      padding: 20px;
+    }
+
+    .closeMenu {
+      display: none;
+    }
   }
 }
+
 .sipLogo {
   display: inline;
   margin: 0 16px;

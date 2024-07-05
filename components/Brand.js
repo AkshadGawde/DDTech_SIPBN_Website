@@ -19,7 +19,7 @@ const Brand = () => {
             ))}
           </div>
           <div className='heading-title'>
-            <Title title='Media Partners' />
+            <Title title='In the Media' />
           </div>
           <div className='brand-content grid-7 py'>
             {brand2.map((item) => (

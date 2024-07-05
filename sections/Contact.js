@@ -1,5 +1,5 @@
 import { Title, TitleSm } from "@/components/common/Title";
-import React from "react";
+import React, { useState } from "react";
 import {
   AiFillBehanceCircle,
   AiFillInstagram,
@@ -9,10 +9,21 @@ import { BiUserCircle } from "react-icons/bi";
 import { BsFacebook } from "react-icons/bs";
 import { FiHeadphones, FiHelpCircle } from "react-icons/fi";
 import { IoLocationOutline } from "react-icons/io5";
+import ReCAPTCHA from "react-google-recaptcha";
 
 const Contact = () => {
+
+  const [verfied, setVerifed] = useState(false);
+
+  //recaptcha function
+  function onChange(value) {
+    console.log("Captcha value:", value);
+    setVerifed(true);
+  }
+
   return (
     <>
+    
       <section className="contact bg-top">
         <div className="container">
           <div className="heading-title">
@@ -53,12 +64,10 @@ const Contact = () => {
             </div>
             <div className="right w-70">
               <TitleSm title="Make an online enquiry" />
-              <p className="desc-p">
-                Got questions? Ideas? Fill out the form below to get our
-                proposal.{" "}
-              </p>
+             
 
               <form>
+                
                 <div className="grid-2">
                   <div className="inputs">
                     <span>Name</span>
@@ -66,7 +75,7 @@ const Contact = () => {
                   </div>
                   <div className="inputs">
                     <span>Email</span>
-                    <input type="text" />
+                    <input type="email" />
                   </div>
                 </div>
                 <div className="grid-2">
@@ -83,7 +92,16 @@ const Contact = () => {
                   <span>TELL US A BIT ABOUT YOUR PROJECT*</span>
                   <textarea cols="30" rows="10"></textarea>
                 </div>
-                <button className="button-primary">Submit</button>
+               
+                <button type="submit" className="button-primary" disabled={!verfied}
+        >
+          Submit
+        </button>
+        <ReCAPTCHA
+        className="captcha"
+          sitekey="6Ldu3ggqAAAAAOxYno4zfSKarTV8K415AB6x7SWf"
+          onChange={onChange}
+        />
               </form>
             </div>
           </div>

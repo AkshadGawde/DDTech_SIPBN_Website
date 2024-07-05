@@ -2,10 +2,14 @@ import { Title, TitleSm } from "@/components/common/Title";
 import { expertise } from "@/assets/data/dummydata";
 import { Card } from "@/components/common/Card";
 import React from "react";
+import Marqueee from "@/components/common/Marqueee";
 
 const ShowCase = () => {
   return (
     <>
+    <div className="marquee-hero">
+      <Marqueee className="marquee"/>
+      </div>
       <section>
         <div className="container ">
           <br />
@@ -119,7 +123,7 @@ const ShowCase = () => {
         </div>
       </section>
 
-      <section className="agency bg-top">
+     {/* <section className="agency bg-top">
         <div className="container">
           <TitleSm title="" />
           <Title title="#CapTech2023 Festival" className="title-bg" />
@@ -257,7 +261,7 @@ const ShowCase = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section>*/}
     </>
   );
 };

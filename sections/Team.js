@@ -7,6 +7,15 @@ import { Card } from "@/components/common/Card";
 import { Title, TitleSm } from "@/components/common/Title";
 import React from "react";
 import Link from "next/link";
+import Timeline from '@mui/lab/Timeline';
+import TimelineItem from '@mui/lab/TimelineItem';
+import TimelineSeparator from '@mui/lab/TimelineSeparator';
+import TimelineConnector from '@mui/lab/TimelineConnector';
+import TimelineContent from '@mui/lab/TimelineContent';
+import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
+import TimelineDot from '@mui/lab/TimelineDot';
+
+import Typography from '@mui/material/Typography';
 
 const Team = () => {
   return (
@@ -24,27 +33,83 @@ const Team = () => {
         <div className="container">
           <div className="heading-title">
             <TitleSm title="" />
-            <Title title="#CapTech2024 Festival" className="title-bg" />
+            <Title title="#CapTech2024 Summit" className="title-bg" />
           </div>
           <br />
           <Title title="Discover .Connect .Execute" />
           <br />
 
-          <div className="ctTextWrapper">
-            <div className="text-content">
-              <ul className="event-list">
-                <li>
-                  25th November 2024 – Welcome Drinks at NSW Parliament House
-                </li>
-                <li>26th November 2024 – Global Summit at ICC Sydney</li>
-                <li>26th November 2024 – Global Summit Post Event Drinks</li>
-                <li>27th November 2024 – “Invitation Only” Private Dinner</li>
-                <li>28th November 2024 – Business Matching</li>
-              </ul>
-            </div>
-          </div>
+          <Timeline position="alternate" className="timeline">
+      <TimelineItem>
+        <TimelineOppositeContent className="timeline-content" align="right">
+          <Typography variant="body2" color="text.secondary"></Typography>
+        </TimelineOppositeContent>
+        <TimelineSeparator>
+          <TimelineConnector />
+          <TimelineDot color="primary" />
+          <TimelineConnector />
+        </TimelineSeparator>
+        <TimelineContent className="timeline-content">
+          <Typography variant="h6" component="span">
+            25th November 2024
+          </Typography>
+          <Typography>Welcome Drinks at NSW Parliament House</Typography>
+        </TimelineContent>
+      </TimelineItem>
+      <TimelineItem>
+        <TimelineOppositeContent className="timeline-content">
+          <Typography variant="body2" color="text.secondary"></Typography>
+        </TimelineOppositeContent>
+        <TimelineSeparator>
+          <TimelineConnector />
+          <TimelineDot color="primary" />
+          <TimelineConnector />
+        </TimelineSeparator>
+        <TimelineContent className="timeline-content">
+          <Typography variant="h6" component="span">
+            26th November 2024
+          </Typography>
+          <Typography >Global Summit at ICC Sydney Global Summit Post Event Drinks</Typography>
+        </TimelineContent>
+      </TimelineItem>
+      <TimelineItem>
+        <TimelineOppositeContent className="timeline-content">
+          <Typography variant="body2" color="text.secondary"></Typography>
+        </TimelineOppositeContent>
+        <TimelineSeparator>
+          <TimelineConnector />
+          <TimelineDot color="primary" />
+          <TimelineConnector className="secondary-connector" />
+        </TimelineSeparator>
+        <TimelineContent className="timeline-content">
+          <Typography variant="h6" component="span">
+            27th November 2024
+          </Typography>
+          <Typography>“Invitation Only” Private Dinner</Typography>
+        </TimelineContent>
+      </TimelineItem>
+      <TimelineItem>
+        <TimelineOppositeContent className="timeline-content">
+          <Typography variant="body2" color="text.secondary"></Typography>
+        </TimelineOppositeContent>
+        <TimelineSeparator>
+          <TimelineConnector className="secondary-connector" />
+          <TimelineDot color="primary" />
+          <TimelineConnector />
+        </TimelineSeparator>
+        <TimelineContent className="timeline-content">
+          <Typography variant="h6" component="span">
+            28th November 2024
+          </Typography>
+          <Typography>Business Matching</Typography>
+        </TimelineContent>
+      </TimelineItem>
+    </Timeline>
 
-          <br />
+
+
+
+         
           <Title title="What is #CapTech2024" />
           <p>
             #CapTech2024 is your gateway to the forefront of innovation,
@@ -62,27 +127,24 @@ const Team = () => {
           <br />
           <Title title="#CapTech2024 – Key Features" />
           <ul>
-            <li>
+            <p>
               A focus on growing and expanding businesses, deal-making and great
-              customer experience
-            </li>
-            <li>
-              Global exposure as evidenced by physical attendees from Australia,
-              India, Middle East, China, Austria, Hong Kong, Europe, Indonesia,
-              Hong Kong, Malta and many others
-            </li>
+              customer experience Global exposure as evidenced by physical
+              attendees from Australia, India, Middle East, China, Austria, Hong
+              Kong, Europe, Indonesia, Hong Kong, Malta and many others.
+            </p>
             <li>
               World-class global pitching sessions throughout the year provide
               the platform for talent, scale ups, capital and global exposure,
-              culminating in the “best of the best” in November at CapTech
+              culminating in the “best of the best” in November at CapTech.
             </li>
             <li>
               Focused business matching sessions are tailored to get you the
-              results
+              results.
             </li>
             <li>
               Welcome drinks at NSW Parliament House and an exclusive private
-              dinner event provide unique connections and networks
+              dinner event provide unique connections and networks.
             </li>
           </ul>
         </div>

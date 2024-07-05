@@ -7,7 +7,7 @@ import {
   import { Title, TitleSm } from "@/components/common/Title";
   import React from "react";
   import Link from "next/link";
-
+ 
 
 function speakers() {
   return (
@@ -22,7 +22,7 @@ function speakers() {
           </div>
           <div className="grid-4 py">
             {memberdata.map((item) => (
-              <Card data={item} key={item.id} caption={item.post} />
+              <Card data={item} key={item.id} caption={item.post} path={item.path}/>
             ))}
           </div>
 

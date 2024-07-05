@@ -2,10 +2,11 @@
 .hero {
   text-align: center;
   padding: $xl-6 0;
-  padding-top: $xll-3;
-  height: 90vh !important;
+  padding-top: $xl-2;
+  height: 80vh !important;
   overflow: hidden !important;
   position: relative;
+
   &::before {
     content: "";
     position: absolute;
@@ -17,52 +18,105 @@
     background-size: cover;
     background-position: center;
     z-index: -1;
-    overflow-x: hidden !important;
   }
+
+  .container {
+    position: relative; // Ensure it stacks above the background
+    z-index: 1; // Ensure it stacks above the background
+  }
+
   .hero-title {
-    font-size: $xll-3; // Default font size for larger devices
+    font-size: $xll-2; // Default font size for larger devices
     line-height: 115px; // Default line height for larger devices
     font-weight: 600;
     margin: $xl-6 0;
-    padding-bottom : 400px;
+    padding-bottom: 20px; // Reduced padding to make room for other elements
+
     // Media query for tablets and below
     @media (max-width: 768px) {
       font-size: $xl-2; // Slightly smaller font size for tablets
       line-height: 90px; // Adjust line height accordingly
-      padding-bottom : 300px;
+      padding-bottom: 300px;
     }
-  
+
     // Media query for mobile devices
     @media (max-width: 480px) {
       font-size: $md; // Even smaller font size for mobile devices
       line-height: 70px; // Adjust line height accordingly
-      padding-bottom : 150px;
+      padding-bottom: 150px;
     }
   }
+
   .sub-heading {
     display: flex;
     justify-content: center;
+
     .titleSm {
       margin: 0 $xl-1;
     }
+
     span {
       font-size: $xll;
       line-height: 0;
       color: $green;
     }
   }
+
+  .titleSm {
+    margin: 20px 0; // Added margin for spacing
+    color: white; // Ensure text color is visible
+    font-size: $lg; // Adjust font size as needed
+
+    @media (max-width: 768px) {
+      font-size: $md; // Adjust font size for smaller screens
+    }
+
+    @media (max-width: 480px) {
+      font-size: $sm; // Adjust font size for mobile devices
+    }
+  }
+
+  p {
+    margin-bottom: 20px; // Added margin for spacing
+    color: white; // Ensure text color is visible
+    font-size: $md; // Adjust font size as needed
+
+    @media (max-width: 768px) {
+      font-size: $sm; // Adjust font size for smaller screens
+    }
+
+    @media (max-width: 480px) {
+      font-size: $sm; // Adjust font size for mobile devices
+    }
+  }
 }
+
+
 
 .marquee-holder{
   margin-top: 100px;
+  z-index: 999;
+  
+}
+.marquee-hero{
   background-color: #43bddb;
 }
 
 // expertise
 .expertise {
+  .card{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 50px 0 50px 0;
+  }
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgb(193, 60, 246);
+  }
   .card-img {
     height: 300px;
   }
+ 
 }
 
 //banner
@@ -77,8 +131,23 @@
     background: $gradient;
     @include flex(center, space-between, none);
   }
-}
+  .button-primary {
+    margin-left: 16px;
+    padding: 8px 16px;
+    background-color: rgb(14, 17, 220);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
 
+    &:hover {
+      background-color: rgb(46, 0, 152);
+      transition: background-color 0.6s;
+      
+    }
+  }
+}
+ 
 //testimonial
 .testimonial {
   .card {
@@ -167,48 +236,81 @@
 }
 
 // footer
-footer {
+.footer {
   position: relative;
-  padding: $xll-3 0 0 0;
-  border-top: 1px solid rgba($white, 0.2);
+  padding: 10vh 0 0 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
   overflow: hidden;
+
   .logobg {
     line-height: 0;
-    padding-top: $xl-1;
-    margin-bottom: $xll;
+    padding-top: 20px; /* Adjust as needed */
+    margin-bottom: 40px; /* Adjust as needed */
   }
+
   h3 {
     font-weight: 400;
     letter-spacing: 2px;
-    font-size: $lg;
-    margin-bottom: $xl-6;
+    font-size: 1.5rem; /* Assuming this value for $lg */
+    margin-bottom: 40px; /* Assuming this value for $xl-4 */
   }
+
   span,
   p {
-    color: rgba($white, 0.5);
+    margin: 2px;
+    color: rgba(255, 255, 255, 0.5);
+    display: inline-block; /* Ensure inline block to use vertical-align */
+    vertical-align: middle; /* Vertically align the text */
   }
-  ul li a {
-    color: rgba($white, 0.5);
+
+  ul {
+    list-style: none; /* Remove default list styles */
+    padding: 0;
+    margin: 0;
+  }
+
+  ul li {
+    color: rgba(255, 255, 255, 0.5);
     transition: 0.5s ease-in-out;
-    margin-bottom: $xl-2;
-    display: block;
+    margin-bottom: 20px; /* Adjust as needed for spacing between items */
+    text-align: center; /* Center-align the list items */
+    
     &:hover {
-      color: $green;
+      color: $green; /* Assuming this value for $green */
     }
   }
+
+  a {
+    color: rgba(255, 255, 255, 0.5);
+    transition: 0.5s ease-in-out;
+    text-decoration: none;
+    display: inline-flex; /* Use flexbox for alignment */
+    align-items: center; /* Center align vertically */
+    
+    &:hover {
+      color: $green; /* Assuming this value for $green */
+    }
+  }
+  svg{
+    margin: 2px;
+  }
   .connect {
-    @include flex(center, space-between, none);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
     span {
-      font-size: $sm;
+      font-size: 0.875rem; /* Assuming this value for $sm */
       letter-spacing: 2px;
     }
   }
+
   &::after {
     content: "";
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 100% !important;
+    width: 100%;
     height: 60vh;
     background-image: url("../assets/images/blurfooter-min.png");
     background-size: cover;
@@ -217,6 +319,8 @@ footer {
     z-index: -1;
   }
 }
+
+
 
 //Agency Page
 .bg-top {
@@ -265,6 +369,7 @@ footer {
       }
     }
     .misson-p {
+     
       border-left: 5px solid $indigo;
       padding-left: $xl-5;
     }
@@ -336,15 +441,18 @@ footer {
     border-radius: 50px 0 50px 0;
     padding: 30px; // Use smaller, fixed padding
     background-color: #171e20;
-    height: 700px;
+    height: fit-content;
 
+.captcha{
 
+}
     form {
       margin-top: 30px; // Use fixed margin for consistency
     }
 
     .inputs {
-      margin-bottom: 20px; // Use smaller, fixed margin
+      margin-bottom: 20px;
+       // Use smaller, fixed margin
 
       span {
         text-transform: uppercase;
@@ -357,6 +465,10 @@ footer {
         padding: 15px;
         margin-top: 10px; // Use smaller, fixed margin
         color: #000;
+        border-radius: 20px;
+      }
+      textarea{
+        resize: vertical;
       }
     }
 
@@ -484,4 +596,27 @@ footer {
       flex-direction: column;
     }
   }
+}
+
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+ 
+
+  
+
+  .button-primary {
+    &:disabled {
+      background-color: #ccc;
+      cursor: not-allowed;
+    }
+  }
+
+  .captcha {
+    margin-top: 20px;
+      }
 }

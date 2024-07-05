@@ -125,14 +125,20 @@
 .secondary-button,
 .button-primary {
   text-transform: capitalize;
-  color: $dark;
+  color: white;
   padding: 13px 40px;
-  background-color: $green;
+  background-color: rgb(14, 17, 220);
   font-size: $md;
   border-radius: 50px;
   cursor: pointer;
   margin: 10px;
+  &:hover {
+    background-color: rgb(46, 0, 152);
+    transition: background-color 0.6s;
+  }
+  
 }
+
 .secondary-button {
   background-color: #171e20;
   box-shadow: none;
@@ -251,6 +257,7 @@ button-holder {
     align-items: center;
   }
   justify-content: space-evenly;
+  p{font-size: 1.2em;}
 }
 
 .presImgContainer{
@@ -270,9 +277,11 @@ button-holder {
   padding-top: 60px;
   p {
     margin: $xl-6 0;
+    
     color: rgba($white, 1);
   }
 }
+
 .card {
   h1 {
     transition: 0.5s;
@@ -291,13 +300,14 @@ button-holder {
   }
   a {
     display: flex;
-    align-items: left;
+    align-items: center;
     color: $indigo;
     text-transform: uppercase;
     margin-top: $sm;
     .link-icon {
       margin-left: $sm;
     }
+    justify-content: center;
   }
   span {
     color: rgba($white, 0.4);
@@ -319,6 +329,10 @@ button-holder {
     letter-spacing: 0px !important;
     text-transform: capitalize;
   }
+  .titleSm{
+    font-size: 1em;
+  }
+ 
 }
 
 /* Section styling */
@@ -337,6 +351,7 @@ button-holder {
   align-items: center; /* Center items horizontally */
   text-align: left;
   margin: 30px 10px;
+  width: 100%;
 }
 
 .advisoryItem {
@@ -423,7 +438,7 @@ hr{
   text-align: center;
 }
 .eventImg{
-  max-height: 700px;
+  max-height: 30vh;
   margin: 0px 20px;
   flex: 1;
   margin: 0px 10px;
@@ -432,6 +447,7 @@ hr{
 .heading-title img, .eventContainer img {
   max-width: 100%;
   height: auto;
+  max-height: 80vh;
 }
 .event-info {
   background: $dark;
@@ -489,7 +505,7 @@ ul {
 
 .agency {
   .heading-title {
-    margin-bottom: 50px;
+    
 
     .title-bg {
       font-size: 2.5rem;
@@ -526,7 +542,7 @@ ul {
 }
 
 .eventImg{
-  max-width: 60%;
+  max-width: 70%;
 }
 
 .eventCard {
@@ -627,6 +643,10 @@ ul {
 .advisoryDescription {
   text-align: left;
 }
+.advisoryDescription2 {
+  text-align: left;
+  font-size: 3vh;
+}
 .newsletter-container {
   text-align: center;
   padding: 40px 20px;
@@ -684,4 +704,54 @@ ul {
 ::placeholder {
   color: white;
   opacity: 1; /* Firefox */
+}
+
+.blogsContainer {
+  display: flex;
+  flex-direction: column; /* Stack items vertically on small screens */
+  align-items: center; /* Center items horizontally */
+  text-align: left;
+  margin: 30px 10px;
+  width: 100%;
+}
+
+.blogsItem {
+  max-width: 100%; /* Take full width on smaller screens */
+  text-align: center; /* Center text on small screens */
+  margin-bottom: 20px; /* Add space between items */
+}
+
+.blogsImg {
+  width: 50%; /* Adjust width of image */
+  border-radius: 50%;
+  margin-top: 20px; /* Add space above the image */
+}
+
+@media (min-width: 768px) {
+  .blogsContainer {
+      flex-direction: row; /* Display items side by side on larger screens */
+      justify-content: space-between; /* Align items with space between them */
+      align-items: flex-start; /* Align items to the top vertically */
+  }
+
+  .blogsItem {
+      max-width: 70%; /* Limit width of text content on larger screens */
+      text-align: left; /* Align text to the left on larger screens */
+  }
+
+  .blogsImg {
+      width: 25%; /* Adjust width of image on larger screens */
+      margin-top: 0; /* Remove margin above the image on larger screens */
+      margin-left: 20px; /* Add space between text and image on larger screens */
+  }
+}
+.blogsDescription {
+  text-align: left;
+}
+.blogsDescription2 {
+  text-align: left;
+  font-size: auto;
+}
+.blogsTitle{
+  font-size: auto;
 }

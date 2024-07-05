@@ -6,6 +6,7 @@ import React from "react";
 const Services = () => {
   return (
     <>
+
       <section className="agency bg-top">
         <video autoPlay muted loop className="video-background">
           <source
@@ -19,7 +20,7 @@ const Services = () => {
         <div className="container">
           <div className="heading-title">
             <TitleSm title="" />
-            <Title title="#CapTech2023 Festival" className="title-bg" />
+            <Title title="#CapTech2023 Summit" className="title-bg" />
           </div>
         </div>
       </section>

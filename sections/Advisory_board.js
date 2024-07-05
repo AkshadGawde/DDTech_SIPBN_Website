@@ -138,52 +138,6 @@ const Advisory_board = () => {
 
             <div className="advisoryContainer">
               <div>
-                <h2 className="advisoryTitle">Bina Gupta</h2>
-                <p className="advisoryDescription">
-                  Bina Gupta is the Founder & Chief Executive of BG Business
-                  Communications Ltd. The business is headquartered in Hong Kong
-                  and has been operating since 2005 focusing on sales/marketing
-                  and project consultancy.
-                  <br />
-                  <br />
-                  Bina delivers multimedia experience (30+ years),
-                  entrepreneurship, leadership and corporate governance
-                  expertise to her business. She previously launched new media
-                  assets and ran divisions for major listed companies including
-                  News Limited and Fairfax Media Ltd in Australia; in Asia, STAR
-                  TV Group and Euromoney Institutional Investor. With her own
-                  business operating for many years she continued her
-                  entrepreneurial drive and passion for innovation, in launching
-                  two registered trademarked brands -innovationhongkong® in
-                  March 2018- a global digital platform fostering innovation
-                  across verticals- and innovatorsclubasia® in 2020 – creating
-                  specialized events, investor deal flow, innovation learning,
-                  mentorship and resources for innovators.
-                  <br />
-                  <br />
-                  Bina was a Director of the Australian Chamber of Commerce Hong
-                  Kong from 2016- 2021, Vice-Chair of the Media & Marketing
-                  Network from 2015-2018 and a judge of the Australia China
-                  Business Awards in 2015 and 2016. She is a Fellow of the Hong
-                  Kong Institute of Directors and has memberships across
-                  business chambers and professional associations keeping her
-                  engaged with trends and developments in the region. She meets
-                  with industry leaders on a regular basis as well as government
-                  officials which ensure she stays relevant to the information
-                  that matters. Bina was appointed as a Convention Ambassador
-                  for the Hong Kong Tourism Board in 2020
-                </p>
-              </div>
-              <img
-                className="advisoryImg"
-                src="https://res.cloudinary.com/dq23wxdum/image/upload/v1719270127/SIPBN/ejarsixmv6o6tuzrf5mi.png"
-              />
-            </div>
-
-            <hr />
-
-            <div className="advisoryContainer">
-              <div>
                 <h2 className="advisoryTitle">Helen Liossis</h2>
                 <p className="advisoryDescription">
                   Helen Liossis is a professional company director and former
@@ -221,43 +175,6 @@ const Advisory_board = () => {
 
             <hr />
 
-            <div className="advisoryContainer">
-              <div>
-                <h2 className="advisoryTitle"> Michael Sharpe</h2>
-                <p className="advisoryDescription">
-                  Michael Sharpe has vast industrial experience and is
-                  recognised for his service to industry, community groups, &
-                  the arts. He is Chairman of the Sharpe Family Office and is
-                  involved with a range of organisations across engineering,
-                  infrastructure, energy, environmental sustainability, the
-                  Australian space industry and the global nuclear industry.
-                  <br />
-                  <br />
-                  He is currently Chairman of two Public Companies in Australia,
-                  NobleOak Life Limited and IncentiaPay Limited (ASX – INP)
-                  <br />
-                  <br />
-                  Michael served as the National Director for Industry at the
-                  Australian Government’s Advanced Manufacturing Growth Centre
-                  and is a former Chairman of the HunterNet Co-operative, which
-                  is widely recognised as the most successful industry ‘cluster’
-                  of its type nationally.
-                  <br />
-                  <br />
-                  He is the Founder of the Nuclear Skills Forum; Chairman of the
-                  Steering Committee for the Australian Government’s Sustainable
-                  Communities and Waste Hub and Director of the AUKUS Forum
-                  regarding the trilateral security pact between Australia, the
-                  United Kingdom, and the United States.
-                </p>
-              </div>
-              <img
-                className="advisoryImg"
-                src="https://res.cloudinary.com/dq23wxdum/image/upload/v1719270248/SIPBN/hy3cckgzvarlmugojhyu.png"
-              />
-            </div>
-
-            <hr />
 
             <div className="advisoryContainer">
               <div>
@@ -285,46 +202,24 @@ const Advisory_board = () => {
               />
             </div>
 
+            
             <hr />
 
             <div className="advisoryContainer">
               <div>
-                <h2 className="advisoryTitle">Reena Jethi</h2>
+                <h2 className="advisoryTitle">"Roderick H. McGeoch AO, LLB"</h2>
                 <p className="advisoryDescription">
-                  Reena is an entrepreneur, educationist and community leader.
-                  Kuber Vaults is a world-class facility to keep valuables safe
-                  and secure. Reena is a Councillor in the Hills Shire Council.
-                  As a Councillor she received an award recognising her work as
-                  an elected representative from a Metropolitan Council at the
-                  12th Annual Ministers’ Awards for Women in Local Government by
-                  Minister for Women the Hon Shelley Hancock MP.
-                  <br />
-                  <br />
-                  Reena migrated to Australia in 2000 and ever since made
-                  Baulkham Hills her home where she lives with her husband and
-                  two boys. Educated in Delhi, India with double bachelors and
-                  double masters degrees, Reena started her career in teaching
-                  initially and now delves into entrepreneurship roles.
-                  <br />
-                  <br />
-                  Because of her commitment towards her community she also
-                  decided to enter local politics and was elected a Councillor
-                  with the Hills Shire Council. She has also worked as Senior
-                  Electorate Officer, Parliament NSW; Treasurer of the NSW
-                  Liberal Women’s Council; Co-chair of Liberal Friends of India
-                  and as Deputy Mayor of The Hills Shire Council.
-                  <br />
-                  <br />
-                  She is a Board Member of the CMRC (Community Migrant Resource
-                  Centre).
-                  <br />
-                  <br />
-                  Reena had a short stint in banking with Westpac Bank.
+                Rod McGeoch has had and continues to enjoy a remarkable career at the forefront of business, sports administration and the legal profession.
+He unites exemplary senior level management experience with an unparalleled commitment to achievement.
+Perhaps best known as the leader of Sydney’s successful Olympics 2000 bid, he is Chairman or Director of a wide range of major corporations and past Chairman of Corrs Chambers Westgarth, one of Australia’s largest law firms.
+He was described in an ABN AMRO report as one of Australasia’s most influential Directors. His appointments include Chairman of Chubb Insurance Australia Limited, and Vantage Private Equity Growth Limited. He is a Consultant of the Group Board of Corporation America and a Director of Corporacion America International S.a.r.l, and Corporacion America Airports S.A. He is Chairman of Australasian Media Co, a member of the Board of Destination NSW. He Chairman of SureVision and APP Corporation Pty Ltd. He completed lengthy terms as a Director of Ramsay Health Care Limited, Chairman of Skycity Entertainment Group Ltd and Mediaworks Ltd two major New Zealand companies and continues that connection as Honorary Chairman of the Trans-Tasman Business Circle and immediate Past Chairman of the Australia New Zealand Leadership Forum. He is a Trustee and Deputy Chairman of the Sydney Cricket Ground & Sports Ground Trust.
+He is a past President of the Law Society of NSW and a Member of the Order of Australia, awarded in recognition of his invaluable services to the legal profession. On 26 January 2013 Mr McGeoch became an Officer of the Order of Australia in recognition of his “distinguished service to the community through contributions to a range of organisations and to sport.”
+In 2014 Mr McGeoch was appointed Honorary Consul of Luxembourg in Australia. He completed his term of office in April 2021.
                 </p>
               </div>
               <img
                 className="advisoryImg"
-                src="https://res.cloudinary.com/dq23wxdum/image/upload/v1719270448/SIPBN/asnqt50qwp4hztt2ahmn.png"
+                src="https://res.cloudinary.com/dq23wxdum/image/upload/v1719275860/SIPBN/o3icsmvryenqqclxicbu.png"
               />
             </div>
 
@@ -332,39 +227,21 @@ const Advisory_board = () => {
 
             <div className="advisoryContainer">
               <div>
-                <h2 className="advisoryTitle">Trevor Oldfield AM KJS JP</h2>
+                <h2 className="advisoryTitle">Sarah Fairhurst</h2>
                 <p className="advisoryDescription">
-                  Having spent most of his life in Western Sydney, Trevor has
-                  acquired a significant depth of knowledge which enables him to
-                  identify many needs within the Community with genuine care and
-                  compassion. He has enjoyed working with a diverse range of
-                  community and charitable organisations, such as the Sate
-                  Emergency Services from age 14, Kids West Children’s Charity,
-                  The Millennium Foundation Westmead, Variety, Ronald MacDonald
-                  House and the Blacktown City Lions Club.
-                  <br />
-                  <br />
-                  Having more than 30 years’ experience within the philanthropic
-                  Community as a company Director and holding various roles
-                  within Senior Management, Trevor has acquired a wonderfully
-                  diverse amount of experience. Trevor has Certificate IV in
-                  Financial and Credit Management and Diploma’s in Business
-                  Management and Human Resources.
-                  <br />
-                  <br />
-                  Trevor currently holds the position of Executive Director of
-                  Kids West Children’s Charity, President of the Chamber
-                  Alliance of Western Sydney, Chairman of the Greater Blacktown
-                  Business Chamber and President of NBC Sports Club.
+                Sarah Fairhurst has a portfolio of Board roles as a Non-Executive Director (NED) covering four companies in the energy sector and was recently on the Advisory Board of a company providing ESG services. She has lived and worked in the UK, Asia, and Australia and understands the electricity and gas markets, cultures, and cross-border complexities of this region. A hallmark of her Executive career was co-founding TLG in 2010 – a boutique energy economic and strategy advisory firm. Sarah combines strong strategic, commercial, and analytical thinking together with pragmatism and practical experience across many countries to solve complex energy problems.
                 </p>
               </div>
               <img
                 className="advisoryImg"
-                src="https://res.cloudinary.com/dq23wxdum/image/upload/v1719270652/SIPBN/iu60w0rfhdfzmkwxf2wp.png"
+                src="https://res.cloudinary.com/dq23wxdum/image/upload/v1719346273/SIPBN/h6bqf9man7u8bry9szsh.png"
               />
             </div>
 
-            <hr />
+            
+            
+
+
             </div>
             </>
 
