@@ -341,6 +341,7 @@
 }
 .capList{
   text-align: justify;
+  font-size: $md;
 }
 .agency {
   h2{
@@ -350,11 +351,11 @@
     text-align: left;
   }
   p{
-    font-size: 15px;
+    font-size: $md;
     margin: 15px 0;
   }
   li{
-    font-size: 15px;
+    font-size: $md;
     margin: 5px 0;
   }
   .content {
