@@ -9,7 +9,7 @@ const Hero = () => {
   return (
     <>
       <div className="marquee-hero">
-      <Marqueee className="marquee"/>
+        <Marqueee className="marquee" />
       </div>
       <section className="hero">
         <div className="container">
@@ -39,17 +39,25 @@ const Hero = () => {
                   height="110px"
                   className="presImg"
                 />
-                <h2>  Raman Bhalla</h2>
+                <h2> Raman Bhalla</h2>
               </div>
               <p>
-                Sydney Investors, Professionals and Business Networking Group
-                Incorporated (SIPBN) aims to facilitate business and opportunity
-                exchange between individuals and organizations in various
-                countries. SIPBN provides access to networks, data, and tools
-                for growth in new markets. With a wide range of connections in
-                trade, business, and government sectors, SIPBN facilitates
-                engagement and departure from Australia through trade missions,
-                visits, information sessions, and receptions.
+                The purpose of Sydney Investors, Professionals and Business
+                Networking Group Incorporated ("SIPBN") is to connect projects
+                with the sources of capital and provide a global business
+                platform fot growing Australian businesses. We are selectors
+                agnostic. We facilitate the engagement to and Australia through
+                our extensive contacts in the business, private capital and
+                government selectors. With our physical offices in Sydney and
+                Queensland in Australia and international offices in India,
+                Middle East, Europe and Hong Kong, our members have the access
+                to a premium business platform to do their business in Australia
+                and globally.
+                <br />
+                <br />
+                Our members get the benefit from our regular networking events
+                and or yearly flagship summit to foster deal making, business
+                connection and innovation.
               </p>
             </div>
             <a
