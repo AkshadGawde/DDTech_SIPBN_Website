@@ -4,8 +4,8 @@ import Marqueee from "@/components/common/Marqueee";
 const Agency = () => {
   return (
     <>
-    <div className="marquee-hero">
-      <Marqueee className="marquee"/>
+      <div className="marquee-hero">
+        <Marqueee className="marquee" />
       </div>
       <section className="agency bg-top">
         <div className="container">
@@ -98,13 +98,13 @@ const Agency = () => {
           <MissionVision
             title="Our mission"
             description="SIPBN will empower access for members to cross-border investment and trade into and out of Australia through our central platform of events, services and connections."
-            imgSrc="https://res.cloudinary.com/dq23wxdum/image/upload/v1719775226/SIPBN/mcqh7d8ro7hqgbtgckgj.png"
+            imgSrc="https://res.cloudinary.com/dq23wxdum/image/upload/v1720255432/SIPBN/aofufxke8ghd3dg4wddv.png"
           />
 
           <MissionVision
             title="Our Vision"
             description="To be recognized as the premium meeting point for the Sydney community of business leaders, investors, regulators, and government representatives with a focus on international investment and trade."
-            imgSrc="https://cdn-icons-png.freepik.com/512/8855/8855521.png"
+            imgSrc="https://res.cloudinary.com/dq23wxdum/image/upload/v1720255439/SIPBN/fduphrml2sukkld0kfem.png"
           />
           <div className="button-holder">
             <button

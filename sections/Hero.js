@@ -18,13 +18,13 @@ const Hero = () => {
           <TitleSm title="Venue: ICC Sydney 14 Darling Drive Sydney, NSW 2000 Australia" />
           <p>Tue, 26 Nov 2024 9:00 AM - Wed, 27 Nov 2024 9:00 PM AEDT</p>
           <a
-            href="https://forms.gle/GLbvrFiTyUjfmadF7"
+            href="https://www.eventbrite.com.au/e/captech2024-discover-connect-execute-venue-icc-sydney-tickets-772015889307"
             target="_blank"
             rel="noopener noreferrer"
             className="button-primary"
           >
             {" "}
-            Apply for Membership
+            Book Your Tickets
           </a>
         </div>
       </section>

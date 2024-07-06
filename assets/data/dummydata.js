@@ -12,7 +12,8 @@ export const expertise = [
   {
     id: 1,
     title: "Networking",
-    cover: "../images/connections.jpg",
+    cover:
+      "https://res.cloudinary.com/dq23wxdum/image/upload/v1720255434/SIPBN/ot5aoliztnbrc5gkzhnd.png",
     desc: [
       { text: "Web design" },
       { text: "Web development" },
@@ -24,7 +25,8 @@ export const expertise = [
   {
     id: 2,
     title: "High Value Deal flow",
-    cover: "../images/deal.jpg",
+    cover:
+      "https://res.cloudinary.com/dq23wxdum/image/upload/v1720255434/SIPBN/wqy0v40l1meobpihrhbk.png",
     desc: [
       { text: "Social media marketing" },
       { text: "Marketing campaigns" },
@@ -35,7 +37,8 @@ export const expertise = [
   {
     id: 3,
     title: "Cross Border Business Opportunities",
-    cover: "../images/cross.jpg",
+    cover:
+      "https://res.cloudinary.com/dq23wxdum/image/upload/v1720255433/SIPBN/j1dvfkeubgipxpqq5ggo.png",
     desc: [
       { text: "E-Commerce website design" },
       { text: "WooCommerce" },
@@ -46,7 +49,8 @@ export const expertise = [
   {
     id: 4,
     title: "Targeted Advocacy",
-    cover: "../images/media.jpg",
+    cover:
+      "https://res.cloudinary.com/dq23wxdum/image/upload/v1720255435/SIPBN/vrebecrfwq9wvfbyeigu.png",
     desc: [
       { text: "Visual identity" },
       { text: "Branding for social media" },
@@ -245,14 +249,14 @@ export const memberdata = [
     title: "The Hon Victor Dominello",
     cover:
       "https://res.cloudinary.com/dq23wxdum/image/upload/v1719275738/SIPBN/wh9v21toua7dvkgndz9s.png",
-    post: "Former NSW Government Minister ",
+    post: "Former NSW Government Minister",
   },
   {
     id: 2,
     title: "Roderick H .McGeoch AO, LLB",
     cover:
       "https://res.cloudinary.com/dq23wxdum/image/upload/v1719275860/SIPBN/o3icsmvryenqqclxicbu.png",
-    post: "Chairman and Director of a wide range of majorcorporations",
+    post: "Chairman and Director of a wide range of major corporations",
   },
   {
     id: 3,
@@ -262,11 +266,25 @@ export const memberdata = [
     post: "CEO & Managing Director of Arab Bank Australia",
   },
   {
+    id: 22,
+    title: "Dr. Janakiraman",
+    cover:
+      "https://res.cloudinary.com/dq23wxdum/image/upload/v1720161307/SIPBN/b5unnyqdkakq8t1ubrvc.png",
+    post: "Career diplomat, joined the Indian Foreign Service in 2002.",
+  },
+  {
     id: 4,
     title: "Carmel Monaghan",
     cover:
       "https://res.cloudinary.com/dq23wxdum/image/upload/v1719275958/SIPBN/fbggytdpkc5vubq2yqhi.png",
     post: "CEO of Ramsay Health Care",
+  },
+  {
+    id: 21,
+    title: "Craig Scroggie",
+    cover:
+      "https://res.cloudinary.com/dq23wxdum/image/upload/v1720161307/SIPBN/nl5lkzm2srjmiufy8zgr.png",
+    post: "CEO and Managing Director of NEXTDC",
   },
   {
     id: 5,
@@ -360,18 +378,11 @@ export const memberdata = [
     post: "Member for Oatley; Shadow Minister for Multiculturalism; Shadow Minister for Jobs, Industry, Innovation, Science and Technology; Shadow Minister for South-Western Sydney",
   },
   {
-    id: 21,
-    title: "Craig Scroggie",
+    id: 24,
+    title: "Lee Heckin",
     cover:
-      "https://res.cloudinary.com/dq23wxdum/image/upload/v1720161307/SIPBN/nl5lkzm2srjmiufy8zgr.png",
-    post: "CEO and Managing Director of NEXTDC",
-  },
-  {
-    id: 22,
-    title: "Dr. Janakiraman",
-    cover:
-      "https://res.cloudinary.com/dq23wxdum/image/upload/v1720161307/SIPBN/b5unnyqdkakq8t1ubrvc.png",
-    post: "Career diplomat, joined the Indian Foreign Service in 2002.",
+      "https://res.cloudinary.com/dq23wxdum/image/upload/v1720161306/SIPBN/dqqtv5cwyt5htkjaeif7.png",
+    post: " AI Technology & Policy Lead, Microsoft Asia",
   },
   {
     id: 23,
@@ -379,13 +390,6 @@ export const memberdata = [
     cover:
       "https://res.cloudinary.com/dq23wxdum/image/upload/v1720161307/SIPBN/jpkaqsnatjd5mubyh6sm.png",
     post: "Inaugural Director of Australia’s National AI Centre (NAIC).",
-  },
-  {
-    id: 24,
-    title: "Lee Heckin",
-    cover:
-      "https://res.cloudinary.com/dq23wxdum/image/upload/v1720161306/SIPBN/dqqtv5cwyt5htkjaeif7.png",
-    post: " AI Technology & Policy Lead, Microsoft Asia",
   },
 ];
 
