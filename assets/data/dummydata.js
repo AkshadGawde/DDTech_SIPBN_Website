@@ -687,18 +687,6 @@ Alumnus of the Year and in 2015 was inducted into the ARN ICT Industry Awards Ha
 Dr. S. Janakiraman is a career diplomat, joined the Indian Foreign Service in 2002.
  
 He has served in various capacities in Diplomatic Missions in Brasilia, Lisbon, Yangon
-<<<<<<< HEAD
-and Pretoria: served as Second Secretary Political, Commercial and Administration in Brasilia from 2004-2008; as First Secretary Political, Commercial, Consular and Administration in Lisbon from 2008-2011; and as Counsellor, headed the Commercial Wing in the Embassy of India  in Yangon from 2013-2016. \n
-He has served as Deputy High Commissioner in Pretoria (South Africa) with concurrent accreditation to Kingdom of Lesotho, from 2016-2019.
-Before joining as Consul General of CGI, Sydney he served as Ambassador of India to the Republic of Cuba from July 2021 to November 2023.\n
-As the Joint Secretary, he led the e-Governance and IT Division as well as the Cyber Diplomacy Division at the Ministry of External Affairs from 2019 to 2021.
-He also represented India as an expert in the 6th UNGGE on advancing state behavior and the 1st OEWG for ICT developments in the context of International Security during the same period. \n
-During his tenure at the Ministry of External Affairs in New Delhi, he served in various capacities, including Deputy Secretary
-in the Latin American Division and Director for Eurasian Affairs.
- 
-Dr. Janakiraman completed a Bachelor of Science degree in Agriculture from Tamil Nadu Agricultural University from 1991-1995, followed by a Master of Science
-in Agricultural Entomology from the same university from 1996-1998. He then obtained his PhD from the Indian Agricultural Research Institute (IARI) in New Delhi in 2002.\n
-=======
 and Pretoria: served as Second Secretary Political, Commercial and Administration in Brasilia from 2004-2008; as First Secretary Political,Commercial, Consular and Administration in Lisbon from 2008-2011; and as Counsellor, headed the Commercial Wing in the Embassy of India  in Yangon
  from 2013-2016. He has served as Deputy High Commissioner in Pretoria (South Africa) with concurrent accreditation to Kingdom of Lesotho, from 2016-2019.\n
 Before joining as Consul General of CGI, Sydney he served as Ambassador of India to the Republic of Cuba from July 2021 to November 2023.
@@ -708,7 +696,6 @@ He also represented India as an expert in the 6th UNGGE on advancing state behav
 in the Latin American Division and Director for Eurasian Affairs.
  
 Dr. Janakiraman completed a Bachelor of Science degree in Agriculture from Tamil Nadu Agricultural University from 1991-1995, followed by a Master of Science in Agricultural Entomology from the same university from 1996-1998. He then obtained his PhD from the Indian Agricultural Research Institute (IARI) in New Delhi in 2002.\n
->>>>>>> 9aa95827a77a7aea6b667401d493470d6b919f26
 He speaks English, Tamil, Hindi and Portuguese. He is a keen golfer. He is married and has two daughters.
  
 `,
