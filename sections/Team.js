@@ -5,7 +5,7 @@ import {
 } from "../assets/data/dummydata";
 import { Card } from "@/components/common/Card";
 import { Title, TitleSm } from "@/components/common/Title";
-import React from "react";
+import React, { useEffect } from 'react';
 import Link from "next/link";
 import Timeline from '@mui/lab/Timeline';
 import TimelineItem from '@mui/lab/TimelineItem';
@@ -14,18 +14,32 @@ import TimelineConnector from '@mui/lab/TimelineConnector';
 import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
 import TimelineDot from '@mui/lab/TimelineDot';
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 import Typography from '@mui/material/Typography';
 
+
 const Team = () => {
+  const events = [
+    { date: '25th November 2024', description: 'Welcome Drinks at NSW Parliament House' },
+    { date: '26th November 2024', description: 'Global Summit at ICC Sydney Global Summit Post Event Drinks' },
+    { date: '27th November 2024', description: '“Invitation Only” Private Dinner' },
+    { date: '28th November 2024', description: 'Business Matching' },
+  ];
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    
+    });
+  }, []);
+
   return (
     <>
       <section className="agency bg-top">
         <video autoPlay muted loop className="video-background">
           <source
-            src={
-              "https://res.cloudinary.com/dq23wxdum/video/upload/v1719355178/SIPBN/ojkenqfaxbfhewi3djn8.mp4"
-            }
+            src={"https://res.cloudinary.com/dq23wxdum/video/upload/v1719355178/SIPBN/ojkenqfaxbfhewi3djn8.mp4"}
             type="video/mp4"
           />
           Your browser does not support the video tag.
@@ -40,76 +54,31 @@ const Team = () => {
           <br />
 
           <Timeline position="alternate" className="timeline">
-      <TimelineItem>
-        <TimelineOppositeContent className="timeline-content" align="right">
-          <Typography variant="body2" color="text.secondary"></Typography>
-        </TimelineOppositeContent>
-        <TimelineSeparator>
-          <TimelineConnector />
-          <TimelineDot color="primary" />
-          <TimelineConnector />
-        </TimelineSeparator>
-        <TimelineContent className="timeline-content">
-          <Typography variant="h6" component="span">
-            25th November 2024
-          </Typography>
-          <Typography>Welcome Drinks at NSW Parliament House</Typography>
-        </TimelineContent>
-      </TimelineItem>
-      <TimelineItem>
-        <TimelineOppositeContent className="timeline-content">
-          <Typography variant="body2" color="text.secondary"></Typography>
-        </TimelineOppositeContent>
-        <TimelineSeparator>
-          <TimelineConnector />
-          <TimelineDot color="primary" />
-          <TimelineConnector />
-        </TimelineSeparator>
-        <TimelineContent className="timeline-content">
-          <Typography variant="h6" component="span">
-            26th November 2024
-          </Typography>
-          <Typography >Global Summit at ICC Sydney Global Summit Post Event Drinks</Typography>
-        </TimelineContent>
-      </TimelineItem>
-      <TimelineItem>
-        <TimelineOppositeContent className="timeline-content">
-          <Typography variant="body2" color="text.secondary"></Typography>
-        </TimelineOppositeContent>
-        <TimelineSeparator>
-          <TimelineConnector />
-          <TimelineDot color="primary" />
-          <TimelineConnector className="secondary-connector" />
-        </TimelineSeparator>
-        <TimelineContent className="timeline-content">
-          <Typography variant="h6" component="span">
-            27th November 2024
-          </Typography>
-          <Typography>“Invitation Only” Private Dinner</Typography>
-        </TimelineContent>
-      </TimelineItem>
-      <TimelineItem>
-        <TimelineOppositeContent className="timeline-content">
-          <Typography variant="body2" color="text.secondary"></Typography>
-        </TimelineOppositeContent>
-        <TimelineSeparator>
-          <TimelineConnector className="secondary-connector" />
-          <TimelineDot color="primary" />
-          <TimelineConnector />
-        </TimelineSeparator>
-        <TimelineContent className="timeline-content">
-          <Typography variant="h6" component="span">
-            28th November 2024
-          </Typography>
-          <Typography>Business Matching</Typography>
-        </TimelineContent>
-      </TimelineItem>
-    </Timeline>
+            {events.map((event, index) => (
+              <TimelineItem
+                key={index}
+                className="timeline-item"
+                style={{ '--item-index': index }}
+              data-aos="fade-up"
+              >
+                <TimelineOppositeContent className="timeline-content" align="right">
+                  <Typography variant="body2" color="text.secondary"></Typography>
+                </TimelineOppositeContent>
+                <TimelineSeparator>
+                  <TimelineConnector />
+                  <TimelineDot color="primary" />
+                  <TimelineConnector className={index === events.length - 1 ? '' : 'secondary-connector'} />
+                </TimelineSeparator>
+                <TimelineContent className="timeline-content">
+                  <Typography variant="h6" component="span">
+                    {event.date}
+                  </Typography>
+                  <Typography>{event.description}</Typography>
+                </TimelineContent>
+              </TimelineItem>
+            ))}
+          </Timeline>
 
-
-
-
-         
           <Title title="What is #CapTech2024" />
           <p>
             #CapTech2024 is your gateway to the forefront of innovation,
