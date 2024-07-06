@@ -13,7 +13,7 @@ const Header = () => {
     about: false,
     captech: false,
     contact: false,
-    globalPitching: false, // Added globalPitching dropdown state
+    globalPitching: false,
   });
 
   const router = useRouter();
@@ -29,7 +29,7 @@ const Header = () => {
           about: false,
           captech: false,
           contact: false,
-          globalPitching: false, // Reset globalPitching dropdown state
+          globalPitching: false,
         });
       }
     };
@@ -47,7 +47,7 @@ const Header = () => {
       about: false,
       captech: false,
       contact: false,
-      globalPitching: false, // Reset globalPitching dropdown state
+      globalPitching: false,
     });
   };
 
