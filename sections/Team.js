@@ -5,32 +5,40 @@ import {
 } from "../assets/data/dummydata";
 import { Card } from "@/components/common/Card";
 import { Title, TitleSm } from "@/components/common/Title";
-import React, { useEffect } from 'react';
+import React, { useEffect } from "react";
 import Link from "next/link";
-import Timeline from '@mui/lab/Timeline';
-import TimelineItem from '@mui/lab/TimelineItem';
-import TimelineSeparator from '@mui/lab/TimelineSeparator';
-import TimelineConnector from '@mui/lab/TimelineConnector';
-import TimelineContent from '@mui/lab/TimelineContent';
-import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
-import TimelineDot from '@mui/lab/TimelineDot';
+import Timeline from "@mui/lab/Timeline";
+import TimelineItem from "@mui/lab/TimelineItem";
+import TimelineSeparator from "@mui/lab/TimelineSeparator";
+import TimelineConnector from "@mui/lab/TimelineConnector";
+import TimelineContent from "@mui/lab/TimelineContent";
+import TimelineOppositeContent from "@mui/lab/TimelineOppositeContent";
+import TimelineDot from "@mui/lab/TimelineDot";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Typography from '@mui/material/Typography';
-
+import Typography from "@mui/material/Typography";
 
 const Team = () => {
   const events = [
-    { date: '25th November 2024', description: 'Welcome Drinks at NSW Parliament House' },
-    { date: '26th November 2024', description: 'Global Summit at ICC Sydney Global Summit Post Event Drinks' },
-    { date: '27th November 2024', description: '“Invitation Only” Private Dinner' },
-    { date: '28th November 2024', description: 'Business Matching' },
+    {
+      date: "25th November 2024",
+      description: "Welcome Drinks at NSW Parliament House",
+    },
+    {
+      date: "26th November 2024",
+      description:
+        "Global Summit at ICC Sydney Global Summit Post Event Drinks",
+    },
+    {
+      date: "27th November 2024",
+      description: "“Invitation Only” Private Dinner",
+    },
+    { date: "28th November 2024", description: "Business Matching" },
   ];
 
   useEffect(() => {
     AOS.init({
-      duration: 1000,
-    
+      duration: 1500,
     });
   }, []);
 
@@ -39,7 +47,9 @@ const Team = () => {
       <section className="agency bg-top">
         <video autoPlay muted loop className="video-background">
           <source
-            src={"https://res.cloudinary.com/dq23wxdum/video/upload/v1719355178/SIPBN/ojkenqfaxbfhewi3djn8.mp4"}
+            src={
+              "https://res.cloudinary.com/dq23wxdum/video/upload/v1719355178/SIPBN/ojkenqfaxbfhewi3djn8.mp4"
+            }
             type="video/mp4"
           />
           Your browser does not support the video tag.
@@ -58,16 +68,26 @@ const Team = () => {
               <TimelineItem
                 key={index}
                 className="timeline-item"
-                style={{ '--item-index': index }}
-              data-aos="fade-up"
+                style={{ "--item-index": index }}
+                data-aos="fade-up"
               >
-                <TimelineOppositeContent className="timeline-content" align="right">
-                  <Typography variant="body2" color="text.secondary"></Typography>
+                <TimelineOppositeContent
+                  className="timeline-content"
+                  align="right"
+                >
+                  <Typography
+                    variant="body2"
+                    color="text.secondary"
+                  ></Typography>
                 </TimelineOppositeContent>
                 <TimelineSeparator>
                   <TimelineConnector />
                   <TimelineDot color="primary" />
-                  <TimelineConnector className={index === events.length - 1 ? '' : 'secondary-connector'} />
+                  <TimelineConnector
+                    className={
+                      index === events.length - 1 ? "" : "secondary-connector"
+                    }
+                  />
                 </TimelineSeparator>
                 <TimelineContent className="timeline-content">
                   <Typography variant="h6" component="span">
@@ -133,6 +153,7 @@ const Team = () => {
           <h3>Panels</h3>
         </div>
       </div>
+
       <div className="container">
         <Title title="Why you should be a part of #CapTech in 2024" />
         <br />
