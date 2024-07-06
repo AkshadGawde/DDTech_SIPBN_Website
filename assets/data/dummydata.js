@@ -641,17 +641,17 @@ Carmel is a respected leader with the ability to build an experienced and loyal 
     description: `Craig Scroggie is the Chief Executive Officer and Managing Director of NEXTDC, Australia’s leading
 Data-Centre-as-a-Service provider. Prior to becoming CEO in June 2012, Mr Scroggie served on the
 Board of Directors since IPO (2010) as a Non-Executive Director, including as Chairman of the Audit and
-Risk Management Committee.
+Risk Management Committee.\n
 Mr Scroggie has more than 25 years’ experience in the ICT industry, having held senior positions with
 Symantec, Veritas Software, Computer Associates, EMC Corporation and Fujitsu. Prior to joining
-NEXTDC, Mr Scroggie was Symantec’s Vice President & Managing Director for the Pacific Region.
+NEXTDC, Mr Scroggie was Symantec’s Vice President & Managing Director for the Pacific Region.\n
 Mr Scroggie currently serves on the Board of Sovereign Cloud Holdings (ASX:SOV) and also serves on the
 University of Southern Queensland Business School Advisory Board and is Chairman of the La Trobe
-University Business School Advisory Board and holds the position of Adjunct Professor.
+University Business School Advisory Board and holds the position of Adjunct Professor.\n
 Mr Scroggie is a Graduate of the University of Southern Queensland and holds an Advanced Certificate
 in Information Technology, a Graduate Certificate in Management, a Postgraduate Diploma in
 Management, a Master of Business Administration; and is a Graduate and Fellow of the Australian
-Institute of Company Directors.
+Institute of Company Directors.\n
 In 2013 Mr Scroggie was awarded the University of Southern Queensland Faculty of Business & Law
 Alumnus of the Year and in 2015 was inducted into the ARN ICT Industry Awards Hall of Fame.`,
     image:
@@ -666,18 +666,15 @@ Alumnus of the Year and in 2015 was inducted into the ARN ICT Industry Awards Ha
 Dr. S. Janakiraman is a career diplomat, joined the Indian Foreign Service in 2002.
  
 He has served in various capacities in Diplomatic Missions in Brasilia, Lisbon, Yangon
-and Pretoria: served as Second Secretary Political, Commercial and Administration in Brasilia from 2004-2008; as First Secretary Political,
-Commercial, Consular and Administration in Lisbon from 2008-2011; and as Counsellor, headed the Commercial Wing in the Embassy of India  in Yangon
- from 2013-2016. He has served as Deputy High Commissioner in Pretoria (South Africa) with concurrent accreditation to Kingdom of Lesotho, from 2016-2019.
+and Pretoria: served as Second Secretary Political, Commercial and Administration in Brasilia from 2004-2008; as First Secretary Political,Commercial, Consular and Administration in Lisbon from 2008-2011; and as Counsellor, headed the Commercial Wing in the Embassy of India  in Yangon
+ from 2013-2016. He has served as Deputy High Commissioner in Pretoria (South Africa) with concurrent accreditation to Kingdom of Lesotho, from 2016-2019.\n
 Before joining as Consul General of CGI, Sydney he served as Ambassador of India to the Republic of Cuba from July 2021 to November 2023.
  
-As the Joint Secretary, he led the e-Governance and IT Division as well as the Cyber Diplomacy Division at the Ministry of External Affairs from 2019 to 2021.
-He also represented India as an expert in the 6th UNGGE on advancing state behavior and the 1st OEWG for ICT developments in the context of International
-Security during the same period. During his tenure at the Ministry of External Affairs in New Delhi, he served in various capacities, including Deputy Secretary
+As the Joint Secretary, he led the e-Governance and IT Division as well as the Cyber Diplomacy Division at the Ministry of External Affairs from 2019 to 2021.\n
+He also represented India as an expert in the 6th UNGGE on advancing state behavior and the 1st OEWG for ICT developments in the context of International Security during the same period. During his tenure at the Ministry of External Affairs in New Delhi, he served in various capacities, including Deputy Secretary
 in the Latin American Division and Director for Eurasian Affairs.
  
-Dr. Janakiraman completed a Bachelor of Science degree in Agriculture from Tamil Nadu Agricultural University from 1991-1995, followed by a Master of Science
-in Agricultural Entomology from the same university from 1996-1998. He then obtained his PhD from the Indian Agricultural Research Institute (IARI) in New Delhi in 2002.
+Dr. Janakiraman completed a Bachelor of Science degree in Agriculture from Tamil Nadu Agricultural University from 1991-1995, followed by a Master of Science in Agricultural Entomology from the same university from 1996-1998. He then obtained his PhD from the Indian Agricultural Research Institute (IARI) in New Delhi in 2002.\n
 He speaks English, Tamil, Hindi and Portuguese. He is a keen golfer. He is married and has two daughters.
  
 `,
