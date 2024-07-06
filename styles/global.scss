@@ -58,7 +58,7 @@
     span {
       font-size: $xll;
       line-height: 0;
-      color: $green;
+      color: $indigo;
     }
   }
 
@@ -276,7 +276,7 @@
     text-align: center; /* Center-align the list items */
     
     &:hover {
-      color: $green; /* Assuming this value for $green */
+      color: $indigo; /* Assuming this value for $indigo */
     }
   }
 
@@ -288,7 +288,7 @@
     align-items: center; /* Center align vertically */
     
     &:hover {
-      color: $green; /* Assuming this value for $green */
+      color: $indigo; /* Assuming this value for $indigo */
     }
   }
   svg{
@@ -425,7 +425,7 @@
       margin-bottom: 30px; // Use fixed margin for consistency
 
       .icons {
-        color: $green;
+        color: $indigo;
       }
 
       h3 {
