@@ -98,13 +98,13 @@ const Agency = () => {
           <MissionVision
             title="Our mission"
             description="SIPBN will empower access for members to cross-border investment and trade into and out of Australia through our central platform of events, services and connections."
-            imgSrc="https://res.cloudinary.com/dq23wxdum/image/upload/v1720255432/SIPBN/aofufxke8ghd3dg4wddv.png"
+            imgSrc="https://res.cloudinary.com/dq23wxdum/image/upload/v1720283867/SIPBN/uwezt3oe0fu3znobxbcg.png"
           />
 
           <MissionVision
             title="Our Vision"
             description="To be recognized as the premium meeting point for the Sydney community of business leaders, investors, regulators, and government representatives with a focus on international investment and trade."
-            imgSrc="https://res.cloudinary.com/dq23wxdum/image/upload/v1720255439/SIPBN/fduphrml2sukkld0kfem.png"
+            imgSrc="https://res.cloudinary.com/dq23wxdum/image/upload/v1720283868/SIPBN/wfu3b40s1raa4cpcwnb4.png"
           />
           <div className="button-holder">
             <button

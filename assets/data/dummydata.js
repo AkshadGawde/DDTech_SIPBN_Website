@@ -13,7 +13,7 @@ export const expertise = [
     id: 1,
     title: "Networking",
     cover:
-      "https://res.cloudinary.com/dq23wxdum/image/upload/v1720255434/SIPBN/ot5aoliztnbrc5gkzhnd.png",
+      "https://res.cloudinary.com/dq23wxdum/image/upload/v1720283869/SIPBN/kgwdnmf3ym7vq3csn49j.png",
     desc: [
       { text: "Web design" },
       { text: "Web development" },
@@ -26,7 +26,7 @@ export const expertise = [
     id: 2,
     title: "High Value Deal flow",
     cover:
-      "https://res.cloudinary.com/dq23wxdum/image/upload/v1720255434/SIPBN/wqy0v40l1meobpihrhbk.png",
+      "https://res.cloudinary.com/dq23wxdum/image/upload/v1720283868/SIPBN/k30sp3vnb8qsfulozih4.png",
     desc: [
       { text: "Social media marketing" },
       { text: "Marketing campaigns" },
@@ -38,7 +38,7 @@ export const expertise = [
     id: 3,
     title: "Cross Border Business Opportunities",
     cover:
-      "https://res.cloudinary.com/dq23wxdum/image/upload/v1720255433/SIPBN/j1dvfkeubgipxpqq5ggo.png",
+      "https://res.cloudinary.com/dq23wxdum/image/upload/v1720283868/SIPBN/jxaesxmmvbkqczwghnkg.png",
     desc: [
       { text: "E-Commerce website design" },
       { text: "WooCommerce" },
@@ -50,7 +50,7 @@ export const expertise = [
     id: 4,
     title: "Targeted Advocacy",
     cover:
-      "https://res.cloudinary.com/dq23wxdum/image/upload/v1720255435/SIPBN/vrebecrfwq9wvfbyeigu.png",
+      "https://res.cloudinary.com/dq23wxdum/image/upload/v1720283869/SIPBN/mlsm1uofmglsfbvzyytt.png",
     desc: [
       { text: "Visual identity" },
       { text: "Branding for social media" },
