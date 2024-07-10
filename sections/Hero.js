@@ -41,23 +41,24 @@ const Hero = () => {
                 />
                 <h2> Raman Bhalla</h2>
               </div>
-              <p>
-                The purpose of Sydney Investors, Professionals and Business
-                Networking Group Incorporated ("SIPBN") is to connect projects
-                with the sources of capital and provide a global business
-                platform fot growing Australian businesses. We are selectors
-                agnostic. We facilitate the engagement to and Australia through
-                our extensive contacts in the business, private capital and
-                government selectors. With our physical offices in Sydney and
-                Queensland in Australia and international offices in India,
-                Middle East, Europe and Hong Kong, our members have the access
-                to a premium business platform to do their business in Australia
-                and globally.
-                <br />
-                <br />
-                Our members get the benefit from our regular networking events
-                and or yearly flagship summit to foster deal making, business
-                connection and innovation.
+              <p style={{fontSize: "medium" ,textAlign:"left" }}>
+              The purpose of Sydney Investors, Professionals and
+Business Networking Group Incorporated ("SIPBN") is to
+connect projects with sources of capital and provide a
+global business platform for growing Australian businesses.
+<br/><br/>
+We are sector agnostic. We facilitate the engagement to and
+from Australia through our extensive contacts in the
+business, private capital and government sectors.
+<br/><br/>
+With our physical offices in Sydney and Queensland in
+Australia and international offices in India, Middle East and
+Hong Kong, our members have the access to a premium
+business platform to do business in Australia and globally.
+<br/><br/>
+Our members get the benefit from our regular networking
+events and our yearly flagship summit to foster deal making,
+business connections and innovation.
               </p>
             </div>
             <a

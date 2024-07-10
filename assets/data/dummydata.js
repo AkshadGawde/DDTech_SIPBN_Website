@@ -150,6 +150,10 @@ export const brand = [
     id: 6,
     cover: "../images/l7.png",
   },
+  {
+    id: 7,
+    cover: "https://res.cloudinary.com/dq23wxdum/image/upload/v1720599460/SIPBN/iitwrioewmckymi2bv6x.jpg",
+  },
 ];
 export const brand2 = [
   {
@@ -177,7 +181,7 @@ export const brand2 = [
     cover: "../images/m6.png",
   },
   {
-    id: 6,
+    id: 7,
     cover: "../images/m7.png",
   },
 ];

@@ -158,6 +158,9 @@ const Header = () => {
                   <Link href="/companies" onClick={handleLinkClick}>
                     Presenting Companies
                   </Link>
+                  <Link href="https://docs.google.com/forms/d/e/1FAIpQLSdiA6YPJaorTgxsvt-ZMMePCMLIbKnI3fS971sxMZeSaPewoQ/viewform" onClick={handleLinkClick}>
+                    Apply to pitch
+                  </Link>
                 </div>
               )}
             </div>

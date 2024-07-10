@@ -11,17 +11,17 @@ const Brand = () => {
           <div className='heading-title'>
             <Title title='Our Partners' />
           </div>
-          <div className='brand-content grid-7 py'>
+          <div className='brand-content grid-8 py'>
             {brand.map((item) => (
               <div className='images' key={item.id}>
-                <img src={item.cover} alt={item.id} width='100%' height='100%' />
+                <img src={item.cover} alt={item.id} width='100%' height='100%'  />
               </div>
             ))}
           </div>
           <div className='heading-title'>
             <Title title='In the Media' />
           </div>
-          <div className='brand-content grid-7 py'>
+          <div className='brand-content2 grid-7 py'>
             {brand2.map((item) => (
               <div className='images' key={item.id}>
                 <img src={item.cover} alt={item.id} width='100%' height='100%' />

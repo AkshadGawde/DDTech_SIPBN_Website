@@ -12,7 +12,7 @@ const Advisory_board = () => {
 
         <div className="advisoryContainer">
           <div>
-            <h2 className="advisoryTitle">Roderick H. McGeoch AO, LLB</h2>
+            <h2 className="advisoryTitle">Roderick H. McGeoch AO, LLB -Chairman</h2>
             <p className="advisoryDescription">
               Rod McGeoch has had and continues to enjoy a remarkable career at
               the forefront of business, sports administration and the legal
