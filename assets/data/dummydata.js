@@ -124,7 +124,8 @@ export const showcase = [
 export const brand = [
   {
     id: 1,
-    cover: "../images/l1.png",
+    cover:
+      "https://res.cloudinary.com/dq23wxdum/image/upload/v1720599460/SIPBN/iitwrioewmckymi2bv6x.jpg",
   },
   {
     id: 2,
@@ -152,7 +153,7 @@ export const brand = [
   },
   {
     id: 7,
-    cover: "https://res.cloudinary.com/dq23wxdum/image/upload/v1720599460/SIPBN/iitwrioewmckymi2bv6x.jpg",
+    cover: "../images/l1.png",
   },
 ];
 export const brand2 = [
