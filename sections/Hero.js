@@ -13,7 +13,13 @@ const Hero = () => {
       </div>
       <section className="hero">
         <div className="container">
-          <TitleLogo title="#CapTech2024" caption="" className="logobg" />
+          <a
+            href="https://www.eventbrite.com.au/e/captech2024-discover-connect-execute-venue-icc-sydney-tickets-772015889307"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <TitleLogo title="#CapTech2024" caption="" className="logobg" />
+          </a>
           <h1 className="hero-title">DISCOVER . CONNECT . EXECUTE</h1>
           <TitleSm title="Venue: ICC Sydney 14 Darling Drive Sydney, NSW 2000 Australia" />
           <p>Tue, 26 Nov 2024 9:00 AM - Wed, 27 Nov 2024 9:00 PM AEDT</p>
@@ -41,24 +47,27 @@ const Hero = () => {
                 />
                 <h2> Raman Bhalla</h2>
               </div>
-              <p style={{fontSize: "medium" ,textAlign:"left" }}>
-              The purpose of Sydney Investors, Professionals and
-Business Networking Group Incorporated ("SIPBN") is to
-connect projects with sources of capital and provide a
-global business platform for growing Australian businesses.
-<br/><br/>
-We are sector agnostic. We facilitate the engagement to and
-from Australia through our extensive contacts in the
-business, private capital and government sectors.
-<br/><br/>
-With our physical offices in Sydney and Queensland in
-Australia and international offices in India, Middle East and
-Hong Kong, our members have the access to a premium
-business platform to do business in Australia and globally.
-<br/><br/>
-Our members get the benefit from our regular networking
-events and our yearly flagship summit to foster deal making,
-business connections and innovation.
+              <p style={{ fontSize: "medium", textAlign: "left" }}>
+                The purpose of Sydney Investors, Professionals and Business
+                Networking Group Incorporated ("SIPBN") is to connect projects
+                with sources of capital and provide a global business platform
+                for growing Australian businesses.
+                <br />
+                <br />
+                We are sector agnostic. We facilitate the engagement to and from
+                Australia through our extensive contacts in the business,
+                private capital and government sectors.
+                <br />
+                <br />
+                With our physical offices in Sydney and Queensland in Australia
+                and international offices in India, Middle East and Hong Kong,
+                our members have the access to a premium business platform to do
+                business in Australia and globally.
+                <br />
+                <br />
+                Our members get the benefit from our regular networking events
+                and our yearly flagship summit to foster deal making, business
+                connections and innovation.
               </p>
             </div>
             <a
