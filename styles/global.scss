@@ -111,7 +111,6 @@
   }
   .card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgb(193, 60, 246);
   }
   .card-img {
     height: 300px;
@@ -290,7 +289,7 @@
   span,
   p {
     margin: 2px;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 100%);
     display: inline-block; /* Ensure inline block to use vertical-align */
     vertical-align: middle; /* Vertically align the text */
   }
@@ -313,7 +312,7 @@
   }
 
   a {
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 100%);
     transition: 0.5s ease-in-out;
     text-decoration: none;
     display: inline-flex; /* Use flexbox for alignment */

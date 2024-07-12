@@ -82,7 +82,8 @@ const Header = () => {
             <div className="dropdown">
               <Link
                 href="/agency"
-                onClick={handleLinkClick}
+                onClick={handleLinkClick} 
+                onMouseEnter={() => toggleDropdown("about")}
                 className={activeLink === "/agency" ? "activeLink" : ""}
               >
                 About
