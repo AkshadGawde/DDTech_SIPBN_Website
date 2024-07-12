@@ -771,3 +771,29 @@ ul {
     border-radius: 8px;
     transition: transform 0.2s, box-shadow 0.2s;
   }
+
+  .book-tickets-container {
+    text-align: center;
+    margin-top: 20px;
+  
+    .popping-animation {
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 1.2rem;
+      animation: pop 1.5s infinite;
+  
+      @media (max-width: 768px) {
+        font-size: 1rem;
+        padding: 8px 16px;
+      }
+    }
+  }
+  
+  @keyframes pop {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+  }
