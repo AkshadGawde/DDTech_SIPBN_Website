@@ -80,7 +80,7 @@ const Hero = () => {
               Apply for Membership
             </a>
           </div>
-          <div className="banner">
+          <div className="banner2">
             <a
               href="https://www.eventbrite.com.au/e/captech2024-discover-connect-execute-venue-icc-sydney-tickets-772015889307"
               target="_blank"
@@ -88,8 +88,10 @@ const Hero = () => {
               className="bannerTitle container"
             >
               <h2>Secure your #CapTech2024 ticket!</h2>
-              <br />
-              Early bird discount 20% till 31th July 2024 Book Your Tickets
+              <br/>
+             <p> Early bird discount 20% till 31th July 2024 Book Your Tickets</p>
+             <br/>
+             <button className="button-primary">Book Tickets</button>
             </a>
           </div>
         </div>
