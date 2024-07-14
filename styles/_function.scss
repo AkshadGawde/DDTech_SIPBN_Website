@@ -32,7 +32,7 @@
   @include grid(repeat(9, 1fr), 30px);
 }
 .grid-10 {
-  @include grid(repeat(10, 1fr), 30px);
+  @include grid(repeat(5, 1fr), 40px);
 }
 
 @media screen and (max-width: 800px) {
