@@ -53,6 +53,7 @@
   .grid-6,
   .grid-7,
   .grid-8,
+  .grid-10,
   .grid-4 {
     @include grid(repeat(1, 1fr), 50px);
   }

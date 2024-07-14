@@ -88,10 +88,17 @@ const Hero = () => {
               className="bannerTitle container"
             >
               <h2>Secure your #CapTech2024 ticket!</h2>
+<<<<<<< HEAD
               <br />
               <p> Early bird discount 20% till 31st July 2024</p>
               <br />
               <button className="button-primary">Book Tickets</button>
+=======
+              <br/>
+             <p> Early bird discount 20% till 31st July 2024</p>
+             <br/>
+             <button className="button-primary">Book Tickets</button>
+>>>>>>> 2ae7b953081bb69f4a66f459a3eab537b7d64dce
             </a>
           </div>
         </div>
