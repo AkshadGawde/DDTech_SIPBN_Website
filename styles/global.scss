@@ -246,7 +246,6 @@
     transition: 0.5s ease-in-out;
     &:hover {
       opacity: 1;
-      cursor: pointer;
     }
   }
 }
@@ -384,10 +383,12 @@
   p{
     font-size: $md;
     margin: 15px 0;
+    font-size: larger;
   }
   li{
     font-size: $md;
-    margin: 5px 0;
+    margin: 15px 0;
+    font-size: large;
   }
   .content {
     margin-top: $xll;
