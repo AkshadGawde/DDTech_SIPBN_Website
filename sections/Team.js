@@ -99,6 +99,8 @@ const Team = () => {
             ))}
           </Timeline>
 
+          <button className="button-primary">Book Tickets</button>
+
           <Title title="What is #CapTech2024" />
           <p>
             #CapTech2024 is your gateway to the forefront of innovation,
@@ -136,8 +138,24 @@ const Team = () => {
               dinner event provide unique connections and networks.
             </li>
           </ul>
+          <div className="banner2">
+            <a
+              href="https://www.eventbrite.com.au/e/captech2024-discover-connect-execute-venue-icc-sydney-tickets-772015889307"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bannerTitle container"
+            >
+              <h2>Secure your #CapTech2024 ticket!</h2>
+              <br/>
+             <p> Early bird discount 20% till 31st July 2024 Book Your Tickets</p>
+             <br/>
+             <button className="button-primary">Book Tickets</button>
+            </a>
+          </div>
         </div>
+
       </section>
+
 
       <div className="grid-3">
         <div className="box">
@@ -146,7 +164,7 @@ const Team = () => {
         </div>
         <div className="box">
           <h1 className="indigo">300+</h1>
-          <h3>Attendees</h3>
+          <h3>Global investors and business leaders</h3>
         </div>
         <div className="box">
           <h1 className="indigo">8+</h1>
@@ -154,7 +172,12 @@ const Team = () => {
         </div>
       </div>
 
+      
+
       <div className="container">
+
+            
+
         <Title title="Why you should be a part of #CapTech in 2024" />
         <br />
         <ul>
@@ -185,6 +208,8 @@ const Team = () => {
           </li>
           <br />
         </ul>
+
+
         <div className="button-holder">
           <button
             className="button button-primary"
