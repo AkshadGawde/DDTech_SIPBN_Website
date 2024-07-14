@@ -146,16 +146,17 @@ const Team = () => {
               className="bannerTitle container"
             >
               <h2>Secure your #CapTech2024 ticket!</h2>
-              <br/>
-             <p> Early bird discount 20% till 31st July 2024 Book Your Tickets</p>
-             <br/>
-             <button className="button-primary">Book Tickets</button>
+              <br />
+              <p>
+                {" "}
+                Early bird discount 20% till 31st July 2024 Book Your Tickets
+              </p>
+              <br />
+              <button className="button-primary">Book Tickets</button>
             </a>
           </div>
         </div>
-
       </section>
-
 
       <div className="grid-3">
         <div className="box">
@@ -167,17 +168,12 @@ const Team = () => {
           <h3>Global investors and business leaders</h3>
         </div>
         <div className="box">
-          <h1 className="indigo">8+</h1>
+          <h1 className="indigo">8</h1>
           <h3>Panels</h3>
         </div>
       </div>
 
-      
-
       <div className="container">
-
-            
-
         <Title title="Why you should be a part of #CapTech in 2024" />
         <br />
         <ul>
@@ -208,7 +204,6 @@ const Team = () => {
           </li>
           <br />
         </ul>
-
 
         <div className="button-holder">
           <button
