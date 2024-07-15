@@ -124,7 +124,7 @@ export const showcase = [
 export const brand = [
   {
     id: 1,
-    cover:"../images/l0.png",
+    cover: "../images/l0.png",
   },
   {
     id: 2,
@@ -155,12 +155,16 @@ export const brand = [
     cover: "../images/l1.png",
   },
   {
-    id:8,
+    id: 8,
     cover: "../images/l8.png",
   },
   {
-    id:9,
-    cover:"../images/l9.jpg"
+    id: 9,
+    cover: "../images/l9.jpg",
+  },
+  {
+    id: 10,
+    cover: "../images/l10.jpg",
   },
 ];
 export const brand2 = [
@@ -402,6 +406,34 @@ export const memberdata = [
     cover:
       "https://res.cloudinary.com/dq23wxdum/image/upload/v1720161307/SIPBN/jpkaqsnatjd5mubyh6sm.png",
     post: "Inaugural Director of Australia’s National AI Centre (NAIC).",
+  },
+  {
+    id: 25,
+    title: "Giovanni Amodeo",
+    cover:
+      "https://res.cloudinary.com/dq23wxdum/image/upload/v1721060471/SIPBN/yl1uicfwswdngairwnpb.png",
+    post: "executive committee of ION Analytics",
+  },
+  {
+    id: 26,
+    title: "Michael Masterson",
+    cover:
+      "https://res.cloudinary.com/dq23wxdum/image/upload/v1721060580/SIPBN/xby3jcslygggveucpyb0.png",
+    post: "Principal at Intrinsika",
+  },
+  {
+    id: 27,
+    title: "Stephen Harrison",
+    cover:
+      "https://res.cloudinary.com/dq23wxdum/image/upload/v1721060687/SIPBN/pifgwg2idrgguk5dudov.png",
+    post: "Chairman of NobleOak Life Limited and IncentiaPay Limited (ASX - INP)",
+  },
+  {
+    id: 28,
+    title: "Jua Cillers",
+    cover:
+      "https://res.cloudinary.com/dq23wxdum/image/upload/v1721060794/SIPBN/al5y3rvwax42b7ocauqy.png",
+    post: "Head of the School of Built Environment and Professor of Urban Planning at the University of Technology Sydney in Australia.",
   },
 ];
 
@@ -745,5 +777,46 @@ Lee believes in the potential of technology to help build a brighter and more in
     image:
       "https://res.cloudinary.com/dq23wxdum/image/upload/v1720161306/SIPBN/dqqtv5cwyt5htkjaeif7.png",
     title: "AI Technology & Policy Lead, Microsoft Asia",
+  },
+  {
+    id: "25",
+    name: "Giovanni Amodeo",
+    description: `
+  With 23 years of experience in financial data, news, and analytics, Giovanni sits on the executive committee of ION Analytics and is responsible for engaging with Influencers in the capital market  globally and across asset classes. He organizes fireside chats and exclusive closed-door events to facilitate connectivity and knowledge among the influencers. Giovanni joined the company in 2001 where it held various roles in Italy, Germany, London including managing a global team of journalists and data analysts. Giovanni is now based in Sydney.
+ `,
+    image:
+      "https://res.cloudinary.com/dq23wxdum/image/upload/v1721060471/SIPBN/yl1uicfwswdngairwnpb.png",
+    title: "Executive committee of ION Analytics",
+  },
+  {
+    id: "26",
+    name: "Michael Masterson",
+    description: `
+Michael is a Principal at Intrinsika, a global intrinsic & intangible asset advisory, valuation, and corporate finance specialist that helps companies and investors unlock their competitiveedge by identifying, valuing, and monetising their intrinsic assets. He is an IAM300 & Strategy 300 Global Leader ranking him as one of the world’s top IP strategists.\n
+Michael is also the founder of several successful start-ups; and has been integral to turning around two mid-sized companies in the logistics and FMCG sectors, taking both from significant losses to profit within nine months. He is on several private company Boards and sits on the Board of Cure Brain Cancer, which was named by the AFR as the most Innovative Charity and the 25th most Innovative Organisation. He is also a co-founder of the Growth Capital Club.
+ `,
+    image:
+      "https://res.cloudinary.com/dq23wxdum/image/upload/v1721060580/SIPBN/xby3jcslygggveucpyb0.png",
+    title: "Principal at Intrinsika",
+  },
+  {
+    id: "27",
+    name: "STEPHEN HARRISON",
+    description: `Stephen has over 30 years of experience in the financial services, funds management,M&A, private equity and accounting fields. He primarily focused on the energy, technology, IT services, infrastructure financial services, entertainment and natural resource sectors.\n
+He has held Directorships with international Fund Managers subsidiaries, Investec Funds Management and the Australian subsidiary of US-based fund manager Sanford C. Bernstein. He has been a founder and held Directorships in number of Unlisted and Listed companies both in Australia and internationally.`,
+    image:
+      "https://res.cloudinary.com/dq23wxdum/image/upload/v1721060687/SIPBN/pifgwg2idrgguk5dudov.png",
+    title:
+      "Chairman of two Public Companies in Australia, NobleOak Life Limited and IncentiaPay Limited (ASX - INP)",
+  },
+  {
+    id: "28",
+    name: "Jua Cillers",
+    description: `Jua Cilliers is the Head of the School of Built Environment and Professor of Urban Planning at the University of Technology Sydney in Australia. She is the President of the Commonwealth Association of Planners and has over two decades of experience as a Professional Urban Planner, with professional registrations from the South African Council for Planners and the Planning Institute of Australia.\n
+Jua serves as the Treasurer of the Australasian Green Infrastructure Network. With experience as chief investigator across Africa, Europe and Australia, Jua is unwaveringly committed to driving real change, shaping the future of our cities, and empowering the leaders who will inherit them.`,
+    image:
+      "https://res.cloudinary.com/dq23wxdum/image/upload/v1721060794/SIPBN/al5y3rvwax42b7ocauqy.png",
+    title:
+      "Head of the School of Built Environment and Professor of Urban Planning at the University of Technology Sydney in Australia.",
   },
 ];
