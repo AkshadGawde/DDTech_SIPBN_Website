@@ -433,6 +433,11 @@ export const memberdata = [
     title:"Jua Cillers",
     cover:"",
     post:"Head of the School of Built Environment and Professor of Urban Planning at the University of Technology Sydney in Australia."
+  },
+  {
+    id:29,
+    title:"Paul Nicolaou",
+    cover
   }
 ];
 
