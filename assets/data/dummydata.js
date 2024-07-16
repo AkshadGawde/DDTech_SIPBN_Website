@@ -429,17 +429,19 @@ export const memberdata = [
     post: "Chairman of NobleOak Life Limited and IncentiaPay Limited (ASX - INP)",
   },
   {
-    id:28,
-    title:"Jua Cillers",
-    cover:"",
-    post:"Head of the School of Built Environment and Professor of Urban Planning at the University of Technology Sydney in Australia."
+    id: 28,
+    title: "Jua Cillers",
+    cover:
+      "https://res.cloudinary.com/dq23wxdum/image/upload/v1721137321/SIPBN/rwwz0bzckaodkoskd8tn.png",
+    post: "Head of the School of Built Environment and Professor of Urban Planning at the University of Technology Sydney in Australia.",
   },
   {
-    id:29,
-    title:"Paul Nicolaou",
-    cover:"",
-    post:"Executive Director, Business Sydney"
-  }
+    id: 29,
+    title: "Paul Nicolaou",
+    cover:
+      "https://res.cloudinary.com/dq23wxdum/image/upload/v1721137440/SIPBN/wocbehnf3tdhvcfvrk4t.png",
+    post: "Executive Director, Business Sydney",
+  },
 ];
 
 export const moderatordata = [
@@ -820,15 +822,17 @@ He has held Directorships with international Fund Managers subsidiaries, Investe
     description: `Jua Cilliers is the Head of the School of Built Environment and Professor of Urban Planning at the University of Technology Sydney in Australia. She is the President of the Commonwealth Association of Planners and has over two decades of experience as a Professional Urban Planner, with professional registrations from the South African Council for Planners and the Planning Institute of Australia.\n
 Jua serves as the Treasurer of the Australasian Green Infrastructure Network. With experience as chief investigator across Africa, Europe and Australia, Jua is unwaveringly committed to driving real change, shaping the future of our cities, and empowering the leaders who will inherit them.`,
     image:
-      "https://res.cloudinary.com/dq23wxdum/image/upload/v1721060794/SIPBN/al5y3rvwax42b7ocauqy.png",
+      "https://res.cloudinary.com/dq23wxdum/image/upload/v1721137321/SIPBN/rwwz0bzckaodkoskd8tn.png",
     title:
       "Head of the School of Built Environment and Professor of Urban Planning at the University of Technology Sydney in Australia.",
   },
   {
-    id:"29",
-    name:"Paul Nicolaou",
-    description:"Paul commenced his role as Executive Director for Business Sydney in September 2021. Prior to Business Sydney, Paul was Director for the Business Leaders Council, Membership and Events for the Australian Chamber of Commerce and Industry (ACCI) for seven years. Paul sits on the Board of The Gut Foundation, The Estia Foundation, Australian Marketing Institute and as a Non-Executive Board Member of Group Colleges Australia. In addition, Paul is an ambassador of Start Up Australia and is a Member of the Association of Independent Schools of NSW Institute. Further Paul is a Non-Executive Director of Dymocks Children’s Charities. Paul is an Adjunct Professor at UBSS Australia and was awarded the Centenary Medal of Australia in 2001. Paul was the former Chief Executive Officer of the Australian Hotels Association of NSW (AHA). Prior to the AHA, Paul was the Executive Chairman of the Millennium Forum, which was the fundraising and business engagement arm of the Liberal Party of Australia NSW Division. Paul was also the former NSW President of the Marketing Institute of Australia for 4 years, a member of the Council for ten years and is currently an Associate Fellow and Certified Practicing Marketer of the Marketing Institute of Australia.",
-    image:"",
-    title:"Executive Director, Business Sydney"
+    id: "29",
+    name: "Paul Nicolaou",
+    description:
+      "Paul commenced his role as Executive Director for Business Sydney in September 2021. Prior to Business Sydney, Paul was Director for the Business Leaders Council, Membership and Events for the Australian Chamber of Commerce and Industry (ACCI) for seven years. Paul sits on the Board of The Gut Foundation, The Estia Foundation, Australian Marketing Institute and as a Non-Executive Board Member of Group Colleges Australia. \n In addition, Paul is an ambassador of Start Up Australia and is a Member of the Association of Independent Schools of NSW Institute. Further Paul is a Non-Executive Director of Dymocks Children’s Charities. Paul is an Adjunct Professor at UBSS Australia and was awarded the Centenary Medal of Australia in 2001. Paul was the former Chief Executive Officer of the Australian Hotels Association of NSW (AHA).\n Prior to the AHA, Paul was the Executive Chairman of the Millennium Forum, which was the fundraising and business engagement arm of the Liberal Party of Australia NSW Division. Paul was also the former NSW President of the Marketing Institute of Australia for 4 years, a member of the Council for ten years and is currently an Associate Fellow and Certified Practicing Marketer of the Marketing Institute of Australia.",
+    image:
+      "https://res.cloudinary.com/dq23wxdum/image/upload/v1721137440/SIPBN/wocbehnf3tdhvcfvrk4t.png",
+    title: "Executive Director, Business Sydney",
   },
 ];
