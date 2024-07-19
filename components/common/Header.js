@@ -82,7 +82,7 @@ const Header = () => {
             <div className="dropdown">
               <Link
                 href="/agency"
-                onClick={handleLinkClick} 
+                onClick={handleLinkClick}
                 onMouseEnter={() => toggleDropdown("about")}
                 className={activeLink === "/agency" ? "activeLink" : ""}
               >
@@ -135,9 +135,9 @@ const Header = () => {
               )}
             </div>
             <Link
-              href="/showcase"
+              href="/events"
               onClick={handleLinkClick}
-              className={activeLink === "/showcase" ? "activeLink" : ""}
+              className={activeLink === "/events" ? "activeLink" : ""}
             >
               Events
             </Link>
@@ -159,7 +159,10 @@ const Header = () => {
                   <Link href="/companies" onClick={handleLinkClick}>
                     Presenting Companies
                   </Link>
-                  <Link href="https://docs.google.com/forms/d/e/1FAIpQLSdiA6YPJaorTgxsvt-ZMMePCMLIbKnI3fS971sxMZeSaPewoQ/viewform" onClick={handleLinkClick}>
+                  <Link
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSdiA6YPJaorTgxsvt-ZMMePCMLIbKnI3fS971sxMZeSaPewoQ/viewform"
+                    onClick={handleLinkClick}
+                  >
                     Apply to pitch
                   </Link>
                 </div>

@@ -1,6 +1,6 @@
 import Hero from "./Hero";
 import Agency from "./Agency";
-import ShowCase from "./ShowCase";
+import Events from "./Events";
 import Team from "./Team";
 import Contact from "./Contact";
 import Advisory_board from "./Advisory_board";
@@ -14,7 +14,7 @@ export {
   Hero,
   Agency,
   Team,
-  ShowCase,
+  Events,
   Contact,
   Advisory_board,
   Executive_board,
