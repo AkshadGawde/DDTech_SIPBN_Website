@@ -48,13 +48,13 @@ const CompanyLinks = () => (
       <Link href="/agency">About Us</Link>
     </li>
     <li>
-      <Link href="/showcase">#CapTech 2024</Link>
+      <Link href="/Events">#CapTech 2024</Link>
     </li>
     <li>
       <Link href="/services">#CapTech2023</Link>
     </li>
     <li>
-      <Link href="/showcase">Events</Link>
+      <Link href="/Events">Events</Link>
     </li>
     <li>
       <Link href="https://docs.google.com/forms/d/e/1FAIpQLSdiA6YPJaorTgxsvt-ZMMePCMLIbKnI3fS971sxMZeSaPewoQ/viewform">

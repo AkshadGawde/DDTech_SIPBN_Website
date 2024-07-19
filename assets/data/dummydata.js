@@ -310,6 +310,13 @@ export const memberdata = [
     post: "Founder and CIO at Fortlake Asset Management",
   },
   {
+    id: 29,
+    title: "Paul Nicolaou",
+    cover:
+      "https://res.cloudinary.com/dq23wxdum/image/upload/v1721137440/SIPBN/wocbehnf3tdhvcfvrk4t.png",
+    post: "Executive Director, Business Sydney",
+  },
+  {
     id: 6,
     title: "Stephen Bali MP",
     cover:
@@ -434,13 +441,6 @@ export const memberdata = [
     cover:
       "https://res.cloudinary.com/dq23wxdum/image/upload/v1721137321/SIPBN/rwwz0bzckaodkoskd8tn.png",
     post: "Head of the School of Built Environment and Professor of Urban Planning at the University of Technology Sydney in Australia.",
-  },
-  {
-    id: 29,
-    title: "Paul Nicolaou",
-    cover:
-      "https://res.cloudinary.com/dq23wxdum/image/upload/v1721137440/SIPBN/wocbehnf3tdhvcfvrk4t.png",
-    post: "Executive Director, Business Sydney",
   },
 ];
 

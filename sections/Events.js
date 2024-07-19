@@ -4,11 +4,11 @@ import { Card } from "@/components/common/Card";
 import React from "react";
 import Marqueee from "@/components/common/Marqueee";
 
-const ShowCase = () => {
+const Events = () => {
   return (
     <>
-    <div className="marquee-hero">
-      <Marqueee className="marquee"/>
+      <div className="marquee-hero">
+        <Marqueee className="marquee" />
       </div>
       <section>
         <div className="container ">
@@ -123,7 +123,7 @@ const ShowCase = () => {
         </div>
       </section>
 
-     {/* <section className="agency bg-top">
+      {/* <section className="agency bg-top">
         <div className="container">
           <TitleSm title="" />
           <Title title="#CapTech2023 Festival" className="title-bg" />
@@ -266,4 +266,4 @@ const ShowCase = () => {
   );
 };
 
-export default ShowCase;
+export default Events;
