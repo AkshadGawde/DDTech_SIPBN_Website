@@ -14,11 +14,13 @@
     left: -40%;
     width: 180%;
     height: 200vh;
-    background-image: url("../assets/images/art-top-cropp.jpg");
+    background-image: url("../public/images/Captech\ Event\ Banner\ \(1280\ x\ 720\ px\)\ \(3\).png");
     background-size: cover;
     background-position: center;
     z-index: -1;
+    filter: none;
   }
+
 
   .container {
     position: relative; // Ensure it stacks above the background
