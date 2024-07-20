@@ -706,13 +706,22 @@ ul {
   opacity: 1; /* Firefox */
 }
 
+.blogText{
+  max-width: 60%;
+}
+.blogImage{
+  max-width: 500px;
+  max-height: 200px;
+  object-fit: cover;
+}
+
 .blogsContainer {
   display: flex;
   flex-direction: column; /* Stack items vertically on small screens */
   align-items: center; /* Center items horizontally */
   text-align: left;
   margin: 30px 10px;
-  width: 100%;
+  width: 70%;
 }
 
 .blogsItem {
