@@ -34,13 +34,17 @@
 .grid-10 {
   @include grid(repeat(5, 1fr), 40px);
 }
+.grid-12{
+  @include grid(repeat(6,1fr), 40px);
+}
 
 @media screen and (max-width: 800px) {
   .grid-6,
   .grid-4,
   .grid-10,
   .grid-7,
-  .grid-3 {
+  .grid-3,
+  .grid-12 {
     @include grid(repeat(2, 1fr), 50px);
   }
 }
@@ -58,7 +62,8 @@
   .grid-10,
   .grid-9,
   .grid-10,
-  .grid-4 {
+  .grid-4,
+  .grid-12 {
     @include grid(repeat(1, 1fr), 50px);
   }
 }
