@@ -166,6 +166,10 @@ export const brand = [
     id: 10,
     cover: "../images/l10.jpg",
   },
+  {
+    id:11,
+    cover:"../images/l11.png",
+  },
 ];
 export const brand2 = [
   {
