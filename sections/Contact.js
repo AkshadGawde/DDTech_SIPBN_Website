@@ -12,18 +12,72 @@ import { IoLocationOutline } from "react-icons/io5";
 import ReCAPTCHA from "react-google-recaptcha";
 
 const Contact = () => {
-
-  const [verfied, setVerifed] = useState(false);
+  const [verified, setVerified] = useState(false);
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    budget: "",
+    timeframe: "",
+    projectDetails: "",
+  });
+  const [errors, setErrors] = useState({});
 
   //recaptcha function
   function onChange(value) {
     console.log("Captcha value:", value);
-    setVerifed(true);
+    setVerified(true);
   }
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const validate = () => {
+    let tempErrors = {};
+    tempErrors.name = formData.name ? "" : "This field is required.";
+    tempErrors.email = formData.email ? "" : "This field is required.";
+    tempErrors.budget = formData.budget ? "" : "This field is required.";
+    tempErrors.timeframe = formData.timeframe ? "" : "This field is required.";
+    tempErrors.projectDetails = formData.projectDetails
+      ? ""
+      : "This field is required.";
+
+    if (formData.email) {
+      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      tempErrors.email = emailPattern.test(formData.email)
+        ? ""
+        : "Email is not valid.";
+    }
+
+    setErrors(tempErrors);
+    return Object.values(tempErrors).every((x) => x === "");
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (validate() && verified) {
+      console.log(formData);
+      // Submit form data
+
+      // Reset form data
+      setFormData({
+        name: "",
+        email: "",
+        budget: "",
+        timeframe: "",
+        projectDetails: "",
+      });
+
+      // Reset reCAPTCHA
+      setVerified(false);
+    } else {
+      console.log("Form validation failed.");
+    }
+  };
 
   return (
     <>
-    
       <section className="contact bg-top">
         <div className="container">
           <div className="heading-title">
@@ -64,44 +118,80 @@ const Contact = () => {
             </div>
             <div className="right w-70">
               <TitleSm title="Make an online enquiry" />
-             
 
-              <form>
-                
+              <form onSubmit={handleSubmit}>
                 <div className="grid-2">
                   <div className="inputs">
                     <span>Name</span>
-                    <input type="text" />
+                    <input
+                      type="text"
+                      name="name"
+                      value={formData.name}
+                      onChange={handleChange}
+                    />
+                    {errors.name && <p className="error">{errors.name}</p>}
                   </div>
                   <div className="inputs">
                     <span>Email</span>
-                    <input type="email" />
+                    <input
+                      type="email"
+                      name="email"
+                      value={formData.email}
+                      onChange={handleChange}
+                    />
+                    {errors.email && <p className="error">{errors.email}</p>}
                   </div>
                 </div>
                 <div className="grid-2">
                   <div className="inputs">
-                    <span>your budget</span>
-                    <input type="text" />
+                    <span>Your budget</span>
+                    <input
+                      type="text"
+                      name="budget"
+                      value={formData.budget}
+                      onChange={handleChange}
+                    />
+                    {errors.budget && <p className="error">{errors.budget}</p>}
                   </div>
                   <div className="inputs">
-                    <span>timeframe</span>
-                    <input type="text" />
+                    <span>Timeframe</span>
+                    <input
+                      type="text"
+                      name="timeframe"
+                      value={formData.timeframe}
+                      onChange={handleChange}
+                    />
+                    {errors.timeframe && (
+                      <p className="error">{errors.timeframe}</p>
+                    )}
                   </div>
                 </div>
                 <div className="inputs">
                   <span>TELL US A BIT ABOUT YOUR PROJECT*</span>
-                  <textarea cols="30" rows="10"></textarea>
+                  <textarea
+                    cols="30"
+                    rows="10"
+                    name="projectDetails"
+                    value={formData.projectDetails}
+                    onChange={handleChange}
+                  ></textarea>
+                  {errors.projectDetails && (
+                    <p className="error">{errors.projectDetails}</p>
+                  )}
                 </div>
-               
-                <button type="submit" className="button-primary" disabled={!verfied}
-        >
-          Submit
-        </button>
-        <ReCAPTCHA
-        className="captcha"
-          sitekey="6Ldu3ggqAAAAAOxYno4zfSKarTV8K415AB6x7SWf"
-          onChange={onChange}
-        />
+
+                <button
+                  type="submit"
+                  className="button-primary"
+                  disabled={!verified}
+                >
+                  Submit
+                </button>
+                <ReCAPTCHA
+                  className="captcha"
+                  sitekey="6Ldu3ggqAAAAAOxYno4zfSKarTV8K415AB6x7SWf"
+                  onChange={onChange}
+                />
               </form>
             </div>
           </div>
