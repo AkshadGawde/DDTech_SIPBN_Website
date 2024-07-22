@@ -1,15 +1,24 @@
 import { Title, TitleSm } from "@/components/common/Title";
 import React, { useState } from "react";
-import {
-  AiFillBehanceCircle,
-  AiFillInstagram,
-  AiFillLinkedin,
-} from "react-icons/ai";
-import { BiUserCircle } from "react-icons/bi";
-import { BsFacebook } from "react-icons/bs";
 import { FiHeadphones, FiHelpCircle } from "react-icons/fi";
 import { IoLocationOutline } from "react-icons/io5";
 import ReCAPTCHA from "react-google-recaptcha";
+import emailjs from "emailjs-com";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
+const countryCodes = [
+  { code: "+1", name: "USA" },
+  { code: "+44", name: "UK" },
+  { code: "+61", name: "Australia" },
+  { code: "+91", name: "India" },
+  { code: "+81", name: "Japan" },
+  { code: "+86", name: "China" },
+  { code: "+33", name: "France" },
+  { code: "+49", name: "Germany" },
+  { code: "+39", name: "Italy" },
+  // Add more country codes as needed
+];
 
 const Contact = () => {
   const [verified, setVerified] = useState(false);
@@ -19,10 +28,12 @@ const Contact = () => {
     budget: "",
     timeframe: "",
     projectDetails: "",
+    countryCode: "",
+    phoneNumber: "",
   });
   const [errors, setErrors] = useState({});
 
-  //recaptcha function
+  // reCAPTCHA function
   function onChange(value) {
     console.log("Captcha value:", value);
     setVerified(true);
@@ -42,6 +53,12 @@ const Contact = () => {
     tempErrors.projectDetails = formData.projectDetails
       ? ""
       : "This field is required.";
+    tempErrors.countryCode = formData.countryCode
+      ? ""
+      : "This field is required.";
+    tempErrors.phoneNumber = formData.phoneNumber
+      ? ""
+      : "This field is required.";
 
     if (formData.email) {
       const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -57,20 +74,33 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (validate() && verified) {
-      console.log(formData);
-      // Submit form data
-
-      // Reset form data
-      setFormData({
-        name: "",
-        email: "",
-        budget: "",
-        timeframe: "",
-        projectDetails: "",
-      });
-
-      // Reset reCAPTCHA
-      setVerified(false);
+      emailjs
+        .send(
+          "service_g6wsggb", // Replace with your EmailJS service ID
+          "template_j1joepl", // Replace with your EmailJS template ID
+          formData,
+          "p-_pNoyFKi6vQznK6" // Replace with your EmailJS user ID
+        )
+        .then(
+          (response) => {
+            console.log("Success:", response);
+            toast.success("Your form has been submitted!");
+            setFormData({
+              name: "",
+              email: "",
+              budget: "",
+              timeframe: "",
+              projectDetails: "",
+              countryCode: "",
+              phoneNumber: "",
+            });
+            setVerified(false);
+          },
+          (error) => {
+            console.error("Error:", error);
+            toast.error("There was an error submitting your form.");
+          }
+        );
     } else {
       console.log("Form validation failed.");
     }
@@ -94,9 +124,9 @@ const Contact = () => {
                     width="300"
                     height="400"
                     style={{ border: "0" }}
-                    allowfullscreen=""
+                    allowFullScreen=""
                     loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"
+                    referrerPolicy="no-referrer-when-downgrade"
                   ></iframe>
                 </div>
                 <div className="box">
@@ -163,6 +193,39 @@ const Contact = () => {
                     />
                     {errors.timeframe && (
                       <p className="error">{errors.timeframe}</p>
+                    )}
+                  </div>
+                </div>
+                <div className="grid-2">
+                  <div className="inputs">
+                    <span>Country Code</span>
+                    <select
+                      name="countryCode"
+                      value={formData.countryCode}
+                      onChange={handleChange}
+                      className="styled-select"
+                    >
+                      <option value="">Select</option>
+                      {countryCodes.map((country) => (
+                        <option key={country.code} value={country.code}>
+                          {country.code} ({country.name})
+                        </option>
+                      ))}
+                    </select>
+                    {errors.countryCode && (
+                      <p className="error">{errors.countryCode}</p>
+                    )}
+                  </div>
+                  <div className="inputs">
+                    <span>Phone Number</span>
+                    <input
+                      type="text"
+                      name="phoneNumber"
+                      value={formData.phoneNumber}
+                      onChange={handleChange}
+                    />
+                    {errors.phoneNumber && (
+                      <p className="error">{errors.phoneNumber}</p>
                     )}
                   </div>
                 </div>
