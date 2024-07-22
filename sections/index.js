@@ -9,6 +9,8 @@ import Committees from "./Committees";
 import Patrons from "./Patrons";
 import Speakers from "./Speakers";
 import Captech2023 from "./Captech2023";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export {
   Hero,
