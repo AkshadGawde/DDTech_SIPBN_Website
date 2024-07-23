@@ -736,6 +736,10 @@ ul {
   margin-top: 20px; /* Add space above the image */
 }
 
+.blogContent{
+  margin: 30px 5px 0px 5px;
+}
+
 @media (min-width: 768px) {
   .blogsContainer {
       flex-direction: row; /* Display items side by side on larger screens */
