@@ -128,35 +128,31 @@ export const brand = [
   },
   {
     id: 2,
-    cover: "../images/l2.png",
+    cover: "../images/CGI logo.png",
   },
   {
     id: 3,
-    cover: "../images/l3.png",
+    cover: "../images/l2.png",
   },
   {
     id: 4,
-    cover: "../images/l4.png",
+    cover: "../images/l10.jpg",
   },
   {
     id: 5,
-    cover: "../images/l5.png",
+    cover: "../images/l5.jpeg",
   },
   {
     id: 6,
-    cover: "../images/l6.png",
-  },
-  {
-    id: 6,
-    cover: "../images/l7.png",
+    cover: "../images/l11.png",
   },
   {
     id: 7,
-    cover: "../images/l1.png",
+    cover: "../images/l6.png",
   },
   {
     id: 8,
-    cover: "../images/l8.png",
+    cover: "../images/l3.png",
   },
   {
     id: 9,
@@ -164,11 +160,15 @@ export const brand = [
   },
   {
     id: 10,
-    cover: "../images/l10.jpg",
+    cover: "../images/l7.png",
   },
   {
-    id:11,
-    cover:"../images/l11.png",
+    id: 11,
+    cover: "../images/l4.png",
+  },
+  {
+    id: 12,
+    cover: "../images/l1.png",
   },
 ];
 export const brand2 = [
