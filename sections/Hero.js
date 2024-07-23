@@ -97,6 +97,20 @@ const Hero = () => {
               <button className="button-primary">Book Tickets</button>
             </a>
           </div>
+          <div className="grid-3">
+            <div className="box">
+              <h1 className="indigo">50+</h1>
+              <h3>World Class Speakers</h3>
+            </div>
+            <div className="box">
+              <h1 className="indigo">50+</h1>
+              <h3>Deal Making opportunities</h3>
+            </div>
+            <div className="box">
+              <h1 className="indigo">300+</h1>
+              <h3>Global investors and business leaders</h3>
+            </div>
+          </div>
         </div>
       </section>
       <Expertise />
