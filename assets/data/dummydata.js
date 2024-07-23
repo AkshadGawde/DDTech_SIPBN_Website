@@ -14,50 +14,37 @@ export const expertise = [
     title: "Networking",
     cover:
       "https://res.cloudinary.com/dq23wxdum/image/upload/v1720283869/SIPBN/kgwdnmf3ym7vq3csn49j.png",
-    desc: [
-      { text: "Web design" },
-      { text: "Web development" },
-      { text: "Custom icons & illustrations" },
-      { text: "Hosting" },
-      { text: "Website audit" },
-    ],
+    href:"/agency",
   },
   {
     id: 2,
     title: "High Value Deal flow",
     cover:
       "https://res.cloudinary.com/dq23wxdum/image/upload/v1720283868/SIPBN/k30sp3vnb8qsfulozih4.png",
-    desc: [
-      { text: "Social media marketing" },
-      { text: "Marketing campaigns" },
-      { text: "Markting management" },
-      { text: "SEO" },
-    ],
+      href:"/agency",
   },
   {
     id: 3,
     title: "Cross Border Business Opportunities",
     cover:
       "https://res.cloudinary.com/dq23wxdum/image/upload/v1720283868/SIPBN/jxaesxmmvbkqczwghnkg.png",
-    desc: [
-      { text: "E-Commerce website design" },
-      { text: "WooCommerce" },
-      { text: "Content management" },
-      { text: "Hosting" },
-    ],
+      href:"/agency",
   },
   {
     id: 4,
     title: "Targeted Advocacy",
     cover:
       "https://res.cloudinary.com/dq23wxdum/image/upload/v1720283869/SIPBN/mlsm1uofmglsfbvzyytt.png",
-    desc: [
-      { text: "Visual identity" },
-      { text: "Branding for social media" },
-      { text: "Custom illustrations" },
-    ],
+      href:"/agency",
   },
 ];
+export const blogCards = [
+  {
+    id:1,
+    title:"Federal Budget",
+    cover:"https://res.cloudinary.com/dq23wxdum/image/upload/v1720283868/SIPBN/k30sp3vnb8qsfulozih4.png",
+  },
+]
 export const testimonial = [
   {
     id: 1,
@@ -128,7 +115,7 @@ export const brand = [
   },
   {
     id: 2,
-    cover: "../images/CGI logo.png",
+    cover: "../images/CGI logo.jpg",
   },
   {
     id: 3,
