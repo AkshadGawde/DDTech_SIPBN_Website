@@ -19,7 +19,7 @@ const Aivs = () => {
         <Title title={"Net Zero Emissions vs. AI's Rising Energy Consumption: A Complex Balance"} />
 
         <div className="blogsAuthor">
-          <p>-Rez K.</p>
+          <p>-Parth Maheshwari</p>
           <b>4 minute read</b>
         </div>
         <img src="https://res.cloudinary.com/duv9rw1wg/image/upload/v1721736591/homePage/jquatrm5gch50shbjmrr.png" className="blogImg"/>
@@ -58,288 +58,78 @@ const Aivs = () => {
 
         <hr/>
 
+        <img src="https://res.cloudinary.com/duv9rw1wg/image/upload/v1721738869/homePage/qd6zfzecifbulukav97j.png" className="blogImg"/>
         <img src="https://res.cloudinary.com/duv9rw1wg/image/upload/v1721738869/homePage/xmxhpoun1okaaxlpvdx3.png" alt="" className="blogImg" />
 
-        <div className="blogsContainer">
-          <div>
-            <h2 className="blogsTitle">
-              Manufacturing and Clean Energy Initiatives:
-            </h2>
-            <br />
-            <p className="blogsDescription2">
-              Future Made in Australia Program: $23 billion allocated to
-              encourage manufacturing and private sector investment to achieve
-              net zero emissions.
-              <br />
-              Critical Minerals: $7 billion Production Tax Incentive over eleven
-              years to improve manufacturing and supply chain capabilities.
-              <br />
-              Hydrogen Industry: $6.7 billion over ten years for a Hydrogen
-              Production Tax Incentive, supporting a competitive hydrogen
-              industry.
-              <br />
-              Solar Panels and Batteries: $1.4 billion to incentivize
-              production, presenting significant investment opportunities.
-            </p>
-          </div>
-        </div>
+        <hr/>
 
-        <div className="blogsContainer">
-          <div>
-            <h2 className="blogsTitle">Medical Research and Healthcare:</h2>
-            <br />
-            <p className="blogsDescription2">
-              Medical Research Funding: $1.4 billion investment into the Medical
-              Research Future Fund to advance medical innovations.
-            </p>
-          </div>
-        </div>
-
-        <div className="blogsContainer">
-          <div>
-            <h2 className="blogsTitle">Affordable Housing:</h2>
-            <br />
-            <p className="blogsDescription2">
-              Concessional Finance: $1.9 billion investment in concessional
-              finance for community housing providers to boost affordable and
-              social housing projects.
-            </p>
-          </div>
-        </div>
-
-        <div className="blogsContainer">
-          <div>
-            <h2 className="blogsTitle">Foreign Investment Transparency:</h2>
-            <br />
-            <p className="blogsDescription2">
-              Capital Gains Tax: Changes to the foreign resident capital gains
-              tax framework to enhance transparency in foreign investment and
-              tax rules.
-            </p>
-          </div>
-        </div>
-
-        <div className="blogsContainer">
-          <div>
-            <h2 className="blogsTitle">Support for Small Businesses:</h2>
-            <br />
-            <p className="blogsDescription2">
-              Asset Write-Off: Instant asset write-off for small businesses
-              extended until June 30, 2025, allowing deductions for eligible
-              assets up to $20,000.
-            </p>
-          </div>
-        </div>
-
-        <hr />
-        <TitleSm title={"SIPBN Inc.’s Commitment"} />
+        <TitleSm title={"The Energy Dillema"}/>
 
         <div className="blogsContainer">
           <div>
             <p className="blogsDescription2">
-              At SIPBN Inc., we are dedicated to leveraging these budget
-              measures to drive progress and create opportunities for our
-              community. Our mission is to provide live opportunities and
-              connections in Australia and overseas for our members, investors,
-              founders, partners, and associates.
+            Balancing the benefits of AI with the need to reduce carbon emissions requires a multifaceted approach:Balancing the benefits of AI with the need to reduce carbon emissions requires a multifaceted approach:
+              <br /><br/>
+              <b>1. Energy Efficiency in AI Development:</b> AI technology has patent dangers yet progress in both the hardware and software foundation used by the technology can help to lessen the energy consumption levels. Researchers are looking for other superior methods while technological industries are investing into specific co-processors that can operate artificial intelligence jobs at a high level of efficiency and with less power consumption.
+              <br /> <br/>
+              <b>2. Green Data Centers:</b> The migration of data centres to renewables is a very important step. Some of the major IT companies including Google and Microsoft have signalled that they are going to bring 100% of energy into their data centre from renewable sources and reduce their energy consumption per dollar earned.
+              <br /> <br/>
+              <b>3. Carbon Offsetting:</b> AI developers and companies can invest in carbon offset projects to balance their emissions. This includes supporting reforestation, renewable energy projects, and other initiatives that reduce or capture carbon dioxide.
+              <br/><br/>
+              <b>4. Policy and Regulation:</b> The governing bodies have the responsibility of regulation and formulation of policies that promote efficient utilisation of clean energy and efficient technologies. This means that the industry behaviour can be directed towards sustainability by granting bonuses for investments in green technologies as well as fines in case of oversized carbon footprints.
+              <br/><br/>
+              <b>5. Innovative Cooling Solutions:</b> AI systems generate significant heat, requiring energy-intensive cooling systems. Innovations in cooling technologies, such as liquid cooling and immersion cooling, can reduce the energy required to keep data centres operational.
             </p>
           </div>
         </div>
+        <hr/>
 
-        <hr />
-        <TitleSm title={"Upcoming Events and Opportunities"} />
+        <TitleSm title={"AI as a Tool for Achieving Net Zero "}/>
 
         <div className="blogsContainer">
           <div>
             <p className="blogsDescription2">
-              Stay tuned for our upcoming Economic Update Event by SIPBN on 28th
-              June 2024 at the Sydney Startup Hub. Join us as we delve into how
-              these budget measures can benefit you and your business. Don’t
-              miss this opportunity to connect with industry leaders and peers.
+            Despite its energy challenges, AI holds immense potential to aid in the fight against climate change:Despite its energy challenges, AI holds immense potential to aid in the fight against climate change: 
+            <br/><br/>
+            <b>- Optimising Renewable Energy:</b> AI can enhance the efficiency and reliability of renewable energy sources. Machine learning algorithms can predict energy production from solar and wind farms, optimising their integration into the power grid.
+            <br/><br/>
+            <b>- Smart Grids and Energy Storage:</b> AI can manage energy distribution more effectively, balancing supply and demand in smart grids. It can also optimise the use of battery storage systems, crucial for stabilising renewable energy supplies.
+            <br/><br/>
+            <b>- Climate Modeling and Research:</b> AI-driven models can provide more accurate climate predictions, helping policymakers and scientists develop effective strategies to combat climate change. 
+            <br/><br/>
+            <b>- Energy Efficiency in Buildings and Transportation:</b> AI can optimize heating, cooling, and lighting in buildings, reducing energy consumption. In transportation, AI can enhance the efficiency of electric vehicles and logistics systems, contributing to lower emissions.
             </p>
           </div>
         </div>
 
-        <hr />
-        <TitleSm
-          title={"2024 Federal Budget: SIPBN Clean Energy Committee's Analysis"}
-        />
+        <hr/>
+
+        <TitleSm title={"Summary"}/>
 
         <div className="blogsContainer">
           <div>
-            <h2 className="blogsTitle">Key Takeaways:</h2>
-            <br />
+            
             <p className="blogsDescription2">
-              Major Renewable Focus: The budget has been praised as the biggest
-              clean energy budget in Australia's history and commits $19.7
-              billion to renewable energy, positioning Australia as a global
-              leader in green energy and driving innovation in clean
-              technologies.
-              <br />
-              Green Hydrogen Support: With $2 billion for the Hydrogen Headstart
-              program and a $6.7 billion Production Tax Incentive, Australia is
-              set to become a top green hydrogen producer, attracting
-              significant investment.
-              <br />
-              Community and Workforce Development: $399.1 million for community
-              support and $91 million for workforce training ensure the benefits
-              of the energy transition are widely shared, supporting a fair
-              shift to net-zero.
-              <br />
-              However, we note that the budget has a long-term horizon, with
-              most incentives starting from 2027-28, and introducing new
-              programs and initiatives might likely lead to potential regulatory
-              and approval hurdles.
+            Net zero emissions and artificial intelligence can be considered as the two most important trends defining the future environment. On the one hand, the increasing energy demand of AI solutions presents itself as a challenge, on the other – it provides marvellous instruments to shape the era of a sustainable, low-energy economy. Technology development, energy efficiency, and the use of renewable energy, for example, are the possibilities of utilising the AI capabilities while moving to pro-climate progress. The course to the future sustainability remains in the harmonious relation between the development of technology or the annexation of innovative techniques, products or services to human lives and environmental conservation.
+            <br/><br/>
+            Reference:<a href="https://www.technologyreview.com/2019/06/06/239031/training-a-single-ai-model-can-emit-as-much-carbon-as-five-cars-in-their-lifetimes/" className="blogLink"> https://www.technologyreview.com/2019/06/06/239031/training-a-single-ai-model-can-emit-as-much-carbon-as-five-cars-in-their-lifetimes/</a>
             </p>
           </div>
         </div>
 
+      <hr/>
+
         <div className="blogsContainer">
-          <div>
-            <h2 className="blogsTitle">Federal Budget 2024: A Closer Look</h2>
-            <br />
+          <div> 
             <p className="blogsDescription2">
-              The 2024 Federal Budget demonstrates Australia's commitment to
-              climate action and green economic growth.
-              <br />
-              <br />
-              <strong>Key highlights include:</strong>
-              <br />
-              Future Made in Australia Initiative: $13 billion for clean energy
-              and critical minerals production to reduce reliance on overseas
-              supply chains.
-              <br />
-              Energy Bill Relief Fund: $3.5 billion to reduce energy costs for
-              households and businesses.
-              <br />
-              Hydrogen Production Tax Incentive: $6.7 billion to grow a
-              competitive hydrogen industry and support decarbonisation.
-              <br />
-              Critical Minerals Production Tax Incentive: $7 billion to boost
-              critical minerals refining and processing for supply chain
-              resilience.
-              <br />
-              Solar and Battery Manufacturing Support: $1.4 billion to enhance
-              manufacturing capacity for solar panels and batteries.
+            Whether you're searching for insights on funding opportunities, strategies to achieve equity in your venture or tips for successful business matchmaking, you'll find everything you need to stay informed and motivated at sipbn.com.au. SIPBN provides you with support and knowledge on private capital, access to pitching sessions, and investment strategies. Own events are designed to educate, entertain, and empower you on your investment journey. Join and connect with a vibrant community of like-minded individuals, and thought leaders and be empowered to unlock the potential to elevate your business to new heights.
+            <br/><br />
+            #SIPBN #DebtFunding #VentureCapital #DealMaking #CapTech2024 #Funding #Equity #PrivateCapital #PitchingSessions #Investment
             </p>
           </div>
         </div>
 
-        <div className="blogsContainer">
-          <div>
-            <h2 className="blogsTitle">Industry Reactions:</h2>
-            <br />
-            <p className="blogsDescription2">
-              ARENA welcomed the expanded funding and new programs announced in
-              the Budget 2024-25. The $7.1 billion funding package for programs
-              administered by ARENA includes a $1.9 billion boost to ARENA’s
-              baseline funding, $2 billion for round two of the Hydrogen
-              Headstart program, and $1.7 billion for the Future Made in
-              Australia Innovation Fund. ARENA’s CEO, Darren Miller, highlighted
-              the importance of continued support to accelerate the energy
-              transition and reduce emissions.
-            </p>
-          </div>
-        </div>
 
-        <div className="blogsContainer">
-          <div>
-            <h2 className="blogsTitle">
-              Implications for Australia’s Renewable Energy Sector:
-            </h2>
-            <br />
-            <p className="blogsDescription2">
-              Hydrogen Economy: Incentives for hydrogen production will position
-              Australia as a leader in renewable hydrogen, despite challenges in
-              production costs, infrastructure, and storage.
-              <br />
-              <br />
-              Boosting Investment: The budget’s funding and tax incentives will
-              attract private investment, fostering rapid growth and innovation
-              in renewable energy.
-              <br />
-              <br />
-              Strengthening Infrastructure: Investments in solar and battery
-              manufacturing will enhance infrastructure, making renewable energy
-              more accessible and reliable.
-              <br />
-              <br />
-              Critical Minerals: Support for critical minerals production will
-              ensure Australia’s self-reliance, reducing dependence on global
-              supply chains dominated by China.
-              <br />
-              <br />
-              Global Comparison: Consistent policy support, akin to Germany’s
-              Energiewende, will boost market confidence and attract long-term
-              investments. Australia's focus aligns with global trends,
-              potentially making it a leader in hydrogen and critical minerals.
-              <br />
-              <br />
-              Economic and Environmental Benefits: The budget’s initiatives
-              could create over 20,000 jobs, boost local economies, enhance
-              energy security, and spur technological innovation, reducing costs
-              as seen in battery technology.
-            </p>
-          </div>
-        </div>
-        <hr />
-        <TitleSm title={"Challenges in the Clean Energy Transition "} />
-        <div className="blogsContainer">
-          <p className="blogsDescription2">
-            Hydrogen Economy Challenges: High production costs, infrastructure
-            needs, and storage/transportation issues require significant
-            investment and advanced technology solutions.
-            <br />
-            <br />
-            Critical Minerals Supply Chain: Australia must enhance mining and
-            processing capabilities while ensuring sustainable practices to
-            compete globally and mitigate environmental impacts.
-            <br />
-            <br />
-            Regulatory and Policy Hurdles: Streamlining approval processes and
-            maintaining long-term policy stability are crucial to avoid delays
-            and attract sustained investment.
-            <br />
-            <br />
-            Community and Workforce Engagement: Transparent communication for
-            community acceptance and addressing skill shortages through training
-            are essential for the renewable energy sector’s growth.
-          </p>
-        </div>
-        <hr />
-        <TitleSm title={"Conclusion"} />
-        <div className="blogsContainer">
-          <p className="blogsDescription2">
-            The 2024 Federal Budget paves the way for a promising future in
-            Australia’s clean energy sector by providing substantial funding
-            allocations and tax incentives, fostering a favorable environment
-            for private investment. Venture capitalists and private equity firms
-            can leverage these incentives to fund innovative startups and
-            projects. SIPBN’s global network could play a crucial role in
-            facilitating cross-border investments and collaborations, attracting
-            significant foreign capital and establishing strategic partnerships.
-            By connecting international investors with Australian clean energy
-            opportunities, SIPBN can drive significant advancements in the clean
-            energy space. Increased funding for R&D and manufacturing support
-            will enable SIPBN to foster technological innovation and support
-            stages of commercialisation of new and emerging technologies. By
-            providing platforms for startups to pitch ideas to investors, SIPBN
-            can accelerate the development and deployment of innovative clean
-            energy solutions.
-          </p>
-        </div>
-
-        <hr />
-        <TitleSm title={"Get in Touch:"} />
-        <div className="blogsContainer">
-          <p className="blogsDescription2">
-            At the SIPBN Clean Energy Committee, we aim to support the
-            transition to clean energy by connecting innovative technologies
-            with vital funding and support. If you are an investor in the clean
-            energy sector or have clean technology seeking investment, please
-            reach out to the SIPBN Clean Energy Committee at Reza.k@sipbn.com.
-          </p>
-        </div>
       </div>
     </>
   );

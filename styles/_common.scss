@@ -21,6 +21,9 @@
   }
 }
 
+
+
+
 //* Ensure the styles are specific enough to avoid conflicts */
 .ctTextWrapper {
   display: flex;
@@ -717,6 +720,10 @@ ul {
   object-fit: cover;
 }
 
+.blogLink{
+  color: #0051ff;
+}
+
 .blogsAuthor {
   display: flex;
   flex-direction: column; /* Stack items vertically on small screens */
@@ -726,7 +733,8 @@ ul {
 }
 
 .blogImg{
-  max-width: 40%;
+  max-width: 60%;
+  min-height: 40%;
   margin-top: 20px;
 }
 
