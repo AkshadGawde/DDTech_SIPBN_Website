@@ -103,7 +103,7 @@ const Hero = () => {
               <h3>World Class Speakers</h3>
             </div>
             <div className="box">
-              <h1 className="indigo">50+</h1>
+              <h1 className="indigo">250</h1>
               <h3>Deal Making opportunities</h3>
             </div>
             <div className="box">

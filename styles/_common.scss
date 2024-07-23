@@ -709,10 +709,25 @@ ul {
 .blogText{
   max-width: 60%;
 }
+
+
 .blogImage{
   max-width: 500px;
   max-height: 200px;
   object-fit: cover;
+}
+
+.blogsAuthor {
+  display: flex;
+  flex-direction: column; /* Stack items vertically on small screens */
+  align-items:flex-end; /* Center items horizontally */
+  text-align: left;
+  width: 59%;
+}
+
+.blogImg{
+  max-width: 40%;
+  margin-top: 20px;
 }
 
 .blogsContainer {

@@ -11,58 +11,54 @@ const Section = ({ title, children }) => (
   </>
 );
 
-const FederalBudget = () => {
+const Aivs = () => {
   return (
     <>
       <div className="container">
         <br />
-        <Title title={"Special Edition: Federal Budget Highlights"} />
+        <Title title={"Net Zero Emissions vs. AI's Rising Energy Consumption: A Complex Balance"} />
+
+        <div className="blogsAuthor">
+          <p>-Rez K.</p>
+          <b>4 minute read</b>
+        </div>
+        <img src="https://res.cloudinary.com/duv9rw1wg/image/upload/v1721736591/homePage/jquatrm5gch50shbjmrr.png" className="blogImg"/>
 
         <div className="blogsContainer">
           <p className="blogsDescription2">
-            In this special edition, we bring you comprehensive coverage of the
-            recent Federal Budget and its significant measures that align with
-            the interests of our members and partners. This budget introduces
-            several initiatives to alleviate the cost of living pressures, boost
-            economic growth, and foster innovation across various sectors.
-            Here’s a detailed breakdown of what this means for you and our
-            community.
+          Net Zero Emissions is one of the terms that have gained popularity in the modern world as people face the realities of climate change. At the same time, the advancement in Artificial Intelligence (AI) is equally at a very fast pace not only changing industries and economies but offering very high levels of efficiency and capability. However, a significant challenge emerges at the intersection of these two trends: the concerns around energy consumption by AI and how this new technology can help us get to net-zero emissions.
           </p>
         </div>
 
-        <hr />
-        <TitleSm title={"Key Highlights of the Federal Budget"} />
-
-        <div className="blogsContainer">
-          <div className="blogText">
-            <h2 className="blogsTitle">Cost of Living Relief:</h2>
-            <br />
-            <p className="blogsDescription2">
-              Energy Bill Rebate: Households will benefit from a $300 rebate on
-              energy bills.
-              <br />
-              Rental Assistance: Enhanced rental assistance to ease financial
-              burdens.
-            </p>
-          </div>
-        </div>
+        <TitleSm title={"Understanding Net Zero Emissions"} />
 
         <div className="blogsContainer">
           <div>
-            <h2 className="blogsTitle">Taxation and Superannuation:</h2>
             <br />
             <p className="blogsDescription2">
-              Stage 3 Tax Cuts: Effective July 1, 2024, taxpayers will save on
-              taxes based on their marginal taxable income, increasing
-              disposable incomes and stimulating consumer spending.
-              <br />
-              Superannuation Contributions: From July 1, 2024, higher
-              contributions to superannuation funds will be allowed, injecting
-              additional funds into self-managed super funds and boosting
-              investment activity.
+            Net Zero Emissions means that the quantity of greenhouse gases emitted into the atmosphere equals to the amount that is actively being taken out of the atmosphere. Net zero means that the organisation’s emission of greenhouse gases is matched by the equivalent amount of gas removed or offset. This can be done in various ways such as opting for or promoting the use of renewable energy sources like solar, wind, or hydro power, planting trees, implementing the technique of carbon capture and storage or enhancement of efficiency in the use of energy.
+            <br/><br/>
+            Now more than ever, Australia is promoting its 'net-zero' vision, with the federal government aiming for net-zero emissions by 2050. Numerous Australian states and territories, as well as leading firms, are planning to achieve this goal even sooner, with targets set for 2030-2050. These commitments are driving significant investments in cleaner energy technologies, policies, and innovative methodologies for reducing carbon emissions. The nation's dedication to transitioning to a sustainable future is fostering advancements in renewable energy sectors such as solar, wind, and hydrogen power.
             </p>
           </div>
         </div>
+
+        <TitleSm title={"The Double-Edged Sword of AI"} />
+
+        <div className="blogsContainer">
+          <div> 
+            <br />
+            <p className="blogsDescription2">
+            AI is transforming the fields from healthcare to finance, improving efficiency, finding new opportunities, and boosting the economy. However, the processing complexity of training and deploying state-of-the-art AI models is significant and increasing. The servers as well as the necessary infrastructure for capturing and processing AI are placed in data centres that are turning into large power consumers.
+              <br /> <br/>
+              A study held recently revealed that training a single neural network AI model can cause as much carbon emission as five cars in their entire lifespan. This trend means that as AI is inserted into more and more applications its energy use will rise. The dichotomy here is stark: while it can assist in detecting opportunities in using energy and enhancing the performance in several areas, it has energy needs, which affect the sustainable development plans.
+            </p>
+          </div>
+        </div>
+
+        <hr/>
+
+        <img src="https://res.cloudinary.com/duv9rw1wg/image/upload/v1721738869/homePage/xmxhpoun1okaaxlpvdx3.png" alt="" className="blogImg" />
 
         <div className="blogsContainer">
           <div>
@@ -349,4 +345,4 @@ const FederalBudget = () => {
   );
 };
 
-export default FederalBudget;
+export default Aivs;
