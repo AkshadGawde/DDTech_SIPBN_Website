@@ -18,11 +18,7 @@ const Aivs = () => {
         <br />
         <Title title={"Net Zero Emissions vs. AI's Rising Energy Consumption: A Complex Balance"} />
 
-        <div className="blogsAuthor">
-          <p>-Parth Maheshwari</p>
-          <b>4 minute read</b>
-        </div>
-        <img src="https://res.cloudinary.com/duv9rw1wg/image/upload/v1721736591/homePage/jquatrm5gch50shbjmrr.png" className="blogImg"/>
+        <img src="https://res.cloudinary.com/duv9rw1wg/image/upload/v1721735819/homePage/xugbdj1vuq9gm4o5qggb.png" className="blogImg"/>
 
         <div className="blogsContainer">
           <p className="blogsDescription2">
@@ -129,6 +125,9 @@ const Aivs = () => {
           </div>
         </div>
 
+        <div className="blogsAuthor">
+          <p>-Parth Maheshwari</p>
+        </div>
 
       </div>
     </>
