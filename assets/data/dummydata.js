@@ -14,37 +14,50 @@ export const expertise = [
     title: "Networking",
     cover:
       "https://res.cloudinary.com/dq23wxdum/image/upload/v1720283869/SIPBN/kgwdnmf3ym7vq3csn49j.png",
-    href:"/agency",
+    desc: [
+      { text: "Web design" },
+      { text: "Web development" },
+      { text: "Custom icons & illustrations" },
+      { text: "Hosting" },
+      { text: "Website audit" },
+    ],
   },
   {
     id: 2,
     title: "High Value Deal flow",
     cover:
       "https://res.cloudinary.com/dq23wxdum/image/upload/v1720283868/SIPBN/k30sp3vnb8qsfulozih4.png",
-      href:"/agency",
+    desc: [
+      { text: "Social media marketing" },
+      { text: "Marketing campaigns" },
+      { text: "Markting management" },
+      { text: "SEO" },
+    ],
   },
   {
     id: 3,
     title: "Cross Border Business Opportunities",
     cover:
       "https://res.cloudinary.com/dq23wxdum/image/upload/v1720283868/SIPBN/jxaesxmmvbkqczwghnkg.png",
-      href:"/agency",
+    desc: [
+      { text: "E-Commerce website design" },
+      { text: "WooCommerce" },
+      { text: "Content management" },
+      { text: "Hosting" },
+    ],
   },
   {
     id: 4,
     title: "Targeted Advocacy",
     cover:
       "https://res.cloudinary.com/dq23wxdum/image/upload/v1720283869/SIPBN/mlsm1uofmglsfbvzyytt.png",
-      href:"/agency",
+    desc: [
+      { text: "Visual identity" },
+      { text: "Branding for social media" },
+      { text: "Custom illustrations" },
+    ],
   },
 ];
-export const blogCards = [
-  {
-    id:1,
-    title:"Federal Budget",
-    cover:"https://res.cloudinary.com/dq23wxdum/image/upload/v1720283868/SIPBN/k30sp3vnb8qsfulozih4.png",
-  },
-]
 export const testimonial = [
   {
     id: 1,
@@ -115,31 +128,35 @@ export const brand = [
   },
   {
     id: 2,
-    cover: "../images/CGI logo.jpg",
-  },
-  {
-    id: 3,
     cover: "../images/l2.png",
   },
   {
+    id: 3,
+    cover: "../images/l3.png",
+  },
+  {
     id: 4,
-    cover: "../images/l10.jpg",
+    cover: "../images/l4.png",
   },
   {
     id: 5,
-    cover: "../images/l5.jpeg",
+    cover: "../images/l5.png",
   },
   {
     id: 6,
-    cover: "../images/l11.png",
-  },
-  {
-    id: 7,
     cover: "../images/l6.png",
   },
   {
+    id: 6,
+    cover: "../images/l7.png",
+  },
+  {
+    id: 7,
+    cover: "../images/l1.png",
+  },
+  {
     id: 8,
-    cover: "../images/l3.png",
+    cover: "../images/l8.png",
   },
   {
     id: 9,
@@ -147,15 +164,11 @@ export const brand = [
   },
   {
     id: 10,
-    cover: "../images/l7.png",
+    cover: "../images/l10.jpg",
   },
   {
-    id: 11,
-    cover: "../images/l4.png",
-  },
-  {
-    id: 12,
-    cover: "../images/l1.png",
+    id:11,
+    cover:"../images/l11.png",
   },
 ];
 export const brand2 = [

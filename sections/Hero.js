@@ -22,10 +22,7 @@ const Hero = () => {
           </a>
           <h1 className="hero-title">DISCOVER . CONNECT . EXECUTE</h1>
           <TitleSm title="Venue: ICC Sydney 14 Darling Drive Sydney, NSW 2000 Australia" />
-          <p>
-            Main event - Tuesday 26 November 2024 <br />
-            8:00am - 7:30pm
-          </p>
+          <p>Tue, 26 Nov 2024 9:00 AM - Wed, 27 Nov 2024 9:00 PM AEDT</p>
           <a
             href="https://www.eventbrite.com.au/e/captech2024-discover-connect-execute-venue-icc-sydney-tickets-772015889307"
             target="_blank"
@@ -96,20 +93,6 @@ const Hero = () => {
               <br />
               <button className="button-primary">Book Tickets</button>
             </a>
-          </div>
-          <div className="grid-3">
-            <div className="box">
-              <h1 className="indigo">50+</h1>
-              <h3>World Class Speakers</h3>
-            </div>
-            <div className="box">
-              <h1 className="indigo">250</h1>
-              <h3>Deal Making opportunities</h3>
-            </div>
-            <div className="box">
-              <h1 className="indigo">300+</h1>
-              <h3>Global investors and business leaders</h3>
-            </div>
           </div>
         </div>
       </section>

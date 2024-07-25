@@ -18,8 +18,6 @@ const FederalBudget = () => {
         <br />
         <Title title={"Special Edition: Federal Budget Highlights"} />
 
-        <img src="https://res.cloudinary.com/duv9rw1wg/image/upload/v1721736223/homePage/omer85xdmfprk3ohmdve.jpg" className="blogImg" alt="" />
-
         <div className="blogsContainer">
           <p className="blogsDescription2">
             In this special edition, we bring you comprehensive coverage of the
