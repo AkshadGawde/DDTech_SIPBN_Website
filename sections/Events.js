@@ -16,25 +16,12 @@ const Events = () => {
           <Title title={"Upcoming Events"} />
           <div class="event-container">
             <div class="eventCard">
-              <a href="https://events.humanitix.com/economic-update-opportunities-and-challenges">
-                <img
-                  className="eventImg"
-                  src="https://res.cloudinary.com/duv9rw1wg/image/upload/v1719326603/homePage/tvndvw12ujvsbg0dmvaq.png"
-                  alt="Event 1 Image"
-                />
-              </a>
-              <h2 class="event-title">June 2024</h2>
-              <p class="event-description">
-                Economic Update - Opportunities and Challenges
-              </p>
-            </div>
-            <div class="eventCard">
               <img
                 className="eventImg"
                 src="https://res.cloudinary.com/duv9rw1wg/image/upload/v1719354679/homePage/pjzjnljv4l1wxl2vfhad.png"
                 alt="Event 2 Image"
               />
-              <h2 class="event-title">August 2024</h2>
+              <h2 class="event-title">September 2024</h2>
               <p class="event-description"> Presentation & Pitching Session.</p>
             </div>
             <div class="eventCard">
@@ -71,6 +58,19 @@ const Events = () => {
           <Title title={"Past Events"} />
           <div class="event-container">
             <div class="eventCard">
+              <div class="eventCard">
+                <a href="https://events.humanitix.com/economic-update-opportunities-and-challenges">
+                  <img
+                    className="eventImg"
+                    src="https://res.cloudinary.com/duv9rw1wg/image/upload/v1719326603/homePage/tvndvw12ujvsbg0dmvaq.png"
+                    alt="Event 1 Image"
+                  />
+                </a>
+                <h2 class="event-title">June 2024</h2>
+                <p class="event-description">
+                  Economic Update - Opportunities and Challenges
+                </p>
+              </div>
               <a href="https://www.eventbrite.com.au/e/#CapTech2024-global-pitching-presenting-session-tickets-765412678927">
                 <img
                   className="eventImg"
