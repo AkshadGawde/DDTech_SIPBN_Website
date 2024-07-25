@@ -43,12 +43,9 @@
   .grid-4,
   .grid-10,
   .grid-7,
-  .gird-12 {
+  .gird-12,
+  .grid-3 {
     @include grid(repeat(2, 1fr), 50px);
-  }
-
-  .grid-3{
-    @include grid(repeat(1,1fr) , 60px)
   }
 }
 

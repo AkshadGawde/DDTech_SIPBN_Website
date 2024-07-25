@@ -17,7 +17,7 @@ const Index = () => {
         <Title title={"Successful Stories"} />
 
         <div className="blogsContainer">
-          <div>
+          <div className="blogText">
             <h2 className="blogsTitle">Design Technology Company</h2>
             <br />
             <p className="blogsDescription2">
@@ -32,7 +32,7 @@ const Index = () => {
         <hr />
         <div className="blogsContainer">
           <img src="https://publicsite-wordpress-storage-public.emarketer.com/wp-content/uploads/2021/07/27154456/Stock-Market-scaled.jpeg  " className="blogImage"/>
-          <div>
+          <div className="blogText">
             <h2 className="blogsTitle">Fintech Company</h2>
             <br />
             <p className="blogsDescription2">
@@ -45,7 +45,7 @@ const Index = () => {
         <hr />
 
         <div className="blogsContainer">
-          <div>
+          <div className="blogText">
             <h2 className="blogsTitle">Renewable Energy</h2>
             <br />
             <p className="blogsDescription2">
@@ -61,7 +61,7 @@ const Index = () => {
         <hr />
         <div className="blogsContainer">
           <img src="https://5.imimg.com/data5/SELLER/Default/2023/7/321808525/YF/CD/JG/648176/mining-exploration-services.jpg" className="blogImage"/>
-          <div>
+          <div className="blogText">
             <h2 className="blogsTitle">Mining and Exploration</h2>
             <br />
             <p className="blogsDescription2">
@@ -75,7 +75,7 @@ const Index = () => {
         </div>
         <hr />
         <div className="blogsContainer">
-          <div>
+          <div className="blogText">
             <h2 className="blogsTitle">
               Capital Raising for a Private Equity Fund
             </h2>
@@ -90,7 +90,7 @@ const Index = () => {
         <hr />
         <div className="blogsContainer">
           <img src="https://macksennettstudios.net/wp-content/uploads/2021/02/What-does-a-film-studio-do.jpg" className="blogImage"/>
-          <div>
+          <div className="blogText">
             <h2 className="blogsTitle">Financing of a Movie Business</h2>
             <br />
             <p className="blogsDescription2">

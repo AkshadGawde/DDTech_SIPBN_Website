@@ -20,7 +20,7 @@ import {
         </div>
         <div className="grid-4 py">
           {memberdata.map((item) => (
-            <Card data={item} key={item.id} caption={item.post} />
+            <Card data={item} key={item.id} caption={item.post} path="/team" />
           ))}
         </div>
   
