@@ -147,16 +147,12 @@ export const brand = [
     cover: "../SVG/Logo6.svg",
   },
   {
-    id: 6,
+    id: 7,
     cover: "../SVG/Logo7.svg",
   },
   {
-    id: 7,
-    cover: "../SVG/Logo8.svg",
-  },
-  {
     id: 8,
-    cover: "../images/l8.png",
+    cover: "../SVG/Logo8.svg",
   },
   {
     id: 9,
@@ -186,31 +182,31 @@ export const brand = [
 export const brand2 = [
   {
     id: 1,
-    cover: "../images/m1.png",
+    cover: "../SVG/media1.svg",
   },
   {
     id: 2,
-    cover: "../images/m2.png",
+    cover: "../SVG/media2.svg",
   },
   {
     id: 3,
-    cover: "../images/m3.png",
+    cover: "../SVG/media3.svg",
   },
   {
     id: 4,
-    cover: "../images/m4.png",
+    cover: "../SVG/media4.svg",
   },
   {
     id: 5,
-    cover: "../images/m5.png",
+    cover: "../SVG/media5.svg",
   },
   {
     id: 6,
-    cover: "../images/m6.png",
+    cover: "../SVG/media6.svg",
   },
   {
     id: 7,
-    cover: "../images/m7.png",
+    cover: "../SVG/media7.svg",
   },
 ];
 export const blogdata = [
