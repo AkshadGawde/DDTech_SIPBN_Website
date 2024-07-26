@@ -1,29 +1,35 @@
-import { Title, TitleSm } from "@/components/common/Title";
 import React, { useState } from "react";
-import {
-  AiFillBehanceCircle,
-  AiFillInstagram,
-  AiFillLinkedin,
-} from "react-icons/ai";
+import { Title, TitleSm } from "@/components/common/Title";
+import { AiFillBehanceCircle, AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
 import { BiUserCircle } from "react-icons/bi";
 import { BsFacebook } from "react-icons/bs";
 import { FiHeadphones, FiHelpCircle } from "react-icons/fi";
 import { IoLocationOutline } from "react-icons/io5";
 import ReCAPTCHA from "react-google-recaptcha";
+import toast, { Toaster } from "react-hot-toast";
 
 const Contact = () => {
-
-  const [verfied, setVerifed] = useState(false);
+  const [verified, setVerified] = useState(false);
 
   //recaptcha function
   function onChange(value) {
     console.log("Captcha value:", value);
-    setVerifed(true);
+    setVerified(true);
   }
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (verified) {
+      toast.success("Form submitted successfully!");
+      // handle form submission here (e.g., send form data to the server)
+    } else {
+      toast.error("Please complete the reCAPTCHA");
+    }
+  };
 
   return (
     <>
-    
+      <Toaster />
       <section className="contact bg-top">
         <div className="container">
           <div className="heading-title">
@@ -64,10 +70,8 @@ const Contact = () => {
             </div>
             <div className="right w-70">
               <TitleSm title="Make an online enquiry" />
-             
 
-              <form>
-                
+              <form onSubmit={handleSubmit}>
                 <div className="grid-2">
                   <div className="inputs">
                     <span>Name</span>
@@ -80,11 +84,11 @@ const Contact = () => {
                 </div>
                 <div className="grid-2">
                   <div className="inputs">
-                    <span>your budget</span>
+                    <span>Your Budget</span>
                     <input type="text" />
                   </div>
                   <div className="inputs">
-                    <span>timeframe</span>
+                    <span>Timeframe</span>
                     <input type="text" />
                   </div>
                 </div>
@@ -92,16 +96,14 @@ const Contact = () => {
                   <span>TELL US A BIT ABOUT YOUR PROJECT*</span>
                   <textarea cols="30" rows="10"></textarea>
                 </div>
-               
-                <button type="submit" className="button-primary" disabled={!verfied}
-        >
-          Submit
-        </button>
-        <ReCAPTCHA
-        className="captcha"
-          sitekey="6Ldu3ggqAAAAAOxYno4zfSKarTV8K415AB6x7SWf"
-          onChange={onChange}
-        />
+                <button type="submit" className="button-primary" disabled={!verified}>
+                  Submit
+                </button>
+                <ReCAPTCHA
+                  className="captcha"
+                  sitekey="6Ldu3ggqAAAAAOxYno4zfSKarTV8K415AB6x7SWf"
+                  onChange={onChange}
+                />
               </form>
             </div>
           </div>

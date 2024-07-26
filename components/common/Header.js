@@ -81,10 +81,10 @@ const Header = () => {
             </Link>
             <div className="dropdown">
               <Link
-                href="/agency"
+                href="/about"
                 onClick={handleLinkClick}
                 onMouseEnter={() => toggleDropdown("about")}
-                className={activeLink === "/agency" ? "activeLink" : ""}
+                className={activeLink === "/about" ? "activeLink" : ""}
               >
                 About
               </Link>
