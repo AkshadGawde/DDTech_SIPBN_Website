@@ -124,35 +124,35 @@ export const showcase = [
 export const brand = [
   {
     id: 1,
-    cover: "../images/l0.png",
+    cover: "../SVG/Logo1.svg",
   },
   {
     id: 2,
-    cover: "../images/l2.png",
+    cover: "../SVG/Logo2.svg",
   },
   {
     id: 3,
-    cover: "../images/l3.png",
+    cover: "../SVG/Logo3.svg",
   },
   {
     id: 4,
-    cover: "../images/l4.png",
+    cover: "../SVG/Logo4.svg",
   },
   {
     id: 5,
-    cover: "../images/l5.png",
+    cover: "../SVG/Logo5.svg",
   },
   {
     id: 6,
-    cover: "../images/l6.png",
+    cover: "../SVG/Logo6.svg",
   },
   {
     id: 6,
-    cover: "../images/l7.png",
+    cover: "../SVG/Logo7.svg",
   },
   {
     id: 7,
-    cover: "../images/l1.png",
+    cover: "../SVG/Logo8.svg",
   },
   {
     id: 8,
@@ -160,15 +160,27 @@ export const brand = [
   },
   {
     id: 9,
-    cover: "../images/l9.jpg",
+    cover: "../SVG/Logo9.svg",
   },
   {
     id: 10,
-    cover: "../images/l10.jpg",
+    cover: "../SVG/Logo10.svg",
   },
   {
-    id:11,
-    cover:"../images/l11.png",
+    id: 11,
+    cover: "../SVG/Logo11.svg",
+  },
+  {
+    id: 12,
+    cover: "../SVG/Logo12.svg",
+  },
+  {
+    id: 13,
+    cover: "../SVG/Logo13.svg",
+  },
+  {
+    id: 14,
+    cover: "../SVG/Logo14.svg",
   },
 ];
 export const brand2 = [
