@@ -1,29 +1,97 @@
 import React, { useState } from "react";
 import { Title, TitleSm } from "@/components/common/Title";
-import { AiFillBehanceCircle, AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
-import { BiUserCircle } from "react-icons/bi";
-import { BsFacebook } from "react-icons/bs";
 import { FiHeadphones, FiHelpCircle } from "react-icons/fi";
 import { IoLocationOutline } from "react-icons/io5";
 import ReCAPTCHA from "react-google-recaptcha";
 import toast, { Toaster } from "react-hot-toast";
+import emailjs from "emailjs-com";
+
+const countryCodes = [
+  { code: "+1", name: "USA" },
+  { code: "+44", name: "UK" },
+  { code: "+61", name: "Australia" },
+  { code: "+91", name: "India" },
+  { code: "+81", name: "Japan" },
+  { code: "+86", name: "China" },
+  { code: "+33", name: "France" },
+  { code: "+49", name: "Germany" },
+  { code: "+39", name: "Italy" },
+  // Add more country codes as needed
+];
 
 const Contact = () => {
   const [verified, setVerified] = useState(false);
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    budget: "",
+    timeframe: "",
+    projectDetails: "",
+    countryCode: "",
+    phoneNumber: "",
+  });
+  const [errors, setErrors] = useState({});
 
-  //recaptcha function
+  // reCAPTCHA function
   function onChange(value) {
     console.log("Captcha value:", value);
     setVerified(true);
   }
 
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const validate = () => {
+    let errors = {};
+
+    if (!formData.name) errors.name = "Name is required";
+    if (!formData.email) errors.email = "Email is required";
+    if (!formData.budget) errors.budget = "Budget is required";
+    if (!formData.timeframe) errors.timeframe = "Timeframe is required";
+    if (!formData.projectDetails) errors.projectDetails = "Project details are required";
+    if (!formData.countryCode) errors.countryCode = "Country code is required";
+    if (!formData.phoneNumber) errors.phoneNumber = "Phone number is required";
+
+    setErrors(errors);
+    return Object.keys(errors).length === 0;
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (verified) {
-      toast.success("Form submitted successfully!");
-      // handle form submission here (e.g., send form data to the server)
+    if (validate() && verified) {
+      emailjs
+        .send(
+          "service_g6wsggb", // Replace with your EmailJS service ID
+          "template_j1joepl", // Replace with your EmailJS template ID
+          formData,
+          "p-_pNoyFKi6vQznK6" 
+        )
+        .then(
+          (response) => {
+            console.log("Success:", response);
+            toast.success("Your form has been submitted!");
+            setFormData({
+              name: "",
+              email: "",
+              budget: "",
+              timeframe: "",
+              projectDetails: "",
+              countryCode: "",
+              phoneNumber: "",
+            });
+            setVerified(false);
+          },
+          (error) => {
+            toast.error("There was an error submitting your form.")
+            console.error("Error:", error);
+           ;
+          }
+        );
     } else {
-      toast.error("Please complete the reCAPTCHA");
+      console.log("Form validation failed.");
+      toast.error("Please fill out all required fields.");
     }
   };
 
@@ -46,9 +114,9 @@ const Contact = () => {
                     width="300"
                     height="400"
                     style={{ border: "0" }}
-                    allowfullscreen=""
+                    allowFullScreen=""
                     loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"
+                    referrerPolicy="no-referrer-when-downgrade"
                   ></iframe>
                 </div>
                 <div className="box">
@@ -70,31 +138,97 @@ const Contact = () => {
             </div>
             <div className="right w-70">
               <TitleSm title="Make an online enquiry" />
-
               <form onSubmit={handleSubmit}>
                 <div className="grid-2">
                   <div className="inputs">
                     <span>Name</span>
-                    <input type="text" />
+                    <input
+                      type="text"
+                      name="name"
+                      value={formData.name}
+                      onChange={handleChange}
+                      required
+                    />
+                    {errors.name && <p className="error">{errors.name}</p>}
                   </div>
                   <div className="inputs">
                     <span>Email</span>
-                    <input type="email" />
+                    <input
+                      type="email"
+                      name="email"
+                      value={formData.email}
+                      onChange={handleChange}
+                      required
+                    />
+                    {errors.email && <p className="error">{errors.email}</p>}
                   </div>
                 </div>
                 <div className="grid-2">
                   <div className="inputs">
                     <span>Your Budget</span>
-                    <input type="text" />
+                    <input
+                      type="text"
+                      name="budget"
+                      value={formData.budget}
+                      onChange={handleChange}
+                      required
+                    />
+                    {errors.budget && <p className="error">{errors.budget}</p>}
                   </div>
                   <div className="inputs">
                     <span>Timeframe</span>
-                    <input type="text" />
+                    <input
+                      type="text"
+                      name="timeframe"
+                      value={formData.timeframe}
+                      onChange={handleChange}
+                      required
+                    />
+                    {errors.timeframe && <p className="error">{errors.timeframe}</p>}
+                  </div>
+                </div>
+                <div className="grid-2">
+                  <div className="inputs">
+                    <span>Country Code</span><br/>
+                    <select
+                      name="countryCode"
+                      value={formData.countryCode}
+                      onChange={handleChange}
+                      className="styled-select"
+                      required
+                    >
+                      <option value="">Select</option>
+                      {countryCodes.map((country) => (
+                        <option key={country.code} value={country.code}>
+                          {country.code} ({country.name})
+                        </option>
+                      ))}
+                    </select>
+                    {errors.countryCode && <p className="error">{errors.countryCode}</p>}
+                  </div>
+                  <div className="inputs">
+                    <span>Phone Number</span>
+                    <input
+                      type="text"
+                      name="phoneNumber"
+                      value={formData.phoneNumber}
+                      onChange={handleChange}
+                      required
+                    />
+                    {errors.phoneNumber && <p className="error">{errors.phoneNumber}</p>}
                   </div>
                 </div>
                 <div className="inputs">
                   <span>TELL US A BIT ABOUT YOUR PROJECT*</span>
-                  <textarea cols="30" rows="10"></textarea>
+                  <textarea
+                    cols="30"
+                    rows="10"
+                    name="projectDetails"
+                    value={formData.projectDetails}
+                    onChange={handleChange}
+                    required
+                  ></textarea>
+                  {errors.projectDetails && <p className="error">{errors.projectDetails}</p>}
                 </div>
                 <button type="submit" className="button-primary" disabled={!verified}>
                   Submit
