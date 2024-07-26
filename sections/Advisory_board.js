@@ -12,7 +12,9 @@ const Advisory_board = () => {
 
         <div className="advisoryContainer">
           <div>
-            <h2 className="advisoryTitle">Roderick H. McGeoch AO, LLB -Chairman</h2>
+            <h2 className="advisoryTitle">
+              Roderick H. McGeoch AO, LLB -Chairman
+            </h2>
             <p className="advisoryDescription">
               Rod McGeoch has had and continues to enjoy a remarkable career at
               the forefront of business, sports administration and the legal
@@ -80,7 +82,7 @@ const Advisory_board = () => {
           </div>
           <img
             className="advisoryImg"
-            src="https://res.cloudinary.com/dq23wxdum/image/upload/v1719269658/SIPBN/wtors8w4kktwnxazinjs.png"
+            src="https://res.cloudinary.com/dueoon8xe/image/upload/v1721977795/Speakers%20-%20Sipbn/xzjeua3ldfcpobi5hzxm.png"
             alt="Profile Image"
           />
         </div>
@@ -119,7 +121,7 @@ const Advisory_board = () => {
           </div>
           <img
             className="advisoryImg"
-            src="https://res.cloudinary.com/dq23wxdum/image/upload/v1719270127/SIPBN/clzucgjysl0nweyvrbhs.png"
+            src="https://res.cloudinary.com/dueoon8xe/image/upload/v1721977795/Speakers%20-%20Sipbn/hz1mltgehubeqyshxg0a.png"
           />
         </div>
 
@@ -152,7 +154,7 @@ const Advisory_board = () => {
           </div>
           <img
             className="advisoryImg"
-            src="https://res.cloudinary.com/dq23wxdum/image/upload/v1719270127/SIPBN/fkfym7xbawuijukrmcs6.png"
+            src="https://res.cloudinary.com/dueoon8xe/image/upload/v1721977794/Speakers%20-%20Sipbn/fnjvhqfz87z7edrt7gpq.png"
           />
         </div>
 
@@ -177,7 +179,7 @@ const Advisory_board = () => {
           </div>
           <img
             className="advisoryImg"
-            src="https://res.cloudinary.com/dq23wxdum/image/upload/v1719269793/SIPBN/n4mafjlos7wpsjb4xtjk.png"
+            src="https://res.cloudinary.com/dueoon8xe/image/upload/v1721977795/Speakers%20-%20Sipbn/f24jqtv1atmi74zad9ps.png"
           />
         </div>
 
@@ -202,7 +204,7 @@ const Advisory_board = () => {
           </div>
           <img
             className="advisoryImg"
-            src="https://res.cloudinary.com/dq23wxdum/image/upload/v1719346273/SIPBN/h6bqf9man7u8bry9szsh.png"
+            src="https://res.cloudinary.com/dueoon8xe/image/upload/v1721977792/Speakers%20-%20Sipbn/dx8ksnkvhluhbx5jwggd.png"
           />
         </div>
 
@@ -241,7 +243,7 @@ const Advisory_board = () => {
           </div>
           <img
             className="advisoryImg"
-            src="https://res.cloudinary.com/dq23wxdum/image/upload/v1719269761/SIPBN/rs2ps9luclezitrbsfzc.png"
+            src="https://res.cloudinary.com/dueoon8xe/image/upload/v1721977795/Speakers%20-%20Sipbn/nxfikokumfced7tpqwxy.png"
           />
         </div>
 
@@ -268,7 +270,7 @@ const Advisory_board = () => {
           </div>
           <img
             className="advisoryImg"
-            src="https://res.cloudinary.com/dq23wxdum/image/upload/v1719270393/SIPBN/lc7pxpwl8dqwftsavjbd.png"
+            src="https://res.cloudinary.com/dueoon8xe/image/upload/v1721977794/Speakers%20-%20Sipbn/p4divkup6gp7m7tqwubw.png"
           />
         </div>
       </div>
