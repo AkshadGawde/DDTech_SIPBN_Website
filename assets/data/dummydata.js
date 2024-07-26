@@ -124,81 +124,89 @@ export const showcase = [
 export const brand = [
   {
     id: 1,
-    cover: "../images/l0.png",
+    cover: "../SVG/Logo1.svg",
   },
   {
     id: 2,
-    cover: "../images/l2.png",
+    cover: "../SVG/Logo2.svg",
   },
   {
     id: 3,
-    cover: "../images/l3.png",
+    cover: "../SVG/Logo3.svg",
   },
   {
     id: 4,
-    cover: "../images/l4.png",
+    cover: "../SVG/Logo4.svg",
   },
   {
     id: 5,
-    cover: "../images/l5.png",
+    cover: "../SVG/Logo5.svg",
   },
   {
     id: 6,
-    cover: "../images/l6.png",
-  },
-  {
-    id: 6,
-    cover: "../images/l7.png",
+    cover: "../SVG/Logo6.svg",
   },
   {
     id: 7,
-    cover: "../images/l1.png",
+    cover: "../SVG/Logo7.svg",
   },
   {
     id: 8,
-    cover: "../images/l8.png",
+    cover: "../SVG/Logo8.svg",
   },
   {
     id: 9,
-    cover: "../images/l9.jpg",
+    cover: "../SVG/Logo9.svg",
   },
   {
     id: 10,
-    cover: "../images/l10.jpg",
+    cover: "../SVG/Logo10.svg",
   },
   {
-    id:11,
-    cover:"../images/l11.png",
+    id: 11,
+    cover: "../SVG/Logo11.svg",
+  },
+  {
+    id: 12,
+    cover: "../SVG/Logo12.svg",
+  },
+  {
+    id: 13,
+    cover: "../SVG/Logo13.svg",
+  },
+  {
+    id: 14,
+    cover: "../SVG/Logo14.svg",
   },
 ];
 export const brand2 = [
   {
     id: 1,
-    cover: "../images/m1.png",
+    cover: "../SVG/media1.svg",
   },
   {
     id: 2,
-    cover: "../images/m2.png",
+    cover: "../SVG/media2.svg",
   },
   {
     id: 3,
-    cover: "../images/m3.png",
+    cover: "../SVG/media3.svg",
   },
   {
     id: 4,
-    cover: "../images/m4.png",
+    cover: "../SVG/media4.svg",
   },
   {
     id: 5,
-    cover: "../images/m5.png",
+    cover: "../SVG/media5.svg",
   },
   {
     id: 6,
-    cover: "../images/m6.png",
+    cover: "../SVG/media6.svg",
   },
   {
     id: 7,
-    cover: "../images/m7.png",
+    cover: "../SVG/media7.svg",
   },
 ];
 export const blogdata = [
@@ -244,7 +252,7 @@ export const patronsdata = [
     id: 3,
     title: "Dr Joseph Rizk AM",
     cover:
-      "https://res.cloudinary.com/dq23wxdum/image/upload/v1719275404/SIPBN/lb7c21yo9bvx03ifekqf.png",
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721983854/Speakers%20-%20Sipbn/fbz7of1oru2yozqa6jeb.png",
     post: "CEO & Managing Director of Arab Bank Australia",
   },
   {
@@ -258,7 +266,7 @@ export const patronsdata = [
     id: 10,
     title: "Helen Liossis",
     cover:
-      "https://res.cloudinary.com/dq23wxdum/image/upload/v1719270127/SIPBN/clzucgjysl0nweyvrbhs.png",
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977795/Speakers%20-%20Sipbn/hz1mltgehubeqyshxg0a.png",
     post: "Non-Executive Director & Deputy Chair",
   },
 ];
@@ -268,7 +276,7 @@ export const memberdata = [
     id: 1,
     title: "The Hon Victor Dominello",
     cover:
-      "https://res.cloudinary.com/dq23wxdum/image/upload/v1719275738/SIPBN/wh9v21toua7dvkgndz9s.png",
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721983854/Speakers%20-%20Sipbn/m3ukoq5lvsd8iu5psugc.png",
     post: "Former NSW Government Minister",
   },
   {
@@ -282,42 +290,42 @@ export const memberdata = [
     id: 3,
     title: "Dr Joseph Rizk AM",
     cover:
-      "https://res.cloudinary.com/dq23wxdum/image/upload/v1719275404/SIPBN/lb7c21yo9bvx03ifekqf.png",
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721983854/Speakers%20-%20Sipbn/fbz7of1oru2yozqa6jeb.png",
     post: "CEO & Managing Director of Arab Bank Australia",
   },
   {
     id: 22,
     title: "Dr. Janakiraman",
     cover:
-      "https://res.cloudinary.com/dq23wxdum/image/upload/v1720161307/SIPBN/b5unnyqdkakq8t1ubrvc.png",
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977791/Speakers%20-%20Sipbn/jvtfn3stqu00q2g1eule.png",
     post: "Career diplomat, joined the Indian Foreign Service in 2002.",
   },
   {
     id: 4,
     title: "Carmel Monaghan",
     cover:
-      "https://res.cloudinary.com/dq23wxdum/image/upload/v1719275958/SIPBN/fbggytdpkc5vubq2yqhi.png",
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977793/Speakers%20-%20Sipbn/Carmel%20Monaghan.png",
     post: "CEO of Ramsay Health Care",
   },
   {
     id: 21,
     title: "Craig Scroggie",
     cover:
-      "https://res.cloudinary.com/dq23wxdum/image/upload/v1720161307/SIPBN/nl5lkzm2srjmiufy8zgr.png",
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977791/Speakers%20-%20Sipbn/fbcx7na2dwwl339tp0h3.png",
     post: "CEO and Managing Director of NEXTDC",
   },
   {
     id: 5,
     title: "Dr. Christian Baylis",
     cover:
-      "https://res.cloudinary.com/dq23wxdum/image/upload/v1719276024/SIPBN/glvavu3wrenwjyw44o3j.png",
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721983854/Speakers%20-%20Sipbn/owoswxfpqqbltgmkzogy.png",
     post: "Founder and CIO at Fortlake Asset Management",
   },
   {
     id: 29,
     title: "Paul Nicolaou",
     cover:
-      "https://res.cloudinary.com/dq23wxdum/image/upload/v1721137440/SIPBN/wocbehnf3tdhvcfvrk4t.png",
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977795/Speakers%20-%20Sipbn/eeighxjjkphbvyp0jkro.png",
     post: "Executive Director, Business Sydney",
   },
   {
@@ -338,7 +346,7 @@ export const memberdata = [
     id: 8,
     title: "The Hon David Elliott",
     cover:
-      "https://res.cloudinary.com/dq23wxdum/image/upload/v1719345440/SIPBN/d1i7rarmrnxyqjwyb0xx.png",
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977792/Speakers%20-%20Sipbn/ycztissjydhflfufrm8l.png",
     post: "CEO of Ramsay Health Care",
   },
   {
@@ -352,28 +360,28 @@ export const memberdata = [
     id: 10,
     title: "Helen Liossis",
     cover:
-      "https://res.cloudinary.com/dq23wxdum/image/upload/v1719270127/SIPBN/clzucgjysl0nweyvrbhs.png",
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977795/Speakers%20-%20Sipbn/hz1mltgehubeqyshxg0a.png",
     post: "CEO of Ramsay Health Care",
   },
   {
     id: 11,
     title: "Kunwar Aditya Saxena",
     cover:
-      "https://res.cloudinary.com/dq23wxdum/image/upload/v1719346273/SIPBN/wmpdfxlaf47ngy1egtxi.png",
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977792/Speakers%20-%20Sipbn/qmbf4ubvwh9yjjrwyrr3.png",
     post: "CFO of CIMET",
   },
   {
     id: 12,
     title: "Sarah Fairhurst",
     cover:
-      "https://res.cloudinary.com/dq23wxdum/image/upload/v1719346273/SIPBN/h6bqf9man7u8bry9szsh.png",
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977792/Speakers%20-%20Sipbn/dx8ksnkvhluhbx5jwggd.png",
     post: "Board roles as a Non-Executive Director (NED) covering four companies",
   },
   {
     id: 13,
     title: "Dr George Margelis",
     cover:
-      "https://res.cloudinary.com/dq23wxdum/image/upload/v1719346364/SIPBN/m53unxyoyhc7phvqb2au.png",
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977792/Speakers%20-%20Sipbn/dhlpd0aqjrm2v0vekolk.png",
     post: "Chief Technology Advisor, Digital Health Advisor & Board Member",
   },
   {
@@ -387,42 +395,42 @@ export const memberdata = [
     id: 15,
     title: "Michael Kollo",
     cover:
-      "https://res.cloudinary.com/dq23wxdum/image/upload/v1719346520/SIPBN/wogpn1o7k1mwnv9zllvt.png",
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977791/Speakers%20-%20Sipbn/sibey8fg4xk74xy4csag.png",
     post: "CEO of Evolved AI",
   },
   {
     id: 16,
     title: "Besa Deda",
     cover:
-      "https://res.cloudinary.com/dq23wxdum/image/upload/v1719346591/SIPBN/qf5p2kvpdni7unkvdgwt.png",
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977791/Speakers%20-%20Sipbn/ltnukh4s8yixliyk3lfg.png",
     post: "Chief Economist of Westpac’s Business Bank",
   },
   {
     id: 17,
     title: "The Hon Mark Coure MP",
     cover:
-      "https://res.cloudinary.com/dq23wxdum/image/upload/v1719346591/SIPBN/j58spx3bezirxl4wehwh.png",
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977791/Speakers%20-%20Sipbn/mq56dvexl0yzbrkrzdx9.png",
     post: "Member for Oatley; Shadow Minister for Multiculturalism; Shadow Minister for Jobs, Industry, Innovation, Science and Technology; Shadow Minister for South-Western Sydney",
   },
   {
     id: 24,
     title: "Lee Heckin",
     cover:
-      "https://res.cloudinary.com/dq23wxdum/image/upload/v1720161306/SIPBN/dqqtv5cwyt5htkjaeif7.png",
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977790/Speakers%20-%20Sipbn/gbz7fpcasehkvqrv3clf.png",
     post: " AI Technology & Policy Lead, Microsoft Asia",
   },
   {
     id: 23,
     title: "Stela Scolar",
     cover:
-      "https://res.cloudinary.com/dq23wxdum/image/upload/v1720161307/SIPBN/jpkaqsnatjd5mubyh6sm.png",
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977791/Speakers%20-%20Sipbn/mkykinphgqgi75nnht9h.png",
     post: "Inaugural Director of Australia’s National AI Centre (NAIC).",
   },
   {
     id: 25,
     title: "Giovanni Amodeo",
     cover:
-      "https://res.cloudinary.com/dq23wxdum/image/upload/v1721060471/SIPBN/yl1uicfwswdngairwnpb.png",
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977791/Speakers%20-%20Sipbn/vgro3utqgnmdkfowegmd.png",
     post: "executive committee of ION Analytics",
   },
   {
@@ -436,14 +444,14 @@ export const memberdata = [
     id: 27,
     title: "Stephen Harrison",
     cover:
-      "https://res.cloudinary.com/dq23wxdum/image/upload/v1721060687/SIPBN/pifgwg2idrgguk5dudov.png",
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977795/Speakers%20-%20Sipbn/xzjeua3ldfcpobi5hzxm.png",
     post: "Chairman of NobleOak Life Limited and IncentiaPay Limited (ASX - INP)",
   },
   {
     id: 28,
     title: "Jua Cillers",
     cover:
-      "https://res.cloudinary.com/dq23wxdum/image/upload/v1721137321/SIPBN/rwwz0bzckaodkoskd8tn.png",
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977796/Speakers%20-%20Sipbn/vqqcjezcxcluwqxndvxq.png",
     post: "Head of the School of Built Environment and Professor of Urban Planning at the University of Technology Sydney in Australia.",
   },
 ];
@@ -453,21 +461,21 @@ export const moderatordata = [
     id: 18,
     title: "Sarah Morgan",
     cover:
-      "https://res.cloudinary.com/dq23wxdum/image/upload/v1719271717/SIPBN/tcrzhy1er8gl24zfiepw.png",
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721983854/Speakers%20-%20Sipbn/ba5oai8luvphhm4lbihh.png",
     post: "CEO at #CapTech2024",
   },
   {
     id: 19,
     title: "Anuraj Gambhir",
     cover:
-      "https://res.cloudinary.com/dq23wxdum/image/upload/v1719346088/SIPBN/mb1msnrpqqogtjjtjcld.png",
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977792/Speakers%20-%20Sipbn/x0tv99v11zltuvzfdtbu.png",
     post: "Strategic Innovation Advisor",
   },
   {
     id: 20,
     title: "Ozge Fettahlioglu",
     cover:
-      "https://res.cloudinary.com/dq23wxdum/image/upload/v1719346088/SIPBN/eipieb1mjb5ogepvqpa0.png",
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977792/Speakers%20-%20Sipbn/Ozge%20Fettahlioglu.png",
     post: "Founder and CEO of Cocoplum Design Studio and Boxareno Modular Constructions",
   },
 ];
@@ -481,7 +489,7 @@ Since retiring from politics in 2023, Victor has been appointed to Accenture’s
 Victor is also the inaugural Chair of the Commonwealth Government’s Independent Advisory Panel for MyGov and Services Australia. In addition, Victor is a Professor at UNSW and Director of the Trustworthy Digital Society Hub, a joint initiative of UNSW and UTS.\n
 Victor is a board member of the Tech Council of Australia and Adviser to the Brain and Mind Institute based at the University of Sydney. In 2023 Victor launched ServiceGen, a firm that provides advice to governments and complex organisations with a mission of profoundly reimagining services for the digital age.`,
     image:
-      "https://res.cloudinary.com/dq23wxdum/image/upload/v1719275738/SIPBN/wh9v21toua7dvkgndz9s.png",
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721983854/Speakers%20-%20Sipbn/m3ukoq5lvsd8iu5psugc.png",
     title: "Former NSW Government Minister",
   },
   {
@@ -507,7 +515,7 @@ Joseph is a member of (MAICD) The Australian Institute of Company Directors. He 
 In January 2016 Joseph became Board member of (AACCI) Australia Arab Chamber of Commerce & Industry. In October 2020 Joseph became Board Director of the Melkite Catholic Eparchy Corporation. In July 2021 Joseph became a member of the Powerhouse Capital Campaign Committee. On Wednesday 26 January 2022 – Australia Day. Member of the Order of Australia Honours, AM announcement. Joseph was recognised for his significant service to the not- for- profit sector, and to banking and commerce.\n
 In October 2022 Joseph became Director of the James Martin Institute (JMI) for Public Policy. On Wednesday 14 December 2022 Joe was awarded an Honorary Doctorate from Western Sydney University.`,
     image:
-      "https://res.cloudinary.com/dq23wxdum/image/upload/v1719275404/SIPBN/lb7c21yo9bvx03ifekqf.png",
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721983854/Speakers%20-%20Sipbn/fbz7of1oru2yozqa6jeb.png",
     title: "CEO & Managing Director of Arab Bank Australia",
   },
   {
@@ -517,7 +525,7 @@ In October 2022 Joseph became Director of the James Martin Institute (JMI) for P
 She has extensive experience and a comprehensive understanding of healthcare operations and strategy both in Australia and overseas. Coming from a marketing and communications background, Carmel has had a strong focus on delivering results through focusing on customers and developing strong doctor relationships.\n
 Carmel is a respected leader with the ability to build an experienced and loyal team and her collaborative style and people-focused approach, is closely aligned with ‘The Ramsay Way’. Having worked with the Company’s founder Paul Ramsay for many years, she has a strong belief in its organisational culture of ‘people caring'.`,
     image:
-      "https://res.cloudinary.com/dq23wxdum/image/upload/v1719275958/SIPBN/fbggytdpkc5vubq2yqhi.png",
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977793/Speakers%20-%20Sipbn/Carmel%20Monaghan.png",
     title: "CEO of Ramsay Health Care",
   },
   {
@@ -526,7 +534,7 @@ Carmel is a respected leader with the ability to build an experienced and loyal 
     description:
       "Dr. Christian Baylis is the Founder and CIO at Fortlake Asset Management, responsible for overseeing the investment process and investment team. Fortlake is one of the fastest growing asset managers in Australia and has been recognized as the top performing asset manager within the fixed income peer group since the firm’s inception (Source: Morningstar).\n \n Fortlake was also recognized by the acclaimed Hedge Fund Journal as one of the top 50 up and coming asset managers, globally. More recently, Fortlake entered into an economic partnership with Colonial First State (CFS) under the ownership of Kohlberg Kravis Roberts (KKR), the first asset manager to do so under the KKR lead business. \n \n  The AFR recently named Fortlake as the “Bond fund with equity like returns” a notable acknowledgement in one of the toughest interest rate environments in history. Having worked at UBS Asset Management and the Reserve Bank of Australia (RBA) Christian managed over $8 billion in assets, and was a member of the Global Multi Strategy Committee. Christian holds a PhD in Econometrics and received the Exceed First Class Honours award with a perfect GPA. \n \n He won the Australian Postgraduate Scholar Award at both UNSW and USYD and was a visiting scholar at Monash University in the Econometrics faculty. He was also a recipient of the Capital Markets CRC PhD Scholarship, focusing on inflation modeling, probability density functions, and option implied distributions.",
     image:
-      "https://res.cloudinary.com/dq23wxdum/image/upload/v1719276024/SIPBN/glvavu3wrenwjyw44o3j.png",
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721983854/Speakers%20-%20Sipbn/owoswxfpqqbltgmkzogy.png",
     title: "Founder and CIO at Fortlake Asset Management",
   },
   {
@@ -574,7 +582,7 @@ Carmel is a respected leader with the ability to build an experienced and loyal 
     He is actively involved in community activities, including the Salvation Army Red Shield Appeal and Local Chambers of Commerce.\n
      Jim was the Chairman of Mentor Education and Chairman of APIC, a leading international educational organization. He was Deputy Chairman of Regional Development Australia for Sydney and sat on three separate council bodies in Western Sydney, specifically dealing with audit and risk, asset management, and other financial related matters, pertaining to each of the councils that Jim has served.`,
     image:
-      "https://res.cloudinary.com/dq23wxdum/image/upload/v1719275468/SIPBN/cijoveqoqnuyfz6y1nrx.png",
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721983854/Speakers%20-%20Sipbn/vpr7uf3hfovvuvvb9q9o.png",
     title: "CEO of Ramsay Health Care",
   },
   {
@@ -585,7 +593,7 @@ Carmel is a respected leader with the ability to build an experienced and loyal 
       She was a former non-executive director of the Australian Institute of Nuclear Science and Engineering (AINSE) and a former house committee member of the Australian Motor Yacht Club of NSW. Previously, Helen was a senior executive with a background in strategy, planning, corporate services, investor relations, and corporate affairs. \n
       In her last role at Sydney Water Corporation, Helen was Head of Strategy and Business Planning and responsible for the strategy, city shaping, policy, business planning, board reporting, strategic analytics, science, research, and innovation functions. Helen is a Graduate of the Australian Institute of Company Directors (GAICD); holds a Bachelor of Business from UTS; holds an MBA from MGSM; is a CPA and a Justice of the Peace.`,
     image:
-      "https://res.cloudinary.com/dq23wxdum/image/upload/v1719270127/SIPBN/clzucgjysl0nweyvrbhs.png",
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977795/Speakers%20-%20Sipbn/hz1mltgehubeqyshxg0a.png",
     title: "CEO of Ramsay Health Care",
   },
   {
@@ -599,7 +607,7 @@ Carmel is a respected leader with the ability to build an experienced and loyal 
        He is an Engineer in computer science, MBA in finance from IBS, Hyderabad (India) and an LLM in commercial law from Singapore Management University. He is also a graduate of the Australian Institute of Company Directors and presently sits on the board of CIMET group entities. \n
        Outside the work hustle, he likes to spend time playing Cricket and Golf, traveling to new places with family, and has tremendous zeal to follow tech innovations.`,
     image:
-      "https://res.cloudinary.com/dq23wxdum/image/upload/v1719346273/SIPBN/wmpdfxlaf47ngy1egtxi.png",
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977792/Speakers%20-%20Sipbn/qmbf4ubvwh9yjjrwyrr3.png",
     title: "CFO of CIMET",
   },
   {
@@ -608,7 +616,7 @@ Carmel is a respected leader with the ability to build an experienced and loyal 
     description: `Sarah Fairhurst has a portfolio of Board roles as a Non-Executive Director (NED) covering four companies in the energy sector and was recently on the Advisory Board of a company providing ESG services. \n
     She has lived and worked in the UK, Asia, and Australia and understands the electricity and gas markets, cultures, and cross-border complexities of this region. A hallmark of her Executive career was co-founding TLG in 2010 – a boutique energy economic and strategy advisory firm. Sarah combines strong strategic, commercial, and analytical thinking together with pragmatism and practical experience across many countries to solve complex energy problems.`,
     image:
-      "https://res.cloudinary.com/dq23wxdum/image/upload/v1719346273/SIPBN/h6bqf9man7u8bry9szsh.png",
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977792/Speakers%20-%20Sipbn/dx8ksnkvhluhbx5jwggd.png",
     title: "Non-Executive Director (NED) for four energy sector companies",
   },
   {
@@ -621,7 +629,7 @@ Carmel is a respected leader with the ability to build an experienced and loyal 
        In 2019 he was appointed independent chair of the Aged Care Industry Information Technology Council. In 2024 he was appointed Chief Technology Advisor for the Aged & Community Care Provider Association.\n
         George also acts as a Digital Health Advisor with the Australian Digital Health Agency as well as a member of the Advancing Aged Care through Digital Health advisory group for the Digital Health Cooperative Research Centre. He is a board member of Multicultural Care, a home care provider for the CALD community.`,
     image:
-      "https://res.cloudinary.com/dq23wxdum/image/upload/v1719346364/SIPBN/m53unxyoyhc7phvqb2au.png",
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977792/Speakers%20-%20Sipbn/dhlpd0aqjrm2v0vekolk.png",
     title: "Chief Technology Advisor, Digital Health Advisor & Board Member",
   },
   {
@@ -644,7 +652,7 @@ Carmel is a respected leader with the ability to build an experienced and loyal 
    Michael has a keen interest in the application of AI systems in financial services problems and brings a unique blend of industry and technical expertise to his field.\n
     An international speaker, published author, podcaster (The Curious Quant), and educator (lecturing experience at Imperial College, London School of Economics, and UTS), he is a global authority on the application of AI solutions to a wide variety of problems.`,
     image:
-      "https://res.cloudinary.com/dq23wxdum/image/upload/v1719346520/SIPBN/wogpn1o7k1mwnv9zllvt.png",
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977791/Speakers%20-%20Sipbn/sibey8fg4xk74xy4csag.png",
     title: "CEO of Evolved AI",
   },
   {
@@ -662,7 +670,7 @@ Carmel is a respected leader with the ability to build an experienced and loyal 
     
     Besa has also worked for the Colonial Group. She has previously lectured for the Kaplan Business School and written a regular property column for the Weekend Australian.`,
     image:
-      "https://res.cloudinary.com/dq23wxdum/image/upload/v1719346591/SIPBN/qf5p2kvpdni7unkvdgwt.png",
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977791/Speakers%20-%20Sipbn/ltnukh4s8yixliyk3lfg.png",
     title: "Chief Economist of Westpac’s Business Bank",
   },
   {
@@ -675,7 +683,7 @@ Carmel is a respected leader with the ability to build an experienced and loyal 
     Mark now has the honour of serving as Shadow Minister for Multiculturalism, Shadow Minister for Jobs, Industry, Innovation, Science and Technology, and Shadow Minister for South-Western Sydney under the leadership of NSW Opposition Leader, the Hon. Mark Speakman SC MP.\n
     Within his current portfolios he is passionate about supporting and promoting multiculturalism in NSW through consistent engagement with our many diverse community organisations, faith leaders, multicultural media and community language schools. He is also a strong advocate for manufacturing and innovation in NSW with particular focuses on the defence, space, cyber, medical research and start-up sectors.`,
     image:
-      "https://res.cloudinary.com/dq23wxdum/image/upload/v1719346591/SIPBN/j58spx3bezirxl4wehwh.png",
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977791/Speakers%20-%20Sipbn/mq56dvexl0yzbrkrzdx9.png",
     title:
       "Member for Oatley; Shadow Minister for Multiculturalism; Shadow Minister for Jobs, Industry, Innovation, Science and Technology; Shadow Minister for South-Western Sydney",
   },
@@ -694,7 +702,7 @@ Carmel is a respected leader with the ability to build an experienced and loyal 
     
     Sarah believes that strategic scaling is not just about expansion; it’s about safeguarding the future success of a business and its stakeholders. By combining the right plan, funding, advice, and network, she helps entrepreneurs propel their ventures to new heights and ensure their enduring relevance in the market.`,
     image:
-      "https://res.cloudinary.com/dq23wxdum/image/upload/v1719271717/SIPBN/tcrzhy1er8gl24zfiepw.png",
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721983854/Speakers%20-%20Sipbn/ba5oai8luvphhm4lbihh.png",
     title: "CEO at #CapTech2024",
   },
   {
@@ -702,7 +710,7 @@ Carmel is a respected leader with the ability to build an experienced and loyal 
     name: "Anuraj Gambhir",
     description: `Anuraj Gambhir is an internationally recognized Strategic Innovation Advisor, Technology Visionary, Exponential Thought Leader and multi-award winning Innovator. He has over 30 years’ global experience across 5 continents as a trans-disciplinary expert. His practical knowledge spans executive management, innovation, entrepreneurship, conscious leadership, exponential technologies, design thinking and holistic wellbeing. A key domain of his focus is the future of Health/Wellness incorporating cutting-edge Wellness tech and innovations that can be applied for smart – devices/homes/buildings/spaces/cities/communities.`,
     image:
-      "https://res.cloudinary.com/dq23wxdum/image/upload/v1719346088/SIPBN/mb1msnrpqqogtjjtjcld.png",
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977792/Speakers%20-%20Sipbn/x0tv99v11zltuvzfdtbu.png",
     title: "Strategic Innovation Advisor",
   },
   {
@@ -710,7 +718,7 @@ Carmel is a respected leader with the ability to build an experienced and loyal 
     name: "Ozge Fettahlioglu",
     description: `Ozge Fettahlioglu, Founder and CEO of Cocoplum Design Studio and Boxareno Modular Constructions, is a pioneer in bespoke wellness design, building materials, furniture, and fittings. She is committed to improving lives by enhancing environments, focusing on making high-quality, innovative design accessible. Her companies eliminate intermediaries by directly manufacturing and importing, ensuring streamlined solutions and exceptional craftsmanship. Specialising in custom modular houses, hotel construction and renovations, and bespoke home staging, Ozge leads her ventures with a passion for cutting-edge design and quality craftsmanship.`,
     image:
-      "https://res.cloudinary.com/dq23wxdum/image/upload/v1719346088/SIPBN/eipieb1mjb5ogepvqpa0.png",
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977792/Speakers%20-%20Sipbn/Ozge%20Fettahlioglu.png",
     title:
       "Founder and CEO of Cocoplum Design Studio and Boxareno Modular Constructions",
   },
@@ -735,7 +743,7 @@ Institute of Company Directors.\n
 In 2013 Mr Scroggie was awarded the University of Southern Queensland Faculty of Business & Law
 Alumnus of the Year and in 2015 was inducted into the ARN ICT Industry Awards Hall of Fame.`,
     image:
-      "https://res.cloudinary.com/dq23wxdum/image/upload/v1720161307/SIPBN/nl5lkzm2srjmiufy8zgr.png",
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977791/Speakers%20-%20Sipbn/fbcx7na2dwwl339tp0h3.png",
     title: "CEO and Managing Director of NEXTDC",
   },
 
@@ -759,7 +767,7 @@ He speaks English, Tamil, Hindi and Portuguese. He is a keen golfer. He is marri
  
 `,
     image:
-      "https://res.cloudinary.com/dq23wxdum/image/upload/v1720161307/SIPBN/b5unnyqdkakq8t1ubrvc.png",
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977791/Speakers%20-%20Sipbn/jvtfn3stqu00q2g1eule.png",
     title: "Career diplomat, joined the Indian Foreign Service in 2002",
   },
   {
@@ -773,7 +781,7 @@ Stela Solar is the Inaugural Director of Australia’s National AI Centre (NAIC)
  Outside of the technology arena, Stela enjoys the challenge of competitive sailing and tries to find time to play cello and piano. 
  `,
     image:
-      "https://res.cloudinary.com/dq23wxdum/image/upload/v1720161307/SIPBN/jpkaqsnatjd5mubyh6sm.png",
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977791/Speakers%20-%20Sipbn/mkykinphgqgi75nnht9h.png",
     title: "Director, National AI Centre, CSIRO ",
   },
   {
@@ -786,7 +794,7 @@ He has supported Governments around the world as an independent contributor; bei
 Lee believes in the potential of technology to help build a brighter and more inclusive future and is a regular speaker on innovation and Artificial Intelligence.
  `,
     image:
-      "https://res.cloudinary.com/dq23wxdum/image/upload/v1720161306/SIPBN/dqqtv5cwyt5htkjaeif7.png",
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977790/Speakers%20-%20Sipbn/gbz7fpcasehkvqrv3clf.png",
     title: "AI Technology & Policy Lead, Microsoft Asia",
   },
   {
@@ -796,7 +804,7 @@ Lee believes in the potential of technology to help build a brighter and more in
   With 23 years of experience in financial data, news, and analytics, Giovanni sits on the executive committee of ION Analytics and is responsible for engaging with Influencers in the capital market  globally and across asset classes. He organizes fireside chats and exclusive closed-door events to facilitate connectivity and knowledge among the influencers. Giovanni joined the company in 2001 where it held various roles in Italy, Germany, London including managing a global team of journalists and data analysts. Giovanni is now based in Sydney.
  `,
     image:
-      "https://res.cloudinary.com/dq23wxdum/image/upload/v1721060471/SIPBN/yl1uicfwswdngairwnpb.png",
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977791/Speakers%20-%20Sipbn/vgro3utqgnmdkfowegmd.png",
     title: "Executive committee of ION Analytics",
   },
   {
@@ -826,7 +834,7 @@ He has held Directorships with international Fund Managers subsidiaries, Investe
     description: `Jua Cilliers is the Head of the School of Built Environment and Professor of Urban Planning at the University of Technology Sydney in Australia. She is the President of the Commonwealth Association of Planners and has over two decades of experience as a Professional Urban Planner, with professional registrations from the South African Council for Planners and the Planning Institute of Australia.\n
 Jua serves as the Treasurer of the Australasian Green Infrastructure Network. With experience as chief investigator across Africa, Europe and Australia, Jua is unwaveringly committed to driving real change, shaping the future of our cities, and empowering the leaders who will inherit them.`,
     image:
-      "https://res.cloudinary.com/dq23wxdum/image/upload/v1721137321/SIPBN/rwwz0bzckaodkoskd8tn.png",
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977796/Speakers%20-%20Sipbn/vqqcjezcxcluwqxndvxq.png",
     title:
       "Head of the School of Built Environment and Professor of Urban Planning at the University of Technology Sydney in Australia.",
   },
@@ -836,7 +844,7 @@ Jua serves as the Treasurer of the Australasian Green Infrastructure Network. Wi
     description:
       "Paul commenced his role as Executive Director for Business Sydney in September 2021. Prior to Business Sydney, Paul was Director for the Business Leaders Council, Membership and Events for the Australian Chamber of Commerce and Industry (ACCI) for seven years. Paul sits on the Board of The Gut Foundation, The Estia Foundation, Australian Marketing Institute and as a Non-Executive Board Member of Group Colleges Australia. \n In addition, Paul is an ambassador of Start Up Australia and is a Member of the Association of Independent Schools of NSW Institute. Further Paul is a Non-Executive Director of Dymocks Children’s Charities. Paul is an Adjunct Professor at UBSS Australia and was awarded the Centenary Medal of Australia in 2001. Paul was the former Chief Executive Officer of the Australian Hotels Association of NSW (AHA).\n Prior to the AHA, Paul was the Executive Chairman of the Millennium Forum, which was the fundraising and business engagement arm of the Liberal Party of Australia NSW Division. Paul was also the former NSW President of the Marketing Institute of Australia for 4 years, a member of the Council for ten years and is currently an Associate Fellow and Certified Practicing Marketer of the Marketing Institute of Australia.",
     image:
-      "https://res.cloudinary.com/dq23wxdum/image/upload/v1721137440/SIPBN/wocbehnf3tdhvcfvrk4t.png",
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977795/Speakers%20-%20Sipbn/eeighxjjkphbvyp0jkro.png",
     title: "Executive Director, Business Sydney",
   },
 ];
