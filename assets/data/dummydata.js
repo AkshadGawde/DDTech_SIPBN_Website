@@ -245,7 +245,7 @@ export const patronsdata = [
     id: 2,
     title: "Roderick H. McGeoch AO, LL",
     cover:
-      "https://res.cloudinary.com/dq23wxdum/image/upload/v1719275343/SIPBN/ipijnqwmz6qq4e41iklb.png",
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1722233720/Speakers%20-%20Sipbn/cvdomfs8atyeh1zjkphz.png",
     post: "Chairman and Director of a wide range of major corporations ",
   },
   {
@@ -283,7 +283,7 @@ export const memberdata = [
     id: 2,
     title: "Roderick H .McGeoch AO, LLB",
     cover:
-      "https://res.cloudinary.com/dq23wxdum/image/upload/v1719275860/SIPBN/o3icsmvryenqqclxicbu.png",
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1722233720/Speakers%20-%20Sipbn/cvdomfs8atyeh1zjkphz.png",
     post: "Chairman and Director of a wide range of major corporations",
   },
   {
@@ -332,14 +332,14 @@ export const memberdata = [
     id: 6,
     title: "Stephen Bali MP",
     cover:
-      "https://res.cloudinary.com/dq23wxdum/image/upload/v1719345293/SIPBN/ygs7bdnevhaicspq7go6.png",
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1722234655/Speakers%20-%20Sipbn/voghbdlwchl5oamybst7.png",
     post: "Member of the Legislative Assembly Member for Blacktown",
   },
   {
     id: 7,
     title: "Ankit Jain",
     cover:
-      "https://res.cloudinary.com/dq23wxdum/image/upload/v1719345294/SIPBN/g2wq6dq9tcxvbd2w275c.png",
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1722234525/Speakers%20-%20Sipbn/ky0e1xcrs8tlucjz28uh.png",
     post: "CEO of CIMET",
   },
   {
@@ -353,7 +353,7 @@ export const memberdata = [
     id: 9,
     title: "Dr Jim Taggart OAM",
     cover:
-      "https://res.cloudinary.com/dq23wxdum/image/upload/v1719275468/SIPBN/cijoveqoqnuyfz6y1nrx.png",
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721983854/Speakers%20-%20Sipbn/vpr7uf3hfovvuvvb9q9o.png",
     post: "CEO of Ramsay Health Care",
   },
   {
@@ -388,7 +388,7 @@ export const memberdata = [
     id: 14,
     title: "Stephen Walters",
     cover:
-      "https://res.cloudinary.com/dq23wxdum/image/upload/v1719346364/SIPBN/vnkev1xjdwgzzb1nirnk.png",
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1722234827/Speakers%20-%20Sipbn/zpvsjefnahqbjc5friqs.png",
     post: "Chief Economist for the Business Council of Australia",
   },
   {
@@ -437,7 +437,7 @@ export const memberdata = [
     id: 26,
     title: "Michael Masterson",
     cover:
-      "https://res.cloudinary.com/dq23wxdum/image/upload/v1721060580/SIPBN/xby3jcslygggveucpyb0.png",
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1722234922/Speakers%20-%20Sipbn/zqxhllhjwnbhd1dncglf.png",
     post: "Principal at Intrinsika",
   },
   {
