@@ -50,7 +50,8 @@ const Contact = () => {
     if (!formData.email) errors.email = "Email is required";
     if (!formData.budget) errors.budget = "Budget is required";
     if (!formData.timeframe) errors.timeframe = "Timeframe is required";
-    if (!formData.projectDetails) errors.projectDetails = "Project details are required";
+    if (!formData.projectDetails)
+      errors.projectDetails = "Project details are required";
     if (!formData.countryCode) errors.countryCode = "Country code is required";
     if (!formData.phoneNumber) errors.phoneNumber = "Phone number is required";
 
@@ -66,7 +67,7 @@ const Contact = () => {
           "service_g6wsggb", // Replace with your EmailJS service ID
           "template_j1joepl", // Replace with your EmailJS template ID
           formData,
-          "p-_pNoyFKi6vQznK6" 
+          "p-_pNoyFKi6vQznK6"
         )
         .then(
           (response) => {
@@ -75,8 +76,6 @@ const Contact = () => {
             setFormData({
               name: "",
               email: "",
-              budget: "",
-              timeframe: "",
               projectDetails: "",
               countryCode: "",
               phoneNumber: "",
@@ -84,9 +83,8 @@ const Contact = () => {
             setVerified(false);
           },
           (error) => {
-            toast.error("There was an error submitting your form.")
+            toast.error("There was an error submitting your form.");
             console.error("Error:", error);
-           ;
           }
         );
     } else {
@@ -163,33 +161,11 @@ const Contact = () => {
                     {errors.email && <p className="error">{errors.email}</p>}
                   </div>
                 </div>
+
                 <div className="grid-2">
                   <div className="inputs">
-                    <span>Your Budget</span>
-                    <input
-                      type="text"
-                      name="budget"
-                      value={formData.budget}
-                      onChange={handleChange}
-                      required
-                    />
-                    {errors.budget && <p className="error">{errors.budget}</p>}
-                  </div>
-                  <div className="inputs">
-                    <span>Timeframe</span>
-                    <input
-                      type="text"
-                      name="timeframe"
-                      value={formData.timeframe}
-                      onChange={handleChange}
-                      required
-                    />
-                    {errors.timeframe && <p className="error">{errors.timeframe}</p>}
-                  </div>
-                </div>
-                <div className="grid-2">
-                  <div className="inputs">
-                    <span>Country Code</span><br/>
+                    <span>Country Code</span>
+                    <br />
                     <select
                       name="countryCode"
                       value={formData.countryCode}
@@ -204,7 +180,9 @@ const Contact = () => {
                         </option>
                       ))}
                     </select>
-                    {errors.countryCode && <p className="error">{errors.countryCode}</p>}
+                    {errors.countryCode && (
+                      <p className="error">{errors.countryCode}</p>
+                    )}
                   </div>
                   <div className="inputs">
                     <span>Phone Number</span>
@@ -215,11 +193,13 @@ const Contact = () => {
                       onChange={handleChange}
                       required
                     />
-                    {errors.phoneNumber && <p className="error">{errors.phoneNumber}</p>}
+                    {errors.phoneNumber && (
+                      <p className="error">{errors.phoneNumber}</p>
+                    )}
                   </div>
                 </div>
                 <div className="inputs">
-                  <span>TELL US A BIT ABOUT YOUR PROJECT*</span>
+                  <span>YOUR MESSAGE*</span>
                   <textarea
                     cols="30"
                     rows="10"
@@ -228,9 +208,15 @@ const Contact = () => {
                     onChange={handleChange}
                     required
                   ></textarea>
-                  {errors.projectDetails && <p className="error">{errors.projectDetails}</p>}
+                  {errors.projectDetails && (
+                    <p className="error">{errors.projectDetails}</p>
+                  )}
                 </div>
-                <button type="submit" className="button-primary" disabled={!verified}>
+                <button
+                  type="submit"
+                  className="button-primary"
+                  disabled={!verified}
+                >
                   Submit
                 </button>
                 <ReCAPTCHA

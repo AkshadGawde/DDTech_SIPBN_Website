@@ -7,7 +7,8 @@ const Banner = () => {
       <section className="banner">
         <div className="container">
           <div>
-            <h2 className="bannerTitle">Secure your #CapTech2024 ticket!</h2> <br />
+            <h2 className="bannerTitle">Secure your #CapTech2024 ticket!</h2>{" "}
+            <br />
             <TitleSm title="Early bird discount 20% till 31st July 2024" />
           </div>
           <div>
