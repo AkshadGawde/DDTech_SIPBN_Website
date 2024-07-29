@@ -18,6 +18,8 @@ const CleanEnergy = () => {
         <br />
         <Title title={"SIPBN Clean Energy Committee's Analysis"} />
 
+        <img src="https://res.cloudinary.com/dueoon8xe/image/upload/v1722277702/bbowtfytdfyirc0kkgrc.png" alt="" className="blogImg"/>
+
         <div className="blogsContainer"></div>
 
         <hr />
