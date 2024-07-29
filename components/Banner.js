@@ -12,7 +12,7 @@ const Banner = () => {
             <TitleSm title="Early bird discount 20% till 31st July 2024" />
           </div>
           <div>
-            <button className="button-primary">Learn More</button>
+            <button className="button-primary" onClick={()=>{window.location="https://www.eventbrite.com.au/e/captech2024-discover-connect-execute-venue-icc-sydney-tickets-772015889307"}}>Learn More</button>
           </div>
         </div>
       </section>

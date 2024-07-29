@@ -99,7 +99,7 @@ const Team = () => {
             ))}
           </Timeline>
 
-          <button className="button-primary">Book Tickets</button>
+          <button className="button-primary" onClick={ () =>{window.location = "https://www.eventbrite.com.au/e/captech2024-discover-connect-execute-venue-icc-sydney-tickets-772015889307"}}>Book Tickets</button>
 
           <Title title="What is #CapTech2024" />
           <p>

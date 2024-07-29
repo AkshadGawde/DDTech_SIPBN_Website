@@ -102,14 +102,23 @@ const Aivs = () => {
 
         <TitleSm title={"Summary"}/>
 
-        <div className="blogsContainer">
+        {/* <div className="blogsContainer">
           <div>
-            
             <p className="blogsDescription2">
             Net zero emissions and artificial intelligence can be considered as the two most important trends defining the future environment. On the one hand, the increasing energy demand of AI solutions presents itself as a challenge, on the other – it provides marvellous instruments to shape the era of a sustainable, low-energy economy. Technology development, energy efficiency, and the use of renewable energy, for example, are the possibilities of utilising the AI capabilities while moving to pro-climate progress. The course to the future sustainability remains in the harmonious relation between the development of technology or the annexation of innovative techniques, products or services to human lives and environmental conservation.
             <br/><br/>
             Reference:<a href="https://www.technologyreview.com/2019/06/06/239031/training-a-single-ai-model-can-emit-as-much-carbon-as-five-cars-in-their-lifetimes/" className="blogLink"> https://www.technologyreview.com/2019/06/06/239031/training-a-single-ai-model-can-emit-as-much-carbon-as-five-cars-in-their-lifetimes/</a>
             </p>
+          </div>
+        </div> */}
+
+        <div className="blogsContainer">
+          <div>
+            <p className="blogsDescription">
+            Net zero emissions and artificial intelligence can be considered as the two most important trends defining the future environment. On the one hand, the increasing energy demand of AI solutions presents itself as a challenge, on the other – it provides marvellous instruments to shape the era of a sustainable, low-energy economy. Technology development, energy efficiency, and the use of renewable energy, for example, are the possibilities of utilising the AI capabilities while moving to pro-climate progress. The course to the future sustainability remains in the harmonious relation between the development of technology or the annexation of innovative techniques, products or services to human lives and environmental conservation.
+            </p>
+            <br/><br/>
+            <a href="https://www.technologyreview.com/2019/06/06/239031/training-a-single-ai-model-can-emit-as-much-carbon-as-five-cars-in-their-lifetimes/" className="blogLink">Reference</a>
           </div>
         </div>
 
@@ -126,7 +135,7 @@ const Aivs = () => {
         </div>
 
         <div className="blogsAuthor">
-          <p>-Parth Maheshwari</p>
+          <p style={{marginBottom:"10px"}}>-Parth Maheshwari</p>
         </div>
 
       </div>

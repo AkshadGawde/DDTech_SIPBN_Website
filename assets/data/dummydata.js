@@ -14,48 +14,28 @@ export const expertise = [
     title: "Networking",
     cover:
       "https://res.cloudinary.com/dq23wxdum/image/upload/v1720283869/SIPBN/kgwdnmf3ym7vq3csn49j.png",
-    desc: [
-      { text: "Web design" },
-      { text: "Web development" },
-      { text: "Custom icons & illustrations" },
-      { text: "Hosting" },
-      { text: "Website audit" },
-    ],
+      href:"/about",
   },
   {
     id: 2,
     title: "High Value Deal flow",
     cover:
       "https://res.cloudinary.com/dq23wxdum/image/upload/v1720283868/SIPBN/k30sp3vnb8qsfulozih4.png",
-    desc: [
-      { text: "Social media marketing" },
-      { text: "Marketing campaigns" },
-      { text: "Markting management" },
-      { text: "SEO" },
-    ],
+      href:"/about",
   },
   {
     id: 3,
     title: "Cross Border Business Opportunities",
     cover:
       "https://res.cloudinary.com/dq23wxdum/image/upload/v1720283868/SIPBN/jxaesxmmvbkqczwghnkg.png",
-    desc: [
-      { text: "E-Commerce website design" },
-      { text: "WooCommerce" },
-      { text: "Content management" },
-      { text: "Hosting" },
-    ],
+    href:"/about",
   },
   {
     id: 4,
     title: "Targeted Advocacy",
     cover:
       "https://res.cloudinary.com/dq23wxdum/image/upload/v1720283869/SIPBN/mlsm1uofmglsfbvzyytt.png",
-    desc: [
-      { text: "Visual identity" },
-      { text: "Branding for social media" },
-      { text: "Custom illustrations" },
-    ],
+      href:"/about",
   },
 ];
 export const testimonial = [
@@ -246,7 +226,8 @@ export const patronsdata = [
     title: "Roderick H. McGeoch AO, LL",
     cover:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1722233720/Speakers%20-%20Sipbn/cvdomfs8atyeh1zjkphz.png",
-    post: "Chairman and Director of a wide range of major corporations ",
+    post: "Chairman and Director of a wide range of major corporations",
+    href: "/team/2",
   },
   {
     id: 3,
@@ -254,13 +235,15 @@ export const patronsdata = [
     cover:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1721983854/Speakers%20-%20Sipbn/fbz7of1oru2yozqa6jeb.png",
     post: "CEO & Managing Director of Arab Bank Australia",
+    href: "/team/3",
   },
   {
     id: 9,
     title: "Dr Jim Taggart OAM",
     cover:
-      "https://res.cloudinary.com/dq23wxdum/image/upload/v1719275468/SIPBN/cijoveqoqnuyfz6y1nrx.png",
-    post: "Board Member and Committee Member to a number of profit and not profit organisations",
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721983854/Speakers%20-%20Sipbn/vpr7uf3hfovvuvvb9q9o.png",
+    post: "Board Member and Committee Member to a number of profit and non-profit organisations",
+    href: "/team/9",
   },
   {
     id: 10,
@@ -268,8 +251,10 @@ export const patronsdata = [
     cover:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977795/Speakers%20-%20Sipbn/hz1mltgehubeqyshxg0a.png",
     post: "Non-Executive Director & Deputy Chair",
+    href: "/team/10",
   },
 ];
+
 
 export const memberdata = [
   {
@@ -278,6 +263,7 @@ export const memberdata = [
     cover:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1721983854/Speakers%20-%20Sipbn/m3ukoq5lvsd8iu5psugc.png",
     post: "Former NSW Government Minister",
+    href: "/team/1",
   },
   {
     id: 2,
@@ -285,6 +271,7 @@ export const memberdata = [
     cover:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1722233720/Speakers%20-%20Sipbn/cvdomfs8atyeh1zjkphz.png",
     post: "Chairman and Director of a wide range of major corporations",
+    href: "/team/2",
   },
   {
     id: 3,
@@ -292,6 +279,7 @@ export const memberdata = [
     cover:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1721983854/Speakers%20-%20Sipbn/fbz7of1oru2yozqa6jeb.png",
     post: "CEO & Managing Director of Arab Bank Australia",
+    href: "/team/3",
   },
   {
     id: 22,
@@ -299,6 +287,7 @@ export const memberdata = [
     cover:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977791/Speakers%20-%20Sipbn/jvtfn3stqu00q2g1eule.png",
     post: "Career diplomat, joined the Indian Foreign Service in 2002.",
+    href: "/team/22",
   },
   {
     id: 4,
@@ -306,6 +295,7 @@ export const memberdata = [
     cover:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977793/Speakers%20-%20Sipbn/Carmel%20Monaghan.png",
     post: "CEO of Ramsay Health Care",
+    href: "/team/4",
   },
   {
     id: 21,
@@ -313,6 +303,7 @@ export const memberdata = [
     cover:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977791/Speakers%20-%20Sipbn/fbcx7na2dwwl339tp0h3.png",
     post: "CEO and Managing Director of NEXTDC",
+    href: "/team/21",
   },
   {
     id: 5,
@@ -320,6 +311,7 @@ export const memberdata = [
     cover:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1721983854/Speakers%20-%20Sipbn/owoswxfpqqbltgmkzogy.png",
     post: "Founder and CIO at Fortlake Asset Management",
+    href: "/team/5",
   },
   {
     id: 29,
@@ -327,6 +319,7 @@ export const memberdata = [
     cover:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977795/Speakers%20-%20Sipbn/eeighxjjkphbvyp0jkro.png",
     post: "Executive Director, Business Sydney",
+    href: "/team/29",
   },
   {
     id: 6,
@@ -334,6 +327,7 @@ export const memberdata = [
     cover:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1722234655/Speakers%20-%20Sipbn/voghbdlwchl5oamybst7.png",
     post: "Member of the Legislative Assembly Member for Blacktown",
+    href: "/team/6",
   },
   {
     id: 7,
@@ -341,6 +335,7 @@ export const memberdata = [
     cover:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1722234525/Speakers%20-%20Sipbn/ky0e1xcrs8tlucjz28uh.png",
     post: "CEO of CIMET",
+    href: "/team/7",
   },
   {
     id: 8,
@@ -348,6 +343,7 @@ export const memberdata = [
     cover:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977792/Speakers%20-%20Sipbn/ycztissjydhflfufrm8l.png",
     post: "CEO of Ramsay Health Care",
+    href: "/team/8",
   },
   {
     id: 9,
@@ -355,6 +351,7 @@ export const memberdata = [
     cover:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1721983854/Speakers%20-%20Sipbn/vpr7uf3hfovvuvvb9q9o.png",
     post: "CEO of Ramsay Health Care",
+    href: "/team/9",
   },
   {
     id: 10,
@@ -362,6 +359,7 @@ export const memberdata = [
     cover:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977795/Speakers%20-%20Sipbn/hz1mltgehubeqyshxg0a.png",
     post: "CEO of Ramsay Health Care",
+    href: "/team/10",
   },
   {
     id: 11,
@@ -369,6 +367,7 @@ export const memberdata = [
     cover:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977792/Speakers%20-%20Sipbn/qmbf4ubvwh9yjjrwyrr3.png",
     post: "CFO of CIMET",
+    href: "/team/11",
   },
   {
     id: 12,
@@ -376,6 +375,7 @@ export const memberdata = [
     cover:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977792/Speakers%20-%20Sipbn/dx8ksnkvhluhbx5jwggd.png",
     post: "Board roles as a Non-Executive Director (NED) covering four companies",
+    href: "/team/12",
   },
   {
     id: 13,
@@ -383,6 +383,7 @@ export const memberdata = [
     cover:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977792/Speakers%20-%20Sipbn/dhlpd0aqjrm2v0vekolk.png",
     post: "Chief Technology Advisor, Digital Health Advisor & Board Member",
+    href: "/team/13",
   },
   {
     id: 14,
@@ -390,6 +391,7 @@ export const memberdata = [
     cover:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1722234827/Speakers%20-%20Sipbn/zpvsjefnahqbjc5friqs.png",
     post: "Chief Economist for the Business Council of Australia",
+    href: "/team/14",
   },
   {
     id: 15,
@@ -397,6 +399,7 @@ export const memberdata = [
     cover:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977791/Speakers%20-%20Sipbn/sibey8fg4xk74xy4csag.png",
     post: "CEO of Evolved AI",
+    href: "/team/15",
   },
   {
     id: 16,
@@ -404,6 +407,7 @@ export const memberdata = [
     cover:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977791/Speakers%20-%20Sipbn/ltnukh4s8yixliyk3lfg.png",
     post: "Chief Economist of Westpac’s Business Bank",
+    href: "/team/16",
   },
   {
     id: 17,
@@ -411,13 +415,15 @@ export const memberdata = [
     cover:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977791/Speakers%20-%20Sipbn/mq56dvexl0yzbrkrzdx9.png",
     post: "Member for Oatley; Shadow Minister for Multiculturalism; Shadow Minister for Jobs, Industry, Innovation, Science and Technology; Shadow Minister for South-Western Sydney",
+    href: "/team/17",
   },
   {
     id: 24,
     title: "Lee Heckin",
     cover:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977790/Speakers%20-%20Sipbn/gbz7fpcasehkvqrv3clf.png",
-    post: " AI Technology & Policy Lead, Microsoft Asia",
+    post: "AI Technology & Policy Lead, Microsoft Asia",
+    href: "/team/24",
   },
   {
     id: 23,
@@ -425,6 +431,7 @@ export const memberdata = [
     cover:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977791/Speakers%20-%20Sipbn/mkykinphgqgi75nnht9h.png",
     post: "Inaugural Director of Australia’s National AI Centre (NAIC).",
+    href: "/team/23",
   },
   {
     id: 25,
@@ -432,6 +439,7 @@ export const memberdata = [
     cover:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977791/Speakers%20-%20Sipbn/vgro3utqgnmdkfowegmd.png",
     post: "executive committee of ION Analytics",
+    href: "/team/25",
   },
   {
     id: 26,
@@ -439,6 +447,7 @@ export const memberdata = [
     cover:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1722234922/Speakers%20-%20Sipbn/zqxhllhjwnbhd1dncglf.png",
     post: "Principal at Intrinsika",
+    href: "/team/26",
   },
   {
     id: 27,
@@ -446,6 +455,7 @@ export const memberdata = [
     cover:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977795/Speakers%20-%20Sipbn/xzjeua3ldfcpobi5hzxm.png",
     post: "Chairman of NobleOak Life Limited and IncentiaPay Limited (ASX - INP)",
+    href: "/team/27",
   },
   {
     id: 28,
@@ -453,8 +463,10 @@ export const memberdata = [
     cover:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977796/Speakers%20-%20Sipbn/vqqcjezcxcluwqxndvxq.png",
     post: "Head of the School of Built Environment and Professor of Urban Planning at the University of Technology Sydney in Australia.",
+    href: "/team/28",
   },
 ];
+
 
 export const moderatordata = [
   {
@@ -463,6 +475,7 @@ export const moderatordata = [
     cover:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1721983854/Speakers%20-%20Sipbn/ba5oai8luvphhm4lbihh.png",
     post: "CEO at #CapTech2024",
+    href: "/team/18",
   },
   {
     id: 19,
@@ -470,6 +483,7 @@ export const moderatordata = [
     cover:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977792/Speakers%20-%20Sipbn/x0tv99v11zltuvzfdtbu.png",
     post: "Strategic Innovation Advisor",
+    href: "/team/19",
   },
   {
     id: 20,
@@ -477,8 +491,10 @@ export const moderatordata = [
     cover:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977792/Speakers%20-%20Sipbn/Ozge%20Fettahlioglu.png",
     post: "Founder and CEO of Cocoplum Design Studio and Boxareno Modular Constructions",
+    href: "/team/20",
   },
 ];
+
 
 export const membersdata = [
   {
