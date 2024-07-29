@@ -127,11 +127,11 @@ const Hero = () => {
         </div>
       </div>
 
-      <section className="banner">
+      <section className="bannerr">
         <div className="container">
           <div>
             <br />
-            <TitleSm title="Partner Country 'India' " />
+            <h2 id="partner">Partner Country: India</h2>
           </div>
         </div>
       </section>

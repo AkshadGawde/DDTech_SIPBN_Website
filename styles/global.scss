@@ -128,7 +128,7 @@
   .container {
     border-radius: 50px 0 50px 0;
     padding: $xll;
-    background: rgb(192, 90, 255);
+    // background: rgb(192, 90, 255);
     background: $gradient;
     @include flex(center, space-between, none);
   }
@@ -171,12 +171,45 @@
     cursor: pointer;
     transition: background-color 0.3s;
 
+    &:hover {`
+      background-color: rgb(46, 0, 152);
+      transition: background-color 0.6s;
+      
+    }
+  }
+}
+//bannerr
+.bannerr{
+  margin-top: $xll-3;
+  margin-left: 20px;
+  margin-right: 20px;
+  .container {
+    border-radius: 50px 0 50px 0;
+    padding: $xll;
+    // background: rgb(192, 90, 255);
+    background: linear-gradient(203deg,#FF671F,#FFFFFF,#046A38);
+    box-shadow: 0 8px 16px rgb(70, 70, 70);
+    @include flex(center, space-between, none);
+  }
+  .button-primary {
+    margin-left: 16px;
+    padding: 8px 16px;
+    background-color: rgb(14, 17, 220);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
     &:hover {
       background-color: rgb(46, 0, 152);
       transition: background-color 0.6s;
       
     }
   }
+}
+#partner{
+  color: #06038D;
+  font-size: 36px;
 }
 //testimonial
 .testimonial {
@@ -474,9 +507,6 @@
     background-color: #171e20;
     height: fit-content;
 
-.captcha{
-
-}
     form {
       margin-top: 30px; // Use fixed margin for consistency
     }
