@@ -84,6 +84,7 @@ const Header = () => {
                 href="/about"
                 onClick={handleLinkClick}
                 onMouseEnter={() => toggleDropdown("about")}
+                
                 className={activeLink === "/about" ? "activeLink" : ""}
               >
                 About
@@ -175,10 +176,11 @@ const Header = () => {
             >
               Success Stories
             </Link>
-            <div className="dropdown">
+            <div className="dropdown" id="contactUs">
               <Link
                 href="/contact"
                 onClick={handleLinkClick}
+                style={{marginBottom:"0px"}}
                 className={activeLink === "/contact" ? "activeLink" : ""}
               >
                 Contact Us
@@ -190,7 +192,7 @@ const Header = () => {
 
               {dropdownOpen.contact && (
                 <div className="dropdown-content">
-                  <Link href="/blogs" onClick={handleLinkClick}>
+                  <Link href="/blogs" onClick={handleLinkClick} style={{marginBottom:"0px"}}>
                     Blog
                   </Link>
                 </div>
