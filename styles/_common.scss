@@ -203,7 +203,7 @@ button-holder {
 
 .aboutItem:hover {
   transform: translateY(-10px);
-  box-shadow: 0 8px 16px rgb(193, 60, 246);
+  box-shadow: 0 8px 16px $indigo;
 }
 
 .blogImg{
@@ -450,6 +450,7 @@ hr{
   max-height: 30vh;
   flex: 1;
 }
+
 
 .heading-title img, .eventContainer img {
   max-width: 100%;
@@ -847,4 +848,8 @@ ul {
     50% {
       transform: scale(1.1);
     }
+  }
+  .eventImg2{
+    height: 70vh;
+    flex: 1;
   }
