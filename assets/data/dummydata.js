@@ -225,7 +225,7 @@ export const patronsdata = [
     id: 2,
     title: "Roderick H. McGeoch AO, LL",
     cover:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1722233720/Speakers%20-%20Sipbn/cvdomfs8atyeh1zjkphz.png",
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275975/Speakers%20-%20CapTech/oretedusdyhaivpbddjf.png",
     post: "Chairman and Director of a wide range of major corporations",
     href: "/team/2",
   },
@@ -233,7 +233,7 @@ export const patronsdata = [
     id: 3,
     title: "Dr Joseph Rizk AM",
     cover:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721983854/Speakers%20-%20Sipbn/fbz7of1oru2yozqa6jeb.png",
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275976/Speakers%20-%20CapTech/oe5zsrxluuyssgonscf4.png",
     post: "CEO & Managing Director of Arab Bank Australia",
     href: "/team/3",
   },
@@ -241,7 +241,7 @@ export const patronsdata = [
     id: 9,
     title: "Dr Jim Taggart OAM",
     cover:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721983854/Speakers%20-%20Sipbn/vpr7uf3hfovvuvvb9q9o.png",
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275980/Speakers%20-%20CapTech/jikncbas30jdvrwcwfaw.png",
     post: "Board Member and Committee Member to a number of profit and non-profit organisations",
     href: "/team/9",
   },
@@ -249,7 +249,7 @@ export const patronsdata = [
     id: 10,
     title: "Helen Liossis",
     cover:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977795/Speakers%20-%20Sipbn/hz1mltgehubeqyshxg0a.png",
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275978/Speakers%20-%20CapTech/uf9gafb4y4g4bzdnlvdp.png",
     post: "Non-Executive Director & Deputy Chair",
     href: "/team/10",
   },
