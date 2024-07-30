@@ -845,7 +845,7 @@ Michael is a Principal at Intrinsika, a global intrinsic & intangible asset advi
 Michael is also the founder of several successful start-ups; and has been integral to turning around two mid-sized companies in the logistics and FMCG sectors, taking both from significant losses to profit within nine months. He is on several private company Boards and sits on the Board of Cure Brain Cancer, which was named by the AFR as the most Innovative Charity and the 25th most Innovative Organisation. He is also a co-founder of the Growth Capital Club.
  `,
     image:
-      "https://res.cloudinary.com/dq23wxdum/image/upload/v1721060580/SIPBN/xby3jcslygggveucpyb0.png",
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275981/Speakers%20-%20CapTech/tekk4hnk24ogwkmoy9nl.png",
     title: "Principal at Intrinsika",
   },
   {
@@ -854,7 +854,7 @@ Michael is also the founder of several successful start-ups; and has been integr
     description: `Stephen has over 30 years of experience in the financial services, funds management,M&A, private equity and accounting fields. He primarily focused on the energy, technology, IT services, infrastructure financial services, entertainment and natural resource sectors.\n
 He has held Directorships with international Fund Managers subsidiaries, Investec Funds Management and the Australian subsidiary of US-based fund manager Sanford C. Bernstein. He has been a founder and held Directorships in number of Unlisted and Listed companies both in Australia and internationally.`,
     image:
-      "https://res.cloudinary.com/dq23wxdum/image/upload/v1721060687/SIPBN/pifgwg2idrgguk5dudov.png",
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275974/Speakers%20-%20CapTech/cwadu54kae2me5ogcmo6.png",
     title:
       "Chairman of two Public Companies in Australia, NobleOak Life Limited and IncentiaPay Limited (ASX - INP)",
   },

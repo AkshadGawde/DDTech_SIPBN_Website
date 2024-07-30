@@ -5,6 +5,7 @@ import { Brand } from "@/components/router";
 import { React } from "react";
 import Marqueee from "@/components/common/Marqueee";
 import Image from "next/image";
+import Link from "next/link";
 
 
 const Hero = () => {
@@ -137,10 +138,14 @@ const Hero = () => {
             
           </div>
          </div>
-        <img
-                  src="https://res.cloudinary.com/dueoon8xe/image/upload/v1722364945/lk35ez8ip3wgrsgzq2kf.png "
-                  className="eventImg2"
-                />
+         <Link href="/contact" passHref>
+      <img
+        src="https://res.cloudinary.com/dueoon8xe/image/upload/v1722364945/lk35ez8ip3wgrsgzq2kf.png"
+        className="eventImg2"
+        alt="Event"
+      />
+    </Link>
+
         
       </section>
 
