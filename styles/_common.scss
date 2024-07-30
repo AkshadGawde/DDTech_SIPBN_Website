@@ -11,6 +11,8 @@
     color: $green;
   }
 }
+
+
 .logobg {
   font-size: $xll;
   @media (max-width: 480px){
@@ -130,6 +132,7 @@
   background-color: rgb(14, 17, 220);
   font-size: $md;
   border-radius: 50px;
+  max-width: 300px;
   cursor: pointer;
   margin: 10px;
   &:hover {
@@ -138,6 +141,7 @@
   }
   
 }
+
 
 .secondary-button {
   background-color: #171e20;
@@ -199,7 +203,7 @@ button-holder {
 
 .aboutItem:hover {
   transform: translateY(-10px);
-  // box-shadow: 0 8px 16px rgb(193, 60, 246);
+  box-shadow: 0 8px 16px rgb(193, 60, 246);
 }
 
 .blogImg{
@@ -709,18 +713,35 @@ ul {
   opacity: 1; /* Firefox */
 }
 
-.blogText{
-  max-width: 60%;
-}
 .blogImage{
   max-width: 500px;
   max-height: 200px;
   object-fit: cover;
+  margin: 20px;
+}
+
+.blogLink{
+  color: #0051ff;
+}
+
+.blogsAuthor {
+  display: flex;
+  flex-direction: column; /* Stack items vertically on small screens */
+  align-items:start; /* Center items horizontally */
+  text-align: left;
+  margin-bottom: 10px;
+  width: 59%;
+}
+
+.blogImg{
+  max-width: 40%;
+  min-height: 40%;
+  margin-top: 20px;
 }
 
 .blogsContainer {
   display: flex;
-  flex-direction: column; /* Stack items vertically on small screens */
+  flex-direction: row; /* Stack items vertically on small screens */
   align-items: center; /* Center items horizontally */
   text-align: left;
   margin: 30px 10px;
@@ -739,22 +760,36 @@ ul {
   margin-top: 20px; /* Add space above the image */
 }
 
-@media (min-width: 768px) {
-  .blogsContainer {
-      flex-direction: row; /* Display items side by side on larger screens */
-      justify-content: space-between; /* Align items with space between them */
-      align-items: flex-start; /* Align items to the top vertically */
-  }
+.blogContent{
+  margin: 30px 5px 0px 5px;
+}
 
-  .blogsItem {
-      max-width: 70%; /* Limit width of text content on larger screens */
-      text-align: left; /* Align text to the left on larger screens */
-  }
 
-  .blogsImg {
-      width: 25%; /* Adjust width of image on larger screens */
-      margin-top: 0; /* Remove margin above the image on larger screens */
-      margin-left: 20px; /* Add space between text and image on larger screens */
+
+.blogsDescription {
+  text-align: left;
+}
+.blogsDescription2 {
+  text-align: left;
+  font-size: auto;
+}
+.blogsTitle{
+  font-size: auto;
+}
+
+@media screen and (max-width: 1350px){
+  .blogsContainer{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .blogImage{
+    max-width: 300px;
+    max-height: 200px;
+  }
+  .blogsDescription2{
+    text-align: center;
+    max-width: 300px;
   }
 }
 .blogsDescription {
