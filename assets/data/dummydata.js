@@ -465,6 +465,20 @@ export const memberdata = [
     post: "Head of the School of Built Environment and Professor of Urban Planning at the University of Technology Sydney in Australia.",
     href: "/team/28",
   },
+  {
+    id:29,
+    title:"Paul Nicolau",
+    cover:"https://res.cloudinary.com/dueoon8xe/image/upload/v1722275971/Speakers%20-%20CapTech/xwlssthb4vhcujxsmlfo.png",
+    post:"Executive Director, Business Sydney",
+    href:"/team/29"
+  },
+  {
+    id:30,
+    title:"Mark McCrindle",
+    cover:"https://res.cloudinary.com/dueoon8xe/image/upload/v1722325273/Speakers%20-%20CapTech/knttbyymvmjefswwkdys.png",
+    post:"Social researcher, best-selling author, influential thought leader and TEDx speaker. ",
+    href:"/team/30",
+  }
 ];
 
 
@@ -862,5 +876,16 @@ Jua serves as the Treasurer of the Australasian Green Infrastructure Network. Wi
     image:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977795/Speakers%20-%20Sipbn/eeighxjjkphbvyp0jkro.png",
     title: "Executive Director, Business Sydney",
+  },
+  {
+    id:"30",
+    name:
+      "Mark McCrindle",
+    description:
+      "Mark McCrindle is a social researcher, best-selling author, influential thought leader and TEDx speaker. He is recognised globally as coining the name for the emerging generation, Generation Alpha. Mark’s advisory,communications and research company, McCrindle, count among its clients more than 100 of the nation’s largest companies and leading international brands. Mark’s highly valued social commentary is presented through his engaging keynotes, research, reports, infographics, videos and media input. He is a trusted advisor and sits on the board of a number of different organisations, after having developed his regard as an expert demographer, futurist and social commentator. Mark McCrindle, BSc (Psychology), MA, is the author of five books on emerging trends and social change. Generation Alpha, Work Wellbeing: Leading Thriving Teams in Rapidly Changing Times, The ABC of XYZ: Understanding the Global Generations, Word Up: A Lexicon and Guide to Communication in the 21st Century and The Power of Good.",
+    image:
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1722325273/Speakers%20-%20CapTech/knttbyymvmjefswwkdys.png",
+    title:
+      "Social researcher, best-selling author, influential thought leader and TEDx speaker.",
   },
 ];

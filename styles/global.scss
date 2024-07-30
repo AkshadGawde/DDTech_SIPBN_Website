@@ -187,7 +187,7 @@
     border-radius: 50px 0 50px 0;
     padding: $xll;
     // background: rgb(192, 90, 255);
-    background: linear-gradient(203deg,#FF671F,#FFFFFF,#046A38);
+    background: linear-gradient(320deg,#046A38,#FFFFFF,#FF671F); 
     box-shadow: 0 8px 16px rgb(70, 70, 70);
     @include flex(center, space-between, none);
   }
