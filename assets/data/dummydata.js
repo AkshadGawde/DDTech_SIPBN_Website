@@ -261,7 +261,7 @@ export const memberdata = [
     id: 1,
     title: "The Hon Victor Dominello",
     cover:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721983854/Speakers%20-%20Sipbn/m3ukoq5lvsd8iu5psugc.png",
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275977/Speakers%20-%20CapTech/HonVictor.png",
     post: "Former NSW Government Minister",
     href: "/team/1",
   },
@@ -269,7 +269,7 @@ export const memberdata = [
     id: 2,
     title: "Roderick H .McGeoch AO, LLB",
     cover:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1722233720/Speakers%20-%20Sipbn/cvdomfs8atyeh1zjkphz.png",
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275975/Speakers%20-%20CapTech/oretedusdyhaivpbddjf.png",
     post: "Chairman and Director of a wide range of major corporations",
     href: "/team/2",
   },
@@ -277,7 +277,7 @@ export const memberdata = [
     id: 3,
     title: "Dr Joseph Rizk AM",
     cover:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721983854/Speakers%20-%20Sipbn/fbz7of1oru2yozqa6jeb.png",
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275976/Speakers%20-%20CapTech/oe5zsrxluuyssgonscf4.png",
     post: "CEO & Managing Director of Arab Bank Australia",
     href: "/team/3",
   },
@@ -285,7 +285,7 @@ export const memberdata = [
     id: 22,
     title: "Dr. Janakiraman",
     cover:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977791/Speakers%20-%20Sipbn/jvtfn3stqu00q2g1eule.png",
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275981/Speakers%20-%20CapTech/hq8odk1lugjny0xyxd5w.png",
     post: "Career diplomat, joined the Indian Foreign Service in 2002.",
     href: "/team/22",
   },
@@ -293,7 +293,7 @@ export const memberdata = [
     id: 4,
     title: "Carmel Monaghan",
     cover:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977793/Speakers%20-%20Sipbn/Carmel%20Monaghan.png",
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275983/Speakers%20-%20CapTech/hohrp9hkvrtzbbhb0frn.png",
     post: "CEO of Ramsay Health Care",
     href: "/team/4",
   },
@@ -301,7 +301,7 @@ export const memberdata = [
     id: 21,
     title: "Craig Scroggie",
     cover:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977791/Speakers%20-%20Sipbn/fbcx7na2dwwl339tp0h3.png",
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275978/Speakers%20-%20CapTech/zbwdnoh8dplujh5i6vpb.png",
     post: "CEO and Managing Director of NEXTDC",
     href: "/team/21",
   },
@@ -309,7 +309,7 @@ export const memberdata = [
     id: 5,
     title: "Dr. Christian Baylis",
     cover:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721983854/Speakers%20-%20Sipbn/owoswxfpqqbltgmkzogy.png",
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275977/Speakers%20-%20CapTech/ryaum74sjtv4ucjbgh67.png",
     post: "Founder and CIO at Fortlake Asset Management",
     href: "/team/5",
   },
@@ -317,7 +317,7 @@ export const memberdata = [
     id: 29,
     title: "Paul Nicolaou",
     cover:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977795/Speakers%20-%20Sipbn/eeighxjjkphbvyp0jkro.png",
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275971/Speakers%20-%20CapTech/xwlssthb4vhcujxsmlfo.png",
     post: "Executive Director, Business Sydney",
     href: "/team/29",
   },
@@ -325,23 +325,15 @@ export const memberdata = [
     id: 6,
     title: "Stephen Bali MP",
     cover:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1722234655/Speakers%20-%20Sipbn/voghbdlwchl5oamybst7.png",
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275969/Speakers%20-%20CapTech/bjeg1zdemby269axji4u.png",
     post: "Member of the Legislative Assembly Member for Blacktown",
     href: "/team/6",
-  },
-  {
-    id: 7,
-    title: "Ankit Jain",
-    cover:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1722234525/Speakers%20-%20Sipbn/ky0e1xcrs8tlucjz28uh.png",
-    post: "CEO of CIMET",
-    href: "/team/7",
   },
   {
     id: 8,
     title: "The Hon David Elliott",
     cover:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977792/Speakers%20-%20Sipbn/ycztissjydhflfufrm8l.png",
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275970/Speakers%20-%20CapTech/divlil9mc3qaicgn3yma.png",
     post: "CEO of Ramsay Health Care",
     href: "/team/8",
   },
@@ -349,7 +341,7 @@ export const memberdata = [
     id: 9,
     title: "Dr Jim Taggart OAM",
     cover:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721983854/Speakers%20-%20Sipbn/vpr7uf3hfovvuvvb9q9o.png",
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275980/Speakers%20-%20CapTech/jikncbas30jdvrwcwfaw.png",
     post: "CEO of Ramsay Health Care",
     href: "/team/9",
   },
@@ -357,23 +349,15 @@ export const memberdata = [
     id: 10,
     title: "Helen Liossis",
     cover:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977795/Speakers%20-%20Sipbn/hz1mltgehubeqyshxg0a.png",
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275978/Speakers%20-%20CapTech/uf9gafb4y4g4bzdnlvdp.png",
     post: "CEO of Ramsay Health Care",
     href: "/team/10",
-  },
-  {
-    id: 11,
-    title: "Kunwar Aditya Saxena",
-    cover:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977792/Speakers%20-%20Sipbn/qmbf4ubvwh9yjjrwyrr3.png",
-    post: "CFO of CIMET",
-    href: "/team/11",
   },
   {
     id: 12,
     title: "Sarah Fairhurst",
     cover:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977792/Speakers%20-%20Sipbn/dx8ksnkvhluhbx5jwggd.png",
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275970/Speakers%20-%20CapTech/amtwhrdhzkkotqueesru.png",
     post: "Board roles as a Non-Executive Director (NED) covering four companies",
     href: "/team/12",
   },
@@ -381,7 +365,7 @@ export const memberdata = [
     id: 13,
     title: "Dr George Margelis",
     cover:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977792/Speakers%20-%20Sipbn/dhlpd0aqjrm2v0vekolk.png",
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275973/Speakers%20-%20CapTech/aijahhbgeqignqy9vyne.png",
     post: "Chief Technology Advisor, Digital Health Advisor & Board Member",
     href: "/team/13",
   },
@@ -389,7 +373,7 @@ export const memberdata = [
     id: 14,
     title: "Stephen Walters",
     cover:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1722234827/Speakers%20-%20Sipbn/zpvsjefnahqbjc5friqs.png",
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275976/Speakers%20-%20CapTech/vfe1v3og95lypfxsafgv.png",
     post: "Chief Economist for the Business Council of Australia",
     href: "/team/14",
   },
@@ -397,7 +381,7 @@ export const memberdata = [
     id: 15,
     title: "Michael Kollo",
     cover:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977791/Speakers%20-%20Sipbn/sibey8fg4xk74xy4csag.png",
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275972/Speakers%20-%20CapTech/u2ctphu8nrgwcbbrzsxi.png",
     post: "CEO of Evolved AI",
     href: "/team/15",
   },
@@ -405,7 +389,7 @@ export const memberdata = [
     id: 16,
     title: "Besa Deda",
     cover:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977791/Speakers%20-%20Sipbn/ltnukh4s8yixliyk3lfg.png",
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275974/Speakers%20-%20CapTech/vlrmxyc46qcr3whmyy2m.png",
     post: "Chief Economist of Westpac’s Business Bank",
     href: "/team/16",
   },
@@ -413,7 +397,7 @@ export const memberdata = [
     id: 17,
     title: "The Hon Mark Coure MP",
     cover:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977791/Speakers%20-%20Sipbn/mq56dvexl0yzbrkrzdx9.png",
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275980/Speakers%20-%20CapTech/aqpbhwgeegn0li7jbcq6.png",
     post: "Member for Oatley; Shadow Minister for Multiculturalism; Shadow Minister for Jobs, Industry, Innovation, Science and Technology; Shadow Minister for South-Western Sydney",
     href: "/team/17",
   },
@@ -421,15 +405,31 @@ export const memberdata = [
     id: 24,
     title: "Lee Heckin",
     cover:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977790/Speakers%20-%20Sipbn/gbz7fpcasehkvqrv3clf.png",
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275981/Speakers%20-%20CapTech/abdk2xoahnbp6yijcizf.png",
     post: "AI Technology & Policy Lead, Microsoft Asia",
     href: "/team/24",
+  },
+  {
+    id: 11,
+    title: "Kunwar Aditya Saxena",
+    cover:
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275976/Speakers%20-%20CapTech/dhotjdxinf8pvxgpvmua.png",
+    post: "CFO of CIMET",
+    href: "/team/11",
+  },
+  {
+    id: 7,
+    title: "Ankit Jain",
+    cover:
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275969/Speakers%20-%20CapTech/uwilok7quugq4pfzjtel.png",
+    post: "CEO of CIMET",
+    href: "/team/7",
   },
   {
     id: 23,
     title: "Stela Scolar",
     cover:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977791/Speakers%20-%20Sipbn/mkykinphgqgi75nnht9h.png",
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275981/Speakers%20-%20CapTech/tbwkuyn1830jzhjuiijn.png",
     post: "Inaugural Director of Australia’s National AI Centre (NAIC).",
     href: "/team/23",
   },
@@ -437,7 +437,7 @@ export const memberdata = [
     id: 25,
     title: "Giovanni Amodeo",
     cover:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977791/Speakers%20-%20Sipbn/vgro3utqgnmdkfowegmd.png",
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275973/Speakers%20-%20CapTech/qklcidvxnzv45co2q8ns.png",
     post: "executive committee of ION Analytics",
     href: "/team/25",
   },
@@ -445,7 +445,7 @@ export const memberdata = [
     id: 26,
     title: "Michael Masterson",
     cover:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1722234922/Speakers%20-%20Sipbn/zqxhllhjwnbhd1dncglf.png",
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275981/Speakers%20-%20CapTech/tekk4hnk24ogwkmoy9nl.png",
     post: "Principal at Intrinsika",
     href: "/team/26",
   },
@@ -453,7 +453,7 @@ export const memberdata = [
     id: 27,
     title: "Stephen Harrison",
     cover:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977795/Speakers%20-%20Sipbn/xzjeua3ldfcpobi5hzxm.png",
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275974/Speakers%20-%20CapTech/cwadu54kae2me5ogcmo6.png",
     post: "Chairman of NobleOak Life Limited and IncentiaPay Limited (ASX - INP)",
     href: "/team/27",
   },
@@ -461,10 +461,24 @@ export const memberdata = [
     id: 28,
     title: "Jua Cillers",
     cover:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977796/Speakers%20-%20Sipbn/vqqcjezcxcluwqxndvxq.png",
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275973/Speakers%20-%20CapTech/vmfpplv4dksotd3yatzc.png",
     post: "Head of the School of Built Environment and Professor of Urban Planning at the University of Technology Sydney in Australia.",
     href: "/team/28",
   },
+  {
+    id:29,
+    title:"Paul Nicolau",
+    cover:"https://res.cloudinary.com/dueoon8xe/image/upload/v1722275971/Speakers%20-%20CapTech/xwlssthb4vhcujxsmlfo.png",
+    post:"Executive Director, Business Sydney",
+    href:"/team/29"
+  },
+  {
+    id:30,
+    title:"Mark McCrindle",
+    cover:"https://res.cloudinary.com/dueoon8xe/image/upload/v1722325273/Speakers%20-%20CapTech/knttbyymvmjefswwkdys.png",
+    post:"Social researcher, best-selling author, influential thought leader and TEDx speaker. ",
+    href:"/team/30",
+  }
 ];
 
 
@@ -473,7 +487,7 @@ export const moderatordata = [
     id: 18,
     title: "Sarah Morgan",
     cover:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721983854/Speakers%20-%20Sipbn/ba5oai8luvphhm4lbihh.png",
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275973/Speakers%20-%20CapTech/n8clzee694tgnzxk7n8w.png",
     post: "CEO at #CapTech2024",
     href: "/team/18",
   },
@@ -481,7 +495,7 @@ export const moderatordata = [
     id: 19,
     title: "Anuraj Gambhir",
     cover:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977792/Speakers%20-%20Sipbn/x0tv99v11zltuvzfdtbu.png",
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275979/Speakers%20-%20CapTech/hvmzxid5qgf7hepzsufg.png",
     post: "Strategic Innovation Advisor",
     href: "/team/19",
   },
@@ -489,7 +503,7 @@ export const moderatordata = [
     id: 20,
     title: "Ozge Fettahlioglu",
     cover:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977792/Speakers%20-%20Sipbn/Ozge%20Fettahlioglu.png",
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275975/Speakers%20-%20CapTech/fx3dlnbk1beueho4hzew.png",
     post: "Founder and CEO of Cocoplum Design Studio and Boxareno Modular Constructions",
     href: "/team/20",
   },
@@ -862,5 +876,16 @@ Jua serves as the Treasurer of the Australasian Green Infrastructure Network. Wi
     image:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977795/Speakers%20-%20Sipbn/eeighxjjkphbvyp0jkro.png",
     title: "Executive Director, Business Sydney",
+  },
+  {
+    id:"30",
+    name:
+      "Mark McCrindle",
+    description:
+      "Mark McCrindle is a social researcher, best-selling author, influential thought leader and TEDx speaker. He is recognised globally as coining the name for the emerging generation, Generation Alpha. Mark’s advisory,communications and research company, McCrindle, count among its clients more than 100 of the nation’s largest companies and leading international brands. Mark’s highly valued social commentary is presented through his engaging keynotes, research, reports, infographics, videos and media input. He is a trusted advisor and sits on the board of a number of different organisations, after having developed his regard as an expert demographer, futurist and social commentator. Mark McCrindle, BSc (Psychology), MA, is the author of five books on emerging trends and social change. Generation Alpha, Work Wellbeing: Leading Thriving Teams in Rapidly Changing Times, The ABC of XYZ: Understanding the Global Generations, Word Up: A Lexicon and Guide to Communication in the 21st Century and The Power of Good.",
+    image:
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1722325273/Speakers%20-%20CapTech/knttbyymvmjefswwkdys.png",
+    title:
+      "Social researcher, best-selling author, influential thought leader and TEDx speaker.",
   },
 ];
