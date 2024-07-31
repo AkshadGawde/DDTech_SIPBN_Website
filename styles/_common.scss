@@ -233,7 +233,7 @@ button-holder {
 
   .aboutItem {
     flex: 1 1 45%; /* Slightly less than half to account for gaps */
-    max-width: 45%; /* Ensure items fit nicely on smaller screens */
+    max-width: 85%; /* Ensure items fit nicely on smaller screens */
   }
 }
 
@@ -252,6 +252,22 @@ button-holder {
   width: 600px;
 }
 
+.button-holder{
+  display: flex;
+  max-width: 650px;
+  justify-content: center;
+  align-items: center;
+  .button-primary{
+    min-width: 200px;
+    @media screen and (max-width : 650px) {
+      min-width: 300px;
+    }
+  }
+  @media screen and (max-width : 650px) {
+    flex-direction: column;
+  }
+}
+
 //rest
 
 .presContainer{
@@ -259,7 +275,7 @@ button-holder {
   text-align: left;
   padding: 20px;
   margin-bottom: 0;
-  @media (max-width: 480px) {
+  @media (max-width: 1300px) {
     flex-direction: column;
     justify-content: center;
     text-align: center;
@@ -352,6 +368,7 @@ button-holder {
 .aboutTitle {
   font-size: 2rem;
   margin-bottom: 25px;
+  text-align: left;
 }
 
 .advisoryContainer {
@@ -780,6 +797,7 @@ ul {
 @media screen and (max-width: 1350px){
   .blogsContainer{
     flex-direction: column;
+    // text-align: center;
     align-items: center;
     justify-content: center;
   }

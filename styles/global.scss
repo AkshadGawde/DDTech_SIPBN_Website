@@ -28,17 +28,19 @@
   }
 
   .hero-title {
-    font-size: $xll-2; // Default font size for larger devices
+    font-size: 60px; // Default font size for larger devices
     line-height: 115px; // Default line height for larger devices
     font-weight: 600;
     margin: $xl-6 0;
-    padding-bottom: 20px; // Reduced padding to make room for other elements
+
+    @media screen and (max-width:1049px) {
+      margin-bottom: 0px ;
+    }
 
     // Media query for tablets and below
     @media (max-width: 768px) {
       font-size: $xl-2; // Slightly smaller font size for tablets
       line-height: 90px; // Adjust line height accordingly
-      padding-bottom: 300px;
     }
 
     // Media query for mobile devices
@@ -157,7 +159,7 @@
   margin-right: 20px;
   .container {
     border-radius: 50px 0 50px 0;
-    padding-top:5%;
+    padding:5%;
    padding-bottom: 3%;
     background: $gradient;
     @include flex(center, space-between, none);

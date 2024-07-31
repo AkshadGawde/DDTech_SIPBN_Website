@@ -13,7 +13,7 @@ const Expertise = () => {
             <Title title='The Four Pillars That Empower SIPBN:' />
             <p>Here's how we function to maximize value in your life</p>
           </div>
-          <div className='hero-content grid-4'>
+          <div className='hero-content grid-2'>
           
             {expertise.map((item) => (
           <Link href="/about">     
