@@ -13,11 +13,11 @@ const Expertise = () => {
             <Title title='The Four Pillars That Empower SIPBN:' />
             <p>Here's how we function to maximize value in your life</p>
           </div>
-          <div className='hero-content grid-2'>
+          <div className='hero-content grid-2 '>
           
             {expertise.map((item) => (
           <Link href="/about">     
-              <Card data={item} caption='learn more'/>
+              <Card data={item} caption='learn more' className="pillars"/>
               </Link>
             ))}
           </div>

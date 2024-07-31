@@ -78,6 +78,7 @@ const Team = () => {
                   <Typography
                     variant="body2"
                     color="text.secondary"
+                    className="timeline-hover"
                   ></Typography>
                 </TimelineOppositeContent>
                 <TimelineSeparator>
@@ -89,7 +90,7 @@ const Team = () => {
                     }
                   />
                 </TimelineSeparator>
-                <TimelineContent className="timeline-content">
+                <TimelineContent className="timeline-hover">
                   <Typography variant="h6" component="span">
                     {event.date}
                   </Typography>
