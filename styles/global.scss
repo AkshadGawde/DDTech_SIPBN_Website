@@ -115,6 +115,7 @@
   }
   .card:hover {
     transform: translateY(-10px);
+    box-shadow: 0 8px 16px $indigo;
   }
   .card-img {
     height: 300px;
@@ -185,14 +186,20 @@
   margin-top: $xll-3;
   margin-left: 20px;
   margin-right: 20px;
-  .container {
+   .container {
     border-radius: 50px 0 50px 0;
     padding: $xll;
-    // background: rgb(192, 90, 255);
+   
     background: linear-gradient(320deg,#046A38,#FFFFFF,#FF671F); 
     box-shadow: 0 8px 16px rgb(70, 70, 70);
     @include flex(center, space-between, none);
   }
+  img {
+    display: block;
+    margin: auto;
+    margin-top: 5vh;
+  }
+
   .button-primary {
     margin-left: 16px;
     padding: 8px 16px;

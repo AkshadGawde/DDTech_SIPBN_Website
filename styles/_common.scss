@@ -468,6 +468,7 @@ hr{
   flex: 1;
 }
 
+
 .heading-title img, .eventContainer img {
   max-width: 100%;
   height: auto;
@@ -869,4 +870,8 @@ ul {
     50% {
       transform: scale(1.1);
     }
+  }
+  .eventImg2{
+    height: 70vh;
+    flex: 1;
   }

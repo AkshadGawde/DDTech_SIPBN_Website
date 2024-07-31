@@ -4,6 +4,9 @@ import { Title, TitleLogo, TitleSm } from "@/components/common/Title";
 import { Brand } from "@/components/router";
 import { React } from "react";
 import Marqueee from "@/components/common/Marqueee";
+import Image from "next/image";
+import Link from "next/link";
+
 
 const Hero = () => {
   return (
@@ -131,8 +134,18 @@ const Hero = () => {
           <div>
             <br />
             <h2 id="partner">Partner Country: India</h2>
+            
           </div>
-        </div>
+         </div>
+         <Link href="/contact" passHref>
+      <img
+        src="https://res.cloudinary.com/dueoon8xe/image/upload/v1722364945/lk35ez8ip3wgrsgzq2kf.png"
+        className="eventImg2"
+        alt="Event"
+      />
+    </Link>
+
+        
       </section>
 
       <Brand />
