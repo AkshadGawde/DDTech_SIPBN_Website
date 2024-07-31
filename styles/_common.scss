@@ -819,6 +819,10 @@ ul {
 }
 .blogsTitle{
   font-size: auto;
+  max-width: 80%;
+}
+.blogText{
+  max-width: 100%;
 }
 .blogLink{
   text-decoration: underline;
