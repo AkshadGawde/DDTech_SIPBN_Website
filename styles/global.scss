@@ -111,15 +111,19 @@
   .card{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
-    border-radius: 50px 0 50px 0;
+    border-radius: 50px 10px 50px 10px;
   }
   .card:hover {
     transform: translateY(-10px);
+    .card-img{
+      box-shadow: 0 8px 16px rgb(193, 60, 246);
+      transition: box-shadow 0.2s;
+     }
   }
   .card-img {
     height: 300px;
+    border-radius: 50px 10px 50px 10px;
   }
- 
 }
 
 //banner
