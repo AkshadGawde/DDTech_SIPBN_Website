@@ -350,7 +350,7 @@ export const memberdata = [
     title: "Helen Liossis",
     cover:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275978/Speakers%20-%20CapTech/uf9gafb4y4g4bzdnlvdp.png",
-    post: "CEO of Ramsay Health Care",
+    post: "Non-Executive Director & Deputy Chair",
     href: "/team/10",
   },
   {
@@ -606,7 +606,7 @@ Carmel is a respected leader with the ability to build an experienced and loyal 
      Jim was the Chairman of Mentor Education and Chairman of APIC, a leading international educational organization. He was Deputy Chairman of Regional Development Australia for Sydney and sat on three separate council bodies in Western Sydney, specifically dealing with audit and risk, asset management, and other financial related matters, pertaining to each of the councils that Jim has served.`,
     image:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1721983854/Speakers%20-%20Sipbn/vpr7uf3hfovvuvvb9q9o.png",
-    title: "CEO of Ramsay Health Care",
+    title: "Board Member and Committee Member to a number of profit and non-profit organisations",
   },
   {
     id: "10",
@@ -617,7 +617,7 @@ Carmel is a respected leader with the ability to build an experienced and loyal 
       In her last role at Sydney Water Corporation, Helen was Head of Strategy and Business Planning and responsible for the strategy, city shaping, policy, business planning, board reporting, strategic analytics, science, research, and innovation functions. Helen is a Graduate of the Australian Institute of Company Directors (GAICD); holds a Bachelor of Business from UTS; holds an MBA from MGSM; is a CPA and a Justice of the Peace.`,
     image:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977795/Speakers%20-%20Sipbn/hz1mltgehubeqyshxg0a.png",
-    title: "CEO of Ramsay Health Care",
+    title: "Non-Executive Director & Deputy Chair",
   },
   {
     id: "11",
