@@ -334,7 +334,7 @@ export const memberdata = [
     title: "The Hon David Elliott",
     cover:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275970/Speakers%20-%20CapTech/divlil9mc3qaicgn3yma.png",
-    post: "CEO of Ramsay Health Care",
+    post: "Chief Executive of the Institute of Public Works Engineering Australasia (NSW & ACT).",
     href: "/team/8",
   },
   {
@@ -342,7 +342,7 @@ export const memberdata = [
     title: "Dr Jim Taggart OAM",
     cover:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275980/Speakers%20-%20CapTech/jikncbas30jdvrwcwfaw.png",
-    post: "CEO of Ramsay Health Care",
+    post: "Board Member and Committee Member to a number of profit and non-profit organisations",
     href: "/team/9",
   },
   {
@@ -466,13 +466,6 @@ export const memberdata = [
     href: "/team/28",
   },
   {
-    id:29,
-    title:"Paul Nicolau",
-    cover:"https://res.cloudinary.com/dueoon8xe/image/upload/v1722275971/Speakers%20-%20CapTech/xwlssthb4vhcujxsmlfo.png",
-    post:"Executive Director, Business Sydney",
-    href:"/team/29"
-  },
-  {
     id:30,
     title:"Mark McCrindle",
     cover:"https://res.cloudinary.com/dueoon8xe/image/upload/v1722325273/Speakers%20-%20CapTech/knttbyymvmjefswwkdys.png",
@@ -575,7 +568,7 @@ Carmel is a respected leader with the ability to build an experienced and loyal 
       Stephen is involved in many charities including the Blacktown City Lions Club and the establishment of The Better Foundation (Blacktown and Mt Druitt Hospitals). Stephen Bali has been responsible for driving the modern transformational change across Blacktown City including the health and performance centre (BISP); Blacktown CBD redevelopment; Animal Rehoming Centre; and various other projects which led to his recognition of being identified on various lists as amongst the most influential people in Western Sydney. \n
       Stephen strives to advocate for quality services and infrastructure to provide the best opportunities in life for local residents.`,
     image:
-      "https://res.cloudinary.com/dq23wxdum/image/upload/v1719345293/SIPBN/ygs7bdnevhaicspq7go6.png",
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275969/Speakers%20-%20CapTech/bjeg1zdemby269axji4u.png",
     title: "Member of the Legislative Assembly Member for Blacktown",
   },
   {
@@ -601,8 +594,8 @@ Carmel is a respected leader with the ability to build an experienced and loyal 
        He also represented the NSW Parliament in October 2013 at the Global Conference on the Role of Parliaments and Extractive Industries in Vienna, Austria. Following the re-election of the Baird Government in March 2015, David was appointed Minister for Corrections, Emergency Services, and Veterans Affairs. In August 2015, David was appointed a Member in The Order of St John. In early 2017, Premier Gladys Berejiklian appointed David the Minister for Counter Terrorism, replacing Emergency Services. \n
        Following the re-election of the Berejiklian Government in March 2019, David was appointed Minister for Police and Emergency Services. In December 2021, Premier Dominic Perrottet appointed David Minister for Transport and Veterans Affairs. David was subsequently appointed Minister for Western Sydney in August 2022. As his seat of Baulkham Hills was abolished in the lead-up to the 2023 State Election, David announced his retirement from State Parliament and in May 2023 was appointed the Chief Executive of the Institute of Public Works Engineering Australasia (NSW & ACT).`,
     image:
-      "https://res.cloudinary.com/dq23wxdum/image/upload/v1719345440/SIPBN/d1i7rarmrnxyqjwyb0xx.png",
-    title: "CEO of Ramsay Health Care",
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275970/Speakers%20-%20CapTech/divlil9mc3qaicgn3yma.png",
+    title: "Chief Executive of the Institute of Public Works Engineering Australasia (NSW & ACT).",
   },
   {
     id: "9",

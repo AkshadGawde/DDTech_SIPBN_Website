@@ -84,8 +84,7 @@ const Hero = () => {
             </a>
           </div>
           <div className="banner2">
-            <a
-              href="https://www.eventbrite.com.au/e/captech2024-discover-connect-execute-venue-icc-sydney-tickets-772015889307"
+            <div
               target="_blank"
               rel="noopener noreferrer"
               className="bannerTitle container"
@@ -95,7 +94,7 @@ const Hero = () => {
               <p> Early bird discount 20% till 31st July 2024</p>
               <br />
               <button className="button-primary">Book Tickets</button>
-            </a>
+            </div>
           </div>
         </div>
         <div className="grid-3">
