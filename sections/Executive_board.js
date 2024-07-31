@@ -154,7 +154,7 @@ const Executive_board = () => {
           </div>
           <img
             className="advisoryImg"
-            src="https://res.cloudinary.com/dq23wxdum/image/upload/v1719271418/SIPBN/owdw2sctqlarystx9j4d.png"
+            src="https://res.cloudinary.com/dueoon8xe/image/upload/v1722437142/Speakers%20-%20CapTech/phmijptzjz2ehk5ucnox.jpg"
           />
         </div>
 

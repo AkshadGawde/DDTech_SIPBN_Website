@@ -93,7 +93,15 @@ const Hero = () => {
               <br />
               <p> Early bird discount 20% till 31st July 2024</p>
               <br />
-              <button className="button-primary">Book Tickets</button>
+              <a
+            href="https://www.eventbrite.com.au/e/captech2024-discover-connect-execute-venue-icc-sydney-tickets-772015889307"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="button-primary"
+          >
+            {" "}
+            Book Your Tickets
+          </a>
             </div>
           </div>
         </div>

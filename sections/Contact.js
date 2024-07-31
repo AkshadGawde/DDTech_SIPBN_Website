@@ -24,9 +24,9 @@ const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    budget: "",
-    timeframe: "",
-    projectDetails: "",
+
+
+ 
     countryCode: "",
     phoneNumber: "",
   });
@@ -48,10 +48,8 @@ const Contact = () => {
 
     if (!formData.name) errors.name = "Name is required";
     if (!formData.email) errors.email = "Email is required";
-    if (!formData.budget) errors.budget = "Budget is required";
-    if (!formData.timeframe) errors.timeframe = "Timeframe is required";
-    if (!formData.projectDetails)
-      errors.projectDetails = "Project details are required";
+
+
     if (!formData.countryCode) errors.countryCode = "Country code is required";
     if (!formData.phoneNumber) errors.phoneNumber = "Phone number is required";
 
@@ -76,8 +74,6 @@ const Contact = () => {
             setFormData({
               name: "",
               email: "",
-              projectDetails: "",
-              countryCode: "",
               phoneNumber: "",
             });
             setVerified(false);
