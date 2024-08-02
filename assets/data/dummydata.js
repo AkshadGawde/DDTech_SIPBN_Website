@@ -13,28 +13,28 @@ export const expertise = [
     id: 1,
     title: "Networking",
     cover:
-      "https://res.cloudinary.com/dq23wxdum/image/upload/v1720283869/SIPBN/kgwdnmf3ym7vq3csn49j.png",
+      "/images/networking.png",
       href:"/about",
   },
   {
     id: 2,
     title: "High Value Deal flow",
     cover:
-      "https://res.cloudinary.com/dq23wxdum/image/upload/v1720283868/SIPBN/k30sp3vnb8qsfulozih4.png",
+      "/images/deal.jpg",
       href:"/about",
   },
   {
     id: 3,
     title: "Cross Border Business Opportunities",
     cover:
-      "https://res.cloudinary.com/dq23wxdum/image/upload/v1720283868/SIPBN/jxaesxmmvbkqczwghnkg.png",
+      "/images/business.png",
     href:"/about",
   },
   {
     id: 4,
     title: "Targeted Advocacy",
     cover:
-      "https://res.cloudinary.com/dq23wxdum/image/upload/v1720283869/SIPBN/mlsm1uofmglsfbvzyytt.png",
+      "/images/advocacy.png",
       href:"/about",
   },
 ];
@@ -158,6 +158,10 @@ export const brand = [
     id: 14,
     cover: "../SVG/Logo14.svg",
   },
+  {
+    id:15,
+    cover:"/images/trademark.jpeg"
+  }
 ];
 export const brand2 = [
   {
@@ -525,7 +529,7 @@ He completed lengthy terms as a Director of Ramsay Health Care Limited, Chairman
 He is a past President of the Law Society of NSW and a Member of the Order of Australia, awarded in recognition of his invaluable services to the legal profession. On 26 January 2013 Mr McGeoch became an Officer of the Order of Australia in recognition of his “distinguished service to the community through contributions to a range of organisations and to sport.”\n
 In 2014 Mr McGeoch was appointed Honorary Consul of Luxembourg in Australia. He completed his term of office in April 2021.`,
     image:
-      "https://res.cloudinary.com/dq23wxdum/image/upload/v1719275860/SIPBN/o3icsmvryenqqclxicbu.png",
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275975/Speakers%20-%20CapTech/oretedusdyhaivpbddjf.png",
     title: "Chairman and Director of a wide range of major corporations",
   },
   {
@@ -579,7 +583,7 @@ Carmel is a respected leader with the ability to build an experienced and loyal 
       This prompted him and his team to think outside the box and explore alternative avenues. With a vision to create a more stable and lucrative business, Ankit seamlessly integrated his expertise and industry insights into cutting-edge technology. From energy comparison to broadband, telco, solar, and upcoming credit card comparisons, CIMET transcends limitations. \n
       With CIMET, businesses gain increased visibility and sales opportunities, while empowering customers to make informed choices. As the CEO of CIMET, Ankit Jain continues to drive innovation and spearhead the company’s growth. His entrepreneurial spirit, combined with his dedication to delivering exceptional customer experiences, has positioned CIMET as a leading player in the industry. Ankit’s passion for improvement and his ability to transform challenges into opportunities make him an inspiring figure in the business world.`,
     image:
-      "https://res.cloudinary.com/dq23wxdum/image/upload/v1719345294/SIPBN/g2wq6dq9tcxvbd2w275c.png",
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275969/Speakers%20-%20CapTech/uwilok7quugq4pfzjtel.png",
     title: "CEO of CIMET",
   },
   {
@@ -664,7 +668,7 @@ Carmel is a respected leader with the ability to build an experienced and loyal 
      Stephen holds a Bachelor’s degree in economics from the University of Western Australia and a Master’s degree in applied finance from the University of Melbourne.\n
       He also has qualifications in journalism and graduated from the AICD’s Company Directors Course in 2017. Stephen has published three books, with a fourth to be published soon. Stephen is a former chair of the Executive Committee of the Australian Business Economists (ABE) and is a member of the Australian Statistics Advisory Council (ASAC).`,
     image:
-      "https://res.cloudinary.com/dq23wxdum/image/upload/v1719346364/SIPBN/vnkev1xjdwgzzb1nirnk.png",
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275976/Speakers%20-%20CapTech/vfe1v3og95lypfxsafgv.png",
     title: "Chief Economist for the Business Council of Australia",
   },
   {
@@ -790,7 +794,7 @@ He speaks English, Tamil, Hindi and Portuguese. He is a keen golfer. He is marri
  
 `,
     image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977791/Speakers%20-%20Sipbn/jvtfn3stqu00q2g1eule.png",
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275981/Speakers%20-%20CapTech/hq8odk1lugjny0xyxd5w.png",
     title: "Career diplomat, joined the Indian Foreign Service in 2002",
   },
   {

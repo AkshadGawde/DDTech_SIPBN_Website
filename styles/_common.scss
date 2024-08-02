@@ -203,7 +203,7 @@ button-holder {
 
 .aboutItem:hover {
   transform: translateY(-10px);
-  box-shadow: 0 8px 16px rgb(193, 60, 246);
+  box-shadow: 0 8px 16px $indigo;
 }
 
 .blogImg{
@@ -258,7 +258,7 @@ button-holder {
   justify-content: center;
   align-items: center;
   .button-primary{
-    min-width: 200px;
+    min-width: 240px;
     @media screen and (max-width : 650px) {
       min-width: 300px;
     }
@@ -414,7 +414,7 @@ button-holder {
 
 
 hr{
-  background: linear-gradient(to right, #ff7e5f, #feb47b, #ffdf8e, #87f2d6, #5eb9d6);
+  background: linear-gradient(to right, #ff7e5f, #feb47b, #ffdf8e, #87f2d6, $indigo);
   margin: 20px 0;
   width: 90%;
   height: 1px;
@@ -827,7 +827,7 @@ ul {
 }
 .blogLink{
   text-decoration: underline;
-  color:#5eb9d6;
+  color:$indigo;
 }
 
 .imageGallery {
@@ -873,10 +873,9 @@ ul {
   }
   .timeline-hover{
     border-radius: 10px;
-    margin: 20px;
   }
   .timeline-hover:hover{
-    box-shadow:  3px 5px rgb(14, 17, 220);
+    box-shadow:  0 3px 0 0 rgb(14, 17, 220);
     transition: box-shadow 0.3s;
   }
   .pillars:hover{
@@ -888,4 +887,7 @@ ul {
     max-height: 70vh;
     max-width: 70vw;
     flex: 1;
+  }
+  .missionVision{
+    max-width: 800px;
   }

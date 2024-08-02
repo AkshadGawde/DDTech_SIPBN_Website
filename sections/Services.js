@@ -10,9 +10,7 @@ const Services = () => {
       <section className="agency bg-top">
         <video autoPlay muted loop className="video-background">
           <source
-            src={
-              "https://res.cloudinary.com/dq23wxdum/video/upload/v1719354927/SIPBN/k3xjefpp1980yv7ts1ek.mp4"
-            }
+            src="/images/c2024.mp4"
             type="video/mp4"
           />
           Your browser does not support the video tag.
