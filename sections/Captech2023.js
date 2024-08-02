@@ -15,7 +15,7 @@ function Captech2023() {
         <video autoPlay muted loop className="video-background">
           <source
             src={
-              "https://res.cloudinary.com/dq23wxdum/video/upload/v1719354927/SIPBN/k3xjefpp1980yv7ts1ek.mp4"
+              "/images/c2023.mp4"
             }
             type="video/mp4"
           />
@@ -83,21 +83,21 @@ function Captech2023() {
             <div className="gallery-item">
               <img
                 className="capImg"
-                src="https://res.cloudinary.com/dq23wxdum/image/upload/v1719353786/SIPBN/zoraxhbivj15xvoyfulc.jpg"
+                src="/images/c1.jpg"
                 alt="Gallery item 1"
               />
             </div>
             <div className="gallery-item">
               <img
                 className="capImg"
-                src="https://res.cloudinary.com/dq23wxdum/image/upload/v1719353786/SIPBN/rg3ff2uib0llmxpvuci3.jpg"
+                src="/images/c2.jpg"
                 alt="Gallery item 2"
               />
             </div>
             <div className="gallery-item">
               <img
                 className="capImg"
-                src="https://res.cloudinary.com/dq23wxdum/image/upload/v1719353786/SIPBN/ha3giwnbhynytzuzf8zy.jpg"
+                src="/images/c3.jpg"
                 alt="Gallery item 3"
               />
             </div>
@@ -105,14 +105,14 @@ function Captech2023() {
             <div className="gallery-item">
               <img
                 className="capImg"
-                src="https://res.cloudinary.com/dq23wxdum/image/upload/v1719353911/SIPBN/ekifkljdix5hpywaxhhq.jpg"
+               src="/images/c4.jpg"
                 alt="Gallery item 1"
               />
             </div>
             <div className="gallery-item">
               <img
                 className="capImg"
-                src="https://res.cloudinary.com/dq23wxdum/image/upload/v1719354035/SIPBN/nyxcteuwntqrp7wti0o7.jpg"
+                src="/images/c5.jpg"
                 alt="Gallery item 2"
               />
             </div>
@@ -120,28 +120,28 @@ function Captech2023() {
             <div className="gallery-item">
               <img
                 className="capImg"
-                src="https://res.cloudinary.com/dq23wxdum/image/upload/v1719354135/SIPBN/n6x1h9ejtlwgdxskkd2s.jpg"
+                src="/images/c6.jpg"
                 alt="Gallery item 3"
               />
             </div>
             <div className="gallery-item">
               <img
                 className="capImg"
-                src="https://res.cloudinary.com/dq23wxdum/image/upload/v1719354506/SIPBN/nkoahbw8c4nm5cvwftuk.jpg"
+                src="/images/c7.jpg"
                 alt="Gallery item 3"
               />
             </div>
             <div className="gallery-item">
               <img
                 className="capImg"
-                src="https://res.cloudinary.com/dq23wxdum/image/upload/v1719354506/SIPBN/c9i5gwfgh2lqrlrskesk.jpg"
+                src="/images/c8.jpg"
                 alt="Gallery item 3"
               />
             </div>
             <div className="gallery-item">
               <img
                 className="capImg"
-                src="https://res.cloudinary.com/dq23wxdum/image/upload/v1719422131/SIPBN/pd97xw3brpkruc076oer.jpg"
+                src="/images/c9.jpg"
                 alt="Gallery item 3"
               />
             </div>

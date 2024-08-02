@@ -48,7 +48,7 @@ const Team = () => {
         <video autoPlay muted loop className="video-background">
           <source
             src={
-              "https://res.cloudinary.com/dq23wxdum/video/upload/v1719355178/SIPBN/ojkenqfaxbfhewi3djn8.mp4"
+              "/images/c2024.mp4"
             }
             type="video/mp4"
           />
@@ -147,7 +147,7 @@ const Team = () => {
             >
               <h2>Secure your #CapTech2024 ticket!</h2>
               <br />
-              <p> Early bird discount 20% till 31st August2024</p>
+              <p> Early bird discount 20% till 31st August 2024</p>
               <br />
               <button className="button-primary">Book Tickets</button>
             </div>

@@ -3,7 +3,7 @@
   text-align: center;
   padding: $xl-6 0;
   padding-top: $xl-2;
-  height: 85vh !important;
+  height: 88vh !important;
   overflow: hidden !important;
   position: relative;
 
@@ -12,9 +12,9 @@
     position: absolute;
     top: 0;
     left: -40%;
-    width: 180%;
-    height:200vh;
-    background-image: url("../public/images/Captech\ Event\ Banner\ \(1280\ x\ 720\ px\)\ \(3\).png");
+    width: 190%;
+    height:220vh;
+    background-image: url("/images/backgroundImage.jpg");
     background-size: cover;
     background-position: center;
     z-index: -1;
@@ -116,7 +116,7 @@
   .card:hover {
     transform: translateY(-10px);
     .card-img{
-      box-shadow: 0 8px 16px rgb(193, 60, 246);
+      box-shadow: 0 8px 16px $indigo;
       transition: box-shadow 0.2s;
      }
   }
@@ -163,7 +163,7 @@
   margin-right: 20px;
   .container {
     border-radius: 50px 0 50px 0;
-    padding:5%;
+    padding:5% 15%;
    padding-bottom: 3%;
     background: $gradient;
     @include flex(center, space-between, none);

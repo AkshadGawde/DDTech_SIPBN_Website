@@ -91,7 +91,7 @@ const Hero = () => {
             >
               <h2>Secure your #CapTech2024 ticket!</h2>
               <br />
-              <p> Early bird discount 20% till 31st August2024</p>
+              <p> Early bird discount 20% till 31st August 2024</p>
               <br />
               <a
             href="https://www.eventbrite.com.au/e/captech2024-discover-connect-execute-venue-icc-sydney-tickets-772015889307"
@@ -126,6 +126,14 @@ const Hero = () => {
       <div className="container">
         <div className="heading-title">
           <Title title={"Upcoming Events"} />
+        </div>
+        <div className="eventContainer">
+          <a href="https://events.humanitix.com/renewable-energy-event-or-sipbn">
+            <img
+              className="eventImg"
+              src="/images/cleanenergy.jpg"
+            />
+          </a>
         </div>
         <div className="eventContainer">
           <a href="https://www.eventbrite.com.au/e/captech2024-discover-connect-execute-venue-icc-sydney-tickets-772015889307">

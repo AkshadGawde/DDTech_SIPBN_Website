@@ -54,7 +54,7 @@ const Advisory_board = () => {
           </div>
           <img
             className="advisoryImg"
-            src="https://res.cloudinary.com/dq23wxdum/image/upload/v1719275860/SIPBN/o3icsmvryenqqclxicbu.png"
+            src="https://res.cloudinary.com/dueoon8xe/image/upload/v1722275975/Speakers%20-%20CapTech/oretedusdyhaivpbddjf.png"
           />
         </div>
 

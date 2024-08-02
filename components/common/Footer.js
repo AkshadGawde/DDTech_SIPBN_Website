@@ -22,7 +22,7 @@ const Footer = () => {
 const CompanyInfo = () => (
   <div className="company-info">
     <img
-      src="https://res.cloudinary.com/dq23wxdum/image/upload/v1719933691/SIPBN/ll3eflx5ib4bnsjmpn8z.png "
+      src="/images/sipbnLogo.png"
       alt="logo"
       height={"80px"}
     />
