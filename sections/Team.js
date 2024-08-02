@@ -147,7 +147,7 @@ const Team = () => {
             >
               <h2>Secure your #CapTech2024 ticket!</h2>
               <br />
-              <p> Early bird discount 20% till 31st July 2024</p>
+              <p> Early bird discount 20% till 31st August2024</p>
               <br />
               <button className="button-primary">Book Tickets</button>
             </div>
