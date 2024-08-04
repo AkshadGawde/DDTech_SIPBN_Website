@@ -131,7 +131,7 @@ const Hero = () => {
           <a href="https://events.humanitix.com/clean-energy-monetising-the-opportunity">
             <img
               className="eventImg"
-              // src="/images/cleanenergy.jpg"
+              src="/images/cleanenergy.jpg"
             />
           </a>
         </div>
