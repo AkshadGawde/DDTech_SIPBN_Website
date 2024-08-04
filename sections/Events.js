@@ -14,14 +14,16 @@ const Events = () => {
           <br />
           <Title title="Upcoming Events" />
           <div className="event-container">
-            <div className="eventCard">
-              <img
-                className="eventImg"
-                src="https://res.cloudinary.com/duv9rw1wg/image/upload/v1719354679/homePage/pjzjnljv4l1wxl2vfhad.png"
-                alt="Event 2 Image"
-              />
-              <h2 className="event-title">September 2024</h2>
-              <p className="event-description">Presentation & Pitching Session.</p>
+          <div className="eventCard">
+              <a href="https://www.eventbrite.com.au/e/#CapTech2024-discover-connect-execute-venue-icc-sydney-tickets-772015889307">
+                <img
+                  className="eventImg"
+                  src="/images/cleanenergy.jpg"
+                  alt="Event 1 Image"
+                />
+              </a>
+              <h2 className="event-title">05th September 2024</h2>
+              <p className="event-description">Clean Energy - Monetising the Opportunity</p>
             </div>
             <div className="eventCard">
               <img
@@ -53,17 +55,6 @@ const Events = () => {
               <p className="event-description">Christmas Party</p>
             </div>
           </div>
-          <div className="eventCard">
-              <a href="https://www.eventbrite.com.au/e/#CapTech2024-discover-connect-execute-venue-icc-sydney-tickets-772015889307">
-                <img
-                  className="eventImg"
-                  src="/images/cleanenergy.jpg"
-                  alt="Event 1 Image"
-                />
-              </a>
-              <h2 className="event-title">05th September 2024</h2>
-              <p className="event-description">Clean Energy Event</p>
-            </div>
 
           <Title title="Past Events" />
           <div className="event-container">
