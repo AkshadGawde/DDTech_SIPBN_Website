@@ -128,7 +128,7 @@ const Hero = () => {
           <Title title={"Upcoming Events"} />
         </div>
         <div className="eventContainer">
-          <a href="https://events.humanitix.com/renewable-energy-event-or-sipbn">
+          <a href="https://events.humanitix.com/clean-energy-monetising-the-opportunity">
             <img
               className="eventImg"
               src="/images/cleanenergy.jpg"
