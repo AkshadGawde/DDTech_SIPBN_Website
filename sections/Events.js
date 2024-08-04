@@ -15,7 +15,7 @@ const Events = () => {
           <Title title="Upcoming Events" />
           <div className="event-container">
           <div className="eventCard">
-              <a href="https://www.eventbrite.com.au/e/#CapTech2024-discover-connect-execute-venue-icc-sydney-tickets-772015889307">
+              <a href="https://events.humanitix.com/clean-energy-monetising-the-opportunity">
                 <img
                   className="eventImg"
                   src="/images/cleanenergy.jpg"
@@ -35,7 +35,7 @@ const Events = () => {
               <p className="event-description">Presentation & Pitching Session</p>
             </div>
             <div className="eventCard">
-              <a href="https://www.eventbrite.com.au/e/#CapTech2024-discover-connect-execute-venue-icc-sydney-tickets-772015889307">
+              <a href="https://events.humanitix.com/clean-energy-monetising-the-opportunity">
                 <img
                   className="eventImg"
                   src="https://res.cloudinary.com/duv9rw1wg/image/upload/v1719326603/homePage/qo7dq9u1cfptxijtlsly.png"
