@@ -19,6 +19,9 @@
     background-position: center;
     z-index: -1;
     filter: none;
+    @media screen and (max-height:900px) {
+      height: 250vh;
+    }
   }
 
 
