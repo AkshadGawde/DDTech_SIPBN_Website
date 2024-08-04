@@ -70,7 +70,7 @@ const Events = () => {
               <p className="event-description">Economic Update - Opportunities and Challenges</p>
             </div>
             <div className="eventCard">
-              <a href="https://www.eventbrite.com.au/e/#CapTech2024-global-pitching-presenting-session-tickets-765412678927">
+              <a>
                 <img
                   className="eventImg"
                   src="https://res.cloudinary.com/duv9rw1wg/image/upload/v1719355161/homePage/eqqseipvvxs11lsk1fj0.png"
@@ -81,7 +81,7 @@ const Events = () => {
               <p className="event-description">Pitching Session #CapTech2024</p>
             </div>
             <div className="eventCard">
-              <a href="https://www.eventbrite.com.au/e/global-pitching-session-preliminary-round-#CapTech2023-tickets-694439807157">
+              <a >
                 <img
                   className="eventImg"
                   src="https://res.cloudinary.com/duv9rw1wg/image/upload/v1719355161/homePage/rdvah2y9vbzr1zyjft5s.png"
@@ -92,7 +92,7 @@ const Events = () => {
               <p className="event-description">Global Pitching Session – Preliminary Round #CapTech2023</p>
             </div>
             <div className="eventCard">
-              <a href="https://www.eventbrite.com.au/e/#CapTech2023-festival-where-business-growth-meets-capital-24-27-oct-23-tickets-482131798187">
+              <a>
                 <img
                   className="eventImg"
                   src="https://res.cloudinary.com/duv9rw1wg/image/upload/v1719355161/homePage/qwjduvdedvvujnmiuken.png"
@@ -103,7 +103,7 @@ const Events = () => {
               <p className="event-description">#CapTech2023 Welcome Drinks at NSW Parliament House</p>
             </div>
             <div className="eventCard">
-              <a href="https://www.eventbrite.com.au/e/#CapTech2023-festival-where-business-growth-meets-capital-24-27-oct-23-tickets-482131798187">
+              <a >
                 <img
                   className="eventImg"
                   src="https://res.cloudinary.com/duv9rw1wg/image/upload/v1719355164/homePage/ciaphwytaryiiadqpy2h.png"
