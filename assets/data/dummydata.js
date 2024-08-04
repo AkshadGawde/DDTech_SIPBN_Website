@@ -160,7 +160,7 @@ export const brand = [
   },
   {
     id:15,
-    cover:"/images/trademark.jpeg"
+    cover:"/images/trademark.png"
   }
 ];
 export const brand2 = [
