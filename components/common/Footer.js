@@ -71,7 +71,7 @@ const NewsLetter = () => (
   <div class="newsletter-container">
     <h2>Subscribe to Our Newsletter</h2>
     <p>Get the latest updates and offers.</p>
-    <form class="newsletter-form" action="#" method="post">
+    <form class="newsletter-form" action="https://sipbn.us6.list-manage.com/subscribe/post?u=a5985927d751cfeae7bafd594&amp;id=cbc00a2d3d&amp;f_id=0011b3e2f0" method="post">
       <input
         type="email"
         name="email"
