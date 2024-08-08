@@ -160,11 +160,11 @@ export const brand = [
   },
   {
     id: 16,
-    cover: "/images/FinkeyLogo.png",
+    cover: "/images/FinkeyLogo.jpeg",
   },
   {
     id: 17,
-    cover: "/images/RedPlannarLogo.png",
+    cover: "/images/PlanarLogo.jpeg",
   },
 ];
 export const brand2 = [

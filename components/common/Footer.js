@@ -1,4 +1,6 @@
 import Link from "next/link";
+import React, { useState } from "react";
+import toast, { Toaster } from "react-hot-toast";
 import { TitleLogo } from "./Title";
 import { BsFacebook } from "react-icons/bs";
 import { AiFillInstagram, AiFillLinkedin, AiFillYoutube } from "react-icons/ai";
@@ -67,21 +69,69 @@ const CompanyLinks = () => (
   </ul>
 );
 
-const NewsLetter = () => (
-  <div class="newsletter-container">
-    <h2>Subscribe to Our Newsletter</h2>
-    <p>Get the latest updates and offers.</p>
-    <form class="newsletter-form" action="https://sipbn.us6.list-manage.com/subscribe/post?u=a5985927d751cfeae7bafd594&amp;id=cbc00a2d3d&amp;f_id=0011b3e2f0" method="post">
-      <input
-        type="email"
-        name="email"
-        placeholder="Enter your email"
-        required
-      />
-      <button type="submit">Subscribe</button>
-    </form>
-  </div>
-);
+
+
+const NewsLetter = () => {
+  const [email, setEmail] = useState("");
+  const [submitting, setSubmitting] = useState(false);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setSubmitting(true);
+
+    const formData = new FormData();
+    formData.append("EMAIL", email);
+
+    try {
+      const response = await fetch(
+        "https://sipbn.us6.list-manage.com/subscribe/post?u=a5985927d751cfeae7bafd594&id=cbc00a2d3d&f_id=0011b3e2f0",
+        {
+          method: "POST",
+          mode: "no-cors",
+          body: formData,
+        }
+      );
+
+      if (response) {
+        toast.success("Subscription successful!");
+        setEmail("");
+        console.log(response)
+      } else {
+        toast.error("There was an issue with your subscription.");
+      }
+    } catch (error) {
+      toast.error("An error occurred. Please try again.");
+    } finally {
+      setSubmitting(false);
+    }
+  };
+
+  return (
+    <div className="newsletter-container">
+      <Toaster />
+      <h2>Subscribe to Our Newsletter</h2>
+      <p>Get the latest updates and offers.</p>
+      <form className="newsletter-form" onSubmit={handleSubmit}>
+        <input
+          type="email"
+          name="EMAIL"
+          placeholder="Enter your email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          required
+          disabled={submitting}
+        />
+        <button type="submit" disabled={submitting}>
+          Subscribe
+        </button>
+      </form>
+
+    </div>
+  );
+};
+
+
+
 
 // const ServiceLinks = () => (
 //   <ul className="footer-links">

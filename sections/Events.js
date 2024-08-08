@@ -14,7 +14,7 @@ const Events = () => {
           <br />
           <Title title="Upcoming Events" />
           <div className="event-container">
-          <div className="eventCard">
+            <div className="eventCard">
               <a href="https://events.humanitix.com/clean-energy-monetising-the-opportunity">
                 <img
                   className="eventImg"
@@ -22,8 +22,10 @@ const Events = () => {
                   alt="Event 1 Image"
                 />
               </a>
-              <h2 className="event-title">05th September 2024</h2>
-              <p className="event-description">Clean Energy - Monetising the Opportunity</p>
+              <h2 className="event-title">5th September 2024</h2>
+              <p className="event-description">
+                Clean Energy - Monetising the Opportunity
+              </p>
             </div>
             <div className="eventCard">
               <img
@@ -32,7 +34,9 @@ const Events = () => {
                 alt="Event 3 Image"
               />
               <h2 className="event-title">October 2024</h2>
-              <p className="event-description">Presentation & Pitching Session</p>
+              <p className="event-description">
+                Presentation & Pitching Session
+              </p>
             </div>
             <div className="eventCard">
               <a href="https://events.humanitix.com/clean-energy-monetising-the-opportunity">
@@ -67,13 +71,15 @@ const Events = () => {
                 />
               </a>
               <h2 className="event-title">June 2024</h2>
-              <p className="event-description">Economic Update - Opportunities and Challenges</p>
+              <p className="event-description">
+                Economic Update - Opportunities and Challenges
+              </p>
             </div>
             <div className="eventCard">
               <a>
                 <img
                   className="eventImg"
-                  src="https://res.cloudinary.com/duv9rw1wg/image/upload/v1719355161/homePage/eqqseipvvxs11lsk1fj0.png"
+                  src="https://res.cloudinary.com/duv9rw1wg/image/upload/v1719355161/homePage/qwjduvdedvvujnmiuken.png"
                   alt="Event 1 Image"
                 />
               </a>
@@ -81,29 +87,33 @@ const Events = () => {
               <p className="event-description">Pitching Session #CapTech2024</p>
             </div>
             <div className="eventCard">
-              <a >
+              <a>
                 <img
                   className="eventImg"
-                  src="https://res.cloudinary.com/duv9rw1wg/image/upload/v1719355161/homePage/rdvah2y9vbzr1zyjft5s.png"
+                  src="/images/GPS-2.png"
                   alt="Event 2 Image"
                 />
               </a>
               <h2 className="event-title">September 2023</h2>
-              <p className="event-description">Global Pitching Session – Preliminary Round #CapTech2023</p>
+              <p className="event-description">
+                Global Pitching Session – Preliminary Round #CapTech2023
+              </p>
             </div>
             <div className="eventCard">
               <a>
                 <img
                   className="eventImg"
-                  src="https://res.cloudinary.com/duv9rw1wg/image/upload/v1719355161/homePage/qwjduvdedvvujnmiuken.png"
+                  src="/images/GPS-1.png"
                   alt="Event 3 Image"
                 />
               </a>
               <h2 className="event-title">October 2023</h2>
-              <p className="event-description">#CapTech2023 Welcome Drinks at NSW Parliament House</p>
+              <p className="event-description">
+                #CapTech2023 Welcome Drinks at NSW Parliament House
+              </p>
             </div>
             <div className="eventCard">
-              <a >
+              <a>
                 <img
                   className="eventImg"
                   src="https://res.cloudinary.com/duv9rw1wg/image/upload/v1719355164/homePage/ciaphwytaryiiadqpy2h.png"
