@@ -12,30 +12,26 @@ export const expertise = [
   {
     id: 1,
     title: "Networking",
-    cover:
-      "/images/networking.png",
-      href:"/about",
+    cover: "/images/networking.png",
+    href: "/about",
   },
   {
     id: 2,
     title: "High Value Deal flow",
-    cover:
-      "/images/deal.jpg",
-      href:"/about",
+    cover: "/images/deal.jpg",
+    href: "/about",
   },
   {
     id: 3,
     title: "Cross Border Business Opportunities",
-    cover:
-      "/images/business.png",
-    href:"/about",
+    cover: "/images/business.png",
+    href: "/about",
   },
   {
     id: 4,
     title: "Targeted Advocacy",
-    cover:
-      "/images/advocacy.png",
-      href:"/about",
+    cover: "/images/advocacy.png",
+    href: "/about",
   },
 ];
 export const testimonial = [
@@ -159,9 +155,17 @@ export const brand = [
     cover: "../SVG/Logo14.svg",
   },
   {
-    id:15,
-    cover:"/images/trademark.png"
-  }
+    id: 15,
+    cover: "/images/trademark.png",
+  },
+  {
+    id: 16,
+    cover: "/images/FinkeyLogo.png",
+  },
+  {
+    id: 17,
+    cover: "/images/RedPlannarLogo.png",
+  },
 ];
 export const brand2 = [
   {
@@ -258,7 +262,6 @@ export const patronsdata = [
     href: "/team/10",
   },
 ];
-
 
 export const memberdata = [
   {
@@ -470,14 +473,14 @@ export const memberdata = [
     href: "/team/28",
   },
   {
-    id:30,
-    title:"Mark McCrindle",
-    cover:"https://res.cloudinary.com/dueoon8xe/image/upload/v1722325273/Speakers%20-%20CapTech/knttbyymvmjefswwkdys.png",
-    post:"Social researcher, best-selling author, influential thought leader and TEDx speaker. ",
-    href:"/team/30",
-  }
+    id: 30,
+    title: "Mark McCrindle",
+    cover:
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1722325273/Speakers%20-%20CapTech/knttbyymvmjefswwkdys.png",
+    post: "Social researcher, best-selling author, influential thought leader and TEDx speaker. ",
+    href: "/team/30",
+  },
 ];
-
 
 export const moderatordata = [
   {
@@ -505,7 +508,6 @@ export const moderatordata = [
     href: "/team/20",
   },
 ];
-
 
 export const membersdata = [
   {
@@ -599,7 +601,8 @@ Carmel is a respected leader with the ability to build an experienced and loyal 
        Following the re-election of the Berejiklian Government in March 2019, David was appointed Minister for Police and Emergency Services. In December 2021, Premier Dominic Perrottet appointed David Minister for Transport and Veterans Affairs. David was subsequently appointed Minister for Western Sydney in August 2022. As his seat of Baulkham Hills was abolished in the lead-up to the 2023 State Election, David announced his retirement from State Parliament and in May 2023 was appointed the Chief Executive of the Institute of Public Works Engineering Australasia (NSW & ACT).`,
     image:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275970/Speakers%20-%20CapTech/divlil9mc3qaicgn3yma.png",
-    title: "Chief Executive of the Institute of Public Works Engineering Australasia (NSW & ACT).",
+    title:
+      "Chief Executive of the Institute of Public Works Engineering Australasia (NSW & ACT).",
   },
   {
     id: "9",
@@ -610,7 +613,8 @@ Carmel is a respected leader with the ability to build an experienced and loyal 
      Jim was the Chairman of Mentor Education and Chairman of APIC, a leading international educational organization. He was Deputy Chairman of Regional Development Australia for Sydney and sat on three separate council bodies in Western Sydney, specifically dealing with audit and risk, asset management, and other financial related matters, pertaining to each of the councils that Jim has served.`,
     image:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1721983854/Speakers%20-%20Sipbn/vpr7uf3hfovvuvvb9q9o.png",
-    title: "Board Member and Committee Member to a number of profit and non-profit organisations",
+    title:
+      "Board Member and Committee Member to a number of profit and non-profit organisations",
   },
   {
     id: "10",
@@ -875,9 +879,8 @@ Jua serves as the Treasurer of the Australasian Green Infrastructure Network. Wi
     title: "Executive Director, Business Sydney",
   },
   {
-    id:"30",
-    name:
-      "Mark McCrindle",
+    id: "30",
+    name: "Mark McCrindle",
     description:
       "Mark McCrindle is a social researcher, best-selling author, influential thought leader and TEDx speaker. He is recognised globally as coining the name for the emerging generation, Generation Alpha. Mark’s advisory,communications and research company, McCrindle, count among its clients more than 100 of the nation’s largest companies and leading international brands. Mark’s highly valued social commentary is presented through his engaging keynotes, research, reports, infographics, videos and media input. He is a trusted advisor and sits on the board of a number of different organisations, after having developed his regard as an expert demographer, futurist and social commentator. Mark McCrindle, BSc (Psychology), MA, is the author of five books on emerging trends and social change. Generation Alpha, Work Wellbeing: Leading Thriving Teams in Rapidly Changing Times, The ABC of XYZ: Understanding the Global Generations, Word Up: A Lexicon and Guide to Communication in the 21st Century and The Power of Good.",
     image:
