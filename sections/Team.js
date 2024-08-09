@@ -46,12 +46,7 @@ const Team = () => {
     <>
       <section className="agency bg-top">
         <video autoPlay muted loop className="video-background">
-          <source
-            src={
-              "/images/c2024.mp4"
-            }
-            type="video/mp4"
-          />
+          <source src={"/images/c2024.mp4"} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         <div className="container">
@@ -100,7 +95,15 @@ const Team = () => {
             ))}
           </Timeline>
 
-          <button className="button-primary" onClick={ () =>{window.location = "https://www.eventbrite.com.au/e/captech2024-discover-connect-execute-venue-icc-sydney-tickets-772015889307"}}>Book Tickets</button>
+          <button
+            className="button-primary"
+            onClick={() => {
+              window.location =
+                "https://www.eventbrite.com.au/e/captech2024-discover-connect-execute-venue-icc-sydney-tickets-772015889307";
+            }}
+          >
+            Book Tickets
+          </button>
 
           <Title title="What is #CapTech2024" />
           <p>
@@ -149,7 +152,15 @@ const Team = () => {
               <br />
               <p> Early bird discount 20% till 31st August 2024</p>
               <br />
-              <button className="button-primary">Book Tickets</button>
+              <a
+                href="https://www.eventbrite.com.au/e/captech2024-discover-connect-execute-venue-icc-sydney-tickets-772015889307"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="button-primary"
+              >
+                {" "}
+                Book Your Tickets
+              </a>
             </div>
           </div>
         </div>

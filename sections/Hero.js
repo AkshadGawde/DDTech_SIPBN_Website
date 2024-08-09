@@ -7,7 +7,6 @@ import Marqueee from "@/components/common/Marqueee";
 import Image from "next/image";
 import Link from "next/link";
 
-
 const Hero = () => {
   return (
     <>
@@ -94,14 +93,14 @@ const Hero = () => {
               <p> Early bird discount 20% till 31st August 2024</p>
               <br />
               <a
-            href="https://www.eventbrite.com.au/e/captech2024-discover-connect-execute-venue-icc-sydney-tickets-772015889307"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="button-primary"
-          >
-            {" "}
-            Book Your Tickets
-          </a>
+                href="https://www.eventbrite.com.au/e/captech2024-discover-connect-execute-venue-icc-sydney-tickets-772015889307"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="button-primary"
+              >
+                {" "}
+                Book Your Tickets
+              </a>
             </div>
           </div>
         </div>
@@ -129,10 +128,7 @@ const Hero = () => {
         </div>
         <div className="eventContainer">
           <a href="https://events.humanitix.com/clean-energy-monetising-the-opportunity">
-            <img
-              className="eventImg"
-              src="/images/cleanenergy.jpg"
-            />
+            <img className="eventImg" src="/images/cleanenergy.jpg" />
           </a>
         </div>
         <div className="eventContainer">
@@ -150,18 +146,15 @@ const Hero = () => {
           <div>
             <br />
             <h2 id="partner">Partner Country: India</h2>
-            
           </div>
-         </div>
-         <Link href="/contact" passHref>
-      <img
-        src="https://res.cloudinary.com/dueoon8xe/image/upload/v1722364945/lk35ez8ip3wgrsgzq2kf.png"
-        className="eventImg2"
-        alt="Event"
-      />
-    </Link>
-
-        
+        </div>
+        <Link href="/contact" passHref>
+          <img
+            src="https://res.cloudinary.com/dueoon8xe/image/upload/v1722364945/lk35ez8ip3wgrsgzq2kf.png"
+            className="eventImg2"
+            alt="Event"
+          />
+        </Link>
       </section>
 
       <Brand />

@@ -253,14 +253,14 @@ export const patronsdata = [
     post: "Board Member and Committee Member to a number of profit and non-profit organisations",
     href: "/team/9",
   },
-  {
-    id: 10,
-    title: "Helen Liossis",
-    cover:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275978/Speakers%20-%20CapTech/uf9gafb4y4g4bzdnlvdp.png",
-    post: "Non-Executive Director & Deputy Chair",
-    href: "/team/10",
-  },
+  // {
+  //   id: 10,
+  //   title: "Helen Liossis",
+  //   cover:
+  //     "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275978/Speakers%20-%20CapTech/uf9gafb4y4g4bzdnlvdp.png",
+  //   post: "Non-Executive Director & Deputy Chair",
+  //   href: "/team/10",
+  // },
 ];
 
 export const memberdata = [
@@ -352,14 +352,14 @@ export const memberdata = [
     post: "Board Member and Committee Member to a number of profit and non-profit organisations",
     href: "/team/9",
   },
-  {
-    id: 10,
-    title: "Helen Liossis",
-    cover:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275978/Speakers%20-%20CapTech/uf9gafb4y4g4bzdnlvdp.png",
-    post: "Non-Executive Director & Deputy Chair",
-    href: "/team/10",
-  },
+  // {
+  //   id: 10,
+  //   title: "Helen Liossis",
+  //   cover:
+  //     "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275978/Speakers%20-%20CapTech/uf9gafb4y4g4bzdnlvdp.png",
+  //   post: "Non-Executive Director & Deputy Chair",
+  //   href: "/team/10",
+  // },
   {
     id: 12,
     title: "Sarah Fairhurst",
@@ -616,17 +616,17 @@ Carmel is a respected leader with the ability to build an experienced and loyal 
     title:
       "Board Member and Committee Member to a number of profit and non-profit organisations",
   },
-  {
-    id: "10",
-    name: "Helen Liossis",
-    description: `Helen Liossis is a professional company director and former deputy chair. Helen is currently on the Board of HVTC and is also an audit and risk committee member of HVTC and Invertebrates Australia.\n
-     In addition to her non-executive director activities, Helen is also an NSW Division Councillor for the Australian Institute of Company Directors (AICD) and an adjudicator for the Australasian Reporting Awards (ARA).\n
-      She was a former non-executive director of the Australian Institute of Nuclear Science and Engineering (AINSE) and a former house committee member of the Australian Motor Yacht Club of NSW. Previously, Helen was a senior executive with a background in strategy, planning, corporate services, investor relations, and corporate affairs. \n
-      In her last role at Sydney Water Corporation, Helen was Head of Strategy and Business Planning and responsible for the strategy, city shaping, policy, business planning, board reporting, strategic analytics, science, research, and innovation functions. Helen is a Graduate of the Australian Institute of Company Directors (GAICD); holds a Bachelor of Business from UTS; holds an MBA from MGSM; is a CPA and a Justice of the Peace.`,
-    image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977795/Speakers%20-%20Sipbn/hz1mltgehubeqyshxg0a.png",
-    title: "Non-Executive Director & Deputy Chair",
-  },
+  // {
+  //   id: "10",
+  //   name: "Helen Liossis",
+  //   description: `Helen Liossis is a professional company director and former deputy chair. Helen is currently on the Board of HVTC and is also an audit and risk committee member of HVTC and Invertebrates Australia.\n
+  //    In addition to her non-executive director activities, Helen is also an NSW Division Councillor for the Australian Institute of Company Directors (AICD) and an adjudicator for the Australasian Reporting Awards (ARA).\n
+  //     She was a former non-executive director of the Australian Institute of Nuclear Science and Engineering (AINSE) and a former house committee member of the Australian Motor Yacht Club of NSW. Previously, Helen was a senior executive with a background in strategy, planning, corporate services, investor relations, and corporate affairs. \n
+  //     In her last role at Sydney Water Corporation, Helen was Head of Strategy and Business Planning and responsible for the strategy, city shaping, policy, business planning, board reporting, strategic analytics, science, research, and innovation functions. Helen is a Graduate of the Australian Institute of Company Directors (GAICD); holds a Bachelor of Business from UTS; holds an MBA from MGSM; is a CPA and a Justice of the Peace.`,
+  //   image:
+  //     "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977795/Speakers%20-%20Sipbn/hz1mltgehubeqyshxg0a.png",
+  //   title: "Non-Executive Director & Deputy Chair",
+  // },
   {
     id: "11",
     name: "Kunwar Aditya Saxena",

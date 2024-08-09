@@ -89,7 +89,7 @@ const Advisory_board = () => {
 
         <hr />
 
-        <div className="advisoryContainer">
+        {/* <div className="advisoryContainer">
           <div>
             <h2 className="advisoryTitle">Helen Liossis</h2>
             <p className="advisoryDescription">
@@ -123,9 +123,7 @@ const Advisory_board = () => {
             className="advisoryImg"
             src="https://res.cloudinary.com/dueoon8xe/image/upload/v1721977795/Speakers%20-%20Sipbn/hz1mltgehubeqyshxg0a.png"
           />
-        </div>
-
-        <hr />
+        </div> */}
 
         <div className="advisoryContainer">
           <div>
