@@ -290,12 +290,21 @@ export const memberdata = [
   },
   {
     id: 22,
-    title: "Dr. Janakiraman",
+    title: "Dr. S Janakiraman",
     cover:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275981/Speakers%20-%20CapTech/hq8odk1lugjny0xyxd5w.png",
     post: "Career diplomat, joined the Indian Foreign Service in 2002.",
     href: "/team/22",
   },
+  {
+    id: 34,
+    title: "LYALL GORMAN",
+    cover:
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1723742805/Speakers%20-%20Sipbn/yasio84sb8zmlf6nkvxp.png",
+    post: "Group CEO of Evolve Housing",
+    href: "/team/34",
+  },
+
   {
     id: 4,
     title: "Carmel Monaghan",
@@ -479,6 +488,38 @@ export const memberdata = [
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1722325273/Speakers%20-%20CapTech/knttbyymvmjefswwkdys.png",
     post: "Social researcher, best-selling author, influential thought leader and TEDx speaker. ",
     href: "/team/30",
+  },
+  {
+    id: 31,
+    title: "Nicole Kidd",
+    cover:
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1723742105/Speakers%20-%20Sipbn/i4szlkhlr5lvefhk2bih.png",
+    post: "Head of Private Debt, Australia",
+    href: "/team/31",
+  },
+  {
+    id: 32,
+    title: "Stephanie Brantz",
+    cover:
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1723742546/Speakers%20-%20Sipbn/mfyxjivkpcllnnfn3nrl.png",
+    post: "Stephanie Brantz Pty Ltd",
+    href: "/team/32",
+  },
+  {
+    id: 33,
+    title: "Claire Elkin",
+    cover:
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1723742285/Speakers%20-%20Sipbn/svwqvlta6ewmyljuqf7k.png",
+    post: "Executive Director, Board and Commercial strategy advisor top tier ASX; NYSE",
+    href: "/team/33",
+  },
+  {
+    id: 35,
+    title: "Giovanni Laudicina",
+    cover:
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1723742684/Speakers%20-%20Sipbn/jxgrpwayxv1vujilyap0.png",
+    post: "CEO",
+    href: "/team/35",
   },
 ];
 
@@ -780,7 +821,7 @@ Alumnus of the Year and in 2015 was inducted into the ARN ICT Industry Awards Ha
 
   {
     id: "22",
-    name: "Dr. Janakriaman",
+    name: "Dr. S Janakriaman",
     description: `
 Dr. S. Janakiraman is a career diplomat, joined the Indian Foreign Service in 2002.
  
@@ -882,10 +923,56 @@ Jua serves as the Treasurer of the Australasian Green Infrastructure Network. Wi
     id: "30",
     name: "Mark McCrindle",
     description:
-      "Mark McCrindle is a social researcher, best-selling author, influential thought leader and TEDx speaker. He is recognised globally as coining the name for the emerging generation, Generation Alpha. Mark’s advisory,communications and research company, McCrindle, count among its clients more than 100 of the nation’s largest companies and leading international brands. Mark’s highly valued social commentary is presented through his engaging keynotes, research, reports, infographics, videos and media input. He is a trusted advisor and sits on the board of a number of different organisations, after having developed his regard as an expert demographer, futurist and social commentator. Mark McCrindle, BSc (Psychology), MA, is the author of five books on emerging trends and social change. Generation Alpha, Work Wellbeing: Leading Thriving Teams in Rapidly Changing Times, The ABC of XYZ: Understanding the Global Generations, Word Up: A Lexicon and Guide to Communication in the 21st Century and The Power of Good.",
+      "Mark McCrindle is a social researcher, best-selling author, influential thought leader and TEDx speaker. He is recognised globally as coining the name for the emerging generation, Generation Alpha. Mark’s advisory,communications and research company, McCrindle, count among its clients more than 100 of the nation’s largest companies and leading international brands. \n \n Mark’s highly valued social commentary is presented through his engaging keynotes, research, reports, infographics, videos and media input. He is a trusted advisor and sits on the board of a number of different organisations, after having developed his regard as an expert demographer, futurist and social commentator. \n \n Mark McCrindle, BSc (Psychology), MA, is the author of five books on emerging trends and social change. Generation Alpha, Work Wellbeing: Leading Thriving Teams in Rapidly Changing Times, The ABC of XYZ: Understanding the Global Generations, Word Up: A Lexicon and Guide to Communication in the 21st Century and The Power of Good.",
     image:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1722325273/Speakers%20-%20CapTech/knttbyymvmjefswwkdys.png",
     title:
       "Social researcher, best-selling author, influential thought leader and TEDx speaker.",
+  },
+  {
+    id: "31",
+    name: "Nicole Kidd",
+    description:
+      "Nicole Joined Schroders on 1 September 2020 to spearhead the Australian Private Debt strategy. Nicole is focused on building solutions for investors looking for attractive risk adjusted returns in private debt (both direct and syndicated) in Australia and New Zealand covering Real Estate, Infrastructure and Corporate and Acquisition Finance opportunities.  \n \nNicole passionately believes that private debt is a highly credible alternative for borrowers looking for non-traditional methods of finance, in an environment where banks are continuing to be constrained by regulatory pressures. Importantly also, private debt is becoming an increasingly interesting option for investors looking to diversify their portfolios to generate attractive and regular income. \n \n Nicole has been a Director of Schroders RF, the joint venture between Schroders Group and the Roberts Family, since October 2022, and was appointed to lead the business as Managing Director in August, 2023. \n \n Nicole has worked in the finance industry for the past 27 years. Prior to Schroders, Nicole was Managing Director and Head of Corporate Banking Australia and Institutional Client Management Asia-Pacific at RBC Capital Markets (the Investment Bank of the Royal Bank of Canada), based in Sydney Australia. In this role, Nicole was responsible for a portfolio and team focused on Australia and New Zealand corporates, and Australian and Asian Financial Institutional relationships. \n \n Nicole’s career has spanned investment banking and asset management in Australia and Europe, with time in syndications, debt advisory, real estate, infrastructure, project, structured and general corporate finance as well as some time as a portfolio manager of a structure & high yield debt fund. \n \n Nicole has a Bachelor of Economics from the University of Newcastle, Australia; a Bachelor of Laws from the University of New England, Australia; and a Graduate Diploma in Legal Practice from the College of Law. Nicole is admitted as a legal practitioner to the Supreme Court of New South Wales, Australia.",
+    image:
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1723742105/Speakers%20-%20Sipbn/i4szlkhlr5lvefhk2bih.png",
+    title: "Head of Private Debt, Australia",
+  },
+  {
+    id: "32",
+    name: "STEPHANIE BRANTZ",
+    description:
+      "Stephanie is a highly accomplished Media and Communications professional with extensive experience in hosting National and International Sport and Major Events. Her impeccable interpersonal skills, stakeholder engagement, integrity, and sensitivity to dynamic social and political situations have enhanced her broad network of relationships which range from Foreign Governments and International Sporting Bodies, through to Australian Federal, State and Local Governments, State Sporting Organisations and Community sport. \n \n With her high-level communications and event experience, Stephanie is frequently called on as a moderator for industry panels as well as collaboration on development of sport strategies, major event attraction and event delivery planning.",
+    image:
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1723742546/Speakers%20-%20Sipbn/mfyxjivkpcllnnfn3nrl.png",
+    title: "Stephanie Brantz Pty Ltd",
+  },
+  {
+    id: "33",
+    name: "Claire Elkin",
+    description:
+      "Claire is an Executive Director, Board and Commercial strategy advisor to top tier ASX; NYSE; Private Equity and National Government NFPs. With 25 years in the Energy, Resources and Utilities sector globally, Claire has an impressive background in building and scaling up organisations and world-first R&D energy technologies across the Middle East, Europe and Asia Pacific. Board Advisory Panel Member for ARENA, and Private Equity, she leverages her M&A, Technical and large infrastructure Project experience to guide the investment runway towards commercialisation of Cleantech, Deeptech, and Nature-based energy technologies. Claire is passionate about using her private sector experience to drive industry cultural change towards more sustainable, equitable and community-centred energy transition.",
+    image:
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1723742285/Speakers%20-%20Sipbn/svwqvlta6ewmyljuqf7k.png",
+    title:
+      "Executive Director, Board and Commercial strategy advisor top tier ASX; NYSE",
+  },
+  {
+    id: "34",
+    name: "LYALL GORMAN",
+    description:
+      "Lyall Gorman is currently the Group CEO of Evolve Housing, one of Australia’s largest Community Housing Providers. He is also the President of Business NSW, having served as a Board Director for the past eight years and Deputy President for two years. Lyall also holds the position of Deputy President at the Australian Chamber of Commerce and Industry (ACCI). \n \n He has over 35 years of experience in senior management, project management and administration, in both the Public and Private sectors. He holds a Master’s Degree in Administration (UNSW) with majors in Finance, Organizational Culture and Change, Organisational Behaviour, Statistics and Marketing. Lyall was born in Griffith, NSW and has a passion for small business, mentoring emerging business leaders and aspirational youth while also figuring on the public speaking circuit in areas including Leadership, Building a Winning Culture, High Performance, Brand, Development, Consumer Engagement.",
+    image:
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1723742805/Speakers%20-%20Sipbn/yasio84sb8zmlf6nkvxp.png",
+    title: "Group CEO of Evolve Housing",
+  },
+  {
+    id: "35",
+    name: "Giovanni Laudicina",
+    description:
+      "Giovanni Laudicina is a results-driven and visionary CEO with a proven track record of transforming organizations into industry leaders. With over a decade of executive experience, he has successfully driven national and international growth and profitability across diverse sectors. Born in Italy, Giovanni began his career as a consultant and manager, establishing a solid foundation of expertise and leadership. \n \n He played a pivotal role in establishing EasyPark's presence in Italy, leading the company to become the market leader. In 2018, Giovanni relocated to Sydney and joined Duncan Solutions, where he ascended to the role of CEO in 2020. Under his leadership, Duncan Solutions has continued to thrive and expand its market presence.",
+    image:
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1723742684/Speakers%20-%20Sipbn/jxgrpwayxv1vujilyap0.png",
+    title: "CEO",
   },
 ];
