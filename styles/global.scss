@@ -709,7 +709,6 @@ form {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    // max-width: 600;
   }
 }
 .itemTextContainer{
@@ -718,47 +717,62 @@ form {
   text-align: center;
   .itemTitle{
     color: #000;
+    font-size: 16px;
   }
   .itemDescription{
     color: #000;
     text-align: left;
+    font-size: .875rem;
+  }
+  @media screen and (max-width:480px) {
+    margin: 10px 0 ;
+    max-width: 400px;
+    padding: 5px;
   }
 }
 .itemImage{
-  max-width: 60%;
-  // max-height: 320px;
-  // margin: 10px 10px 10px 0;
+  max-width: 50%;
   border-radius: 5% 0 0 5%;
   @media screen and (max-width:936px) {
-    // max-height: 500px;
+    max-width: 100%;
+    border-radius: 5% 5% 0 0 ;
+  }
+  @media screen and (max-width:480px) {
     max-width: 100%;
     border-radius: 5% 5% 0 0 ;
   }
 }
 .carouselHolder{
-  padding: 50px;
-  @media screen and (max-width:400px) {
-    padding: 10px;
-  }
+  padding: 30px;
   @media screen and (max-width:600px) {
     padding: 20px;
   }
+  @media screen and (max-width:480px) {
+    display: none;
+  }
 }
-/* square buttons */
-.rec.rec-arrow {
-  border-radius: 0;
+.mobileCarousel{
+  display: none;
+  @media screen and (max-width : 480px) {
+    display: block;
+  }
 }
-/* round buttons on hover */
-.rec.rec-arrow:hover {
-  border-radius: 50%;
+
+.rec-arrow {
+  color: white !important; /* Default arrow color */
+  background-color: rgb(14, 17, 220) !important; /* Default background color */
 }
-/* hide disabled buttons */
-.rec.rec-arrow:disabled {
-  visibility: hidden;
+
+.rec-arrow:hover {
+  background-color: gray; /* Background color on hover */
 }
-/* disable default outline on focused items */
-/* add custom outline on focused items */
-.rec-carousel-item:focus {
-  outline: none;
-  box-shadow: inset 0 0 1px 1px lightgrey;
+
+.rec-arrow:active,
+.rec-arrow:focus {
+  color: white !important; /* Force arrow color to stay white */
+  background-color: rgb(14, 17, 220) !important; /* Force background color to stay black */
+}
+.rec-dot_active{
+  background-color: rgb(14, 17, 220) !important;
+  box-shadow: 0 0 1px 3px #06038D !important;
 }

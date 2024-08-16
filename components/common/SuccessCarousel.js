@@ -7,10 +7,10 @@ const breakPoints = [
     {width : 1 , itemsToShow : 1},
 ];
 
-export function SuccessCarousel() {
+export function SuccessCarousel(props) {
   return (
     <div>
-      <Carousel breakPoints={breakPoints}>
+      <Carousel breakPoints={breakPoints} showArrows={props.showArrows} >
         {SuccessCarouselData.map((item) => (
             <Item src={item.src} title={item.title} description={item.description}/>
         ))}

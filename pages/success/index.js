@@ -14,7 +14,10 @@ const Index = () => {
   return (
     <>
         <div className="carouselHolder">
-          <SuccessCarousel/>
+          <SuccessCarousel showArrows={true}/>
+        </div>
+        <div className="carouselHolder mobileCarousel">
+          <SuccessCarousel showArrows={false}/>
         </div>
     </>
   );
