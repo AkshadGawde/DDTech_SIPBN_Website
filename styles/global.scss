@@ -697,3 +697,82 @@ form {
     margin-top: 20px;
       }
 }
+.itemContainer{
+  display: flex;
+  flex-direction: row ;
+  border-radius: 5%;
+  background-color: white;
+  max-width: 950px;
+  margin: 0 10px;
+  justify-content: center;
+  @media screen and (max-width:936px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.itemTextContainer{
+  margin: 0 10px 10px 10px;
+  padding: 5px;
+  text-align: center;
+  .itemTitle{
+    color: #000;
+    font-size: 16px;
+  }
+  .itemDescription{
+    color: #000;
+    text-align: left;
+    font-size: .875rem;
+  }
+  @media screen and (max-width:480px) {
+    margin: 10px 0 ;
+    max-width: 400px;
+    padding: 5px;
+  }
+}
+.itemImage{
+  max-width: 50%;
+  border-radius: 5% 0 0 5%;
+  @media screen and (max-width:936px) {
+    max-width: 100%;
+    border-radius: 5% 5% 0 0 ;
+  }
+  @media screen and (max-width:480px) {
+    max-width: 100%;
+    border-radius: 5% 5% 0 0 ;
+  }
+}
+.carouselHolder{
+  padding: 30px;
+  @media screen and (max-width:600px) {
+    padding: 20px;
+  }
+  @media screen and (max-width:480px) {
+    display: none;
+  }
+}
+.mobileCarousel{
+  display: none;
+  @media screen and (max-width : 480px) {
+    display: block;
+  }
+}
+
+.rec-arrow {
+  color: white !important; /* Default arrow color */
+  background-color: rgb(14, 17, 220) !important; /* Default background color */
+}
+
+.rec-arrow:hover {
+  background-color: gray; /* Background color on hover */
+}
+
+.rec-arrow:active,
+.rec-arrow:focus {
+  color: white !important; /* Force arrow color to stay white */
+  background-color: rgb(14, 17, 220) !important; /* Force background color to stay black */
+}
+.rec-dot_active{
+  background-color: rgb(14, 17, 220) !important;
+  box-shadow: 0 0 1px 3px #06038D !important;
+}
