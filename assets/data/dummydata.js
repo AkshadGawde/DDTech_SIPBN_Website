@@ -980,3 +980,35 @@ Jua serves as the Treasurer of the Australasian Green Infrastructure Network. Wi
     title: "CEO",
   },
 ];
+export const SuccessCarouselData = [
+  {
+    src: "/images/carousel/design.jpg",
+    title : "Design Technology Company",
+    description : "An innovative leader in design and technology excelled at #CapTech2023, where they engaged with an international firm for capital and business development opportunities. This event fostered key connections, opening doors for potential growth and expansion in the global market, and highlighting the company’s readiness to make a significant impact internationally."
+  },
+  {
+    src: "/images/carousel/fintech.jpg",
+    title : "Fintech Company",
+    description : "A leading Fintech company specializing in AI-based models participated in #CapTech2022, where they were introduced to a government body. This connection led to successful match funding, providing a significant boost for their innovative financial technology initiatives. The event marked a key milestone in their growth and development."
+  },
+  {
+    src:'/images/carousel/renewable.jpg',
+    title: "Renewable Energy",
+    description : "A major renewable energy firm from the Middle East attended #CapTech2022, seeking approved solar power projects. The company successfully matched with projects in Queensland, South Australia, and New South Wales, securing investments exceeding A$200 million. This strategic partnership is set to advance solar energy initiatives across these regions."
+  },
+  {
+    src : "/images/carousel/mining.jpg" ,
+    title : "Mining and Exploration",
+    description : "An international mining group participated in #CapTech2023, seeking investment opportunities in late-stage exploration projects focused on base and precious metals, as well as critical minerals. The group was introduced to two significant copper and gold projects, culminating in the signing of MOUs valued at over A$100 million, marking a key step in their investment strategy."
+  },
+  {
+    src : "/images/carousel/funds.jpg",
+    title : "Capital Raising for a Private Equity Fund",
+    description: "A private equity fund successfully raised capital from high-net-worth investors to focus on high-growth companies. This success emphasizes the fund's strategic appeal and its commitment to pursuing opportunities with substantial growth potential. The strong support from affluent investors reflects their eagerness to invest in promising ventures with significant expansion opportunities."
+  },
+  {
+    src:"/images/carousel/movie.jpg",
+    title : "Financing of a Movie Business" , 
+    description : "A client successfully raised $250K in equity financing to launch their new movie business, facilitated by a valuable introduction. This funding represents a pivotal achievement in advancing their venture, illustrating how effective networking and key connections can play a crucial role in securing substantial financial support for entrepreneurial projects."
+  }
+]
