@@ -156,15 +156,15 @@ export const brand = [
   },
   {
     id: 15,
-    cover: "/images/trademark.png",
+    cover: "../SVG/Logo15.svg",
   },
   {
     id: 16,
-    cover: "/images/FinkeyLogo.jpeg",
+    cover: "../SVG/Logo16.svg",
   },
   {
     id: 17,
-    cover: "/images/PlanarLogo.jpeg",
+    cover: "../SVG/Logo17.svg",
   },
   {
     id: 18,

@@ -1,16 +1,15 @@
 import { expertise } from "@/assets/data/dummydata";
 import { Card } from "@/components/common/Card";
 import { Title, TitleSm } from "@/components/common/Title";
-import React from "react"; 
+import React from "react";
 
 const Services = () => {
   return (
     <>
-
       <section className="agency bg-top">
         <video autoPlay muted loop className="video-background">
           <source
-            src="/images/c2024.mp4"
+            src="https://res.cloudinary.com/dueoon8xe/video/upload/v1723785194/Speakers%20-%20Sipbn/hshdkrcut1ziuoddwwnd.mp4"
             type="video/mp4"
           />
           Your browser does not support the video tag.
