@@ -11,11 +11,11 @@ export default function Home() {
         <meta property="og:title" content="SIPBN" />
         <meta property="og:description" content="Sydney Investors, Professionals and Business Networking Group Incorporated (SIPBN)" />
         <meta property="og:url" content="https://sipbn.com.au/" />
-        <meta property="og:image" content="" />
+        <meta property="og:image" content="https://lh3.googleusercontent.com/p/AF1QipMdzWweOhF8941oxkqrc6p0SBT2Sp4XOK-SlXwY=s1360-w1360-h1020" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="SIPBN" />
         <meta name="twitter:description" content="Sydney Investors, Professionals and Business Networking Group Incorporated (SIPBN)" />
-        <meta name="twitter:image" content="" />
+        <meta name="twitter:image" content="https://lh3.googleusercontent.com/p/AF1QipMdzWweOhF8941oxkqrc6p0SBT2Sp4XOK-SlXwY=s1360-w1360-h1020" />
        
       </Head>
       
