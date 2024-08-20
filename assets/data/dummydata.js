@@ -201,37 +201,44 @@ export const brand2 = [
     cover: "../SVG/media7.svg",
   },
 ];
-export const blogdata = [
-  {
-    id: 1,
-    title: "Ligula vel urna accumsan placerat",
-    cover: "../images/b1.webp",
-    catgeory: "INDUSTRY",
-    date: "JANUARY 12, 2023",
-  },
-  {
-    id: 2,
-    title: "Don’t underestimate the lorem ipsum dolor amet",
-    cover: "../images/b2.jpg",
-    catgeory: "TIPS & TRICKS",
-    date: "OCTOBER 20, 2023",
-  },
-  {
-    id: 3,
-    title:
-      "Building the real VR lorem ipsum dolor amet glavrida from a scratch",
-    cover: "../images/b3.jpg",
-    catgeory: "TIPS & TRICKS",
-    date: "OCTOBER 9, 2023",
-  },
-  {
-    id: 4,
-    title: "What eleifend posuere tincidunt",
-    cover: "../images/b4.jpg",
-    catgeory: "EVENTS",
-    date: "OCTOBER 8, 2023",
-  },
-];
+// export const blogdata = [
+//   {
+//     id: 1,
+//     title: "Federal Budget",
+//     cover:
+//       "https://res.cloudinary.com/duv9rw1wg/image/upload/v1721736223/homePage/omer85xdmfprk3ohmdve.jpg",
+//     category: "INDUSTRY",
+//     date: "JANUARY 12, 2023",
+//     href: "/federalbudget",
+//   },
+//   {
+//     id: 2,
+//     title: "Net Zero Emissions vs. AI's Rising Energy Consumption",
+//     cover:
+//       "https://res.cloudinary.com/duv9rw1wg/image/upload/v1721735819/homePage/xugbdj1vuq9gm4o5qggb.png",
+//     category: "TIPS & TRICKS",
+//     date: "OCTOBER 20, 2023",
+//     href: "/aivs",
+//   },
+//   {
+//     id: 3,
+//     title: "SIPBN Clean Energy Committee's Analysis",
+//     cover:
+//       "https://res.cloudinary.com/duv9rw1wg/image/upload/v1721736591/homePage/jquatrm5gch50shbjmrr.png",
+//     category: "TIPS & TRICKS",
+//     date: "OCTOBER 9, 2023",
+//     href: "/cleanenergy",
+//   },
+//   {
+//     id: 4,
+//     title: "Igniting Investor Interest: The Power of Passionate Presentations",
+//     cover: "../images/b4.jpg",
+//     category: "EVENTS",
+//     date: "OCTOBER 8, 2023",
+//     href: "/cleanenergy",
+//   },
+// ];
+
 export const patronsdata = [
   {
     id: 2,

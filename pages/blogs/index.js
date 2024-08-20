@@ -2,7 +2,7 @@ import React from "react";
 import { Title, TitleSm } from "@/components/common/Title";
 import Link from "next/link";
 import { Card } from "@/components/common/Card";
-import { blogCards } from "@/assets/data/dummydata";
+// import { blogCards } from "@/assets/data/dummydata";
 
 const Section = ({ title, children }) => (
   <>
@@ -50,6 +50,20 @@ const Blog = () => {
                 cover:
                   "https://res.cloudinary.com/duv9rw1wg/image/upload/v1721736591/homePage/jquatrm5gch50shbjmrr.png",
                 href: "/cleanenergy",
+              }}
+              caption={"Read Blog"}
+            />
+          </a>
+
+          <a href="/cleanenergy">
+            <Card
+              data={{
+                id: 4,
+                title:
+                  "Igniting Investor Interest: The Power of Passionate Presentations",
+                cover:
+                  "https://res.cloudinary.com/dueoon8xe/image/upload/v1724185196/zh5dwwxlns4z3eyaeyx1.png",
+                href: "/passionate",
               }}
               caption={"Read Blog"}
             />

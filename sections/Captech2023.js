@@ -84,8 +84,8 @@ function Captech2023() {
 
           <div className="grid-4 py">
             {speakers2023
-              .slice() // Create a copy of the array to avoid mutating the original data
-              .sort((a, b) => a.id - b.id) // Sort the copied array based on the id
+              .slice()
+              .sort((a, b) => a.id - b.id)
               .map((speaker) => (
                 <div key={speaker.id} className="card">
                   <div className="card-img">
