@@ -1,5 +1,6 @@
 import React from "react";
 import { Title, TitleSm } from "@/components/common/Title";
+import { speakers2023 } from "../assets/data/dummydata";
 
 function Captech2023() {
   return (
@@ -73,6 +74,35 @@ function Captech2023() {
             </div>
           </div>
         </section>
+
+        {/* Speakers Section */}
+        {/* Speakers Section */}
+        <div className="container">
+          <div className="heading-title">
+            <TitleSm title="Speakers 2023" />
+          </div>
+
+          <div className="grid-4 py">
+            {speakers2023
+              .slice()
+              .sort((a, b) => a.id - b.id)
+              .map((speaker) => (
+                <div key={speaker.id} className="card">
+                  <div className="card-img">
+                    <img
+                      src={speaker.image || "/images/default-speaker.jpg"}
+                      alt={speaker.name}
+                    />
+                  </div>
+                  <div className="card-details">
+                    <h3 className="title-link">{speaker.name}</h3>
+                    <p className="">{speaker.title}</p>
+                  </div>
+                </div>
+              ))}
+          </div>
+        </div>
+
         <br />
         <section className="gallery">
           <div className="container">
@@ -105,14 +135,14 @@ function Captech2023() {
                 <img
                   className="capImg"
                   src="/images/c4.jpg"
-                  alt="Gallery item 1"
+                  alt="Gallery item 4"
                 />
               </div>
               <div className="gallery-item">
                 <img
                   className="capImg"
                   src="/images/c5.jpg"
-                  alt="Gallery item 2"
+                  alt="Gallery item 5"
                 />
               </div>
 
@@ -120,28 +150,28 @@ function Captech2023() {
                 <img
                   className="capImg"
                   src="/images/c6.jpg"
-                  alt="Gallery item 3"
+                  alt="Gallery item 6"
                 />
               </div>
               <div className="gallery-item">
                 <img
                   className="capImg"
                   src="/images/c7.jpg"
-                  alt="Gallery item 3"
+                  alt="Gallery item 7"
                 />
               </div>
               <div className="gallery-item">
                 <img
                   className="capImg"
                   src="/images/c8.jpg"
-                  alt="Gallery item 3"
+                  alt="Gallery item 8"
                 />
               </div>
               <div className="gallery-item">
                 <img
                   className="capImg"
                   src="/images/c9.jpg"
-                  alt="Gallery item 3"
+                  alt="Gallery item 9"
                 />
               </div>
             </div>

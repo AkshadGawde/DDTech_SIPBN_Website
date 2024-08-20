@@ -5,7 +5,7 @@ const Committee = () => {
   return (
     <>
       <Head>
-        <title>Committees</title>
+        <title>SIPBN | Committees</title>
       </Head>
       <Committees />
     </>

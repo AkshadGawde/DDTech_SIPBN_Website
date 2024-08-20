@@ -6,7 +6,7 @@ const contact = () => {
   return (
     <>
       <Head>
-        <title>Contact | SIPBN</title>
+        <title>SIPBN | Contact</title>
       </Head>
       <Contact />
     </>
