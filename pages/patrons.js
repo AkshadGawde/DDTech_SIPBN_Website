@@ -5,7 +5,7 @@ const Patronss = () => {
   return (
     <>
       <Head>
-        <title>Patrons</title>
+        <title>SIPBN | Patrons</title>
       </Head>
       <Patrons />
     </>

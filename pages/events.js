@@ -6,7 +6,7 @@ const events = () => {
   return (
     <>
       <Head>
-        <title>Events | SIPBN</title>
+        <title>SIPBN | Events </title>
       </Head>
       <Events />
     </>

@@ -5,7 +5,7 @@ const Advisory = () => {
   return (
     <>
       <Head>
-        <title>Advisory_board</title>
+        <title>SIPBN | Advisory Board</title>
       </Head>
       <Advisory_board />
     </>

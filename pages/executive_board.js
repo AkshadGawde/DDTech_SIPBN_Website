@@ -5,7 +5,7 @@ const Executive = () => {
   return (
     <>
       <Head>
-        <title>Executive board</title>
+        <title>SIPBN | Executive board</title>
       </Head>
       <Executive_board />
     </>

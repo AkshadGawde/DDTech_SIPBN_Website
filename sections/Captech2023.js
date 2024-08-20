@@ -76,104 +76,107 @@ function Captech2023() {
         </section>
 
         {/* Speakers Section */}
+        {/* Speakers Section */}
         <div className="container">
           <div className="heading-title">
             <TitleSm title="Speakers 2023" />
-            <br />
           </div>
 
           <div className="grid-4 py">
-            {speakers2023.map((speaker) => (
-              <div key={speaker.id} className="card">
-                <div className="card-img">
-                  <img
-                    src={speaker.image || "/images/default-speaker.jpg"}
-                    alt={speaker.name}
-                  />
+            {speakers2023
+              .slice() // Create a copy of the array to avoid mutating the original data
+              .sort((a, b) => a.id - b.id) // Sort the copied array based on the id
+              .map((speaker) => (
+                <div key={speaker.id} className="card">
+                  <div className="card-img">
+                    <img
+                      src={speaker.image || "/images/default-speaker.jpg"}
+                      alt={speaker.name}
+                    />
+                  </div>
+                  <div className="card-details">
+                    <h3 className="title-link">{speaker.name}</h3>
+                    <p className="">{speaker.title}</p>
+                  </div>
                 </div>
-                <div className="card-details">
-                  <h3 className="title-link">{speaker.name}</h3>
-                  <p className="">{speaker.title}</p>
-                </div>
-              </div>
-            ))}
+              ))}
           </div>
+        </div>
 
-          <br />
-          <section className="gallery">
-            <div className="container">
-              <Title title="Gallery" />
-              <br />
-              <div className="gallery-grid">
-                <div className="gallery-item">
-                  <img
-                    className="capImg"
-                    src="/images/c1.jpg"
-                    alt="Gallery item 1"
-                  />
-                </div>
-                <div className="gallery-item">
-                  <img
-                    className="capImg"
-                    src="/images/c2.jpg"
-                    alt="Gallery item 2"
-                  />
-                </div>
-                <div className="gallery-item">
-                  <img
-                    className="capImg"
-                    src="/images/c3.jpg"
-                    alt="Gallery item 3"
-                  />
-                </div>
+        <br />
+        <section className="gallery">
+          <div className="container">
+            <Title title="Gallery" />
+            <br />
+            <div className="gallery-grid">
+              <div className="gallery-item">
+                <img
+                  className="capImg"
+                  src="/images/c1.jpg"
+                  alt="Gallery item 1"
+                />
+              </div>
+              <div className="gallery-item">
+                <img
+                  className="capImg"
+                  src="/images/c2.jpg"
+                  alt="Gallery item 2"
+                />
+              </div>
+              <div className="gallery-item">
+                <img
+                  className="capImg"
+                  src="/images/c3.jpg"
+                  alt="Gallery item 3"
+                />
+              </div>
 
-                <div className="gallery-item">
-                  <img
-                    className="capImg"
-                    src="/images/c4.jpg"
-                    alt="Gallery item 4"
-                  />
-                </div>
-                <div className="gallery-item">
-                  <img
-                    className="capImg"
-                    src="/images/c5.jpg"
-                    alt="Gallery item 5"
-                  />
-                </div>
+              <div className="gallery-item">
+                <img
+                  className="capImg"
+                  src="/images/c4.jpg"
+                  alt="Gallery item 4"
+                />
+              </div>
+              <div className="gallery-item">
+                <img
+                  className="capImg"
+                  src="/images/c5.jpg"
+                  alt="Gallery item 5"
+                />
+              </div>
 
-                <div className="gallery-item">
-                  <img
-                    className="capImg"
-                    src="/images/c6.jpg"
-                    alt="Gallery item 6"
-                  />
-                </div>
-                <div className="gallery-item">
-                  <img
-                    className="capImg"
-                    src="/images/c7.jpg"
-                    alt="Gallery item 7"
-                  />
-                </div>
-                <div className="gallery-item">
-                  <img
-                    className="capImg"
-                    src="/images/c8.jpg"
-                    alt="Gallery item 8"
-                  />
-                </div>
-                <div className="gallery-item">
-                  <img
-                    className="capImg"
-                    src="/images/c9.jpg"
-                    alt="Gallery item 9"
-                  />
-                </div>
+              <div className="gallery-item">
+                <img
+                  className="capImg"
+                  src="/images/c6.jpg"
+                  alt="Gallery item 6"
+                />
+              </div>
+              <div className="gallery-item">
+                <img
+                  className="capImg"
+                  src="/images/c7.jpg"
+                  alt="Gallery item 7"
+                />
+              </div>
+              <div className="gallery-item">
+                <img
+                  className="capImg"
+                  src="/images/c8.jpg"
+                  alt="Gallery item 8"
+                />
+              </div>
+              <div className="gallery-item">
+                <img
+                  className="capImg"
+                  src="/images/c9.jpg"
+                  alt="Gallery item 9"
+                />
               </div>
             </div>
-          </section>
-        </div>
+          </div>
+        </section>
       </div>
     </div>
   );

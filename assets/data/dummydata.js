@@ -438,7 +438,7 @@ export const memberdata = [
     href: "/team/11",
   },
   {
-    id: 7,
+    id: 20,
     title: "Ankit Jain",
     cover:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275969/Speakers%20-%20CapTech/uwilok7quugq4pfzjtel.png",
@@ -1021,70 +1021,78 @@ export const SuccessCarouselData = [
 
 export const speakers2023 = [
   {
-    id: 1,
+    id: 6,
     name: "Rod McGeoch AO, LLB",
     image:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1724171177/2023%20Speakers/d0gqc1ksnp1dfqoyhykr.png",
     title: "Chairman & Director of major corporations",
   },
   {
-    id: 2,
+    id: 8,
     name: "Dr Joseph Rizk AM",
-    image: "",
+    image:
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724171170/2023%20Speakers/agasn8c8uhwm3erdrwgt.png",
     title: "CEO & Managing Director, Arab Bank Australia",
   },
   {
-    id: 3,
+    id: 7,
     name: "Mr Manish Gupta",
-    image: "",
+    image:
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724171175/2023%20Speakers/epqcci2w9tvs78iobpbx.png",
     title: "Consul General of India",
   },
   {
-    id: 4,
+    id: 5,
     name: "The Hon Victor Dominello",
-    image: "",
+    image:
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724171175/2023%20Speakers/aw4kmbik32comtdrvdgk.png",
     title: "Former NSW Government Minister",
   },
   {
-    id: 5,
+    id: 9,
     name: "Stephen Bali MP",
-    image: "",
+    image:
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724171170/2023%20Speakers/pctp8dsbgyr5oew2vzjw.png",
     title: "Member of the Legislative Assembly, Member for Blacktown",
   },
   {
-    id: 6,
+    id: 11,
     name: "Prof Louise Hickman",
-    image: "",
+    image:
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724171171/2023%20Speakers/ghatbwe9miyw3cpmbpjd.png",
     title: "Pro Vice Chancellor (Health) University of Wollongong",
   },
   {
-    id: 7,
+    id: 12,
     name: "The Hon Jacqui Munro, MLC",
-    image: "",
+    image:
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724171171/2023%20Speakers/jlypyxphtfuwgllmda96.png",
     title: "Member of Parliament in the NSW Upper House",
   },
   {
-    id: 8,
+    id: 10,
     name: "The Hon Matt Kean MP",
-    image: "",
+    image:
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724171172/2023%20Speakers/blxrrwbjxoux0m533fzj.png",
     title: "Member of the Legislative Assembly, Member for Blacktown",
   },
   {
-    id: 9,
+    id: 2,
     name: "The Hon Courtney Houssos MLC",
     image:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1724171176/2023%20Speakers/sibo3f9gydmwjcmyxzee.png",
     title: "Minister for Finance, Minister for Natural Resources",
   },
   {
-    id: 10,
+    id: 3,
     name: "The Hon Ron Hoenig MP",
-    image: "",
+    image:
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724171176/2023%20Speakers/b3ynqnocdiojwye1fcpg.png",
     title:
       "Minister for Local Gov & Leader of the House in the Legislative Assembly",
   },
   {
-    id: 11,
+    id: 4,
     name: "David Mehan MP",
     image:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1724171176/2023%20Speakers/sgtmvw4nrndmcxbjkiqo.png",
@@ -1092,229 +1100,269 @@ export const speakers2023 = [
       "State Member for The Entrance & Parliamentary Secretary to the Treasurer",
   },
   {
-    id: 12,
+    id: 1,
     name: "The Hon Anoulack Chanthivong MP",
     image:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1724171177/2023%20Speakers/agyl4n2suliibfvticyn.png",
     title: "Former NSW Government Minister",
   },
   {
-    id: 13,
+    id: 24,
     name: "Bernadette Janson",
-    image: "",
+    image:
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724171174/2023%20Speakers/xhijvfwhdjzllo5dwqp0.png",
     title: "Serial Renovator, Founder of the School of Renovating",
   },
   {
-    id: 14,
+    id: 21,
     name: "Kunwar Aditya Saxena",
-    image: "",
+    image:
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724171172/2023%20Speakers/rb5l0e7aduxagn5yxtgx.png",
     title:
       "24-Hour Economy Commissioner, Investment NSW, Successful & Innovative Entrepreneur",
   },
   {
-    id: 15,
-    name: "Garry Simonian Amanda Yeates",
-    image: "",
+    id: 22,
+    name: "Garry Simonian",
+    image:
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724171173/2023%20Speakers/wbovymsnhojy6zpspxnc.png",
     title: "CEO of SunCentral Maroochydore",
   },
   {
     id: 16,
     name: "Ankit Jain",
-    image: "",
+    image:
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724171172/2023%20Speakers/ktkc883kx5jisco3lfgp.png",
     title: "CEO of CIMET",
   },
   {
-    id: 17,
+    id: 19,
     name: "Dr Jim Taggert OAM",
-    image: "",
+    image:
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724171174/2023%20Speakers/dpa7gv0epj94ug17oou0.png",
     title:
       "Board & Committee Member to a number of profit and not for profit organisations",
   },
   {
     id: 18,
     name: "Prof Hélène De Burgh",
-    image: "",
+    image:
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724171174/2023%20Speakers/d5sqsdjkcdq3hyhga85a.png",
     title: "Dean of the Graduate School at UTS",
   },
   {
-    id: 19,
+    id: 17,
     name: "Simon Hickey",
-    image: "",
+    image:
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724171171/2023%20Speakers/bncl7bwfl8csruvwkuyl.png",
     title: "CEO - Western Sydney Airport",
   },
   {
-    id: 20,
+    id: 15,
     name: "Prof Munjed Al Muderis",
-    image: "",
+    image:
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724171171/2023%20Speakers/vbg8mumifd534ahllrrr.png",
     title: "2020 NSW Australian of the Year",
   },
   {
-    id: 21,
+    id: 13,
     name: "Denita Wawn",
-    image: "",
+    image:
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724171171/2023%20Speakers/v7zmslk5hqiszt9ol8xo.png",
     title: "CEO, Master Builders",
   },
   {
-    id: 22,
+    id: 16,
     name: "Mr Iqbal Singh",
-    image: "",
+    image:
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724171171/2023%20Speakers/scz4egtdvidxslf9qx6e.png",
     title: "Founder & Managing Director, Innovative Financial Management",
   },
   {
-    id: 23,
+    id: 14,
     name: "Richard Alcock AO",
-    image: "",
+    image:
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724171170/2023%20Speakers/bm2lyfdtdqllcyk5iv0c.png",
     title: "Vice Chairman, Bank of America",
   },
   {
-    id: 24,
+    id: 33,
     name: "Lisa Wade",
-    image: "",
+    image:
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724171173/2023%20Speakers/jauyyqvpabch24mpfhxf.png",
     title: "CEO of DigitalX",
   },
   {
-    id: 25,
+    id: 35,
     name: "Stephen Harrison",
-    image: "",
+    image:
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724171172/2023%20Speakers/rpxpyhfhhmv5lkfl8q1p.png",
     title: "Chairman of NobleOakLtd & IncentiaPay Ltd",
   },
   {
-    id: 26,
+    id: 36,
     name: "Dipen Rughani",
-    image: "",
+    image:
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724171173/2023%20Speakers/ioicss4qeedetcnsl5xy.png",
     title: "CEO of GAICD Newland Global Group",
   },
   {
-    id: 27,
+    id: 34,
     name: "Mike Conway",
-    image: "",
+    image:
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724171172/2023%20Speakers/mtzowi3brbzg8x0xpzwv.png",
     title: "Founder and CEO of XVenture",
   },
   {
-    id: 28,
+    id: 32,
     name: "Prof Rocky Scopelliti",
-    image: "",
+    image:
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724171171/2023%20Speakers/bncl7bwfl8csruvwkuyl.png",
     title: "Futurologist",
   },
   {
-    id: 29,
+    id: 31,
     name: "Michael Sharpe",
-    image: "",
+    image:
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724171174/2023%20Speakers/nqx5v4wd6m38j3my2b00.png",
     title: "Chairman of the Sharpe Family Office",
   },
   {
     id: 30,
     name: "Anuraj Gambhir",
-    image: "",
+    image:
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724171174/2023%20Speakers/v7psob9gumtmmroxakmz.png",
     title: "Strategic Business/Start Up Advisor & Tech Visionary",
   },
   {
-    id: 31,
+    id: 29,
     name: "Peter Xing",
-    image: "",
+    image:
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724171170/2023%20Speakers/og3yh9bbcgqdfhyrroyz.png",
     title:
       "Global Singularity Group Educator and Practitioner on Transhumanism and Emerging Tech",
   },
   {
-    id: 32,
+    id: 28,
     name: "Prof Chris Pettit",
-    image: "",
+    image:
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724171170/2023%20Speakers/aimkbtu2qnbdi7oyxhbn.png",
     title:
       "Director of City Futures Research Centre & Chair of the Board of Directors for CUPUM",
   },
   {
-    id: 33,
+    id: 25,
     name: "A/Prof Sandra Krishnan",
-    image: "",
+    image:
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724171174/2023%20Speakers/wi29kelewttrdarfhszq.png",
     title: "Leading Breast Surgeon, Clinical Associate Professor, AMU",
   },
   {
-    id: 34,
+    id: 26,
     name: "Dr Ashish Agar",
-    image: "",
+    image:
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724171174/2023%20Speakers/zhaxklt2ghqt3kglyn0d.png",
     title:
       "Vice-President of the Australian Society of Ophthalmologists, Technical Director - Sustainability, Mott MacDonald",
   },
   {
-    id: 35,
+    id: 27,
     name: "Alistair Coulstock",
-    image: "",
-    title: "",
-  },
-  {
-    id: 36,
-    name: "Stephen Galilee",
-    image: "",
-    title: "Chair – Fishburners",
+    image:
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724171173/2023%20Speakers/l8ce1wke7ed98hlz2jpi.png",
+    title: "Technical Director-Sustainability, Mott MacDonald",
   },
   {
     id: 37,
-    name: "Joe Kaderavek",
-    image: "",
-    title: "CEO of Cobalt Blue",
+    name: "Stephen Galilee",
+    image:
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724171173/2023%20Speakers/taognvybhq2jly68c9vc.png",
+    title: "Chair – Fishburners",
   },
   {
     id: 38,
-    name: "Ada Yin",
-    image: "",
-    title: "Leadership Coach and Mentor",
+    name: "Joe Kaderavek",
+    image:
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724171172/2023%20Speakers/lh9obcse0znetjgs1mqz.png",
+    title: "CEO of Cobalt Blue",
   },
   {
     id: 39,
-    name: "Sarah Morgan",
-    image: "",
-    title: "Investment Manager at AirTree",
+    name: "Ada Yin",
+    image:
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724171171/2023%20Speakers/leonb44nfrxaqzivmktm.png",
+    title: "Leadership Coach and Mentor",
   },
   {
     id: 40,
+    name: "Sarah Morgan",
+    image:
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724171176/2023%20Speakers/cl2100ihqbeibtbylddi.png",
+    title: "Investment Manager at AirTree",
+  },
+  {
+    id: 44,
     name: "Ozge Fettahlioglu",
-    image: "",
+    image:
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724171176/2023%20Speakers/rhrb0iqehrgulvw2b0wb.png",
     title:
       "Entrepreneur, Educator, Start-Up Investor and Home Design Enthusiast",
   },
   {
     id: 41,
+    name: "Ian Prentice",
+    image:
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724171175/2023%20Speakers/s43syacrij0hmauopmwq.png",
+    title: "Managing Director, Technology Metals Australia",
+  },
+
+  {
+    id: 43,
     name: "Vanessa Rader",
-    image: "",
-    title: "Head of Research, Ray White",
+    image:
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724171175/2023%20Speakers/o6rk3xqbtkszh7em14kl.png",
+    title: "Head of Research Ray White",
   },
   {
     id: 42,
     name: "Penny Crawford",
-    image: "",
+    image:
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724180162/2023%20Speakers/uoq2ewf2xx9xrdtc57rd.png",
     title: "Founder of Crawford Boots",
   },
   {
-    id: 43,
-    name: "Ian Prentice",
-    image: "",
-    title: "Managing Director, Technology Metals Australia Ltd",
+    id: 23,
+    name: "Amanda Yeates",
+    image:
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724171173/2023%20Speakers/n21sqanyoipwvwzftwk8.png",
+    title: "CEO of SunCentral Maroochydore",
   },
   {
-    id: 44,
+    id: 45,
     name: "Helen Liossis",
     image:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1724171176/2023%20Speakers/px7pfrsled61laizgqrf.png",
     title: "Non-Executive Director & Deputy Chair",
   },
   {
-    id: 45,
-    name: "Sarah Fairhurst",
-    image: "",
-    title: "Board Roles as Non-Executive Director",
+    id: 46,
+    name: "Katherine Hawes",
+    image:
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724171177/2023%20Speakers/hthhf5zmp8q3wznctgln.png",
+    title: "Principal Solicitorat Digital Age Lawyers",
   },
   {
-    id: 46,
+    id: 47,
     name: "Sahil Makkar",
     image:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1724171177/2023%20Speakers/zpdeq9vzzj9jcksvdbeb.png",
     title: "Chairman & CEO of Punjab Angels Network",
   },
   {
-    id: 47,
-    name: "Katherine Hawes",
+    id: 48,
+    name: "Sarah Fairhurst",
     image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724171177/2023%20Speakers/hthhf5zmp8q3wznctgln.png",
-    title: "Principal Solicitor at Digital Age Lawyers",
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724171170/2023%20Speakers/zefu0g5s2yt56t3vrvq6.png",
+    title: "Board Roles as Non-Executive Director",
   },
 ];

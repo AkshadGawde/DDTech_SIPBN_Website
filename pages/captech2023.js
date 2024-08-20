@@ -5,7 +5,7 @@ const CapTech2023 = () => {
   return (
     <>
       <Head>
-        <title>Patrons</title>
+        <title>SIPBN | Captech 2023</title>
       </Head>
       <Captech2023 />
     </>
