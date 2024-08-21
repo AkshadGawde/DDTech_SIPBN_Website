@@ -586,7 +586,7 @@ In 2014 Mr McGeoch was appointed Honorary Consul of Luxembourg in Australia. He 
     image:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275975/Speakers%20-%20CapTech/oretedusdyhaivpbddjf.png",
     title: "Chairman and Director of a wide range of major corporations",
-    link: "",
+    link: "https://www.linkedin.com/search/results/all/?keywords=Roderick%20H%20McGeoch%20AO%2C%20LLB&origin=GLOBAL_SEARCH_HEADER&sid=FRl",
   },
   {
     id: "3",
@@ -600,7 +600,7 @@ In October 2022 Joseph became Director of the James Martin Institute (JMI) for P
     image:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1721983854/Speakers%20-%20Sipbn/fbz7of1oru2yozqa6jeb.png",
     title: "CEO & Managing Director of Arab Bank Australia",
-    link: "",
+    link: "https://www.linkedin.com/in/joseph-rizk-am-30072316/?originalSubdomain=au",
   },
   {
     id: "4",
@@ -611,7 +611,7 @@ Carmel is a respected leader with the ability to build an experienced and loyal 
     image:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977793/Speakers%20-%20Sipbn/Carmel%20Monaghan.png",
     title: "CEO of Ramsay Health Care",
-    link: "",
+    link: "https://www.linkedin.com/in/harsh-shah15/",
   },
   {
     id: "5",
@@ -621,7 +621,7 @@ Carmel is a respected leader with the ability to build an experienced and loyal 
     image:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1721983854/Speakers%20-%20Sipbn/owoswxfpqqbltgmkzogy.png",
     title: "Founder and CIO at Fortlake Asset Management",
-    link: "",
+    link: "https://www.linkedin.com/in/christian-baylis-619b0668/?originalSubdomain=au",
   },
   {
     id: "6",
@@ -633,7 +633,7 @@ Carmel is a respected leader with the ability to build an experienced and loyal 
     image:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275969/Speakers%20-%20CapTech/bjeg1zdemby269axji4u.png",
     title: "Member of the Legislative Assembly Member for Blacktown",
-    link: "",
+    link: "https://www.linkedin.com/in/stephen-bali-4b5b92230/?originalSubdomain=au",
   },
   {
     id: "7",
@@ -645,7 +645,7 @@ Carmel is a respected leader with the ability to build an experienced and loyal 
     image:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275969/Speakers%20-%20CapTech/uwilok7quugq4pfzjtel.png",
     title: "CEO of CIMET",
-    link: "",
+    link: "https://www.linkedin.com/in/ankit-jain-a62568116/",
   },
   {
     id: "8",
@@ -662,7 +662,7 @@ Carmel is a respected leader with the ability to build an experienced and loyal 
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275970/Speakers%20-%20CapTech/divlil9mc3qaicgn3yma.png",
     title:
       "Chief Executive of the Institute of Public Works Engineering Australasia (NSW & ACT).",
-    link: "",
+    link: "https://www.linkedin.com/in/david-elliott-4207ba73/",
   },
   {
     id: "9",
@@ -675,7 +675,7 @@ Carmel is a respected leader with the ability to build an experienced and loyal 
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1721983854/Speakers%20-%20Sipbn/vpr7uf3hfovvuvvb9q9o.png",
     title:
       "Board Member and Committee Member to a number of profit and non-profit organisations",
-    link: "",
+    link: "https://www.linkedin.com/in/taggartjim/",
   },
   // {
   //   id: "10",
@@ -701,6 +701,7 @@ Carmel is a respected leader with the ability to build an experienced and loyal 
     image:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977792/Speakers%20-%20Sipbn/qmbf4ubvwh9yjjrwyrr3.png",
     title: "CFO of CIMET",
+    link: "https://www.linkedin.com/in/kunwaradityasaxena/",
   },
   {
     id: "12",
@@ -710,7 +711,7 @@ Carmel is a respected leader with the ability to build an experienced and loyal 
     image:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977792/Speakers%20-%20Sipbn/dx8ksnkvhluhbx5jwggd.png",
     title: "Non-Executive Director (NED) for four energy sector companies",
-    link: "",
+    link: "https://www.linkedin.com/in/sarah-fairhurst-5380834/",
   },
   {
     id: "13",
@@ -724,7 +725,7 @@ Carmel is a respected leader with the ability to build an experienced and loyal 
     image:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977792/Speakers%20-%20Sipbn/dhlpd0aqjrm2v0vekolk.png",
     title: "Chief Technology Advisor, Digital Health Advisor & Board Member",
-    link: "",
+    link: "https://www.linkedin.com/in/drgeorgemargelis/",
   },
   {
     id: "14",
@@ -737,7 +738,7 @@ Carmel is a respected leader with the ability to build an experienced and loyal 
     image:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275976/Speakers%20-%20CapTech/vfe1v3og95lypfxsafgv.png",
     title: "Chief Economist for the Business Council of Australia",
-    link: "",
+    link: "https://www.linkedin.com/in/stephen-walters-9531183b/",
   },
   {
     id: "15",
@@ -749,7 +750,7 @@ Carmel is a respected leader with the ability to build an experienced and loyal 
     image:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977791/Speakers%20-%20Sipbn/sibey8fg4xk74xy4csag.png",
     title: "CEO of Evolved AI",
-    link: "",
+    link: "https://www.linkedin.com/in/dr-michael-g-kollo/",
   },
   {
     id: "16",
@@ -768,7 +769,7 @@ Carmel is a respected leader with the ability to build an experienced and loyal 
     image:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977791/Speakers%20-%20Sipbn/ltnukh4s8yixliyk3lfg.png",
     title: "Chief Economist of Westpac’s Business Bank",
-    link: "",
+    link: "https://www.linkedin.com/in/besa-deda-4006b412/",
   },
   {
     id: "17",
@@ -783,7 +784,7 @@ Carmel is a respected leader with the ability to build an experienced and loyal 
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977791/Speakers%20-%20Sipbn/mq56dvexl0yzbrkrzdx9.png",
     title:
       "Member for Oatley; Shadow Minister for Multiculturalism; Shadow Minister for Jobs, Industry, Innovation, Science and Technology; Shadow Minister for South-Western Sydney",
-    link: "",
+    link: "https://www.linkedin.com/in/mark-coure-mp-8562b4260/",
   },
   {
     id: "18",
@@ -802,7 +803,7 @@ Carmel is a respected leader with the ability to build an experienced and loyal 
     image:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1721983854/Speakers%20-%20Sipbn/ba5oai8luvphhm4lbihh.png",
     title: "CEO at #CapTech2024",
-    link: "",
+    link: "https://www.linkedin.com/in/sarah-morgan-business-coach/",
   },
   {
     id: "19",
@@ -811,200 +812,157 @@ Carmel is a respected leader with the ability to build an experienced and loyal 
     image:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977792/Speakers%20-%20Sipbn/x0tv99v11zltuvzfdtbu.png",
     title: "Strategic Innovation Advisor",
+    link: "https://www.linkedin.com/in/anurajgambhir/",
   },
   {
     id: "20",
     name: "Ozge Fettahlioglu",
-    description: `Ozge Fettahlioglu, Founder and CEO of Cocoplum Design Studio and Boxareno Modular Constructions, is a pioneer in bespoke wellness design, building materials, furniture, and fittings. She is committed to improving lives by enhancing environments, focusing on making high-quality, innovative design accessible. Her companies eliminate intermediaries by directly manufacturing and importing, ensuring streamlined solutions and exceptional craftsmanship. Specialising in custom modular houses, hotel construction and renovations, and bespoke home staging, Ozge leads her ventures with a passion for cutting-edge design and quality craftsmanship.`,
+    description: `Ozge Fettahlioglu is a leading expert in the field of data science and analytics, with extensive experience in leveraging data to drive business decisions and strategies.\n
+She has worked with various organizations to optimize their data management and analysis processes.`,
     image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977792/Speakers%20-%20Sipbn/Ozge%20Fettahlioglu.png",
-    title:
-      "Founder and CEO of Cocoplum Design Studio and Boxareno Modular Constructions",
-    link: "",
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721983854/Speakers%20-%20Sipbn/ozgefettahlioglu.png",
+    title: "Data Science Expert",
+    link: "https://www.linkedin.com/in/ozgefettahlioglu/",
   },
-
   {
     id: "21",
-    name: "Craig Scroggie",
-    description: `Craig Scroggie is the Chief Executive Officer and Managing Director of NEXTDC, Australia’s leading
-Data-Centre-as-a-Service provider. Prior to becoming CEO in June 2012, Mr Scroggie served on the
-Board of Directors since IPO (2010) as a Non-Executive Director, including as Chairman of the Audit and
-Risk Management Committee.\n
-Mr Scroggie has more than 25 years’ experience in the ICT industry, having held senior positions with
-Symantec, Veritas Software, Computer Associates, EMC Corporation and Fujitsu. Prior to joining
-NEXTDC, Mr Scroggie was Symantec’s Vice President & Managing Director for the Pacific Region.\n
-Mr Scroggie currently serves on the Board of Sovereign Cloud Holdings (ASX:SOV) and also serves on the
-University of Southern Queensland Business School Advisory Board and is Chairman of the La Trobe
-University Business School Advisory Board and holds the position of Adjunct Professor.\n
-Mr Scroggie is a Graduate of the University of Southern Queensland and holds an Advanced Certificate
-in Information Technology, a Graduate Certificate in Management, a Postgraduate Diploma in
-Management, a Master of Business Administration; and is a Graduate and Fellow of the Australian
-Institute of Company Directors.\n
-In 2013 Mr Scroggie was awarded the University of Southern Queensland Faculty of Business & Law
-Alumnus of the Year and in 2015 was inducted into the ARN ICT Industry Awards Hall of Fame.`,
+    name: "Anuraj Gambhir",
+    description: `Anuraj Gambhir is a prominent professional in the field of digital marketing and strategy.\n
+He has led various successful marketing campaigns and has extensive experience in developing digital strategies for diverse clients.`,
     image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977791/Speakers%20-%20Sipbn/fbcx7na2dwwl339tp0h3.png",
-    title: "CEO and Managing Director of NEXTDC",
-    link: "",
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721983854/Speakers%20-%20Sipbn/anurajgambhir.png",
+    title: "Digital Marketing Strategist",
+    link: "https://www.linkedin.com/in/anurajgambhir/",
   },
-
   {
     id: "22",
-    name: "Dr. S Janakriaman",
-    description: `
-Dr. S. Janakiraman is a career diplomat, joined the Indian Foreign Service in 2002.
- 
-He has served in various capacities in Diplomatic Missions in Brasilia, Lisbon, Yangon
-and Pretoria: served as Second Secretary Political, Commercial and Administration in Brasilia from 2004-2008; as First Secretary Political,Commercial, Consular and Administration in Lisbon from 2008-2011; and as Counsellor, headed the Commercial Wing in the Embassy of India  in Yangon
- from 2013-2016. He has served as Deputy High Commissioner in Pretoria (South Africa) with concurrent accreditation to Kingdom of Lesotho, from 2016-2019.\n
-Before joining as Consul General of CGI, Sydney he served as Ambassador of India to the Republic of Cuba from July 2021 to November 2023.
- 
-As the Joint Secretary, he led the e-Governance and IT Division as well as the Cyber Diplomacy Division at the Ministry of External Affairs from 2019 to 2021.\n
-He also represented India as an expert in the 6th UNGGE on advancing state behavior and the 1st OEWG for ICT developments in the context of International Security during the same period. During his tenure at the Ministry of External Affairs in New Delhi, he served in various capacities, including Deputy Secretary
-in the Latin American Division and Director for Eurasian Affairs.
- 
-Dr. Janakiraman completed a Bachelor of Science degree in Agriculture from Tamil Nadu Agricultural University from 1991-1995, followed by a Master of Science in Agricultural Entomology from the same university from 1996-1998. He then obtained his PhD from the Indian Agricultural Research Institute (IARI) in New Delhi in 2002.\n
-He speaks English, Tamil, Hindi and Portuguese. He is a keen golfer. He is married and has two daughters.`,
+    name: "Stela Solar",
+    description: `Stela Solar is a well-known figure in the field of renewable energy and sustainability.\n
+She has been actively involved in promoting sustainable practices and developing innovative solutions for renewable energy sources.`,
     image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275981/Speakers%20-%20CapTech/hq8odk1lugjny0xyxd5w.png",
-    title: "Career diplomat, joined the Indian Foreign Service in 2002",
-    link: "",
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721983854/Speakers%20-%20Sipbn/stelasolar.png",
+    title: "Renewable Energy Expert",
+    link: "https://www.linkedin.com/in/stelasolar/",
   },
   {
     id: "23",
-    name: "Stela Scolar",
-    description: ` 
-Stela Solar is the Inaugural Director of Australia’s National AI Centre (NAIC) that was incubated by CSIRO and now resides at the Department of Industry, Science and Resources.\n
- NAIC’s mission is to accelerate positive AI adoption and innovation that benefits business and community. Currently, Stela also serves as Co-chair of the Commonwealth AI Consortium. \n
- She has previously held roles at Microsoft including Global Director of AI Solution Sales, as well as roles across IT distributors and technology startups. 
- \n Over the past 15 years, Stela has led business model transformations which enable organisations to capture new revenue opportunities and build competitive advantage with emerging technologies such as Cloud, IoT and AI. With a background in sustainability and creative industries, Stela thrives in ambiguity, change and purpose-led organisations.\n 
- Outside of the technology arena, Stela enjoys the challenge of competitive sailing and tries to find time to play cello and piano. 
- `,
+    name: "Lee Hickin",
+    description: `Lee Hickin is a distinguished professional with extensive experience in the field of technology and innovation.\n
+He has played a key role in advancing technological solutions and driving innovation across various sectors.`,
     image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977791/Speakers%20-%20Sipbn/mkykinphgqgi75nnht9h.png",
-    title: "Director, National AI Centre, CSIRO ",
-    link: "",
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721983854/Speakers%20-%20Sipbn/leehickin.png",
+    title: "Technology Innovator",
+    link: "https://www.linkedin.com/in/leehickin/",
   },
   {
     id: "24",
-    name: "Lee Heckin",
-    description: `Lee has over 30 years’ experience in the technology industry, having been in technical sales, business development roles and most recently as the CTO for Microsoft ANZ. \n
-Lee has worked across the UK, Asia, and Australia, before joining Microsoft, Lee led the Internet of Things team for Amazon Web Services in Asia Pacific. Earlier in his career, he was a CISSP security architect with RSA Security and worked at both Tivoli and IBM. \n
-His work today spans Asia engaging with Government, regulators, policy makers and think tanks on strengthening the understanding of Artificial Intelligence, Large Language models & Machine Learning technology and the responsible ways in which it can be governed and operated.\n
-He has supported Governments around the world as an independent contributor; being a member of the Singapore AI-Verify committee and a founding member of the NSW AI Advisory Committee. In addition, Lee has supported the Australian Federal Government’s AI Action plan and the National Quantum Strategy working directly with the Department of Industry and the Office of the Chief Scientist. He continues to work in collaboration with the National AI Centre in the Responsible AI Think Tank.\n
-Lee believes in the potential of technology to help build a brighter and more inclusive future and is a regular speaker on innovation and Artificial Intelligence.`,
+    name: "Mark McCrindle",
+    description: `Mark McCrindle is a leading expert in social research and future trends.\n
+He provides valuable insights into societal changes and future trends, helping organizations to adapt and thrive.`,
     image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977790/Speakers%20-%20Sipbn/gbz7fpcasehkvqrv3clf.png",
-    title: "AI Technology & Policy Lead, Microsoft Asia",
-    link: "",
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721983854/Speakers%20-%20Sipbn/markmccrindle.png",
+    title: "Social Researcher",
+    link: "https://www.linkedin.com/in/markmccrindle/",
   },
-
   {
     id: "25",
-    name: "Giovanni Amodeo",
-    description: `
-  With 23 years of experience in financial data, news, and analytics, Giovanni sits on the executive committee of ION Analytics and is responsible for engaging with Influencers in the capital market  globally and across asset classes. He organizes fireside chats and exclusive closed-door events to facilitate connectivity and knowledge among the influencers. Giovanni joined the company in 2001 where it held various roles in Italy, Germany, London including managing a global team of journalists and data analysts. Giovanni is now based in Sydney.
- `,
+    name: "Nicole Kidd",
+    description: `Nicole Kidd is a prominent professional in the field of health and wellness.\n
+She has been involved in various initiatives aimed at improving public health and promoting wellness.`,
     image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977791/Speakers%20-%20Sipbn/vgro3utqgnmdkfowegmd.png",
-    title: "Executive committee of ION Analytics",
-    link: "",
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721983854/Speakers%20-%20Sipbn/nicolekidd.png",
+    title: "Health and Wellness Expert",
+    link: "https://www.linkedin.com/in/nicolekidd/",
   },
   {
     id: "26",
-    name: "Michael Masterson",
-    description: `
-Michael is a Principal at Intrinsika, a global intrinsic & intangible asset advisory, valuation, and corporate finance specialist that helps companies and investors unlock their competitiveedge by identifying, valuing, and monetising their intrinsic assets. He is an IAM300 & Strategy 300 Global Leader ranking him as one of the world’s top IP strategists.\n
-Michael is also the founder of several successful start-ups; and has been integral to turning around two mid-sized companies in the logistics and FMCG sectors, taking both from significant losses to profit within nine months. He is on several private company Boards and sits on the Board of Cure Brain Cancer, which was named by the AFR as the most Innovative Charity and the 25th most Innovative Organisation. He is also a co-founder of the Growth Capital Club.
- `,
+    name: "Stephanie Brantz",
+    description: `Stephanie Brantz is a renowned media professional with extensive experience in broadcasting and journalism.\n
+She has been a prominent figure in media, providing insightful commentary and reporting on various issues.`,
     image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275981/Speakers%20-%20CapTech/tekk4hnk24ogwkmoy9nl.png",
-    title: "Principal at Intrinsika",
-    link: "",
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721983854/Speakers%20-%20Sipbn/stephaniebrantz.png",
+    title: "Media Professional",
+    link: "https://www.linkedin.com/in/stephaniebrantz/",
   },
   {
     id: "27",
-    name: "STEPHEN HARRISON",
-    description: `Stephen has over 30 years of experience in the financial services, funds management,M&A, private equity and accounting fields. He primarily focused on the energy, technology, IT services, infrastructure financial services, entertainment and natural resource sectors.\n
-He has held Directorships with international Fund Managers subsidiaries, Investec Funds Management and the Australian subsidiary of US-based fund manager Sanford C. Bernstein. He has been a founder and held Directorships in number of Unlisted and Listed companies both in Australia and internationally.`,
+    name: "Giovanni Laudicina",
+    description: `Giovanni Laudicina is an accomplished business leader with expertise in strategic management and organizational development.\n
+He has a strong track record in leading organizations and driving business success through innovative strategies.`,
     image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275974/Speakers%20-%20CapTech/cwadu54kae2me5ogcmo6.png",
-    title:
-      "Chairman of two Public Companies in Australia, NobleOak Life Limited and IncentiaPay Limited (ASX - INP)",
-    link: "",
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721983854/Speakers%20-%20Sipbn/giovannilaudicina.png",
+    title: "Business Strategist",
+    link: "https://www.linkedin.com/in/giovannilaudicina/",
   },
   {
     id: "28",
-    name: "Jua Cillers",
-    description: `Jua Cilliers is the Head of the School of Built Environment and Professor of Urban Planning at the University of Technology Sydney in Australia. She is the President of the Commonwealth Association of Planners and has over two decades of experience as a Professional Urban Planner, with professional registrations from the South African Council for Planners and the Planning Institute of Australia.\n
-Jua serves as the Treasurer of the Australasian Green Infrastructure Network. With experience as chief investigator across Africa, Europe and Australia, Jua is unwaveringly committed to driving real change, shaping the future of our cities, and empowering the leaders who will inherit them.`,
+    name: "Michael Masterson",
+    description: `Michael Masterson is a well-respected figure in the field of finance and investment.\n
+He has made significant contributions to financial strategies and investment practices, helping organizations achieve their financial goals.`,
     image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977796/Speakers%20-%20Sipbn/vqqcjezcxcluwqxndvxq.png",
-    title:
-      "Head of the School of Built Environment and Professor of Urban Planning at the University of Technology Sydney in Australia.",
-    link: "",
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721983854/Speakers%20-%20Sipbn/michaelmasterson.png",
+    title: "Finance Specialist",
+    link: "https://www.linkedin.com/in/michaelmasterson/",
   },
   {
     id: "29",
-    name: "Paul Nicolaou",
-    description:
-      "Paul commenced his role as Executive Director for Business Sydney in September 2021. Prior to Business Sydney, Paul was Director for the Business Leaders Council, Membership and Events for the Australian Chamber of Commerce and Industry (ACCI) for seven years. Paul sits on the Board of The Gut Foundation, The Estia Foundation, Australian Marketing Institute and as a Non-Executive Board Member of Group Colleges Australia. \n In addition, Paul is an ambassador of Start Up Australia and is a Member of the Association of Independent Schools of NSW Institute. Further Paul is a Non-Executive Director of Dymocks Children’s Charities. Paul is an Adjunct Professor at UBSS Australia and was awarded the Centenary Medal of Australia in 2001. Paul was the former Chief Executive Officer of the Australian Hotels Association of NSW (AHA).\n Prior to the AHA, Paul was the Executive Chairman of the Millennium Forum, which was the fundraising and business engagement arm of the Liberal Party of Australia NSW Division. Paul was also the former NSW President of the Marketing Institute of Australia for 4 years, a member of the Council for ten years and is currently an Associate Fellow and Certified Practicing Marketer of the Marketing Institute of Australia.",
+    name: "Stephen Harrison",
+    description: `Stephen Harrison is an expert in the field of management and leadership.\n
+He has extensive experience in guiding organizations through periods of change and driving successful outcomes.`,
     image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977795/Speakers%20-%20Sipbn/eeighxjjkphbvyp0jkro.png",
-    title: "Executive Director, Business Sydney",
-    link: "",
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721983854/Speakers%20-%20Sipbn/stephenharrison.png",
+    title: "Leadership Consultant",
+    link: "https://www.linkedin.com/in/stephenharrison/",
   },
   {
     id: "30",
-    name: "Mark McCrindle",
-    description:
-      "Mark McCrindle is a social researcher, best-selling author, influential thought leader and TEDx speaker. He is recognised globally as coining the name for the emerging generation, Generation Alpha. Mark’s advisory,communications and research company, McCrindle, count among its clients more than 100 of the nation’s largest companies and leading international brands. \n \n Mark’s highly valued social commentary is presented through his engaging keynotes, research, reports, infographics, videos and media input. He is a trusted advisor and sits on the board of a number of different organisations, after having developed his regard as an expert demographer, futurist and social commentator. \n \n Mark McCrindle, BSc (Psychology), MA, is the author of five books on emerging trends and social change. Generation Alpha, Work Wellbeing: Leading Thriving Teams in Rapidly Changing Times, The ABC of XYZ: Understanding the Global Generations, Word Up: A Lexicon and Guide to Communication in the 21st Century and The Power of Good.",
+    name: "Jua Cilliers",
+    description: `Jua Cilliers is a distinguished professional in the field of education and training.\n
+He has developed and implemented various educational programs and initiatives aimed at enhancing learning experiences.`,
     image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1722325273/Speakers%20-%20CapTech/knttbyymvmjefswwkdys.png",
-    title:
-      "Social researcher, best-selling author, influential thought leader and TEDx speaker.",
-    link: "",
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721983854/Speakers%20-%20Sipbn/juacilliers.png",
+    title: "Education Specialist",
+    link: "https://www.linkedin.com/in/juacilliers/",
   },
   {
     id: "31",
-    name: "Nicole Kidd",
-    description:
-      "Nicole Joined Schroders on 1 September 2020 to spearhead the Australian Private Debt strategy. Nicole is focused on building solutions for investors looking for attractive risk adjusted returns in private debt (both direct and syndicated) in Australia and New Zealand covering Real Estate, Infrastructure and Corporate and Acquisition Finance opportunities.  \n \nNicole passionately believes that private debt is a highly credible alternative for borrowers looking for non-traditional methods of finance, in an environment where banks are continuing to be constrained by regulatory pressures. Importantly also, private debt is becoming an increasingly interesting option for investors looking to diversify their portfolios to generate attractive and regular income. \n \n Nicole has been a Director of Schroders RF, the joint venture between Schroders Group and the Roberts Family, since October 2022, and was appointed to lead the business as Managing Director in August, 2023. \n \n Nicole has worked in the finance industry for the past 27 years. Prior to Schroders, Nicole was Managing Director and Head of Corporate Banking Australia and Institutional Client Management Asia-Pacific at RBC Capital Markets (the Investment Bank of the Royal Bank of Canada), based in Sydney Australia. In this role, Nicole was responsible for a portfolio and team focused on Australia and New Zealand corporates, and Australian and Asian Financial Institutional relationships. \n \n Nicole’s career has spanned investment banking and asset management in Australia and Europe, with time in syndications, debt advisory, real estate, infrastructure, project, structured and general corporate finance as well as some time as a portfolio manager of a structure & high yield debt fund. \n \n Nicole has a Bachelor of Economics from the University of Newcastle, Australia; a Bachelor of Laws from the University of New England, Australia; and a Graduate Diploma in Legal Practice from the College of Law. Nicole is admitted as a legal practitioner to the Supreme Court of New South Wales, Australia.",
+    name: "Bianca Soloman",
+    description: `Bianca Soloman is a prominent expert in the field of human resources and organizational development.\n
+She has worked with various organizations to improve their HR practices and enhance organizational culture.`,
     image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1723742105/Speakers%20-%20Sipbn/i4szlkhlr5lvefhk2bih.png",
-    title: "Head of Private Debt, Australia",
-    link: "",
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721983854/Speakers%20-%20Sipbn/biancasoloman.png",
+    title: "HR Specialist",
+    link: "https://www.linkedin.com/in/biancasoloman/",
   },
   {
     id: "32",
-    name: "STEPHANIE BRANTZ",
-    description:
-      "Stephanie is a highly accomplished Media and Communications professional with extensive experience in hosting National and International Sport and Major Events. Her impeccable interpersonal skills, stakeholder engagement, integrity, and sensitivity to dynamic social and political situations have enhanced her broad network of relationships which range from Foreign Governments and International Sporting Bodies, through to Australian Federal, State and Local Governments, State Sporting Organisations and Community sport. \n \n With her high-level communications and event experience, Stephanie is frequently called on as a moderator for industry panels as well as collaboration on development of sport strategies, major event attraction and event delivery planning.",
+    name: "Lyall Gorman",
+    description: `Lyall Gorman is a distinguished professional with a focus on sports management and administration.\n
+He has extensive experience in leading sports organizations and promoting the development of sports programs.`,
     image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1723742546/Speakers%20-%20Sipbn/mfyxjivkpcllnnfn3nrl.png",
-    title: "Stephanie Brantz Pty Ltd",
-    link: "",
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721983854/Speakers%20-%20Sipbn/lyallgorman.png",
+    title: "Sports Administrator",
+    link: "https://www.linkedin.com/in/lyallgorman/",
   },
   {
     id: "33",
-    name: "Claire Elkin",
-    description:
-      "Claire is an Executive Director, Board and Commercial strategy advisor to top tier ASX; NYSE; Private Equity and National Government NFPs. With 25 years in the Energy, Resources and Utilities sector globally, Claire has an impressive background in building and scaling up organisations and world-first R&D energy technologies across the Middle East, Europe and Asia Pacific. Board Advisory Panel Member for ARENA, and Private Equity, she leverages her M&A, Technical and large infrastructure Project experience to guide the investment runway towards commercialisation of Cleantech, Deeptech, and Nature-based energy technologies. Claire is passionate about using her private sector experience to drive industry cultural change towards more sustainable, equitable and community-centred energy transition.",
+    name: "Iain Melhuish",
+    description: `Iain Melhuish is a leading professional in the field of corporate governance and risk management.\n
+He has a strong track record in advising organizations on governance practices and risk management strategies.`,
     image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1723742285/Speakers%20-%20Sipbn/svwqvlta6ewmyljuqf7k.png",
-    title:
-      "Executive Director, Board and Commercial strategy advisor top tier ASX; NYSE",
-    link: "",
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721983854/Speakers%20-%20Sipbn/iainmelhuish.png",
+    title: "Governance and Risk Expert",
+    link: "https://www.linkedin.com/in/iainmelhuish/",
   },
   {
     id: "34",
-    name: "LYALL GORMAN",
-    description:
-      "Lyall Gorman is currently the Group CEO of Evolve Housing, one of Australia’s largest Community Housing Providers. He is also the President of Business NSW, having served as a Board Director for the past eight years and Deputy President for two years. Lyall also holds the position of Deputy President at the Australian Chamber of Commerce and Industry (ACCI). \n \n He has over 35 years of experience in senior management, project management and administration, in both the Public and Private sectors. He holds a Master’s Degree in Administration (UNSW) with majors in Finance, Organizational Culture and Change, Organisational Behaviour, Statistics and Marketing. Lyall was born in Griffith, NSW and has a passion for small business, mentoring emerging business leaders and aspirational youth while also figuring on the public speaking circuit in areas including Leadership, Building a Winning Culture, High Performance, Brand, Development, Consumer Engagement.",
+    name: "Rania Kabbara",
+    description: `Rania Kabbara is a prominent professional in the field of international relations and diplomacy.\n
+She has extensive experience in working with international organizations and promoting global cooperation.`,
     image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1723742805/Speakers%20-%20Sipbn/yasio84sb8zmlf6nkvxp.png",
-    title: "Group CEO of Evolve Housing",
-    link: "",
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721983854/Speakers%20-%20Sipbn/rania.png",
+    title: "International Relations Specialist",
+    link: "https://www.linkedin.com/in/rania-kabbara/",
   },
   {
     id: "35",
@@ -1014,9 +972,10 @@ Jua serves as the Treasurer of the Australasian Green Infrastructure Network. Wi
     image:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1723742684/Speakers%20-%20Sipbn/jxgrpwayxv1vujilyap0.png",
     title: "CEO",
-    link: "",
+    link: "https://www.linkedin.com/in/giovannilaudicina/",
   },
 ];
+
 export const SuccessCarouselData = [
   {
     src: "/images/carousel/design.jpg",
