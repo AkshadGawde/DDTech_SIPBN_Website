@@ -572,6 +572,7 @@ Victor is a board member of the Tech Council of Australia and Adviser to the Bra
     image:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1721983854/Speakers%20-%20Sipbn/m3ukoq5lvsd8iu5psugc.png",
     title: "Former NSW Government Minister",
+    link: "https://www.linkedin.com/in/victordominello/",
   },
   {
     id: "2",
@@ -585,6 +586,7 @@ In 2014 Mr McGeoch was appointed Honorary Consul of Luxembourg in Australia. He 
     image:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275975/Speakers%20-%20CapTech/oretedusdyhaivpbddjf.png",
     title: "Chairman and Director of a wide range of major corporations",
+    link: "",
   },
   {
     id: "3",
@@ -598,6 +600,7 @@ In October 2022 Joseph became Director of the James Martin Institute (JMI) for P
     image:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1721983854/Speakers%20-%20Sipbn/fbz7of1oru2yozqa6jeb.png",
     title: "CEO & Managing Director of Arab Bank Australia",
+    link: "",
   },
   {
     id: "4",
@@ -608,6 +611,7 @@ Carmel is a respected leader with the ability to build an experienced and loyal 
     image:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977793/Speakers%20-%20Sipbn/Carmel%20Monaghan.png",
     title: "CEO of Ramsay Health Care",
+    link: "",
   },
   {
     id: "5",
@@ -617,6 +621,7 @@ Carmel is a respected leader with the ability to build an experienced and loyal 
     image:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1721983854/Speakers%20-%20Sipbn/owoswxfpqqbltgmkzogy.png",
     title: "Founder and CIO at Fortlake Asset Management",
+    link: "",
   },
   {
     id: "6",
@@ -628,6 +633,7 @@ Carmel is a respected leader with the ability to build an experienced and loyal 
     image:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275969/Speakers%20-%20CapTech/bjeg1zdemby269axji4u.png",
     title: "Member of the Legislative Assembly Member for Blacktown",
+    link: "",
   },
   {
     id: "7",
@@ -639,6 +645,7 @@ Carmel is a respected leader with the ability to build an experienced and loyal 
     image:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275969/Speakers%20-%20CapTech/uwilok7quugq4pfzjtel.png",
     title: "CEO of CIMET",
+    link: "",
   },
   {
     id: "8",
@@ -655,6 +662,7 @@ Carmel is a respected leader with the ability to build an experienced and loyal 
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275970/Speakers%20-%20CapTech/divlil9mc3qaicgn3yma.png",
     title:
       "Chief Executive of the Institute of Public Works Engineering Australasia (NSW & ACT).",
+    link: "",
   },
   {
     id: "9",
@@ -667,6 +675,7 @@ Carmel is a respected leader with the ability to build an experienced and loyal 
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1721983854/Speakers%20-%20Sipbn/vpr7uf3hfovvuvvb9q9o.png",
     title:
       "Board Member and Committee Member to a number of profit and non-profit organisations",
+    link: "",
   },
   // {
   //   id: "10",
@@ -701,6 +710,7 @@ Carmel is a respected leader with the ability to build an experienced and loyal 
     image:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977792/Speakers%20-%20Sipbn/dx8ksnkvhluhbx5jwggd.png",
     title: "Non-Executive Director (NED) for four energy sector companies",
+    link: "",
   },
   {
     id: "13",
@@ -714,6 +724,7 @@ Carmel is a respected leader with the ability to build an experienced and loyal 
     image:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977792/Speakers%20-%20Sipbn/dhlpd0aqjrm2v0vekolk.png",
     title: "Chief Technology Advisor, Digital Health Advisor & Board Member",
+    link: "",
   },
   {
     id: "14",
@@ -726,6 +737,7 @@ Carmel is a respected leader with the ability to build an experienced and loyal 
     image:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275976/Speakers%20-%20CapTech/vfe1v3og95lypfxsafgv.png",
     title: "Chief Economist for the Business Council of Australia",
+    link: "",
   },
   {
     id: "15",
@@ -737,6 +749,7 @@ Carmel is a respected leader with the ability to build an experienced and loyal 
     image:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977791/Speakers%20-%20Sipbn/sibey8fg4xk74xy4csag.png",
     title: "CEO of Evolved AI",
+    link: "",
   },
   {
     id: "16",
@@ -755,6 +768,7 @@ Carmel is a respected leader with the ability to build an experienced and loyal 
     image:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977791/Speakers%20-%20Sipbn/ltnukh4s8yixliyk3lfg.png",
     title: "Chief Economist of Westpac’s Business Bank",
+    link: "",
   },
   {
     id: "17",
@@ -769,6 +783,7 @@ Carmel is a respected leader with the ability to build an experienced and loyal 
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977791/Speakers%20-%20Sipbn/mq56dvexl0yzbrkrzdx9.png",
     title:
       "Member for Oatley; Shadow Minister for Multiculturalism; Shadow Minister for Jobs, Industry, Innovation, Science and Technology; Shadow Minister for South-Western Sydney",
+    link: "",
   },
   {
     id: "18",
@@ -787,6 +802,7 @@ Carmel is a respected leader with the ability to build an experienced and loyal 
     image:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1721983854/Speakers%20-%20Sipbn/ba5oai8luvphhm4lbihh.png",
     title: "CEO at #CapTech2024",
+    link: "",
   },
   {
     id: "19",
@@ -804,6 +820,7 @@ Carmel is a respected leader with the ability to build an experienced and loyal 
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977792/Speakers%20-%20Sipbn/Ozge%20Fettahlioglu.png",
     title:
       "Founder and CEO of Cocoplum Design Studio and Boxareno Modular Constructions",
+    link: "",
   },
 
   {
@@ -828,6 +845,7 @@ Alumnus of the Year and in 2015 was inducted into the ARN ICT Industry Awards Ha
     image:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977791/Speakers%20-%20Sipbn/fbcx7na2dwwl339tp0h3.png",
     title: "CEO and Managing Director of NEXTDC",
+    link: "",
   },
 
   {
@@ -846,12 +864,11 @@ He also represented India as an expert in the 6th UNGGE on advancing state behav
 in the Latin American Division and Director for Eurasian Affairs.
  
 Dr. Janakiraman completed a Bachelor of Science degree in Agriculture from Tamil Nadu Agricultural University from 1991-1995, followed by a Master of Science in Agricultural Entomology from the same university from 1996-1998. He then obtained his PhD from the Indian Agricultural Research Institute (IARI) in New Delhi in 2002.\n
-He speaks English, Tamil, Hindi and Portuguese. He is a keen golfer. He is married and has two daughters.
- 
-`,
+He speaks English, Tamil, Hindi and Portuguese. He is a keen golfer. He is married and has two daughters.`,
     image:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275981/Speakers%20-%20CapTech/hq8odk1lugjny0xyxd5w.png",
     title: "Career diplomat, joined the Indian Foreign Service in 2002",
+    link: "",
   },
   {
     id: "23",
@@ -866,6 +883,7 @@ Stela Solar is the Inaugural Director of Australia’s National AI Centre (NAIC)
     image:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977791/Speakers%20-%20Sipbn/mkykinphgqgi75nnht9h.png",
     title: "Director, National AI Centre, CSIRO ",
+    link: "",
   },
   {
     id: "24",
@@ -874,12 +892,13 @@ Stela Solar is the Inaugural Director of Australia’s National AI Centre (NAIC)
 Lee has worked across the UK, Asia, and Australia, before joining Microsoft, Lee led the Internet of Things team for Amazon Web Services in Asia Pacific. Earlier in his career, he was a CISSP security architect with RSA Security and worked at both Tivoli and IBM. \n
 His work today spans Asia engaging with Government, regulators, policy makers and think tanks on strengthening the understanding of Artificial Intelligence, Large Language models & Machine Learning technology and the responsible ways in which it can be governed and operated.\n
 He has supported Governments around the world as an independent contributor; being a member of the Singapore AI-Verify committee and a founding member of the NSW AI Advisory Committee. In addition, Lee has supported the Australian Federal Government’s AI Action plan and the National Quantum Strategy working directly with the Department of Industry and the Office of the Chief Scientist. He continues to work in collaboration with the National AI Centre in the Responsible AI Think Tank.\n
-Lee believes in the potential of technology to help build a brighter and more inclusive future and is a regular speaker on innovation and Artificial Intelligence.
- `,
+Lee believes in the potential of technology to help build a brighter and more inclusive future and is a regular speaker on innovation and Artificial Intelligence.`,
     image:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977790/Speakers%20-%20Sipbn/gbz7fpcasehkvqrv3clf.png",
     title: "AI Technology & Policy Lead, Microsoft Asia",
+    link: "",
   },
+
   {
     id: "25",
     name: "Giovanni Amodeo",
@@ -889,6 +908,7 @@ Lee believes in the potential of technology to help build a brighter and more in
     image:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977791/Speakers%20-%20Sipbn/vgro3utqgnmdkfowegmd.png",
     title: "Executive committee of ION Analytics",
+    link: "",
   },
   {
     id: "26",
@@ -900,6 +920,7 @@ Michael is also the founder of several successful start-ups; and has been integr
     image:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275981/Speakers%20-%20CapTech/tekk4hnk24ogwkmoy9nl.png",
     title: "Principal at Intrinsika",
+    link: "",
   },
   {
     id: "27",
@@ -910,6 +931,7 @@ He has held Directorships with international Fund Managers subsidiaries, Investe
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275974/Speakers%20-%20CapTech/cwadu54kae2me5ogcmo6.png",
     title:
       "Chairman of two Public Companies in Australia, NobleOak Life Limited and IncentiaPay Limited (ASX - INP)",
+    link: "",
   },
   {
     id: "28",
@@ -920,6 +942,7 @@ Jua serves as the Treasurer of the Australasian Green Infrastructure Network. Wi
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977796/Speakers%20-%20Sipbn/vqqcjezcxcluwqxndvxq.png",
     title:
       "Head of the School of Built Environment and Professor of Urban Planning at the University of Technology Sydney in Australia.",
+    link: "",
   },
   {
     id: "29",
@@ -929,6 +952,7 @@ Jua serves as the Treasurer of the Australasian Green Infrastructure Network. Wi
     image:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977795/Speakers%20-%20Sipbn/eeighxjjkphbvyp0jkro.png",
     title: "Executive Director, Business Sydney",
+    link: "",
   },
   {
     id: "30",
@@ -939,6 +963,7 @@ Jua serves as the Treasurer of the Australasian Green Infrastructure Network. Wi
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1722325273/Speakers%20-%20CapTech/knttbyymvmjefswwkdys.png",
     title:
       "Social researcher, best-selling author, influential thought leader and TEDx speaker.",
+    link: "",
   },
   {
     id: "31",
@@ -948,6 +973,7 @@ Jua serves as the Treasurer of the Australasian Green Infrastructure Network. Wi
     image:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1723742105/Speakers%20-%20Sipbn/i4szlkhlr5lvefhk2bih.png",
     title: "Head of Private Debt, Australia",
+    link: "",
   },
   {
     id: "32",
@@ -957,6 +983,7 @@ Jua serves as the Treasurer of the Australasian Green Infrastructure Network. Wi
     image:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1723742546/Speakers%20-%20Sipbn/mfyxjivkpcllnnfn3nrl.png",
     title: "Stephanie Brantz Pty Ltd",
+    link: "",
   },
   {
     id: "33",
@@ -967,6 +994,7 @@ Jua serves as the Treasurer of the Australasian Green Infrastructure Network. Wi
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1723742285/Speakers%20-%20Sipbn/svwqvlta6ewmyljuqf7k.png",
     title:
       "Executive Director, Board and Commercial strategy advisor top tier ASX; NYSE",
+    link: "",
   },
   {
     id: "34",
@@ -976,6 +1004,7 @@ Jua serves as the Treasurer of the Australasian Green Infrastructure Network. Wi
     image:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1723742805/Speakers%20-%20Sipbn/yasio84sb8zmlf6nkvxp.png",
     title: "Group CEO of Evolve Housing",
+    link: "",
   },
   {
     id: "35",
@@ -985,6 +1014,7 @@ Jua serves as the Treasurer of the Australasian Green Infrastructure Network. Wi
     image:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1723742684/Speakers%20-%20Sipbn/jxgrpwayxv1vujilyap0.png",
     title: "CEO",
+    link: "",
   },
 ];
 export const SuccessCarouselData = [
