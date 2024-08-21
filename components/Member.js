@@ -22,7 +22,20 @@ const Member = ({ member }) => {
                 className="round"
                 style={{ width: "100%", height: "auto", borderRadius: "50%" }}
               />
+              {member.link && (
+                <div className="linkedin">
+                  <a
+                    href={member.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="link-button"
+                  >
+                    <FontAwesomeIcon icon={faLinkedin} />
+                  </a>
+                </div>
+              )}
             </div>
+
             <div className="right" style={{ width: "60%", marginLeft: "1rem" }}>
               <TitleSm title={member.title} />
               <p className="mission-p">
@@ -33,18 +46,6 @@ const Member = ({ member }) => {
                   </React.Fragment>
                 ))}
               </p>
-              {member.link && (
-                <p>
-                  <a
-                    href={member.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="link-button"
-                  >
-                    <FontAwesomeIcon icon={faLinkedin} className="" />
-                  </a>
-                </p>
-              )}
             </div>
           </div>
         </div>
