@@ -12,7 +12,7 @@ function Captech2022() {
             <TitleSm title="#CapTech2022 Summit" className="title-bg" />
           </div>
 
-          <video autoPlay muted loop className="video-background">
+          {/* <video autoPlay muted loop className="video-background">
             <source
               src={
                 "https://res.cloudinary.com/dueoon8xe/video/upload/v1723784744/Speakers%20-%20Sipbn/ulqt8fmuqteutnjrpwfz.mp4"
@@ -20,7 +20,7 @@ function Captech2022() {
               type="video/mp4"
             />
             Your browser does not support the video tag.
-          </video>
+          </video> */}
           <div className="container">
             <div className="heading-title">
               <TitleSm title="" />
@@ -46,30 +46,41 @@ function Captech2022() {
 
               <Title title="Sectors" />
               <p>
-                Education, Healthcare, Real Estate, Critical Minerals, Clean
-                Energy, AI, Financial Services
+                Education, Healthcare, Medtech, Web3/ Blockchain, Agriculture,
+                Artificial Intelligence, Clean Energy, Financial Services
               </p>
               <br />
-              <Title title="Who Will Attend" />
+              <Title title="Audience" />
               <p>
-                Investors, finance houses, private equity, banks, start ups,
-                venture capital, media, Government bodies, professional bodies,
-                incubation and accelerators and tech firms.
+                <li>
+                  We welcomed over 500 people through the doors of our inaugural
+                  #CapTech2022 events, and had over 10,000 watch the live stream
+                  in Australia, India & H.K & the Middle East.
+                </li>
+                <li>
+                  Highly influential business delegation attended from India lef
+                  by Punjab Angles Network
+                </li>
+                <li>
+                  Countries represented: Australia, India, Hong Kong, Malta,
+                  Indonesia, Dubai, Turkey, Singapore, US, China
+                </li>
               </p>
 
               <br />
               <Title title="Global Pitching Sessions" />
               <p>
-                Witness a global pitching session with entrants from India, Hong
-                Kong, and Australia all vying for an opportunity to secure
-                funding from prominent global investors.
-              </p>
-
-              <Title title="Activities" />
-              <p>
-                Key note session, Panel discussion, Industry sessions, Global
-                pitching session, Post event drinks, Private Dinner (invitation
-                only)
+                We flew in finalists form the preliminary rounds in Hong Kong
+                and India to pitch at the summit in front of a powerhouse
+                judging panel
+                <li>
+                  Five MOU's were signed and four are in active discussion
+                  valuing AUD150 million
+                </li>
+                <li>
+                  Two pitching companies are in discussion for funding and
+                  business promotions / collaborations
+                </li>
               </p>
             </div>
           </div>
