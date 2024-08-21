@@ -1376,348 +1376,239 @@ export const speakers2023 = [
 
 export const speakers2022 = [
   {
-    id: 6,
-    name: "Rod McGeoch AO, LLB",
-    image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724171177/2023%20Speakers/d0gqc1ksnp1dfqoyhykr.png",
-    title: "Chairman & Director of major corporations",
-  },
-  {
-    id: 8,
-    name: "Dr Joseph Rizk AM",
-    image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724171170/2023%20Speakers/agasn8c8uhwm3erdrwgt.png",
-    title: "CEO & Managing Director, Arab Bank Australia",
-  },
-  {
-    id: 7,
-    name: "Mr Manish Gupta",
-    image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724171175/2023%20Speakers/epqcci2w9tvs78iobpbx.png",
-    title: "Consul General of India",
-  },
-  {
-    id: 5,
-    name: "The Hon Victor Dominello",
-    image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724171175/2023%20Speakers/aw4kmbik32comtdrvdgk.png",
-    title: "Former NSW Government Minister",
-  },
-  {
-    id: 9,
-    name: "Stephen Bali MP",
-    image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724171170/2023%20Speakers/pctp8dsbgyr5oew2vzjw.png",
-    title: "Member of the Legislative Assembly, Member for Blacktown",
-  },
-  {
-    id: 11,
-    name: "Prof Louise Hickman",
-    image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724171171/2023%20Speakers/ghatbwe9miyw3cpmbpjd.png",
-    title: "Pro Vice Chancellor (Health) University of Wollongong",
-  },
-  {
-    id: 12,
-    name: "The Hon Jacqui Munro, MLC",
-    image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724171171/2023%20Speakers/jlypyxphtfuwgllmda96.png",
-    title: "Member of Parliament in the NSW Upper House",
-  },
-  {
-    id: 10,
-    name: "The Hon Matt Kean MP",
-    image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724171172/2023%20Speakers/blxrrwbjxoux0m533fzj.png",
-    title: "Member of the Legislative Assembly, Member for Blacktown",
+    id: 1,
+    name: "Sheba Nandkeolyar",
+    image: "",
+    title: "CEO & Founder Of MultiConnexions",
   },
   {
     id: 2,
-    name: "The Hon Courtney Houssos MLC",
-    image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724171176/2023%20Speakers/sibo3f9gydmwjcmyxzee.png",
-    title: "Minister for Finance, Minister for Natural Resources",
+    name: "Michael Rodrigues",
+    image: "",
+    title: "24-Hour Economy Commissioner, Investment NSW",
   },
   {
     id: 3,
-    name: "The Hon Ron Hoenig MP",
-    image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724171176/2023%20Speakers/b3ynqnocdiojwye1fcpg.png",
-    title:
-      "Minister for Local Gov & Leader of the House in the Legislative Assembly",
+    name: "Dr. Jim Taggart",
+    image: "",
+    title: "Education",
   },
   {
     id: 4,
-    name: "David Mehan MP",
-    image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724171176/2023%20Speakers/sgtmvw4nrndmcxbjkiqo.png",
-    title:
-      "State Member for The Entrance & Parliamentary Secretary to the Treasurer",
+    name: "Dr. Sandra Krishnan",
+    image: "",
+    title: "Leading Breast Surgeon, Clinical Associate Professor, Australian Medical University",
   },
   {
-    id: 1,
-    name: "The Hon Anoulack Chanthivong MP",
-    image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724171177/2023%20Speakers/agyl4n2suliibfvticyn.png",
-    title: "Former NSW Government Minister",
+    id: 5,
+    name: "Michael Masterson",
+    image: "",
+    title: "Managing Director, Chair Export Council Of Australia",
   },
   {
-    id: 24,
-    name: "Bernadette Janson",
-    image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724171174/2023%20Speakers/xhijvfwhdjzllo5dwqp0.png",
-    title: "Serial Renovator, Founder of the School of Renovating",
+    id: 6,
+    name: "Dianne Tipping",
+    image: "",
+    title: "",
   },
   {
-    id: 21,
-    name: "Kunwar Aditya Saxena",
-    image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724171172/2023%20Speakers/rb5l0e7aduxagn5yxtgx.png",
-    title:
-      "24-Hour Economy Commissioner, Investment NSW, Successful & Innovative Entrepreneur",
+    id: 7,
+    name: "Stephen Harrison",
+    image: "",
+    title: "B.Ec, CPA, EverEdge Global",
   },
   {
-    id: 22,
-    name: "Garry Simonian",
-    image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724171173/2023%20Speakers/wbovymsnhojy6zpspxnc.png",
-    title: "CEO of SunCentral Maroochydore",
+    id: 8,
+    name: "DD Saxena",
+    image: "",
+    title: "Leading Australian Businessman",
   },
   {
-    id: 16,
-    name: "Ankit Jain",
-    image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724171172/2023%20Speakers/ktkc883kx5jisco3lfgp.png",
-    title: "CEO of CIMET",
+    id: 9,
+    name: "Rajeev Gupta",
+    image: "",
+    title: "Partner, Alium Capital",
   },
   {
-    id: 19,
-    name: "Dr Jim Taggert OAM",
-    image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724171174/2023%20Speakers/dpa7gv0epj94ug17oou0.png",
-    title:
-      "Board & Committee Member to a number of profit and not for profit organisations",
+    id: 10,
+    name: "Matthew Watson",
+    image: "",
+    title: "Managing Partner",
   },
   {
-    id: 18,
-    name: "Prof Hélène De Burgh",
-    image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724171174/2023%20Speakers/d5sqsdjkcdq3hyhga85a.png",
-    title: "Dean of the Graduate School at UTS",
+    id: 11,
+    name: "Melissa Monteiro",
+    image: "",
+    title: "CEO, CMRC",
   },
   {
-    id: 17,
-    name: "Simon Hickey",
-    image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724171171/2023%20Speakers/bncl7bwfl8csruvwkuyl.png",
-    title: "CEO - Western Sydney Airport",
-  },
-  {
-    id: 15,
-    name: "Prof Munjed Al Muderis",
-    image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724171171/2023%20Speakers/vbg8mumifd534ahllrrr.png",
-    title: "2020 NSW Australian of the Year",
+    id: 12,
+    name: "Christopher Peralta",
+    image: "",
+    title: "Founder and CEO",
   },
   {
     id: 13,
-    name: "Denita Wawn",
-    image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724171171/2023%20Speakers/v7zmslk5hqiszt9ol8xo.png",
-    title: "CEO, Master Builders",
-  },
-  {
-    id: 16,
-    name: "Mr Iqbal Singh",
-    image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724171171/2023%20Speakers/scz4egtdvidxslf9qx6e.png",
-    title: "Founder & Managing Director, Innovative Financial Management",
+    name: "Simon Cant",
+    image: "",
+    title: "Co-Founder and Managing Partner of Reinventure",
   },
   {
     id: 14,
-    name: "Richard Alcock AO",
-    image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724171170/2023%20Speakers/bm2lyfdtdqllcyk5iv0c.png",
-    title: "Vice Chairman, Bank of America",
-  },
-  {
-    id: 33,
-    name: "Lisa Wade",
-    image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724171173/2023%20Speakers/jauyyqvpabch24mpfhxf.png",
-    title: "CEO of DigitalX",
-  },
-  {
-    id: 35,
-    name: "Stephen Harrison",
-    image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724171172/2023%20Speakers/rpxpyhfhhmv5lkfl8q1p.png",
-    title: "Chairman of NobleOakLtd & IncentiaPay Ltd",
-  },
-  {
-    id: 36,
-    name: "Dipen Rughani",
-    image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724171173/2023%20Speakers/ioicss4qeedetcnsl5xy.png",
-    title: "CEO of GAICD Newland Global Group",
-  },
-  {
-    id: 34,
-    name: "Mike Conway",
-    image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724171172/2023%20Speakers/mtzowi3brbzg8x0xpzwv.png",
-    title: "Founder and CEO of XVenture",
-  },
-  {
-    id: 32,
-    name: "Prof Rocky Scopelliti",
-    image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724171171/2023%20Speakers/bncl7bwfl8csruvwkuyl.png",
-    title: "Futurologist",
-  },
-  {
-    id: 31,
-    name: "Michael Sharpe",
-    image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724171174/2023%20Speakers/nqx5v4wd6m38j3my2b00.png",
-    title: "Chairman of the Sharpe Family Office",
-  },
-  {
-    id: 30,
     name: "Anuraj Gambhir",
-    image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724171174/2023%20Speakers/v7psob9gumtmmroxakmz.png",
-    title: "Strategic Business/Start Up Advisor & Tech Visionary",
+    image: "",
+    title: "Strategic Business and Start-Up Advisor",
   },
   {
-    id: 29,
-    name: "Peter Xing",
-    image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724171170/2023%20Speakers/og3yh9bbcgqdfhyrroyz.png",
-    title:
-      "Global Singularity Group Educator and Practitioner on Transhumanism and Emerging Tech",
+    id: 15,
+    name: "Steve Grace",
+    image: "",
+    title: "Founder & CEO Of The Nudge Group",
   },
   {
-    id: 28,
-    name: "Prof Chris Pettit",
-    image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724171170/2023%20Speakers/aimkbtu2qnbdi7oyxhbn.png",
-    title:
-      "Director of City Futures Research Centre & Chair of the Board of Directors for CUPUM",
+    id: 16,
+    name: "Lori Modde",
+    image: "",
+    title: "CEO Of Australian Outdoor Industry",
   },
   {
-    id: 25,
-    name: "A/Prof Sandra Krishnan",
-    image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724171174/2023%20Speakers/wi29kelewttrdarfhszq.png",
-    title: "Leading Breast Surgeon, Clinical Associate Professor, AMU",
+    id: 17,
+    name: "Dr. Nicole Brooke",
+    image: "",
+    title: "CEO, Australian Community Industry Alliance",
   },
   {
-    id: 26,
-    name: "Dr Ashish Agar",
-    image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724171174/2023%20Speakers/zhaxklt2ghqt3kglyn0d.png",
-    title:
-      "Vice-President of the Australian Society of Ophthalmologists, Technical Director - Sustainability, Mott MacDonald",
+    id: 18,
+    name: "Clive Mayhew",
+    image: "",
+    title: "Chair, Fishburners",
   },
   {
-    id: 27,
-    name: "Alistair Coulstock",
-    image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724171173/2023%20Speakers/l8ce1wke7ed98hlz2jpi.png",
-    title: "Technical Director-Sustainability, Mott MacDonald",
+    id: 19,
+    name: "Heath Behncke",
+    image: "",
+    title: "Managing Director, Portfolio Manager, Holon Global Investments",
   },
   {
-    id: 37,
-    name: "Stephen Galilee",
-    image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724171173/2023%20Speakers/taognvybhq2jly68c9vc.png",
-    title: "Chair – Fishburners",
+    id: 20,
+    name: "Pascal Gouel",
+    image: "",
+    title: "Partner, SRO Capital Pty Ltd",
   },
   {
-    id: 38,
-    name: "Joe Kaderavek",
-    image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724171172/2023%20Speakers/lh9obcse0znetjgs1mqz.png",
-    title: "CEO of Cobalt Blue",
+    id: 21,
+    name: "Mark McCrindle",
+    image: "",
+    title: "International Social Researcher",
   },
   {
-    id: 39,
-    name: "Ada Yin",
-    image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724171171/2023%20Speakers/leonb44nfrxaqzivmktm.png",
-    title: "Leadership Coach and Mentor",
-  },
-  {
-    id: 40,
-    name: "Sarah Morgan",
-    image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724171176/2023%20Speakers/cl2100ihqbeibtbylddi.png",
-    title: "Investment Manager at AirTree",
-  },
-  {
-    id: 44,
-    name: "Ozge Fettahlioglu",
-    image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724171176/2023%20Speakers/rhrb0iqehrgulvw2b0wb.png",
-    title:
-      "Entrepreneur, Educator, Start-Up Investor and Home Design Enthusiast",
-  },
-  {
-    id: 41,
-    name: "Ian Prentice",
-    image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724171175/2023%20Speakers/s43syacrij0hmauopmwq.png",
-    title: "Managing Director, Technology Metals Australia",
-  },
-
-  {
-    id: 43,
-    name: "Vanessa Rader",
-    image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724171175/2023%20Speakers/o6rk3xqbtkszh7em14kl.png",
-    title: "Head of Research Ray White",
-  },
-  {
-    id: 42,
-    name: "Penny Crawford",
-    image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724180162/2023%20Speakers/uoq2ewf2xx9xrdtc57rd.png",
-    title: "Founder of Crawford Boots",
+    id: 22,
+    name: "Richard Yuan",
+    image: "",
+    title: "Chair, ACE Club, CEO of ABC World",
   },
   {
     id: 23,
-    name: "Amanda Yeates",
-    image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724171173/2023%20Speakers/n21sqanyoipwvwzftwk8.png",
-    title: "CEO of SunCentral Maroochydore",
+    name: "Connie Carnabuci",
+    image: "",
+    title: "",
   },
   {
-    id: 45,
-    name: "Helen Liossis",
-    image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724171176/2023%20Speakers/px7pfrsled61laizgqrf.png",
-    title: "Non-Executive Director & Deputy Chair",
+    id: 24,
+    name: "Kapel Malhotra",
+    image: "",
+    title: "Serial Entrepreneur & Angel Investor",
   },
   {
-    id: 46,
-    name: "Katherine Hawes",
-    image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724171177/2023%20Speakers/hthhf5zmp8q3wznctgln.png",
-    title: "Principal Solicitorat Digital Age Lawyers",
+    id: 25,
+    name: "Michael Johnson",
+    image: "",
+    title: "CEO, TAA National/NSW",
   },
   {
-    id: 47,
-    name: "Sahil Makkar",
-    image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724171177/2023%20Speakers/zpdeq9vzzj9jcksvdbeb.png",
-    title: "Chairman & CEO of Punjab Angels Network",
+    id: 26,
+    name: "Kala Philip",
+    image: "",
+    title: "COO, BSI Learning",
   },
   {
-    id: 48,
-    name: "Sarah Fairhurst",
-    image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724171170/2023%20Speakers/zefu0g5s2yt56t3vrvq6.png",
-    title: "Board Roles as Non-Executive Director",
+    id: 27,
+    name: "Dr. Joanna Winchester",
+    image: "",
+    title: "PhD",
+  },
+  {
+    id: 28,
+    name: "The Hon Paul Fletcher MP",
+    image: "",
+    title: "Shadow Minister for Government Services and the Digital Economy",
+  },
+  {
+    id: 29,
+    name: "Manish Gupta",
+    image: "",
+    title: "Consul General of India",
+  },
+  {
+    id: 30,
+    name: "Anthony F Shepherd",
+    image: "",
+    title: "Chairman of Venues NSW",
+  },
+  {
+    id: 31,
+    name: "Dr. Catherine Bennett",
+    image: "",
+    title: "Chair in Epidemiology, Deakin's Institute for Health Transformation",
+  },
+  {
+    id: 32,
+    name: "Stephen Halmarick",
+    image: "",
+    title: "CBA Chief Economist",
+  },
+  {
+    id: 33,
+    name: "Kerry Chikarovski",
+    image: "",
+    title: "Founder and Director of Chikarovski & Associates, Businesswoman",
+  },
+  {
+    id: 34,
+    name: "Dr. Charlie Teo",
+    image: "",
+    title: "Charlie Teo Foundation",
+  },
+  {
+    id: 35,
+    name: "Mr. Joseph Rizk AM",
+    image: "",
+    title: "CEO & Managing Director of Arab Bank Australia",
+  },
+  {
+    id: 36,
+    name: "Dr. GK Harinath",
+    image: "",
+    title: "Emeritus Chairperson of Multi-cultural NSW",
+  },
+  {
+    id: 37,
+    name: "Ms. Bonnie Shek",
+    image: "",
+    title: "Director, Australia/New Zealand Hong Kong Trade Development Council",
+  },
+  {
+    id: 38,
+    name: "Damon Rees",
+    image: "",
+    title: "CEO, Service NSW",
+  },
+  {
+    id: 39,
+    name: "Michael Sharpe",
+    image: "",
+    title: "National Director of Advanced Manufacturing",
   },
 ];
+
+
