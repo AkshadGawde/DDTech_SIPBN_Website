@@ -2,6 +2,7 @@ import { AiOutlineCalendar } from "react-icons/ai";
 import { TfiRulerPencil } from "react-icons/tfi";
 import { VscFileSubmodule } from "react-icons/vsc";
 import { BiUser } from "react-icons/bi";
+import { link } from "fontawesome";
 
 export const home = [
   {
@@ -572,6 +573,7 @@ Victor is a board member of the Tech Council of Australia and Adviser to the Bra
     image:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1721983854/Speakers%20-%20Sipbn/m3ukoq5lvsd8iu5psugc.png",
     title: "Former NSW Government Minister",
+    link: "https://www.linkedin.com/in/victordominello/",
   },
   {
     id: "2",
@@ -585,6 +587,7 @@ In 2014 Mr McGeoch was appointed Honorary Consul of Luxembourg in Australia. He 
     image:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275975/Speakers%20-%20CapTech/oretedusdyhaivpbddjf.png",
     title: "Chairman and Director of a wide range of major corporations",
+    link: "https://www.linkedin.com/search/results/all/?keywords=Roderick%20H%20McGeoch%20AO%2C%20LLB&origin=GLOBAL_SEARCH_HEADER&sid=FRl",
   },
   {
     id: "3",
@@ -598,6 +601,7 @@ In October 2022 Joseph became Director of the James Martin Institute (JMI) for P
     image:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1721983854/Speakers%20-%20Sipbn/fbz7of1oru2yozqa6jeb.png",
     title: "CEO & Managing Director of Arab Bank Australia",
+    link: "https://www.linkedin.com/in/joseph-rizk-am-30072316/?originalSubdomain=au",
   },
   {
     id: "4",
@@ -608,6 +612,7 @@ Carmel is a respected leader with the ability to build an experienced and loyal 
     image:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977793/Speakers%20-%20Sipbn/Carmel%20Monaghan.png",
     title: "CEO of Ramsay Health Care",
+    link: "https://www.linkedin.com/in/carmel-monaghan-37440418/",
   },
   {
     id: "5",
@@ -617,6 +622,7 @@ Carmel is a respected leader with the ability to build an experienced and loyal 
     image:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1721983854/Speakers%20-%20Sipbn/owoswxfpqqbltgmkzogy.png",
     title: "Founder and CIO at Fortlake Asset Management",
+    link: "https://www.linkedin.com/in/christian-baylis-619b0668/?originalSubdomain=au",
   },
   {
     id: "6",
@@ -628,6 +634,7 @@ Carmel is a respected leader with the ability to build an experienced and loyal 
     image:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275969/Speakers%20-%20CapTech/bjeg1zdemby269axji4u.png",
     title: "Member of the Legislative Assembly Member for Blacktown",
+    link: "https://www.linkedin.com/in/stephen-bali-4b5b92230/?originalSubdomain=au",
   },
   {
     id: "7",
@@ -639,6 +646,7 @@ Carmel is a respected leader with the ability to build an experienced and loyal 
     image:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275969/Speakers%20-%20CapTech/uwilok7quugq4pfzjtel.png",
     title: "CEO of CIMET",
+    link: "https://www.linkedin.com/in/ankit-jain-a62568116/",
   },
   {
     id: "8",
@@ -655,6 +663,7 @@ Carmel is a respected leader with the ability to build an experienced and loyal 
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275970/Speakers%20-%20CapTech/divlil9mc3qaicgn3yma.png",
     title:
       "Chief Executive of the Institute of Public Works Engineering Australasia (NSW & ACT).",
+    link: "https://www.linkedin.com/in/david-elliott-4207ba73/",
   },
   {
     id: "9",
@@ -667,6 +676,7 @@ Carmel is a respected leader with the ability to build an experienced and loyal 
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1721983854/Speakers%20-%20Sipbn/vpr7uf3hfovvuvvb9q9o.png",
     title:
       "Board Member and Committee Member to a number of profit and non-profit organisations",
+    link: "https://www.linkedin.com/in/taggartjim/",
   },
   // {
   //   id: "10",
@@ -692,6 +702,7 @@ Carmel is a respected leader with the ability to build an experienced and loyal 
     image:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977792/Speakers%20-%20Sipbn/qmbf4ubvwh9yjjrwyrr3.png",
     title: "CFO of CIMET",
+    link: "https://www.linkedin.com/in/kunwaradityasaxena/",
   },
   {
     id: "12",
@@ -701,6 +712,7 @@ Carmel is a respected leader with the ability to build an experienced and loyal 
     image:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977792/Speakers%20-%20Sipbn/dx8ksnkvhluhbx5jwggd.png",
     title: "Non-Executive Director (NED) for four energy sector companies",
+    link: "https://www.linkedin.com/in/sarah-fairhurst-5380834/",
   },
   {
     id: "13",
@@ -714,6 +726,17 @@ Carmel is a respected leader with the ability to build an experienced and loyal 
     image:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977792/Speakers%20-%20Sipbn/dhlpd0aqjrm2v0vekolk.png",
     title: "Chief Technology Advisor, Digital Health Advisor & Board Member",
+    link: "https://www.linkedin.com/in/drgeorgemargelis/",
+  },
+  {
+    id: "27",
+    name: "Stephen Harrison",
+    description: `Stephen Harrison is an expert in the field of management and leadership.\n
+He has extensive experience in guiding organizations through periods of change and driving successful outcomes.`,
+    image:
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275974/Speakers%20-%20CapTech/cwadu54kae2me5ogcmo6.png",
+    title: "Leadership Consultant",
+    link: "https://www.linkedin.com/in/stephen-harrison-03b35867/",
   },
   {
     id: "14",
@@ -726,6 +749,7 @@ Carmel is a respected leader with the ability to build an experienced and loyal 
     image:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275976/Speakers%20-%20CapTech/vfe1v3og95lypfxsafgv.png",
     title: "Chief Economist for the Business Council of Australia",
+    link: "https://www.linkedin.com/in/stephen-walters-9531183b/",
   },
   {
     id: "15",
@@ -737,6 +761,7 @@ Carmel is a respected leader with the ability to build an experienced and loyal 
     image:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977791/Speakers%20-%20Sipbn/sibey8fg4xk74xy4csag.png",
     title: "CEO of Evolved AI",
+    link: "https://www.linkedin.com/in/dr-michael-g-kollo/",
   },
   {
     id: "16",
@@ -755,6 +780,7 @@ Carmel is a respected leader with the ability to build an experienced and loyal 
     image:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977791/Speakers%20-%20Sipbn/ltnukh4s8yixliyk3lfg.png",
     title: "Chief Economist of Westpac’s Business Bank",
+    link: "https://www.linkedin.com/in/besa-deda-4006b412/",
   },
   {
     id: "17",
@@ -769,6 +795,7 @@ Carmel is a respected leader with the ability to build an experienced and loyal 
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977791/Speakers%20-%20Sipbn/mq56dvexl0yzbrkrzdx9.png",
     title:
       "Member for Oatley; Shadow Minister for Multiculturalism; Shadow Minister for Jobs, Industry, Innovation, Science and Technology; Shadow Minister for South-Western Sydney",
+    link: "https://www.linkedin.com/in/mark-coure-mp-8562b4260/",
   },
   {
     id: "18",
@@ -787,6 +814,7 @@ Carmel is a respected leader with the ability to build an experienced and loyal 
     image:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1721983854/Speakers%20-%20Sipbn/ba5oai8luvphhm4lbihh.png",
     title: "CEO at #CapTech2024",
+    link: "https://www.linkedin.com/in/sarah-morgan-business-coach/",
   },
   {
     id: "19",
@@ -795,6 +823,7 @@ Carmel is a respected leader with the ability to build an experienced and loyal 
     image:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977792/Speakers%20-%20Sipbn/x0tv99v11zltuvzfdtbu.png",
     title: "Strategic Innovation Advisor",
+    link: "https://www.linkedin.com/in/anurajgambhir/",
   },
   {
     id: "20",
@@ -804,6 +833,7 @@ Carmel is a respected leader with the ability to build an experienced and loyal 
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977792/Speakers%20-%20Sipbn/Ozge%20Fettahlioglu.png",
     title:
       "Founder and CEO of Cocoplum Design Studio and Boxareno Modular Constructions",
+    link: "https://www.linkedin.com/in/ozgefettahlioglu/",
   },
 
   {
@@ -828,6 +858,7 @@ Alumnus of the Year and in 2015 was inducted into the ARN ICT Industry Awards Ha
     image:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977791/Speakers%20-%20Sipbn/fbcx7na2dwwl339tp0h3.png",
     title: "CEO and Managing Director of NEXTDC",
+    link: "https://www.linkedin.com/in/craigscroggie/",
   },
 
   {
@@ -852,6 +883,7 @@ He speaks English, Tamil, Hindi and Portuguese. He is a keen golfer. He is marri
     image:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275981/Speakers%20-%20CapTech/hq8odk1lugjny0xyxd5w.png",
     title: "Career diplomat, joined the Indian Foreign Service in 2002",
+    link: "https://www.linkedin.com/in/janakiraman-sarvesvaran-0529262a7/",
   },
   {
     id: "23",
@@ -866,6 +898,7 @@ Stela Solar is the Inaugural Director of Australia’s National AI Centre (NAIC)
     image:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977791/Speakers%20-%20Sipbn/mkykinphgqgi75nnht9h.png",
     title: "Director, National AI Centre, CSIRO ",
+    link: "https://www.linkedin.com/in/stelasolar/",
   },
   {
     id: "24",
@@ -879,6 +912,7 @@ Lee believes in the potential of technology to help build a brighter and more in
     image:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977790/Speakers%20-%20Sipbn/gbz7fpcasehkvqrv3clf.png",
     title: "AI Technology & Policy Lead, Microsoft Asia",
+    link: "https://www.linkedin.com/in/leehickin/",
   },
   {
     id: "25",
@@ -889,6 +923,7 @@ Lee believes in the potential of technology to help build a brighter and more in
     image:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977791/Speakers%20-%20Sipbn/vgro3utqgnmdkfowegmd.png",
     title: "Executive committee of ION Analytics",
+    link: "https://www.linkedin.com/in/giovanni-amodeo-6842884//",
   },
   {
     id: "26",
@@ -900,6 +935,7 @@ Michael is also the founder of several successful start-ups; and has been integr
     image:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275981/Speakers%20-%20CapTech/tekk4hnk24ogwkmoy9nl.png",
     title: "Principal at Intrinsika",
+    link: "https://www.linkedin.com/in/michaeldmasterson/",
   },
   {
     id: "27",
@@ -910,6 +946,7 @@ He has held Directorships with international Fund Managers subsidiaries, Investe
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275974/Speakers%20-%20CapTech/cwadu54kae2me5ogcmo6.png",
     title:
       "Chairman of two Public Companies in Australia, NobleOak Life Limited and IncentiaPay Limited (ASX - INP)",
+    link: "https://www.linkedin.com/in/stephen-harrison-03b35867/",
   },
   {
     id: "28",
@@ -920,6 +957,7 @@ Jua serves as the Treasurer of the Australasian Green Infrastructure Network. Wi
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977796/Speakers%20-%20Sipbn/vqqcjezcxcluwqxndvxq.png",
     title:
       "Head of the School of Built Environment and Professor of Urban Planning at the University of Technology Sydney in Australia.",
+    link: "https://www.linkedin.com/in/juacilliers/",
   },
   {
     id: "29",
@@ -929,6 +967,7 @@ Jua serves as the Treasurer of the Australasian Green Infrastructure Network. Wi
     image:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977795/Speakers%20-%20Sipbn/eeighxjjkphbvyp0jkro.png",
     title: "Executive Director, Business Sydney",
+    link: "https://www.linkedin.com/in/paulnicolaou/",
   },
   {
     id: "30",
@@ -939,6 +978,7 @@ Jua serves as the Treasurer of the Australasian Green Infrastructure Network. Wi
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1722325273/Speakers%20-%20CapTech/knttbyymvmjefswwkdys.png",
     title:
       "Social researcher, best-selling author, influential thought leader and TEDx speaker.",
+    link: "https://www.linkedin.com/in/markmccrindle/",
   },
   {
     id: "31",
@@ -948,15 +988,17 @@ Jua serves as the Treasurer of the Australasian Green Infrastructure Network. Wi
     image:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1723742105/Speakers%20-%20Sipbn/i4szlkhlr5lvefhk2bih.png",
     title: "Head of Private Debt, Australia",
+    link: "https://www.linkedin.com/in/nicolekidd/",
   },
   {
     id: "32",
-    name: "STEPHANIE BRANTZ",
+    name: "Stephanie Brantz",
     description:
       "Stephanie is a highly accomplished Media and Communications professional with extensive experience in hosting National and International Sport and Major Events. Her impeccable interpersonal skills, stakeholder engagement, integrity, and sensitivity to dynamic social and political situations have enhanced her broad network of relationships which range from Foreign Governments and International Sporting Bodies, through to Australian Federal, State and Local Governments, State Sporting Organisations and Community sport. \n \n With her high-level communications and event experience, Stephanie is frequently called on as a moderator for industry panels as well as collaboration on development of sport strategies, major event attraction and event delivery planning.",
     image:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1723742546/Speakers%20-%20Sipbn/mfyxjivkpcllnnfn3nrl.png",
     title: "Stephanie Brantz Pty Ltd",
+    link: "https://www.linkedin.com/in/stephaniebrantz/",
   },
   {
     id: "33",
@@ -967,6 +1009,7 @@ Jua serves as the Treasurer of the Australasian Green Infrastructure Network. Wi
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1723742285/Speakers%20-%20Sipbn/svwqvlta6ewmyljuqf7k.png",
     title:
       "Executive Director, Board and Commercial strategy advisor top tier ASX; NYSE",
+    link: "",
   },
   {
     id: "34",
@@ -976,6 +1019,7 @@ Jua serves as the Treasurer of the Australasian Green Infrastructure Network. Wi
     image:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1723742805/Speakers%20-%20Sipbn/yasio84sb8zmlf6nkvxp.png",
     title: "Group CEO of Evolve Housing",
+    link: "https://www.linkedin.com/in/lyallgorman/",
   },
   {
     id: "35",
@@ -985,6 +1029,7 @@ Jua serves as the Treasurer of the Australasian Green Infrastructure Network. Wi
     image:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1723742684/Speakers%20-%20Sipbn/jxgrpwayxv1vujilyap0.png",
     title: "CEO",
+    link: "https://www.linkedin.com/in/giovannilaudicina/",
   },
 ];
 export const SuccessCarouselData = [
@@ -1371,5 +1416,284 @@ export const speakers2023 = [
     image:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1724171170/2023%20Speakers/zefu0g5s2yt56t3vrvq6.png",
     title: "Board Roles as Non-Executive Director",
+  },
+];
+
+export const speakers2022 = [
+  {
+    id: 1,
+    name: "Sheba Nandkeolyar",
+    image:
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724237342/2022/jbrscmw11gruszt6uc4s.png",
+    title: "CEO & Founder Of MultiConnexions",
+  },
+  {
+    id: 2,
+    name: "Michael Rodrigues",
+    image:
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724237354/2022/ic0gjfnbusawxza89r3i.png",
+    title: "24-Hour Economy Commissioner, Investment NSW",
+  },
+  {
+    id: 3,
+    name: "Dr. Jim Taggart",
+    image:
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724237363/2022/f5zdiqz3zoo0t2bjxz9n.png",
+    title: "Education",
+  },
+  {
+    id: 4,
+    name: "Dr. Sandra Krishnan",
+    image:
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724237375/2022/odwllra5ijwrlme0ccd8.png",
+    title:
+      "Leading Breast Surgeon, Clinical Associate Professor, Australian Medical University",
+  },
+  {
+    id: 5,
+    name: "Michael Masterson",
+    image:
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724237395/2022/vdse0p5jc6a8hbhkf2ur.png",
+    title: "Managing Director, Chair Export Council Of Australia",
+  },
+  {
+    id: 6,
+    name: "Dianne Tipping",
+    image:
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724240485/2022/xnbrxezc3gjc8jx5lqlx.png",
+    title: "Chair Export Council Of Australia",
+  },
+  {
+    id: 7,
+    name: "Stephen Harrison",
+    image:
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724240487/2022/eoobvtdiguiedpos6siu.png",
+    title: "B.Ec, CPA, EverEdge Global",
+  },
+  {
+    id: 8,
+    name: "DD Saxena",
+    image:
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724240491/2022/e2nftpdbvot9vxtr7eof.png",
+    title: "Leading Australian Businessman",
+  },
+  {
+    id: 9,
+    name: "Rajeev Gupta",
+    image:
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724240494/2022/cwnqeq0py1b1vm5idkwm.png",
+    title: "Partner, Alium Capital",
+  },
+  {
+    id: 10,
+    name: "Matthew Watson",
+    image:
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724240497/2022/g4zbwaorkdtfhdz1k4oi.png",
+    title: "Managing Partner",
+  },
+  {
+    id: 11,
+    name: "Melissa Monteiro",
+    image:
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724240510/2022/ayjif75wz0ydkgxwlhuc.png",
+    title: "CEO, CMRC",
+  },
+  {
+    id: 12,
+    name: "Christopher Peralta",
+    image:
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724240512/2022/fsadyqzqu8nrategysos.png",
+    title: "Founder and CEO",
+  },
+  {
+    id: 13,
+    name: "Simon Cant",
+    image:
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724240515/2022/ttvcgckvnavwbxnay2tf.png",
+    title: "Co-Founder and Managing Partner of Reinventure",
+  },
+  {
+    id: 14,
+    name: "Anuraj Gambhir",
+    image:
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724240517/2022/fdwsi4jbbsto3vhumfka.png",
+    title: "Strategic Business and Start-Up Advisor",
+  },
+  {
+    id: 15,
+    name: "Steve Grace",
+    image:
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724240520/2022/eihpuamoobhahhnp2u4x.png",
+    title: "Founder & CEO Of The Nudge Group",
+  },
+  {
+    id: 16,
+    name: "Lori Modde",
+    image:
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724240765/2022/g6vndreq2btixovbfgpj.png",
+    title: "CEO Of Australian Outdoor Industry",
+  },
+  {
+    id: 17,
+    name: "Dr. Nicole Brooke",
+    image:
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724240767/2022/hjg0fokkqr8rccayrnfi.png",
+    title: "CEO, Australian Community Industry Alliance",
+  },
+  {
+    id: 18,
+    name: "Clive Mayhew",
+    image:
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724240769/2022/secoepwjdbhwpu1743xb.png",
+    title: "Chair, Fishburners",
+  },
+  {
+    id: 19,
+    name: "Heath Behncke",
+    image:
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724240774/2022/k0vvmkhulvhzrn4davlq.png",
+    title: "Managing Director, Portfolio Manager, Holon Global Investments",
+  },
+  {
+    id: 20,
+    name: "Pascal Gouel",
+    image:
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724240777/2022/ztmzcon8fkjrjifk53nm.png",
+    title: "Partner, SRO Capital Pty Ltd",
+  },
+  {
+    id: 21,
+    name: "Mark McCrindle",
+    image:
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724240779/2022/bv4plck9nrhln1fw9l6d.png",
+    title: "International Social Researcher",
+  },
+  {
+    id: 22,
+    name: "Richard Yuan",
+    image:
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724240781/2022/ayqapvfif0scxgtqsm2e.png",
+    title: "Chair, ACE Club, CEO of ABC World",
+  },
+  {
+    id: 23,
+    name: "Connie Carnabuci",
+    image:
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724240784/2022/ryk1krssetlwi1h5qtof.png",
+    title: "",
+  },
+  {
+    id: 24,
+    name: "Kapel Malhotra",
+    image:
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724240786/2022/uwmylhyk4ayka5oiebb2.png",
+    title: "Serial Entrepreneur & Angel Investor",
+  },
+  {
+    id: 25,
+    name: "Michael Johnson",
+    image:
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724240789/2022/s1y4ze1vtdymaorwl78u.png",
+    title: "CEO, TAA National/NSW",
+  },
+  {
+    id: 26,
+    name: "Kala Philip",
+    image:
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724240791/2022/u82ukh7agcxmfwd5vspj.png",
+    title: "COO, BSI Learning",
+  },
+  {
+    id: 27,
+    name: "Dr. Joanna Winchester",
+    image:
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724240793/2022/kqqklgoujp2idyz1d5g1.png",
+    title: "PhD",
+  },
+  {
+    id: 28,
+    name: "The Hon Paul Fletcher MP",
+    image:
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724245800/2022/qow2f1h3ok0dpm2q8pub.png",
+    title: "Shadow Minister for Government Services and the Digital Economy",
+  },
+  {
+    id: 29,
+    name: "Manish Gupta",
+    image:
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724245828/2022/oqrlasvti5pwrd8ooxjv.png",
+    title: "Consul General of India",
+  },
+  {
+    id: 30,
+    name: "Anthony F Shepherd",
+    image:
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724245849/2022/lzgpcsozhey2oxv06fl5.png",
+    title: "Chairman of Venues NSW",
+  },
+  {
+    id: 31,
+    name: "Dr. Catherine Bennett",
+    image:
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724245902/2022/rqlxxfveft5h1kvsa5io.png",
+    title:
+      "Chair in Epidemiology, Deakin's Institute for Health Transformation",
+  },
+  {
+    id: 32,
+    name: "Stephen Halmarick",
+    image:
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724245947/2022/yuxebxzyaz26exb3t9ap.png",
+    title: "CBA Chief Economist",
+  },
+  {
+    id: 33,
+    name: "Kerry Chikarovski",
+    image:
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724245965/2022/l2x7mznehsr0gujx9dkb.png",
+    title: "Founder and Director of Chikarovski & Associates, Businesswoman",
+  },
+  {
+    id: 34,
+    name: "Dr. Charlie Teo",
+    image:
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724246006/2022/uigif8migqyxlkljlp5c.png",
+    title: "Charlie Teo Foundation",
+  },
+  {
+    id: 35,
+    name: "Mr. Joseph Rizk AM",
+    image:
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724246029/2022/kd6m0zbzbpswinwyqfqc.png",
+    title: "CEO & Managing Director of Arab Bank Australia",
+  },
+  {
+    id: 36,
+    name: "Dr. GK Harinath",
+    image:
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724246062/2022/atu2yyuzpn43l16teuhm.png",
+    title: "Emeritus Chairperson of Multi-cultural NSW",
+  },
+  {
+    id: 37,
+    name: "Ms. Bonnie Shek",
+    image:
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724246087/2022/xhqgnb3uomcchyeogeps.png",
+    title:
+      "Director, Australia/New Zealand Hong Kong Trade Development Council",
+  },
+  {
+    id: 38,
+    name: "Damon Rees",
+    image:
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724246122/2022/fffz64ytzlztazfpjirm.png",
+    title: "CEO, Service NSW",
+  },
+  {
+    id: 39,
+    name: "Michael Sharpe",
+    image:
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724246145/2022/v7qwcb9kn21xfgqyys1f.png",
+    title: "National Director of Advanced Manufacturing",
   },
 ];
