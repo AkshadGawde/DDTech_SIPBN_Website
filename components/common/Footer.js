@@ -23,11 +23,7 @@ const Footer = () => {
 
 const CompanyInfo = () => (
   <div className="company-info">
-    <img
-      src="/images/sipbnLogo.png"
-      alt="logo"
-      height={"80px"}
-    />
+    <img src="/images/sipbnLogo.png" alt="logo" height={"80px"} />
     <p>Questions? Reach us at:</p>
     <h3>info@sipbn.com.au</h3>
     <a
@@ -47,16 +43,19 @@ const CompanyLinks = () => (
     <h3>COMPANY</h3>
 
     <li>
-      <Link href="/agency">About Us</Link>
+      <Link href="/about">About Us</Link>
     </li>
     <li>
-      <Link href="/Events">#CapTech 2024</Link>
+      <Link href="/captech">#CapTech 2024</Link>
     </li>
     <li>
-      <Link href="/services">#CapTech2023</Link>
+      <Link href="/captech2023">#CapTech2023</Link>
     </li>
     <li>
-      <Link href="/Events">Events</Link>
+      <Link href="/captech2022">#CapTech2022</Link>
+    </li>
+    <li>
+      <Link href="/events">Events</Link>
     </li>
     <li>
       <Link href="https://docs.google.com/forms/d/e/1FAIpQLSdiA6YPJaorTgxsvt-ZMMePCMLIbKnI3fS971sxMZeSaPewoQ/viewform">
@@ -68,8 +67,6 @@ const CompanyLinks = () => (
     </li>
   </ul>
 );
-
-
 
 const NewsLetter = () => {
   const [email, setEmail] = useState("");
@@ -95,7 +92,7 @@ const NewsLetter = () => {
       if (response) {
         toast.success("Subscription successful!");
         setEmail("");
-        console.log(response)
+        console.log(response);
       } else {
         toast.error("There was an issue with your subscription.");
       }
@@ -125,13 +122,9 @@ const NewsLetter = () => {
           Subscribe
         </button>
       </form>
-
     </div>
   );
 };
-
-
-
 
 // const ServiceLinks = () => (
 //   <ul className="footer-links">
