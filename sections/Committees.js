@@ -135,6 +135,45 @@ const Executive_board = () => {
             src="https://res.cloudinary.com/dueoon8xe/image/upload/v1721977793/Speakers%20-%20Sipbn/kpegt4tt65xshnftcmht.png"
           />
         </div>
+        <hr />
+        <div className="advisoryContainer">
+          <div>
+            <h2 className="advisoryTitle">Nikhil Nigam</h2>
+            <p className="advisoryDescription">
+              Nikhil Nigam embarked on his professional journey as a Computer
+              Science Engineer, where his passion for technology first
+              blossomed. Beginning as a software developer, he quickly gained
+              recognition for his technical prowess and innovative
+              problem-solving, crafting software solutions that not only met
+              client needs but also anticipated technological advancements.
+              <br />
+              <br />
+              Eager to combine his technical expertise with business strategy,
+              Nikhil transitioned into sales, specializing in AI products within
+              the APAC market. Over the years, he evolved from a technology
+              specialist into a strategic sales leader, guiding organizations in
+              embracing cutting-edge AI solutions. His deep understanding of
+              technology, paired with sharp market insights, has consistently
+              driven growth and delivered significant value to clients across
+              diverse industries.
+              <br />
+              <br />
+              Nikhil is deeply committed to the transformative potential of
+              technology in business. He believes in the power of strategic
+              relationships, fostered through purposeful networking, to unlock
+              opportunities and inspire innovation. As a sales leader, Nikhil
+              leverages his expansive network to connect people, ideas, and
+              opportunities, enabling businesses to flourish in a rapidly
+              evolving technological landscape. Today, he remains at the
+              forefront of innovation, focused on driving growth and creating
+              lasting impact across the APAC region.
+            </p>
+          </div>
+          <img
+            className="advisoryImg"
+            src="https://res.cloudinary.com/dueoon8xe/image/upload/v1724772625/Speakers%20-%20Sipbn/cvigy3dft481vhuzpoze.png"
+          />
+        </div>
       </div>
     </>
   );

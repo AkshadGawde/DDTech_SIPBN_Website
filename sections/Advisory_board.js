@@ -271,6 +271,7 @@ const Advisory_board = () => {
             src="https://res.cloudinary.com/dueoon8xe/image/upload/v1721977794/Speakers%20-%20Sipbn/p4divkup6gp7m7tqwubw.png"
           />
         </div>
+        <hr />
       </div>
     </>
   );
