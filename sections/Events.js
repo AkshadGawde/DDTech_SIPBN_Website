@@ -15,10 +15,10 @@ const Events = () => {
           <Title title="Upcoming Events" />
           <div className="event-container">
             <div className="eventCard">
-              <a href="https://res.cloudinary.com/dueoon8xe/image/upload/v1724772513/ftqv2aapmtpvgzetjrtp.jpg">
+              <a href="https://events.humanitix.com/clean-energy-monetising-the-opportunity">
                 <img
                   className="eventImg"
-                  src="/images/cleanenergy1.jpg"
+                  src="https://res.cloudinary.com/dueoon8xe/image/upload/v1724772513/ftqv2aapmtpvgzetjrtp.jpg"
                   alt="Event 1 Image"
                 />
               </a>
