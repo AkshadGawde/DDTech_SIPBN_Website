@@ -136,6 +136,8 @@ const Executive_board = () => {
           />
         </div>
         <hr />
+
+        <TitleSm title={"HEAD OF TECH INVESTMENT AND GROWTH"} />
         <div className="advisoryContainer">
           <div>
             <h2 className="advisoryTitle">Nikhil Nigam</h2>
