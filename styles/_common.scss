@@ -935,3 +935,44 @@ ul {
       }
     }
   }
+
+  .iframe-container {
+    margin: 40px 5px 0 5px;
+    
+  }
+  
+  .podContent {
+    display: flex;
+    justify-content: center; /* Center the iframe horizontally */
+    align-items: center; /* Center the iframe vertically within the container */
+    margin: 30px 0;
+    width: 100%;
+  }
+  
+  .title {
+    text-align: center; /* Center align the title */
+    margin-bottom: 20px; /* Space between title and content */
+  }
+  
+  .iframe {
+    width: 100%;
+    max-width: 100%; /* Ensure iframe does not overflow its container */
+    height: 315px; /* Standard height for a YouTube iframe */
+    border: none;
+    border-radius: 5px;
+    /* Additional styling for better appearance */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+  }
+  
+  /* Responsive styling for the iframe */
+  @media screen and (max-width: 1350px) {
+    .iframe {
+      height: 200px; /* Adjust height on smaller screens */
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .iframe {
+      height: 180px; /* Adjust height on even smaller screens */
+    }
+  }
