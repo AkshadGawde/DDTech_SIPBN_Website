@@ -122,7 +122,7 @@ const Hero = () => {
       <Expertise />
       <div className="iframe-container">
         <br />
-        <Title title={"Podcast"} />
+        <Title title={"Our Podcast"} />
 
         <div className="podContent grid-3">
           <iframe

@@ -69,24 +69,6 @@ const Blog = () => {
             />
           </a>
         </div>
-        <div className="container">
-          <br />
-          <Title title={"Podcast"} />
-
-          <div className="blogContent grid-3">
-            <Card
-              data={{
-                id: 1,
-                title:
-                  "The Deal Flow : A distinguished leader with over 23 years of expertise in financial data, news, and analytics. ",
-                cover:
-                  "https://res.cloudinary.com/dueoon8xe/image/upload/v1724773514/bdoxner0tmuzow1avwxs.jpg",
-                href: "https://www.youtube.com/watch?v=LMNVfOu_7a4",
-              }}
-              caption={"Watch Podcast"}
-            />
-          </div>
-        </div>
       </div>
     </>
   );
