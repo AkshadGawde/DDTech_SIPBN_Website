@@ -107,6 +107,7 @@ const Header = () => {
                 </div>
               )}
             </div>
+
             <div className="dropdown">
               <Link
                 href="/captech"
@@ -119,6 +120,16 @@ const Header = () => {
                 icon={faCaretDown}
                 onClick={() => toggleDropdown("captech")}
               />
+              <div className="dropdown">
+                <Link
+                  href="/"
+                  onClick={handleLinkClick}
+                  // onMouseEnter={() => toggleDropdown("about")}
+                  // className={activeLink === "/about" ? "activeLink" : ""}
+                >
+                  India Delegation
+                </Link>
+              </div>
 
               {dropdownOpen.captech && (
                 <div className="dropdown-content">
