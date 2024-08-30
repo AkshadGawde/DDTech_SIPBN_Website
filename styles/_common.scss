@@ -985,7 +985,14 @@ ul {
     text-align: left;
     margin-left: 6vw; /* Reduced left margin */
   }
-  
+  .containercms {
+    display: flex;
+    height: 60vh;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+  }
   .capList li {
     margin-bottom: 10px;
     color: white;
