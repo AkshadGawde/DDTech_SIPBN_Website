@@ -16,6 +16,7 @@ import TimelineOppositeContent from "@mui/lab/TimelineOppositeContent";
 import TimelineDot from "@mui/lab/TimelineDot";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Brand } from "@/components/router";
 import Typography from "@mui/material/Typography";
 
 const Team = () => {
@@ -238,6 +239,7 @@ const Team = () => {
             #CapTech2023
           </button>
         </div>
+        <Brand />
       </div>
     </>
   );
