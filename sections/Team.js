@@ -219,6 +219,98 @@ const Team = () => {
           <br />
         </ul>
 
+        <div className="container">
+          <Title title="Case Studies" />
+          <ul className="capList">
+            <Title title="Strategic Introductions:" />
+            <li>Numerous MOUs signed worth $200 million</li>
+            <li>A number of MOUs under discussion</li>
+            <li>
+              All presenting companies gained significant funding/business
+              opportunities
+            </li>
+            <br />
+            <Title title="Audience:" />
+            <li>CEO, Chairman & Decision-makers, Government Ministers</li>
+            <li>Founders & Entrepreneurs</li>
+            <li>High Net-worth Investors</li>
+            <li>International Delegates</li>
+            <li>
+              Family Offices, Pension Funds, Private Equity, Venture Capital
+              Firms, Banks
+            </li>
+            <li>1,000 in-person attendees over 2 years</li>
+            <br />
+            <Title title="Business Sector:" />
+            <li>Healthcare</li>
+            <li>Renewable Energy</li>
+            <li>Real Estate & Affordable Housing Financial Services</li>
+            <li>Mining & Exploration</li>
+            <li>Critical Minerals</li>
+            <li>Manufacturing</li>
+            <li>Technology</li>
+            <li>AI & Cyber Security</li>
+            <li>Food and Agriculture</li>
+            <li>Education</li>
+            <br />
+            <Title title="Global Reach:" />
+            <li>
+              Australia, India, Hong Kong, Middle East, Malta, East Asia, Dubai,
+              Turkey, Singapore, USA, China, Europe
+            </li>
+            <br />
+            <Title title="Exposure:" />
+            <li>
+              Australia, India, Hong Kong, Middle East, Malta, East Asia, Dubai,
+              Turkey, Singapore, USA, China, Europe
+            </li>
+            <br />
+            <Title title="Annual #CapTech2024 Summit" />
+            <li>#CapTech2024 Year of Events</li>
+            <li>State of the Economy and Opportunities</li>
+            <li>Real Estate, Housing Crisis and The Role of AI</li>
+            <li>The business of Renewable Energy and emerging opportunities</li>
+            <li>Welcome drinks at NSW Parliament House</li>
+            <li>Investor meetings</li>
+            <li>
+              “Invitation-only” private dinner fostering and nurturing unique
+              business relationships
+            </li>
+            <li>Dedicated business matching sessions</li>
+            <li>Christmas Networking Drinks</li>
+            <br />
+            <Title title="State of the Economy" />
+            <li>
+              What is happening in the capital markets and the opportunities and
+              challenges ahead
+            </li>
+            <li>
+              The disruption and the investment opportunities in the healthcare
+              sector
+            </li>
+            <li>Emerging trends and opportunities in the education sector</li>
+            <li>
+              State of play in the Real Estate sector and Affordable Housing
+            </li>
+            <li>
+              Business opportunities and challenges in the renewable energy
+              space
+            </li>
+            <li>How AI is changing the whole business landscape?</li>
+            <li>The Business of Sport and Entertainment</li>
+            <li>Global Pitching Session</li>
+            <li>Global summit at ICC Sydney, Australia</li>
+            <li>
+              Engaging panel discussions with high profile expert speakers
+            </li>
+            <li>Prominent Keynote speeches</li>
+            <li>Interactive workshops</li>
+            <li>Post event networking drinks</li>
+          </ul>
+        </div>
+
+        <Brand />
+
         <div className="button-holder">
           <button
             className="button button-primary"
@@ -239,7 +331,6 @@ const Team = () => {
             #CapTech2023
           </button>
         </div>
-        <Brand />
       </div>
     </>
   );
