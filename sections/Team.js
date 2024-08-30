@@ -218,12 +218,13 @@ const Team = () => {
           </li>
           <br />
         </ul>
-
-        <div className="container">
-          <Title title="Case Studies" />
+</div>
+<Title title="Case Studies" />
+<div className="containerl">
+          
           <ul className="capList">
             <Title title="Strategic Introductions:" />
-            <li>Numerous MOUs signed worth $200 million</li>
+            <li >Numerous MOUs signed worth $200 million</li>
             <li>A number of MOUs under discussion</li>
             <li>
               All presenting companies gained significant funding/business
@@ -307,10 +308,10 @@ const Team = () => {
             <li>Interactive workshops</li>
             <li>Post event networking drinks</li>
           </ul>
-        </div>
+        </div> 
 
         <Brand />
-
+<div>
         <div className="button-holder">
           <button
             className="button button-primary"

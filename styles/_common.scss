@@ -463,6 +463,8 @@ hr{
   align-items: center;
   text-align: center;
 }
+
+
 .eventImg{
   max-height: 30vh;
   flex: 1;
@@ -976,18 +978,28 @@ ul {
     }
   }
 
+  .containerl {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    margin-left: 6vw; /* Reduced left margin */
+  }
+  
   .capList li {
     margin-bottom: 10px;
-    color: white; 
-    list-style:disc ;
+    color: white;
+    list-style: disc;
+  }
+  
+  .capList ul {
+    margin-bottom: 10px;
+    color: white;
+    list-style: disc;
   }
   
   .capList li::marker {
     color: rgb(14, 17, 220);
-  }
-
-  .capList br {
-    display: none;
   }
   
   .capList .title {
@@ -996,4 +1008,15 @@ ul {
     margin-bottom: 10px;
     font-size: 20px;
     color: white;
+    text-align: center; /* Align all titles to the left */
   }
+  
+  /* Specific styling to center "Case Studies" title */
+  .capList:first-of-type .title {
+    text-align: left;
+  }
+  
+  .capList br {
+    display: none;
+  }
+  
