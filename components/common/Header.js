@@ -121,17 +121,6 @@ const Header = () => {
                 onClick={() => toggleDropdown("captech")}
               />
 
-              <div className="dropdown">
-                <Link
-                  href="/delegation"
-                  onClick={handleLinkClick}
-                  // onMouseEnter={() => toggleDropdown("about")}
-                  // className={activeLink === "/about" ? "activeLink" : ""}
-                >
-                  India Delegation
-                </Link>
-              </div>
-
               {dropdownOpen.captech && (
                 <div className="dropdown-content">
                   <Link href="/patrons" onClick={handleLinkClick}>
@@ -149,6 +138,15 @@ const Header = () => {
                 </div>
               )}
             </div>
+            <Link
+              href="/IndiaDelegation"
+              onClick={handleLinkClick}
+              onMouseEnter={() => toggleDropdown("Indiadelegation")}
+              className={activeLink === "/IndiaDelegation" ? "activeLink" : ""}
+            >
+              India Delegation
+            </Link>
+
             <Link
               href="/events"
               onClick={handleLinkClick}
