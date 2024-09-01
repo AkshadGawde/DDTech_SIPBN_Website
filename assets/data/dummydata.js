@@ -530,7 +530,7 @@ export const memberdata = [
     title: "Giovanni Laudicina",
     cover:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1723742684/Speakers%20-%20Sipbn/jxgrpwayxv1vujilyap0.png",
-    post: "CEO",
+    post: "CEO Duncan Solutions",
     href: "/team/35",
   },
 ];
@@ -1028,7 +1028,7 @@ Jua serves as the Treasurer of the Australasian Green Infrastructure Network. Wi
       "Giovanni Laudicina is a results-driven and visionary CEO with a proven track record of transforming organizations into industry leaders. With over a decade of executive experience, he has successfully driven national and international growth and profitability across diverse sectors. Born in Italy, Giovanni began his career as a consultant and manager, establishing a solid foundation of expertise and leadership. \n \n He played a pivotal role in establishing EasyPark's presence in Italy, leading the company to become the market leader. In 2018, Giovanni relocated to Sydney and joined Duncan Solutions, where he ascended to the role of CEO in 2020. Under his leadership, Duncan Solutions has continued to thrive and expand its market presence.",
     image:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1723742684/Speakers%20-%20Sipbn/jxgrpwayxv1vujilyap0.png",
-    title: "CEO",
+    title: "CEO Duncan Solutions",
     link: "https://www.linkedin.com/in/giovannilaudicina/",
   },
 ];
