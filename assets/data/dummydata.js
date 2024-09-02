@@ -102,78 +102,97 @@ export const brand = [
   {
     id: 1,
     cover: "../SVG/Logo1.svg",
+    link: "https://www.arabbank.com.au/",
   },
   {
     id: 2,
     cover: "../SVG/Logo2.svg",
+    link: "https://www.cgisydney.gov.in/",
   },
   {
     id: 3,
     cover: "../SVG/Logo3.svg",
+    link: "https://www.linkedin.com/company/rsb-capital/",
   },
   {
     id: 4,
     cover: "../SVG/Logo4.svg",
+    link: "https://www.ficci.in/",
   },
   {
     id: 5,
     cover: "../SVG/Logo5.svg",
+    link: "https://punjabangelsnetwork.com/",
   },
   {
     id: 6,
     cover: "../SVG/Logo6.svg",
+    link: "https://www.penrithcity.nsw.gov.au/",
   },
   {
     id: 7,
     cover: "../SVG/Logo7.svg",
+    link: "https://home.hktdc.com/",
   },
   {
     id: 8,
     cover: "../SVG/Logo8.svg",
+    link: "https://rsbpartners.com.au/",
   },
   {
     id: 9,
     cover: "../SVG/Logo9.svg",
+    link: "https://royalexchange.com.au/",
   },
   {
     id: 10,
     cover: "../SVG/Logo10.svg",
+    link: "https://iccsydney.com.au/",
   },
   {
     id: 11,
     cover: "../SVG/Logo11.svg",
+    link: "https://www.rackcorp.com/",
   },
   {
     id: 12,
     cover: "../SVG/Logo12.svg",
+    link: "https://www.cimet.com.au/",
   },
   {
     id: 13,
     cover: "../SVG/Logo13.svg",
+    link: "https://www.wtca.org/world-trade-center-pune",
   },
   {
     id: 14,
     cover: "../SVG/Logo14.svg",
+    link: "https://anzindiachamber.com/",
   },
   {
     id: 15,
     cover: "../SVG/Logo15.svg",
+    link: "https://trademarkgroup.com.au/",
   },
   {
     id: 16,
     cover: "../SVG/Logo16.svg",
+    link: "https://finkey.co/",
   },
   {
     id: 17,
     cover: "../SVG/Logo17.svg",
+    link: "https://www.planarrestaurant.com.au/",
   },
   {
     id: 18,
-    cover: "/SVG/Logo18.svg",
+    cover: "../SVG/Logo18.svg",
+    link: "https://www.rsm.global/australia/",
   },
   {
     id: 19,
-    cover: "/SVG/Logo19.svg",
+    cover: "../SVG/Logo19.svg",
+    link: "https://advisoryboardworld.com/events/89840",
   },
 ];
 export const brand2 = [

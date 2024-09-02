@@ -19,10 +19,13 @@ const Brand = () => {
                   alt={item.id}
                   width="100%"
                   height="100%"
+                  onClick={() => (window.location.href = item.link)}
+                  style={{ cursor: "pointer" }}
                 />
               </div>
             ))}
           </div>
+
           <div className="heading-title">
             <Title title="In the Media" />
           </div>
