@@ -171,6 +171,10 @@ export const brand = [
     id: 18,
     cover: "/SVG/Logo18.svg",
   },
+  {
+    id: 19,
+    cover: "/SVG/Logo19.svg",
+  },
 ];
 export const brand2 = [
   {
