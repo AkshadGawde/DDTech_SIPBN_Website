@@ -90,7 +90,7 @@ const Hero = () => {
             >
               <h2>Secure your #CapTech2024 ticket!</h2>
               <br />
-              <p> Early bird discount 20% till 31st August 2024</p>
+              <p> Early bird discount 20% till 30th September 2024</p>
               <br />
               <a
                 href="https://www.eventbrite.com.au/e/captech2024-discover-connect-execute-venue-icc-sydney-tickets-772015889307"
