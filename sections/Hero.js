@@ -1,34 +1,35 @@
-import React from 'react'
-import Marqueee from '@/components/common/Marqueee'
-import HeroMain from '@/components/HeroPage/HeroMain';
+import React from "react";
+import Marqueee from "@/components/common/Marqueee";
+import HeroMain from "@/components/HeroPage/HeroMain";
 import Banner from "@/components/Banner";
 import Expertise from "@/components/Expertise";
 import { Title, TitleLogo, TitleSm } from "@/components/common/Title";
 import { Brand } from "@/components/router";
 import Image from "next/image";
 import Link from "next/link";
-import HeroInfo from '@/components/HeroPage/HeroInfo';
-import HeroPurpose from '@/components/HeroPage/HeroPurpose';
-import HeroFeatures from '@/components/HeroPage/HeroFeatures';
+import HeroInfo from "@/components/HeroPage/HeroInfo";
+import HeroPurpose from "@/components/HeroPage/HeroPurpose";
+import HeroFeatures from "@/components/HeroPage/HeroFeatures";
+import BrandCarousel from "@/components/HeroPage/BrandCarousel";
 
 function Hero() {
   return (
     <>
-    <div className="marquee-hero">
+      <div className="marquee-hero">
         <Marqueee className="marquee" />
       </div>
 
-    <section>
-      <HeroMain/>
-      {/* Insert Sponser carousel here */}
-      {/* Insert Carousel here */}
-      <HeroInfo/>
-      <Expertise/>
-      <HeroPurpose/>
-      <HeroFeatures/>
-    </section>
+      <section>
+        <HeroMain />
+        <BrandCarousel />
+        {/* Insert Carousel here */}
+        <HeroInfo />
+        <Expertise />
+        <HeroPurpose />
+        <HeroFeatures />
+      </section>
 
-    {/* <div className="marquee-hero">
+      {/* <div className="marquee-hero">
         <Marqueee className="marquee" />
       </div>
       <section className="hero">
@@ -201,9 +202,8 @@ function Hero() {
           ></iframe>
         </div>
       </div>  */}
-
     </>
-        )
+  );
 }
 
-export default Hero
+export default Hero;
