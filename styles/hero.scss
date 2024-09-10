@@ -99,3 +99,54 @@
 .agendaImage:hover{
     transform: scale(1.03);
 }
+.purposeContainer{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    h1{
+        font-size: 60px;
+    }
+    h2{
+        margin-top: 50px;
+        font-size: 16px;
+    }
+}
+.purposeTextContainer{
+    max-width: 500px;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 300;
+}
+.featureHeading{
+    h1{
+        font-size: 60px;
+        margin-top: 10px;
+    }
+
+}
+.featureContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1{
+        text-align: center;
+        font-size: 40px;
+        margin-top: 20px;
+    }
+    hr{
+        width: 20%;
+    }
+}
+.featureImg{
+    margin: 5% 5% 5% 5%;
+    border-radius: 5%;
+    width: 50%;
+    @media screen and (max-width:1350px) {
+        width: 60%;
+    }
+}

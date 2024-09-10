@@ -8,6 +8,8 @@ import { Brand } from "@/components/router";
 import Image from "next/image";
 import Link from "next/link";
 import HeroInfo from '@/components/HeroPage/HeroInfo';
+import HeroPurpose from '@/components/HeroPage/HeroPurpose';
+import HeroFeatures from '@/components/HeroPage/HeroFeatures';
 
 function Hero() {
   return (
@@ -18,8 +20,12 @@ function Hero() {
 
     <section>
       <HeroMain/>
+      {/* Insert Sponser carousel here */}
+      {/* Insert Carousel here */}
       <HeroInfo/>
       <Expertise/>
+      <HeroPurpose/>
+      <HeroFeatures/>
     </section>
 
     {/* <div className="marquee-hero">

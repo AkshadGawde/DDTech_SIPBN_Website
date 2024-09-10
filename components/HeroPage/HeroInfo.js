@@ -3,7 +3,7 @@ import React from 'react'
 function HeroInfo() {
   return (
     <>
-    <div className='heroContainer'>
+    <div className='heroContainer' style={{background:"linear-gradient(135deg, #1e3c72 0%, #000000 50%)"}}>
       <div className="heroContent">
             <div className="agendaBox">
               <div className='logoCutout'>

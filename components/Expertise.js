@@ -7,7 +7,7 @@ import Link from "next/link"
 const Expertise = () => {
   return (
     <>
-      <section className='expertise'>
+      <section className='expertise' style={{background:"linear-gradient(135deg, #1e3c72 0%, #000000 50%)"}}>
         <div className='container'>
           <div className='heading-title'>
             <Title title='The Four Pillars That Empower SIPBN:' />
