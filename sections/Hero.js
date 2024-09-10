@@ -1,16 +1,25 @@
+import React from 'react'
+import Marqueee from '@/components/common/Marqueee'
+import HeroMain from '@/components/HeroMain'
 import Banner from "@/components/Banner";
 import Expertise from "@/components/Expertise";
 import { Title, TitleLogo, TitleSm } from "@/components/common/Title";
 import { Brand } from "@/components/router";
-import { React } from "react";
-import Marqueee from "@/components/common/Marqueee";
 import Image from "next/image";
 import Link from "next/link";
 
-const Hero = () => {
+function Hero() {
   return (
     <>
-      <div className="marquee-hero">
+    <div className="marquee-hero">
+        <Marqueee className="marquee" />
+      </div>
+
+    <section>
+      <HeroMain/>
+    </section>
+
+    {/* <div className="marquee-hero">
         <Marqueee className="marquee" />
       </div>
       <section className="hero">
@@ -122,7 +131,7 @@ const Hero = () => {
       <Expertise />
       <Banner />
       {/* <Testimonial /> */}
-      <div className="container">
+      {/* <div className="container">
         <div className="heading-title">
           <Title title={"Upcoming Events"} />
         </div>
@@ -174,22 +183,18 @@ const Hero = () => {
             allowFullScreen
           ></iframe>
 
-          {/* <iframe
+          <iframe
             className="iframe"
             src="https://www.youtube.com/embed/YOUR_VIDEO_ID" // Replace with your video URL
             title="Coming Soon"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
-          ></iframe> */}
+          ></iframe>
         </div>
-      </div>
+      </div>  */}
 
-      {/* <div className='text-center'>
-        <Title title='Latest news & articles' />
-      </div> */}
-      {/* <BlogCard /> */}
     </>
-  );
-};
+        )
+}
 
-export default Hero;
+export default Hero
