@@ -1,12 +1,13 @@
 import React from 'react'
 import Marqueee from '@/components/common/Marqueee'
-import HeroMain from '@/components/HeroMain'
+import HeroMain from '@/components/HeroPage/HeroMain';
 import Banner from "@/components/Banner";
 import Expertise from "@/components/Expertise";
 import { Title, TitleLogo, TitleSm } from "@/components/common/Title";
 import { Brand } from "@/components/router";
 import Image from "next/image";
 import Link from "next/link";
+import HeroInfo from '@/components/HeroPage/HeroInfo';
 
 function Hero() {
   return (
@@ -17,6 +18,8 @@ function Hero() {
 
     <section>
       <HeroMain/>
+      <HeroInfo/>
+      <Expertise/>
     </section>
 
     {/* <div className="marquee-hero">
