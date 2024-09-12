@@ -106,6 +106,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding: 5%;
     h1{
         font-size: 60px;
     }
@@ -153,7 +154,10 @@
 
 // Brand Carousel Styles //
 .brand-carousel {
-    padding-bottom: 30px;
+    padding: 30px 0 ;
+    background: linear-gradient(135deg, #1e3c72 0%, #000000 50%);
+    text-align: center;
+    font-size: 28px;
   }
   
   .slider {
@@ -252,3 +256,43 @@
       display: none !important;
     }
   }
+.outerHrHolder{
+  display: flex;
+  align-items: center;
+  p{
+    font-size: 20px;
+    font-weight: 100;
+  }
+}
+.innerHr1{
+  flex: 1;
+  background-color: white;
+  height: 1px;
+  margin-left:90px;
+  margin-right:10px ;
+  @media screen and (max-width:768px) {
+    margin-left: 40px;
+  }
+  @media screen and (max-width:1024px) {
+    margin-left: 60px;
+  }
+  @media screen and (max-width:425px) {
+    margin-left: 20px;
+  }
+}
+.innerHr2{
+  flex: 1;
+  background-color: white;
+  height: 1px;
+  margin-left:10px;
+  margin-right:90px ;
+  @media screen and (max-width:768px) {
+    margin-right: 40px;
+  }
+  @media screen and (max-width:1024px) {
+    margin-right: 60px;
+  }
+  @media screen and (max-width:425px) {
+    margin-right: 20px;
+  }
+}

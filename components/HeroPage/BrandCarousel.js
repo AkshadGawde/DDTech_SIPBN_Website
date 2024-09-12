@@ -7,10 +7,9 @@ import Image from "next/image";
 const BrandCarousel = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const sliderSettings = {
-    dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
@@ -96,6 +95,8 @@ const BrandCarousel = () => {
 
   return (
     <div className="brand-carousel">
+      {/* <h1>Our Partners</h1> */}
+      <div className="carouselHolder">
       <Slider {...sliderSettings} className="slider">
         {brandimages.map((image, index) => (
           <div key={index} className="slide">
@@ -103,6 +104,12 @@ const BrandCarousel = () => {
           </div>
         ))}
       </Slider>
+      </div>
+      <div className="outerHrHolder">
+        <div className="innerHr1"></div>
+        <p>Our Partners</p>
+        <div className="innerHr2"></div>
+      </div>
     </div>
   );
 };
