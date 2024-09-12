@@ -97,13 +97,13 @@ const BrandCarousel = () => {
     <div className="brand-carousel">
       {/* <h1>Our Partners</h1> */}
       <div className="carouselHolder">
-      <Slider {...sliderSettings} className="slider">
-        {brandimages.map((image, index) => (
-          <div key={index} className="slide">
-            <Image {...image} className="slide-image" />
-          </div>
-        ))}
-      </Slider>
+        <Slider {...sliderSettings} className="slider">
+          {brandimages.map((image, index) => (
+            <div key={index} className="slide">
+              <Image {...image} className="slide-image" />
+            </div>
+          ))}
+        </Slider>
       </div>
       <div className="outerHrHolder">
         <div className="innerHr1"></div>
