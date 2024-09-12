@@ -19,6 +19,7 @@
 }
 .heroContent{
     width: 100%;
+    position: relative;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -31,6 +32,7 @@
 }
 .box{
     padding: 4%;
+    position: relative;
     max-width: fit-content;
     max-height: fit-content;
     p{
@@ -155,7 +157,6 @@
 // Brand Carousel Styles //
 .brand-carousel {
     padding: 30px 0 ;
-    background: linear-gradient(135deg, #1e3c72 0%, #000000 50%);
     text-align: center;
     font-size: 28px;
   }
@@ -295,4 +296,10 @@
   @media screen and (max-width:425px) {
     margin-right: 20px;
   }
+}
+.partHeader{
+  font-size: 40px;
+}
+.partImage{
+  border-radius: 10px;
 }

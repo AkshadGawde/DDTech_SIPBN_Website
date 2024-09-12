@@ -17,7 +17,7 @@ function HeroFeatures() {
    
 
   return (
-    <div className='heroContainer' style={{background:"linear-gradient(135deg, #1e3c72 0%, #000000 50%)"}}>
+    <div className='heroContainer'>
       <div className="featureContainer">
         <h1>WHERE BUSINESS LEADERS <br /> CONVERGE</h1>
         <hr />
@@ -27,7 +27,7 @@ function HeroFeatures() {
             <button className='secondary-button' onClick={handleImpact}>IMPACTFUL DESICION MAKERS</button>
             <button className='button-primary' onClick={handleInnovate}>INNOVATIVE ENTREPRENEURS</button>
         </div>
-        <img src={`${src}`} alt="" className='featureImg'/>
+        <img src={`${src}`} alt="" className='featureImg'/> 
       </div>
       {/* <div style={{display:"flex", marginBottom:"30px"}}>
         <button className='secondary-button'>Download Brocher</button>

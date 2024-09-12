@@ -3,7 +3,7 @@ import React from 'react'
 function HeroPurpose() {
   return (
     <>
-    <div className="heroContainer" style={{background:"linear-gradient(135deg, #1e3c72 0%, #000000 50%)"}}>
+    <div className="heroContainer">
         <div className="purposeContainer">
             <h1>Purpose+</h1>
             <h2>Our inspiratoin for 2024: Empowerment through Purpose+</h2>

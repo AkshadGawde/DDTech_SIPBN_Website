@@ -7,7 +7,9 @@ import { Title, TitleLogo, TitleSm } from "@/components/common/Title";
 import { Brand } from "@/components/router";
 import Image from "next/image";
 import Link from "next/link";
+import HeroParts from "@/components/HeroPage/HeroParts"
 import HeroInfo from "@/components/HeroPage/HeroInfo";
+import HeroCheckout from "@/components/HeroPage/HeroCheckout"
 import HeroPurpose from "@/components/HeroPage/HeroPurpose";
 import HeroFeatures from "@/components/HeroPage/HeroFeatures";
 import BrandCarousel from "@/components/HeroPage/BrandCarousel";
@@ -21,12 +23,15 @@ function Hero() {
 
       <section>
         <HeroMain />
+        <div style={{background:"linear-gradient(135deg, #1e3c72 0%, #000000 50%)"}}>
         <BrandCarousel />
-        {/* Insert Carousel here */}
         <HeroInfo />
         <Expertise />
         <HeroPurpose />
         <HeroFeatures />
+        <HeroParts/>
+        <HeroCheckout/>
+        </div>
       </section>
 
       {/* <div className="marquee-hero">
