@@ -7,8 +7,43 @@ const Agency = () => {
       <div className="marquee-hero">
         <Marqueee className="marquee" />
       </div>
+
+    
+
       <section className="agency bg-top">
         <div className="container">
+
+        <div className="heading-title">
+            <Title title="Message from our President" />
+            <div className="presContainer">
+              <div className="presImgContainer">
+                <img
+                  src="https://res.cloudinary.com/dueoon8xe/image/upload/v1721977790/Speakers%20-%20Sipbn/brqtqgoijfjvulkac0g7.png"
+                  height="110px"
+                  className="presImg"
+                />
+                <h2>Raman Bhalla</h2>
+              </div>
+              <p style={{ fontSize: "medium", textAlign: "left" }}>
+                The purpose of Sydney Investors, Professionals and Business
+                Networking Group Incorporated ("SIPBN") is to connect projects
+                with sources of capital and provide a global business platform
+                for growing Australian businesses.
+                <br />
+                <br />
+                We are sector agnostic...
+              </p>
+            </div>
+            {/* <a
+              href="https://forms.gle/GLbvrFiTyUjfmadF7"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="button-primary"
+            >
+              Apply for Membership
+            </a> */}
+          </div>
+
           <div className="heading-title">
             <Title title="What is SIPBN?" />
             <p className="advisoryDescription">

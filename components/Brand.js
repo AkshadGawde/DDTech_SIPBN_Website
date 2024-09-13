@@ -26,7 +26,7 @@ const Brand = () => {
             ))}
           </div>
 
-          <div className="heading-title">
+          {/* <div className="heading-title">
             <Title title="In the Media" />
           </div>
           <div className="brand-content grid-7 py">
@@ -40,7 +40,7 @@ const Brand = () => {
                 />
               </div>
             ))}
-          </div>
+          </div> */}
         </div>
       </section>
     </>

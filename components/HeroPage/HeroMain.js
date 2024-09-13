@@ -32,11 +32,9 @@ function HeroMain() {
          <div className="box"data-aos="fade-left">
             <div className='mediaHolder'>
             <img src="https://info.wobi.com/wp-content/uploads/2023/11/wbf_syd_2024_logo_with_dates.svg?_t=1701360011" className='brandImage'  alt="" />
-            <div className='videoPlayer '>
-                 <video style={{width:'100%', borderRadius:"10px"}} controls>
+                 <video style={{width:'60%', borderRadius:"10px"}} controls>
                     <source src='https://res.cloudinary.com/dueoon8xe/video/upload/v1723785194/Speakers%20-%20Sipbn/hshdkrcut1ziuoddwwnd.mp4'/>
                  </video>
-            </div>
             </div>
          </div>
       </div>
