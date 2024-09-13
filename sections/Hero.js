@@ -36,7 +36,7 @@ function Hero() {
           background: "linear-gradient(rgba(12,3,51,0.3), rgba(12,3,51,0.3))",
         }}
       >
-        <div data-aos="fade-right">
+        <div>
           <HeroMain />
         </div>
 
