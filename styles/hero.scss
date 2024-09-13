@@ -466,19 +466,19 @@ $button-color: #f4e38b;
     border: 2px solid rgba(255, 255, 255, 0.2);
 
     &.image-1 {
-      background-image: url('');
+      background-image: url('https://plus.unsplash.com/premium_photo-1661497675847-2075003562fd?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y29ycG9yYXRlfGVufDB8fDB8fHww');
     }
 
     &.image-2 {
-      background-image: url('');
+      background-image: url('https://info.wobi.com/wp-content/uploads/2023/11/wbf_syd_2023_sponsors_001_840x560-min.webp?_t=1701080635');
     }
 
     &.image-3 {
-      background-image: url('');
+      background-image: url('https://info.wobi.com/wp-content/uploads/2023/11/wbf_syd_2023_vip_attendee_003_840x560-min.webp?_t=1701080650');
     }
 
     &.image-4 {
-      background-image: url('');
+      background-image: url('https://info.wobi.com/wp-content/uploads/2023/11/wbf_syd_2023_nooyi_002_840x560-min.webp?_t=1701949949');
     }
   }
 
@@ -826,4 +826,10 @@ span {
     margin: 15px;
   }
   
+}
+.squareImage{
+  max-width: 250px;
+  max-height: 120px;
+  object-fit: contain;
+  overflow: hidden;
 }
