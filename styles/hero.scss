@@ -100,7 +100,7 @@
 
 /* Agenda Section */
 .agendaText {
-  text-align: center;
+  text-align: left;
 }
 
 .agendaBox {
@@ -127,7 +127,7 @@
 
 .agendaImage {
   width: 80%;
-  transition: transform 0.4s ease;
+  transition: transform 1.4s ease;
 }
 
 .agendaImage:hover {
@@ -319,11 +319,15 @@
 }
 
 .partImage {
+  width: 80%;
+  max-width: 600px;
   border-radius: 10px;
   transition: transform 0.4s ease;
+  object-fit: cover;
 
   &:hover {
-      transform: scale(1.05);
+      transform: scale(1.45);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
 }
 
@@ -464,7 +468,7 @@ $button-color: #f4e38b;
     border: 2px solid rgba(255, 255, 255, 0.2);
 
     &.image-1 {
-      background-image: url('https://plus.unsplash.com/premium_photo-1661497675847-2075003562fd?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y29ycG9yYXRlfGVufDB8fDB8fHww');
+      background-image: url('https://res.cloudinary.com/dueoon8xe/image/upload/v1726315680/lylg3pvagspfqct3xss5.jpg');
     }
 
     &.image-2 {
@@ -476,7 +480,7 @@ $button-color: #f4e38b;
     }
 
     &.image-4 {
-      background-image: url('https://info.wobi.com/wp-content/uploads/2023/11/wbf_syd_2023_nooyi_002_840x560-min.webp?_t=1701949949');
+      background-image: url('https://res.cloudinary.com/dueoon8xe/image/upload/v1726315686/tfp5yxirqgo65sh8bt1x.jpg');
     }
   }
 
@@ -676,11 +680,11 @@ span {
   margin: 0 2%;
   h3{
     font-weight: 100;
-    font-size: 36px;
+    font-size: 30px;
   }
   h2{
     font-weight: 600;
-    font-size: 48px;
+    font-size: 40px;
     margin-top: 40px;
   }
   span{

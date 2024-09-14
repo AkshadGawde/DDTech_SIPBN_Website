@@ -1,8 +1,15 @@
 import React, { useState, useEffect } from "react";
+import AOS from "aos";
 
 const CountdownTimer = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 2500, // Animation duration in milliseconds
+    });
+  }, []);
+
   const calculateTimeLeft = () => {
-    const eventDate = new Date("2024-09-30T00:00:00");
+    const eventDate = new Date("2024-10-26T00:00:00");
     const currentTime = new Date();
     const difference = eventDate - currentTime;
 
