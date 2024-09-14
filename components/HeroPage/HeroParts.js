@@ -3,7 +3,7 @@ import React from 'react'
 function HeroParts() {
   return (
     <div className='heroContainer'>
-        <div className="heroContent">
+        <div className="heroContent" style={{padding:"10px", justifyContent:"space-evenly"}}>
             <div className="box">
                 <h1 className='partHeader'>
                 20+ YEARS OF <br /> INSPIRING THE <br /> GLOBAL <br /> EXECUTIVE <br /> COMMUNITY
