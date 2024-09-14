@@ -21,8 +21,8 @@ function HeroFeatures() {
       <div className="featureContainer">
         <h1>WHERE BUSINESS LEADERS <br /> CONVERGE</h1>
         <hr />
-      <div className="heroContent" style={{justifyContent:"center"}}>
-        <div className="featureContainer" style={{justifyContent:"flex-end" , alignItems:"normal"}}>
+      <div className="heroContent" style={{justifyContent:"center", marginTop:"20px", padding:"10px 30px"}}>
+        <div className="featureContainer" style={{justifyContent:"flex-end" , alignItems:"normal", marginRight:"40px"}}>
             <button className='button-primary' onClick={handleGameChanger}>GAME-CHANGING CEOS</button>
             <button className='secondary-button' onClick={handleImpact}>IMPACTFUL DESICION MAKERS</button>
             <button className='button-primary' onClick={handleInnovate}>INNOVATIVE ENTREPRENEURS</button>

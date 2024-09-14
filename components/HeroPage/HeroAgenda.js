@@ -4,7 +4,7 @@ function HeroAgenda() {
   return (
     <div className='agendaContent'>
       <h1>2024 Agenda</h1>
-      <hr />
+      <hr style={{width:"35%"}}/>
       <div className='agendaBox2'>
 
       <div className="agendaTable">

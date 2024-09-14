@@ -1,86 +1,91 @@
 import React, { useState } from 'react';
 
 function TicketPage() {
-  return (
-    <div className='ticketContent'>
-      <div className="ticketCard">
-        <h3>Platinum</h3>
-        <div className='customHr'></div>
-        <h2>
-          $3,390
-        </h2>
-        <span>
-          $4,500
-        </span>
-        <CardDropDown content={{
-          "l1": "Mera Lund",
-          "l2": "Tera Lund"
-        }} />
+    return (
+      <div className='ticketContent'>
+        <div className="ticketCard">
+          <h3>Platinum</h3>
+          <div className='customHr' style={{ background: "linear-gradient(135deg, #b9fbc0, #00d2ff)" }}></div>
+          <h2>$3,390</h2>
+          <span>$4,500</span>
+          <CardDropDown 
+            content={{
+              l1: "Welcome Drinks at NSW Parliament House on Monday 25 November 2024",
+              l2: "#CapTech2024 Summit on Tuesday 26 November 2024 at ICC Sydney",
+              l3: "#CapTech2024 Summit on Tuesday 26 November 2024 post networking drinks",
+              l4: "Business Matching session on Wednesday 27 November 2024 at Shangri-La Sydney",
+              l5:"Exclusive and Invitation Only Private Diner on Thursday 28 November 2024"
+            }} 
+            maxHeight="660px" 
+          />
+
+            <button className='ticketButton'>Buy Now</button>
+
+        </div>
+        
+        <div className="ticketCard">
+          <h3>Gold</h3>
+          <div className='customHr' style={{ background: "linear-gradient(135deg, #f9d423, #ff4e50)" }}></div>
+          <h2>$2,500</h2>
+          <span>$3,000</span>
+          <CardDropDown 
+            content={{
+              l1: "Welcome Drinks at NSW Parliament House on Monday 25 November 2024",
+              l2: "CapTech2024 Summit on Tuesday 26 November 2024 at ICC Sydney",
+              l3: "CapTech2024 Summit on Tuesday 26 November 2024 post networking drinks"
+            }} 
+            maxHeight="400px" 
+          />
+          <button className='ticketButton'>Buy Now</button>
+        </div>
+        
+        <div className="ticketCard">
+          <h3>Silver</h3>
+          <div className='customHr' style={{ background: "linear-gradient(135deg, #dcdcdc, #f5f5f5)" }}></div>
+          <h2>$1,500</h2>
+          <span>$2,000</span>
+          <CardDropDown 
+            content={{
+              l1: "#CapTech2024 Summit on Tuesday 26 November 2024 at ICC Sydney",
+              l2: "#CapTech2024 Summit on Tuesday 26 November 2024 post networking drinks"
+            }} 
+            maxHeight="300px" 
+          />
+          <button className='ticketButton'>Buy Now</button>
+        </div>
+  
+        <div className="ticketCard">
+          <h3>Corporate Table</h3>
+          <div className='customHr' style={{ background: "linear-gradient(135deg, #d50032, #c51162)" }}></div>
+          <h2>$11,990</h2>
+          <span>$15,000</span>
+          <CardDropDown 
+            content={{
+              l1: "#CapTech2024 Summit on Tuesday 26 November 2024 at ICC Sydney",
+              l2: "#CapTech2024 Summit on Tuesday 26 November 2024 post networking drinks"
+            }} 
+            maxHeight="200px" 
+          />
+          <button className='ticketButton'>Buy Now</button>
+        </div>
       </div>
+    );
+  }
 
-      <div className="ticketCard">
-        <h3>Platinum</h3>
-        <div className='customHr'></div>
-        <h2>
-          $3,390
-        </h2>
-        <span>
-          $4,500
-        </span>
-        <CardDropDown content={{
-          "l1": "Feature 1",
-          "l2": "Feature 2"
-        }} />
-      </div>
-
-      <div className="ticketCard">
-        <h3>Platinum</h3>
-        <div className='customHr'></div>
-        <h2>
-          $3,390
-        </h2>
-        <span>
-          $4,500
-        </span>
-        <CardDropDown content={{
-          "l1": "Feature 1",
-          "l2": "Feature 2"
-        }} />
-      </div>
-
-      <div className="ticketCard">
-        <h3>Platinum</h3>
-        <div className='customHr'></div>
-        <h2>
-          $3,390
-        </h2>
-        <span>
-          $4,500
-        </span>
-        <CardDropDown content={{
-          "l1": "Feature 1",
-          "l2": "Feature 2"
-        }} />
-      </div>
-    </div>
-  );
-}
-
-export function CardDropDown({ content = { l1: 'No content', l2: 'No content' } }) {
-  const [checked, setChecked] = useState(false);
-
-  const handleMouseEnter = () => {
-    setChecked(true);  // Set the radio as checked when mouse hovers
-  };
-
-  const handleMouseLeave = () => {
-    setChecked(false);  // Uncheck the radio when the mouse leaves
-  };
-
-  const uniqueId = `accordian-${Math.random().toString(36).substr(2, 9)}`;  // Generate a unique ID for each radio button
-
-  return (
-    <>
+export function CardDropDown({ content = {}, maxHeight = '0px'}) {
+    const [checked, setChecked] = useState(false);
+  
+    const handleMouseEnter = () => {
+      setChecked(true);  // Set the radio as checked when mouse hovers
+    };
+  
+    const handleMouseLeave = () => {
+      setChecked(false);  // Uncheck the radio when the mouse leaves
+    };
+  
+    const uniqueId = `accordian-${Math.random().toString(36).substr(2, 9)}`;  // Generate a unique ID for each radio button
+  
+    return (
       <ul className="accordian">
         <li>
           <input 
@@ -97,20 +102,23 @@ export function CardDropDown({ content = { l1: 'No content', l2: 'No content' } 
           >
             Benefits
           </label>
-          <div className="accordianContent">
+          <div 
+            className="accordianContent" 
+            style={{
+              maxHeight: checked ? maxHeight : '0px',
+              transition: 'max-height 0.5s ease, padding 0.5s ease',
+              overflow: 'hidden' // Ensure content is hidden when collapsed
+            }}
+          >
             <ul className='benefitList'>
-              <li>
-                {content.l1}
-              </li>
-              <li>
-                {content.l2}
-              </li>
+              {Object.values(content).map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
             </ul>
           </div>
         </li>
       </ul>
-    </>
-  );
-}
+    );
+  }
 
 export default TicketPage;

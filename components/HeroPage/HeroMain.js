@@ -9,7 +9,7 @@ function HeroMain() {
   }, []);
   return (
     
-    <div className='heroContainer'>
+    <div className='heroContainer' style={{background: "linear-gradient(rgba(12,3,51,0.3), rgba(12,3,51,0.3))"}}>
         <video className="bgVideo" autoPlay muted loop plays-inline>
             <source src="https://res.cloudinary.com/dueoon8xe/video/upload/v1723785194/Speakers%20-%20Sipbn/hshdkrcut1ziuoddwwnd.mp4" type='video/mp4'/>
         </video>

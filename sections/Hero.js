@@ -19,6 +19,7 @@ import Link from "next/link";
 import BrandCarousel from "@/components/HeroPage/BrandCarousel";
 import TicketPage from "@/components/HeroPage/TicketPage";
 import HeroAgenda from "@/components/HeroPage/HeroAgenda";
+import SponsCarousel from "@/components/HeroPage/SponsCarousel";
 
 function Hero() {
   useEffect(() => {
@@ -27,6 +28,8 @@ function Hero() {
     });
   }, []);
 
+
+  // style={{background: "linear-gradient(135deg, #000000, #003366"}}
   return (
     <>
       <div className="marquee-hero">
@@ -35,12 +38,14 @@ function Hero() {
 
       <section
         className="hero-sec"
-        style={{
-          background: "linear-gradient(rgba(12,3,51,0.3), rgba(12,3,51,0.3))",
-        }}
+        
       >
           <HeroMain />
           {/* <BrandCarousel/> */}
+
+        <div>
+          
+        </div>
 
         <div className="container">
           {/* <div className="heading-title" data-aos="fade-left">
@@ -161,10 +166,6 @@ function Hero() {
         <BusinessForum />
       </div>
 
-      <div data-aos="fade-right">
-        <BenefitsActivities />
-      </div>
-
           <div data-aos="fade-left">
             <TicketPage/>
           </div>
@@ -172,6 +173,14 @@ function Hero() {
           <div data-aos="fade-left">
             <HeroAgenda/>
           </div>
+
+      <div data-aos="fade-right">
+        <BenefitsActivities />
+      </div>
+
+      <div data-aos="fade-right">
+          <SponsCarousel/>
+        </div>          
 
       <div data-aos="fade-right">
         <Brand />
