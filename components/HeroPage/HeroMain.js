@@ -22,12 +22,11 @@ function HeroMain() {
       </video>
       <div className="heroContent">
         <div className="box" data-aos="fade-right">
-          <p>ICC SYDNEY , 13 & 14 November 2024</p>
           <h2>
-            TWO DAYS , <br />
-            2000+ EXECUTIVES
+            #CapTech2024 <br />
+            26th November 2024
           </h2>
-          <h3>Learning & Inspiration at the World's Premier Business Event</h3>
+          <p>Discover . Connect . Execute</p>
           <div style={{ display: "flex" }}>
             <button className="button-primary">Download Brocher</button>
             <button className="secondary-button">Buy Now</button>
@@ -35,11 +34,19 @@ function HeroMain() {
         </div>
         <div className="box" data-aos="fade-left">
           <div className="mediaHolder">
-            <img
-              src="https://info.wobi.com/wp-content/uploads/2023/11/wbf_syd_2024_logo_with_dates.svg?_t=1701360011"
-              className="brandImage"
-              alt=""
-            />
+            <div className="brandImageHolder">
+              <img
+                src="/images/sipbnLogo.png"
+                className="brandImage"
+                alt=""
+              />
+              <div className="brandTextHolder">
+                <h2>#CapTech2024</h2>
+                <p>November 2024</p>
+                <hr />
+                <i>ICC SYDNEY</i>
+              </div>
+            </div>
             <video style={{ width: "60%", borderRadius: "10px" }} controls>
               <source src="https://res.cloudinary.com/dueoon8xe/video/upload/v1723785194/Speakers%20-%20Sipbn/hshdkrcut1ziuoddwwnd.mp4" />
             </video>

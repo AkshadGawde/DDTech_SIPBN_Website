@@ -12,7 +12,7 @@ const BusinessForum = () => {
           <div className="business-forum__image image-4"></div>
         </div>
         <div className="business-forum__info">
-          <h2>World Business Forum SYDNEY</h2>
+          <h2>#CapTech2024 SYDNEY</h2>
           <h3>All-Access Ticket Packs</h3>
           <ul>
             <li>Private events</li>
@@ -22,8 +22,8 @@ const BusinessForum = () => {
             <li>30-Day on-demand access</li>
             <li>Access to 100+ hours of online masterclasses</li>
           </ul>
-          <a href="#enquire" className="enquire-btn">
-            Enquire Now
+          <a href="/contact" className="enquire-btn">
+            Contact Us!
           </a>
         </div>
       </div>

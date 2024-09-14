@@ -34,17 +34,24 @@ function Hero() {
       <div className="marquee-hero">
         <Marqueee className="marquee" />
       </div>
+      <HeroMain />
+
+      <div className="brandCarouselHolder">
+        <BrandCarousel/>
+      </div>
 
       <section
         className="hero-sec"
         
+          
+
       >
-          <HeroMain />
-          {/* <BrandCarousel/> */}
 
         <div>
           
+
         </div>
+
 
         <div className="container">
           {/* <div className="heading-title" data-aos="fade-left">
@@ -79,7 +86,7 @@ function Hero() {
           </div> */}
 
 
-          <div data-aos="fade-right">
+          <div data-aos="fade-left">
             <HeroInfo />
           </div>
 
@@ -115,9 +122,7 @@ function Hero() {
         </div> */}
       </section>
 
-      <div data-aos="fade-left">
-        <Expertise />
-      </div>
+      
 
       <div data-aos="fade-right">
         <Banner />
@@ -165,7 +170,7 @@ function Hero() {
         <BusinessForum />
       </div>
 
-          <div data-aos="fade-left">
+          <div data-aos="fade-right">
             <TicketPage/>
           </div>
 
@@ -177,6 +182,9 @@ function Hero() {
         <BenefitsActivities />
       </div>
          
+      <div data-aos="fade-left">
+        <Expertise />
+      </div>
 
       <div data-aos="fade-right">
         <Brand />

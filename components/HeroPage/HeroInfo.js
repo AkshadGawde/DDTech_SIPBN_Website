@@ -10,13 +10,13 @@ function HeroInfo() {
   }, []);
   return (
     <>
-      <div className="heroContainer">
-        <div className="heroContent">
-          <div className="agendaBox">
+      <div className="heroContainer" style={{padding:'10px' , justifyContent:"space-evenly"}}>
+        <div className="heroContent" style={{padding:'10px' , justifyContent:"space-evenly"}}>
+          <div className="agendaBox" style={{padding:'10px' , justifyContent:"space-evenly"}}>
             <div className="logoCutout">
-              <h2>SIPBN</h2>
+              <img src="/images/sipbnLogo.png" alt=""/>
               <hr />
-              <h2>2024</h2>
+              <h2>#CapTech2024</h2>
             </div>
             <div>
               <p className="agendaText">

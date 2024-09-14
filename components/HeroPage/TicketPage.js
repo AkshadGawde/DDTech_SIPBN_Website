@@ -4,7 +4,7 @@ function TicketPage() {
     return (
       <div className='ticketContent'>
         <div className="ticketCard">
-          <h3>Platinum</h3>
+          <h3>CapTech2024 <br /> Summit Pass</h3>
           <div className='customHr' style={{ background: "linear-gradient(135deg, #b9fbc0, #00d2ff)" }}></div>
           <h2>$3,390</h2>
           <span>$4,500</span>
@@ -24,7 +24,7 @@ function TicketPage() {
         </div>
         
         <div className="ticketCard">
-          <h3>Gold</h3>
+          <h3>#CapTech2024 Summit + Welcome Drinks</h3>
           <div className='customHr' style={{ background: "linear-gradient(135deg, #f9d423, #ff4e50)" }}></div>
           <h2>$2,500</h2>
           <span>$3,000</span>
@@ -40,7 +40,7 @@ function TicketPage() {
         </div>
         
         <div className="ticketCard">
-          <h3>Silver</h3>
+          <h3>#CapTech2024 <br /> + Post Networking</h3>
           <div className='customHr' style={{ background: "linear-gradient(135deg, #dcdcdc, #f5f5f5)" }}></div>
           <h2>$1,500</h2>
           <span>$2,000</span>
@@ -55,7 +55,7 @@ function TicketPage() {
         </div>
   
         <div className="ticketCard">
-          <h3>Corporate Table</h3>
+          <h3>#CapTech2024  Corporate Table of 10</h3>
           <div className='customHr' style={{ background: "linear-gradient(135deg, #d50032, #c51162)" }}></div>
           <h2>$11,990</h2>
           <span>$15,000</span>
@@ -100,7 +100,7 @@ export function CardDropDown({ content = {}, maxHeight = '0px'}) {
             onMouseEnter={handleMouseEnter} 
             onMouseLeave={handleMouseLeave}
           >
-            Benefits
+            Inclusions
           </label>
           <div 
             className="accordianContent" 
