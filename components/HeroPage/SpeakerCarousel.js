@@ -2,6 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import { memberdata } from "@/assets/data/dummydata";
 import { Title } from "../common/Title";
+import { CldImage } from "next-cloudinary";
 
 const CarouselWithText = () => {
   const settings = {
@@ -14,20 +15,6 @@ const CarouselWithText = () => {
     pauseOnHover: true,
   };
 
-  const slidesData = [
-    {
-      img: "https://via.placeholder.com/800x400?text=Image+1",
-      caption: "Caption for Image 1",
-    },
-    {
-      img: "https://via.placeholder.com/800x400?text=Image+2",
-      caption: "Caption for Image 2",
-    },
-    {
-      img: "https://via.placeholder.com/800x400?text=Image+3",
-      caption: "Caption for Image 3",
-    },
-  ];
 
   return (
     <>
@@ -36,8 +23,10 @@ const CarouselWithText = () => {
       <Slider {...settings}>
         {memberdata.map((slide, index) => (
           <div key={index}>
-            <img 
+            <CldImage 
               src={slide.cover} 
+              width={500}
+              height={500}
               alt={`slide-${index}`} 
               className="carousel-image"  // Add class for custom styling
             />
