@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Title,TitleSm } from '../common/Title';
 
 function TicketPage() {
     return (
@@ -6,7 +7,7 @@ function TicketPage() {
       <div
       style={{ display: "flex", alignItems: "center", flexDirection: "column", marginBottom:"20px"}}
     >
-      <h1 style={{margin:"2%"}} className="timerHeader">TICKET AVAILABILITY IS LIMITED GET YOURS TODAY</h1>
+      <TitleSm title="TICKET AVAILABILITY IS LIMITED GET YOURS TODAY"/>  
       <hr style={{ width: "20%", border: 0, borderTop: "1px solid #ccc;" }} />
       <h2>Valid Until 27th september!</h2>
       {/* Insert countdown */}

@@ -217,8 +217,11 @@
 }
 
 .agendaImage {
-  max-width: 500px;
+  max-width: 480px;
   transition: transform 1.4s ease;
+  @media screen and (max-width:550px) {
+      max-width: 340px;
+  }
 }
 
 .agendaImage:hover {
@@ -278,6 +281,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-right: 40px;
+  @media screen and (max-width:800px) {
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
 
   h1 {
       font-size: 2.5rem;
@@ -1036,4 +1044,49 @@ input[type="radio"] {
   @media screen and (max-width:768px) {
     text-align: center;
   }
+}
+.carousel-image {
+  max-width: 500px; /* Set the image width */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Ensures it's treated as a block-level element */
+  margin: 0 auto; /* Center the image */
+  border-radius: 10px; /* Optional: for rounded corners */
+  @media screen and (max-width:650px) {
+    max-width: 350px;
+  }
+}
+/* Container for carousel */
+.slick-slide {
+  position: relative; /* Ensure the arrows are positioned relative to the slide */
+}
+
+/* Position the previous arrow */
+.slick-prev {
+  left: 0; /* Align to the left edge of the image */
+  top: 50%; /* Vertically center the arrow */
+  transform: translateY(-50%); /* Adjust vertical alignment */
+  z-index: 10; /* Ensure the arrow is on top of the image */
+}
+
+/* Position the next arrow */
+.slick-next {
+  right: 0; /* Align to the right edge of the image */
+  top: 50%; /* Vertically center the arrow */
+  transform: translateY(-50%); /* Adjust vertical alignment */
+  z-index: 10; /* Ensure the arrow is on top of the image */
+}
+
+/* Optional: Customize arrow style */
+.slick-prev:before, .slick-next:before {
+  color: #fff; /* Change arrow color */
+  font-size: 24px; /* Adjust arrow size */
+}
+
+.sliderSpeaker{
+  transition: all 0.5s ease;
+}
+
+.sliderSpeaker:hover{
+  transform: scale(1.2);
+  color: #0073ff;
 }

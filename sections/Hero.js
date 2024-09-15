@@ -19,6 +19,7 @@ import Link from "next/link";
 import BrandCarousel from "@/components/HeroPage/BrandCarousel";
 import TicketPage from "@/components/HeroPage/TicketPage";
 import HeroAgenda from "@/components/HeroPage/HeroAgenda";
+import SpeakerCarousel from "@/components/HeroPage/SpeakerCarousel";
 
 function Hero() {
   useEffect(() => {
@@ -42,6 +43,10 @@ function Hero() {
       <div className="brandCarouselHolder">
         <BrandCarousel/>
       </div>
+
+      <div data-aos="fade-right">
+              <SpeakerCarousel/>
+          </div>
 
       <section
         className="hero-sec"
@@ -87,6 +92,8 @@ function Hero() {
               Apply for Membership
             </a>
           </div> */}
+
+          
 
 
           <div data-aos="fade-left">
@@ -189,9 +196,9 @@ function Hero() {
         <Expertise />
       </div>
 
-      <div data-aos="fade-right">
+      {/* <div data-aos="fade-right">
         <Brand />
-      </div>
+      </div> */}
 
       {/* <div className="iframe-container">
         <br />

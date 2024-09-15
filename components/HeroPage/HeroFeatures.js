@@ -40,7 +40,6 @@ function HeroFeatures() {
             style={{
               justifyContent: "flex-end",
               alignItems: "normal",
-              marginRight: "40px",
             }}
           >
             <button className="button-primary" onClick={handleGameChanger}>

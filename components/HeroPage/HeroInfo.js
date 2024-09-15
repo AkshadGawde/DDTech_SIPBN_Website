@@ -13,12 +13,8 @@ function HeroInfo() {
       <div className="heroContainer" style={{padding:'10px' , justifyContent:"space-evenly"}}>
         <div className="heroContent" style={{padding:'10px' , justifyContent:"space-evenly"}}>
           <div className="agendaBox" style={{padding:'10px' , justifyContent:"space-evenly"}}>
-            <div className="logoCutout">
-              <img src="/images/sipbnLogo.png" alt=""/>
-              <hr />
-              <h2>#CapTech2024</h2>
-            </div>
             <div>
+              <h2 style={{marginBottom:"20px"}}>#CapTech2024</h2>
               <p className="agendaText">
                 Organised by SIPBN in major cities across the globe, the World
                 Business. #CapTech2024 is your gateway to the forefront of
