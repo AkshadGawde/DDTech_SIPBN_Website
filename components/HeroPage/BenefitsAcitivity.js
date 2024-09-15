@@ -1,7 +1,16 @@
 import React, { useState } from "react";
+import { useRouter } from "next/router";
 import benefit1 from "@/public/images/benefit1.png"
 
 const BenefitsActivities = () => {
+
+  const router = useRouter();
+
+  const handleEnquireClick = () => {
+    router.push("/contact");  // Redirect to the "/contact" page
+  };
+
+
   const [activeTab, setActiveTab] = useState("benefits");
 
   const handleTabChange = (tab) => {
@@ -81,7 +90,7 @@ const BenefitsActivities = () => {
         </div>
       )}
 
-      <button className="enquire-button">
+      <button className="enquire-button" onClick={handleEnquireClick}>
         ENQUIRE ABOUT SPONSORSHIP OPPORTUNITIES
       </button>
     </div>
