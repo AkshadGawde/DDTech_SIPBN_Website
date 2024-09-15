@@ -38,7 +38,9 @@ const CountdownTimer = () => {
   }, [timeLeft]);
 
   return (
-    <div className="timer-container heroContainer">
+    <>
+    <div className="timer-container">
+      
       <div className="timer">
         <div className="time-box">
           <h2 className="digits">{timeLeft.days || "0"}</h2>
@@ -61,6 +63,7 @@ const CountdownTimer = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

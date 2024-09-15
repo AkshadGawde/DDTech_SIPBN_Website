@@ -9,7 +9,7 @@ const BenefitsActivities = () => {
   };
 
   return (
-    <div className="benefits-activities-container heroContainer">
+    <div className="benefits-activities-container ">
       <div className="tabs">
         <button
           className={activeTab === "benefits" ? "tab active" : "tab"}

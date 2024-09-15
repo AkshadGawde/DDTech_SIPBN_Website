@@ -12,6 +12,7 @@ function HeroMain() {
       className="heroContainer"
       style={{
         background: "linear-gradient(rgba(12,3,51,0.3), rgba(12,3,51,0.3))",
+        padding:"5% 0"
       }}
     >
       <video className="bgVideo" autoPlay muted loop plays-inline>

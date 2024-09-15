@@ -96,7 +96,7 @@ const BrandCarousel = () => {
   return (
     <div className="brand-carousel">
       {/* <h1>Our Partners</h1> */}
-      <div className="carouselHolder">
+      <div className="carouselHolder" style={{display:"block"}}>
         <Slider {...sliderSettings} className="slider">
           {brandimages.map((image, index) => (
             <div key={index} className="slide">

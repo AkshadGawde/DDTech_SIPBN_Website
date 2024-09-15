@@ -2,7 +2,7 @@ import React from "react";
 
 function HeroParts() {
   return (
-    <div className="heroContainer">
+    <div className="heroContainer" style={{height:"100%"}}>
       <div
         className="heroContent"
         style={{ padding: "10px", justifyContent: "space-evenly" }}

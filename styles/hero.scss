@@ -8,8 +8,15 @@
 /* Hero Section */
 .heroContainer {
   width: 100%;
+  height: 100%;
   position: relative;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media screen and (min-width: 1024px) {
+    height: 85vh;
+  }
 }
 
 .bgVideo {
@@ -19,104 +26,150 @@
   width: 100vw;
   height: 100vh;
   object-fit: cover;
-  opacity: 10%;
+  opacity: 0.1;
   z-index: -1;
 }
 
-/* Hero Content */
 .heroContent {
-  width: 100%;
-  position: relative;
+  z-index: 1;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  padding: 5%;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 5%;
+  color: #fff;
+  
   @media screen and (max-width: 800px) {
-      flex-direction: column;
-      text-align: center;
-      padding: 2%;
+    flex-direction: column;
+    text-align: center;
+    padding: 2%;
   }
 }
 
 /* Content Box */
 .box {
-  padding: 4%;
-  max-width: 80%;
+  padding: 2%;
+  max-width: 50%;
   color: #fff;
   text-align: left;
-  transition: transform 0.3s ease;
-  
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 10px;
+
   h2 {
-      font-size: 2rem;
-      margin-bottom: 10px;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-weight: bold;
   }
 
   p {
-      font-size: 1.2rem;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+
+  button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .button-primary {
+    background-color: #0073ff;
+    color: #fff;
+    transition: background-color 0.3s ease;
+    border-radius: 30px;
+  }
+
+  .button-primary:hover {
+    background-color: #005fcc;
+  }
+
+  .secondary-button {
+    background-color: #fff;
+    color: #0073ff;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 30px;
+  }
+
+  .secondary-button:hover {
+    background-color: #0073ff;
+    color: #fff;
   }
 
   &:hover {
-      transform: translateY(-5px);
+    transform: translateY(-10px);
   }
 
   @media screen and (max-width: 800px) {
-      text-align: center;
-      max-width: 100%;
+    text-align: center;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
 /* Media Holder */
 .mediaHolder {
-  // max-width: 70%;
-  width: max-content;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 20px;
 
   @media screen and (max-width: 800px) {
-      max-width: 100%;
+    max-width: 100%;
+  }
+}
+
+.brandImageHolder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+
+  img {
+    max-width: 150px;
+    height: auto;
+    border-radius: 50%;
+  }
+}
+
+.brandTextHolder {
+  text-align: center;
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 5px;
+  }
+
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+
+  hr {
+    border: 1px solid #0073ff;
+    width: 100px;
+    margin: 10px auto;
+  }
+
+  i {
+    font-size: 1rem;
+    font-style: italic;
   }
 }
 
 .videoPlayer {
-  margin-top: 20px;
+  width: 100%;
+  max-width: 600px;
   border-radius: 10px;
-  max-width: 52%;
   object-fit: cover;
 }
 
-.brandImage {
-  max-width: 40%;
-  height: auto;
-}
-.brandImageHolder{
-  display: flex;
-  justify-content: center;
-  max-width: fit-content;
-  align-items: center;
-}
-
-.brandTextHolder{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;;
-  hr{
-    margin: 0;
-    border-radius: 20px;
-    border: 1px solid #0073ff;
-  }
-  h2{
-    font-size: 26px;
-    margin-bottom: 0;
-  }
-  p{
-    font-size: 22px;
-  }
-  i{
-    font-size: 16px;
-  }
-}
 
 .logoCutout {
   padding: 10px;
@@ -164,7 +217,7 @@
 }
 
 .agendaImage {
-  width: 80%;
+  max-width: 500px;
   transition: transform 1.4s ease;
 }
 
@@ -181,6 +234,7 @@
   align-items: center;
   flex-direction: column;
   color: #fff;
+  padding:50px;
   margin-top: 3.5rem;
   h1 {
       font-size: 3.5rem;
@@ -190,6 +244,7 @@
   h2 {
       font-size: 28px;
       margin-top: 20px;
+      text-align: center;
   }
   p{
     text-align: left;
@@ -205,7 +260,7 @@
 }
 
 .purposeTextContainer {
-  max-width: 600px;
+  max-width: 1050px;
   margin-top: 10px;
   text-align: center;
   font-size: 14px;
@@ -223,7 +278,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 5%;
 
   h1 {
       font-size: 2.5rem;
@@ -239,7 +293,7 @@
 
 .featureImg {
   border-radius: 10px;
-  width: 50%;
+  max-width: 800px;
   transition: transform 0.4s ease;
 
   &:hover {
@@ -374,7 +428,7 @@
   object-fit: cover;
 
   &:hover {
-      transform: scale(1.45);
+      transform: scale(1.2);
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
 }
@@ -399,7 +453,6 @@ $button-color: #f4e38b;
     .tab {
       background: none;
       border: none;
-
       color: white;
       font-size: 1.2rem;
       padding: 1rem 2rem;
@@ -422,6 +475,7 @@ $button-color: #f4e38b;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    gap: 1.5rem; /* Adding gap for better spacing */
 
     .benefit-item,
     .activity-item {
@@ -429,6 +483,7 @@ $button-color: #f4e38b;
       min-width: 200px;
       margin: 1rem 0;
       text-align: center;
+      flex: 1; /* Allow items to grow and take available space */
 
       img {
         width: 50px;
@@ -464,16 +519,58 @@ $button-color: #f4e38b;
     }
   }
 
-  @media (max-width: 768px) {
+  /* Responsiveness for tablets and smaller devices */
+  @media (max-width: 1024px) {
     .benefits-content,
     .activities-content {
-      flex-direction: column;
-      align-items: center;
+      justify-content: center; /* Center content on medium screens */
+      gap: 2rem; /* More spacing between items for clarity */
+    }
 
-      .benefit-item,
-      .activity-item {
-        width: 80%;
+    .benefit-item,
+    .activity-item {
+      width: 40%; /* Increase width for better readability on medium screens */
+      min-width: 150px; /* Adjust for smaller screen devices */
+    }
+  }
+
+  /* Responsiveness for mobile devices */
+  @media (max-width: 480px) {
+    .benefits-content,
+    .activities-content {
+      flex-direction: column; /* Stack items vertically */
+      align-items: center;
+      gap: 2rem; /* Provide more spacing between items */
+    }
+
+    .benefit-item,
+    .activity-item {
+      width: 80%; /* Make items wider on mobile devices for readability */
+    }
+  }
+
+  /* Extra small screens */
+  @media (max-width: 480px) {
+    .tabs {
+      flex-direction: row; /* Stack tabs on top of each other */
+      margin-bottom: 1rem;
+
+      .tab {
+        font-size: 1rem; /* Adjust font size for smaller screens */
+        padding: 0.8rem 1.5rem;
       }
+    }
+
+    .benefit-item,
+    .activity-item {
+      width: 100%; /* Full width for items on very small screens */
+      margin-bottom: 2rem; /* Add more margin to separate items */
+    }
+
+    .enquire-button {
+      width: 100%; /* Full-width button for small screens */
+      padding: 1rem;
+      margin-top: 1.5rem;
     }
   }
 }
@@ -538,6 +635,9 @@ $button-color: #f4e38b;
     justify-content: center;
     padding-left: 20px;
     color: white;
+    @media screen and (max-width:768px) {
+        text-align: center;
+    }
 
     h2 {
       font-size: 2rem;
@@ -728,7 +828,7 @@ span {
   margin: 0 2%;
   h3{
     font-weight: 100;
-    font-size: 28px;
+    font-size: 20px;
     text-align: center;
   }
   h2{
@@ -762,7 +862,7 @@ span {
       min-width: 300px;
     }
       flex-wrap: wrap;
-      gap: 20px;
+      gap: 20px 0;
   }
   @media screen and (max-width: 600px) {
     flex-direction: column;
@@ -895,30 +995,30 @@ input[type="radio"] {
   max-width: 100%;
   flex:1;
   .dateMonth{
-    font-size: 32px;
+    font-size: 40px;
     @media  screen and (max-width:1024px) {
-      font-size: 24px;
+      font-size: 32px;
     }
     @media screen and (max-width:768px) {
-      font-size: 16px;
+      font-size: 20px;
     }
   }
   .dateDay{
     font-size: 60px;
     @media  screen and (max-width:1024px) {
-      font-size: 40px;
+      font-size: 52px;
     }
     @media screen and (max-width:768px) {
-      font-size: 30px;
+      font-size: 36px;
     }
   }
   .dateYear{
-    font-size: 28px;
+    font-size: 36px;
     @media  screen and (max-width:1024px) {
-      font-size: 20px;
+      font-size: 28px;
     }
     @media screen and (max-width:768px) {
-      font-size: 10px;
+      font-size: 20px;
     }
   }
   .dateHolder{

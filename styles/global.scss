@@ -1,4 +1,10 @@
 /*  Hero Section */
+html, body {
+  overflow-x: hidden;
+}
+body {
+  position: relative
+}
 .hero {
   text-align: center;
   padding: $xl-6 0;

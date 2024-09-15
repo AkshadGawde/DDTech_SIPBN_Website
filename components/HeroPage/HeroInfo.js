@@ -41,7 +41,14 @@ function HeroInfo() {
             <img
               src="https://res.cloudinary.com/dueoon8xe/image/upload/v1726314898/v3nyhcglpafyizkdurcr.png"
               alt=""
-              style={{ borderRadius: "10%" }}
+              style={{ borderRadius: "40px" }}
+              className="agendaImage"
+            />
+            <br />
+            <img
+              src="https://res.cloudinary.com/dueoon8xe/image/upload/v1726314898/v3nyhcglpafyizkdurcr.png"
+              alt=""
+              style={{ borderRadius: "40px" }}
               className="agendaImage"
             />
           </div>

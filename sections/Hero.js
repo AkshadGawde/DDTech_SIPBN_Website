@@ -31,10 +31,13 @@ function Hero() {
   // style={{background: "linear-gradient(135deg, #000000, #003366"}}
   return (
     <>
+    
       <div className="marquee-hero">
         <Marqueee className="marquee" />
       </div>
       <HeroMain />
+
+      <div style={{background:"linear-gradient(270deg, #0a0f45, #000000)"}}>
 
       <div className="brandCarouselHolder">
         <BrandCarousel/>
@@ -158,9 +161,9 @@ function Hero() {
         <HeroParts />
       </div>
 
-      <div data-aos="fade-left">
+      {/* <div data-aos="fade-left">
         <HeroCheckout />
-      </div>
+      </div> */}
 
       <div data-aos="fade-right">
         <CountdownTimer />
@@ -203,6 +206,7 @@ function Hero() {
           ></iframe>
         </div>
       </div> */}
+      </div>
     </>
   );
 }

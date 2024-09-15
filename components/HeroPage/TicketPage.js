@@ -2,6 +2,15 @@ import React, { useState } from 'react';
 
 function TicketPage() {
     return (
+      <>
+      <div
+      style={{ display: "flex", alignItems: "center", flexDirection: "column", marginBottom:"20px"}}
+    >
+      <h1 style={{margin:"2%"}} className="timerHeader">TICKET AVAILABILITY IS LIMITED GET YOURS TODAY</h1>
+      <hr style={{ width: "20%", border: 0, borderTop: "1px solid #ccc;" }} />
+      <h2>Valid Until 27th september!</h2>
+      {/* Insert countdown */}
+      </div>
       <div className='ticketContent'>
         <div className="ticketCard">
           <h3>CapTech2024 <br /> Summit Pass</h3>
@@ -69,6 +78,7 @@ function TicketPage() {
           <button className='ticketButton'>Buy Now</button>
         </div>
       </div>
+      </>
     );
   }
 
