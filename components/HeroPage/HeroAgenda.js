@@ -103,7 +103,7 @@ function HeroAgenda() {
               </tr>
               <tr>
                 <td>
-                  <h2>TBD</h2>
+                  <h2>9:00 am - 5:00 pm</h2>
                 </td>
                 <td>
                   <h2>Business Matching sessions</h2>
@@ -131,7 +131,7 @@ function HeroAgenda() {
             <tbody>
               <tr>
                 <td>
-                  <h2>TBD</h2>
+                <h2>9:00 am - 5:00 pm</h2>
                 </td>
                 <td>
                   <h2>Business Matching sessions</h2>

@@ -9,8 +9,8 @@ function HeroParts() {
       >
         <div className="box">
           <h1 className="partHeader">
-            20+ YEARS OF <br /> INSPIRING THE <br /> GLOBAL <br /> EXECUTIVE{" "}
-            <br /> COMMUNITY
+          50+ SPEAKERS, BUSINESS LEADERS AND INVESTORS READY TO DO BUSINESS
+            <br />
           </h1>
         </div>
         <div className="box">

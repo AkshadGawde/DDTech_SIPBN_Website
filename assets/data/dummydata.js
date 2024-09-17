@@ -324,6 +324,14 @@ export const memberdata = [
     href: "/team/3",
   },
   {
+    id:36,
+    title:"Karen Clark",
+    cover:"",
+    post:"",
+    post:"",
+    href:""
+  },
+  {
     id: 22,
     title: "Dr. S Janakiraman",
     cover:
@@ -478,7 +486,7 @@ export const memberdata = [
   },
   {
     id: 23,
-    title: "Stela Scolar",
+    title: "Stela Solar",
     cover:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275981/Speakers%20-%20CapTech/tbwkuyn1830jzhjuiijn.png",
     post: "Inaugural Director of Australia’s National AI Centre (NAIC).",
@@ -910,7 +918,7 @@ He speaks English, Tamil, Hindi and Portuguese. He is a keen golfer. He is marri
   },
   {
     id: "23",
-    name: "Stela Scolar",
+    name: "Stela Solar",
     description: ` 
 Stela Solar is the Inaugural Director of Australia’s National AI Centre (NAIC) that was incubated by CSIRO and now resides at the Department of Industry, Science and Resources.\n
  NAIC’s mission is to accelerate positive AI adoption and innovation that benefits business and community. Currently, Stela also serves as Co-chair of the Commonwealth AI Consortium. \n

@@ -6,8 +6,8 @@ function HeroPurpose() {
     <>
       <div className="heroContainer">
         <div className="purposeContainer">
-          <Title title="Purpose+" />
-          <h2>Our inspiration for 2024: Empowerment through Purpose+</h2>
+          <Title title="Purpose" />
+          <h2>Our inspiration for 2024: Empowerment</h2>
           <p className="purposeTextContainer">
           Discover: Explore Australia’s future-focused industries, featuring visionary speakers, thought leaders, and innovative resolutions that shape the landscape of tomorrow.
           <br /> <br />

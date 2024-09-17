@@ -29,7 +29,7 @@ function HeroInfo() {
                 across eight key sectors.
               </p>
             </div>
-            <button className="button-primary" style={{ marginTop: "20px" }}>
+            <button className="button-primary" style={{ marginTop: "20px" , fontSize:"16px"}}>
               Register your Interest
             </button>
           </div>
@@ -42,7 +42,7 @@ function HeroInfo() {
             />
             <br />
             <img
-              src="https://res.cloudinary.com/dueoon8xe/image/upload/v1726314898/v3nyhcglpafyizkdurcr.png"
+              src="https://res.cloudinary.com/dueoon8xe/image/upload/v1726315680/lylg3pvagspfqct3xss5.jpg"
               alt=""
               style={{ borderRadius: "40px" }}
               className="agendaImage"

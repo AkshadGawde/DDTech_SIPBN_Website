@@ -1026,4 +1026,19 @@ ul {
   .capList br {
     display: none;
   }
-  
+  .purposeFlex{
+    display: flex;
+    justify-content: space-evenly;
+    padding : 1rem;
+    @media screen and (max-width:768px) {
+      h3{
+        font-size : 0.8rem
+      }
+    }
+    @media screen and (max-width:480px) {
+      h3{
+        font-size : 1rem;
+      }
+      
+    }
+  }

@@ -38,25 +38,24 @@ const BenefitsActivities = () => {
         <div className="benefits-content">
           <div className="benefit-item">
             <img src="https://img.icons8.com/?size=100&id=999&format=png&color=FFFFFF" alt="Elevate Your Brand" />
-            <h3>Elevate Your Brand</h3>
+            <h3>Brand Visibility</h3>
             <p>Skyrocket positioning, awareness, and visibility</p>
           </div>
           <div className="benefit-item">
             <img src="https://img.icons8.com/?size=100&id=63371&format=png&color=FFFFFF" alt="Unlock New Revenue" />
-            <h3>Unlock New Revenue</h3>
+            <h3>Specially curated events</h3>
             <p>Unparalleled business acquisition and prospecting</p>
           </div>
           <div className="benefit-item">
             <img src="https://img.icons8.com/?size=100&id=boPtdpDS9FXC&format=png&color=FFFFFF" alt="Be the Authority" />
-            <h3>Be the Authority</h3>
+            <h3>Lead The Generation</h3>
             <p>Position as an undisputed thought leader</p>
           </div>
           <div className="benefit-item">
             <img src="https://img.icons8.com/?size=100&id=1846&format=png&color=FFFFFF" alt="Elite Connections" />
-            <h3>Elite Connections</h3>
+            <h3>Global Networking</h3>
             <p>
-              Access an exclusive network of 2,500+ senior executives from
-              across all industries
+              Access an exclusive network with global business leaders and investors
             </p>
           </div>
         </div>

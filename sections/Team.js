@@ -172,16 +172,16 @@ const Team = () => {
         </div>
       </section>
 
-      <div className="grid-3">
-        <div className="box">
+      <div className="purposeFlex">
+        <div className="box" style={{textAlign:"center"}}>
           <h1 className="indigo">50+</h1>
           <h3>World Class Speakers</h3>
         </div>
-        <div className="box">
+        <div className="box" style={{textAlign:"center"}}>
           <h1 className="indigo">300+</h1>
           <h3>Global investors and business leaders</h3>
         </div>
-        <div className="box">
+        <div className="box" style={{textAlign:"center"}}>
           <h1 className="indigo">8</h1>
           <h3>Panels</h3>
         </div>

@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
+import Link from "next/link";
 
 function HeroMain() {
   useEffect(() => {
@@ -29,8 +30,8 @@ function HeroMain() {
           </h2>
           <p>Discover . Connect . Execute</p>
           <div style={{ display: "flex" }}>
-            <button className="button-primary">Download Brocher</button>
-            <button className="secondary-button">Buy Now</button>
+            <button className="button-primary">Download Brochure</button>
+            <Link href="https://www.eventbrite.com.au/e/captech2024-discover-connect-execute-tickets-772015889307"><button className="secondary-button">Buy Now</button></Link>
           </div>
         </div>
         <div className="box" data-aos="fade-left">

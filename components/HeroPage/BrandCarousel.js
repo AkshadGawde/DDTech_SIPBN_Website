@@ -8,11 +8,11 @@ const BrandCarousel = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const sliderSettings = {
     infinite: true,
-    speed: 500,
+    speed: 800,
     slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 5000,
     responsive: [
       {
         breakpoint: 1024,

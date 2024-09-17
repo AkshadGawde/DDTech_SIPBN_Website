@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Title,TitleSm } from '../common/Title';
+import Link from 'next/link';
 
 function TicketPage() {
     return (
@@ -14,10 +15,9 @@ function TicketPage() {
       </div>
       <div className='ticketContent'>
         <div className="ticketCard">
-          <h3>CapTech2024 <br /> Summit Pass</h3>
+          <h3>All Access <br /> Summit Pass</h3>
           <div className='customHr' style={{ background: "linear-gradient(135deg, #b9fbc0, #00d2ff)" }}></div>
-          <h2>$3,390</h2>
-          <span>$4,500</span>
+          <h2>$2,249</h2>
           <CardDropDown 
             content={{
               l1: "Welcome Drinks at NSW Parliament House on Monday 25 November 2024",
@@ -29,15 +29,18 @@ function TicketPage() {
             maxHeight="660px" 
           />
 
-            <button className='ticketButton'>Buy Now</button>
+            <Link href="#buy-section">
+      <button className="ticketButton">
+        Buy Now
+      </button>
+    </Link>
 
         </div>
         
         <div className="ticketCard">
           <h3>#CapTech2024 Summit + Welcome Drinks</h3>
           <div className='customHr' style={{ background: "linear-gradient(135deg, #f9d423, #ff4e50)" }}></div>
-          <h2>$2,500</h2>
-          <span>$3,000</span>
+          <h2>$1,499</h2>
           <CardDropDown 
             content={{
               l1: "Welcome Drinks at NSW Parliament House on Monday 25 November 2024",
@@ -46,14 +49,17 @@ function TicketPage() {
             }} 
             maxHeight="400px" 
           />
-          <button className='ticketButton'>Buy Now</button>
+          <Link href="#buy-section">
+      <button className="ticketButton">
+        Buy Now
+      </button>
+    </Link>
         </div>
         
         <div className="ticketCard">
           <h3>#CapTech2024 <br /> + Post Networking</h3>
           <div className='customHr' style={{ background: "linear-gradient(135deg, #dcdcdc, #f5f5f5)" }}></div>
-          <h2>$1,500</h2>
-          <span>$2,000</span>
+          <h2>$1,299</h2>
           <CardDropDown 
             content={{
               l1: "#CapTech2024 Summit on Tuesday 26 November 2024 at ICC Sydney",
@@ -61,14 +67,17 @@ function TicketPage() {
             }} 
             maxHeight="300px" 
           />
-          <button className='ticketButton'>Buy Now</button>
+          <Link href="#buy-section">
+      <button className="ticketButton">
+        Buy Now
+      </button>
+    </Link>
         </div>
   
         <div className="ticketCard">
           <h3>#CapTech2024  Corporate Table of 10</h3>
           <div className='customHr' style={{ background: "linear-gradient(135deg, #d50032, #c51162)" }}></div>
-          <h2>$11,990</h2>
-          <span>$15,000</span>
+          <h2>$8,999</h2>
           <CardDropDown 
             content={{
               l1: "#CapTech2024 Summit on Tuesday 26 November 2024 at ICC Sydney",
@@ -76,7 +85,11 @@ function TicketPage() {
             }} 
             maxHeight="200px" 
           />
-          <button className='ticketButton'>Buy Now</button>
+          <Link href="#buy-section">
+      <button className="ticketButton">
+        Buy Now
+      </button>
+    </Link>
         </div>
       </div>
       </>
