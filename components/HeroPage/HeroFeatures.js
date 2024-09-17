@@ -3,22 +3,22 @@ import { Title } from "../common/Title";
 
 function HeroFeatures() {
   const [src, setSrc] = useState(
-    "https://wbf.wobi.com/wp-content/uploads/2023/12/wbf_syd_2023_cameron_background_004_1680x1120-min.webp"
+    "https://res.cloudinary.com/dueoon8xe/image/upload/v1726561075/Pitching_session_Feb_29_2024_r8y4is.jpg"
   );
 
   function handleGameChanger() {
     setSrc(
-      "https://wbf.wobi.com/wp-content/uploads/2023/12/wbf_syd_2023_cameron_background_004_1680x1120-min.webp"
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1726561189/Chairmans_Lunch_Apr_10_2024_d3ue3w.jpg"
     );
   }
   function handleImpact() {
     setSrc(
-      "https://info.wobi.com/wp-content/uploads/2023/11/wbf_syd_2023_vip_event_001_840x560-min.webp?_t=1701080555"
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1726561189/Chairmans_Lunch_Apr_10_2024_d3ue3w.jpg"
     );
   }
   function handleInnovate() {
     setSrc(
-      "https://info.wobi.com/wp-content/uploads/2023/11/wbf_syd_2023_akinola_001_840x560-min.webp?_t=1701080572"
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1726561075/Pitching_session_Feb_29_2024_r8y4is.jpg"
     );
   }
 

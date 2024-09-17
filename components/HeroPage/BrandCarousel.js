@@ -8,28 +8,34 @@ const BrandCarousel = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const sliderSettings = {
     infinite: true,
-    speed: 800,
-    slidesToShow: 4,
+    speed: 500,
+    slidesToShow: 7,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 2000,
     responsive: [
+      {
+        breakpoint:1440,
+        settings:{
+          slidesToShow: 5,
+        }
+      },
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 4,
         },
       },
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 3,
         },
       },
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
         },
       },
     ],
@@ -87,6 +93,72 @@ const BrandCarousel = () => {
     },
     {
       src: "../SVG/Logo7.svg",
+      width: 600,
+      height: 900,
+      alt: "carousel Image 8",
+    },
+    {
+      src: "../SVG/Logo9.svg",
+      width: 600,
+      height: 900,
+      alt: "carousel Image 8",
+    },
+    {
+      src: "../SVG/Logo10.svg",
+      width: 600,
+      height: 900,
+      alt: "carousel Image 8",
+    },
+    {
+      src: "../SVG/Logo11.svg",
+      width: 600,
+      height: 900,
+      alt: "carousel Image 8",
+    },
+    {
+      src: "../SVG/Logo12.svg",
+      width: 600,
+      height: 900,
+      alt: "carousel Image 8",
+    },
+    {
+      src: "../SVG/Logo13.svg",
+      width: 600,
+      height: 900,
+      alt: "carousel Image 8",
+    },
+    {
+      src: "../SVG/Logo14.svg",
+      width: 600,
+      height: 900,
+      alt: "carousel Image 8",
+    },
+    {
+      src: "../SVG/Logo15.svg",
+      width: 600,
+      height: 900,
+      alt: "carousel Image 8",
+    },
+    {
+      src: "../SVG/Logo16.svg",
+      width: 600,
+      height: 900,
+      alt: "carousel Image 8",
+    },
+    {
+      src: "../SVG/Logo17.svg",
+      width: 600,
+      height: 900,
+      alt: "carousel Image 8",
+    },
+    {
+      src: "../SVG/Logo18.svg",
+      width: 600,
+      height: 900,
+      alt: "carousel Image 8",
+    },
+    {
+      src: "../SVG/Logo19.svg",
       width: 600,
       height: 900,
       alt: "carousel Image 8",
