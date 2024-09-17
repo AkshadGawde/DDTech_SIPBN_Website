@@ -3,7 +3,7 @@ import { Title } from "../common/Title";
 
 function HeroFeatures() {
   const [src, setSrc] = useState(
-    "https://res.cloudinary.com/dueoon8xe/image/upload/v1726561075/Pitching_session_Feb_29_2024_r8y4is.jpg"
+    "https://res.cloudinary.com/dueoon8xe/image/upload/v1726561189/Chairmans_Lunch_Apr_10_2024_d3ue3w.jpg"
   );
 
   function handleGameChanger() {
@@ -13,7 +13,7 @@ function HeroFeatures() {
   }
   function handleImpact() {
     setSrc(
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1726561189/Chairmans_Lunch_Apr_10_2024_d3ue3w.jpg"
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1726562199/la2gnahnsrhahknbawln.jpg"
     );
   }
   function handleInnovate() {
