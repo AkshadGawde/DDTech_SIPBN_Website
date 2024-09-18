@@ -15,31 +15,38 @@ const CarouselWithText = () => {
     pauseOnHover: true,
   };
 
-
   return (
     <>
-      <Title title="Meet Our Speakers"/>
-    <div style={{ width: "80%", margin: "0 auto" }}>
-      <Slider {...settings}>
-        {memberdata.map((slide, index) => (
-          <div key={index}>
-            <a href={slide.href}>
-              <CldImage 
-                src={slide.cover} 
-                width={500}
-                height={500}
-                alt={`slide-${index}`} 
-                className="carousel-image"  // Add class for custom styling
-              />
-            </a>
-            <div style={{ textAlign: "center", marginTop: "10px" }}>
-              <a href={slide.href} style={{fontSize:"24px"}} className="sliderSpeaker">{slide.title}</a>
-              <p style={{fontSize:"16px" , marginTop:"10px"}}>{slide.post}</p>
+      <Title title="Meet Our Speakers" />
+      <div style={{ width: "80%", margin: "0 auto" }}>
+        <Slider {...settings}>
+          {memberdata.map((slide, index) => (
+            <div key={index}>
+              <a href={slide.href}>
+                <CldImage
+                  src={slide.cover}
+                  width={500}
+                  height={500}
+                  alt={`slide-${index}`}
+                  className="carousel-image"
+                />
+              </a>
+              <div style={{ textAlign: "center", marginTop: "10px" }}>
+                <a
+                  href={slide.href}
+                  style={{ fontSize: "24px" }}
+                  className="sliderSpeaker"
+                >
+                  {slide.title}
+                </a>
+                <p style={{ fontSize: "16px", marginTop: "10px" }}>
+                  {slide.post}
+                </p>
+              </div>
             </div>
-          </div>
-        ))}
-      </Slider>
-    </div>
+          ))}
+        </Slider>
+      </div>
     </>
   );
 };
