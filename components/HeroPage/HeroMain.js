@@ -13,7 +13,7 @@ function HeroMain() {
       className="heroContainer"
       style={{
         background: "linear-gradient(rgba(12,3,51,0.3), rgba(12,3,51,0.3))",
-        padding:"5% 0"
+        padding: "5% 0",
       }}
     >
       <video className="bgVideo" autoPlay muted loop plays-inline>
@@ -26,22 +26,18 @@ function HeroMain() {
         <div className="box" data-aos="fade-right">
           <h2>
             #CapTech2024 <br />
-            26th November 2024
+            25th - 28th November 2024
           </h2>
-          <p>Discover . Connect . Execute</p>
+          <button className="secondary-button">Book Your Tickets</button>
           <div style={{ display: "flex" }}>
             <button className="button-primary">Download Brochure</button>
-            <Link href="https://www.eventbrite.com.au/e/captech2024-discover-connect-execute-tickets-772015889307"><button className="secondary-button">Buy Now</button></Link>
+            <Link href="https://www.eventbrite.com.au/e/captech2024-discover-connect-execute-tickets-772015889307"></Link>
           </div>
         </div>
         <div className="box" data-aos="fade-left">
           <div className="mediaHolder">
             <div className="brandImageHolder">
-              <img
-                src="/images/sipbnLogo.png"
-                className="brandImage"
-                alt=""
-              />
+              <img src="/images/sipbnLogo.png" className="brandImage" alt="" />
               <div className="brandTextHolder">
                 <h2>#CapTech2024</h2>
                 <p>November 2024</p>

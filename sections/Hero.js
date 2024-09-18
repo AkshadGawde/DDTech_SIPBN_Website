@@ -9,13 +9,13 @@ import { Title } from "@/components/common/Title";
 import { Brand } from "@/components/router";
 import HeroInfo from "@/components/HeroPage/HeroInfo";
 import HeroPurpose from "@/components/HeroPage/HeroPurpose";
-import HeroFeatures from "@/components/HeroPage/HeroFeatures";
+// import HeroFeatures from "@/components/HeroPage/HeroFeatures";
 import HeroParts from "@/components/HeroPage/HeroParts";
 import HeroCheckout from "@/components/HeroPage/HeroCheckout";
 import CountdownTimer from "@/components/HeroPage/CountdownTimer";
 import BusinessForum from "@/components/HeroPage/BusinessForum";
 import BenefitsActivities from "@/components/HeroPage/BenefitsAcitivity";
-import Link from "next/link"; 
+import Link from "next/link";
 import BrandCarousel from "@/components/HeroPage/BrandCarousel";
 import TicketPage from "@/components/HeroPage/TicketPage";
 import HeroAgenda from "@/components/HeroPage/HeroAgenda";
@@ -28,41 +28,28 @@ function Hero() {
     });
   }, []);
 
-
   // style={{background: "linear-gradient(135deg, #000000, #003366"}}
   return (
     <>
-    
       <div className="marquee-hero">
         <Marqueee className="marquee" />
       </div>
       <HeroMain />
 
-      <div style={{background:"linear-gradient(270deg, #0a0f45, #000000)"}}>
-
-      <div className="brandCarouselHolder">
-        <BrandCarousel/>
-      </div>
-
-      <div data-aos="fade-right">
-              <SpeakerCarousel/>
-          </div>
-
-      <section
-        className="hero-sec"
-        
-          
-
-      >
-
-        <div>
-          
-
+      <div style={{ background: "linear-gradient(270deg, #0a0f45, #000000)" }}>
+        <div className="brandCarouselHolder">
+          <BrandCarousel />
         </div>
 
+        <div data-aos="fade-right">
+          <SpeakerCarousel />
+        </div>
 
-        <div className="container">
-          {/* <div className="heading-title" data-aos="fade-left">
+        <section className="hero-sec">
+          <div></div>
+
+          <div className="container">
+            {/* <div className="heading-title" data-aos="fade-left">
             <Title title="Message from our President" />
             <div className="presContainer">
               <div className="presImgContainer">
@@ -93,14 +80,11 @@ function Hero() {
             </a>
           </div> */}
 
-          
+            <div data-aos="fade-left">
+              <HeroInfo />
+            </div>
 
-
-          <div data-aos="fade-left">
-            <HeroInfo />
-          </div>
-
-          {/* <div className="banner2" data-aos="fade-left">
+            {/* <div className="banner2" data-aos="fade-left">
             <div className="bannerTitle container">
               <h2>Secure your #CapTech2024 ticket!</h2>
               <p>Early bird discount 20% till 30th September 2024</p>
@@ -114,9 +98,9 @@ function Hero() {
               </a>
             </div>
           </div> */}
-        </div>
+          </div>
 
-        {/* <div className="grid-3">
+          {/* <div className="grid-3">
           <div className="box" data-aos="fade-up">
             <h1 className="indigo">50+</h1>
             <h3>World Class Speakers</h3>
@@ -130,15 +114,13 @@ function Hero() {
             <h3>Global Investors and Business Leaders</h3>
           </div>
         </div> */}
-      </section>
+        </section>
 
-      
+        <div data-aos="fade-right">
+          <Banner />
+        </div>
 
-      <div data-aos="fade-right">
-        <Banner />
-      </div>
-
-      {/* <section className="bannerr"> */}
+        {/* <section className="bannerr"> */}
         {/* <div className="container">
           <div>
             <br />
@@ -156,51 +138,51 @@ function Hero() {
         </div>
       </section> */}
 
-      <div data-aos="fade-right">
-        <HeroPurpose />
-      </div>
-
+        <div data-aos="fade-right">
+          <HeroPurpose />
+        </div>
+        {/* 
       <div data-aos="fade-left">
         <HeroFeatures />
-      </div>
+      </div> */}
 
-      <div data-aos="fade-right">
-        <HeroParts />
-      </div>
+        <div data-aos="fade-right">
+          <HeroParts />
+        </div>
 
-      {/* <div data-aos="fade-left">
+        {/* <div data-aos="fade-left">
         <HeroCheckout />
       </div> */}
 
-      <div data-aos="fade-right">
-        <CountdownTimer />
-      </div>
+        <div data-aos="fade-right">
+          <CountdownTimer />
+        </div>
 
-      <div data-aos="fade-left">
-        <BusinessForum />
-      </div>
+        <div data-aos="fade-left">
+          <BusinessForum />
+        </div>
 
-          <div data-aos="fade-right">
-            <TicketPage/>
-          </div>
+        <div data-aos="fade-right">
+          <TicketPage />
+        </div>
 
-          <div data-aos="fade-left">
-            <HeroAgenda/>
-          </div>
+        <div data-aos="fade-left">
+          <HeroAgenda />
+        </div>
 
-      <div data-aos="fade-right">
-        <BenefitsActivities />
-      </div>
-         
-      <div data-aos="fade-left">
-        <Expertise />
-      </div>
+        <div data-aos="fade-right">
+          <BenefitsActivities />
+        </div>
 
-      {/* <div data-aos="fade-right">
+        <div data-aos="fade-left">
+          <Expertise />
+        </div>
+
+        {/* <div data-aos="fade-right">
         <Brand />
       </div> */}
 
-      {/* <div className="iframe-container">
+        {/* <div className="iframe-container">
         <br />
         <Title title={"Our Podcast"} />
         <div className="podContent grid-3" data-aos="fade-right">

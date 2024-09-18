@@ -26,7 +26,7 @@ function HeroFeatures() {
     <div className="heroContainer">
       <div className="featureContainer">
         <Title title="Where Business Leaders Converge" />
-        <hr />
+
         <div
           className="heroContent"
           style={{

@@ -294,6 +294,7 @@
   flex-direction: column;
   align-items: center;
   margin-right: 40px;
+  margin-top: 50px;
   @media screen and (max-width:800px) {
     margin-right: 0;
     margin-bottom: 40px;
@@ -689,8 +690,8 @@ $button-color: #f4e38b;
     .enquire-btn {
       margin-top: 20px;
       padding: 10px 20px;
-      background-color: #ffcc00;
-      color: black;
+      background-color: #0026ff;
+      color: rgb(255, 255, 255);
       text-transform: uppercase;
       border-radius: 5px;
       text-decoration: none;
@@ -699,7 +700,7 @@ $button-color: #f4e38b;
       transition: background-color 0.3s ease;
 
       &:hover {
-        background-color: #ff9900;
+        background-color: #2500e0;
       }
     }
   }

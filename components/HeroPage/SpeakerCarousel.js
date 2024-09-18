@@ -7,11 +7,11 @@ import { CldImage } from "next-cloudinary";
 const CarouselWithText = () => {
   const settings = {
     infinite: true,
-    speed: 500,
+    speed: 200,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 500,
     pauseOnHover: true,
   };
 
