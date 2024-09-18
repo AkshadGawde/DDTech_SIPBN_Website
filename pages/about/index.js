@@ -1,5 +1,6 @@
 import { Title, TitleSm } from "@/components/common/Title";
 import Marqueee from "@/components/common/Marqueee";
+import Expertise from "@/components/Expertise";
 
 const Agency = () => {
   return (
@@ -87,6 +88,8 @@ const Agency = () => {
             title="We achieve this through four enabling pillars!"
             className="title-bg"
           />
+
+          <Expertise />
 
           <section className="aboutSection">
             <div className="aboutContainer">

@@ -21,7 +21,7 @@ function HeroAgenda() {
             <tbody>
               <tr>
                 <td>
-                  <h2>5:30pm - 8:30pm</h2>
+                  <h3>5:30pm - 8:30pm</h3>
                 </td>
                 <td>
                   <h2>Welcome drinks at NSW Parliament House</h2>
@@ -50,7 +50,7 @@ function HeroAgenda() {
             <tbody>
               <tr>
                 <td>
-                  <h2>9:00am - 5:00pm</h2>
+                  <h3>9:00am - 5:00pm</h3>
                 </td>
                 <td>
                   <h2>Global Summit - ICC Sydney</h2>
@@ -62,7 +62,7 @@ function HeroAgenda() {
               </tr>
               <tr>
                 <td>
-                  <h2>5:00pm - 7:30pm</h2>
+                  <h3>5:00pm - 7:30pm</h3>
                 </td>
                 <td>
                   <h2>Global Summit networking drinks</h2>
@@ -91,7 +91,7 @@ function HeroAgenda() {
             <tbody>
               <tr>
                 <td>
-                  <h2>6:30pm - 9:30pm</h2>
+                  <h3>6:30pm - 9:30pm</h3>
                 </td>
                 <td>
                   <h2>Private Dinner with guest speaker</h2>
@@ -103,7 +103,7 @@ function HeroAgenda() {
               </tr>
               <tr>
                 <td>
-                  <h2>9:00 am - 5:00 pm</h2>
+                  <h3>9:00 am - 5:00 pm</h3>
                 </td>
                 <td>
                   <h2>Business Matching sessions</h2>

@@ -38,12 +38,12 @@ const BenefitsActivities = () => {
         <div className="benefits-content">
           <div className="benefit-item">
             <img src="https://img.icons8.com/?size=100&id=999&format=png&color=FFFFFF" alt="Elevate Your Brand" />
-            <h3>Brand Visibility</h3>
+            <h3>Brand Awareness</h3>
             <p>Skyrocket positioning, awareness, and visibility</p>
           </div>
           <div className="benefit-item">
             <img src="https://img.icons8.com/?size=100&id=63371&format=png&color=FFFFFF" alt="Unlock New Revenue" />
-            <h3>Specially curated events</h3>
+            <h3>Global Investors</h3>
             <p>Unparalleled business acquisition and prospecting</p>
           </div>
           <div className="benefit-item">
@@ -53,7 +53,7 @@ const BenefitsActivities = () => {
           </div>
           <div className="benefit-item">
             <img src="https://img.icons8.com/?size=100&id=1846&format=png&color=FFFFFF" alt="Elite Connections" />
-            <h3>Global Networking</h3>
+            <h3>Exclusive Networking</h3>
             <p>
               Access an exclusive network with global business leaders and investors
             </p>
@@ -65,25 +65,28 @@ const BenefitsActivities = () => {
         <div className="activities-content">
           <div className="activity-item">
             <img src="https://img.icons8.com/?size=100&id=38511&format=png&color=FFFFFF" alt="Prime Brand Visibility" />
-            <h3>Prime Brand Visibility</h3>
-            <p>Your brand in front of thousands of decision makers</p>
+            <h3>NSW Parliament Drinks</h3>
           </div>
           <div className="activity-item">
             <img src="https://img.icons8.com/?size=100&id=1074&format=png&color=FFFFFF" alt="Private Events" />
-            <h3>Private Events</h3>
-            <p>
-              Host exclusive gatherings of selected guests and keynote speakers
-            </p>
+            <h3>#CapTech All Day Event + Post Event Drinks</h3>
           </div>
           <div className="activity-item">
             <img src="https://img.icons8.com/?size=100&id=152&format=png&color=FFFFFF" alt="Insider Access" />
-            <h3>Insider Access</h3>
-            <p>In-company sessions led by World Business Forum speakers</p>
+            <h3>VIP seating & check-in</h3>
           </div>
           <div className="activity-item">
             <img src="https://img.icons8.com/?size=100&id=62135&format=png&color=FFFFFF" alt="Networking Hotpots" />
-            <h3>Networking Hotpots</h3>
-            <p>Unique activations in high-traffic areas</p>
+            <h3>Invite Only Dinner</h3>
+          </div>
+          <div className="activity-item">
+            <img src="https://img.icons8.com/?size=100&id=62135&format=png&color=FFFFFF" alt="Networking Hotpots" />
+            <h3>Two Days of Dedicated Business Sessions at Shangri-la Sydney</h3>
+          </div>
+          <div className="activity-item">
+            <img src="https://img.icons8.com/?size=100&id=62135&format=png&color=FFFFFF" alt="Networking Hotpots" />
+            <h3>Master Class by World leader Michael Masterson on:</h3>
+            <p>How to go from pitching to catching investors using your hidden assets</p>
           </div>
           {/* Additional activity items can be added here */}
         </div>
