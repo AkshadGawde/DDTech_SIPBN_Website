@@ -76,15 +76,15 @@ const BenefitsActivities = () => {
             <h3>VIP seating & check-in</h3>
           </div>
           <div className="activity-item">
-            <img src="https://img.icons8.com/?size=100&id=62135&format=png&color=FFFFFF" alt="Networking Hotpots" />
+            <img src="https://img.icons8.com/?size=100&id=6899&format=png&color=FFFFFF" alt="Networking Hotpots" />
             <h3>Invite Only Dinner</h3>
           </div>
           <div className="activity-item">
-            <img src="https://img.icons8.com/?size=100&id=62135&format=png&color=FFFFFF" alt="Networking Hotpots" />
+            <img src="https://img.icons8.com/?size=100&id=kFF2qNmpaatO&format=png&color=FFFFFF" alt="Networking Hotpots" />
             <h3>Two Days of Dedicated Business Sessions at Shangri-la Sydney</h3>
           </div>
           <div className="activity-item">
-            <img src="https://img.icons8.com/?size=100&id=62135&format=png&color=FFFFFF" alt="Networking Hotpots" />
+            <img src="https://img.icons8.com/?size=100&id=3651&format=png&color=FFFFFF" alt="Networking Hotpots" />
             <h3>Master Class by World leader Michael Masterson on:</h3>
             <p>How to go from pitching to catching investors using your hidden assets</p>
           </div>
