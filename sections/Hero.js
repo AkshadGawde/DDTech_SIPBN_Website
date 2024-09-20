@@ -175,9 +175,9 @@ function Hero() {
           <BenefitsActivities />
         </div>
 
-        <div data-aos="fade-left">
+        {/* <div data-aos="fade-left">
           <Expertise />
-        </div>
+        </div> */}
 
         {/* <div data-aos="fade-right">
         <Brand />

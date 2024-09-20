@@ -25,11 +25,13 @@ function TicketPage() {
             className="customHr"
             style={{ background: "linear-gradient(135deg, #b9fbc0, #00d2ff)" }}
           ></div>
-          <h3>
+          {/* <h3>
             Early Bird Price: <br /> (Save $300)
-          </h3>
-          <h2>$1,199</h2>
-          <h4>Regular Price: $1,499</h4>
+          </h3> */}
+          <br/><br/>
+          <h2>$2,250</h2>
+          {/* <h4>Regular Price: $1,499</h4> */}
+          <br/>
           <CardDropDown
             content={{
               l1: "NSW Parliament Drinks",
