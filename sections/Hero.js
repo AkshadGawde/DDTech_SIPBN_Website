@@ -168,6 +168,7 @@ function Hero() {
 
         <div data-aos="fade-left">
           <HeroAgenda />
+          <Banner/>
         </div>
 
         <div data-aos="fade-right">
