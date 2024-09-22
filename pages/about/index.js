@@ -9,12 +9,9 @@ const Agency = () => {
         <Marqueee className="marquee" />
       </div>
 
-    
-
       <section className="agency bg-top">
         <div className="container">
-
-        <div className="heading-title">
+          <div className="heading-title">
             <Title title="Message from our President" />
             <div className="presContainer">
               <div className="presImgContainer">
@@ -32,7 +29,20 @@ const Agency = () => {
                 for growing Australian businesses.
                 <br />
                 <br />
-                We are sector agnostic...
+                We are sector agnostic. We facilitate the engagement to and from
+                Australia through our extensive contacts in the business,
+                private capital and government sectors.
+                <br />
+                <br />
+                With our physical offices in Sydney and Queensland in Australia
+                and international offices in India, Middle East and Hong Kong,
+                our members have the access to a premium business platform to do
+                business in Australia and globally.
+                <br />
+                <br />
+                Our members get the benefit from our regular networking events
+                and our yearly flagship summit to foster deal making, business
+                connections and innovation.
               </p>
             </div>
             {/* <a

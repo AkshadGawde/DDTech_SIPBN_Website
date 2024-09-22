@@ -9,7 +9,7 @@ const CountdownTimer = () => {
   }, []);
 
   const calculateTimeLeft = () => {
-    const eventDate = new Date("2024-10-26T00:00:00");
+    const eventDate = new Date("2024-11-26T00:00:00");
     const currentTime = new Date();
     const difference = eventDate - currentTime;
 
@@ -39,30 +39,29 @@ const CountdownTimer = () => {
 
   return (
     <>
-    <div className="timer-container">
-      
-      <div className="timer">
-        <div className="time-box">
-          <h2 className="digits">{timeLeft.days || "0"}</h2>
-          <span>Days</span>
-        </div>
-        <div className="colon">:</div>
-        <div className="time-box">
-          <h2 className="digits">{timeLeft.hours || "0"}</h2>
-          <span>Hours</span>
-        </div>
-        <div className="colon">:</div>
-        <div className="time-box">
-          <h2 className="digits">{timeLeft.minutes || "0"}</h2>
-          <span>Minutes</span>
-        </div>
-        <div className="colon">:</div>
-        <div className="time-box">
-          <h2 className="digits">{timeLeft.seconds || "0"}</h2>
-          <span>Seconds</span>
+      <div className="timer-container">
+        <div className="timer">
+          <div className="time-box">
+            <h2 className="digits">{timeLeft.days || "0"}</h2>
+            <span>Days</span>
+          </div>
+          <div className="colon">:</div>
+          <div className="time-box">
+            <h2 className="digits">{timeLeft.hours || "0"}</h2>
+            <span>Hours</span>
+          </div>
+          <div className="colon">:</div>
+          <div className="time-box">
+            <h2 className="digits">{timeLeft.minutes || "0"}</h2>
+            <span>Minutes</span>
+          </div>
+          <div className="colon">:</div>
+          <div className="time-box">
+            <h2 className="digits">{timeLeft.seconds || "0"}</h2>
+            <span>Seconds</span>
+          </div>
         </div>
       </div>
-    </div>
     </>
   );
 };

@@ -226,6 +226,7 @@
 
 .agendaImage {
   max-width: 480px;
+  max-height: 300px;
   transition: transform 1.4s ease;
   @media screen and (max-width:550px) {
       max-width: 340px;
@@ -254,7 +255,7 @@
   h2 {
       font-size: 28px;
       margin-top: 20px;
-      text-align: center;
+      text-align: left;
   }
   p{
     text-align: left;
@@ -526,17 +527,19 @@ $button-color: #f4e38b;
   }
 
   .enquire-button {
-    background-color: #005fcc;
-    color: #ffffff;
-    padding: 1rem 2rem;
-    border-radius: 30px;
-    margin-top: 2rem;
-    cursor: pointer;
-    font-size: 1rem;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #0026ff;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
     font-weight: bold;
+    transition: background-color 0.3s ease;
 
     &:hover {
-      background-color: darken($button-color, 10%);
+      background-color: #2500e0;
     }
   }
 
@@ -602,7 +605,7 @@ $button-color: #f4e38b;
   padding: 50px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: left;
   
   &__content {
     display: grid;
@@ -624,7 +627,7 @@ $button-color: #f4e38b;
     @media (max-width: 768px) {
       display: flex;
       flex-direction: row;
-      align-items: center;
+      align-items: left;
       flex-wrap: wrap;
       justify-content: center;
     }
@@ -636,6 +639,24 @@ $button-color: #f4e38b;
     height: 250px;
     border-radius: 15px;
     border: 2px solid rgba(255, 255, 255, 0.2);
+    aspect-ratio: 4/3;
+
+    @media (min-width: 1200px) {
+      aspect-ratio: 4/3;
+    }
+
+    @media (max-width: 768px) {
+      height: 200px;
+    }
+
+    @media (max-width: 480px) {
+      height: 150px;
+    }
+
+    @media (max-width: 2560px) {
+      aspect-ratio: 4/3;
+    }
+
 
     &.image-1 {
       background-image: url('https://res.cloudinary.com/dueoon8xe/image/upload/v1726559867/noibypxsaptip2vtvas5.jpg');
@@ -650,7 +671,7 @@ $button-color: #f4e38b;
     }
 
     &.image-4 {
-      background-image: url('https://res.cloudinary.com/dueoon8xe/image/upload/v1726315686/tfp5yxirqgo65sh8bt1x.jpg');
+      background-image: url('https://res.cloudinary.com/dueoon8xe/image/upload/v1727036868/Captech_Oct_26_aslpsb.jpg');
     }
   }
 
@@ -661,7 +682,7 @@ $button-color: #f4e38b;
     padding-left: 20px;
     color: white;
     @media screen and (max-width:980px) {
-        text-align: center;
+        text-align: left;
     }
 
     h2 {
@@ -853,7 +874,7 @@ span {
   margin: 0 2%;
   h3{
     font-weight: 100;
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
   }
   h2{
@@ -1023,17 +1044,20 @@ input[type="radio"] {
 .agendaTable{
   max-width: 100%;
   flex:1;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 18px;
   .dateMonth{
-    font-size: 40px;
+    font-size: 25px;
     @media  screen and (max-width:1024px) {
-      font-size: 32px;
+      font-size: 30px;
     }
     @media screen and (max-width:768px) {
       font-size: 20px;
     }
   }
   .dateDay{
-    font-size: 60px;
+    font-size: 25px;
     @media  screen and (max-width:1024px) {
       font-size: 52px;
     }
@@ -1053,6 +1077,16 @@ input[type="radio"] {
   .dateHolder{
     margin: 15px;
   }
+  .agendaPara{
+    font-size: 18px;
+    @media  screen and (max-width:1024px) {
+      font-size: 18px;
+    }
+    @media screen and (max-width:768px) {
+      font-size: 14px;
+    }
+  }
+  
   
 }
 .squareImage{

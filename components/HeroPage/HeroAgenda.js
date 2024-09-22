@@ -11,9 +11,7 @@ function HeroAgenda() {
       <div className="agendaBox2">
         <div className="agendaTable">
           <div className="dateHolder">
-            <h3 className="dateMonth">November</h3>
-            <h2 className="dateDay">25</h2>
-            <h4 className="dateYear">2024</h4>
+            <h2 className="dateMonth">25th November, 2024 </h2>
           </div>
         </div>
         <div className="agendaTable">
@@ -21,11 +19,11 @@ function HeroAgenda() {
             <tbody>
               <tr>
                 <td>
-                  <h3>5:30pm - 8:30pm</h3>
+                  <h3 className="dateMonth">5:30pm - 8:30pm</h3>
                 </td>
                 <td>
                   <h2>Welcome drinks at NSW Parliament House</h2>
-                  <p>
+                  <p className="agendaPara">
                     Kick off the event with a warm welcome and networking
                     session over drinks.
                   </p>
@@ -40,9 +38,7 @@ function HeroAgenda() {
       <div className="agendaBox2">
         <div className="agendaTable">
           <div className="dateHolder">
-            <h3 className="dateMonth">November</h3>
-            <h2 className="dateDay">26</h2>
-            <h4 className="dateYear">2024</h4>
+            <h2 className="dateMonth">26th November, 2024 </h2>
           </div>
         </div>
         <div className="agendaTable">
@@ -50,11 +46,11 @@ function HeroAgenda() {
             <tbody>
               <tr>
                 <td>
-                  <h3>9:00am - 5:00pm</h3>
+                  <h3 className="dateMonth">9:00am - 5:00pm</h3>
                 </td>
                 <td>
                   <h2>Global Summit - ICC Sydney</h2>
-                  <p>
+                  <p className="agendaPara">
                     An all-day summit featuring expert speakers from around the
                     globe on various business topics.
                   </p>
@@ -62,11 +58,11 @@ function HeroAgenda() {
               </tr>
               <tr>
                 <td>
-                  <h3>5:00pm - 7:30pm</h3>
+                  <h3 className="dateMonth"> 5:00pm - 7:30pm</h3>
                 </td>
                 <td>
                   <h2>Global Summit networking drinks</h2>
-                  <p>
+                  <p className="agendaPara">
                     End the day with a relaxing networking session and build
                     valuable connections.
                   </p>
@@ -81,9 +77,7 @@ function HeroAgenda() {
       <div className="agendaBox2">
         <div className="agendaTable">
           <div className="dateHolder">
-            <h3 className="dateMonth">November</h3>
-            <h2 className="dateDay">27</h2>
-            <h4 className="dateYear">2024</h4>
+            <h2 className="dateMonth">27th November, 2024 </h2>
           </div>
         </div>
         <div className="agendaTable">
@@ -91,11 +85,11 @@ function HeroAgenda() {
             <tbody>
               <tr>
                 <td>
-                  <h3>6:30pm - 9:30pm</h3>
+                  <h3 className="dateMonth">6:30pm - 9:30pm</h3>
                 </td>
                 <td>
                   <h2>Private Dinner with guest speaker</h2>
-                  <p>
+                  <p className="agendaPara">
                     Join us for an exclusive dinner with an industry leader as
                     the guest speaker.
                   </p>
@@ -103,11 +97,11 @@ function HeroAgenda() {
               </tr>
               <tr>
                 <td>
-                  <h3>9:00 am - 5:00 pm</h3>
+                  <h3 className="dateMonth">9:00am - 5:00pm</h3>
                 </td>
                 <td>
                   <h2>Business Matching sessions</h2>
-                  <p>
+                  <p className="agendaPara">
                     Connect one-on-one with business leaders and potential
                     partners in personalized sessions.
                   </p>
@@ -121,9 +115,8 @@ function HeroAgenda() {
       <div className="agendaBox2">
         <div className="agendaTable">
           <div className="dateHolder">
-            <h3 className="dateMonth">November</h3>
-            <h2 className="dateDay">27 , 28</h2>
-            <h4 className="dateYear">2024</h4>
+            <h2 className="dateMonth">27th & 28th November </h2>
+            <h2 className="dateMonth">2024 </h2>
           </div>
         </div>
         <div className="agendaTable">
@@ -131,11 +124,11 @@ function HeroAgenda() {
             <tbody>
               <tr>
                 <td>
-                <h2>9:00 am - 5:00 pm</h2>
+                  <h3 className="dateMonth">9:00am - 5:00pm</h3>
                 </td>
                 <td>
                   <h2>Business Matching sessions</h2>
-                  <p>
+                  <p className="agendaPara">
                     Connect one-on-one with business leaders and potential
                     partners in personalized sessions.
                   </p>

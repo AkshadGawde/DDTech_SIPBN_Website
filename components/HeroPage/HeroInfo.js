@@ -60,14 +60,14 @@ function HeroInfo() {
           </div>
           <div className="agendaBox">
             <img
-              src="https://res.cloudinary.com/dueoon8xe/image/upload/v1726314898/v3nyhcglpafyizkdurcr.png"
+              src="https://res.cloudinary.com/dueoon8xe/image/upload/v1727035556/team1_ud8tb6.jpg"
               alt=""
               style={{ borderRadius: "40px" }}
               className="agendaImage"
             />
             <br />
             <img
-              src="https://res.cloudinary.com/dueoon8xe/image/upload/v1726315680/lylg3pvagspfqct3xss5.jpg"
+              src="https://res.cloudinary.com/dueoon8xe/image/upload/v1727035731/team2_g87f2y.jpg"
               alt=""
               style={{ borderRadius: "40px" }}
               className="agendaImage"

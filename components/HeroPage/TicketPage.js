@@ -5,19 +5,14 @@ import Link from "next/link";
 function TicketPage() {
   return (
     <>
-      <div
-        style={{
-          display: "flex",
-          alignItems: "center",
-          flexDirection: "column",
-          marginBottom: "20px",
-        }}
-      >
-        <TitleSm title="TICKET AVAILABILITY IS LIMITED GET YOURS TODAY" />
+      <div className="purposeContainer">
+        <Title title="TICKET AVAILABILITY IS LIMITED " />
+        <Title title="GET YOURS TODAY" />
         <hr style={{ width: "20%", border: 0, borderTop: "1px solid #ccc" }} />
-        <h2>Valid Until 27th September!</h2>
-        <h3>20% Discount Valid until 30 September 2024</h3>
+        <h2>OFFER : Valid Until 30th September 2024!</h2>
+        <h3>20% Discount valid until 30 September 2024</h3>
       </div>
+
       <div className="ticketContent">
         <div className="ticketCard">
           <h3>#CapTech2024 SUMMIT PASS</h3>
@@ -28,10 +23,13 @@ function TicketPage() {
           {/* <h3>
             Early Bird Price: <br /> (Save $300)
           </h3> */}
-          <br/><br/>
+          <br />
+          <br />
+          <br />
+          <br />
           <h2>$2,250</h2>
           {/* <h4>Regular Price: $1,499</h4> */}
-          <br/>
+          <br />
           <CardDropDown
             content={{
               l1: "NSW Parliament Drinks",
