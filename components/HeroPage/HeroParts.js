@@ -2,10 +2,10 @@ import React from "react";
 
 function HeroParts() {
   return (
-    <div className="heroContainer" style={{height:"100%"}}>
+    <div className="heroContainer2" style={{height:"100%"}}>
       <div
         className="heroContent"
-        style={{ padding: "10px", justifyContent: "space-evenly" }}
+        style={{ padding: "10px", justifyContent: "center" }}
       >
         <div className="box">
           <h1 className="partHeader">

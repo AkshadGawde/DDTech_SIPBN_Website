@@ -3,7 +3,7 @@ import React from "react";
 function HeroCheckout() {
   return (
     <div
-      className="heroContainer"
+      className="heroContainer2"
       style={{ display: "flex", alignItems: "center", flexDirection: "column"}}
     >
       <h1 style={{margin:"2%"}} className="timerHeader">TICKET AVAILABILITY IS LIMITED GET YOURS TODAY</h1>

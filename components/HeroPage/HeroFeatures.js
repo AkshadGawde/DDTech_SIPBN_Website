@@ -23,7 +23,7 @@ function HeroFeatures() {
   }
 
   return (
-    <div className="heroContainer">
+    <div className="heroContainer2">
       <div className="featureContainer">
         <Title title="Where Business Leaders Converge" />
 

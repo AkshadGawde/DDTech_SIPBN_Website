@@ -4,7 +4,7 @@ import { Title } from "../common/Title";
 function HeroPurpose() {
   return (
     <>
-      <div className="heroContainer">
+      <div className="heroContainer2">
         <div className="purposeContainer">
           <Title title="Purpose" />
           <h2>Our inspiration for 2024: Discover : Connect : Execute</h2>

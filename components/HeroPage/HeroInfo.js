@@ -12,7 +12,7 @@ function HeroInfo() {
   return (
     <>
       <div
-        className="heroContainer"
+        className="heroContainer2"
         style={{ padding: "10px", justifyContent: "space-evenly" }}
       >
         <div
