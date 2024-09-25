@@ -1,5 +1,6 @@
 import { Title, TitleSm } from "@/components/common/Title";
 import Marqueee from "@/components/common/Marqueee";
+import Expertise from "@/components/Expertise";
 
 const Agency = () => {
   return (
@@ -7,8 +8,53 @@ const Agency = () => {
       <div className="marquee-hero">
         <Marqueee className="marquee" />
       </div>
+
       <section className="agency bg-top">
         <div className="container">
+          <div className="heading-title">
+            <Title title="Message from our President" />
+            <div className="presContainer">
+              <div className="presImgContainer">
+                <img
+                  src="https://res.cloudinary.com/dueoon8xe/image/upload/v1721977790/Speakers%20-%20Sipbn/brqtqgoijfjvulkac0g7.png"
+                  height="110px"
+                  className="presImg"
+                />
+                <h2>Raman Bhalla</h2>
+              </div>
+              <p style={{ fontSize: "medium", textAlign: "left" }}>
+                The purpose of Sydney Investors, Professionals and Business
+                Networking Group Incorporated ("SIPBN") is to connect projects
+                with sources of capital and provide a global business platform
+                for growing Australian businesses.
+                <br />
+                <br />
+                We are sector agnostic. We facilitate the engagement to and from
+                Australia through our extensive contacts in the business,
+                private capital and government sectors.
+                <br />
+                <br />
+                With our physical offices in Sydney and Queensland in Australia
+                and international offices in India, Middle East and Hong Kong,
+                our members have the access to a premium business platform to do
+                business in Australia and globally.
+                <br />
+                <br />
+                Our members get the benefit from our regular networking events
+                and our yearly flagship summit to foster deal making, business
+                connections and innovation.
+              </p>
+            </div>
+            {/* <a
+              href="https://forms.gle/GLbvrFiTyUjfmadF7"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="button-primary"
+            >
+              Apply for Membership
+            </a> */}
+          </div>
+
           <div className="heading-title">
             <Title title="What is SIPBN?" />
             <p className="advisoryDescription">
@@ -52,6 +98,8 @@ const Agency = () => {
             title="We achieve this through four enabling pillars!"
             className="title-bg"
           />
+
+          <Expertise />
 
           <section className="aboutSection">
             <div className="aboutContainer">

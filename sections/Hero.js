@@ -1,44 +1,55 @@
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import Marqueee from "@/components/common/Marqueee";
+import HeroMain from "@/components/HeroPage/HeroMain";
 import Banner from "@/components/Banner";
 import Expertise from "@/components/Expertise";
-import { Title, TitleLogo, TitleSm } from "@/components/common/Title";
+import { Title } from "@/components/common/Title";
 import { Brand } from "@/components/router";
-import { React } from "react";
-import Marqueee from "@/components/common/Marqueee";
-import Image from "next/image";
+import HeroInfo from "@/components/HeroPage/HeroInfo";
+import HeroPurpose from "@/components/HeroPage/HeroPurpose";
+// import HeroFeatures from "@/components/HeroPage/HeroFeatures";
+import HeroParts from "@/components/HeroPage/HeroParts";
+import HeroCheckout from "@/components/HeroPage/HeroCheckout";
+import CountdownTimer from "@/components/HeroPage/CountdownTimer";
+import BusinessForum from "@/components/HeroPage/BusinessForum";
+import BenefitsActivities from "@/components/HeroPage/BenefitsAcitivity";
 import Link from "next/link";
+import BrandCarousel from "@/components/HeroPage/BrandCarousel";
+import TicketPage from "@/components/HeroPage/TicketPage";
+import HeroAgenda from "@/components/HeroPage/HeroAgenda";
+import SpeakerCarousel from "@/components/HeroPage/SpeakerCarousel";
 
-const Hero = () => {
+function Hero() {
+  useEffect(() => {
+    AOS.init({
+      duration: 2000, // Animation duration in milliseconds
+    });
+  }, []);
+
+  // style={{background: "linear-gradient(135deg, #000000, #003366"}}
   return (
     <>
       <div className="marquee-hero">
         <Marqueee className="marquee" />
       </div>
-      <section className="hero">
-        <div className="container">
-          <a
-            href="https://www.eventbrite.com.au/e/captech2024-discover-connect-execute-venue-icc-sydney-tickets-772015889307"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <TitleLogo title="#CapTech2024" caption="" className="logobg" />
-          </a>
-          <h1 className="hero-title">DISCOVER . CONNECT . EXECUTE</h1>
-          <TitleSm title="Venue: ICC Sydney 14 Darling Drive Sydney, NSW 2000 Australia" />
-          <p>Tuesday, 26 Nov 2024 - 8:00am to 7:30pm </p>
-          <a
-            href="https://www.eventbrite.com.au/e/captech2024-discover-connect-execute-venue-icc-sydney-tickets-772015889307"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="button-primary"
-          >
-            {" "}
-            Book Your Tickets
-          </a>
+      <HeroMain />
+
+      <div style={{ background: "linear-gradient(270deg, #0a0f45, #000000)" }}>
+        <div className="brandCarouselHolder">
+          <BrandCarousel />
         </div>
-      </section>
-      <section className="hero-sec">
-        <div className="container">
-          <div className="heading-title">
+
+        <div data-aos="fade-right">
+          <SpeakerCarousel />
+        </div>
+
+        <section className="hero-sec">
+          <div></div>
+
+          <div className="container">
+            {/* <div className="heading-title" data-aos="fade-left">
             <Title title="Message from our President" />
             <div className="presContainer">
               <div className="presImgContainer">
@@ -47,7 +58,7 @@ const Hero = () => {
                   height="110px"
                   className="presImg"
                 />
-                <h2> Raman Bhalla</h2>
+                <h2>Raman Bhalla</h2>
               </div>
               <p style={{ fontSize: "medium", textAlign: "left" }}>
                 The purpose of Sydney Investors, Professionals and Business
@@ -56,20 +67,7 @@ const Hero = () => {
                 for growing Australian businesses.
                 <br />
                 <br />
-                We are sector agnostic. We facilitate the engagement to and from
-                Australia through our extensive contacts in the business,
-                private capital and government sectors.
-                <br />
-                <br />
-                With our physical offices in Sydney and Queensland in Australia
-                and international offices in India, Middle East and Hong Kong,
-                our members have the access to a premium business platform to do
-                business in Australia and globally.
-                <br />
-                <br />
-                Our members get the benefit from our regular networking events
-                and our yearly flagship summit to foster deal making, business
-                connections and innovation.
+                We are sector agnostic...
               </p>
             </div>
             <a
@@ -78,118 +76,129 @@ const Hero = () => {
               rel="noopener noreferrer"
               className="button-primary"
             >
-              {" "}
               Apply for Membership
             </a>
-          </div>
-          <div className="banner2">
-            <div
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bannerTitle container"
-            >
+          </div> */}
+
+            <div data-aos="fade-left">
+              <HeroInfo />
+            </div>
+
+            {/* <div className="banner2" data-aos="fade-left">
+            <div className="bannerTitle container">
               <h2>Secure your #CapTech2024 ticket!</h2>
-              <br />
-              <p> Early bird discount 20% till 30th September 2024</p>
-              <br />
+              <p>Early bird discount 20% till 30th September 2024</p>
               <a
                 href="https://www.eventbrite.com.au/e/captech2024-discover-connect-execute-venue-icc-sydney-tickets-772015889307"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="button-primary"
               >
-                {" "}
                 Book Your Tickets
               </a>
             </div>
+          </div> */}
           </div>
-        </div>
-        <div className="grid-3">
-          <div className="box">
+
+          {/* <div className="grid-3">
+          <div className="box" data-aos="fade-up">
             <h1 className="indigo">50+</h1>
             <h3>World Class Speakers</h3>
           </div>
-          <div className="box">
+          <div className="box" data-aos="fade-up">
             <h1 className="indigo">250+</h1>
             <h3>Deal Making Opportunities</h3>
           </div>
-          <div className="box">
+          <div className="box" data-aos="fade-up">
             <h1 className="indigo">300+</h1>
             <h3>Global Investors and Business Leaders</h3>
           </div>
-        </div>
-      </section>
-      <Expertise />
-      <Banner />
-      {/* <Testimonial /> */}
-      <div className="container">
-        <div className="heading-title">
-          <Title title={"Upcoming Events"} />
-        </div>
-        <div className="eventContainer">
-          <a href="https://events.humanitix.com/clean-energy-monetising-the-opportunity">
-            <img
-              className="eventImg"
-              src="https://res.cloudinary.com/dueoon8xe/image/upload/v1724772513/ftqv2aapmtpvgzetjrtp.jpg"
-            />
-          </a>
-        </div>
-        <div className="eventContainer">
-          <a href="https://www.eventbrite.com.au/e/captech2024-discover-connect-execute-venue-icc-sydney-tickets-772015889307">
-            <img
-              className="eventImg"
-              src="https://res.cloudinary.com/duv9rw1wg/image/upload/v1719326603/homePage/qo7dq9u1cfptxijtlsly.png"
-            />
-          </a>
-        </div>
-      </div>
+        </div> */}
+        </section>
 
-      <section className="bannerr">
-        <div className="container">
+        <div data-aos="fade-right">
+          <Banner />
+        </div>
+
+        {/* <section className="bannerr"> */}
+        {/* <div className="container">
           <div>
             <br />
             <h2 id="partner">Partner Country: India</h2>
-          </div>
+          </div> */}
+        {/* </div> */}
+        {/* <div data-aos="fade-left">
+          <Link href="/contact" passHref>
+            <img
+              src="https://res.cloudinary.com/dueoon8xe/image/upload/v1722364945/lk35ez8ip3wgrsgzq2kf.png"
+              className="eventImg2"
+              alt="Event"
+            />
+          </Link>
         </div>
-        <Link href="/contact" passHref>
-          <img
-            src="https://res.cloudinary.com/dueoon8xe/image/upload/v1722364945/lk35ez8ip3wgrsgzq2kf.png"
-            className="eventImg2"
-            alt="Event"
-          />
-        </Link>
-      </section>
+      </section> */}
 
-      <Brand />
-      <div className="iframe-container">
+        <div data-aos="fade-right">
+          <HeroPurpose />
+        </div>
+        {/* 
+      <div data-aos="fade-left">
+        <HeroFeatures />
+      </div> */}
+
+        <div data-aos="fade-right">
+          <HeroParts />
+        </div>
+
+        {/* <div data-aos="fade-left">
+        <HeroCheckout />
+      </div> */}
+
+        <div data-aos="fade-right">
+          <CountdownTimer />
+        </div>
+
+        <div data-aos="fade-left">
+          <BusinessForum />
+        </div>
+
+        <div data-aos="fade-right">
+          <TicketPage />
+        </div>
+
+        <div data-aos="fade-left">
+          <HeroAgenda />
+          <Banner/>
+        </div>
+
+        <div data-aos="fade-right">
+          <BenefitsActivities />
+        </div>
+
+        {/* <div data-aos="fade-left">
+          <Expertise />
+        </div> */}
+
+        {/* <div data-aos="fade-right">
+        <Brand />
+      </div> */}
+
+        {/* <div className="iframe-container">
         <br />
         <Title title={"Our Podcast"} />
-
-        <div className="podContent grid-3">
+        <div className="podContent grid-3" data-aos="fade-right">
           <iframe
             className="iframe"
             src="https://www.youtube.com/embed/LMNVfOu_7a4"
-            title="The Deal Flow : A distinguished leader with over 23 years of expertise in financial data, news, and analytics."
+            title="The Deal Flow..."
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
           ></iframe>
-
-          {/* <iframe
-            className="iframe"
-            src="https://www.youtube.com/embed/YOUR_VIDEO_ID" // Replace with your video URL
-            title="Coming Soon"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          ></iframe> */}
         </div>
-      </div>
-
-      {/* <div className='text-center'>
-        <Title title='Latest news & articles' />
       </div> */}
-      {/* <BlogCard /> */}
+      </div>
     </>
   );
-};
+}
 
 export default Hero;

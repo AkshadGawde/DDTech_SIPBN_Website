@@ -19,7 +19,7 @@ const Banner = () => {
                   "https://www.eventbrite.com.au/e/captech2024-discover-connect-execute-venue-icc-sydney-tickets-772015889307";
               }}
             >
-              Learn More
+              book now
             </button>
           </div>
         </div>

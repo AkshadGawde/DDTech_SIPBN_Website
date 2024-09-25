@@ -128,9 +128,9 @@
 .button-primary {
   text-transform: capitalize;
   color: white;
-  padding: 13px 40px;
+  padding: 15px 40px;
   background-color: rgb(14, 17, 220);
-  font-size: $md;
+  font-size: 16px;
   border-radius: 50px;
   max-width: 300px;
   cursor: pointer;
@@ -148,7 +148,7 @@
   box-shadow: none;
   color: $white;
   padding: 20px 60px;
-  font-size: $lg;
+  font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 2px;
   box-shadow: rgba($dark, 5) 0px 7px 29px 0px;
@@ -1026,4 +1026,19 @@ ul {
   .capList br {
     display: none;
   }
-  
+  .purposeFlex{
+    display: flex;
+    justify-content: space-evenly;
+    padding : 1rem;
+    @media screen and (max-width:768px) {
+      h3{
+        font-size : 0.8rem
+      }
+    }
+    @media screen and (max-width:480px) {
+      h3{
+        font-size : 1rem;
+      }
+      
+    }
+  }

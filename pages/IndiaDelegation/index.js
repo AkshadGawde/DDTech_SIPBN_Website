@@ -3,7 +3,7 @@ import { Title, TitleSm } from "@/components/common/Title";
 
 const index = () => {
   return (
-    <div>
+    <div style={{height:"39vh", display:"flex" , justifyContent:"center" , alignItems:"center"}}>
       <Title title="COMING SOON ..." />
     </div>
   );
