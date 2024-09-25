@@ -194,6 +194,11 @@ export const brand = [
     cover: "../SVG/Logo19.svg",
     link: "https://advisoryboardworld.com/events/89840",
   },
+  {
+    id: 20,
+    cover: "../SVG/Logo20.svg",
+    link: "https://advisoryboardworld.com/events/89840",
+  },
 ];
 export const brand2 = [
   {
@@ -324,11 +329,12 @@ export const memberdata = [
     href: "/team/3",
   },
   {
-    id:36,
-    title:"Karen Clark",
-    cover:"https://res.cloudinary.com/dueoon8xe/image/upload/v1726557761/Speakers%20-%20CapTech/w6en6zwrngnvba5y91e9.png",
-    post:"CEO, Telstra Broadcast Services  ",
-    href:"/team/36"
+    id: 36,
+    title: "Karen Clark",
+    cover:
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1726557761/Speakers%20-%20CapTech/w6en6zwrngnvba5y91e9.png",
+    post: "CEO, Telstra Broadcast Services  ",
+    href: "/team/36",
   },
   {
     id: 22,
@@ -564,12 +570,13 @@ export const memberdata = [
     href: "/team/35",
   },
   {
-    id:37,
-    title:"MICHAEL TOBIN ",
-    cover:"https://res.cloudinary.com/dueoon8xe/image/upload/v1726557769/Speakers%20-%20CapTech/okgyllfjah2bs9rm8i5s.png",
-    post:"BE, MBA, DFS, FAICD​",
-    href:"/team/37",
-  }
+    id: 37,
+    title: "MICHAEL TOBIN ",
+    cover:
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1726557769/Speakers%20-%20CapTech/okgyllfjah2bs9rm8i5s.png",
+    post: "BE, MBA, DFS, FAICD​",
+    href: "/team/37",
+  },
 ];
 
 export const moderatordata = [
@@ -641,12 +648,14 @@ In October 2022 Joseph became Director of the James Martin Institute (JMI) for P
     link: "https://www.linkedin.com/in/joseph-rizk-am-30072316/?originalSubdomain=au",
   },
   {
-    id:"36",
-    title:"Karen Clark",
-    description:"Karen is a media technology executive with diverse experience gained through strategic, commercial, technical, people and project management roles spanning over 25 years. As CEO of Telstra Broadcast Services, Karen and her global team are responsible for the seamless delivery of premium live video content and managed media services to broadcast, media, entertainment and sports customers around the world. Prior to Telstra, Karen spent several years at Globecast Australia and was the CEO of Visionbytes, a Paul Ramsay digital media company. Karen holds an MBA Executive from the Australian Graduate School of Management and a Master’s degree in IT from the University of Sydney. A former SMPTE Board member, Karen has recently been appointed to the IBC Council. ",
-    image:"https://res.cloudinary.com/dueoon8xe/image/upload/v1726557761/Speakers%20-%20CapTech/w6en6zwrngnvba5y91e9.png",
-    title:"CEO, Telstra Broadcast Services",
-    link:"https://www.linkedin.com/in/karen-clark-7018952?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+    id: "36",
+    title: "Karen Clark",
+    description:
+      "Karen is a media technology executive with diverse experience gained through strategic, commercial, technical, people and project management roles spanning over 25 years. As CEO of Telstra Broadcast Services, Karen and her global team are responsible for the seamless delivery of premium live video content and managed media services to broadcast, media, entertainment and sports customers around the world. Prior to Telstra, Karen spent several years at Globecast Australia and was the CEO of Visionbytes, a Paul Ramsay digital media company. Karen holds an MBA Executive from the Australian Graduate School of Management and a Master’s degree in IT from the University of Sydney. A former SMPTE Board member, Karen has recently been appointed to the IBC Council. ",
+    image:
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1726557761/Speakers%20-%20CapTech/w6en6zwrngnvba5y91e9.png",
+    title: "CEO, Telstra Broadcast Services",
+    link: "https://www.linkedin.com/in/karen-clark-7018952?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
   {
     id: "4",
@@ -1077,13 +1086,15 @@ Jua serves as the Treasurer of the Australasian Green Infrastructure Network. Wi
     link: "https://www.linkedin.com/in/giovannilaudicina/",
   },
   {
-    id:"37",
-    name:"MICHAEL TOBIN ",
-    description:"Michael is the Founder and Managing Director of Vantage Asset Management Pty Limited a leading Australian, independent, private equity management company. Vantage provides investors with unique access to the high performing Private Equity asset class and offers professional investment management and advisory services to institutions and sophisticated investors seeking a diversified investment approach to private equity investing. Michael has over 30 years’ experience in private equity management, advisory and investment as well as in management operations and is responsible for the development and management of all private equity fund investment activity at Vantage. Since establishing Vantage in 2004, Michael has managed Vantage’s funds share of investment into over $14.5 billion of Australian Private Equity funds resulting in more than $9.4 billion of equity funding across 189 underlying portfolio companies. Across its flagship fund of funds program, Vantage has made investment commitments across 34 underlying private equity funds who in turn have completed investments into 189 companies and sold (or exited) 99 of those companies, delivering Vantage’s funds a 2.9 X gross multiple on invested capital with an average gross Internal Rate of Return of 47.3% p.a. across all exits. Michael holds a BE from the University of NSW, an MBA from the Australian Graduate School of Management (majoring in Finance and Strategy), a Diploma of Financial Services from the Australian Financial Markets Association and is a Fellow of the Australian Institute of Company Directors.",
-    image:"https://res.cloudinary.com/dueoon8xe/image/upload/v1726557769/Speakers%20-%20CapTech/okgyllfjah2bs9rm8i5s.png",
-    title:"BE, MBA, DFS, FAICD​",
-    link:"https://www.linkedin.com/in/michael-tobin-0668084?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-  }
+    id: "37",
+    name: "MICHAEL TOBIN ",
+    description:
+      "Michael is the Founder and Managing Director of Vantage Asset Management Pty Limited a leading Australian, independent, private equity management company. Vantage provides investors with unique access to the high performing Private Equity asset class and offers professional investment management and advisory services to institutions and sophisticated investors seeking a diversified investment approach to private equity investing. Michael has over 30 years’ experience in private equity management, advisory and investment as well as in management operations and is responsible for the development and management of all private equity fund investment activity at Vantage. Since establishing Vantage in 2004, Michael has managed Vantage’s funds share of investment into over $14.5 billion of Australian Private Equity funds resulting in more than $9.4 billion of equity funding across 189 underlying portfolio companies. Across its flagship fund of funds program, Vantage has made investment commitments across 34 underlying private equity funds who in turn have completed investments into 189 companies and sold (or exited) 99 of those companies, delivering Vantage’s funds a 2.9 X gross multiple on invested capital with an average gross Internal Rate of Return of 47.3% p.a. across all exits. Michael holds a BE from the University of NSW, an MBA from the Australian Graduate School of Management (majoring in Finance and Strategy), a Diploma of Financial Services from the Australian Financial Markets Association and is a Fellow of the Australian Institute of Company Directors.",
+    image:
+      "https://res.cloudinary.com/dueoon8xe/image/upload/v1726557769/Speakers%20-%20CapTech/okgyllfjah2bs9rm8i5s.png",
+    title: "BE, MBA, DFS, FAICD​",
+    link: "https://www.linkedin.com/in/michael-tobin-0668084?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+  },
 ];
 export const SuccessCarouselData = [
   {

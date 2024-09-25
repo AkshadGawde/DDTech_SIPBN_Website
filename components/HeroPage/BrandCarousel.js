@@ -15,10 +15,10 @@ const BrandCarousel = () => {
     autoplaySpeed: 2000,
     responsive: [
       {
-        breakpoint:1440,
-        settings:{
+        breakpoint: 1440,
+        settings: {
           slidesToShow: 5,
-        }
+        },
       },
       {
         breakpoint: 1024,
@@ -163,12 +163,18 @@ const BrandCarousel = () => {
       height: 900,
       alt: "carousel Image 8",
     },
+    {
+      src: "../SVG/Logo20.svg",
+      width: 600,
+      height: 900,
+      alt: "carousel Image 8",
+    },
   ];
 
   return (
     <div className="brand-carousel">
       {/* <h1>Our Partners</h1> */}
-      <div className="carouselHolder" style={{display:"block"}}>
+      <div className="carouselHolder" style={{ display: "block" }}>
         <Slider {...sliderSettings} className="slider">
           {brandimages.map((image, index) => (
             <div key={index} className="slide">
