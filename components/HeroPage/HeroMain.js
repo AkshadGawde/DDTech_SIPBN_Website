@@ -28,10 +28,26 @@ function HeroMain() {
             #CapTech2024 <br />
             25th - 28th November 2024
           </h2>
-          <button className="secondary-button">Book Your Tickets</button>
+          <button
+            className="secondary-button"
+            onClick={() =>
+              window.open(
+                "https://www.eventbrite.com.au/e/captech2024-discover-connect-execute-tickets-772015889307",
+                "_blank"
+              )
+            }
+          >
+            Book Your Tickets
+          </button>
           <div style={{ display: "flex" }}>
-            <button className="button-primary">Download Brochure</button>
-            <Link href="https://www.eventbrite.com.au/e/captech2024-discover-connect-execute-tickets-772015889307"></Link>
+            <button
+              className="button-primary"
+              onClick={() =>
+                window.open("/Captech_Highlight_Document.pdf", "_blank")
+              }
+            >
+              Download Brochure
+            </button>
           </div>
         </div>
         <div className="box" data-aos="fade-left">
