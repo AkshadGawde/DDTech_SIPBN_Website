@@ -649,7 +649,7 @@ In October 2022 Joseph became Director of the James Martin Institute (JMI) for P
   },
   {
     id: "36",
-    title: "Karen Clark",
+    name: "Karen Clark",
     description:
       "Karen is a media technology executive with diverse experience gained through strategic, commercial, technical, people and project management roles spanning over 25 years. As CEO of Telstra Broadcast Services, Karen and her global team are responsible for the seamless delivery of premium live video content and managed media services to broadcast, media, entertainment and sports customers around the world. Prior to Telstra, Karen spent several years at Globecast Australia and was the CEO of Visionbytes, a Paul Ramsay digital media company. Karen holds an MBA Executive from the Australian Graduate School of Management and a Master’s degree in IT from the University of Sydney. A former SMPTE Board member, Karen has recently been appointed to the IBC Council. ",
     image:
