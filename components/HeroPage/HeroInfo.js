@@ -39,11 +39,7 @@ function HeroInfo() {
                 collaborative ventures across eight key sectors.
               </p>
               <br />
-              <p className="agendaText">
-                Parliament House picture: Please remove the dull orange colour
-                from the picture Team drinks picture: please remove the top
-                empty part of the room
-              </p>
+              <p className="agendaText"></p>
             </div>
             <button
               className="button-primary"
