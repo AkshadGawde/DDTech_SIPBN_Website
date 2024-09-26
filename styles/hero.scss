@@ -1167,3 +1167,41 @@ td h2{
 td h3{
   font-size: 1rem;
 }
+
+.Sponsor-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /* Aligns eventCards with space around them */
+  padding: 20px;
+  margin-top: 10px;
+}
+
+.SponsorCard {
+  flex: 1 0 300px; /* Flex grow, shrink, basis */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+}
+.SponsorImg{
+  max-width: 70%;
+}
+
+@media (max-width: 768px) {
+  .SponsorCard {
+      flex-basis: calc(50% - 20px); 
+  }
+
+}
+
+@media (max-width: 480px) {
+  .SponsorCard {
+      flex-basis: calc(100% - 20px); 
+  }
+
+}
+
+
+
+

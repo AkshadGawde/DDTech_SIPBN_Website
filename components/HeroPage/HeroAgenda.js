@@ -4,6 +4,20 @@ import { Title } from "../common/Title";
 function HeroAgenda() {
   return (
     <div className="agendaContent">
+      <Title title="#CapTech2024 Silver Sponsor" />
+      <hr style={{ width: "35%" }} />
+      <div className="Sponsor-container">
+        <div className="SponsorCard">
+          <a>
+            <img
+              className="SponsorImg"
+              src="https://res.cloudinary.com/dueoon8xe/image/upload/v1727377745/Silver_Sponsor_s3ia9o.svg"
+              alt="Event 1 Image"
+            />
+          </a>
+        </div>
+      </div>
+
       <Title title=" 2024 Agenda" />
       <hr style={{ width: "35%" }} />
 
