@@ -3,17 +3,19 @@ import "slick-carousel/slick/slick-theme.css";
 import React, { useState } from "react";
 import Slider from "react-slick";
 import Image from "next/image";
+import { Title } from "../common/Title";
 
 const BrandCarousel = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const sliderSettings = {
-    infinite: true,
-    speed: 200,
-    slidesToShow: 7,
+    infinite: true, // Enable infinite scrolling
+    speed: 1000, // Increase speed to simulate marquee effect
+    slidesToShow: 7, // Number of slides to show at a time
     slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 500,
-    pauseOnHover: true,
+    autoplay: true, // Autoplay to simulate continuous scrolling
+    autoplaySpeed: 0, // Set speed to 0 for continuous scrolling
+    cssEase: "linear", // Linear easing for smooth, constant movement
+    pauseOnHover: false, // Disable pausing when hovering
     responsive: [
       {
         breakpoint: 1440,
@@ -188,6 +190,22 @@ const BrandCarousel = () => {
         <div className="innerHr1"></div>
         <p>Our Partners</p>
         <div className="innerHr2"></div>
+      </div>
+      <div className="Sponsor-container">
+        <div className="SponsorCard">
+          <a>
+            <img
+              className="SponsorImg"
+              src="https://res.cloudinary.com/dueoon8xe/image/upload/v1727377745/Silver_Sponsor_s3ia9o.svg"
+              alt="Event 1 Image"
+            />
+          </a>
+        </div>
+        <div className="outerHrHolder">
+          <div className="innerHr1"></div>
+          <p>#CapTech2024 Sliver Partner </p>
+          <div className="innerHr2"></div>
+        </div>
       </div>
     </div>
   );

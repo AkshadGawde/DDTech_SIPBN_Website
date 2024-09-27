@@ -7,12 +7,33 @@ import { CldImage } from "next-cloudinary";
 const CarouselWithText = () => {
   const settings = {
     infinite: true,
-    speed: 200,
-    slidesToShow: 1,
+    speed: 1500,
+    slidesToShow: 1, // Default number of slides to show on large screens
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 500,
+    autoplaySpeed: 0,
+    cssEase: "linear",
     pauseOnHover: true,
+    responsive: [
+      {
+        breakpoint: 1440, // Screens less than 1440px
+        settings: {
+          slidesToShow: 1, // Show 3 slides for large tablets/laptops
+        },
+      },
+      {
+        breakpoint: 1024, // Screens less than 1024px
+        settings: {
+          slidesToShow: 1, // Show 2 slides for tablets
+        },
+      },
+      {
+        breakpoint: 768, // Screens less than 768px
+        settings: {
+          slidesToShow: 1, // Show 1 slide for mobile devices
+        },
+      },
+    ],
   };
 
   return (
@@ -21,7 +42,7 @@ const CarouselWithText = () => {
       <div style={{ width: "80%", margin: "0 auto" }}>
         <Slider {...settings}>
           {memberdata.map((slide, index) => (
-            <div key={index}>
+            <div key={index} style={{ margin: "20px" }}>
               <a href={slide.href}>
                 <CldImage
                   src={slide.cover}
@@ -34,7 +55,7 @@ const CarouselWithText = () => {
               <div style={{ textAlign: "center", marginTop: "10px" }}>
                 <a
                   href={slide.href}
-                  style={{ fontSize: "24px" }}
+                  style={{ fontSize: "18px" }}
                   className="sliderSpeaker"
                 >
                   {slide.title}
