@@ -7,7 +7,8 @@ const AdminDashboard = () => {
         <div>
             <h1>Welcome to the Admin Dashboard</h1>
             <Link href="/event-manager">Manage Events</Link>
-            {/* Other admin dashboard content */}
+            <br></br>
+            <Link href="/ticket-manager">Manage Tickets</Link>
         </div>
     );
 };
