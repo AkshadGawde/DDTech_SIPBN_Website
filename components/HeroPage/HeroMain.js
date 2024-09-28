@@ -16,7 +16,7 @@ function HeroMain() {
         padding: "5% 0",
       }}
     >
-      <video className="bgVideo" autoPlay muted loop plays-inline>
+      <video className="bgVideo" autoPlay muted loop playsInline>
         <source
           src="https://res.cloudinary.com/dueoon8xe/video/upload/v1723785194/Speakers%20-%20Sipbn/hshdkrcut1ziuoddwwnd.mp4"
           type="video/mp4"
