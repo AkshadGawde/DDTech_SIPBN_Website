@@ -9,6 +9,7 @@ const AdminDashboard = () => {
             <Link href="/event-manager">Manage Events</Link>
             <br></br>
             <Link href="/ticket-manager">Manage Tickets</Link>
+            <Link href="/qr-scanner">QR Scan</Link>
         </div>
     );
 };
