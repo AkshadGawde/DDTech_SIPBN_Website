@@ -1,16 +1,14 @@
-import React from 'react'
+import React from 'react';
+import '../../styles/success.module.scss'; // Import the styles
 
-function Item(data) {
+const Item = ({ src, title, description }) => {
   return (
-      <div className='itemContainer'>
-        <img src={data.src} alt="" className='itemImage'/>
-        <div className='itemTextContainer'>
-            <h2 className='itemTitle'>{data.title}</h2>
-            <hr />
-            <p className='itemDescription'>{data.description}</p>
-        </div>
-      </div>
-  )
-}
+    <div className="carousel-item">
+      <img src={src} alt={title} className="carousel-image" />
+      <h3 className="carousel-title">{title}</h3>
+      <p className="carousel-description">{description}</p>
+    </div>
+  );
+};
 
-export default Item
+export default Item;
