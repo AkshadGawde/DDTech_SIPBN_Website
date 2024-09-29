@@ -1,22 +1,22 @@
-import React, { useRef, useEffect } from 'react';
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
-import Item from './Item';
-import { SuccessCarouselData } from '@/assets/data/dummydata';
+import React, { useRef, useEffect } from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Item from "./Item";
+import { SuccessCarouselData } from "@/assets/data/dummydata";
 
 export function SuccessCarousel(props) {
   const sliderRef = useRef(null);
 
   const settings = {
     infinite: true,
-    speed: 6000,
+    speed: 3000,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: false, // Initially set autoplay to false
+    autoplay: true, // Initially set autoplay to false
     autoplaySpeed: 0,
     pauseOnHover: true,
-    arrows: false,
+    arrows: true,
   };
 
   useEffect(() => {
@@ -36,7 +36,11 @@ export function SuccessCarousel(props) {
       <Slider ref={sliderRef} {...settings}>
         {SuccessCarouselData.map((item, index) => (
           <div key={index}>
-            <Item src={item.src} title={item.title} description={item.description} />
+            <Item
+              src={item.src}
+              title={item.title}
+              description={item.description}
+            />
           </div>
         ))}
       </Slider>
