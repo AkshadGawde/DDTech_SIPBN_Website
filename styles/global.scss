@@ -800,7 +800,13 @@ form {
   }
 }
 .carouselHolder{
-  padding: 30px;
+  padding: 10px 70px;
+  height: 100%;
+  max-width: fit-content;
+  @media screen and (max-width:1024px) {
+    padding: 10px 50px;
+    height: 100%;
+  }
   @media screen and (max-width:600px) {
     padding: 20px;
   }
@@ -832,4 +838,23 @@ form {
 .rec-dot_active{
   background-color: rgb(14, 17, 220) !important;
   box-shadow: 0 0 1px 3px #06038D !important;
+}
+// .carousel-item
+.carousel-item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.carousel-description{
+  max-width: 40%;
+  @media screen and (max-width:1024px) {
+    max-width: 60%;
+  }
+  @media screen and (max-width:768px) {
+    max-width: 80%;
+  }
+}
+.carousel-title{
+  margin: 20px 0;
 }
