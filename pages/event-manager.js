@@ -10,34 +10,50 @@ import Link from 'next/link';
 const EventManager = () => {
     const [eventName, setEventName] = useState('');
     const [eventDate, setEventDate] = useState('');
-    const [ticketCategories, setTicketCategories] = useState([{ name: '', price: '', description: '', available: '' }]);
+    const [ticketCategories, setTicketCategories] = useState({});
     const [existingEvents, setExistingEvents] = useState([]);
     const [selectedEventId, setSelectedEventId] = useState('add-new');
     const [error, setError] = useState('');
     const [success, setSuccess] = useState('');
 
     useEffect(() => {
-        const fetchEvents = async () => {
-            const eventsCollection = collection(db, 'events');
-            const eventDocs = await getDocs(eventsCollection);
-            const events = eventDocs.docs.map(doc => ({ id: doc.id, ...doc.data() }));
-            setExistingEvents(events);
-        };
-        fetchEvents();
+        fetchEvents(); // Fetch existing events on component mount
     }, []);
 
-    const handleTicketChange = (index, field, value) => {
-        const newCategories = [...ticketCategories];
-        newCategories[index][field] = value;
+    const fetchEvents = async () => {
+        const eventsCollection = collection(db, 'events');
+        const eventDocs = await getDocs(eventsCollection);
+        const events = eventDocs.docs.map(doc => ({ id: doc.id, ...doc.data() }));
+        setExistingEvents(events);
+    };
+
+    const handleTicketChange = (ticketName, field, value) => {
+        const newCategories = { ...ticketCategories };
+        if (!newCategories[ticketName]) {
+            newCategories[ticketName] = { name: ticketName, price: 0, description: '', available: 0, sold: 0 };
+        }
+
+        // Ensure that price and available are treated as numbers
+        if (field === 'price' || field === 'available') {
+            newCategories[ticketName][field] = parseFloat(value) || 0; // Convert to number or default to 0
+        } else {
+            newCategories[ticketName][field] = value;
+        }
+
         setTicketCategories(newCategories);
     };
 
     const addTicketCategory = () => {
-        setTicketCategories([...ticketCategories, { name: '', price: '', description: '', available: '' }]);
+        const newTicketName = `ticket-${Object.keys(ticketCategories).length + 1}`;
+        setTicketCategories({
+            ...ticketCategories,
+            [newTicketName]: { name: newTicketName, price: 0, description: '', available: 0, sold: 0 } // Initialize sold to 0
+        });
     };
 
-    const deleteTicketCategory = (index) => {
-        const newCategories = ticketCategories.filter((_, i) => i !== index);
+    const deleteTicketCategory = (ticketName) => {
+        const newCategories = { ...ticketCategories };
+        delete newCategories[ticketName];
         setTicketCategories(newCategories);
     };
 
@@ -45,12 +61,23 @@ const EventManager = () => {
         e.preventDefault();
         setError('');
         setSuccess('');
-
+    
+        // Convert ticketCategories object to an array and include sold as 0
+        const ticketsArray = Object.entries(ticketCategories).map(([ticketName, ticket]) => ({
+            [ticketName]: {
+                name: ticket.name,
+                price: Number(ticket.price),  // Ensure price is a number
+                description: ticket.description,
+                available: Number(ticket.available), // Ensure available is a number
+                sold: 0, // Initialize sold to 0
+            }
+        })).reduce((acc, curr) => ({ ...acc, ...curr }), {}); // Flatten the array into an object
+    
         try {
             const eventRef = await addDoc(collection(db, 'events'), {
                 name: eventName,
                 date: eventDate,
-                tickets: ticketCategories,
+                tickets: ticketsArray, // Save as an object with ticket names as keys
             });
             setSuccess(`Event added with ID: ${eventRef.id}`);
             resetForm();
@@ -62,7 +89,7 @@ const EventManager = () => {
     const resetForm = () => {
         setEventName('');
         setEventDate('');
-        setTicketCategories([{ name: '', price: '', description: '', available: '' }]);
+        setTicketCategories({});
         setSelectedEventId('add-new');
     };
 
@@ -71,35 +98,68 @@ const EventManager = () => {
             resetForm();
             return;
         }
-
+    
         const eventDoc = doc(db, 'events', eventId);
         const eventData = await getDoc(eventDoc);
         if (eventData.exists()) {
+            const eventTickets = eventData.data().tickets;
+    
+            // Convert the tickets object back to an array for the form
+            const ticketObj = {};
+            Object.entries(eventTickets).forEach(([ticketName, ticket]) => {
+                ticketObj[ticketName] = { ...ticket }; // Maintain existing ticket data
+            });
+    
             setEventName(eventData.data().name);
             setEventDate(eventData.data().date);
-            setTicketCategories(eventData.data().tickets);
+            setTicketCategories(ticketObj); // Set the tickets as an object for the form
             setSelectedEventId(eventId);
         }
     };
+    
 
     const handleUpdate = async (e) => {
         e.preventDefault();
         setError('');
         setSuccess('');
-
+    
+        // Fetch the existing event document first to retain the sold value
+        const eventDoc = doc(db, 'events', selectedEventId);
+        const eventData = await getDoc(eventDoc);
+        if (!eventData.exists()) {
+            setError('Event not found');
+            return;
+        }
+    
+        const existingTickets = eventData.data().tickets; // Get existing tickets
+    
+        // Convert ticketCategories object to an array while retaining the sold values
+        const ticketsArray = Object.entries(ticketCategories).reduce((acc, [ticketName, ticket]) => {
+            const existingTicket = existingTickets[ticketName] || { sold: 0 }; // Use existing sold value or 0 if not found
+            acc[ticketName] = {
+                name: ticket.name,
+                price: Number(ticket.price), // Ensure price is a number
+                description: ticket.description,
+                available: Number(ticket.available), // Ensure available is a number
+                sold: existingTicket.sold, // Retain sold value
+            };
+            return acc;
+        }, {});
+    
         try {
-            const eventDoc = doc(db, 'events', selectedEventId);
             await updateDoc(eventDoc, {
                 name: eventName,
                 date: eventDate,
-                tickets: ticketCategories,
+                tickets: ticketsArray, // Save as an object with ticket names as keys
             });
-            setSuccess(`Event updated successfully`);
+            setSuccess('Event updated successfully');
             resetForm();
+            await fetchEvents(); // Refresh existing events to reflect the updated event
         } catch (error) {
             setError('Error updating event: ' + error.message);
         }
     };
+    
 
     const handleDelete = async () => {
         if (!selectedEventId || selectedEventId === 'add-new') return;
@@ -170,85 +230,68 @@ const EventManager = () => {
                         />
                     </div>
 
-                    <h3 className="sm:col-span-2 text-lg font-semibold text-gray-900 dark:text-white">Ticket Categories</h3>
-                    {ticketCategories.map((ticket, index) => (
-                        <div key={index} className="sm:col-span-2">
-                            <h4 className="text-md font-semibold text-gray-900 dark:text-white">Ticket Category {index + 1}</h4>
-                            <div className="grid gap-4 sm:grid-cols-4">
-                                <div>
-                                    <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Name:</label>
+                    <div className="sm:col-span-2">
+                        <h3 className="mb-2 text-lg font-semibold text-gray-900 dark:text-white">Ticket Categories:</h3>
+                        {Object.entries(ticketCategories).map(([ticketName, ticket]) => (
+                            <div key={ticketName} className="sm:col-span-2 flex justify-between items-center mb-2">
+                                <div className="flex-1">
                                     <input
                                         type="text"
-                                        className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                        placeholder="Ticket Name"
                                         value={ticket.name}
-                                        onChange={(e) => handleTicketChange(index, 'name', e.target.value)}
-                                        required
+                                        onChange={(e) => handleTicketChange(ticketName, 'name', e.target.value)}
+                                        className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
                                     />
-                                </div>
-                                <div>
-                                    <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Price:</label>
                                     <input
                                         type="number"
-                                        className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                        placeholder="Price"
                                         value={ticket.price}
-                                        onChange={(e) => handleTicketChange(index, 'price', e.target.value)}
-                                        required
+                                        onChange={(e) => handleTicketChange(ticketName, 'price', e.target.value)}
+                                        className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
                                     />
-                                </div>
-                                <div>
-                                    <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Description:</label>
-                                    <input
-                                        type="text"
-                                        className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-                                        value={ticket.description}
-                                        onChange={(e) => handleTicketChange(index, 'description', e.target.value)}
-                                        required
-                                    />
-                                </div>
-                                <div>
-                                    <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Tickets Available:</label>
                                     <input
                                         type="number"
-                                        className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                        placeholder="Available"
                                         value={ticket.available}
-                                        onChange={(e) => handleTicketChange(index, 'available', e.target.value)}
-                                        required
+                                        onChange={(e) => handleTicketChange(ticketName, 'available', e.target.value)}
+                                        className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
+                                    />
+                                    <textarea
+                                        placeholder="Description"
+                                        value={ticket.description}
+                                        onChange={(e) => handleTicketChange(ticketName, 'description', e.target.value)}
+                                        className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
                                     />
                                 </div>
+                                <button
+                                    type="button"
+                                    onClick={() => deleteTicketCategory(ticketName)}
+                                    className="text-red-600 hover:text-red-800">
+                                    Delete
+                                </button>
                             </div>
-                            <button
-                                type="button"
-                                onClick={() => deleteTicketCategory(index)}
-                                className="mt-2 text-red-600 hover:underline"
-                            >
-                                Delete Ticket Category
-                            </button>
-                        </div>
-                    ))}
-                    <button
-                        type="button"
-                        onClick={addTicketCategory}
-                        className="mt-2 text-blue-600 hover:underline"
-                    >
-                        Add Ticket Category
-                    </button>
+                        ))}
+                        <button
+                            type="button"
+                            onClick={addTicketCategory}
+                            className="sm:col-span-2 text-green-600 hover:text-green-800">
+                            Add Ticket Category
+                        </button>
+                    </div>
 
-                    {error && <p className="text-red-500">{error}</p>}
-                    {success && <p className="text-green-500">{success}</p>}
-
-                    <div className="sm:col-span-2 mt-4">
+                    <div className="mt-4 sm:col-span-2">
+                        {error && <p className="text-red-500">{error}</p>}
+                        {success && <p className="text-green-500">{success}</p>}
                         <button
                             type="submit"
-                            className="inline-flex items-center px-5 py-2.5 text-sm font-medium text-white bg-primary-700 rounded-lg focus:ring-4 focus:ring-primary-200 dark:focus:ring-primary-900 hover:bg-primary-800"
-                        >
+                            className="inline-flex items-center px-5 py-2.5 text-sm font-medium text-white bg-blue-600 rounded-lg focus:ring-4 focus:ring-blue-200 hover:bg-blue-700">
                             {selectedEventId === 'add-new' ? 'Add Event' : 'Update Event'}
                         </button>
                         {selectedEventId !== 'add-new' && (
                             <button
                                 type="button"
                                 onClick={handleDelete}
-                                className="ml-2 inline-flex items-center px-5 py-2.5 text-sm font-medium text-red-600 hover:underline"
-                            >
+                                className="ml-4 inline-flex items-center px-5 py-2.5 text-sm font-medium text-white bg-red-600 rounded-lg focus:ring-4 focus:ring-red-200 hover:bg-red-700">
                                 Delete Event
                             </button>
                         )}
