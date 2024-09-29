@@ -232,7 +232,7 @@ const TicketPurchase = () => {
         });
     };
 
-    // Function to handle order approval
+
     const onApprove = async (data, actions) => {
         try {
             console.log('Order approval initiated.');
@@ -307,11 +307,16 @@ const TicketPurchase = () => {
             await addDoc(ordersCollectionRef, orderData);
             console.log('Order details saved in the orders collection:', orderData);
     
-            // Send email with ticket details
+            // Prepare detailed ticket info for the email (like an invoice)
             const emailPayload = {
                 email: email,
                 eventDetails: eventDetails,
-                tickets: cart,
+                tickets: cart.map(ticket => ({
+                    name: ticket.name,
+                    quantity: ticket.quantity,
+                    price: ticket.price,
+                    total: ticket.quantity * ticket.price, // Total for this ticket type
+                })),
                 orderId: order.id, // Include PayPal transaction ID
                 transactionFee: calculateTransactionFee(),
                 totalAmount: calculateTotal(),
@@ -346,7 +351,7 @@ const TicketPurchase = () => {
     
             // Redirect to Success Page
             router.push({
-                pathname: '/success',
+                pathname: '/successs',
                 query: { email: email, orderId: order.id }, // Include PayPal transaction ID in query
             });
             console.log('Redirecting to success page.');
@@ -355,6 +360,7 @@ const TicketPurchase = () => {
             setError(`Error processing your order: ${error.message}. Please contact support.`);
         }
     };
+    
 
     return (
         <PayPalScriptProvider options={{ "client-id": process.env.NEXT_PUBLIC_PAYPAL_CLIENT_ID }}>
