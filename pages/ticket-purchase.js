@@ -22,20 +22,20 @@ const TicketPurchase = () => {
     useEffect(() => {
         const fetchEventDetails = async () => {
             if (!eventId) return;
-    
+
             console.log(`Fetching event details for eventId: ${eventId}`);
-    
+
             try {
                 const eventDocRef = doc(db, 'events', eventId);
                 const eventDoc = await getDoc(eventDocRef);
-    
+
                 if (eventDoc.exists()) {
                     const eventData = eventDoc.data();
                     console.log('Event Data:', eventData);
-    
+
                     // Ensure the tickets are in the correct format (as an object)
                     const ticketsMap = eventData.tickets || {};
-    
+
                     // Transform the ticket data if necessary
                     for (const ticketName in ticketsMap) {
                         const ticket = ticketsMap[ticketName];
@@ -50,17 +50,17 @@ const TicketPurchase = () => {
                             console.warn(`Ticket "${ticketName}" is malformed or missing.`);
                         }
                     }
-    
+
                     console.log('Transformed Tickets Map:', ticketsMap);
-    
+
                     setEventDetails({ ...eventData, tickets: ticketsMap });
-    
+
                     // Initialize quantities based on available tickets
                     const initialQuantities = Object.keys(ticketsMap).reduce((acc, ticketName) => {
                         acc[ticketName] = 0;
                         return acc;
                     }, {});
-    
+
                     setQuantities(initialQuantities);
                 } else {
                     console.error('Event not found');
@@ -71,10 +71,9 @@ const TicketPurchase = () => {
                 setError('Error fetching event details. Please try again later.');
             }
         };
-    
+
         fetchEventDetails();
     }, [eventId]);
-    
 
     // Function to add a ticket to the cart
     const addToCart = (ticket) => {
@@ -200,122 +199,40 @@ const TicketPurchase = () => {
         console.log('Proceeding to PayPal checkout.');
     };
 
-    // Function to create PayPal order
+    // Function to calculate the transaction fee (4% of ticket total)
+    const calculateTransactionFee = () => {
+        const ticketTotal = cart.reduce((acc, ticket) => acc + (ticket.price * ticket.quantity), 0);
+        const fee = ticketTotal * 0.04; // 4% transaction fee
+        const feeFixed = fee.toFixed(2);
+
+        console.log('Calculated transaction fee:', feeFixed);
+        return feeFixed;
+    };
+
+    // Function to calculate total price including the 4% transaction fee
+    const calculateTotal = () => {
+        const ticketTotal = cart.reduce((acc, ticket) => acc + (ticket.price * ticket.quantity), 0);
+        const fee = ticketTotal * 0.04; // 4% transaction fee
+        const totalWithFee = ticketTotal + fee;
+        const totalFixed = totalWithFee.toFixed(2);
+
+        console.log('Calculated total:', totalFixed);
+        return totalFixed;
+    };
+
+    // Function to create PayPal order with total including transaction fee
     const createOrder = (data, actions) => {
         console.log('Creating PayPal order.');
         return actions.order.create({
             purchase_units: [{
                 amount: {
-                    value: calculateTotal()
+                    value: calculateTotal(), // Send total amount (including transaction fee) to PayPal
                 }
             }]
         });
     };
 
     // Function to handle order approval
-    // const onApprove = async (data, actions) => {
-    //     try {
-    //         console.log('Order approval initiated.');
-    //         // Capture the order
-    //         const order = await actions.order.capture();
-    //         console.log('Order captured:', order);
-
-    //         // Log eventDetails and cart for debugging
-    //         console.log('Event Details:', eventDetails);
-    //         console.log('Cart:', cart);
-
-    //         // Check if eventDetails and eventDetails.tickets are defined
-    //         if (!eventDetails || !eventDetails.tickets) {
-    //             throw new Error('Event details are missing or malformed.');
-    //         }
-
-    //         const eventDocRef = doc(db, 'events', eventId);
-    //         const updates = {};
-
-    //         // Iterate over each ticket in the cart
-    //         for (const ticket of cart) {
-    //             console.log(`Processing ticket: ${ticket.name}`);
-
-    //             const eventTicket = eventDetails.tickets[ticket.name];
-    //             console.log(`Event Ticket Data for "${ticket.name}":`, eventTicket);
-
-    //             // Check if the ticket exists in eventDetails
-    //             if (!eventTicket) {
-    //                 throw new Error(`Ticket "${ticket.name}" not found in event details.`);
-    //             }
-
-    //             // Validate data types
-    //             if (typeof eventTicket.available !== 'number' || typeof eventTicket.sold !== 'number') {
-    //                 throw new Error(`Invalid ticket data for "${ticket.name}". "available" and "sold" should be numbers.`);
-    //             }
-
-    //             // Calculate new available and sold counts
-    //             const availableCount = eventTicket.available - ticket.quantity;
-    //             const soldCount = eventTicket.sold + ticket.quantity;
-
-    //             // Validate availability
-    //             if (availableCount < 0) {
-    //                 throw new Error(`Not enough available tickets for "${ticket.name}".`);
-    //             }
-
-    //             // Prepare updates for Firestore
-    //             updates[`tickets.${ticket.name}.available`] = availableCount;
-    //             updates[`tickets.${ticket.name}.sold`] = soldCount;
-    //         }
-
-    //         console.log('Updates to be applied:', updates);
-
-    //         // Update Firestore with new ticket counts
-    //         await updateDoc(eventDocRef, updates);
-    //         console.log('Firestore updated successfully.');
-
-    //         // Send email with ticket details
-    //         const emailPayload = {
-    //             email: email,
-    //             eventDetails: eventDetails,
-    //             tickets: cart,
-    //             orderId: order.id
-    //         };
-
-    //         console.log('Sending email with payload:', emailPayload);
-
-    //         const emailResponse = await fetch('/api/send-ticket-email', {
-    //             method: 'POST',
-    //             headers: {
-    //                 'Content-Type': 'application/json',
-    //             },
-    //             body: JSON.stringify(emailPayload),
-    //         });
-
-    //         if (!emailResponse.ok) {
-    //             const errorText = await emailResponse.text();
-    //             console.error('Email API response error:', errorText);
-    //             throw new Error(`Email API Error: ${errorText}`);
-    //         }
-
-    //         console.log('Email sent successfully.');
-
-    //         // Clear the cart and reset quantities
-    //         setCart([]);
-    //         const resetQuantities = { ...quantities };
-    //         cart.forEach(ticket => {
-    //             resetQuantities[ticket.name] = 0;
-    //         });
-    //         setQuantities(resetQuantities);
-    //         console.log('Cart and quantities reset.');
-
-    //         // Redirect to Success Page
-    //         router.push({
-    //             pathname: '/success',
-    //             query: { email: email, orderId: order.id },
-    //         });
-    //         console.log('Redirecting to success page.');
-    //     } catch (error) {
-    //         console.error('Error in onApprove:', error);
-    //         setError(`Error processing your order: ${error.message}. Please contact support.`);
-    //     }
-    // };
-
     const onApprove = async (data, actions) => {
         try {
             console.log('Order approval initiated.');
@@ -378,6 +295,9 @@ const TicketPurchase = () => {
                 email: email,
                 eventId: eventId,
                 eventDetails: eventDetails,
+                tickets: cart,
+                transactionFee: parseFloat(calculateTransactionFee()),
+                totalAmount: parseFloat(calculateTotal()),
                 createdAt: new Date(),
                 status: 'confirmed', // You can set the status according to your workflow
             };
@@ -393,6 +313,8 @@ const TicketPurchase = () => {
                 eventDetails: eventDetails,
                 tickets: cart,
                 orderId: order.id, // Include PayPal transaction ID
+                transactionFee: calculateTransactionFee(),
+                totalAmount: calculateTotal(),
             };
     
             console.log('Sending email with payload:', emailPayload);
@@ -432,14 +354,6 @@ const TicketPurchase = () => {
             console.error('Error in onApprove:', error);
             setError(`Error processing your order: ${error.message}. Please contact support.`);
         }
-    };
-    
-    // Function to calculate total price
-    const calculateTotal = () => {
-        const total = cart.reduce((acc, ticket) => acc + (ticket.price * ticket.quantity), 0);
-        const totalFixed = total.toFixed(2);
-        console.log('Calculated total:', totalFixed);
-        return totalFixed;
     };
 
     return (
@@ -503,7 +417,9 @@ const TicketPurchase = () => {
                                             <span>{ticket.name} (x{ticket.quantity}) - ${ticket.price.toFixed(2)}</span>
                                         </li>
                                     ))}
-                                    <li className="mt-2 font-semibold">Total: ${calculateTotal()}</li>
+                                    <li className="mt-2 font-semibold">Ticket Total: ${cart.reduce((acc, ticket) => acc + (ticket.price * ticket.quantity), 0).toFixed(2)}</li>
+                                    <li className="font-semibold">Transaction Fee (4%): ${calculateTransactionFee()}</li>
+                                    <li className="mt-2 font-bold">Total (Including Fee): ${calculateTotal()}</li>
                                 </ul>
                             )}
 
