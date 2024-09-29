@@ -36,7 +36,6 @@ const AttendeeDownload = () => {
             email: order.email, // Ensure you have an email field in the order
             ticketType: ticket.name,
             quantity: ticket.quantity,
-            date: order.date,
             transactionId: order.orderId,
           });
         });
@@ -57,36 +56,44 @@ const AttendeeDownload = () => {
       <button onClick={downloadGuestList} disabled={orders.length === 0}>
         {orders.length > 0 ? "Download Guest List" : "No Orders Available"}
       </button>
-      <table>
-        <thead>
-          <tr>
-            <th>Email</th>
-            <th>Transaction ID</th>
-            <th>Date</th>
-            <th>Tickets</th>
-          </tr>
-        </thead>
-        <tbody>
-          {orders.map((order) => (
-            <tr key={order.id}>
-              <td>{order.email}</td>
-              <td>{order.orderId}</td>
-              <td>{order.date}</td>
-              <td>
-                {Array.isArray(order.tickets) ? (
-                  order.tickets.map((ticket) => (
-                    <div key={ticket.name}>
-                      {ticket.name} (Quantity: {ticket.quantity})
-                    </div>
-                  ))
-                ) : (
-                  <div>No tickets available</div>
-                )}
-              </td>
+      <div className="relative overflow-x-auto">
+        <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+          <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+            <tr>
+              <th scope="col" className="px-6 py-3">
+                Email
+              </th>
+              <th scope="col" className="px-6 py-3">
+                Transaction ID
+              </th>
+              <th scope="col" className="px-6 py-3">
+                Tickets
+              </th>
             </tr>
-          ))}
-        </tbody>
-      </table>
+          </thead>
+          <tbody>
+            {orders.map((order) => (
+              <tr key={order.id} className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                <td className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                  {order.email}
+                </td>
+                <td className="px-6 py-4">{order.orderId}</td>
+                <td className="px-6 py-4">
+                  {Array.isArray(order.tickets) ? (
+                    order.tickets.map((ticket) => (
+                      <div key={ticket.name}>
+                        {ticket.name} (Quantity: {ticket.quantity})
+                      </div>
+                    ))
+                  ) : (
+                    <div>No tickets available</div>
+                  )}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
     </div>
   );
 };
