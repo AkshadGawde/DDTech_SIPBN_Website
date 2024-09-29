@@ -10,7 +10,7 @@ import Link from 'next/link';
 const EventManager = () => {
     const [eventName, setEventName] = useState('');
     const [eventDate, setEventDate] = useState('');
-    const [ticketCategories, setTicketCategories] = useState([{ name: '', price: '', maxTickets: '' }]);
+    const [ticketCategories, setTicketCategories] = useState([{ name: '', price: '', description: '', available: '' }]);
     const [existingEvents, setExistingEvents] = useState([]);
     const [selectedEventId, setSelectedEventId] = useState('add-new');
     const [error, setError] = useState('');
@@ -33,7 +33,7 @@ const EventManager = () => {
     };
 
     const addTicketCategory = () => {
-        setTicketCategories([...ticketCategories, { name: '', price: '', maxTickets: '' }]);
+        setTicketCategories([...ticketCategories, { name: '', price: '', description: '', available: '' }]);
     };
 
     const deleteTicketCategory = (index) => {
@@ -62,7 +62,7 @@ const EventManager = () => {
     const resetForm = () => {
         setEventName('');
         setEventDate('');
-        setTicketCategories([{ name: '', price: '', maxTickets: '' }]);
+        setTicketCategories([{ name: '', price: '', description: '', available: '' }]);
         setSelectedEventId('add-new');
     };
 
@@ -174,7 +174,7 @@ const EventManager = () => {
                     {ticketCategories.map((ticket, index) => (
                         <div key={index} className="sm:col-span-2">
                             <h4 className="text-md font-semibold text-gray-900 dark:text-white">Ticket Category {index + 1}</h4>
-                            <div className="grid gap-4 sm:grid-cols-3">
+                            <div className="grid gap-4 sm:grid-cols-4">
                                 <div>
                                     <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Name:</label>
                                     <input
@@ -196,70 +196,63 @@ const EventManager = () => {
                                     />
                                 </div>
                                 <div>
-                                    <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Max Tickets:</label>
+                                    <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Description:</label>
                                     <input
-                                        type="number"
+                                        type="text"
                                         className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-                                        value={ticket.maxTickets}
-                                        onChange={(e) => handleTicketChange(index, 'maxTickets', e.target.value)}
+                                        value={ticket.description}
+                                        onChange={(e) => handleTicketChange(index, 'description', e.target.value)}
                                         required
                                     />
                                 </div>
-                                <div className="flex items-end">
-                                    <button
-                                        type="button"
-                                        className="ml-2 inline-flex items-center px-3 py-2.5 text-sm font-medium text-white bg-red-600 rounded-lg focus:ring-4 focus:ring-red-300 hover:bg-red-700"
-                                        onClick={() => deleteTicketCategory(index)}
-                                    >
-                                        Delete Category
-                                    </button>
+                                <div>
+                                    <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Tickets Available:</label>
+                                    <input
+                                        type="number"
+                                        className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                        value={ticket.available}
+                                        onChange={(e) => handleTicketChange(index, 'available', e.target.value)}
+                                        required
+                                    />
                                 </div>
                             </div>
-                        </div>
-                    ))}
-
-                    <div className="sm:col-span-2 flex justify-end">
-                        <button
-                            type="button"
-                            className="inline-flex items-center px-5 py-2.5 text-sm font-medium text-white bg-green-600 rounded-lg focus:ring-4 focus:ring-green-300 hover:bg-green-700 transition duration-150 ease-in-out"
-                            onClick={addTicketCategory}
-                        >
-                            Add Ticket Category
-                        </button>
-                    </div>
-
-                    <div className="sm:col-span-2">
-                        <button
-                            type="submit"
-                            className={`inline-flex items-center px-5 py-2.5 text-sm font-medium text-white bg-blue-600 rounded-lg focus:ring-4 focus:ring-blue-300 hover:bg-blue-700 transition duration-150 ease-in-out ${
-                                selectedEventId === 'add-new' ? 'bg-blue-700' : ''
-                            }`}
-                        >
-                            {selectedEventId === 'add-new' ? 'Create Event' : 'Update Event'}
-                        </button>
-
-                        {selectedEventId && selectedEventId !== 'add-new' && (
                             <button
                                 type="button"
-                                className="ml-3 inline-flex items-center px-5 py-2.5 text-sm font-medium text-white bg-red-600 rounded-lg focus:ring-4 focus:ring-red-300 hover:bg-red-700 transition duration-150 ease-in-out"
+                                onClick={() => deleteTicketCategory(index)}
+                                className="mt-2 text-red-600 hover:underline"
+                            >
+                                Delete Ticket Category
+                            </button>
+                        </div>
+                    ))}
+                    <button
+                        type="button"
+                        onClick={addTicketCategory}
+                        className="mt-2 text-blue-600 hover:underline"
+                    >
+                        Add Ticket Category
+                    </button>
+
+                    {error && <p className="text-red-500">{error}</p>}
+                    {success && <p className="text-green-500">{success}</p>}
+
+                    <div className="sm:col-span-2 mt-4">
+                        <button
+                            type="submit"
+                            className="inline-flex items-center px-5 py-2.5 text-sm font-medium text-white bg-primary-700 rounded-lg focus:ring-4 focus:ring-primary-200 dark:focus:ring-primary-900 hover:bg-primary-800"
+                        >
+                            {selectedEventId === 'add-new' ? 'Add Event' : 'Update Event'}
+                        </button>
+                        {selectedEventId !== 'add-new' && (
+                            <button
+                                type="button"
                                 onClick={handleDelete}
+                                className="ml-2 inline-flex items-center px-5 py-2.5 text-sm font-medium text-red-600 hover:underline"
                             >
                                 Delete Event
                             </button>
                         )}
                     </div>
-
-                    {success && (
-                        <div className="sm:col-span-2 text-green-600">
-                            <p>{success}</p>
-                        </div>
-                    )}
-
-                    {error && (
-                        <div className="sm:col-span-2 text-red-600">
-                            <p>{error}</p>
-                        </div>
-                    )}
                 </div>
             </form>
         </section>
