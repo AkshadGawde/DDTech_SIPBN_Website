@@ -17,11 +17,6 @@ const AdminDashboard = () => {
                                     Manage Events
                                 </div>
                             </Link>
-                            <Link href="/ticket-manager">
-                                <div className="block w-full text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
-                                    Manage Tickets
-                                </div>
-                            </Link>
                             <Link href="/attendees-download">
                                 <div className="block w-full text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
                                     Download Attendee list
