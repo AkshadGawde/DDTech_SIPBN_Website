@@ -14,7 +14,9 @@ const TicketPurchase = () => {
     const [eventDetails, setEventDetails] = useState(null);
     const [quantities, setQuantities] = useState({});
     const [cart, setCart] = useState([]);
+    const [name, setName] = useState(''); // New state for Name
     const [email, setEmail] = useState('');
+    const [mobileNumber, setMobileNumber] = useState(''); // New state for Mobile Number
     const [error, setError] = useState('');
     const [showPaypal, setShowPaypal] = useState(false);
 
@@ -172,9 +174,29 @@ const TicketPurchase = () => {
             return;
         }
 
-        if (!email) {
+        if (!name.trim()) { // Validate Name
+            console.warn('Checkout attempted without providing a name.');
+            setError('Please provide your name');
+            return;
+        }
+
+        if (!email.trim()) {
             console.warn('Checkout attempted without providing an email.');
             setError('Please provide your email');
+            return;
+        }
+
+        if (!mobileNumber.trim()) { // Validate Mobile Number
+            console.warn('Checkout attempted without providing a mobile number.');
+            setError('Please provide your mobile number');
+            return;
+        }
+
+        // Optional: Validate mobile number format
+        const mobileRegex = /^[0-9]{10,15}$/; // Adjust regex as per your requirements
+        if (!mobileRegex.test(mobileNumber)) {
+            console.warn('Invalid mobile number format.');
+            setError('Please provide a valid mobile number');
             return;
         }
 
@@ -292,7 +314,9 @@ const TicketPurchase = () => {
             // Prepare order data for the orders collection
             const orderData = {
                 orderId: order.id, // PayPal transaction ID
-                email: email,
+                name: name.trim(), // Include Name
+                email: email.trim(),
+                mobileNumber: mobileNumber.trim(), // Include Mobile Number
                 eventId: eventId,
                 eventDetails: eventDetails,
                 tickets: cart,
@@ -309,7 +333,9 @@ const TicketPurchase = () => {
     
             // Prepare detailed ticket info for the email (like an invoice)
             const emailPayload = {
-                email: email,
+                name: name.trim(), // Include Name
+                email: email.trim(),
+                mobileNumber: mobileNumber.trim(), // Include Mobile Number
                 eventDetails: eventDetails,
                 tickets: cart.map(ticket => ({
                     name: ticket.name,
@@ -352,7 +378,7 @@ const TicketPurchase = () => {
             // Redirect to Success Page
             router.push({
                 pathname: '/successs',
-                query: { email: email, orderId: order.id }, // Include PayPal transaction ID in query
+                query: { name: name.trim(), email: email.trim(), mobileNumber: mobileNumber.trim(), orderId: order.id }, // Include Name, Mobile Number, and PayPal transaction ID in query
             });
             console.log('Redirecting to success page.');
         } catch (error) {
@@ -360,7 +386,7 @@ const TicketPurchase = () => {
             setError(`Error processing your order: ${error.message}. Please contact support.`);
         }
     };
-    
+
 
     return (
         <PayPalScriptProvider options={{ "client-id": process.env.NEXT_PUBLIC_PAYPAL_CLIENT_ID }}>
@@ -430,6 +456,20 @@ const TicketPurchase = () => {
                             )}
 
                             <form onSubmit={handleCheckout} className="mt-6">
+                                {/* Name Field */}
+                                <div className="mb-4">
+                                    <label htmlFor="name" className="block text-sm font-medium text-white">Name</label>
+                                    <input 
+                                        type="text"
+                                        id="name"
+                                        value={name}
+                                        onChange={(e) => setName(e.target.value)}
+                                        required
+                                        className="w-full px-4 py-2 bg-gray-700 rounded-md border border-gray-600 text-white"
+                                    />
+                                </div>
+
+                                {/* Email Field */}
                                 <div className="mb-4">
                                     <label htmlFor="email" className="block text-sm font-medium text-white">Email</label>
                                     <input 
@@ -441,6 +481,22 @@ const TicketPurchase = () => {
                                         className="w-full px-4 py-2 bg-gray-700 rounded-md border border-gray-600 text-white"
                                     />
                                 </div>
+
+                                {/* Mobile Number Field */}
+                                <div className="mb-4">
+                                    <label htmlFor="mobileNumber" className="block text-sm font-medium text-white">Mobile Number</label>
+                                    <input 
+                                        type="tel"
+                                        id="mobileNumber"
+                                        value={mobileNumber}
+                                        onChange={(e) => setMobileNumber(e.target.value)}
+                                        required
+                                        pattern="[0-9]{10,15}" // Adjust pattern as needed
+                                        placeholder="e.g., 1234567890"
+                                        className="w-full px-4 py-2 bg-gray-700 rounded-md border border-gray-600 text-white"
+                                    />
+                                </div>
+
                                 <button 
                                     type="submit" 
                                     className="bg-green-600 text-white py-2 px-6 rounded-md hover:bg-green-500 transition duration-200"

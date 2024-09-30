@@ -33,7 +33,9 @@ const AttendeeDownload = () => {
       if (Array.isArray(order.tickets)) {
         order.tickets.forEach((ticket) => {
           guestList.push({
-            email: order.email, // Ensure you have an email field in the order
+            name: order.name || "", // Add name to the guest list
+            mobile: order.mobileNumber || "", // Add mobile to the guest list
+            email: order.email || "", // Add email field in the order
             ticketType: ticket.name,
             quantity: ticket.quantity,
             transactionId: order.orderId,
@@ -60,23 +62,21 @@ const AttendeeDownload = () => {
         <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
           <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
             <tr>
-              <th scope="col" className="px-6 py-3">
-                Email
-              </th>
-              <th scope="col" className="px-6 py-3">
-                Transaction ID
-              </th>
-              <th scope="col" className="px-6 py-3">
-                Tickets
-              </th>
+              <th scope="col" className="px-6 py-3">Name</th>
+              <th scope="col" className="px-6 py-3">Mobile</th>
+              <th scope="col" className="px-6 py-3">Email</th>
+              <th scope="col" className="px-6 py-3">Transaction ID</th>
+              <th scope="col" className="px-6 py-3">Tickets</th>
             </tr>
           </thead>
           <tbody>
             {orders.map((order) => (
               <tr key={order.id} className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
                 <td className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                  {order.email}
+                  {order.name || "N/A"} {/* Display name or "N/A" if not available */}
                 </td>
+                <td className="px-6 py-4">{order.mobileNumber || "N/A"}</td> {/* Display mobile or "N/A" */}
+                <td className="px-6 py-4">{order.email || "N/A"}</td> {/* Display email */}
                 <td className="px-6 py-4">{order.orderId}</td>
                 <td className="px-6 py-4">
                   {Array.isArray(order.tickets) ? (
