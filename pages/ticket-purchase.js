@@ -2,9 +2,13 @@
 
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
-import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
 import { db } from '../lib/firebase';
 import { doc, getDoc, updateDoc, collection, addDoc } from 'firebase/firestore';
+import { loadStripe } from '@stripe/stripe-js';
+import { Elements } from '@stripe/react-stripe-js';
+
+// Initialize Stripe
+const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY);
 
 const TicketPurchase = () => {
     const router = useRouter();
@@ -14,11 +18,11 @@ const TicketPurchase = () => {
     const [eventDetails, setEventDetails] = useState(null);
     const [quantities, setQuantities] = useState({});
     const [cart, setCart] = useState([]);
-    const [name, setName] = useState(''); // New state for Name
+    const [name, setName] = useState('');
     const [email, setEmail] = useState('');
-    const [mobileNumber, setMobileNumber] = useState(''); // New state for Mobile Number
+    const [mobileNumber, setMobileNumber] = useState('');
     const [error, setError] = useState('');
-    const [showPaypal, setShowPaypal] = useState(false);
+    const [isLoading, setIsLoading] = useState(false);
 
     // Fetch event details when eventId changes
     useEffect(() => {
@@ -161,66 +165,6 @@ const TicketPurchase = () => {
         });
     };
 
-    // Function to handle checkout
-    const handleCheckout = async (e) => {
-        e.preventDefault();
-        setError(''); // Reset error
-
-        console.log('Initiating checkout process.');
-
-        if (cart.length === 0) {
-            console.warn('Checkout attempted with an empty cart.');
-            setError('Your cart is empty');
-            return;
-        }
-
-        if (!name.trim()) { // Validate Name
-            console.warn('Checkout attempted without providing a name.');
-            setError('Please provide your name');
-            return;
-        }
-
-        if (!email.trim()) {
-            console.warn('Checkout attempted without providing an email.');
-            setError('Please provide your email');
-            return;
-        }
-
-        if (!mobileNumber.trim()) { // Validate Mobile Number
-            console.warn('Checkout attempted without providing a mobile number.');
-            setError('Please provide your mobile number');
-            return;
-        }
-
-        // Optional: Validate mobile number format
-        const mobileRegex = /^[0-9]{10,15}$/; // Adjust regex as per your requirements
-        if (!mobileRegex.test(mobileNumber)) {
-            console.warn('Invalid mobile number format.');
-            setError('Please provide a valid mobile number');
-            return;
-        }
-
-        // Check ticket availability
-        const availableTickets = Object.keys(eventDetails.tickets).reduce((acc, ticketName) => {
-            acc[ticketName] = eventDetails.tickets[ticketName].available - (quantities[ticketName] || 0);
-            return acc;
-        }, {});
-
-        console.log('Available Tickets After Cart:', availableTickets);
-
-        const overbookedTickets = cart.filter(ticket => ticket.quantity > availableTickets[ticket.name]);
-
-        if (overbookedTickets.length > 0) {
-            console.warn('Attempting to book more tickets than available:', overbookedTickets);
-            setError(`You are trying to book more tickets than available for: ${overbookedTickets.map(ticket => ticket.name).join(', ')}`);
-            return;
-        }
-
-        // Proceed to show PayPal buttons
-        setShowPaypal(true);
-        console.log('Proceeding to PayPal checkout.');
-    };
-
     // Function to calculate the transaction fee (4% of ticket total)
     const calculateTransactionFee = () => {
         const ticketTotal = cart.reduce((acc, ticket) => acc + (ticket.price * ticket.quantity), 0);
@@ -242,154 +186,103 @@ const TicketPurchase = () => {
         return totalFixed;
     };
 
-    // Function to create PayPal order with total including transaction fee
-    const createOrder = (data, actions) => {
-        console.log('Creating PayPal order.');
-        return actions.order.create({
-            purchase_units: [{
-                amount: {
-                    value: calculateTotal(), // Send total amount (including transaction fee) to PayPal
-                }
-            }]
-        });
-    };
+    // Function to handle checkout
+    const handleCheckout = async (e) => {
+        e.preventDefault();
+        setError(''); // Reset error
+        setIsLoading(true);
 
+        console.log('Initiating checkout process.');
 
-    const onApprove = async (data, actions) => {
+        if (cart.length === 0) {
+            console.warn('Checkout attempted with an empty cart.');
+            setError('Your cart is empty');
+            setIsLoading(false);
+            return;
+        }
+
+        if (!name.trim()) { // Validate Name
+            console.warn('Checkout attempted without providing a name.');
+            setError('Please provide your name');
+            setIsLoading(false);
+            return;
+        }
+
+        if (!email.trim()) {
+            console.warn('Checkout attempted without providing an email.');
+            setError('Please provide your email');
+            setIsLoading(false);
+            return;
+        }
+
+        if (!mobileNumber.trim()) { // Validate Mobile Number
+            console.warn('Checkout attempted without providing a mobile number.');
+            setError('Please provide your mobile number');
+            setIsLoading(false);
+            return;
+        }
+
+        // Optional: Validate mobile number format
+        const mobileRegex = /^[0-9]{10,15}$/; // Adjust regex as per your requirements
+        if (!mobileRegex.test(mobileNumber)) {
+            console.warn('Invalid mobile number format.');
+            setError('Please provide a valid mobile number');
+            setIsLoading(false);
+            return;
+        }
+
+        // Check ticket availability
+        const availableTickets = Object.keys(eventDetails.tickets).reduce((acc, ticketName) => {
+            acc[ticketName] = eventDetails.tickets[ticketName].available - (quantities[ticketName] || 0);
+            return acc;
+        }, {});
+
+        console.log('Available Tickets After Cart:', availableTickets);
+
+        const overbookedTickets = cart.filter(ticket => ticket.quantity > availableTickets[ticket.name]);
+
+        if (overbookedTickets.length > 0) {
+            console.warn('Attempting to book more tickets than available:', overbookedTickets);
+            setError(`You are trying to book more tickets than available for: ${overbookedTickets.map(ticket => ticket.name).join(', ')}`);
+            setIsLoading(false);
+            return;
+        }
+
         try {
-            console.log('Order approval initiated.');
-            // Capture the order
-            const order = await actions.order.capture();
-            console.log('Order captured:', order);
-    
-            // Log eventDetails and cart for debugging
-            console.log('Event Details:', eventDetails);
-            console.log('Cart:', cart);
-    
-            // Check if eventDetails and eventDetails.tickets are defined
-            if (!eventDetails || !eventDetails.tickets) {
-                throw new Error('Event details are missing or malformed.');
-            }
-    
-            const eventDocRef = doc(db, 'events', eventId);
-            const updates = {};
-    
-            // Iterate over each ticket in the cart
-            for (const ticket of cart) {
-                console.log(`Processing ticket: ${ticket.name}`);
-    
-                const eventTicket = eventDetails.tickets[ticket.name];
-                console.log(`Event Ticket Data for "${ticket.name}":`, eventTicket);
-    
-                // Check if the ticket exists in eventDetails
-                if (!eventTicket) {
-                    throw new Error(`Ticket "${ticket.name}" not found in event details.`);
-                }
-    
-                // Validate data types
-                if (typeof eventTicket.available !== 'number' || typeof eventTicket.sold !== 'number') {
-                    throw new Error(`Invalid ticket data for "${ticket.name}". "available" and "sold" should be numbers.`);
-                }
-    
-                // Calculate new available and sold counts
-                const availableCount = eventTicket.available - ticket.quantity;
-                const soldCount = eventTicket.sold + ticket.quantity;
-    
-                // Validate availability
-                if (availableCount < 0) {
-                    throw new Error(`Not enough available tickets for "${ticket.name}".`);
-                }
-    
-                // Prepare updates for Firestore
-                updates[`tickets.${ticket.name}.available`] = availableCount;
-                updates[`tickets.${ticket.name}.sold`] = soldCount;
-            }
-    
-            console.log('Updates to be applied:', updates);
-    
-            // Update Firestore with new ticket counts
-            await updateDoc(eventDocRef, updates);
-            console.log('Firestore updated successfully.');
-    
-            // Prepare order data for the orders collection
-            const orderData = {
-                orderId: order.id, // PayPal transaction ID
-                name: name.trim(), // Include Name
-                email: email.trim(),
-                mobileNumber: mobileNumber.trim(), // Include Mobile Number
-                eventId: eventId,
-                eventDetails: eventDetails,
-                tickets: cart,
-                transactionFee: parseFloat(calculateTransactionFee()),
-                totalAmount: parseFloat(calculateTotal()),
-                createdAt: new Date(),
-                status: 'confirmed', // You can set the status according to your workflow
-            };
-    
-            // Add order details to the orders collection
-            const ordersCollectionRef = collection(db, 'orders');
-            await addDoc(ordersCollectionRef, orderData);
-            console.log('Order details saved in the orders collection:', orderData);
-    
-            // Prepare detailed ticket info for the email (like an invoice)
-            const emailPayload = {
-                name: name.trim(), // Include Name
-                email: email.trim(),
-                mobileNumber: mobileNumber.trim(), // Include Mobile Number
-                eventDetails: eventDetails,
-                tickets: cart.map(ticket => ({
-                    name: ticket.name,
-                    quantity: ticket.quantity,
-                    price: ticket.price,
-                    total: ticket.quantity * ticket.price, // Total for this ticket type
-                })),
-                orderId: order.id, // Include PayPal transaction ID
-                transactionFee: calculateTransactionFee(),
-                totalAmount: calculateTotal(),
-            };
-    
-            console.log('Sending email with payload:', emailPayload);
-    
-            const emailResponse = await fetch('/api/send-ticket-email', {
+            // Create a checkout session
+            const response = await fetch('/api/create-checkout-session', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
                 },
-                body: JSON.stringify(emailPayload),
+                body: JSON.stringify({
+                    cart,
+                    name,
+                    email,
+                    mobileNumber,
+                    eventId,
+                }),
             });
-    
-            if (!emailResponse.ok) {
-                const errorText = await emailResponse.text();
-                console.error('Email API response error:', errorText);
-                throw new Error(`Email API Error: ${errorText}`);
+
+            const data = await response.json();
+
+            if (response.ok) {
+                // Redirect to Stripe Checkout
+                window.location.href = data.url;
+            } else {
+                console.error('Error creating checkout session:', data.error);
+                setError(data.error || 'An error occurred while processing your payment.');
             }
-    
-            console.log('Email sent successfully.');
-    
-            // Clear the cart and reset quantities
-            setCart([]);
-            const resetQuantities = { ...quantities };
-            cart.forEach(ticket => {
-                resetQuantities[ticket.name] = 0;
-            });
-            setQuantities(resetQuantities);
-            console.log('Cart and quantities reset.');
-    
-            // Redirect to Success Page
-            router.push({
-                pathname: '/successs',
-                query: { name: name.trim(), email: email.trim(), mobileNumber: mobileNumber.trim(), orderId: order.id }, // Include Name, Mobile Number, and PayPal transaction ID in query
-            });
-            console.log('Redirecting to success page.');
-        } catch (error) {
-            console.error('Error in onApprove:', error);
-            setError(`Error processing your order: ${error.message}. Please contact support.`);
+        } catch (err) {
+            console.error('Error during checkout:', err);
+            setError('An unexpected error occurred. Please try again.');
         }
+
+        setIsLoading(false);
     };
 
-
     return (
-        <PayPalScriptProvider options={{ "client-id": process.env.NEXT_PUBLIC_PAYPAL_CLIENT_ID }}>
+        <Elements stripe={stripePromise}>
             <section className="py-24 relative bg-gray-900 text-white">
                 <div className="w-full max-w-7xl px-4 md:px-5 lg:px-6 mx-auto">
                     {eventDetails ? (
@@ -499,20 +392,12 @@ const TicketPurchase = () => {
 
                                 <button 
                                     type="submit" 
-                                    className="bg-green-600 text-white py-2 px-6 rounded-md hover:bg-green-500 transition duration-200"
+                                    className={`bg-green-600 text-white py-2 px-6 rounded-md hover:bg-green-500 transition duration-200 ${isLoading ? 'opacity-50 cursor-not-allowed' : ''}`}
+                                    disabled={isLoading}
                                 >
-                                    Proceed to Checkout
+                                    {isLoading ? 'Processing...' : 'Proceed to Checkout'}
                                 </button>
                             </form>
-                            
-                            {showPaypal && (
-                                <div className="mt-6">
-                                    <PayPalButtons
-                                        createOrder={createOrder}
-                                        onApprove={onApprove}
-                                    />
-                                </div>
-                            )}
                             
                             {error && <p className="text-red-500 mt-4">{error}</p>}
                         </>
@@ -521,7 +406,7 @@ const TicketPurchase = () => {
                     )}
                 </div>
             </section>
-        </PayPalScriptProvider>
+        </Elements>
     );
 };
 
