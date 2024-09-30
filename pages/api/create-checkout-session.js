@@ -58,7 +58,7 @@ export default async function handler(req, res) {
                 quantity: 1,
             });
         }
-
+        console.log(JSON.stringify(cart));
         // Create the Checkout session
         const session = await stripe.checkout.sessions.create({
             payment_method_types: ['card'],
@@ -71,6 +71,7 @@ export default async function handler(req, res) {
                 name,
                 email,
                 mobileNumber,
+                cartString: JSON.stringify(cart),
             },
         });
 

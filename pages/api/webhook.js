@@ -34,10 +34,14 @@ export default async function handler(req, res) {
 
         // Handle the event
         if (event.type === 'checkout.session.completed') {
+            console.log("helloo")
             const session = event.data.object;
 
             // Extract metadata
-            const { eventId, name, email, mobileNumber } = session.metadata;
+            const { eventId, name, email, mobileNumber, cartString } = session.metadata;
+
+            console.log("This is the fetched detail");
+            console.log(cartString);
 
             // Fetch event details
             const eventDocRef = doc(db, 'events', eventId);
@@ -49,13 +53,13 @@ export default async function handler(req, res) {
             }
 
             const eventData = eventDoc.data();
-            const cart = JSON.parse(session.display_items || '[]'); // Adjust based on how you pass cart data
+            const cart = JSON.parse(cartString || '[]'); // Adjust based on how you pass cart data
 
             // Prepare updates
             const updates = {};
 
             cart.forEach(ticket => {
-                const ticketName = ticket.custom.name;
+                const ticketName = ticket.name;
                 const quantity = ticket.quantity;
                 console.log(ticketName, quantity);
 
@@ -106,7 +110,7 @@ export default async function handler(req, res) {
                 mobileNumber: mobileNumber.trim(),
                 eventDetails: eventData,
                 tickets: cart.map(ticket => ({
-                    name: ticket.custom.name, // assuming 'custom.name' holds the ticket name
+                    name: ticket.name, // assuming 'custom.name' holds the ticket name
                     quantity: ticket.quantity,
                     price: ticket.price, // make sure the price is available in ticket
                     total: ticket.quantity * ticket.price,
