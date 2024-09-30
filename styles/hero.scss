@@ -517,6 +517,9 @@ $button-color: #f4e38b;
       margin: 1rem 0;
       text-align: center;
       flex: 1; /* Allow items to grow and take available space */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
 
       img {
         width: 50px;
@@ -1186,6 +1189,7 @@ td h3{
 }
 .SponsorImg{
   max-width: 70%;
+  margin: 0 auto;
 }
 
 @media (max-width: 768px) {
