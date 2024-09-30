@@ -3,7 +3,7 @@ import AOS from "aos";
 import Link from "next/link";
 
 function HeroMain() {
-  const eventId = 'mckrPpdQi0JqD4HF2uvh'; //pelase add eventid here
+  const eventId = 'iaEHed2PE5Te0BmBwku3'; //pelase add eventid here
   useEffect(() => {
     AOS.init({
       duration: 2500, // Animation duration in milliseconds
