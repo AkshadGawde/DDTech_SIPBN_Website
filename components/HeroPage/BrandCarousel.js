@@ -193,13 +193,11 @@ const BrandCarousel = () => {
       </div>
       <div className="Sponsor-container">
         <div className="SponsorCard">
-          <a>
             <img
               className="SponsorImg"
               src="https://res.cloudinary.com/dueoon8xe/image/upload/v1727377745/Silver_Sponsor_s3ia9o.svg"
               alt="Event 1 Image"
             />
-          </a>
         </div>
         <div className="outerHrHolder">
           <div className="innerHr1"></div>
