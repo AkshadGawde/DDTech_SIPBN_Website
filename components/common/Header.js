@@ -1,10 +1,8 @@
+import React, { useEffect, useState, useRef } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { useEffect, useState, useRef } from "react";
 import { RiMenu4Line } from "react-icons/ri";
 import { AiOutlineClose } from "react-icons/ai";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCaretDown } from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
   const [activeLink, setActiveLink] = useState("");
@@ -67,10 +65,10 @@ const Header = () => {
             className="sipLogo"
             src="/images/sipbnLogo.png"
             alt="logo"
-            height={"60px"}
+            height="60"
           />
         </Link>
-        <div className="container">
+        <nav className="container ">
           <nav ref={navRef} className={open ? "openMenu" : "closeMenu"}>
             <Link
               href="/"
@@ -79,7 +77,7 @@ const Header = () => {
             >
               Home
             </Link>
-            <div className="dropdown">
+            <div className={`dropdown ${dropdownOpen.about ? "open" : ""}`}>
               <Link
                 href="/about"
                 onClick={handleLinkClick}
@@ -88,11 +86,12 @@ const Header = () => {
               >
                 About
               </Link>
-              <FontAwesomeIcon
-                icon={faCaretDown}
+              <span
+                className="dropdown-arrow"
                 onClick={() => toggleDropdown("about")}
-              />
-
+              >
+                ▼
+              </span>
               {dropdownOpen.about && (
                 <div className="dropdown-content">
                   <Link href="/advisory_board" onClick={handleLinkClick}>
@@ -108,7 +107,7 @@ const Header = () => {
               )}
             </div>
 
-            <div className="dropdown">
+            <div className={`dropdown ${dropdownOpen.captech ? "open" : ""}`}>
               <Link
                 href="/captech"
                 onClick={handleLinkClick}
@@ -116,11 +115,12 @@ const Header = () => {
               >
                 #CapTech2024
               </Link>
-              <FontAwesomeIcon
-                icon={faCaretDown}
+              <span
+                className="dropdown-arrow"
                 onClick={() => toggleDropdown("captech")}
-              />
-
+              >
+                ▼
+              </span>
               {dropdownOpen.captech && (
                 <div className="dropdown-content">
                   <Link href="/patrons" onClick={handleLinkClick}>
@@ -138,10 +138,10 @@ const Header = () => {
                 </div>
               )}
             </div>
+
             <Link
               href="/IndiaDelegation"
               onClick={handleLinkClick}
-              onMouseEnter={() => toggleDropdown("Indiadelegation")}
               className={activeLink === "/IndiaDelegation" ? "activeLink" : ""}
             >
               India Delegation
@@ -154,7 +154,12 @@ const Header = () => {
             >
               Events
             </Link>
-            <div className="dropdown">
+
+            <div
+              className={`dropdown ${
+                dropdownOpen.globalPitching ? "open" : ""
+              }`}
+            >
               <a
                 href="https://docs.google.com/forms/d/e/1FAIpQLSdiA6YPJaorTgxsvt-ZMMePCMLIbKnI3fS971sxMZeSaPewoQ/viewform"
                 onClick={handleLinkClick}
@@ -162,11 +167,12 @@ const Header = () => {
               >
                 Global Pitching
               </a>
-              <FontAwesomeIcon
-                icon={faCaretDown}
+              <span
+                className="dropdown-arrow"
                 onClick={() => toggleDropdown("globalPitching")}
-              />
-
+              >
+                ▼
+              </span>
               {dropdownOpen.globalPitching && (
                 <div className="dropdown-content">
                   <Link href="/companies" onClick={handleLinkClick}>
@@ -181,6 +187,7 @@ const Header = () => {
                 </div>
               )}
             </div>
+
             <Link
               href="/success"
               onClick={handleLinkClick}
@@ -188,7 +195,11 @@ const Header = () => {
             >
               Success Stories
             </Link>
-            <div className="dropdown" id="contactUs">
+
+            <div
+              className={`dropdown ${dropdownOpen.contact ? "open" : ""}`}
+              id="contactUs"
+            >
               <Link
                 href="/contact"
                 onClick={handleLinkClick}
@@ -197,11 +208,12 @@ const Header = () => {
               >
                 Contact Us
               </Link>
-              <FontAwesomeIcon
-                icon={faCaretDown}
+              <span
+                className="dropdown-arrow"
                 onClick={() => toggleDropdown("contact")}
-              />
-
+              >
+                ▼
+              </span>
               {dropdownOpen.contact && (
                 <div className="dropdown-content">
                   <Link
@@ -214,17 +226,17 @@ const Header = () => {
                 </div>
               )}
             </div>
+
             <a
               href="https://forms.gle/GLbvrFiTyUjfmadF7"
               target="_blank"
               rel="noopener noreferrer"
               className="button-primary"
             >
-              {" "}
               Apply for Membership
             </a>
           </nav>
-        </div>
+        </nav>
         <button className="menu-toggle" onClick={() => setOpen(!open)}>
           {open ? <AiOutlineClose size={25} /> : <RiMenu4Line size={25} />}
         </button>
