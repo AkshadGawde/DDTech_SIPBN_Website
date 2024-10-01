@@ -87,7 +87,7 @@ function Hero() {
             {/* <div className="banner2" data-aos="fade-left">
             <div className="bannerTitle container">
               <h2>Secure your #CapTech2024 ticket!</h2>
-              <p>Early bird discount 20% till 30th September 2024</p>
+              <p>Early bird discount 20% till 31st October 2024</p>
               <a
                 href="https://www.eventbrite.com.au/e/captech2024-discover-connect-execute-venue-icc-sydney-tickets-772015889307"
                 target="_blank"
@@ -168,7 +168,7 @@ function Hero() {
 
         <div data-aos="fade-left">
           <HeroAgenda />
-          <Banner/>
+          <Banner />
         </div>
 
         <div data-aos="fade-right">

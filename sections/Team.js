@@ -156,7 +156,7 @@ const Team = () => {
             >
               <h2>Secure your #CapTech2024 ticket!</h2>
               <br />
-              <p> Early bird discount 20% till 30th September 2024</p>
+              <p> Early bird discount 20% till 31st October 2024</p>
               <br />
               <a
                 href="https://www.eventbrite.com.au/e/captech2024-discover-connect-execute-venue-icc-sydney-tickets-772015889307"
@@ -173,15 +173,15 @@ const Team = () => {
       </section>
 
       <div className="purposeFlex">
-        <div className="box" style={{textAlign:"center"}}>
+        <div className="box" style={{ textAlign: "center" }}>
           <h1 className="indigo">50+</h1>
           <h3>World Class Speakers</h3>
         </div>
-        <div className="box" style={{textAlign:"center"}}>
+        <div className="box" style={{ textAlign: "center" }}>
           <h1 className="indigo">300+</h1>
           <h3>Global investors and business leaders</h3>
         </div>
-        <div className="box" style={{textAlign:"center"}}>
+        <div className="box" style={{ textAlign: "center" }}>
           <h1 className="indigo">8</h1>
           <h3>Panels</h3>
         </div>
