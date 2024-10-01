@@ -732,16 +732,10 @@ body {
   }
 }
 
-
-
 form {
   display: flex;
   flex-direction: column;
   align-items: center;
-
- 
-
-  
 
   .button-primary {
     &:disabled {
@@ -749,11 +743,11 @@ form {
       cursor: not-allowed;
     }
   }
-
   .captcha {
     margin-top: 20px;
       }
 }
+
 .itemContainer{
   display: flex;
   flex-direction: row ;
@@ -768,6 +762,7 @@ form {
     align-items: center;
   }
 }
+
 .itemTextContainer{
   margin: 0 10px 10px 10px;
   padding: 5px;
@@ -787,6 +782,7 @@ form {
     padding: 5px;
   }
 }
+
 .itemImage{
   max-width: 50%;
   border-radius: 5% 0 0 5%;
@@ -799,19 +795,44 @@ form {
     border-radius: 5% 5% 0 0 ;
   }
 }
-.carouselHolder{
-  padding: 30px;
+
+.carouselHolder {
+  padding: 10px 70px;
+  height: 100%;
+  max-width: fit-content;
+  @media screen and (max-width: 480px) {
+    display: none; /* Hide on mobile */
+  }
+
   @media screen and (max-width:600px) {
     padding: 20px;
   }
-  @media screen and (max-width:480px) {
-    display: none;
+}
+
+// .carousel-item
+.carousel-item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.carousel-description{
+  max-width: 40%;
+  @media screen and (max-width:1024px) {
+    max-width: 60%;
+  }
+  @media screen and (max-width:768px) {
+    max-width: 80%;
   }
 }
+.carousel-title{
+  margin: 20px 0;
+}
+
 .mobileCarousel{
   display: none;
   @media screen and (max-width : 480px) {
-    display: block;
+  display: block;
   }
 }
 
