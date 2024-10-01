@@ -336,6 +336,7 @@ body {
   letter-spacing: 2px;
   font-size: 1.5rem; /* Assuming this value for $lg */
   margin-bottom: 40px; /* Assuming this value for $xl-4 */
+  font-size: 22px;
 }
 
 .footer span,
@@ -344,6 +345,7 @@ body {
   color: rgba(255, 255, 255, 100%);
   display: inline-block; /* Ensure inline block to use vertical-align */
   vertical-align: middle; /* Vertically align the text */
+  font-size: 18px;
 }
 
 .footer ul {
@@ -367,6 +369,7 @@ body {
   color: rgba(255, 255, 255, 100%);
   transition: 0.5s ease-in-out;
   text-decoration: none;
+  font-size: 18px;
   display: inline-flex; /* Use flexbox for alignment */
   align-items: center; /* Center align vertically */
 }
