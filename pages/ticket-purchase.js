@@ -1,9 +1,11 @@
 // pages/ticket-purchase.js
 
+// pages/ticket-purchase.js
+
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 import { db } from '../lib/firebase';
-import { doc, getDoc, updateDoc, collection, addDoc } from 'firebase/firestore';
+import { doc, getDoc, collection, query, where, getDocs } from 'firebase/firestore';
 import { loadStripe } from '@stripe/stripe-js';
 import { Elements } from '@stripe/react-stripe-js';
 
@@ -30,6 +32,9 @@ const TicketPurchase = () => {
     const [mobileNumber, setMobileNumber] = useState('');
     const [error, setError] = useState('');
     const [isLoading, setIsLoading] = useState(false);
+    const [couponCode, setCouponCode] = useState('');
+    const [appliedCoupon, setAppliedCoupon] = useState(null);
+    const [couponError, setCouponError] = useState('');
 
     // Fetch event details when eventId changes
     useEffect(() => {
@@ -172,31 +177,65 @@ const TicketPurchase = () => {
         });
     };
 
-    // Function to calculate the transaction fee (4% of ticket total)
-    const calculateTransactionFee = () => {
-        const ticketTotal = cart.reduce((acc, ticket) => acc + (ticket.price * ticket.quantity), 0);
-        const fee = ticketTotal * 0.04; // 4% transaction fee
-        const feeFixed = fee.toFixed(2);
+    // Function to apply coupon
+    const applyCoupon = async () => {
+        setCouponError('');
+        if (!couponCode.trim()) {
+            setCouponError('Please enter a coupon code');
+            return;
+        }
 
-        console.log('Calculated transaction fee:', feeFixed);
-        return feeFixed;
+        try {
+            const couponsRef = collection(db, 'coupons');
+            const q = query(couponsRef, where('code', '==', couponCode.trim()));
+            const querySnapshot = await getDocs(q);
+
+            if (querySnapshot.empty) {
+                setCouponError('Invalid coupon code');
+                return;
+            }
+
+            const couponData = querySnapshot.docs[0].data();
+            setAppliedCoupon(couponData);
+            setCouponCode(''); // Clear the input field
+        } catch (error) {
+            console.error('Error applying coupon:', error);
+            setCouponError('Error applying coupon. Please try again.');
+        }
     };
 
-    // Function to calculate total price including the 4% transaction fee
-    const calculateTotal = () => {
-        const ticketTotal = cart.reduce((acc, ticket) => acc + (ticket.price * ticket.quantity), 0);
-        const fee = ticketTotal * 0.04; // 4% transaction fee
-        const totalWithFee = ticketTotal + fee;
-        const totalFixed = totalWithFee.toFixed(2);
+    // Function to calculate discount amount
+    const calculateDiscount = () => {
+        if (!appliedCoupon) return 0;
 
-        console.log('Calculated total:', totalFixed);
-        return totalFixed;
+        const subtotal = cart.reduce((acc, ticket) => acc + (ticket.price * ticket.quantity), 0);
+        const discountAmount = subtotal * (appliedCoupon.discountPercentage / 100);
+        return Math.min(discountAmount, appliedCoupon.maxDiscount);
+    };
+
+    // Function to calculate the transaction fee (4% of discounted ticket total)
+    const calculateTransactionFee = () => {
+        const subtotal = cart.reduce((acc, ticket) => acc + (ticket.price * ticket.quantity), 0);
+        const discount = calculateDiscount();
+        const discountedTotal = subtotal - discount;
+        const fee = discountedTotal * 0.04; // 4% transaction fee
+        return fee.toFixed(2);
+    };
+
+    // Function to calculate total price including discount and fee
+    const calculateTotal = () => {
+        const subtotal = cart.reduce((acc, ticket) => acc + (ticket.price * ticket.quantity), 0);
+        const discount = calculateDiscount();
+        const discountedTotal = subtotal - discount;
+        const fee = discountedTotal * 0.04; // 4% transaction fee
+        const totalWithFee = discountedTotal + fee;
+        return totalWithFee.toFixed(2);
     };
 
     // Function to handle checkout
     const handleCheckout = async (e) => {
         e.preventDefault();
-        setError(''); // Reset error
+        setError('');
         setIsLoading(true);
 
         console.log('Initiating checkout process.');
@@ -208,7 +247,7 @@ const TicketPurchase = () => {
             return;
         }
 
-        if (!name.trim()) { // Validate Name
+        if (!name.trim()) {
             console.warn('Checkout attempted without providing a name.');
             setError('Please provide your name');
             setIsLoading(false);
@@ -222,7 +261,7 @@ const TicketPurchase = () => {
             return;
         }
 
-        if (!mobileNumber.trim()) { // Validate Mobile Number
+        if (!mobileNumber.trim()) {
             console.warn('Checkout attempted without providing a mobile number.');
             setError('Please provide your mobile number');
             setIsLoading(false);
@@ -268,6 +307,10 @@ const TicketPurchase = () => {
                     email,
                     mobileNumber,
                     eventId,
+                    appliedCoupon: appliedCoupon ? {
+                        code: appliedCoupon.code,
+                        discountAmount: calculateDiscount()
+                    } : null,
                 }),
             });
 
@@ -287,155 +330,207 @@ const TicketPurchase = () => {
 
         setIsLoading(false);
     };
-
     return (
         <Elements stripe={stripePromise}>
-  <section className="event-section">
-    <div className="container">
-      {eventDetails ? (
-        <>
-          <h2 className="event-title">{eventDetails.name}</h2>
-          <p className="event-date">Date: {eventDetails.date}</p>
-          <p className="event-description">{eventDetails.description}</p>
-
-          {/* Main layout container */}
-          <div className="event-layout">
-            {/* Left section for ticket categories */}
-            <div className="tickets-section">
-              <h3 className="ticket-title">Ticket Categories</h3>
-              <p className='event-time'>
-                Tue, 26 Nov 2024 8:00 AM - Wed, 27 Nov 2024 9:00 PM AEDT
-              </p>
-              <div className="tickets-grid">
-                {Object.keys(eventDetails.tickets).map((ticketName) => {
-                  const ticket = eventDetails.tickets[ticketName];
-                  const isExpanded = expandedTickets[ticketName];
-                  return (
-                    <div key={ticketName} className="ticket-card">
-                      <div className='ticket-info'>
-                        <div>
-                          <h3 className="ticket-name">{ticket.name}</h3>
-                          <p className='ticket-available'>Available Tickets: {parseInt(ticket.available)}</p>
-                        </div>
-                        <div className="ticket-actions">
-                          <button 
-                            onClick={() => updateCartQuantity(ticket.name, -1)}
-                            className="ticket-decrease"
-                          >
-                            -
-                          </button>
-                          <span className="ticket-quantity">{quantities[ticket.name]}</span>
-                          <button 
-                            onClick={() => updateCartQuantity(ticket.name, 1)}
-                            className="ticket-increase"
-                          >
-                            +
-                          </button>
-                        </div>
+          <section className="event-section">
+            <div className="container">
+              {eventDetails ? (
+                <>
+                  <h2 className="event-title">{eventDetails.name}</h2>
+                  <p className="event-date">Date: {eventDetails.date}</p>
+                  <p className="event-description">{eventDetails.description}</p>
+      
+                  {/* Main layout container */}
+                  <div className="main-layout">
+                    {/* Left section for ticket categories */}
+                    <div className="ticket-categories">
+                      <h3 className="ticket-title">Ticket Categories</h3>
+                      <p className="event-time">
+                        Tue, 26 Nov 2024 8:00 AM - Wed, 27 Nov 2024 9:00 PM AEDT
+                      </p>
+                      <div className="ticket-list">
+                        {Object.keys(eventDetails.tickets).map((ticketName) => {
+                          const ticket = eventDetails.tickets[ticketName];
+                          const isExpanded = expandedTickets[ticketName];
+                          return (
+                            <div key={ticketName} className="ticket-card">
+                              <div className="ticket-header">
+                                <div>
+                                  <h3 className="ticket-name">{ticket.name}</h3>
+                                  <p className="ticket-available">
+                                    Available Tickets: {parseInt(ticket.available)}
+                                  </p>
+                                </div>
+                                <div className="ticket-quantity">
+                                  <button
+                                    onClick={() => updateCartQuantity(ticket.name, -1)}
+                                    className="quantity-btn"
+                                  >
+                                    -
+                                  </button>
+                                  <span>{quantities[ticket.name]}</span>
+                                  <button
+                                    onClick={() => updateCartQuantity(ticket.name, 1)}
+                                    className="quantity-btn"
+                                  >
+                                    +
+                                  </button>
+                                </div>
+                              </div>
+                              <hr />
+                              <p className="ticket-price">
+                                A${parseFloat(ticket.price).toFixed(2)}
+                              </p>
+                              <p className="ticket-description">
+                                Description: {ticket.description}
+                              </p>
+      
+                              {/* Read More Section */}
+                              {isExpanded && (
+                                <div className="ticket-details">
+                                  <p>Additional details can be shown here when expanded.</p>
+                                </div>
+                              )}
+      
+                              <button
+                                className="read-more-btn"
+                                onClick={() => toggleExpand(ticketName)}
+                              >
+                                {isExpanded ? 'Read Less ↑' : 'Read More ↓'}
+                              </button>
+                            </div>
+                          );
+                        })}
                       </div>
-                      <hr className="divider" />
-                      <p className="ticket-price">A${parseFloat(ticket.price).toFixed(2)}</p>
-                      <p className='ticket-description'>Description: {ticket.description}</p>
-
-                      {/* Read More Section */}
-                      {isExpanded && (
-                        <div className="ticket-details">
-                          <p>Here are the additional details when expanded.</p>
-                        </div>
-                      )}
-
-                      <button 
-                        className="read-more"
-                        onClick={() => toggleExpand(ticketName)}
-                      >
-                        {isExpanded ? 'Read Less ↑' : 'Read More ↓'}
-                      </button>
                     </div>
-                  );
-                })}
-              </div>
-            </div>
-
-            {/* Right section for cart and form */}
-            <div className="cart-section">
-              <h3 className="cart-title">Order Summary</h3>
-              {cart.length === 0 ? (
-                <p className="cart-empty">No tickets in cart.</p>
+      
+                    {/* Right section for cart and form */}
+                    <div className="cart-section">
+                      <h3 className="cart-title">Order Summary: </h3>
+                      {cart.length === 0 ? (
+                        <p>No tickets in cart.</p>
+                      ) : (
+                        <ul className="cart-list">
+                          {cart.map((ticket, index) => (
+                            <li key={index} className="cart-item">
+                              <span>
+                                {ticket.name} (x{ticket.quantity}) - A$
+                                {(ticket.price * ticket.quantity).toFixed(2)}
+                              </span>
+                            </li>
+                          ))}
+                          <li className="cart-total">
+                            Ticket Total: A$
+                            {cart.reduce(
+                              (acc, ticket) => acc + ticket.price * ticket.quantity,
+                              0
+                            ).toFixed(2)}
+                          </li>
+                          {appliedCoupon && (
+                            <li className="discount">
+                              Discount: -A${calculateDiscount().toFixed(2)}
+                            </li>
+                          )}
+                          <li className="transaction-fee">
+                            Transaction Fee (4%): A${calculateTransactionFee()}
+                          </li>
+                          <hr />
+                          <li className="total-price">Total: A${calculateTotal()}</li>
+                        </ul>
+                      )}
+      
+                      {/* Coupon Code Section */}
+                      <div className="coupon-section">
+                        <label htmlFor="couponCode" className="coupon-label">
+                          Coupon Code
+                        </label>
+                        <div className="coupon-input-group">
+                          <input
+                            type="text"
+                            id="couponCode"
+                            value={couponCode}
+                            onChange={(e) => setCouponCode(e.target.value)}
+                            className="coupon-input"
+                          />
+                          <button onClick={applyCoupon} className="apply-btn">
+                            Apply
+                          </button>
+                        </div>
+                        {couponError && <p className="coupon-error">{couponError}</p>}
+                        {appliedCoupon && (
+                          <p className="coupon-applied">
+                            Coupon applied: {appliedCoupon.discountPercentage}% off
+                            (max A${appliedCoupon.maxDiscount})
+                          </p>
+                        )}
+                      </div>
+      
+                      <form onSubmit={handleCheckout} className="checkout-form">
+                        <div className="form-group">
+                          <label htmlFor="name" className="form-label">
+                            Name
+                          </label>
+                          <input
+                            type="text"
+                            id="name"
+                            value={name}
+                            onChange={(e) => setName(e.target.value)}
+                            required
+                            className="form-input"
+                          />
+                        </div>
+      
+                        <div className="form-group">
+                          <label htmlFor="email" className="form-label">
+                            Email
+                          </label>
+                          <input
+                            type="email"
+                            id="email"
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
+                            required
+                            className="form-input"
+                          />
+                        </div>
+      
+                        <div className="form-group">
+                          <label htmlFor="mobileNumber" className="form-label">
+                            Mobile Number
+                          </label>
+                          <input
+                            type="tel"
+                            id="mobileNumber"
+                            value={mobileNumber}
+                            onChange={(e) => setMobileNumber(e.target.value)}
+                            required
+                            pattern="[0-9]{10,15}"
+                            placeholder="e.g., 1234567890"
+                            className="form-input"
+                          />
+                        </div>
+      
+                        <button
+                          type="submit"
+                          className={`checkout-btn ${isLoading ? 'disabled' : ''}`}
+                          disabled={isLoading}
+                        >
+                          {isLoading ? 'Processing...' : 'Proceed to Checkout'}
+                        </button>
+                      </form>
+      
+                      {error && <p className="checkout-error">{error}</p>}
+                    </div>
+                  </div>
+                </>
               ) : (
-                <ul className="cart-list">
-                  {cart.map((ticket, index) => (
-                    <li key={index} className="cart-item">
-                      <span>{ticket.name} (x{ticket.quantity})</span>
-                      <span>A${ticket.price.toFixed(2)}</span>
-                    </li>
-                  ))}
-                  <li className="cart-total">Ticket Total: A${cart.reduce((acc, ticket) => acc + (ticket.price * ticket.quantity), 0).toFixed(2)}</li>
-                  <li className="transaction-fee">Transaction Fee (4%): A${calculateTransactionFee()}</li>
-                  <hr className="divider" />
-                  <li className="total-price">Total : A${calculateTotal()}</li>
-                </ul>
+                <p>Loading event details...</p>
               )}
-
-              <form onSubmit={handleCheckout} className="checkout-form">
-                {/* Name Field */}
-                <div className="form-group">
-                  <label htmlFor="name">Name</label>
-                  <input 
-                    type="text"
-                    id="name"
-                    value={name}
-                    onChange={(e) => setName(e.target.value)}
-                    required
-                  />
-                </div>
-
-                {/* Email Field */}
-                <div className="form-group">
-                  <label htmlFor="email">Email</label>
-                  <input 
-                    type="email"
-                    id="email"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    required
-                  />
-                </div>
-
-                {/* Mobile Number Field */}
-                <div className="form-group">
-                  <label htmlFor="mobileNumber">Mobile Number</label>
-                  <input 
-                    type="tel"
-                    id="mobileNumber"
-                    value={mobileNumber}
-                    onChange={(e) => setMobileNumber(e.target.value)}
-                    required
-                    pattern="[0-9]{10,15}"
-                    placeholder="e.g., 1234567890"
-                  />
-                </div>
-
-                <button 
-                  type="submit" 
-                  className={`checkout-btn ${isLoading ? 'loading' : ''}`}
-                  disabled={isLoading}
-                >
-                  {isLoading ? 'Processing...' : 'Proceed to Checkout'}
-                </button>
-              </form>
-
-              {error && <p className="error-message">{error}</p>}
             </div>
-          </div>
-        </>
-      ) : (
-        <p>Loading event details...</p>
-      )}
-    </div>
-  </section>
-</Elements>
-
-    );
+          </section>
+        </Elements>
+      );
+      
     
 };    
 
