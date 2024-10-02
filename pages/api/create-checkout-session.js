@@ -95,7 +95,7 @@ export default async function handler(req, res) {
             payment_method_types: ['card'],
             line_items: lineItems,
             mode: 'payment',
-            success_url: `${process.env.NEXT_PUBLIC_BASE_URL}/success?session_id={CHECKOUT_SESSION_ID}&name=${encodeURIComponent(name.trim())}&email=${encodeURIComponent(email.trim())}&mobileNumber=${encodeURIComponent(mobileNumber.trim())}`,
+            success_url: `${process.env.NEXT_PUBLIC_BASE_URL}/successs?session_id={CHECKOUT_SESSION_ID}&name=${encodeURIComponent(name.trim())}&email=${encodeURIComponent(email.trim())}&mobileNumber=${encodeURIComponent(mobileNumber.trim())}`,
             cancel_url: `${process.env.NEXT_PUBLIC_BASE_URL}/cancel`,
             metadata: {
                 eventId,
