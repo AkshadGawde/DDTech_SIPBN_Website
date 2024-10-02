@@ -176,126 +176,116 @@ const EventManager = () => {
     };
 
     return (
-        <section className="bg-white dark:bg-gray-900 py-8 px-4 mx-auto max-w-2xl lg:py-16">
-            <h2 className="mb-4 text-xl font-bold text-gray-900 dark:text-white">Event Manager</h2>
-            <div className="flex justify-between items-center mb-4">
-                <h2 className="text-xl font-bold text-gray-900 dark:text-white">Event Manager</h2>
+        <section className="event-manager">
+            <h2>Event Manager</h2>
+            <div className="event-header">
+                <h2>Event Manager</h2>
                 <Link href="/admin-dashboard" legacyBehavior>
-                    <a className="inline-flex items-center px-5 py-2.5 text-sm font-medium text-white bg-primary-700 rounded-lg focus:ring-4 focus:ring-primary-200 dark:focus:ring-primary-900 hover:bg-primary-800">
-                        <FontAwesomeIcon icon={faArrowLeft} className="text-white mr-2" />
+                    <a className="back-button">
+                        <FontAwesomeIcon icon={faArrowLeft} className="icon" />
                         Back to Admin Dashboard
                     </a>
                 </Link>
             </div>
 
             <form onSubmit={selectedEventId === 'add-new' ? handleSubmit : handleUpdate}>
-                <div className="grid gap-4 sm:grid-cols-2 sm:gap-6">
-                    <div className="sm:col-span-2">
-                        <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
-                            Select Existing Event:
-                        </label>
-                        <select
-                            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-                            value={selectedEventId}
-                            onChange={(e) => handleEventSelect(e.target.value)}
-                        >
-                            <option value="add-new">Add New Event</option>
-                            {existingEvents.map((event) => (
-                                <option key={event.id} value={event.id}>
-                                    {event.name}
-                                </option>
-                            ))}
-                        </select>
-                    </div>
-
-                    <div className="sm:col-span-2">
-                        <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Event Name:</label>
-                        <input
-                            type="text"
-                            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-                            value={eventName}
-                            onChange={(e) => setEventName(e.target.value)}
-                            required
-                        />
-                    </div>
-
-                    <div className="sm:col-span-2">
-                        <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Event Date:</label>
-                        <input
-                            type="date"
-                            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-                            value={eventDate}
-                            onChange={(e) => setEventDate(e.target.value)}
-                            required
-                        />
-                    </div>
-
-                    <div className="sm:col-span-2">
-                        <h3 className="mb-2 text-lg font-semibold text-gray-900 dark:text-white">Ticket Categories:</h3>
-                        {Object.entries(ticketCategories).map(([ticketName, ticket]) => (
-                            <div key={ticketName} className="sm:col-span-2 flex justify-between items-center mb-2">
-                                <div className="flex-1">
-                                    <input
-                                        type="text"
-                                        placeholder="Ticket Name"
-                                        value={ticket.name}
-                                        onChange={(e) => handleTicketChange(ticketName, 'name', e.target.value)}
-                                        className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
-                                    />
-                                    <input
-                                        type="number"
-                                        placeholder="Price"
-                                        value={ticket.price}
-                                        onChange={(e) => handleTicketChange(ticketName, 'price', e.target.value)}
-                                        className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
-                                    />
-                                    <input
-                                        type="number"
-                                        placeholder="Available"
-                                        value={ticket.available}
-                                        onChange={(e) => handleTicketChange(ticketName, 'available', e.target.value)}
-                                        className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
-                                    />
-                                    <textarea
-                                        placeholder="Description"
-                                        value={ticket.description}
-                                        onChange={(e) => handleTicketChange(ticketName, 'description', e.target.value)}
-                                        className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
-                                    />
-                                </div>
-                                <button
-                                    type="button"
-                                    onClick={() => deleteTicketCategory(ticketName)}
-                                    className="text-red-600 hover:text-red-800">
-                                    Delete
-                                </button>
-                            </div>
+                <div className="form-group">
+                    <label>Select Existing Event:</label>
+                    <select
+                        value={selectedEventId}
+                        onChange={(e) => handleEventSelect(e.target.value)}
+                    >
+                        <option value="add-new">Add New Event</option>
+                        {existingEvents.map((event) => (
+                            <option key={event.id} value={event.id}>
+                                {event.name}
+                            </option>
                         ))}
-                        <button
-                            type="button"
-                            onClick={addTicketCategory}
-                            className="sm:col-span-2 text-green-600 hover:text-green-800">
-                            Add Ticket Category
-                        </button>
-                    </div>
+                    </select>
+                </div>
 
-                    <div className="mt-4 sm:col-span-2">
-                        {error && <p className="text-red-500">{error}</p>}
-                        {success && <p className="text-green-500">{success}</p>}
-                        <button
-                            type="submit"
-                            className="inline-flex items-center px-5 py-2.5 text-sm font-medium text-white bg-blue-600 rounded-lg focus:ring-4 focus:ring-blue-200 hover:bg-blue-700">
-                            {selectedEventId === 'add-new' ? 'Add Event' : 'Update Event'}
-                        </button>
-                        {selectedEventId !== 'add-new' && (
+                <div className="form-group">
+                    <label>Event Name:</label>
+                    <input
+                        type="text"
+                        value={eventName}
+                        onChange={(e) => setEventName(e.target.value)}
+                        required
+                    />
+                </div>
+
+                <div className="form-group">
+                    <label>Event Date:</label>
+                    <input
+                        type="date"
+                        value={eventDate}
+                        onChange={(e) => setEventDate(e.target.value)}
+                        required
+                    />
+                </div>
+
+                <div className="ticket-categories">
+                    <h3>Ticket Categories:</h3>
+                    {Object.entries(ticketCategories).map(([ticketName, ticket]) => (
+                        <div key={ticketName} className="ticket-item">
+                            <div className="ticket-input">
+                                <input
+                                    type="text"
+                                    placeholder="Ticket Name"
+                                    value={ticket.name}
+                                    onChange={(e) => handleTicketChange(ticketName, 'name', e.target.value)}
+                                />
+                                <input
+                                    type="number"
+                                    placeholder="Price"
+                                    value={ticket.price}
+                                    onChange={(e) => handleTicketChange(ticketName, 'price', e.target.value)}
+                                />
+                                <input
+                                    type="number"
+                                    placeholder="Available"
+                                    value={ticket.available}
+                                    onChange={(e) => handleTicketChange(ticketName, 'available', e.target.value)}
+                                />
+                                <textarea
+                                    placeholder="Description"
+                                    value={ticket.description}
+                                    onChange={(e) => handleTicketChange(ticketName, 'description', e.target.value)}
+                                />
+                            </div>
                             <button
                                 type="button"
-                                onClick={handleDelete}
-                                className="ml-4 inline-flex items-center px-5 py-2.5 text-sm font-medium text-white bg-red-600 rounded-lg focus:ring-4 focus:ring-red-200 hover:bg-red-700">
-                                Delete Event
+                                onClick={() => deleteTicketCategory(ticketName)}
+                                className="delete-button"
+                            >
+                                Delete
                             </button>
-                        )}
-                    </div>
+                        </div>
+                    ))}
+                    <button
+                        type="button"
+                        onClick={addTicketCategory}
+                        className="add-button"
+                    >
+                        Add Ticket Category
+                    </button>
+                </div>
+
+                <div className="form-actions">
+                    {error && <p className="error-message">{error}</p>}
+                    {success && <p className="success-message">{success}</p>}
+                    <button type="submit" className="submit-button">
+                        {selectedEventId === 'add-new' ? 'Add Event' : 'Update Event'}
+                    </button>
+                    {selectedEventId !== 'add-new' && (
+                        <button
+                            type="button"
+                            onClick={handleDelete}
+                            className="delete-event-button"
+                        >
+                            Delete Event
+                        </button>
+                    )}
                 </div>
             </form>
         </section>
