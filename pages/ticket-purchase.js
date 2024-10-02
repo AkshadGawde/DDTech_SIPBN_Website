@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 import { db } from '../lib/firebase';
-import { doc, getDoc, updateDoc, collection, addDoc } from 'firebase/firestore';
+import { doc, getDoc, collection, query, where, getDocs } from 'firebase/firestore';
 import { loadStripe } from '@stripe/stripe-js';
 import { Elements } from '@stripe/react-stripe-js';
 
@@ -30,6 +30,9 @@ const TicketPurchase = () => {
     const [mobileNumber, setMobileNumber] = useState('');
     const [error, setError] = useState('');
     const [isLoading, setIsLoading] = useState(false);
+    const [couponCode, setCouponCode] = useState('');
+    const [appliedCoupon, setAppliedCoupon] = useState(null);
+    const [couponError, setCouponError] = useState('');
 
     // Fetch event details when eventId changes
     useEffect(() => {
@@ -172,31 +175,65 @@ const TicketPurchase = () => {
         });
     };
 
-    // Function to calculate the transaction fee (4% of ticket total)
-    const calculateTransactionFee = () => {
-        const ticketTotal = cart.reduce((acc, ticket) => acc + (ticket.price * ticket.quantity), 0);
-        const fee = ticketTotal * 0.04; // 4% transaction fee
-        const feeFixed = fee.toFixed(2);
+    // Function to apply coupon
+    const applyCoupon = async () => {
+        setCouponError('');
+        if (!couponCode.trim()) {
+            setCouponError('Please enter a coupon code');
+            return;
+        }
 
-        console.log('Calculated transaction fee:', feeFixed);
-        return feeFixed;
+        try {
+            const couponsRef = collection(db, 'coupons');
+            const q = query(couponsRef, where('code', '==', couponCode.trim()));
+            const querySnapshot = await getDocs(q);
+
+            if (querySnapshot.empty) {
+                setCouponError('Invalid coupon code');
+                return;
+            }
+
+            const couponData = querySnapshot.docs[0].data();
+            setAppliedCoupon(couponData);
+            setCouponCode(''); // Clear the input field
+        } catch (error) {
+            console.error('Error applying coupon:', error);
+            setCouponError('Error applying coupon. Please try again.');
+        }
     };
 
-    // Function to calculate total price including the 4% transaction fee
-    const calculateTotal = () => {
-        const ticketTotal = cart.reduce((acc, ticket) => acc + (ticket.price * ticket.quantity), 0);
-        const fee = ticketTotal * 0.04; // 4% transaction fee
-        const totalWithFee = ticketTotal + fee;
-        const totalFixed = totalWithFee.toFixed(2);
+    // Function to calculate discount amount
+    const calculateDiscount = () => {
+        if (!appliedCoupon) return 0;
 
-        console.log('Calculated total:', totalFixed);
-        return totalFixed;
+        const subtotal = cart.reduce((acc, ticket) => acc + (ticket.price * ticket.quantity), 0);
+        const discountAmount = subtotal * (appliedCoupon.discountPercentage / 100);
+        return Math.min(discountAmount, appliedCoupon.maxDiscount);
+    };
+
+    // Function to calculate the transaction fee (4% of discounted ticket total)
+    const calculateTransactionFee = () => {
+        const subtotal = cart.reduce((acc, ticket) => acc + (ticket.price * ticket.quantity), 0);
+        const discount = calculateDiscount();
+        const discountedTotal = subtotal - discount;
+        const fee = discountedTotal * 0.04; // 4% transaction fee
+        return fee.toFixed(2);
+    };
+
+    // Function to calculate total price including discount and fee
+    const calculateTotal = () => {
+        const subtotal = cart.reduce((acc, ticket) => acc + (ticket.price * ticket.quantity), 0);
+        const discount = calculateDiscount();
+        const discountedTotal = subtotal - discount;
+        const fee = discountedTotal * 0.04; // 4% transaction fee
+        const totalWithFee = discountedTotal + fee;
+        return totalWithFee.toFixed(2);
     };
 
     // Function to handle checkout
     const handleCheckout = async (e) => {
         e.preventDefault();
-        setError(''); // Reset error
+        setError('');
         setIsLoading(true);
 
         console.log('Initiating checkout process.');
@@ -208,7 +245,7 @@ const TicketPurchase = () => {
             return;
         }
 
-        if (!name.trim()) { // Validate Name
+        if (!name.trim()) {
             console.warn('Checkout attempted without providing a name.');
             setError('Please provide your name');
             setIsLoading(false);
@@ -222,7 +259,7 @@ const TicketPurchase = () => {
             return;
         }
 
-        if (!mobileNumber.trim()) { // Validate Mobile Number
+        if (!mobileNumber.trim()) {
             console.warn('Checkout attempted without providing a mobile number.');
             setError('Please provide your mobile number');
             setIsLoading(false);
@@ -268,6 +305,10 @@ const TicketPurchase = () => {
                     email,
                     mobileNumber,
                     eventId,
+                    appliedCoupon: appliedCoupon ? {
+                        code: appliedCoupon.code,
+                        discountAmount: calculateDiscount()
+                    } : null,
                 }),
             });
 
@@ -370,17 +411,44 @@ const TicketPurchase = () => {
                                         <ul className="rounded-lg p-4 mb-4">
                                             {cart.map((ticket, index) => (
                                                 <li key={index} className="border-b border-gray-700 py-2 flex font-thin justify-between items-center">
-                                                    <span className='text-xl'>{ticket.name} (x{ticket.quantity}) - A${ticket.price.toFixed(2)}</span>
+                                                    <span className='text-xl'>{ticket.name} (x{ticket.quantity}) - A${(ticket.price * ticket.quantity).toFixed(2)}</span>
                                                 </li>
                                             ))}
                                             <li className="mt-3 font-extralight">Ticket Total: A${cart.reduce((acc, ticket) => acc + (ticket.price * ticket.quantity), 0).toFixed(2)}</li>
+                                            {appliedCoupon && (
+                                                <li className="mt-3 font-extralight text-green-300">Discount: -A${calculateDiscount().toFixed(2)}</li>
+                                            )}
                                             <li className="font-extralight mt-3">Transaction Fee (4%): A${calculateTransactionFee()}</li>
                                             <hr />
-                                            <li className="mt-2 font-semibold text-xl">Total : A${calculateTotal()}</li>
+                                            <li className="mt-2 font-semibold text-xl">Total: A${calculateTotal()}</li>
                                         </ul>
                                     )}
-    
-                                    <form onSubmit={handleCheckout} className="mt-6">
+
+                                    {/* Coupon Code Section */}
+                                    <div className="mb-4 w-full">
+                                        <label htmlFor="couponCode" className="block text-sm font-medium text-white">Coupon Code</label>
+                                        <div className="flex mt-1">
+                                            <input 
+                                                type="text"
+                                                id="couponCode"
+                                                value={couponCode}
+                                                onChange={(e) => setCouponCode(e.target.value)}
+                                                className="flex-grow px-4 py-2 bg-gray-700 rounded-l-md border border-gray-600 text-white"
+                                            />
+                                            <button 
+                                                onClick={applyCoupon}
+                                                className="bg-blue-600 text-white px-4 py-2 rounded-r-md hover:bg-blue-500 transition duration-200"
+                                            >
+                                                Apply
+                                            </button>
+                                        </div>
+                                        {couponError && <p className="text-red-500 mt-1 text-sm">{couponError}</p>}
+                                        {appliedCoupon && (
+                                            <p className="text-green-300 mt-1 text-sm">Coupon applied: {appliedCoupon.discountPercentage}% off (max A${appliedCoupon.maxDiscount})</p>
+                                        )}
+                                    </div>
+
+                                    <form onSubmit={handleCheckout} className="mt-6 w-full">
                                         {/* Name Field */}
                                         <div className="mb-4">
                                             <label htmlFor="name" className="block text-sm font-medium text-white">Name</label>
@@ -424,7 +492,7 @@ const TicketPurchase = () => {
     
                                         <button 
                                             type="submit" 
-                                            className={`bg-green-600 text-white py-2 px-6 rounded-md hover:bg-green-500 transition duration-200 ${isLoading ? 'opacity-50 cursor-not-allowed' : ''}`}
+                                            className={`w-full bg-green-600 text-white py-2 px-6 rounded-md hover:bg-green-500 transition duration-200 ${isLoading ? 'opacity-50 cursor-not-allowed' : ''}`}
                                             disabled={isLoading}
                                         >
                                             {isLoading ? 'Processing...' : 'Proceed to Checkout'}
@@ -442,6 +510,6 @@ const TicketPurchase = () => {
             </section>
         </Elements>
     );
-};    
+};
 
 export default TicketPurchase;

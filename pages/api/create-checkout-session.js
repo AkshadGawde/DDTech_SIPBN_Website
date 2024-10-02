@@ -1,5 +1,3 @@
-// pages/api/create-checkout-session.js
-
 import { NextApiRequest, NextApiResponse } from 'next';
 import Stripe from 'stripe';
 import { db } from '../../lib/firebase';
@@ -16,7 +14,7 @@ export default async function handler(req, res) {
         return res.status(405).end('Method Not Allowed');
     }
 
-    const { cart, name, email, mobileNumber, eventId } = req.body;
+    const { cart, name, email, mobileNumber, eventId, discount } = req.body;
 
     // Fetch event details from Firestore
     try {
@@ -28,6 +26,17 @@ export default async function handler(req, res) {
         }
 
         const eventData = eventDoc.data();
+
+        // Calculate the total amount of tickets
+        let ticketTotal = cart.reduce((acc, ticket) => acc + (ticket.price * ticket.quantity), 0);
+
+        // If a discount is provided, apply the discount
+        // Assuming discount is a percentage (e.g., 10 for 10% off)
+        let discountAmount = 0;
+        if (discount && discount > 0 && discount <= 100) {
+            discountAmount = ticketTotal * (discount / 100);
+            ticketTotal -= discountAmount;  // Reduce total by discount amount
+        }
 
         // Prepare line items for Stripe
         const lineItems = cart.map(ticket => ({
@@ -42,8 +51,7 @@ export default async function handler(req, res) {
             quantity: ticket.quantity,
         }));
 
-        // Add transaction fee as a separate line item
-        const ticketTotal = cart.reduce((acc, ticket) => acc + (ticket.price * ticket.quantity), 0);
+        // Add transaction fee as a separate line item (after discount)
         const transactionFee = Math.round(ticketTotal * 0.04 * 100); // 4% fee in cents
 
         if (transactionFee > 0) {
@@ -58,6 +66,22 @@ export default async function handler(req, res) {
                 quantity: 1,
             });
         }
+
+        // Add discount line item to show it on the Stripe invoice (optional)
+        if (discountAmount > 0) {
+            lineItems.push({
+                price_data: {
+                    currency: 'aud',
+                    product_data: {
+                        name: 'Discount',
+                    },
+                    unit_amount: -Math.round(discountAmount * 100), // Negative value for discount
+                    
+                },
+                quantity: 1,
+            });
+        }
+
         console.log(JSON.stringify(cart));
         // Create the Checkout session
         const session = await stripe.checkout.sessions.create({
@@ -72,6 +96,7 @@ export default async function handler(req, res) {
                 email,
                 mobileNumber,
                 cartString: JSON.stringify(cart),
+                discount: discount || 0,  // Include discount info in metadata
             },
         });
 
