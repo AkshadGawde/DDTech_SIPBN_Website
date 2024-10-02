@@ -1,6 +1,6 @@
 import Stripe from 'stripe';
 import { db } from '../../lib/firebase';
-import { doc, getDoc } from 'firebase/firestore';
+import { doc, getDoc, collection, query, where, getDocs } from 'firebase/firestore';
 
 // Initialize Stripe with your secret key
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY, {
@@ -15,11 +15,8 @@ export default async function handler(req, res) {
 
     const { cart, name, email, mobileNumber, eventId, appliedCoupon } = req.body;
 
-    // Extract discountAmount from appliedCoupon
-    const discountAmount = appliedCoupon?.discountAmount || 0; // Fallback to 0 if no coupon applied
-
-    // Fetch event details from Firestore
     try {
+        // Fetch event details from Firestore
         const eventDocRef = doc(db, 'events', eventId);
         const eventDoc = await getDoc(eventDocRef);
 
@@ -29,34 +26,66 @@ export default async function handler(req, res) {
 
         const eventData = eventDoc.data();
 
-        // Calculate the total amount of tickets
-        let ticketTotal = cart.reduce((acc, ticket) => acc + (ticket.price * ticket.quantity), 0);
+        // Fetch ticket details and validate cart
+        let ticketTotal = 0;
+        const discountedCart = [];
 
-        // Ensure discount doesn't exceed total
-        const discountApplied = Math.min(discountAmount, ticketTotal);
+        for (const cartItem of cart) {
+            const ticketName = cartItem.name; // assuming `name` refers to the ticket name in the cart
+            const ticketData = eventData.tickets[ticketName];
 
-        // Proportionally apply the discount across the tickets
-        let remainingDiscount = discountApplied;
-        const discountedCart = cart.map((ticket, index) => {
-            const ticketTotalPrice = ticket.price * ticket.quantity;
+            if (!ticketData) {
+                return res.status(404).json({ error: `Ticket ${ticketName} not found` });
+            }
 
-            // Calculate proportional discount for this ticket
-            const proportion = ticketTotalPrice / ticketTotal;
-            const discountForTicket = remainingDiscount * proportion;
+            const ticketPrice = ticketData.price;
+            const ticketQuantity = cartItem.quantity;
 
-            // Adjust price per ticket based on the proportional discount
+            // Calculate total for this ticket
+            const ticketTotalPrice = ticketPrice * ticketQuantity;
+            ticketTotal += ticketTotalPrice;
+
+            discountedCart.push({
+                name: ticketName,
+                price: ticketPrice,
+                quantity: ticketQuantity,
+                description: ticketData.description,
+                total: ticketTotalPrice, // store the total per ticket
+            });
+        }
+
+        // Fetch discount details from Firestore using the appliedCoupon's code
+        let discountPercentage = 0; // default to 0 if no coupon applied
+        if (appliedCoupon && appliedCoupon.code) {
+            const couponCode = appliedCoupon.code.trim();
+            const couponsRef = collection(db, 'coupons');
+            const q = query(couponsRef, where('code', '==', couponCode));
+            const querySnapshot = await getDocs(q);
+
+            if (querySnapshot.empty) {
+                return res.status(404).json({ error: 'Invalid coupon code' });
+            }
+
+            const couponData = querySnapshot.docs[0].data();
+            discountPercentage = couponData.discountPercentage || 0; // assuming the coupon has a `discountPercentage` field
+        }
+
+        // Apply discount to the total
+        const discountAmount = (ticketTotal * discountPercentage) / 100;
+        const totalAfterDiscount = ticketTotal - discountAmount;
+
+        // Adjust prices in the discountedCart array
+        discountedCart.forEach((ticket, index) => {
+            const proportion = ticket.total / ticketTotal;
+            const discountForTicket = discountAmount * proportion;
+
+            // Adjust the price after discount
             const discountedPrice = ticket.price - (discountForTicket / ticket.quantity);
-            remainingDiscount -= discountForTicket;
 
-            // Create dynamic description
-            const description = discountForTicket > 0
-                ? `Original Price: $${ticket.price.toFixed(2)}, Discounted Price: $${discountedPrice.toFixed(2)}`
-                : `Price: $${ticket.price.toFixed(2)}`;
-
-            return {
+            discountedCart[index] = {
                 ...ticket,
-                price: discountedPrice, // Update the price to reflect the discount
-                description, // Add dynamic description
+                price: discountedPrice,
+                description: `Original Price: $${ticket.price.toFixed(2)}, Discounted Price: $${discountedPrice.toFixed(2)}`,
             };
         });
 
@@ -74,8 +103,7 @@ export default async function handler(req, res) {
         }));
 
         // Add transaction fee as a separate line item (after discount)
-        const newTicketTotal = discountedCart.reduce((acc, ticket) => acc + (ticket.price * ticket.quantity), 0);
-        const transactionFee = Math.round(newTicketTotal * 0.04 * 100); // 4% fee in cents
+        const transactionFee = Math.round(totalAfterDiscount * 0.04 * 100); // 4% fee in cents
 
         if (transactionFee > 0) {
             lineItems.push({
