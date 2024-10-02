@@ -90,9 +90,9 @@ const AttendeeDownload = () => {
                     <div>No tickets available</div>
                   )}
                 </td>
-                <td className="px-6 py-4">{order.discount || "0"}</td> {/* Display discount */}
-                <td className="px-6 py-4">
-                  {order.discountDescription || "No discount"} {/* Display discountDescription */}
+                <td>{order.discount || "0"}</td> 
+                <td>
+                  {order.discountDescription || "No discount"} 
                 </td>
               </tr>
             ))}
