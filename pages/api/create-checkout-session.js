@@ -1,4 +1,3 @@
-import { NextApiRequest, NextApiResponse } from 'next';
 import Stripe from 'stripe';
 import { db } from '../../lib/firebase';
 import { doc, getDoc } from 'firebase/firestore';
@@ -14,7 +13,10 @@ export default async function handler(req, res) {
         return res.status(405).end('Method Not Allowed');
     }
 
-    const { cart, name, email, mobileNumber, eventId, discount } = req.body;
+    const { cart, name, email, mobileNumber, eventId, appliedCoupon } = req.body;
+
+    // Extract discountAmount from appliedCoupon
+    const discountAmount = appliedCoupon?.discountAmount || 0; // Fallback to 0 if no coupon applied
 
     // Fetch event details from Firestore
     try {
@@ -30,21 +32,41 @@ export default async function handler(req, res) {
         // Calculate the total amount of tickets
         let ticketTotal = cart.reduce((acc, ticket) => acc + (ticket.price * ticket.quantity), 0);
 
-        // If a discount is provided, apply the discount
-        // Assuming discount is a percentage (e.g., 10 for 10% off)
-        let discountAmount = 0;
-        if (discount && discount > 0 && discount <= 100) {
-            discountAmount = ticketTotal * (discount / 100);
-            ticketTotal -= discountAmount;  // Reduce total by discount amount
-        }
+        // Ensure discount doesn't exceed total
+        const discountApplied = Math.min(discountAmount, ticketTotal);
+
+        // Proportionally apply the discount across the tickets
+        let remainingDiscount = discountApplied;
+        const discountedCart = cart.map((ticket, index) => {
+            const ticketTotalPrice = ticket.price * ticket.quantity;
+
+            // Calculate proportional discount for this ticket
+            const proportion = ticketTotalPrice / ticketTotal;
+            const discountForTicket = remainingDiscount * proportion;
+
+            // Adjust price per ticket based on the proportional discount
+            const discountedPrice = ticket.price - (discountForTicket / ticket.quantity);
+            remainingDiscount -= discountForTicket;
+
+            // Create dynamic description
+            const description = discountForTicket > 0
+                ? `Original Price: $${ticket.price.toFixed(2)}, Discounted Price: $${discountedPrice.toFixed(2)}`
+                : `Price: $${ticket.price.toFixed(2)}`;
+
+            return {
+                ...ticket,
+                price: discountedPrice, // Update the price to reflect the discount
+                description, // Add dynamic description
+            };
+        });
 
         // Prepare line items for Stripe
-        const lineItems = cart.map(ticket => ({
+        const lineItems = discountedCart.map(ticket => ({
             price_data: {
                 currency: 'aud', // Adjust currency as needed
                 product_data: {
                     name: ticket.name,
-                    description: ticket.description || '', // Ensure description exists
+                    description: ticket.description, // Use the dynamic description
                 },
                 unit_amount: Math.round(ticket.price * 100), // Stripe expects amount in cents
             },
@@ -52,7 +74,8 @@ export default async function handler(req, res) {
         }));
 
         // Add transaction fee as a separate line item (after discount)
-        const transactionFee = Math.round(ticketTotal * 0.04 * 100); // 4% fee in cents
+        const newTicketTotal = discountedCart.reduce((acc, ticket) => acc + (ticket.price * ticket.quantity), 0);
+        const transactionFee = Math.round(newTicketTotal * 0.04 * 100); // 4% fee in cents
 
         if (transactionFee > 0) {
             lineItems.push({
@@ -67,36 +90,20 @@ export default async function handler(req, res) {
             });
         }
 
-        // Add discount line item to show it on the Stripe invoice (optional)
-        if (discountAmount > 0) {
-            lineItems.push({
-                price_data: {
-                    currency: 'aud',
-                    product_data: {
-                        name: 'Discount',
-                    },
-                    unit_amount: -Math.round(discountAmount * 100), // Negative value for discount
-                    
-                },
-                quantity: 1,
-            });
-        }
-
-        console.log(JSON.stringify(cart));
         // Create the Checkout session
         const session = await stripe.checkout.sessions.create({
             payment_method_types: ['card'],
             line_items: lineItems,
             mode: 'payment',
-            success_url: `${process.env.NEXT_PUBLIC_BASE_URL}/successs?session_id={CHECKOUT_SESSION_ID}&name=${encodeURIComponent(name.trim())}&email=${encodeURIComponent(email.trim())}&mobileNumber=${encodeURIComponent(mobileNumber.trim())}`,
+            success_url: `${process.env.NEXT_PUBLIC_BASE_URL}/success?session_id={CHECKOUT_SESSION_ID}&name=${encodeURIComponent(name.trim())}&email=${encodeURIComponent(email.trim())}&mobileNumber=${encodeURIComponent(mobileNumber.trim())}`,
             cancel_url: `${process.env.NEXT_PUBLIC_BASE_URL}/cancel`,
             metadata: {
                 eventId,
                 name,
                 email,
                 mobileNumber,
-                cartString: JSON.stringify(cart),
-                discount: discount || 0,  // Include discount info in metadata
+                cartString: JSON.stringify(discountedCart), // Store discounted cart in metadata
+                appliedCoupon: JSON.stringify(appliedCoupon),  // Include coupon details in metadata
             },
         });
 
