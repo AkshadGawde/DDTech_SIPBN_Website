@@ -84,7 +84,7 @@ export default async function handler(req, res) {
 
             // Parse the discount details from the metadata (if any)
             const couponDetails = appliedCoupon ? JSON.parse(appliedCoupon) : null;
-            const discountDescription = couponDetails ? `Discount (${couponDetails.code}): $${couponDetails.discountAmount}` : 'No discount applied';
+            const discountDescription = couponDetails ? `${couponDetails.code}` : 'No discount applied';
 
             // Save order details
             const orderData = {
