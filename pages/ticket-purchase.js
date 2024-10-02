@@ -330,6 +330,8 @@ const TicketPurchase = () => {
 
         setIsLoading(false);
     };
+
+    
     return (
         <Elements stripe={stripePromise}>
           <section className="event-section">
@@ -404,122 +406,124 @@ const TicketPurchase = () => {
                       </div>
                     </div>
       
-                    {/* Right section for cart and form */}
+                    {/* Right section for cart and form in a separate card */}
                     <div className="cart-section">
-                      <h3 className="cart-title">Order Summary: </h3>
-                      {cart.length === 0 ? (
-                        <p>No tickets in cart.</p>
-                      ) : (
-                        <ul className="cart-list">
-                          {cart.map((ticket, index) => (
-                            <li key={index} className="cart-item">
-                              <span>
-                                {ticket.name} (x{ticket.quantity}) - A$
-                                {(ticket.price * ticket.quantity).toFixed(2)}
-                              </span>
+                      <div className="order-summary-card">
+                        <h3 className="cart-title">Order Summary</h3>
+                        {cart.length === 0 ? (
+                          <p>No tickets in cart.</p>
+                        ) : (
+                          <ul className="cart-list">
+                            {cart.map((ticket, index) => (
+                              <li key={index} className="cart-item">
+                                <span>
+                                  {ticket.name} (x{ticket.quantity}) - A$
+                                  {(ticket.price * ticket.quantity).toFixed(2)}
+                                </span>
+                              </li>
+                            ))}
+                            <li className="cart-total">
+                              Ticket Total: A$
+                              {cart.reduce(
+                                (acc, ticket) => acc + ticket.price * ticket.quantity,
+                                0
+                              ).toFixed(2)}
                             </li>
-                          ))}
-                          <li className="cart-total">
-                            Ticket Total: A$
-                            {cart.reduce(
-                              (acc, ticket) => acc + ticket.price * ticket.quantity,
-                              0
-                            ).toFixed(2)}
-                          </li>
-                          {appliedCoupon && (
-                            <li className="discount">
-                              Discount: -A${calculateDiscount().toFixed(2)}
+                            {appliedCoupon && (
+                              <li className="discount">
+                                Discount: -A${calculateDiscount().toFixed(2)}
+                              </li>
+                            )}
+                            <li className="transaction-fee">
+                              Transaction Fee (4%): A${calculateTransactionFee()}
                             </li>
-                          )}
-                          <li className="transaction-fee">
-                            Transaction Fee (4%): A${calculateTransactionFee()}
-                          </li>
-                          <hr />
-                          <li className="total-price">Total: A${calculateTotal()}</li>
-                        </ul>
-                      )}
-      
-                      {/* Coupon Code Section */}
-                      <div className="coupon-section">
-                        <label htmlFor="couponCode" className="coupon-label">
-                          Coupon Code
-                        </label>
-                        <div className="coupon-input-group">
-                          <input
-                            type="text"
-                            id="couponCode"
-                            value={couponCode}
-                            onChange={(e) => setCouponCode(e.target.value)}
-                            className="coupon-input"
-                          />
-                          <button onClick={applyCoupon} className="apply-btn">
-                            Apply
-                          </button>
-                        </div>
-                        {couponError && <p className="coupon-error">{couponError}</p>}
-                        {appliedCoupon && (
-                          <p className="coupon-applied">
-                            Coupon applied: {appliedCoupon.discountPercentage}% off
-                            (max A${appliedCoupon.maxDiscount})
-                          </p>
+                            <hr />
+                            <li className="total-price">Total: A${calculateTotal()}</li>
+                          </ul>
                         )}
+      
+                        {/* Coupon Code Section */}
+                        <div className="coupon-section">
+                          <label htmlFor="couponCode" className="coupon-label">
+                            Coupon Code
+                          </label>
+                          <div className="coupon-input-group">
+                            <input
+                              type="text"
+                              id="couponCode"
+                              value={couponCode}
+                              onChange={(e) => setCouponCode(e.target.value)}
+                              className="coupon-input"
+                            />
+                            <button onClick={applyCoupon} className="apply-btn">
+                              Apply
+                            </button>
+                          </div>
+                          {couponError && <p className="coupon-error">{couponError}</p>}
+                          {appliedCoupon && (
+                            <p className="coupon-applied">
+                              Coupon applied: {appliedCoupon.discountPercentage}% off
+                              (max A${appliedCoupon.maxDiscount})
+                            </p>
+                          )}
+                        </div>
+      
+                        <form onSubmit={handleCheckout} className="checkout-form">
+                          <div className="form-group">
+                            <label htmlFor="name" className="form-label">
+                              Name
+                            </label>
+                            <input
+                              type="text"
+                              id="name"
+                              value={name}
+                              onChange={(e) => setName(e.target.value)}
+                              required
+                              className="form-input"
+                            />
+                          </div>
+      
+                          <div className="form-group">
+                            <label htmlFor="email" className="form-label">
+                              Email
+                            </label>
+                            <input
+                              type="email"
+                              id="email"
+                              value={email}
+                              onChange={(e) => setEmail(e.target.value)}
+                              required
+                              className="form-input"
+                            />
+                          </div>
+      
+                          <div className="form-group">
+                            <label htmlFor="mobileNumber" className="form-label">
+                              Mobile Number
+                            </label>
+                            <input
+                              type="tel"
+                              id="mobileNumber"
+                              value={mobileNumber}
+                              onChange={(e) => setMobileNumber(e.target.value)}
+                              required
+                              pattern="[0-9]{10,15}"
+                              placeholder="e.g., 1234567890"
+                              className="form-input"
+                            />
+                          </div>
+      
+                          <button
+                            type="submit"
+                            className={`checkout-btn ${isLoading ? 'disabled' : ''}`}
+                            disabled={isLoading}
+                          >
+                            {isLoading ? 'Processing...' : 'Proceed to Checkout'}
+                          </button>
+                        </form>
+      
+                        {error && <p className="checkout-error">{error}</p>}
                       </div>
-      
-                      <form onSubmit={handleCheckout} className="checkout-form">
-                        <div className="form-group">
-                          <label htmlFor="name" className="form-label">
-                            Name
-                          </label>
-                          <input
-                            type="text"
-                            id="name"
-                            value={name}
-                            onChange={(e) => setName(e.target.value)}
-                            required
-                            className="form-input"
-                          />
-                        </div>
-      
-                        <div className="form-group">
-                          <label htmlFor="email" className="form-label">
-                            Email
-                          </label>
-                          <input
-                            type="email"
-                            id="email"
-                            value={email}
-                            onChange={(e) => setEmail(e.target.value)}
-                            required
-                            className="form-input"
-                          />
-                        </div>
-      
-                        <div className="form-group">
-                          <label htmlFor="mobileNumber" className="form-label">
-                            Mobile Number
-                          </label>
-                          <input
-                            type="tel"
-                            id="mobileNumber"
-                            value={mobileNumber}
-                            onChange={(e) => setMobileNumber(e.target.value)}
-                            required
-                            pattern="[0-9]{10,15}"
-                            placeholder="e.g., 1234567890"
-                            className="form-input"
-                          />
-                        </div>
-      
-                        <button
-                          type="submit"
-                          className={`checkout-btn ${isLoading ? 'disabled' : ''}`}
-                          disabled={isLoading}
-                        >
-                          {isLoading ? 'Processing...' : 'Proceed to Checkout'}
-                        </button>
-                      </form>
-      
-                      {error && <p className="checkout-error">{error}</p>}
                     </div>
                   </div>
                 </>
@@ -530,6 +534,8 @@ const TicketPurchase = () => {
           </section>
         </Elements>
       );
+      
+      
       
     
 };    
