@@ -1,5 +1,3 @@
-// pages/api/webhook.js
-
 import { buffer } from 'micro';
 import Stripe from 'stripe';
 import { db } from '../../lib/firebase';
@@ -34,11 +32,11 @@ export default async function handler(req, res) {
 
         // Handle the event
         if (event.type === 'checkout.session.completed') {
-            console.log("helloo")
+            console.log("Webhook received: checkout.session.completed");
             const session = event.data.object;
 
             // Extract metadata
-            const { eventId, name, email, mobileNumber, cartString } = session.metadata;
+            const { eventId, name, email, mobileNumber, cartString, appliedCoupon } = session.metadata;
 
             console.log("This is the fetched detail");
             console.log(cartString);
@@ -82,7 +80,11 @@ export default async function handler(req, res) {
             // Update Firestore
             await updateDoc(eventDocRef, updates);
             console.log(updates);
-            console.log("done successfully");
+            console.log("Stock update successful");
+
+            // Parse the discount details from the metadata (if any)
+            const couponDetails = appliedCoupon ? JSON.parse(appliedCoupon) : null;
+            const discountDescription = couponDetails ? `${couponDetails.code}` : 'No discount applied';
 
             // Save order details
             const orderData = {
@@ -95,13 +97,15 @@ export default async function handler(req, res) {
                 tickets: cart,
                 transactionFee: (session.amount_total * 0.04) / 100, // Adjust based on your fee calculation
                 totalAmount: session.amount_total / 100,
+                discount: couponDetails ? couponDetails.discountAmount : 0, // Store the discount amount
+                discountDescription, // Description of the discount
                 createdAt: new Date(),
                 status: 'confirmed',
             };
 
             const ordersCollectionRef = collection(db, 'orders');
             await addDoc(ordersCollectionRef, orderData);
-            console.log("added successfully");
+            console.log("Order added successfully");
 
             // Prepare detailed ticket info for the email (like an invoice)
             const emailPayload = {
@@ -110,14 +114,16 @@ export default async function handler(req, res) {
                 mobileNumber: mobileNumber.trim(),
                 eventDetails: eventData,
                 tickets: cart.map(ticket => ({
-                    name: ticket.name, // assuming 'custom.name' holds the ticket name
+                    name: ticket.name,
                     quantity: ticket.quantity,
-                    price: ticket.price, // make sure the price is available in ticket
+                    price: ticket.price,
                     total: ticket.quantity * ticket.price,
                 })),
                 orderId: session.id,
                 transactionFee: (session.amount_total * 0.04) / 100, // Adjust if needed
                 totalAmount: session.amount_total / 100,
+                discount: couponDetails ? couponDetails.discountAmount : 0, // Include discount info in the email
+                discountDescription, // Include discount description in the email
             };
 
             console.log('Sending email with payload:', emailPayload);

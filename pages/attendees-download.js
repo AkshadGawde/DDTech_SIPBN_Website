@@ -1,4 +1,3 @@
-// pages/attendeeDownload.js
 import { useEffect, useState } from "react";
 import withAuth from "../lib/withAuth";
 import { db } from "../lib/firebase"; // Import your Firestore database
@@ -39,6 +38,8 @@ const AttendeeDownload = () => {
             ticketType: ticket.name,
             quantity: ticket.quantity,
             transactionId: order.orderId,
+            discount: order.discount || 0, // Add discount field
+            discountDescription: order.discountDescription || "No discount", // Add discountDescription field
           });
         });
       }
@@ -67,6 +68,8 @@ const AttendeeDownload = () => {
               <th>Email</th>
               <th>Transaction ID</th>
               <th>Tickets</th>
+              <th>Discount</th>
+              <th>Discount Description</th> 
             </tr>
           </thead>
           <tbody>
@@ -86,6 +89,10 @@ const AttendeeDownload = () => {
                   ) : (
                     <div>No tickets available</div>
                   )}
+                </td>
+                <td>{order.discount || "0"}</td> 
+                <td>
+                  {order.discountDescription || "No discount"} 
                 </td>
               </tr>
             ))}
