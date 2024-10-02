@@ -8,6 +8,7 @@ header {
   z-index: 999;
   display: flex;
   background-color: #0d0d0d;
+  align-items: center;
 
   .container {
     display: flex;
@@ -22,14 +23,17 @@ header {
       margin-left: auto;
 
       a {
-        margin: 0 8px;
-        text-decoration: none;
+        margin: 0 10px;
+        align-items: center;
         color: white;
         transition: color 0.3s;
+        padding-top: 4px;
 
         &.activeLink {
           color: rgb(21, 122, 217);
           position: relative;
+          padding-top: 4px;
+
 
           &::after {
             content: "";
@@ -48,14 +52,25 @@ header {
         display: inline-block;
         align-self: center;
         
+        .dropdown-arrow {
+          font-size: 0.8em;
+          margin-left: 5px;
+          cursor: pointer;
+          transition: transform 0.3s ease;
+          display: inline-block;
+        }
+
+        &.open .dropdown-arrow {
+          transform: rotate(180deg);
+        }
+        
         .dropdown-content {
           display: none;
           position: absolute;
           background-color: #0d0d0d;
           min-width: 200px;
-          // box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
           z-index: 1;
-          border-bottom-left-radius: 10px ;
+          border-bottom-left-radius: 10px;
           border-bottom-right-radius: 10px;
           padding: 10px 0;
 
@@ -68,7 +83,7 @@ header {
             &:hover {
               background-color: #fff;
               border-radius: 15px;
-              transition: background-color 0.2s; /* Smooth hover effects */
+              transition: background-color 0.2s;
               color: #000;
             }
           }
@@ -155,16 +170,6 @@ header {
 .sipLogo {
   display: inline;
   margin: 0 16px;
-  max-width: 23%;
-  @media screen and (max-width:1024px) {
-    max-width: 40%;
-  }
-  @media screen and (max-width:768px) {
-    max-width: 50%;
-  }
-  @media screen and (max-width:480px) {
-    max-width: 80%;
-  }
 }
 
 .menu-toggle {
@@ -179,21 +184,20 @@ header {
   header {
     border-bottom: none;
     .menu-toggle {
-      display: inline; /* Show menu toggle on mobile */
+      display: inline;
       margin: 0 10px;
     }
 
     .container {
       nav {
-        display: none; /* Hide nav on mobile */
+        display: none;
       }
-
 
       .openMenu {
         display: flex;
         flex-direction: column;
         position: absolute;
-        top: 64px; /* Adjusted to match the header height */
+        top: 64px;
         left: 0;
         width: 100%;
         background-color: #0d0d0d;
@@ -232,7 +236,7 @@ header {
       margin-bottom: 16px;
       .dropdown-content {
         background-color: #575757;
-        position: static; /* Change position to static for mobile */
+        position: static;
         box-shadow: none;
       }
     }

@@ -53,32 +53,30 @@ const AttendeeDownload = () => {
   };
 
   return (
-    <div>
+    <div className="attendee-list-container">
       <h1>Download Attendee List</h1>
       <button onClick={downloadGuestList} disabled={orders.length === 0}>
         {orders.length > 0 ? "Download Guest List" : "No Orders Available"}
       </button>
-      <div className="relative overflow-x-auto">
-        <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
-          <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+      <div className="table-container">
+        <table>
+          <thead>
             <tr>
-              <th scope="col" className="px-6 py-3">Name</th>
-              <th scope="col" className="px-6 py-3">Mobile</th>
-              <th scope="col" className="px-6 py-3">Email</th>
-              <th scope="col" className="px-6 py-3">Transaction ID</th>
-              <th scope="col" className="px-6 py-3">Tickets</th>
+              <th>Name</th>
+              <th>Mobile</th>
+              <th>Email</th>
+              <th>Transaction ID</th>
+              <th>Tickets</th>
             </tr>
           </thead>
           <tbody>
             {orders.map((order) => (
-              <tr key={order.id} className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-                <td className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                  {order.name || "N/A"} {/* Display name or "N/A" if not available */}
-                </td>
-                <td className="px-6 py-4">{order.mobileNumber || "N/A"}</td> {/* Display mobile or "N/A" */}
-                <td className="px-6 py-4">{order.email || "N/A"}</td> {/* Display email */}
-                <td className="px-6 py-4">{order.orderId}</td>
-                <td className="px-6 py-4">
+              <tr key={order.id}>
+                <td>{order.name || "N/A"}</td>
+                <td>{order.mobileNumber || "N/A"}</td>
+                <td>{order.email || "N/A"}</td>
+                <td>{order.orderId}</td>
+                <td>
                   {Array.isArray(order.tickets) ? (
                     order.tickets.map((ticket) => (
                       <div key={ticket.name}>
@@ -96,6 +94,7 @@ const AttendeeDownload = () => {
       </div>
     </div>
   );
+  
 };
 
 export default withAuth(AttendeeDownload);

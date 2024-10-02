@@ -290,158 +290,153 @@ const TicketPurchase = () => {
 
     return (
         <Elements stripe={stripePromise}>
-            <section className="py-24 relative bg-gradient-to-r from-black from-60% to-indigo-800 text-white">
-                <div className="w-full max-w-7xl px-4 md:px-5 lg:px-6 mx-auto">
-                    {eventDetails ? (
-                        <>
-                            <h2 className="font-manrope font-bold text-4xl leading-10 mb-8 text-center text-white">
-                                {eventDetails.name}
-                            </h2>
-                            <p className="mb-4 text-center">Date: {eventDetails.date}</p>
-                            <p className="mb-8 text-center">{eventDetails.description}</p>
-    
-                            {/* Main layout container */}
-                            <div className="flex flex-col lg:flex-row lg:justify-between gap-8">
-    
-                                {/* Left section for ticket categories */}
-                                <div className="lg:w-2/3">
-                                    <h3 className="font-normal text-2xl mb-2">Ticket Categories</h3>
-                                    <p className='mb-4 text-sm font-light'>Tue, 26 Nov 2024 8:00 AM - Wed, 27 Nov 2024 9:00 PM AEDT</p>
-                                    <div className="grid grid-cols-1 lg:grid-cols-1 gap-6">
-                                        {Object.keys(eventDetails.tickets).map((ticketName) => {
-                                            const ticket = eventDetails.tickets[ticketName];
-                                            const isExpanded = expandedTickets[ticketName];
-                                            return (
-                                                <div key={ticketName} className="bg-gradient-to-br from-blue-700 via-blue-500 to-blue-700 rounded-lg shadow-md p-4 mb-2">
-    
-                                                    <div className='flex justify-between'>
-                                                        <div>
-                                                            <h3 className="text-2xl font-semibold mb-1">{ticket.name}</h3>
-                                                            <p className='text-sm'>Available Tickets: {parseInt(ticket.available)}</p>
-                                                        </div>
-                                                        <div className="flex ml-4 justify-center">
-                                                            <button 
-                                                                onClick={() => updateCartQuantity(ticket.name, -1)}
-                                                                className="bg-gray-400 text-white px-3 py-1 mr-2 rounded-lg hover:bg-gray-300 transition duration-200"
-                                                            >
-                                                                -
-                                                            </button>
-                                                            <span className="mx-2 my-1">{quantities[ticket.name]}</span>
-                                                            <button 
-                                                                onClick={() => updateCartQuantity(ticket.name, 1)}
-                                                                className="bg-blue-600 text-white px-3 py-1 ml-2 rounded-lg hover:bg-blue-500 transition duration-200"
-                                                            >
-                                                                +
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                    <hr />
-                                                    <p>A${parseFloat(ticket.price).toFixed(2)}</p>
-                                                    <p className='text-sm my-1'>Description: {ticket.description}</p>
-    
-                                                    {/* Read More Section */}
-                                                    {isExpanded && (
-                                                        <div className="mt-2">
-                                                            <p className="text-sm">
-                                                                {/* Add any additional details you want to show when expanded */}
-                                                                Additional details can be shown here when expanded.
-                                                            </p>
-                                                        </div>
-                                                    )}
-    
-                                                    <button 
-                                                        className="text-white-500 font-extralight mt-2 focus:outline-none hover:underline"
-                                                        onClick={() => toggleExpand(ticketName)}
-                                                    >
-                                                        {isExpanded ? 'Read Less ↑' : 'Read More ↓'}
-                                                    </button>
-                                                </div>
-                                            );
-                                        })}
-                                    </div>
-                                </div>
-    
-                                {/* Right section for cart and form */}
-                                <div className="lg:w-fit flex flex-col items-center justify-between h-full bg-gradient-to-br from-blue-700 via-blue-500 to-blue-700 px-8 py-5 mt-[75px] rounded-2xl">
-                                    <h3 className="text-2xl mb-4">Order Summary: </h3>
-                                    {cart.length === 0 ? (
-                                        <p>No tickets in cart.</p>
-                                    ) : (
-                                        <ul className="rounded-lg p-4 mb-4">
-                                            {cart.map((ticket, index) => (
-                                                <li key={index} className="border-b border-gray-700 py-2 flex font-thin justify-between items-center">
-                                                    <span className='text-xl'>{ticket.name} (x{ticket.quantity}) - A${ticket.price.toFixed(2)}</span>
-                                                </li>
-                                            ))}
-                                            <li className="mt-3 font-extralight">Ticket Total: A${cart.reduce((acc, ticket) => acc + (ticket.price * ticket.quantity), 0).toFixed(2)}</li>
-                                            <li className="font-extralight mt-3">Transaction Fee (4%): A${calculateTransactionFee()}</li>
-                                            <hr />
-                                            <li className="mt-2 font-semibold text-xl">Total : A${calculateTotal()}</li>
-                                        </ul>
-                                    )}
-    
-                                    <form onSubmit={handleCheckout} className="mt-6">
-                                        {/* Name Field */}
-                                        <div className="mb-4">
-                                            <label htmlFor="name" className="block text-sm font-medium text-white">Name</label>
-                                            <input 
-                                                type="text"
-                                                id="name"
-                                                value={name}
-                                                onChange={(e) => setName(e.target.value)}
-                                                required
-                                                className="w-full px-4 py-2 bg-gray-700 rounded-md border border-gray-600 text-white"
-                                            />
-                                        </div>
-    
-                                        {/* Email Field */}
-                                        <div className="mb-4">
-                                            <label htmlFor="email" className="block text-sm font-medium text-white">Email</label>
-                                            <input 
-                                                type="email"
-                                                id="email"
-                                                value={email}
-                                                onChange={(e) => setEmail(e.target.value)}
-                                                required
-                                                className="w-full px-4 py-2 bg-gray-700 rounded-md border border-gray-600 text-white"
-                                            />
-                                        </div>
-    
-                                        {/* Mobile Number Field */}
-                                        <div className="mb-4">
-                                            <label htmlFor="mobileNumber" className="block text-sm font-medium text-white">Mobile Number</label>
-                                            <input 
-                                                type="tel"
-                                                id="mobileNumber"
-                                                value={mobileNumber}
-                                                onChange={(e) => setMobileNumber(e.target.value)}
-                                                required
-                                                pattern="[0-9]{10,15}"
-                                                placeholder="e.g., 1234567890"
-                                                className="w-full px-4 py-2 bg-gray-700 rounded-md border border-gray-600 text-white"
-                                            />
-                                        </div>
-    
-                                        <button 
-                                            type="submit" 
-                                            className={`bg-green-600 text-white py-2 px-6 rounded-md hover:bg-green-500 transition duration-200 ${isLoading ? 'opacity-50 cursor-not-allowed' : ''}`}
-                                            disabled={isLoading}
-                                        >
-                                            {isLoading ? 'Processing...' : 'Proceed to Checkout'}
-                                        </button>
-                                    </form>
-    
-                                    {error && <p className="text-red-500 mt-4">{error}</p>}
-                                </div>
-                            </div>
-                        </>
-                    ) : (
-                        <p>Loading event details...</p>
-                    )}
+  <section className="event-section">
+    <div className="container">
+      {eventDetails ? (
+        <>
+          <h2 className="event-title">{eventDetails.name}</h2>
+          <p className="event-date">Date: {eventDetails.date}</p>
+          <p className="event-description">{eventDetails.description}</p>
+
+          {/* Main layout container */}
+          <div className="event-layout">
+            {/* Left section for ticket categories */}
+            <div className="tickets-section">
+              <h3 className="ticket-title">Ticket Categories</h3>
+              <p className='event-time'>
+                Tue, 26 Nov 2024 8:00 AM - Wed, 27 Nov 2024 9:00 PM AEDT
+              </p>
+              <div className="tickets-grid">
+                {Object.keys(eventDetails.tickets).map((ticketName) => {
+                  const ticket = eventDetails.tickets[ticketName];
+                  const isExpanded = expandedTickets[ticketName];
+                  return (
+                    <div key={ticketName} className="ticket-card">
+                      <div className='ticket-info'>
+                        <div>
+                          <h3 className="ticket-name">{ticket.name}</h3>
+                          <p className='ticket-available'>Available Tickets: {parseInt(ticket.available)}</p>
+                        </div>
+                        <div className="ticket-actions">
+                          <button 
+                            onClick={() => updateCartQuantity(ticket.name, -1)}
+                            className="ticket-decrease"
+                          >
+                            -
+                          </button>
+                          <span className="ticket-quantity">{quantities[ticket.name]}</span>
+                          <button 
+                            onClick={() => updateCartQuantity(ticket.name, 1)}
+                            className="ticket-increase"
+                          >
+                            +
+                          </button>
+                        </div>
+                      </div>
+                      <hr className="divider" />
+                      <p className="ticket-price">A${parseFloat(ticket.price).toFixed(2)}</p>
+                      <p className='ticket-description'>Description: {ticket.description}</p>
+
+                      {/* Read More Section */}
+                      {isExpanded && (
+                        <div className="ticket-details">
+                          <p>Here are the additional details when expanded.</p>
+                        </div>
+                      )}
+
+                      <button 
+                        className="read-more"
+                        onClick={() => toggleExpand(ticketName)}
+                      >
+                        {isExpanded ? 'Read Less ↑' : 'Read More ↓'}
+                      </button>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+
+            {/* Right section for cart and form */}
+            <div className="cart-section">
+              <h3 className="cart-title">Order Summary</h3>
+              {cart.length === 0 ? (
+                <p className="cart-empty">No tickets in cart.</p>
+              ) : (
+                <ul className="cart-list">
+                  {cart.map((ticket, index) => (
+                    <li key={index} className="cart-item">
+                      <span>{ticket.name} (x{ticket.quantity})</span>
+                      <span>A${ticket.price.toFixed(2)}</span>
+                    </li>
+                  ))}
+                  <li className="cart-total">Ticket Total: A${cart.reduce((acc, ticket) => acc + (ticket.price * ticket.quantity), 0).toFixed(2)}</li>
+                  <li className="transaction-fee">Transaction Fee (4%): A${calculateTransactionFee()}</li>
+                  <hr className="divider" />
+                  <li className="total-price">Total : A${calculateTotal()}</li>
+                </ul>
+              )}
+
+              <form onSubmit={handleCheckout} className="checkout-form">
+                {/* Name Field */}
+                <div className="form-group">
+                  <label htmlFor="name">Name</label>
+                  <input 
+                    type="text"
+                    id="name"
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                    required
+                  />
                 </div>
-            </section>
-        </Elements>
+
+                {/* Email Field */}
+                <div className="form-group">
+                  <label htmlFor="email">Email</label>
+                  <input 
+                    type="email"
+                    id="email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    required
+                  />
+                </div>
+
+                {/* Mobile Number Field */}
+                <div className="form-group">
+                  <label htmlFor="mobileNumber">Mobile Number</label>
+                  <input 
+                    type="tel"
+                    id="mobileNumber"
+                    value={mobileNumber}
+                    onChange={(e) => setMobileNumber(e.target.value)}
+                    required
+                    pattern="[0-9]{10,15}"
+                    placeholder="e.g., 1234567890"
+                  />
+                </div>
+
+                <button 
+                  type="submit" 
+                  className={`checkout-btn ${isLoading ? 'loading' : ''}`}
+                  disabled={isLoading}
+                >
+                  {isLoading ? 'Processing...' : 'Proceed to Checkout'}
+                </button>
+              </form>
+
+              {error && <p className="error-message">{error}</p>}
+            </div>
+          </div>
+        </>
+      ) : (
+        <p>Loading event details...</p>
+      )}
+    </div>
+  </section>
+</Elements>
+
     );
+    
 };    
 
 export default TicketPurchase;
