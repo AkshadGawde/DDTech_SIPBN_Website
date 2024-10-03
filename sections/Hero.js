@@ -87,7 +87,7 @@ function Hero() {
             {/* <div className="banner2" data-aos="fade-left">
             <div className="bannerTitle container">
               <h2>Secure your #CapTech2024 ticket!</h2>
-              <p>Early bird discount 20% till 30th September 2024</p>
+              <p>Early bird discount 20% till 31st October 2024</p>
               <a
                 href={`/ticket-purchase?eventId=iaEHed2PE5Te0BmBwku3`}  
                 target="_blank"

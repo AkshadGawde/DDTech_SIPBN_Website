@@ -8,29 +8,29 @@ const CarouselWithText = () => {
   const settings = {
     infinite: true,
     speed: 1500,
-    slidesToShow: 1, // Default number of slides to show on large screens
+    slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 0,
-    cssEase: "linear",
+    // cssEase: "linear",
     pauseOnHover: true,
     responsive: [
       {
-        breakpoint: 1440, // Screens less than 1440px
+        breakpoint: 1440,
         settings: {
-          slidesToShow: 1, // Show 3 slides for large tablets/laptops
+          slidesToShow: 1,
         },
       },
       {
-        breakpoint: 1024, // Screens less than 1024px
+        breakpoint: 1024,
         settings: {
-          slidesToShow: 1, // Show 2 slides for tablets
+          slidesToShow: 1,
         },
       },
       {
-        breakpoint: 768, // Screens less than 768px
+        breakpoint: 768,
         settings: {
-          slidesToShow: 1, // Show 1 slide for mobile devices
+          slidesToShow: 1,
         },
       },
     ],

@@ -13,12 +13,12 @@ const Section = ({ title, children }) => (
 const Index = () => {
   return (
     <>
-        <div className="carouselHolder">
-          <SuccessCarousel showArrows={true}/>
-        </div>
-        <div className="carouselHolder mobileCarousel">
-          <SuccessCarousel showArrows={false}/>
-        </div>
+      <div className="carouselHolder">
+        <SuccessCarousel showArrows={true} />
+      </div>
+      <div className="carouselHolder mobileCarousel">
+        <SuccessCarousel showArrows={false} />
+      </div>
     </>
   );
 };

@@ -3,25 +3,25 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 30px; // Increased padding for more vertical space
+  padding: 30px; 
 
   .carousel-image {
     width: 100%;
-    max-width: 600px; // Limit the max width for images
-    height: auto; // Maintain aspect ratio
-    border-radius: 10px; // Optional: add rounded corners
-    margin-bottom: 20px; // Add some space below the image
+    max-width: 600px; 
+    height: auto; 
+    border-radius: 10px; 
+    margin-bottom: 20px; 
   }
 
   .carousel-title {
-    font-size: 1.8rem; // Increased font size for better readability
+    font-size: 1.8rem; 
     margin: 15px 0 10px;
     font-weight: bold;
   }
 
   .carousel-description {
-    font-size: 1.2rem; // Increased font size for better readability
-    color: #555; // Adjust text color as needed
-    margin-top: 10px; // Add some space above the description
+    font-size: 1.2rem;
+    color: #555; 
+    margin-top: 10px; 
   }
 }
