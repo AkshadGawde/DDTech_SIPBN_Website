@@ -530,12 +530,12 @@ const TicketPurchase = () => {
                       {couponError && (
                         <p className="coupon-error">{couponError}</p>
                       )}
-                      {appliedCoupon && (
+                      {/* {appliedCoupon && (
                         <p className="coupon-applied">
                           Coupon applied: {appliedCoupon.discountPercentage}%
                           off (max A${appliedCoupon.maxDiscount})
                         </p>
-                      )}
+                      )} */}
                     </div>
 
                     <form onSubmit={handleCheckout} className="checkout-form">
