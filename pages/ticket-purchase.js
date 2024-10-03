@@ -415,9 +415,9 @@ const TicketPurchase = () => {
                           <div className="ticket-header">
                             <div>
                               <h3 className="ticket-name">{ticket.name}</h3>
-                              <p className="ticket-available">
+                              {/* <p className="ticket-available">
                                 Available Tickets: {parseInt(ticket.available)}
-                              </p>
+                              </p> */}
                             </div>
                             <div className="ticket-quantity">
                               <button
