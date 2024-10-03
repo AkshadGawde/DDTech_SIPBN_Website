@@ -60,8 +60,8 @@ function TicketPage() {
           <CardDropDown
             content={{
               l1: "Welcome Drinks at NSW Parliament House on Monday 25 November 2024",
-              l2: "CapTech2024 Summit on Tuesday 26 November 2024 at ICC Sydney",
-              l3: "CapTech2024 Summit on Tuesday 26 November 2024 post networking drinks",
+              l2: "#CapTech2024 Summit on Tuesday 26 November 2024 at ICC Sydney",
+              l3: "#CapTech2024 Summit on Tuesday 26 November 2024 post networking drinks",
             }}
             maxHeight="400px"
           />

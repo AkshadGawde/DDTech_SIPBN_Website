@@ -860,14 +860,14 @@ form {
 }
 
 
-
 .event-section {
-  padding: 6rem 0;
-  background: linear-gradient(to right, black 60%, #4f46e5);
-  color: white;
+  padding: 4rem 1rem;
+  background: linear-gradient(to right, #000 55%, #4f46e5);
+  color: #f3f4f6;
+  min-height: 100vh;
 
   .container {
-    max-width: 80rem;
+    max-width: 75rem;
     margin: 0 auto;
     padding: 0 1rem;
   }
@@ -875,215 +875,376 @@ form {
   .event-title {
     font-family: 'Manrope', sans-serif;
     font-size: 2.5rem;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
   }
 
-  .event-date,
-  .event-description {
-    text-align: center;
-    margin-bottom: 1rem;
+  .event-date {
+    color: #d1d5db;
+    margin-bottom: 2.5rem;
+  }
+
+  .event-time {
+    margin-top: 10px;
   }
 
   .main-layout {
     display: flex;
-    flex-direction: column;
     gap: 2rem;
+    align-items: flex-start;
 
-    @media (min-width: 1024px) {
-      flex-direction: row;
-      justify-content: space-between;
+    @media (max-width: 1024px) {
+      flex-direction: column;
     }
   }
 
   .ticket-categories {
-    flex: 2;
-
-    .ticket-title {
-      font-size: 1.5rem;
-      margin-bottom: 1rem;
-    }
-
-    .event-time {
-      font-size: 0.875rem;
-      margin-bottom: 1.5rem;
-      color: #d1d5db;
-    }
+    flex: 1;
+    font-size: 1.25rem;
 
     .ticket-list {
-      display: grid;
-      gap: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
     }
 
     .ticket-card {
-      background: linear-gradient(to bottom right, #2d2d2d, #1c1c1c);
-      width: 40vw;
-      max-width: 40vw;
-      padding: 1.5rem;
-      border-radius: 0.75rem;
-      transition: transform 0.2s, box-shadow 0.2s;
-
-      &:hover {
-        transform: scale(1.05);
-        box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
-      }
-
+      background: linear-gradient(135deg, #0f4c81, #1f77d0, #2b3a67, #1e2a78);
+      color: #fff;
+      padding: 1rem;
+      border-radius: 0.5rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease; /* Smooth transition for interaction feedback */
+    
       .ticket-header {
         display: flex;
         justify-content: space-between;
-        align-items: center;
-
+        align-items: flex-start;
+        margin-bottom: 1.5rem;
+    
+        .ticket-info {
+          flex: 1;
+        }
+    
         .ticket-name {
           font-size: 1.25rem;
-          font-weight: 600;
+          font-weight: 700;
+          color: #fff;
           margin-bottom: 0.5rem;
         }
-
+    
         .ticket-available {
-          font-size: 0.875rem;
-          color: #9ca3af;
+          font-size: 1rem;
+          color: #fff;
+          margin-bottom: 0.5rem;
+          text-align: left;
         }
-
+    
         .ticket-quantity {
           display: flex;
           align-items: center;
-
+          gap: 0.75rem;
+         
+    
           .quantity-btn {
-            background-color: #4b5563;
+            background-color: #112fa3;
             color: white;
-            padding: 0.5rem;
-            border-radius: 0.375rem;
-            margin: 0 0.5rem;
+            width: 1.5rem;
+            height: 1.5rem;
+            border-radius: 0.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             cursor: pointer;
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+    
+            &:hover {
+              background-color: #4338ca;
+            }
           }
         }
       }
-
+    
       .ticket-price {
-        font-size: 1.125rem;
+        font-size: 1.5rem;
         font-weight: bold;
-        margin: 1rem 0;
+        color: #fff;
+        margin-bottom: 25px;
+        text-align: center;
       }
-
+    
+      hr {
+        margin: 1rem 0;
+        border: 0;
+        border-top: 1px solid #e5e7eb;
+      }
+    
       .ticket-description {
-        font-size: 0.875rem;
-        margin-bottom: 1rem;
+        font-size: 0.9rem; /* Reduced font size for description */
+        color: #fff;
+        margin-top: 0.5rem;
+        line-height: 1.4; /* Increased line spacing for readability */
+        overflow: hidden;
+        max-height: 4rem; /* Set maximum height when collapsed */
+        transition: max-height 0.3s ease; /* Smooth transition for expand/collapse */
+      }
+    
+      .ticket-details {
+        font-size: 0.9rem; /* Smaller font size for additional details */
+        color: #fff;
+        padding: 0.5rem 0;
+        
+      }
+    
+      .read-more-btn {
+        background-color: #112fa3;
+        color: white;
+        padding: 0.5rem 1rem;
+        border-radius: 0.5rem;
+        cursor: pointer;
+        margin-top: 1rem;
+        display: inline-block;
+        transition: background-color 0.3s ease;
+    
+        &:hover {
+          background-color: #4338ca;
+        }
+      }
+    
+      &.expanded {
+        .ticket-description {
+          max-height: none; /* Expand to show all content */
+        }
+      }
+    
+      @media (max-width: 768px) {
+        padding: 1rem;
+        .ticket-header {
+          flex-direction: column;
+          align-items: flex-start;
+    
+          .ticket-quantity {
+            margin-top: 0.5rem;
+          }
+        }
+    
+        .ticket-price {
+          font-size: 1.25rem;
+        }
+    
+        .read-more-btn {
+          font-size: 0.9rem;
+          padding: 0.4rem 0.8rem;
+        }
       }
     }
   }
-
   .cart-section {
-    flex: 1;
+    width: 350px;
+    position: sticky;
+    top: 2rem;
+    font-size: 1.25rem;
+
+    @media (max-width: 1024px) {
+      width: 100%;
+    }
 
     .order-summary-card {
-      background: linear-gradient(to bottom right, #1c1c1c, #2d2d2d);
-      padding: 1.5rem;
+      background: linear-gradient(to bottom right, #2d2d2d, #1c1c1c);
+      color: #ffffff;
+      padding: 1.2rem;
       border-radius: 0.75rem;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-      margin-top: 1rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
 
       .cart-title {
+        font-weight: 700;
+        margin-bottom: 1.5rem;
+        color: #ffffff;
         font-size: 1.5rem;
-        margin-bottom: 1rem;
       }
 
       .cart-list {
-        font-size: 0.875rem;
-        margin-bottom: 1.5rem;
-
         .cart-item {
-          margin-bottom: 0.5rem;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 0.75rem 0;
+          border-bottom: 1px solid #e5e7eb;
+          color: #ffffff;
+          font-size: 1rem;
+
+          &:last-child {
+            border-bottom: none;
+          }
+        }
+        }
+        .cart-total{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 0.75rem 0;
+          border-bottom: 1px solid #e5e7eb;
+          color: #ffffff;
+          font-size: 1rem;
         }
 
-        .cart-total,
-        .discount,
-        .transaction-fee,
-        .total-price {
-          font-weight: bold;
-        }
-
-        .total-price {
-          font-size: 1.125rem;
-          color: #38b2ac; // For total price highlight
-        }
+          .transaction-fee {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.75rem 0;
+            border-bottom: 1px solid #e5e7eb;
+            color: #ffffff;
+            font-size: 1rem;
       }
-
+      .total-price{
+        display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.75rem 0;
+            border-bottom: 1px solid #e5e7eb;
+            color: #ffffff;
+            font-size: 1.3rem;
+      }
       .coupon-section {
-        margin-bottom: 1rem;
-
-        .coupon-label {
-          font-size: 0.875rem;
-          margin-bottom: 0.5rem;
-        }
+        margin: 1.5rem 0;
 
         .coupon-input-group {
           display: flex;
+          gap: 0.75rem;
 
           .coupon-input {
             flex: 1;
-            margin-right: 0.5rem;
-            padding: 0.5rem;
-            border-radius: 0.375rem;
-            border: 1px solid #cbd5e1;
+            padding: 0.75rem;
+            border: 1.5px solid #ffffff;
+            border-radius: 1rem;
+            color: #ffffff;
+          }
+          .coupon-input::placeholder {
+            color: #ffffff; /* Black color for the placeholder */
+            opacity: 1;  /* Ensures it's fully opaque */
+          }
+          
+          .coupon-applied{
+            margin-top: 10px;
           }
 
           .apply-btn {
-            background-color: #38b2ac;
+            background-color: #112fa3;
             color: white;
-            padding: 0.5rem 1rem;
-            border-radius: 0.375rem;
+            padding: 0.75rem 1.75rem;
+            border-radius: 0.5rem;
             cursor: pointer;
+            white-space: nowrap;
           }
         }
       }
 
       .checkout-form {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
         .form-group {
-          margin-bottom: 1rem;
+          display: flex;
+          flex-direction: column;
+          gap: 0.5rem;
 
           .form-label {
-            display: block;
-            font-size: 0.875rem;
-            margin-bottom: 0.5rem;
+            font-size: 1rem;
+            font-weight: 500;
+            color: #ffffff; /* This styles the label */
           }
-
+          
           .form-input {
-            width: 100%;
-            padding: 0.5rem;
-            border-radius: 0.375rem;
-            border: 1px solid #cbd5e1;
+            padding: 0.75rem; /* Add padding to input */
+            border: 1.5px solid #ffffff; /* Add border color */
+            border-radius: 1rem; /* Rounded corners */
+            color: #ffffff; /* Text color for the input */
+            outline: none; /* Remove outline on focus */
+            transition: border-color 0.2s; /* Smooth transition for border color */
+          }
+          
+          .form-input::placeholder {
+            color: #ffffff; /* Black color for the placeholder */
+            opacity: 1; /* Ensures the placeholder is fully opaque */
+          }
+          
+          .form-input:focus {
+            border-color: #6366f1; /* Change border color on focus */
+            box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.5); /* Add shadow on focus */
           }
         }
-
         .checkout-btn {
-          background-color: #4f46e5;
+          background-color: #112fa3;
           color: white;
-          padding: 0.75rem;
-          border-radius: 0.375rem;
+          padding: 1rem;
+          border-radius: 0.5rem;
+          font-weight: 700;
+          text-align: center;
           cursor: pointer;
-          transition: background-color 0.2s;
 
           &:hover {
-            background-color: #3b3b8f;
-          }
-
-          &.disabled {
-            background-color: #a1a1c3;
-            cursor: not-allowed;
+            background-color: #b91c1c;
           }
         }
       }
 
-      .checkout-error {
-        color: red;
-        margin-top: 1rem;
+      .checkout-btn {
+        width: 100%;
+        background-color: #112fa3;
+        color: white;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        font-weight: 700;
+        text-align: center;
+        cursor: pointer;
+        margin-top: 1.5rem;
+
+        &:hover {
+          background-color: #b91c1c;
+        }
       }
     }
   }
 }
 
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .event-section {
+    .event-title {
+      font-size: 2rem;
+    }
 
+    .main-layout {
+      flex-direction: column;
+    }
+
+    .cart-section {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .event-section {
+    padding: 2rem 1rem;
+
+    .event-title {
+      font-size: 1.75rem;
+    }
+
+    .cart-section {
+      .order-summary-card {
+        padding: 1rem;
+      }
+    }
+  }
+}
 .auth-section {
   background-color: #1a202c; /* light gray */
   min-height: 100vh;
@@ -1343,6 +1504,7 @@ form {
                   input,
                   textarea {
                       width: 100%;
+                      color: #000;
                   }
               }
 
