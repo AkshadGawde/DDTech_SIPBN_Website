@@ -61,23 +61,24 @@ const EventManager = () => {
         e.preventDefault();
         setError('');
         setSuccess('');
-    
-        // Convert ticketCategories object to an array and include sold as 0
-        const ticketsArray = Object.entries(ticketCategories).map(([ticketName, ticket]) => ({
-            [ticketName]: {
+
+        // Convert ticketCategories object and use the actual ticket name as the key
+        const ticketsArray = Object.entries(ticketCategories).reduce((acc, [ticketName, ticket]) => {
+            acc[ticket.name] = {  // Use the actual ticket name here
                 name: ticket.name,
                 price: Number(ticket.price),  // Ensure price is a number
                 description: ticket.description,
                 available: Number(ticket.available), // Ensure available is a number
                 sold: 0, // Initialize sold to 0
-            }
-        })).reduce((acc, curr) => ({ ...acc, ...curr }), {}); // Flatten the array into an object
-    
+            };
+            return acc;
+        }, {});
+
         try {
             const eventRef = await addDoc(collection(db, 'events'), {
                 name: eventName,
                 date: eventDate,
-                tickets: ticketsArray, // Save as an object with ticket names as keys
+                tickets: ticketsArray, // Save as an object with actual ticket names as keys
             });
             setSuccess(`Event added with ID: ${eventRef.id}`);
             resetForm();
@@ -98,45 +99,43 @@ const EventManager = () => {
             resetForm();
             return;
         }
-    
+
         const eventDoc = doc(db, 'events', eventId);
         const eventData = await getDoc(eventDoc);
         if (eventData.exists()) {
             const eventTickets = eventData.data().tickets;
-    
+
             // Convert the tickets object back to an array for the form
             const ticketObj = {};
             Object.entries(eventTickets).forEach(([ticketName, ticket]) => {
                 ticketObj[ticketName] = { ...ticket }; // Maintain existing ticket data
             });
-    
+
             setEventName(eventData.data().name);
             setEventDate(eventData.data().date);
             setTicketCategories(ticketObj); // Set the tickets as an object for the form
             setSelectedEventId(eventId);
         }
     };
-    
 
     const handleUpdate = async (e) => {
         e.preventDefault();
         setError('');
         setSuccess('');
-    
-        // Fetch the existing event document first to retain the sold value
+
         const eventDoc = doc(db, 'events', selectedEventId);
         const eventData = await getDoc(eventDoc);
         if (!eventData.exists()) {
             setError('Event not found');
             return;
         }
-    
+
         const existingTickets = eventData.data().tickets; // Get existing tickets
-    
-        // Convert ticketCategories object to an array while retaining the sold values
+
+        // Convert ticketCategories object and use the actual ticket name as the key
         const ticketsArray = Object.entries(ticketCategories).reduce((acc, [ticketName, ticket]) => {
-            const existingTicket = existingTickets[ticketName] || { sold: 0 }; // Use existing sold value or 0 if not found
-            acc[ticketName] = {
+            const existingTicket = existingTickets[ticket.name] || { sold: 0 }; // Use existing sold value or 0 if not found
+            acc[ticket.name] = {  // Use the actual ticket name here
                 name: ticket.name,
                 price: Number(ticket.price), // Ensure price is a number
                 description: ticket.description,
@@ -145,12 +144,12 @@ const EventManager = () => {
             };
             return acc;
         }, {});
-    
+
         try {
             await updateDoc(eventDoc, {
                 name: eventName,
                 date: eventDate,
-                tickets: ticketsArray, // Save as an object with ticket names as keys
+                tickets: ticketsArray, // Save as an object with actual ticket names as keys
             });
             setSuccess('Event updated successfully');
             resetForm();
@@ -159,7 +158,6 @@ const EventManager = () => {
             setError('Error updating event: ' + error.message);
         }
     };
-    
 
     const handleDelete = async () => {
         if (!selectedEventId || selectedEventId === 'add-new') return;
@@ -256,37 +254,28 @@ const EventManager = () => {
                             <button
                                 type="button"
                                 onClick={() => deleteTicketCategory(ticketName)}
-                                className="delete-button"
+                                className="delete-ticket"
                             >
                                 Delete
                             </button>
                         </div>
                     ))}
-                    <button
-                        type="button"
-                        onClick={addTicketCategory}
-                        className="add-button"
-                    >
+                    <button type="button" onClick={addTicketCategory}>
                         Add Ticket Category
                     </button>
                 </div>
 
-                <div className="form-actions">
-                    {error && <p className="error-message">{error}</p>}
-                    {success && <p className="success-message">{success}</p>}
-                    <button type="submit" className="submit-button">
-                        {selectedEventId === 'add-new' ? 'Add Event' : 'Update Event'}
+                {error && <div className="error-message">{error}</div>}
+                {success && <div className="success-message">{success}</div>}
+
+                <button type="submit" className="submit-button">
+                    {selectedEventId === 'add-new' ? 'Create Event' : 'Update Event'}
+                </button>
+                {selectedEventId !== 'add-new' && (
+                    <button type="button" className="delete-button" onClick={handleDelete}>
+                        Delete Event
                     </button>
-                    {selectedEventId !== 'add-new' && (
-                        <button
-                            type="button"
-                            onClick={handleDelete}
-                            className="delete-event-button"
-                        >
-                            Delete Event
-                        </button>
-                    )}
-                </div>
+                )}
             </form>
         </section>
     );

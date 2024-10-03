@@ -210,7 +210,7 @@ const TicketPurchase = () => {
 
         const subtotal = cart.reduce((acc, ticket) => acc + (ticket.price * ticket.quantity), 0);
         const discountAmount = subtotal * (appliedCoupon.discountPercentage / 100);
-        return Math.min(discountAmount, appliedCoupon.maxDiscount);
+        return discountAmount;
     };
 
     // Function to calculate the transaction fee (4% of discounted ticket total)
