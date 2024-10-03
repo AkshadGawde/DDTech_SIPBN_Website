@@ -3,6 +3,7 @@ import AOS from "aos";
 import Link from "next/link";
 
 function HeroMain() {
+  const eventId = 'iaEHed2PE5Te0BmBwku3'; //pelase add eventid here
   useEffect(() => {
     AOS.init({
       duration: 2500, // Animation duration in milliseconds
@@ -28,17 +29,11 @@ function HeroMain() {
             #CapTech2024 <br />
             25th - 28th November 2024
           </h2>
-          <button
-            className="secondary-button"
-            onClick={() =>
-              window.open(
-                "https://www.eventbrite.com.au/e/captech2024-discover-connect-execute-tickets-772015889307",
-                "_blank"
-              )
-            }
-          >
-            Book Your Tickets
-          </button>
+          <Link href={`/ticket-purchase?eventId=${eventId}`}>
+                <button className="secondary-button">
+                    Buy Tickets
+                </button>
+            </Link>
           <div style={{ display: "flex" }}>
             <button
               className="button-primary"

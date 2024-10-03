@@ -41,7 +41,7 @@ function TicketPage() {
             }}
             maxHeight="660px"
           />
-          <Link href="https://www.eventbrite.com.au/e/captech2024-discover-connect-execute-tickets-772015889307">
+          <Link href={`/ticket-purchase?eventId=iaEHed2PE5Te0BmBwku3`}>
             <button className="ticketButton">Buy Now</button>
           </Link>
         </div>
@@ -60,12 +60,12 @@ function TicketPage() {
           <CardDropDown
             content={{
               l1: "Welcome Drinks at NSW Parliament House on Monday 25 November 2024",
-              l2: "CapTech2024 Summit on Tuesday 26 November 2024 at ICC Sydney",
-              l3: "CapTech2024 Summit on Tuesday 26 November 2024 post networking drinks",
+              l2: "#CapTech2024 Summit on Tuesday 26 November 2024 at ICC Sydney",
+              l3: "#CapTech2024 Summit on Tuesday 26 November 2024 post networking drinks",
             }}
             maxHeight="400px"
           />
-          <Link href="https://www.eventbrite.com.au/e/captech2024-discover-connect-execute-tickets-772015889307">
+          <Link href={`/ticket-purchase?eventId=iaEHed2PE5Te0BmBwku3`}>
             <button className="ticketButton">Buy Now</button>
           </Link>
         </div>
@@ -88,7 +88,7 @@ function TicketPage() {
             }}
             maxHeight="300px"
           />
-          <Link href="https://www.eventbrite.com.au/e/captech2024-discover-connect-execute-tickets-772015889307">
+          <Link href={`/ticket-purchase?eventId=iaEHed2PE5Te0BmBwku3`}>
             <button className="ticketButton">Buy Now</button>
           </Link>
         </div>
@@ -111,7 +111,7 @@ function TicketPage() {
             }}
             maxHeight="200px"
           />
-          <Link href="https://www.eventbrite.com.au/e/captech2024-discover-connect-execute-tickets-772015889307">
+          <Link href={`/ticket-purchase?eventId=iaEHed2PE5Te0BmBwku3`}>
             <button className="ticketButton">Buy Now</button>
           </Link>
         </div>

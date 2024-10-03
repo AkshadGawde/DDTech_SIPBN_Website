@@ -15,8 +15,7 @@ const Banner = () => {
             <button
               className="button-primary"
               onClick={() => {
-                window.location =
-                  "https://www.eventbrite.com.au/e/captech2024-discover-connect-execute-venue-icc-sydney-tickets-772015889307";
+                window.location.href = `/ticket-purchase?eventId=iaEHed2PE5Te0BmBwku3`;
               }}
             >
               book now
