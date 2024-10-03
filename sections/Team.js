@@ -104,11 +104,10 @@ const Team = () => {
           <button
             className="button-primary"
             onClick={() => {
-              window.location =
-                "https://www.eventbrite.com.au/e/captech2024-discover-connect-execute-venue-icc-sydney-tickets-772015889307";
+              window.location.href = `/ticket-purchase?eventId=iaEHed2PE5Te0BmBwku3`;
             }}
           >
-            Book Tickets
+            book now
           </button>
 
           <Title title="What is #CapTech2024" />
@@ -159,7 +158,7 @@ const Team = () => {
               <p> Early bird discount 20% till 30th September 2024</p>
               <br />
               <a
-                href="https://www.eventbrite.com.au/e/captech2024-discover-connect-execute-venue-icc-sydney-tickets-772015889307"
+                href={`/ticket-purchase?eventId=iaEHed2PE5Te0BmBwku3`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="button-primary"
@@ -173,15 +172,15 @@ const Team = () => {
       </section>
 
       <div className="purposeFlex">
-        <div className="box" style={{textAlign:"center"}}>
+        <div className="box" style={{ textAlign: "center" }}>
           <h1 className="indigo">50+</h1>
           <h3>World Class Speakers</h3>
         </div>
-        <div className="box" style={{textAlign:"center"}}>
+        <div className="box" style={{ textAlign: "center" }}>
           <h1 className="indigo">300+</h1>
           <h3>Global investors and business leaders</h3>
         </div>
-        <div className="box" style={{textAlign:"center"}}>
+        <div className="box" style={{ textAlign: "center" }}>
           <h1 className="indigo">8</h1>
           <h3>Panels</h3>
         </div>

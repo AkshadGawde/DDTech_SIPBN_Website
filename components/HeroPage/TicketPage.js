@@ -41,7 +41,7 @@ function TicketPage() {
             }}
             maxHeight="660px"
           />
-          <Link href="https://www.eventbrite.com.au/e/captech2024-discover-connect-execute-tickets-772015889307">
+          <Link href={`/ticket-purchase?eventId=iaEHed2PE5Te0BmBwku3`}>
             <button className="ticketButton">Buy Now</button>
           </Link>
         </div>
@@ -65,7 +65,7 @@ function TicketPage() {
             }}
             maxHeight="400px"
           />
-          <Link href="https://www.eventbrite.com.au/e/captech2024-discover-connect-execute-tickets-772015889307">
+          <Link href={`/ticket-purchase?eventId=iaEHed2PE5Te0BmBwku3`}>
             <button className="ticketButton">Buy Now</button>
           </Link>
         </div>
@@ -88,7 +88,7 @@ function TicketPage() {
             }}
             maxHeight="300px"
           />
-          <Link href="https://www.eventbrite.com.au/e/captech2024-discover-connect-execute-tickets-772015889307">
+          <Link href={`/ticket-purchase?eventId=iaEHed2PE5Te0BmBwku3`}>
             <button className="ticketButton">Buy Now</button>
           </Link>
         </div>
@@ -111,7 +111,7 @@ function TicketPage() {
             }}
             maxHeight="200px"
           />
-          <Link href="https://www.eventbrite.com.au/e/captech2024-discover-connect-execute-tickets-772015889307">
+          <Link href={`/ticket-purchase?eventId=iaEHed2PE5Te0BmBwku3`}>
             <button className="ticketButton">Buy Now</button>
           </Link>
         </div>

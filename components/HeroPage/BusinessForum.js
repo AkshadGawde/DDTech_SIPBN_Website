@@ -27,10 +27,10 @@ const BusinessForum = () => {
             </li>
           </ul>
           <a
-            href="https://www.eventbrite.com.au/e/captech2024-discover-connect-execute-tickets-772015889307"
+            href={`/ticket-purchase?eventId=iaEHed2PE5Te0BmBwku3`}
             className="enquire-btn"
           >
-            Buy NOW
+            Buy Now
           </a>
         </div>
       </div>
