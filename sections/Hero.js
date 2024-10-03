@@ -89,7 +89,7 @@ function Hero() {
               <h2>Secure your #CapTech2024 ticket!</h2>
               <p>Early bird discount 20% till 30th September 2024</p>
               <a
-                href="https://www.eventbrite.com.au/e/captech2024-discover-connect-execute-venue-icc-sydney-tickets-772015889307"
+                href={`/ticket-purchase?eventId=iaEHed2PE5Te0BmBwku3`}  
                 target="_blank"
                 rel="noopener noreferrer"
                 className="button-primary"
@@ -168,7 +168,7 @@ function Hero() {
 
         <div data-aos="fade-left">
           <HeroAgenda />
-          <Banner/>
+          <Banner />
         </div>
 
         <div data-aos="fade-right">
