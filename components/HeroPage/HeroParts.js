@@ -14,11 +14,11 @@ function HeroParts() {
           </h1>
         </div>
         <div className="box">
-          <img
+          {/* <img
             src="https://res.cloudinary.com/dueoon8xe/image/upload/v1726314898/v3nyhcglpafyizkdurcr.png"
             className="partImage"
-            alt=""
-          />
+            alt="hahahah"
+          /> */}
         </div>
       </div>
     </div>
