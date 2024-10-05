@@ -95,7 +95,7 @@ function HeroAgenda() {
                   </p>
                 </td>
               </tr>
-              <tr>
+              {/* <tr>
                 <td>
                   <h3 className="dateMonth">9:00am - 5:00pm</h3>
                 </td>
@@ -106,7 +106,7 @@ function HeroAgenda() {
                     partners in personalized sessions.
                   </p>
                 </td>
-              </tr>
+              </tr> */}
             </tbody>
           </table>
         </div>
