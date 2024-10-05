@@ -1,4 +1,6 @@
 node_modules
 .next
+# Ignore local environment files
+*.local
 .env.local
 .env
