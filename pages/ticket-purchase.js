@@ -1,7 +1,3 @@
-// pages/ticket-purchase.js
-
-// pages/ticket-purchase.js
-
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import { db } from "../lib/firebase";
@@ -402,9 +398,9 @@ const TicketPurchase = () => {
                 {/* Left section for ticket categories */}
                 <div className="ticket-categories">
                   <h3 className="ticket-title">Ticket Categories</h3>
-                  <p className="event-time">
+                  {/* <p className="event-time">
                     Tue, 26 Nov 2024 8:00 AM - Wed, 27 Nov 2024 9:00 PM AEDT
-                  </p>
+                  </p> */}
                   <div className="ticket-list">
                     {Object.keys(eventDetails.tickets).map((ticketName) => {
                       const ticket = eventDetails.tickets[ticketName];
