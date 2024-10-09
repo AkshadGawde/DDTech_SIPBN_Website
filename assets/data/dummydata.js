@@ -272,24 +272,21 @@ export const patronsdata = [
   {
     id: 2,
     title: "Roderick H. McGeoch AO, LL",
-    cover:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275975/Speakers%20-%20CapTech/oretedusdyhaivpbddjf.png",
+    cover: "/patrons/Roderick H. McGeoch AO.png",
     post: "Chairman and Director of a wide range of major corporations",
     href: "/team/2",
   },
   {
     id: 3,
     title: "Dr Joseph Rizk AM",
-    cover:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275976/Speakers%20-%20CapTech/oe5zsrxluuyssgonscf4.png",
+    cover: "/patrons/Dr Joseph Rizk AM.png",
     post: "CEO & Managing Director of Arab Bank Australia",
     href: "/team/3",
   },
   {
     id: 9,
     title: "Dr Jim Taggart OAM",
-    cover:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275980/Speakers%20-%20CapTech/jikncbas30jdvrwcwfaw.png",
+    cover: "/patrons/Dr Jim Taggart OAM.png",
     post: "Board Member and Committee Member to a number of profit and non-profit organisations",
     href: "/team/9",
   },
@@ -307,24 +304,21 @@ export const memberdata = [
   {
     id: 1,
     title: "The Hon Victor Dominello",
-    cover:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275977/Speakers%20-%20CapTech/HonVictor.png",
+    cover: "/speakers/The Hon Victor Dominello.png",
     post: "Former NSW Government Minister",
     href: "/team/1",
   },
   {
     id: 2,
     title: "Roderick H .McGeoch AO, LLB",
-    cover:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275975/Speakers%20-%20CapTech/oretedusdyhaivpbddjf.png",
+    cover: "/speakers/Roderick H. McGeoch AO.png",
     post: "Chairman and Director of a wide range of major corporations",
     href: "/team/2",
   },
   {
     id: 3,
     title: "Dr Joseph Rizk AM",
-    cover:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275976/Speakers%20-%20CapTech/oe5zsrxluuyssgonscf4.png",
+    cover: "/speakers/Dr Joseph Rizk AM.png",
     post: "CEO & Managing Director of Arab Bank Australia",
     href: "/team/3",
   },
@@ -356,8 +350,7 @@ export const memberdata = [
   {
     id: 4,
     title: "Carmel Monaghan",
-    cover:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275983/Speakers%20-%20CapTech/hohrp9hkvrtzbbhb0frn.png",
+    cover: "/speakers/Carmel Monaghan.png",
     post: "CEO of Ramsay Health Care",
     href: "/team/4",
   },
@@ -372,8 +365,7 @@ export const memberdata = [
   {
     id: 5,
     title: "Dr. Christian Baylis",
-    cover:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275977/Speakers%20-%20CapTech/ryaum74sjtv4ucjbgh67.png",
+    cover: "/speakers/Dr. Christian Baylis.png",
     post: "Founder and CIO at Fortlake Asset Management",
     href: "/team/5",
   },
@@ -388,24 +380,21 @@ export const memberdata = [
   {
     id: 6,
     title: "Stephen Bali MP",
-    cover:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275969/Speakers%20-%20CapTech/bjeg1zdemby269axji4u.png",
+    cover: "/speakers/Stephen Bali MP.png",
     post: "Member of the Legislative Assembly Member for Blacktown",
     href: "/team/6",
   },
   {
     id: 8,
     title: "The Hon David Elliott",
-    cover:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275970/Speakers%20-%20CapTech/divlil9mc3qaicgn3yma.png",
+    cover: "/speakers/The Hon David Elliott.png",
     post: "Chief Executive of the Institute of Public Works Engineering Australasia (NSW & ACT).",
     href: "/team/8",
   },
   {
     id: 9,
     title: "Dr Jim Taggart OAM",
-    cover:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275980/Speakers%20-%20CapTech/jikncbas30jdvrwcwfaw.png",
+    cover: "/speakers/Dr Jim Taggart OAM.png",
     post: "Board Member and Committee Member to a number of profit and non-profit organisations",
     href: "/team/9",
   },
@@ -420,48 +409,42 @@ export const memberdata = [
   {
     id: 12,
     title: "Sarah Fairhurst",
-    cover:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275970/Speakers%20-%20CapTech/amtwhrdhzkkotqueesru.png",
+    cover: "/speakers/Sarah Fairhurst.png",
     post: "Board roles as a Non-Executive Director (NED) covering four companies",
     href: "/team/12",
   },
   {
     id: 13,
     title: "Dr George Margelis",
-    cover:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275973/Speakers%20-%20CapTech/aijahhbgeqignqy9vyne.png",
+    cover: "/speakers/Dr George Margelis.png",
     post: "Chief Technology Advisor, Digital Health Advisor & Board Member",
     href: "/team/13",
   },
   {
     id: 14,
     title: "Stephen Walters",
-    cover:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275976/Speakers%20-%20CapTech/vfe1v3og95lypfxsafgv.png",
+    cover: "/speakers/Stephen Walters.png",
     post: "Chief Economist for the Business Council of Australia",
     href: "/team/14",
   },
   {
     id: 15,
     title: "Michael Kollo",
-    cover:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275972/Speakers%20-%20CapTech/u2ctphu8nrgwcbbrzsxi.png",
+    cover: "/speakers/Michael Kollo.png",
     post: "CEO of Evolved AI",
     href: "/team/15",
   },
   {
     id: 16,
     title: "Besa Deda",
-    cover:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275974/Speakers%20-%20CapTech/vlrmxyc46qcr3whmyy2m.png",
+    cover: "/speakers/Besa Deda.png",
     post: "Chief Economist of Westpac’s Business Bank",
     href: "/team/16",
   },
   {
     id: 17,
     title: "The Hon Mark Coure MP",
-    cover:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275980/Speakers%20-%20CapTech/aqpbhwgeegn0li7jbcq6.png",
+    cover: "/speakers/The Hon Mark Coure MP.png",
     post: "Member for Oatley; Shadow Minister for Multiculturalism; Shadow Minister for Jobs, Industry, Innovation, Science and Technology; Shadow Minister for South-Western Sydney",
     href: "/team/17",
   },
@@ -476,8 +459,7 @@ export const memberdata = [
   {
     id: 11,
     title: "Kunwar Aditya Saxena",
-    cover:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275976/Speakers%20-%20CapTech/dhotjdxinf8pvxgpvmua.png",
+    cover: "/speakers/Kunwar Aditya Saxena.png",
     post: "CFO of CIMET",
     href: "/team/11",
   },
@@ -583,24 +565,21 @@ export const moderatordata = [
   {
     id: 18,
     title: "Sarah Morgan",
-    cover:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275973/Speakers%20-%20CapTech/n8clzee694tgnzxk7n8w.png",
+    cover: "/speakers/Sarah Morgan.png",
     post: "CEO at #CapTech2024",
     href: "/team/18",
   },
   {
     id: 19,
     title: "Anuraj Gambhir",
-    cover:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275979/Speakers%20-%20CapTech/hvmzxid5qgf7hepzsufg.png",
+    cover: "/speakers/Anuraj Gambhir.png",
     post: "Strategic Innovation Advisor",
     href: "/team/19",
   },
   {
     id: 20,
     title: "Ozge Fettahlioglu",
-    cover:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275975/Speakers%20-%20CapTech/fx3dlnbk1beueho4hzew.png",
+    cover: "/speakers/Ozge Fettahlioglu.png",
     post: "Founder and CEO of Cocoplum Design Studio and Boxareno Modular Constructions",
     href: "/team/20",
   },
