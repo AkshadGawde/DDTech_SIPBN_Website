@@ -18,7 +18,7 @@ const Events = () => {
               <a href="https://events.humanitix.com/clean-energy-monetising-the-opportunity">
                 <img
                   className="eventImg"
-                  src="https://res.cloudinary.com/dueoon8xe/image/upload/v1724772513/ftqv2aapmtpvgzetjrtp.jpg"
+                  src="/events/5th-Sept2024.jpg"
                   alt="Event 1 Image"
                 />
               </a>
@@ -30,7 +30,7 @@ const Events = () => {
             <div className="eventCard">
               <img
                 className="eventImg"
-                src="https://res.cloudinary.com/duv9rw1wg/image/upload/v1719354679/homePage/pjzjnljv4l1wxl2vfhad.png"
+                src="/events/Upcoming.png"
                 alt="Event 3 Image"
               />
               <h2 className="event-title">October 2024</h2>
@@ -42,7 +42,7 @@ const Events = () => {
               <a href={`/ticket-purchase?eventId=iaEHed2PE5Te0BmBwku3`}>
                 <img
                   className="eventImg"
-                  src="https://res.cloudinary.com/duv9rw1wg/image/upload/v1719326603/homePage/qo7dq9u1cfptxijtlsly.png"
+                  src="/events/25th-Nov2024.png"
                   alt="Event 1 Image"
                 />
               </a>
@@ -52,7 +52,7 @@ const Events = () => {
             <div className="eventCard">
               <img
                 className="eventImg"
-                src="https://res.cloudinary.com/duv9rw1wg/image/upload/v1719354679/homePage/pjzjnljv4l1wxl2vfhad.png"
+                src="/events/Upcoming.png"
                 alt="Event 5 Image"
               />
               <h2 className="event-title">December 2024</h2>
@@ -66,7 +66,7 @@ const Events = () => {
               <a href="https://events.humanitix.com/economic-update-opportunities-and-challenges">
                 <img
                   className="eventImg"
-                  src="https://res.cloudinary.com/duv9rw1wg/image/upload/v1719326603/homePage/tvndvw12ujvsbg0dmvaq.png"
+                  src="/events/June2024.png"
                   alt="Event 1 Image"
                 />
               </a>
@@ -79,7 +79,7 @@ const Events = () => {
               <a>
                 <img
                   className="eventImg"
-                  src="https://res.cloudinary.com/duv9rw1wg/image/upload/v1719355161/homePage/qwjduvdedvvujnmiuken.png"
+                  src="/events/February2024.png"
                   alt="Event 1 Image"
                 />
               </a>
@@ -116,7 +116,7 @@ const Events = () => {
               <a>
                 <img
                   className="eventImg"
-                  src="https://res.cloudinary.com/duv9rw1wg/image/upload/v1719355164/homePage/ciaphwytaryiiadqpy2h.png"
+                  src="/events/Captech2023.png"
                   alt="Event 1 Image"
                 />
               </a>
