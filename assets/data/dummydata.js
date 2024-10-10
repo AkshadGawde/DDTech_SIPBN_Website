@@ -326,7 +326,7 @@ export const memberdata = [
     id: 36,
     title: "Karen Clark",
     cover:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1726557761/Speakers%20-%20CapTech/w6en6zwrngnvba5y91e9.png",
+      "/speakers/Karen Clark.png",
     post: "CEO, Telstra Broadcast Services  ",
     href: "/team/36",
   },
@@ -334,7 +334,7 @@ export const memberdata = [
     id: 22,
     title: "Dr. S Janakiraman",
     cover:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275981/Speakers%20-%20CapTech/hq8odk1lugjny0xyxd5w.png",
+      "/speakers/Dr. S Janakiraman.png",
     post: "Career diplomat, joined the Indian Foreign Service in 2002.",
     href: "/team/22",
   },
@@ -342,7 +342,7 @@ export const memberdata = [
     id: 34,
     title: "LYALL GORMAN",
     cover:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1723742805/Speakers%20-%20Sipbn/yasio84sb8zmlf6nkvxp.png",
+      "/speakers/LYALL GORMAN.png",
     post: "Group CEO of Evolve Housing",
     href: "/team/34",
   },
@@ -358,7 +358,7 @@ export const memberdata = [
     id: 21,
     title: "Craig Scroggie",
     cover:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275978/Speakers%20-%20CapTech/zbwdnoh8dplujh5i6vpb.png",
+      "/speakers/Craig Scroggie.png",
     post: "CEO and Managing Director of NEXTDC",
     href: "/team/21",
   },
@@ -373,7 +373,7 @@ export const memberdata = [
     id: 29,
     title: "Paul Nicolaou",
     cover:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275971/Speakers%20-%20CapTech/xwlssthb4vhcujxsmlfo.png",
+      "/speakers/Paul Nicolaou.png",
     post: "Executive Director, Business Sydney",
     href: "/team/29",
   },
@@ -450,9 +450,9 @@ export const memberdata = [
   },
   {
     id: 24,
-    title: "Lee Heckin",
+    title: "Lee Hickin",
     cover:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275981/Speakers%20-%20CapTech/abdk2xoahnbp6yijcizf.png",
+      "/speakers/Lee Hickin.png",
     post: "AI Technology & Policy Lead, Microsoft Asia",
     href: "/team/24",
   },
@@ -467,7 +467,7 @@ export const memberdata = [
     id: 20,
     title: "Ankit Jain",
     cover:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275969/Speakers%20-%20CapTech/uwilok7quugq4pfzjtel.png",
+      "/speakers/ankit.png",
     post: "CEO of CIMET",
     href: "/team/7",
   },
@@ -475,7 +475,7 @@ export const memberdata = [
     id: 23,
     title: "Stela Solar",
     cover:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275981/Speakers%20-%20CapTech/tbwkuyn1830jzhjuiijn.png",
+      "/speakers/stela.png",
     post: "Inaugural Director of Australia’s National AI Centre (NAIC).",
     href: "/team/23",
   },
@@ -483,7 +483,7 @@ export const memberdata = [
     id: 25,
     title: "Giovanni Amodeo",
     cover:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275973/Speakers%20-%20CapTech/qklcidvxnzv45co2q8ns.png",
+      "/speakers/giovanni.png",
     post: "executive committee of ION Analytics",
     href: "/team/25",
   },
@@ -491,7 +491,7 @@ export const memberdata = [
     id: 26,
     title: "Michael Masterson",
     cover:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275981/Speakers%20-%20CapTech/tekk4hnk24ogwkmoy9nl.png",
+      "/speakers/michael masterson.png",
     post: "Principal at Intrinsika",
     href: "/team/26",
   },
@@ -499,7 +499,7 @@ export const memberdata = [
     id: 27,
     title: "Stephen Harrison",
     cover:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275974/Speakers%20-%20CapTech/cwadu54kae2me5ogcmo6.png",
+      "/speakers/stephen harrison.png",
     post: "Chairman of NobleOak Life Limited and IncentiaPay Limited (ASX - INP)",
     href: "/team/27",
   },
@@ -507,7 +507,7 @@ export const memberdata = [
     id: 28,
     title: "Jua Cillers",
     cover:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275973/Speakers%20-%20CapTech/vmfpplv4dksotd3yatzc.png",
+      "/speakers/jua.png",
     post: "Head of the School of Built Environment and Professor of Urban Planning at the University of Technology Sydney in Australia.",
     href: "/team/28",
   },
@@ -515,7 +515,7 @@ export const memberdata = [
     id: 30,
     title: "Mark McCrindle",
     cover:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1722325273/Speakers%20-%20CapTech/knttbyymvmjefswwkdys.png",
+      "/speakers/mark.png",
     post: "Social researcher, best-selling author, influential thought leader and TEDx speaker. ",
     href: "/team/30",
   },
@@ -523,7 +523,7 @@ export const memberdata = [
     id: 31,
     title: "Nicole Kidd",
     cover:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1723742105/Speakers%20-%20Sipbn/i4szlkhlr5lvefhk2bih.png",
+      "/speakers/nicole.png",
     post: "Head of Private Debt, Australia",
     href: "/team/31",
   },
@@ -531,7 +531,7 @@ export const memberdata = [
     id: 32,
     title: "Stephanie Brantz",
     cover:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1723742546/Speakers%20-%20Sipbn/mfyxjivkpcllnnfn3nrl.png",
+      "/speakers/Stephanie.png",
     post: "Stephanie Brantz Pty Ltd",
     href: "/team/32",
   },
@@ -539,7 +539,7 @@ export const memberdata = [
     id: 33,
     title: "Claire Elkin",
     cover:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1723742285/Speakers%20-%20Sipbn/svwqvlta6ewmyljuqf7k.png",
+      "/speakers/claire.png",
     post: "Executive Director, Board and Commercial strategy advisor top tier ASX; NYSE",
     href: "/team/33",
   },
@@ -547,7 +547,7 @@ export const memberdata = [
     id: 35,
     title: "Giovanni Laudicina",
     cover:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1723742684/Speakers%20-%20Sipbn/jxgrpwayxv1vujilyap0.png",
+      "/speakers/Giovanni Laudicina.png",
     post: "CEO Duncan Solutions",
     href: "/team/35",
   },
@@ -555,7 +555,7 @@ export const memberdata = [
     id: 37,
     title: "MICHAEL TOBIN ",
     cover:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1726557769/Speakers%20-%20CapTech/okgyllfjah2bs9rm8i5s.png",
+      "/speakers/MICHAEL TOBIN.png",
     post: "BE, MBA, DFS, FAICD​",
     href: "/team/37",
   },
@@ -935,7 +935,7 @@ Stela Solar is the Inaugural Director of Australia’s National AI Centre (NAIC)
   },
   {
     id: "24",
-    name: "Lee Heckin",
+    name: "Lee Hickin",
     description: `Lee has over 30 years’ experience in the technology industry, having been in technical sales, business development roles and most recently as the CTO for Microsoft ANZ. \n
 Lee has worked across the UK, Asia, and Australia, before joining Microsoft, Lee led the Internet of Things team for Amazon Web Services in Asia Pacific. Earlier in his career, he was a CISSP security architect with RSA Security and worked at both Tivoli and IBM. \n
 His work today spans Asia engaging with Government, regulators, policy makers and think tanks on strengthening the understanding of Artificial Intelligence, Large Language models & Machine Learning technology and the responsible ways in which it can be governed and operated.\n
