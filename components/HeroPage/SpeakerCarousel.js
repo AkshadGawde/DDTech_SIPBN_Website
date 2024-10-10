@@ -2,7 +2,6 @@ import React from "react";
 import Slider from "react-slick";
 import { memberdata } from "@/assets/data/dummydata";
 import { Title } from "../common/Title";
-import { CldImage } from "next-cloudinary";
 
 const CarouselWithText = () => {
   const settings = {
@@ -44,7 +43,7 @@ const CarouselWithText = () => {
           {memberdata.map((slide, index) => (
             <div key={index} style={{ margin: "20px" }}>
               <a href={slide.href}>
-                <CldImage
+                <img
                   src={slide.cover}
                   width={500}
                   height={500}
