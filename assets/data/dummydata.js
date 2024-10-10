@@ -467,7 +467,7 @@ export const memberdata = [
   },
   {
     id: 24,
-    title: "Lee Heckin",
+    title: "Lee Hickin",
     cover:
       "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275981/Speakers%20-%20CapTech/abdk2xoahnbp6yijcizf.png",
     post: "AI Technology & Policy Lead, Microsoft Asia",
@@ -964,7 +964,7 @@ Stela Solar is the Inaugural Director of Australia’s National AI Centre (NAIC)
   },
   {
     id: "24",
-    name: "Lee Heckin",
+    name: "Lee Hickin",
     description: `Lee has over 30 years’ experience in the technology industry, having been in technical sales, business development roles and most recently as the CTO for Microsoft ANZ. \n
 Lee has worked across the UK, Asia, and Australia, before joining Microsoft, Lee led the Internet of Things team for Amazon Web Services in Asia Pacific. Earlier in his career, he was a CISSP security architect with RSA Security and worked at both Tivoli and IBM. \n
 His work today spans Asia engaging with Government, regulators, policy makers and think tanks on strengthening the understanding of Artificial Intelligence, Large Language models & Machine Learning technology and the responsible ways in which it can be governed and operated.\n
