@@ -235,7 +235,7 @@ export const brand2 = [
 //     id: 1,
 //     title: "Federal Budget",
 //     cover:
-//       "https://res.cloudinary.com/duv9rw1wg/image/upload/v1721736223/homePage/omer85xdmfprk3ohmdve.jpg",
+//  
 //     category: "INDUSTRY",
 //     date: "JANUARY 12, 2023",
 //     href: "/federalbudget",
@@ -244,7 +244,7 @@ export const brand2 = [
 //     id: 2,
 //     title: "Net Zero Emissions vs. AI's Rising Energy Consumption",
 //     cover:
-//       "https://res.cloudinary.com/duv9rw1wg/image/upload/v1721735819/homePage/xugbdj1vuq9gm4o5qggb.png",
+//      
 //     category: "TIPS & TRICKS",
 //     date: "OCTOBER 20, 2023",
 //     href: "/aivs",
@@ -253,7 +253,7 @@ export const brand2 = [
 //     id: 3,
 //     title: "SIPBN Clean Energy Committee's Analysis",
 //     cover:
-//       "https://res.cloudinary.com/duv9rw1wg/image/upload/v1721736591/homePage/jquatrm5gch50shbjmrr.png",
+//       
 //     category: "TIPS & TRICKS",
 //     date: "OCTOBER 9, 2023",
 //     href: "/cleanenergy",
@@ -294,7 +294,7 @@ export const patronsdata = [
   //   id: 10,
   //   title: "Helen Liossis",
   //   cover:
-  //     "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275978/Speakers%20-%20CapTech/uf9gafb4y4g4bzdnlvdp.png",
+  //     ",
   //   post: "Non-Executive Director & Deputy Chair",
   //   href: "/team/10",
   // },
@@ -402,7 +402,7 @@ export const memberdata = [
   //   id: 10,
   //   title: "Helen Liossis",
   //   cover:
-  //     "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275978/Speakers%20-%20CapTech/uf9gafb4y4g4bzdnlvdp.png",
+  //     "",
   //   post: "Non-Executive Director & Deputy Chair",
   //   href: "/team/10",
   // },
@@ -594,7 +594,7 @@ Since retiring from politics in 2023, Victor has been appointed to Accenture’s
 Victor is also the inaugural Chair of the Commonwealth Government’s Independent Advisory Panel for MyGov and Services Australia. In addition, Victor is a Professor at UNSW and Director of the Trustworthy Digital Society Hub, a joint initiative of UNSW and UTS.\n
 Victor is a board member of the Tech Council of Australia and Adviser to the Brain and Mind Institute based at the University of Sydney. In 2023 Victor launched ServiceGen, a firm that provides advice to governments and complex organisations with a mission of profoundly reimagining services for the digital age.`,
     image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721983854/Speakers%20-%20Sipbn/m3ukoq5lvsd8iu5psugc.png",
+      "/speakers/The Hon Victor Dominello.png",
     title: "Former NSW Government Minister",
     link: "https://www.linkedin.com/in/victordominello/",
   },
@@ -608,7 +608,7 @@ He completed lengthy terms as a Director of Ramsay Health Care Limited, Chairman
 He is a past President of the Law Society of NSW and a Member of the Order of Australia, awarded in recognition of his invaluable services to the legal profession. On 26 January 2013 Mr McGeoch became an Officer of the Order of Australia in recognition of his “distinguished service to the community through contributions to a range of organisations and to sport.”\n
 In 2014 Mr McGeoch was appointed Honorary Consul of Luxembourg in Australia. He completed his term of office in April 2021.`,
     image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275975/Speakers%20-%20CapTech/oretedusdyhaivpbddjf.png",
+      "/speakers/Roderick H. McGeoch AO.png",
     title: "Chairman and Director of a wide range of major corporations",
     link: "https://www.linkedin.com/search/results/all/?keywords=Roderick%20H%20McGeoch%20AO%2C%20LLB&origin=GLOBAL_SEARCH_HEADER&sid=FRl",
   },
@@ -622,7 +622,7 @@ Joseph is a member of (MAICD) The Australian Institute of Company Directors. He 
 In January 2016 Joseph became Board member of (AACCI) Australia Arab Chamber of Commerce & Industry. In October 2020 Joseph became Board Director of the Melkite Catholic Eparchy Corporation. In July 2021 Joseph became a member of the Powerhouse Capital Campaign Committee. On Wednesday 26 January 2022 – Australia Day. Member of the Order of Australia Honours, AM announcement. Joseph was recognised for his significant service to the not- for- profit sector, and to banking and commerce.\n
 In October 2022 Joseph became Director of the James Martin Institute (JMI) for Public Policy. On Wednesday 14 December 2022 Joe was awarded an Honorary Doctorate from Western Sydney University.`,
     image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721983854/Speakers%20-%20Sipbn/fbz7of1oru2yozqa6jeb.png",
+      "/speakers/Dr Joseph Rizk AM.png",
     title: "CEO & Managing Director of Arab Bank Australia",
     link: "https://www.linkedin.com/in/joseph-rizk-am-30072316/?originalSubdomain=au",
   },
@@ -632,7 +632,8 @@ In October 2022 Joseph became Director of the James Martin Institute (JMI) for P
     description:
       "Karen is a media technology executive with diverse experience gained through strategic, commercial, technical, people and project management roles spanning over 25 years. As CEO of Telstra Broadcast Services, Karen and her global team are responsible for the seamless delivery of premium live video content and managed media services to broadcast, media, entertainment and sports customers around the world. Prior to Telstra, Karen spent several years at Globecast Australia and was the CEO of Visionbytes, a Paul Ramsay digital media company. Karen holds an MBA Executive from the Australian Graduate School of Management and a Master’s degree in IT from the University of Sydney. A former SMPTE Board member, Karen has recently been appointed to the IBC Council. ",
     image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1726557761/Speakers%20-%20CapTech/w6en6zwrngnvba5y91e9.png",
+    "/speakers/Karen Clark.png",
+    
     title: "CEO, Telstra Broadcast Services",
     link: "https://www.linkedin.com/in/karen-clark-7018952?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
@@ -642,8 +643,8 @@ In October 2022 Joseph became Director of the James Martin Institute (JMI) for P
     description: `Carmel Monaghan is the Chief Executive Officer of Ramsay Health Care Australia, commencing in this role 1 October 2020. Carmel joined Ramsay in 1998 and has worked across hospital, corporate and global Ramsay positions, playing a key role in the company’s successful growth during this time.\n
 She has extensive experience and a comprehensive understanding of healthcare operations and strategy both in Australia and overseas. Coming from a marketing and communications background, Carmel has had a strong focus on delivering results through focusing on customers and developing strong doctor relationships.\n
 Carmel is a respected leader with the ability to build an experienced and loyal team and her collaborative style and people-focused approach, is closely aligned with ‘The Ramsay Way’. Having worked with the Company’s founder Paul Ramsay for many years, she has a strong belief in its organisational culture of ‘people caring'.`,
-    image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977793/Speakers%20-%20Sipbn/Carmel%20Monaghan.png",
+    image:"/speakers/Carmel Monaghan.png",
+
     title: "CEO of Ramsay Health Care",
     link: "https://www.linkedin.com/in/carmel-monaghan-37440418/",
   },
@@ -652,8 +653,8 @@ Carmel is a respected leader with the ability to build an experienced and loyal 
     name: "Dr. Christian Baylis",
     description:
       "Dr. Christian Baylis is the Founder and CIO at Fortlake Asset Management, responsible for overseeing the investment process and investment team. Fortlake is one of the fastest growing asset managers in Australia and has been recognized as the top performing asset manager within the fixed income peer group since the firm’s inception (Source: Morningstar).\n \n Fortlake was also recognized by the acclaimed Hedge Fund Journal as one of the top 50 up and coming asset managers, globally. More recently, Fortlake entered into an economic partnership with Colonial First State (CFS) under the ownership of Kohlberg Kravis Roberts (KKR), the first asset manager to do so under the KKR lead business. \n \n  The AFR recently named Fortlake as the “Bond fund with equity like returns” a notable acknowledgement in one of the toughest interest rate environments in history. Having worked at UBS Asset Management and the Reserve Bank of Australia (RBA) Christian managed over $8 billion in assets, and was a member of the Global Multi Strategy Committee. Christian holds a PhD in Econometrics and received the Exceed First Class Honours award with a perfect GPA. \n \n He won the Australian Postgraduate Scholar Award at both UNSW and USYD and was a visiting scholar at Monash University in the Econometrics faculty. He was also a recipient of the Capital Markets CRC PhD Scholarship, focusing on inflation modeling, probability density functions, and option implied distributions.",
-    image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721983854/Speakers%20-%20Sipbn/owoswxfpqqbltgmkzogy.png",
+    image:"/speakers/Dr. Christian Baylis.png",
+
     title: "Founder and CIO at Fortlake Asset Management",
     link: "https://www.linkedin.com/in/christian-baylis-619b0668/?originalSubdomain=au",
   },
@@ -664,8 +665,8 @@ Carmel is a respected leader with the ability to build an experienced and loyal 
      Stephen’s diverse career has enabled him to help businesses start-up and get established - through to supporting workers and industries in safety innovation and policy development. Stephen has taught accounting and finance at TAFE and universities. Stephen Bali MP’s life experiences have allowed him to become a strong advocate for Blacktown City. He is fighting for western Sydney to deliver improvements in health, education, and infrastructure to match the massive population growth.\n
       Stephen is involved in many charities including the Blacktown City Lions Club and the establishment of The Better Foundation (Blacktown and Mt Druitt Hospitals). Stephen Bali has been responsible for driving the modern transformational change across Blacktown City including the health and performance centre (BISP); Blacktown CBD redevelopment; Animal Rehoming Centre; and various other projects which led to his recognition of being identified on various lists as amongst the most influential people in Western Sydney. \n
       Stephen strives to advocate for quality services and infrastructure to provide the best opportunities in life for local residents.`,
-    image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275969/Speakers%20-%20CapTech/bjeg1zdemby269axji4u.png",
+    image:"/speakers/Stephen Bali MP.png",
+
     title: "Member of the Legislative Assembly Member for Blacktown",
     link: "https://www.linkedin.com/in/stephen-bali-4b5b92230/?originalSubdomain=au",
   },
@@ -677,7 +678,7 @@ Carmel is a respected leader with the ability to build an experienced and loyal 
       This prompted him and his team to think outside the box and explore alternative avenues. With a vision to create a more stable and lucrative business, Ankit seamlessly integrated his expertise and industry insights into cutting-edge technology. From energy comparison to broadband, telco, solar, and upcoming credit card comparisons, CIMET transcends limitations. \n
       With CIMET, businesses gain increased visibility and sales opportunities, while empowering customers to make informed choices. As the CEO of CIMET, Ankit Jain continues to drive innovation and spearhead the company’s growth. His entrepreneurial spirit, combined with his dedication to delivering exceptional customer experiences, has positioned CIMET as a leading player in the industry. Ankit’s passion for improvement and his ability to transform challenges into opportunities make him an inspiring figure in the business world.`,
     image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275969/Speakers%20-%20CapTech/uwilok7quugq4pfzjtel.png",
+      "/speakers/ankit.png",
     title: "CEO of CIMET",
     link: "https://www.linkedin.com/in/ankit-jain-a62568116/",
   },
@@ -693,7 +694,7 @@ Carmel is a respected leader with the ability to build an experienced and loyal 
        He also represented the NSW Parliament in October 2013 at the Global Conference on the Role of Parliaments and Extractive Industries in Vienna, Austria. Following the re-election of the Baird Government in March 2015, David was appointed Minister for Corrections, Emergency Services, and Veterans Affairs. In August 2015, David was appointed a Member in The Order of St John. In early 2017, Premier Gladys Berejiklian appointed David the Minister for Counter Terrorism, replacing Emergency Services. \n
        Following the re-election of the Berejiklian Government in March 2019, David was appointed Minister for Police and Emergency Services. In December 2021, Premier Dominic Perrottet appointed David Minister for Transport and Veterans Affairs. David was subsequently appointed Minister for Western Sydney in August 2022. As his seat of Baulkham Hills was abolished in the lead-up to the 2023 State Election, David announced his retirement from State Parliament and in May 2023 was appointed the Chief Executive of the Institute of Public Works Engineering Australasia (NSW & ACT).`,
     image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275970/Speakers%20-%20CapTech/divlil9mc3qaicgn3yma.png",
+      "/speakers/The Hon David Elliott.png",
     title:
       "Chief Executive of the Institute of Public Works Engineering Australasia (NSW & ACT).",
     link: "https://www.linkedin.com/in/david-elliott-4207ba73/",
@@ -706,7 +707,7 @@ Carmel is a respected leader with the ability to build an experienced and loyal 
     He is actively involved in community activities, including the Salvation Army Red Shield Appeal and Local Chambers of Commerce.\n
      Jim was the Chairman of Mentor Education and Chairman of APIC, a leading international educational organization. He was Deputy Chairman of Regional Development Australia for Sydney and sat on three separate council bodies in Western Sydney, specifically dealing with audit and risk, asset management, and other financial related matters, pertaining to each of the councils that Jim has served.`,
     image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721983854/Speakers%20-%20Sipbn/vpr7uf3hfovvuvvb9q9o.png",
+      "/speakers/Dr Jim Taggart OAM.png",
     title:
       "Board Member and Committee Member to a number of profit and non-profit organisations",
     link: "https://www.linkedin.com/in/taggartjim/",
@@ -719,7 +720,7 @@ Carmel is a respected leader with the ability to build an experienced and loyal 
   //     She was a former non-executive director of the Australian Institute of Nuclear Science and Engineering (AINSE) and a former house committee member of the Australian Motor Yacht Club of NSW. Previously, Helen was a senior executive with a background in strategy, planning, corporate services, investor relations, and corporate affairs. \n
   //     In her last role at Sydney Water Corporation, Helen was Head of Strategy and Business Planning and responsible for the strategy, city shaping, policy, business planning, board reporting, strategic analytics, science, research, and innovation functions. Helen is a Graduate of the Australian Institute of Company Directors (GAICD); holds a Bachelor of Business from UTS; holds an MBA from MGSM; is a CPA and a Justice of the Peace.`,
   //   image:
-  //     "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977795/Speakers%20-%20Sipbn/hz1mltgehubeqyshxg0a.png",
+  //     "",
   //   title: "Non-Executive Director & Deputy Chair",
   // },
   {
@@ -733,7 +734,7 @@ Carmel is a respected leader with the ability to build an experienced and loyal 
        He is an Engineer in computer science, MBA in finance from IBS, Hyderabad (India) and an LLM in commercial law from Singapore Management University. He is also a graduate of the Australian Institute of Company Directors and presently sits on the board of CIMET group entities. \n
        Outside the work hustle, he likes to spend time playing Cricket and Golf, traveling to new places with family, and has tremendous zeal to follow tech innovations.`,
     image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977792/Speakers%20-%20Sipbn/qmbf4ubvwh9yjjrwyrr3.png",
+      "/speakers/Kunwar Aditya Saxena.png",
     title: "CFO of CIMET",
     link: "https://www.linkedin.com/in/kunwaradityasaxena/",
   },
@@ -743,7 +744,7 @@ Carmel is a respected leader with the ability to build an experienced and loyal 
     description: `Sarah Fairhurst has a portfolio of Board roles as a Non-Executive Director (NED) covering four companies in the energy sector and was recently on the Advisory Board of a company providing ESG services. \n
     She has lived and worked in the UK, Asia, and Australia and understands the electricity and gas markets, cultures, and cross-border complexities of this region. A hallmark of her Executive career was co-founding TLG in 2010 – a boutique energy economic and strategy advisory firm. Sarah combines strong strategic, commercial, and analytical thinking together with pragmatism and practical experience across many countries to solve complex energy problems.`,
     image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977792/Speakers%20-%20Sipbn/dx8ksnkvhluhbx5jwggd.png",
+      "/speakers/Sarah Fairhurst.png",
     title: "Non-Executive Director (NED) for four energy sector companies",
     link: "https://www.linkedin.com/in/sarah-fairhurst-5380834/",
   },
@@ -757,7 +758,7 @@ Carmel is a respected leader with the ability to build an experienced and loyal 
        In 2019 he was appointed independent chair of the Aged Care Industry Information Technology Council. In 2024 he was appointed Chief Technology Advisor for the Aged & Community Care Provider Association.\n
         George also acts as a Digital Health Advisor with the Australian Digital Health Agency as well as a member of the Advancing Aged Care through Digital Health advisory group for the Digital Health Cooperative Research Centre. He is a board member of Multicultural Care, a home care provider for the CALD community.`,
     image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977792/Speakers%20-%20Sipbn/dhlpd0aqjrm2v0vekolk.png",
+      "/speakers/Dr George Margelis.png",
     title: "Chief Technology Advisor, Digital Health Advisor & Board Member",
     link: "https://www.linkedin.com/in/drgeorgemargelis/",
   },
@@ -767,7 +768,7 @@ Carmel is a respected leader with the ability to build an experienced and loyal 
     description: `Stephen Harrison is an expert in the field of management and leadership.\n
 He has extensive experience in guiding organizations through periods of change and driving successful outcomes.`,
     image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275974/Speakers%20-%20CapTech/cwadu54kae2me5ogcmo6.png",
+      "/speakers/stephen harrison.png",
     title: "Leadership Consultant",
     link: "https://www.linkedin.com/in/stephen-harrison-03b35867/",
   },
@@ -780,7 +781,7 @@ He has extensive experience in guiding organizations through periods of change a
      Stephen holds a Bachelor’s degree in economics from the University of Western Australia and a Master’s degree in applied finance from the University of Melbourne.\n
       He also has qualifications in journalism and graduated from the AICD’s Company Directors Course in 2017. Stephen has published three books, with a fourth to be published soon. Stephen is a former chair of the Executive Committee of the Australian Business Economists (ABE) and is a member of the Australian Statistics Advisory Council (ASAC).`,
     image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275976/Speakers%20-%20CapTech/vfe1v3og95lypfxsafgv.png",
+      "/speakers/Stephen Walters.png",
     title: "Chief Economist for the Business Council of Australia",
     link: "https://www.linkedin.com/in/stephen-walters-9531183b/",
   },
@@ -792,7 +793,7 @@ He has extensive experience in guiding organizations through periods of change a
    Michael has a keen interest in the application of AI systems in financial services problems and brings a unique blend of industry and technical expertise to his field.\n
     An international speaker, published author, podcaster (The Curious Quant), and educator (lecturing experience at Imperial College, London School of Economics, and UTS), he is a global authority on the application of AI solutions to a wide variety of problems.`,
     image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977791/Speakers%20-%20Sipbn/sibey8fg4xk74xy4csag.png",
+      "/speakers/Michael Kollo.png",
     title: "CEO of Evolved AI",
     link: "https://www.linkedin.com/in/dr-michael-g-kollo/",
   },
@@ -811,7 +812,7 @@ He has extensive experience in guiding organizations through periods of change a
     
     Besa has also worked for the Colonial Group. She has previously lectured for the Kaplan Business School and written a regular property column for the Weekend Australian.`,
     image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977791/Speakers%20-%20Sipbn/ltnukh4s8yixliyk3lfg.png",
+      "/speakers/Besa Deda.png",
     title: "Chief Economist of Westpac’s Business Bank",
     link: "https://www.linkedin.com/in/besa-deda-4006b412/",
   },
@@ -825,7 +826,7 @@ He has extensive experience in guiding organizations through periods of change a
     Mark now has the honour of serving as Shadow Minister for Multiculturalism, Shadow Minister for Jobs, Industry, Innovation, Science and Technology, and Shadow Minister for South-Western Sydney under the leadership of NSW Opposition Leader, the Hon. Mark Speakman SC MP.\n
     Within his current portfolios he is passionate about supporting and promoting multiculturalism in NSW through consistent engagement with our many diverse community organisations, faith leaders, multicultural media and community language schools. He is also a strong advocate for manufacturing and innovation in NSW with particular focuses on the defence, space, cyber, medical research and start-up sectors.`,
     image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977791/Speakers%20-%20Sipbn/mq56dvexl0yzbrkrzdx9.png",
+      "/speakers/The Hon Mark Coure MP.png",
     title:
       "Member for Oatley; Shadow Minister for Multiculturalism; Shadow Minister for Jobs, Industry, Innovation, Science and Technology; Shadow Minister for South-Western Sydney",
     link: "https://www.linkedin.com/in/mark-coure-mp-8562b4260/",
@@ -845,7 +846,7 @@ He has extensive experience in guiding organizations through periods of change a
     
     Sarah believes that strategic scaling is not just about expansion; it’s about safeguarding the future success of a business and its stakeholders. By combining the right plan, funding, advice, and network, she helps entrepreneurs propel their ventures to new heights and ensure their enduring relevance in the market.`,
     image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721983854/Speakers%20-%20Sipbn/ba5oai8luvphhm4lbihh.png",
+      "/speakers/Sarah Morgan.png",
     title: "CEO at #CapTech2024",
     link: "https://www.linkedin.com/in/sarah-morgan-business-coach/",
   },
@@ -854,7 +855,7 @@ He has extensive experience in guiding organizations through periods of change a
     name: "Anuraj Gambhir",
     description: `Anuraj Gambhir is an internationally recognized Strategic Innovation Advisor, Technology Visionary, Exponential Thought Leader and multi-award winning Innovator. He has over 30 years’ global experience across 5 continents as a trans-disciplinary expert. His practical knowledge spans executive management, innovation, entrepreneurship, conscious leadership, exponential technologies, design thinking and holistic wellbeing. A key domain of his focus is the future of Health/Wellness incorporating cutting-edge Wellness tech and innovations that can be applied for smart – devices/homes/buildings/spaces/cities/communities.`,
     image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977792/Speakers%20-%20Sipbn/x0tv99v11zltuvzfdtbu.png",
+      "/speakers/Anuraj Gambhir.png",
     title: "Strategic Innovation Advisor",
     link: "https://www.linkedin.com/in/anurajgambhir/",
   },
@@ -863,7 +864,7 @@ He has extensive experience in guiding organizations through periods of change a
     name: "Ozge Fettahlioglu",
     description: `Ozge Fettahlioglu, Founder and CEO of Cocoplum Design Studio and Boxareno Modular Constructions, is a pioneer in bespoke wellness design, building materials, furniture, and fittings. She is committed to improving lives by enhancing environments, focusing on making high-quality, innovative design accessible. Her companies eliminate intermediaries by directly manufacturing and importing, ensuring streamlined solutions and exceptional craftsmanship. Specialising in custom modular houses, hotel construction and renovations, and bespoke home staging, Ozge leads her ventures with a passion for cutting-edge design and quality craftsmanship.`,
     image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977792/Speakers%20-%20Sipbn/Ozge%20Fettahlioglu.png",
+      "/speakers/Ozge Fettahlioglu.png",
     title:
       "Founder and CEO of Cocoplum Design Studio and Boxareno Modular Constructions",
     link: "https://www.linkedin.com/in/ozgefettahlioglu/",
@@ -889,14 +890,14 @@ Institute of Company Directors.\n
 In 2013 Mr Scroggie was awarded the University of Southern Queensland Faculty of Business & Law
 Alumnus of the Year and in 2015 was inducted into the ARN ICT Industry Awards Hall of Fame.`,
     image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977791/Speakers%20-%20Sipbn/fbcx7na2dwwl339tp0h3.png",
+      "/speakers/Craig Scroggie.png",
     title: "CEO and Managing Director of NEXTDC",
     link: "https://www.linkedin.com/in/craigscroggie/",
   },
 
   {
     id: "22",
-    name: "Dr. S Janakriaman",
+    name: "Dr. S Janakiraman",
     description: `
 Dr. S. Janakiraman is a career diplomat, joined the Indian Foreign Service in 2002.
  
@@ -914,7 +915,7 @@ He speaks English, Tamil, Hindi and Portuguese. He is a keen golfer. He is marri
  
 `,
     image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275981/Speakers%20-%20CapTech/hq8odk1lugjny0xyxd5w.png",
+      "/speakers/Dr. S Janakiraman.png",
     title: "Career diplomat, joined the Indian Foreign Service in 2002",
     link: "https://www.linkedin.com/in/janakiraman-sarvesvaran-0529262a7/",
   },
@@ -929,7 +930,7 @@ Stela Solar is the Inaugural Director of Australia’s National AI Centre (NAIC)
  Outside of the technology arena, Stela enjoys the challenge of competitive sailing and tries to find time to play cello and piano. 
  `,
     image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977791/Speakers%20-%20Sipbn/mkykinphgqgi75nnht9h.png",
+      "/speakers/stela.png",
     title: "Director, National AI Centre, CSIRO ",
     link: "https://www.linkedin.com/in/stelasolar/",
   },
@@ -943,7 +944,7 @@ He has supported Governments around the world as an independent contributor; bei
 Lee believes in the potential of technology to help build a brighter and more inclusive future and is a regular speaker on innovation and Artificial Intelligence.
  `,
     image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977790/Speakers%20-%20Sipbn/gbz7fpcasehkvqrv3clf.png",
+      "/speakers/Lee Hickin.png",
     title: "AI Technology & Policy Lead, Microsoft Asia",
     link: "https://www.linkedin.com/in/leehickin/",
   },
@@ -954,7 +955,7 @@ Lee believes in the potential of technology to help build a brighter and more in
   With 23 years of experience in financial data, news, and analytics, Giovanni sits on the executive committee of ION Analytics and is responsible for engaging with Influencers in the capital market  globally and across asset classes. He organizes fireside chats and exclusive closed-door events to facilitate connectivity and knowledge among the influencers. Giovanni joined the company in 2001 where it held various roles in Italy, Germany, London including managing a global team of journalists and data analysts. Giovanni is now based in Sydney.
  `,
     image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977791/Speakers%20-%20Sipbn/vgro3utqgnmdkfowegmd.png",
+      "/speakers/giovanni.png",
     title: "Executive committee of ION Analytics",
     link: "https://www.linkedin.com/in/giovanni-amodeo-6842884//",
   },
@@ -966,7 +967,7 @@ Michael is a Principal at Intrinsika, a global intrinsic & intangible asset advi
 Michael is also the founder of several successful start-ups; and has been integral to turning around two mid-sized companies in the logistics and FMCG sectors, taking both from significant losses to profit within nine months. He is on several private company Boards and sits on the Board of Cure Brain Cancer, which was named by the AFR as the most Innovative Charity and the 25th most Innovative Organisation. He is also a co-founder of the Growth Capital Club.
  `,
     image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275981/Speakers%20-%20CapTech/tekk4hnk24ogwkmoy9nl.png",
+      "/speakers/michael masterson.png",
     title: "Principal at Intrinsika",
     link: "https://www.linkedin.com/in/michaeldmasterson/",
   },
@@ -976,7 +977,7 @@ Michael is also the founder of several successful start-ups; and has been integr
     description: `Stephen has over 30 years of experience in the financial services, funds management,M&A, private equity and accounting fields. He primarily focused on the energy, technology, IT services, infrastructure financial services, entertainment and natural resource sectors.\n
 He has held Directorships with international Fund Managers subsidiaries, Investec Funds Management and the Australian subsidiary of US-based fund manager Sanford C. Bernstein. He has been a founder and held Directorships in number of Unlisted and Listed companies both in Australia and internationally.`,
     image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1722275974/Speakers%20-%20CapTech/cwadu54kae2me5ogcmo6.png",
+      "/speakers/stephen harrison.png",
     title:
       "Chairman of two Public Companies in Australia, NobleOak Life Limited and IncentiaPay Limited (ASX - INP)",
     link: "https://www.linkedin.com/in/stephen-harrison-03b35867/",
@@ -987,7 +988,7 @@ He has held Directorships with international Fund Managers subsidiaries, Investe
     description: `Jua Cilliers is the Head of the School of Built Environment and Professor of Urban Planning at the University of Technology Sydney in Australia. She is the President of the Commonwealth Association of Planners and has over two decades of experience as a Professional Urban Planner, with professional registrations from the South African Council for Planners and the Planning Institute of Australia.\n
 Jua serves as the Treasurer of the Australasian Green Infrastructure Network. With experience as chief investigator across Africa, Europe and Australia, Jua is unwaveringly committed to driving real change, shaping the future of our cities, and empowering the leaders who will inherit them.`,
     image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977796/Speakers%20-%20Sipbn/vqqcjezcxcluwqxndvxq.png",
+      "/speakers/jua.png",
     title:
       "Head of the School of Built Environment and Professor of Urban Planning at the University of Technology Sydney in Australia.",
     link: "https://www.linkedin.com/in/juacilliers/",
@@ -998,7 +999,7 @@ Jua serves as the Treasurer of the Australasian Green Infrastructure Network. Wi
     description:
       "Paul commenced his role as Executive Director for Business Sydney in September 2021. Prior to Business Sydney, Paul was Director for the Business Leaders Council, Membership and Events for the Australian Chamber of Commerce and Industry (ACCI) for seven years. Paul sits on the Board of The Gut Foundation, The Estia Foundation, Australian Marketing Institute and as a Non-Executive Board Member of Group Colleges Australia. \n In addition, Paul is an ambassador of Start Up Australia and is a Member of the Association of Independent Schools of NSW Institute. Further Paul is a Non-Executive Director of Dymocks Children’s Charities. Paul is an Adjunct Professor at UBSS Australia and was awarded the Centenary Medal of Australia in 2001. Paul was the former Chief Executive Officer of the Australian Hotels Association of NSW (AHA).\n Prior to the AHA, Paul was the Executive Chairman of the Millennium Forum, which was the fundraising and business engagement arm of the Liberal Party of Australia NSW Division. Paul was also the former NSW President of the Marketing Institute of Australia for 4 years, a member of the Council for ten years and is currently an Associate Fellow and Certified Practicing Marketer of the Marketing Institute of Australia.",
     image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1721977795/Speakers%20-%20Sipbn/eeighxjjkphbvyp0jkro.png",
+      "/speakers/Paul Nicolaou.png",
     title: "Executive Director, Business Sydney",
     link: "https://www.linkedin.com/in/paulnicolaou/",
   },
@@ -1008,7 +1009,7 @@ Jua serves as the Treasurer of the Australasian Green Infrastructure Network. Wi
     description:
       "Mark McCrindle is a social researcher, best-selling author, influential thought leader and TEDx speaker. He is recognised globally as coining the name for the emerging generation, Generation Alpha. Mark’s advisory,communications and research company, McCrindle, count among its clients more than 100 of the nation’s largest companies and leading international brands. \n \n Mark’s highly valued social commentary is presented through his engaging keynotes, research, reports, infographics, videos and media input. He is a trusted advisor and sits on the board of a number of different organisations, after having developed his regard as an expert demographer, futurist and social commentator. \n \n Mark McCrindle, BSc (Psychology), MA, is the author of five books on emerging trends and social change. Generation Alpha, Work Wellbeing: Leading Thriving Teams in Rapidly Changing Times, The ABC of XYZ: Understanding the Global Generations, Word Up: A Lexicon and Guide to Communication in the 21st Century and The Power of Good.",
     image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1722325273/Speakers%20-%20CapTech/knttbyymvmjefswwkdys.png",
+      "/speakers/mark.png",
     title:
       "Social researcher, best-selling author, influential thought leader and TEDx speaker.",
     link: "https://www.linkedin.com/in/markmccrindle/",
@@ -1019,7 +1020,7 @@ Jua serves as the Treasurer of the Australasian Green Infrastructure Network. Wi
     description:
       "Nicole Joined Schroders on 1 September 2020 to spearhead the Australian Private Debt strategy. Nicole is focused on building solutions for investors looking for attractive risk adjusted returns in private debt (both direct and syndicated) in Australia and New Zealand covering Real Estate, Infrastructure and Corporate and Acquisition Finance opportunities.  \n \nNicole passionately believes that private debt is a highly credible alternative for borrowers looking for non-traditional methods of finance, in an environment where banks are continuing to be constrained by regulatory pressures. Importantly also, private debt is becoming an increasingly interesting option for investors looking to diversify their portfolios to generate attractive and regular income. \n \n Nicole has been a Director of Schroders RF, the joint venture between Schroders Group and the Roberts Family, since October 2022, and was appointed to lead the business as Managing Director in August, 2023. \n \n Nicole has worked in the finance industry for the past 27 years. Prior to Schroders, Nicole was Managing Director and Head of Corporate Banking Australia and Institutional Client Management Asia-Pacific at RBC Capital Markets (the Investment Bank of the Royal Bank of Canada), based in Sydney Australia. In this role, Nicole was responsible for a portfolio and team focused on Australia and New Zealand corporates, and Australian and Asian Financial Institutional relationships. \n \n Nicole’s career has spanned investment banking and asset management in Australia and Europe, with time in syndications, debt advisory, real estate, infrastructure, project, structured and general corporate finance as well as some time as a portfolio manager of a structure & high yield debt fund. \n \n Nicole has a Bachelor of Economics from the University of Newcastle, Australia; a Bachelor of Laws from the University of New England, Australia; and a Graduate Diploma in Legal Practice from the College of Law. Nicole is admitted as a legal practitioner to the Supreme Court of New South Wales, Australia.",
     image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1723742105/Speakers%20-%20Sipbn/i4szlkhlr5lvefhk2bih.png",
+      "/speakers/nicole.png",
     title: "Head of Private Debt, Australia",
     link: "https://www.linkedin.com/in/nicolekidd/",
   },
@@ -1029,7 +1030,7 @@ Jua serves as the Treasurer of the Australasian Green Infrastructure Network. Wi
     description:
       "Stephanie is a highly accomplished Media and Communications professional with extensive experience in hosting National and International Sport and Major Events. Her impeccable interpersonal skills, stakeholder engagement, integrity, and sensitivity to dynamic social and political situations have enhanced her broad network of relationships which range from Foreign Governments and International Sporting Bodies, through to Australian Federal, State and Local Governments, State Sporting Organisations and Community sport. \n \n With her high-level communications and event experience, Stephanie is frequently called on as a moderator for industry panels as well as collaboration on development of sport strategies, major event attraction and event delivery planning.",
     image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1723742546/Speakers%20-%20Sipbn/mfyxjivkpcllnnfn3nrl.png",
+      "/speakers/Stephanie.png",
     title: "Stephanie Brantz Pty Ltd",
     link: "https://www.linkedin.com/in/stephaniebrantz/",
   },
@@ -1039,7 +1040,7 @@ Jua serves as the Treasurer of the Australasian Green Infrastructure Network. Wi
     description:
       "Claire is an Executive Director, Board and Commercial strategy advisor to top tier ASX; NYSE; Private Equity and National Government NFPs. With 25 years in the Energy, Resources and Utilities sector globally, Claire has an impressive background in building and scaling up organisations and world-first R&D energy technologies across the Middle East, Europe and Asia Pacific. Board Advisory Panel Member for ARENA, and Private Equity, she leverages her M&A, Technical and large infrastructure Project experience to guide the investment runway towards commercialisation of Cleantech, Deeptech, and Nature-based energy technologies. Claire is passionate about using her private sector experience to drive industry cultural change towards more sustainable, equitable and community-centred energy transition.",
     image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1723742285/Speakers%20-%20Sipbn/svwqvlta6ewmyljuqf7k.png",
+      "/speakers/claire.png",
     title:
       "Executive Director, Board and Commercial strategy advisor top tier ASX; NYSE",
     link: "",
@@ -1050,7 +1051,7 @@ Jua serves as the Treasurer of the Australasian Green Infrastructure Network. Wi
     description:
       "Lyall Gorman is currently the Group CEO of Evolve Housing, one of Australia’s largest Community Housing Providers. He is also the President of Business NSW, having served as a Board Director for the past eight years and Deputy President for two years. Lyall also holds the position of Deputy President at the Australian Chamber of Commerce and Industry (ACCI). \n \n He has over 35 years of experience in senior management, project management and administration, in both the Public and Private sectors. He holds a Master’s Degree in Administration (UNSW) with majors in Finance, Organizational Culture and Change, Organisational Behaviour, Statistics and Marketing. Lyall was born in Griffith, NSW and has a passion for small business, mentoring emerging business leaders and aspirational youth while also figuring on the public speaking circuit in areas including Leadership, Building a Winning Culture, High Performance, Brand, Development, Consumer Engagement.",
     image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1723742805/Speakers%20-%20Sipbn/yasio84sb8zmlf6nkvxp.png",
+      "/speakers/LYALL GORMAN.png",
     title: "Group CEO of Evolve Housing",
     link: "https://www.linkedin.com/in/lyallgorman/",
   },
@@ -1060,7 +1061,7 @@ Jua serves as the Treasurer of the Australasian Green Infrastructure Network. Wi
     description:
       "Giovanni Laudicina is a results-driven and visionary CEO with a proven track record of transforming organizations into industry leaders. With over a decade of executive experience, he has successfully driven national and international growth and profitability across diverse sectors. Born in Italy, Giovanni began his career as a consultant and manager, establishing a solid foundation of expertise and leadership. \n \n He played a pivotal role in establishing EasyPark's presence in Italy, leading the company to become the market leader. In 2018, Giovanni relocated to Sydney and joined Duncan Solutions, where he ascended to the role of CEO in 2020. Under his leadership, Duncan Solutions has continued to thrive and expand its market presence.",
     image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1723742684/Speakers%20-%20Sipbn/jxgrpwayxv1vujilyap0.png",
+      "/speakers/Giovanni Laudicina.png",
     title: "CEO Duncan Solutions",
     link: "https://www.linkedin.com/in/giovannilaudicina/",
   },
@@ -1070,7 +1071,7 @@ Jua serves as the Treasurer of the Australasian Green Infrastructure Network. Wi
     description:
       "Michael is the Founder and Managing Director of Vantage Asset Management Pty Limited a leading Australian, independent, private equity management company. Vantage provides investors with unique access to the high performing Private Equity asset class and offers professional investment management and advisory services to institutions and sophisticated investors seeking a diversified investment approach to private equity investing. Michael has over 30 years’ experience in private equity management, advisory and investment as well as in management operations and is responsible for the development and management of all private equity fund investment activity at Vantage. Since establishing Vantage in 2004, Michael has managed Vantage’s funds share of investment into over $14.5 billion of Australian Private Equity funds resulting in more than $9.4 billion of equity funding across 189 underlying portfolio companies. Across its flagship fund of funds program, Vantage has made investment commitments across 34 underlying private equity funds who in turn have completed investments into 189 companies and sold (or exited) 99 of those companies, delivering Vantage’s funds a 2.9 X gross multiple on invested capital with an average gross Internal Rate of Return of 47.3% p.a. across all exits. Michael holds a BE from the University of NSW, an MBA from the Australian Graduate School of Management (majoring in Finance and Strategy), a Diploma of Financial Services from the Australian Financial Markets Association and is a Fellow of the Australian Institute of Company Directors.",
     image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1726557769/Speakers%20-%20CapTech/okgyllfjah2bs9rm8i5s.png",
+      "/speakers/MICHAEL TOBIN.png",
     title: "BE, MBA, DFS, FAICD​",
     link: "https://www.linkedin.com/in/michael-tobin-0668084?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
