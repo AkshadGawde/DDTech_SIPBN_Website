@@ -1468,28 +1468,28 @@ export const speakers2022 = [
     id: 1,
     name: "Sheba Nandkeolyar",
     image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724237342/2022/jbrscmw11gruszt6uc4s.png",
+      "/speaker2022/Sheba Nandkeolyar.png",
     title: "CEO & Founder Of MultiConnexions",
   },
   {
     id: 2,
     name: "Michael Rodrigues",
     image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724237354/2022/ic0gjfnbusawxza89r3i.png",
+      "/speaker2022/Michael Rodrigues.png",
     title: "24-Hour Economy Commissioner, Investment NSW",
   },
   {
     id: 3,
     name: "Dr. Jim Taggart",
     image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724237363/2022/f5zdiqz3zoo0t2bjxz9n.png",
+      "/speaker2022/Dr. Jim Taggart.png",
     title: "Education",
   },
   {
     id: 4,
     name: "Dr. Sandra Krishnan",
     image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724237375/2022/odwllra5ijwrlme0ccd8.png",
+      "/speaker2022/Dr. Sandra Krishnan.png",
     title:
       "Leading Breast Surgeon, Clinical Associate Professor, Australian Medical University",
   },
@@ -1497,189 +1497,189 @@ export const speakers2022 = [
     id: 5,
     name: "Michael Masterson",
     image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724237395/2022/vdse0p5jc6a8hbhkf2ur.png",
+      "/speaker2022/Michael Masterson.png",
     title: "Managing Director, Chair Export Council Of Australia",
   },
   {
     id: 6,
     name: "Dianne Tipping",
     image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724240485/2022/xnbrxezc3gjc8jx5lqlx.png",
+      "/speaker2022/Dianne Tipping.png",
     title: "Chair Export Council Of Australia",
   },
   {
     id: 7,
     name: "Stephen Harrison",
     image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724240487/2022/eoobvtdiguiedpos6siu.png",
+      "/speaker2022/Stephen Harrison.png",
     title: "B.Ec, CPA, EverEdge Global",
   },
   {
     id: 8,
     name: "DD Saxena",
     image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724240491/2022/e2nftpdbvot9vxtr7eof.png",
+      "/speaker2022/DD Saxena.png",
     title: "Leading Australian Businessman",
   },
   {
     id: 9,
     name: "Rajeev Gupta",
     image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724240494/2022/cwnqeq0py1b1vm5idkwm.png",
+      "/speaker2022/Rajeev Gupta.png",
     title: "Partner, Alium Capital",
   },
   {
     id: 10,
     name: "Matthew Watson",
     image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724240497/2022/g4zbwaorkdtfhdz1k4oi.png",
+      "/speaker2022/Matthew Watson.png",
     title: "Managing Partner",
   },
   {
     id: 11,
     name: "Melissa Monteiro",
     image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724240510/2022/ayjif75wz0ydkgxwlhuc.png",
+      "/speaker2022/Melissa Monteiro.png",
     title: "CEO, CMRC",
   },
   {
     id: 12,
     name: "Christopher Peralta",
     image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724240512/2022/fsadyqzqu8nrategysos.png",
+      "/speaker2022/Christopher Peralta.png",
     title: "Founder and CEO",
   },
   {
     id: 13,
     name: "Simon Cant",
     image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724240515/2022/ttvcgckvnavwbxnay2tf.png",
+      "/speaker2022/Simon Cant.png",
     title: "Co-Founder and Managing Partner of Reinventure",
   },
   {
     id: 14,
     name: "Anuraj Gambhir",
     image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724240517/2022/fdwsi4jbbsto3vhumfka.png",
+      "/speaker2022/Anuraj Gambhir.png",
     title: "Strategic Business and Start-Up Advisor",
   },
   {
     id: 15,
     name: "Steve Grace",
     image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724240520/2022/eihpuamoobhahhnp2u4x.png",
+      "/speaker2022/Steve Grace.png",
     title: "Founder & CEO Of The Nudge Group",
   },
   {
     id: 16,
     name: "Lori Modde",
     image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724240765/2022/g6vndreq2btixovbfgpj.png",
+      "/speaker2022/Lori Modde.png",
     title: "CEO Of Australian Outdoor Industry",
   },
   {
     id: 17,
     name: "Dr. Nicole Brooke",
     image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724240767/2022/hjg0fokkqr8rccayrnfi.png",
+      "/speaker2022/Dr. Nicole Brooke.png",
     title: "CEO, Australian Community Industry Alliance",
   },
   {
     id: 18,
     name: "Clive Mayhew",
     image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724240769/2022/secoepwjdbhwpu1743xb.png",
+      "/speaker2022/Clive Mayhew.png",
     title: "Chair, Fishburners",
   },
   {
     id: 19,
     name: "Heath Behncke",
     image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724240774/2022/k0vvmkhulvhzrn4davlq.png",
+      "/speaker2022/Heath Behncke.png",
     title: "Managing Director, Portfolio Manager, Holon Global Investments",
   },
   {
     id: 20,
     name: "Pascal Gouel",
     image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724240777/2022/ztmzcon8fkjrjifk53nm.png",
+      "/speaker2022/Pascal Gouel.png",
     title: "Partner, SRO Capital Pty Ltd",
   },
   {
     id: 21,
     name: "Mark McCrindle",
     image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724240779/2022/bv4plck9nrhln1fw9l6d.png",
+      "/speaker2022/Mark McCrindle.png",
     title: "International Social Researcher",
   },
   {
     id: 22,
     name: "Richard Yuan",
     image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724240781/2022/ayqapvfif0scxgtqsm2e.png",
+      "/speaker2022/Richard Yuan.png",
     title: "Chair, ACE Club, CEO of ABC World",
   },
   {
     id: 23,
     name: "Connie Carnabuci",
     image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724240784/2022/ryk1krssetlwi1h5qtof.png",
+      "/speaker2022/Connie Carnabuci.png",
     title: "",
   },
   {
     id: 24,
     name: "Kapel Malhotra",
     image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724240786/2022/uwmylhyk4ayka5oiebb2.png",
+      "/speaker2022/Kapel Malhotra.png",
     title: "Serial Entrepreneur & Angel Investor",
   },
   {
     id: 25,
     name: "Michael Johnson",
     image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724240789/2022/s1y4ze1vtdymaorwl78u.png",
+      "/speaker2022/Michael Johnson.png",
     title: "CEO, TAA National/NSW",
   },
   {
     id: 26,
     name: "Kala Philip",
     image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724240791/2022/u82ukh7agcxmfwd5vspj.png",
+      "/speaker2022/Kala Philip.png",
     title: "COO, BSI Learning",
   },
   {
     id: 27,
     name: "Dr. Joanna Winchester",
     image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724240793/2022/kqqklgoujp2idyz1d5g1.png",
+      "/speaker2022/Dr. Joanna Winchester.png",
     title: "PhD",
   },
   {
     id: 28,
     name: "The Hon Paul Fletcher MP",
     image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724245800/2022/qow2f1h3ok0dpm2q8pub.png",
+      "/speaker2022/The Hon Paul Fletcher MP.png",
     title: "Shadow Minister for Government Services and the Digital Economy",
   },
   {
     id: 29,
     name: "Manish Gupta",
     image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724245828/2022/oqrlasvti5pwrd8ooxjv.png",
+      "/speaker2022/Manish Gupta.png",
     title: "Consul General of India",
   },
   {
     id: 30,
     name: "Anthony F Shepherd",
     image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724245849/2022/lzgpcsozhey2oxv06fl5.png",
+      "/speaker2022/Anthony F Shepherd.png",
     title: "Chairman of Venues NSW",
   },
   {
     id: 31,
     name: "Dr. Catherine Bennett",
     image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724245902/2022/rqlxxfveft5h1kvsa5io.png",
+      "/speaker2022/Dr. Catherine Bennett.png",
     title:
       "Chair in Epidemiology, Deakin's Institute for Health Transformation",
   },
@@ -1687,42 +1687,42 @@ export const speakers2022 = [
     id: 32,
     name: "Stephen Halmarick",
     image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724245947/2022/yuxebxzyaz26exb3t9ap.png",
+      "/speaker2022/Stephen Halmarick.png",
     title: "CBA Chief Economist",
   },
   {
     id: 33,
     name: "Kerry Chikarovski",
     image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724245965/2022/l2x7mznehsr0gujx9dkb.png",
+      "/speaker2022/Kerry Chikarovski.png",
     title: "Founder and Director of Chikarovski & Associates, Businesswoman",
   },
   {
     id: 34,
     name: "Dr. Charlie Teo",
     image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724246006/2022/uigif8migqyxlkljlp5c.png",
+      "/speaker2022/Dr. Charlie Teo.png",
     title: "Charlie Teo Foundation",
   },
   {
     id: 35,
     name: "Mr. Joseph Rizk AM",
     image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724246029/2022/kd6m0zbzbpswinwyqfqc.png",
+      "/speaker2022/Mr. Joseph Rizk AM.png",
     title: "CEO & Managing Director of Arab Bank Australia",
   },
   {
     id: 36,
     name: "Dr. GK Harinath",
     image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724246062/2022/atu2yyuzpn43l16teuhm.png",
+      "/speaker2022/Dr. GK Harinath.png",
     title: "Emeritus Chairperson of Multi-cultural NSW",
   },
   {
     id: 37,
     name: "Ms. Bonnie Shek",
     image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724246087/2022/xhqgnb3uomcchyeogeps.png",
+      "/speaker2022/Ms. Bonnie Shek.png",
     title:
       "Director, Australia/New Zealand Hong Kong Trade Development Council",
   },
@@ -1730,14 +1730,14 @@ export const speakers2022 = [
     id: 38,
     name: "Damon Rees",
     image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724246122/2022/fffz64ytzlztazfpjirm.png",
+      "/speaker2022/Damon Rees.png",
     title: "CEO, Service NSW",
   },
   {
     id: 39,
     name: "Michael Sharpe",
     image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724246145/2022/v7qwcb9kn21xfgqyys1f.png",
+      "/speaker2022/Michael Sharpe.png",
     title: "National Director of Advanced Manufacturing",
   },
 ];
