@@ -552,6 +552,13 @@ Minister for Corrections`,
   },
   {
     id: 38,
+    title: "Tom Forrest",
+    cover: "/speakers/TomForrest.png",
+    post: "CEO Urban Taskforce Australia​",
+    href: "/team/38",
+  },
+  {
+    id: 39,
     title: " Niraj Khinvasara ",
     cover: "/speakers/NeerajK.png",
     post: "Executive Director at World Trade Center Pune​",
@@ -1055,6 +1062,15 @@ Jua serves as the Treasurer of the Australasian Green Infrastructure Network. Wi
   },
   {
     id: "38",
+    name: "Tom Forrest",
+    description:
+      "Tom Forrest has held various senior roles across all sectors of property and development. He has worked as a senior adviser and Chief of Staff in NSW politics, including for various NSW Ministers (Premier, Treasurer, Planning, Health, and Olympics). He has held Senior Executive roles in the public service in the key Department of Premier and Cabinet and Transport portfolios. Tom assisted a range of private sector clients in partnership with the former Director General of Planning, Sam Haddad, including both commercial and residential developers, navigate often complex regulatory landscapes. Tom took on the role of CEO of the Urban Taskforce in November 2019 and has proven to be a strong, prolific, and vocal spokesperson for the property development and construction industry during Covid and in identifying the now obvious housing supply crisis. He is an outcomes-oriented person who is constantly advocating for an improved regulatory environment.",
+    image: "/speakers/TomForrest.png",
+    title: "CEO Urban Taskforce Australia​",
+    link: "",
+  },
+  {
+    id: "39",
     name: "Niraj Khinvasara ",
     description: `World Trade Center Pune is affiliated with the World Trade Centers Association (WTCA), a global trade organization with presence in 330 cities across 130 countries. Here he assists member companies in developing strategic plans for expanding their global market through the World Trade Centers Association’s network. \n
 Niraj also works to develop strategic B2B and B2C partnerships, supporting fundraising initiatives and engaging in international trade delegations with a focus on bilateral trade. In addition to this role, Niraj serves as the Vice Chair on the Asia Pacific Member Advisory Council for Trade Services at the World Trade Centers Association. \n
