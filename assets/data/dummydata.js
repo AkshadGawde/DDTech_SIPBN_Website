@@ -303,6 +303,15 @@ export const patronsdata = [
 export const memberdata = [
   {
     id: 1,
+    title: "The Hon Anoulack Chathivong",
+    cover: "/speakers/Anoulack.jpg",
+    post: `Minister for Better Regulation and Fair Trading, Minister for Industry and Trade,
+Minister for Innovation, Science and Technology, Minister for Building,
+Minister for Corrections`,
+    href: "/team/01",
+  },
+  {
+    id: 1,
     title: "The Hon Victor Dominello",
     cover: "/speakers/The Hon Victor Dominello.png",
     post: "Former NSW Government Minister",
@@ -541,6 +550,13 @@ export const memberdata = [
     post: "BE, MBA, DFS, FAICD​",
     href: "/team/37",
   },
+  {
+    id: 38,
+    title: " Niraj Khinvasara ",
+    cover: "/speakers/NeerajK.png",
+    post: "Executive Director at World Trade Center Pune​",
+    href: "/team/38",
+  },
 ];
 
 export const moderatordata = [
@@ -568,6 +584,20 @@ export const moderatordata = [
 ];
 
 export const membersdata = [
+  {
+    id: "01",
+    name: "The Hon Anoulack Chathivong",
+    description: `Victor is a seasoned government leader, having served as a Minister in NSW for 12 years, and is best known for his role as Minister for Customer Service and Digital Government. He is considered a pioneer of digital government in Australia, and his achievements have been admired, studied and modelled by other governments around the world.\n
+Since retiring from politics in 2023, Victor has been appointed to Accenture’s Global Luminaries Program to champion the cause of digital government around the world. Victor is the inaugural Chair of the Commonwealth Government’s Digital Identity Expert Panel.\n
+Victor is also the inaugural Chair of the Commonwealth Government’s Independent Advisory Panel for MyGov and Services Australia. In addition, Victor is a Professor at UNSW and Director of the Trustworthy Digital Society Hub, a joint initiative of UNSW and UTS.\n
+Victor is a board member of the Tech Council of Australia and Adviser to the Brain and Mind Institute based at the University of Sydney. In 2023 Victor launched ServiceGen, a firm that provides advice to governments and complex organisations with a mission of profoundly reimagining services for the digital age.`,
+    image: "/speakers/Anoulack.jpg",
+    title: `Minister for Better Regulation and Fair Trading, Minister for Industry and Trade,
+Minister for Innovation, Science and Technology, Minister for Building,
+Minister for Corrections`,
+    link: "https://www.linkedin.com/in/victordominello/",
+  },
+
   {
     id: "1",
     name: "The Hon Victor Dominello",
@@ -1023,6 +1053,27 @@ Jua serves as the Treasurer of the Australasian Green Infrastructure Network. Wi
     title: "BE, MBA, DFS, FAICD​",
     link: "https://www.linkedin.com/in/michael-tobin-0668084?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
+  {
+    id: "38",
+    name: "Niraj Khinvasara ",
+    description: `World Trade Center Pune is affiliated with the World Trade Centers Association (WTCA), a global trade organization with presence in 330 cities across 130 countries. Here he assists member companies in developing strategic plans for expanding their global market through the World Trade Centers Association’s network. \n
+Niraj also works to develop strategic B2B and B2C partnerships, supporting fundraising initiatives and engaging in international trade delegations with a focus on bilateral trade. In addition to this role, Niraj serves as the Vice Chair on the Asia Pacific Member Advisory Council for Trade Services at the World Trade Centers Association. \n
+Niraj is a member of the Board of Studies of the Deccan Education Society (DES), a prestigious educational
+institution , a long-standing history of 138 years. The Deccan Education Society runs 43 educational institutions in various fields such as commerce, science, arts, etc. Niraj's role is to recommend the content for the core curriculum as well as industrial visits and internships for practical experience to provide holistic development of students. \n 
+Additionally, World Trade Center Pune has partnered with Brring 2.0 to provide direct distribution in the FMCG space to approximately 10,000 stores in 5 cities, in India, with a wide range of businesses, including brick-and-mortar stores, grocery outlets, convenience stores, airlines, e-commerce platforms, online grocery services and the hospitality industry. This partnership aims to streamline the supply chain process and ensure efficient delivery of quality food products to various sectors of the market. \n
+In addition to his passion for FMCG and education, Niraj is deeply committed to the pharmaceutical industry's
+contribution to global healthcare. He is dedicated to helping eradicate diseases such as tuberculosis and anemia worldwide through collaborations with renowned organizations like Serum Institute, Mylab and Murli Krishna Pharma. He is also working on the global shortage of nurses, as there is a supply chain gap in the talent healthcare industry is widening, Niraj was instrumental in establishing the platform for healthcare workers, with three batches already deployed in Norway and ongoing discussions in Australia, Italy and Germany. \n
+With a focus on Fintech and Technology, we have launched a Fintech accelerator platform with First Rate Venture in Dallas, Texas, aligning with India's increased focus on fintech innovation. Niraj worked closely with World Trade Center Mumbai on the Fintech Festival. \n
+Niraj is passionate about sustainability as well. World Trade Center Pune has launched a unified sustainability platform for Indian organizations to align with the United Nations Sustainable Development Goals (UNSDG) 2030. \n
+This platform will not only support companies in achieving sustainability goals but also showcase innovative green businesses through the WTCA accelerator program. With a distinguished career spanning two decades in technology, media and entrepreneurship, Niraj has held key leadership positions at AT&T's energy sector for Shell in Asia and spearheading IBM's go-to-market and commercial engagement in India, Middle East and Africa. \n
+Niraj was instrumental in leading Citigroup’s Global network and digital transformation when he was with AT&T’s in New York working closely with Citigroup’s Global Financial Group for over a decade.
+Niraj's educational background includes an MBA and a BBA from Adelphi University's School of Business &
+Management in New York, US. He is committed to continuing to make a positive impact in the world of international business and trade.
+`,
+    image: "/speakers/NeerajK.png",
+    title: "BE, MBA, DFS, FAICD​",
+    link: "",
+  },
 ];
 export const SuccessCarouselData = [
   {
@@ -1233,8 +1284,7 @@ export const speakers2023 = [
   {
     id: 32,
     name: "Prof Rocky Scopelliti",
-    image:
-      "/Speakers2023/Prof Rocky Scopelliti.png",
+    image: "/Speakers2023/Prof Rocky Scopelliti.png",
     title: "Futurologist",
   },
   {
@@ -1328,8 +1378,7 @@ export const speakers2023 = [
   {
     id: 42,
     name: "Penny Crawford",
-    image:
-      "/Speakers2023/Penny Crawford.png",
+    image: "/Speakers2023/Penny Crawford.png",
     title: "Founder of Crawford Boots",
   },
   {

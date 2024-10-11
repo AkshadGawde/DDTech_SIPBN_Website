@@ -2,14 +2,10 @@ import React, { useState } from "react";
 import { Title } from "../common/Title";
 
 function HeroFeatures() {
-  const [src, setSrc] = useState(
-    "https://res.cloudinary.com/dueoon8xe/image/upload/v1726561189/Chairmans_Lunch_Apr_10_2024_d3ue3w.jpg"
-  );
+  const [src, setSrc] = useState("/images/memberLunch.jpg");
 
   function handleGameChanger() {
-    setSrc(
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1726561189/Chairmans_Lunch_Apr_10_2024_d3ue3w.jpg"
-    );
+    setSrc("/images/memberLunch.jpg");
   }
   function handleImpact() {
     setSrc(
