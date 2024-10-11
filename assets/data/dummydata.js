@@ -562,7 +562,7 @@ Minister for Corrections`,
     title: " Niraj Khinvasara ",
     cover: "/speakers/NeerajK.png",
     post: "Executive Director at World Trade Center Pune​",
-    href: "/team/38",
+    href: "/team/39",
   },
 ];
 
