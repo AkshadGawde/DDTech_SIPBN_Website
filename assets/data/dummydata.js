@@ -1234,7 +1234,7 @@ export const speakers2023 = [
     id: 32,
     name: "Prof Rocky Scopelliti",
     image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724171171/2023%20Speakers/bncl7bwfl8csruvwkuyl.png",
+      "/Speakers2023/Prof Rocky Scopelliti.png",
     title: "Futurologist",
   },
   {
@@ -1329,7 +1329,7 @@ export const speakers2023 = [
     id: 42,
     name: "Penny Crawford",
     image:
-      "https://res.cloudinary.com/dueoon8xe/image/upload/v1724180162/2023%20Speakers/uoq2ewf2xx9xrdtc57rd.png",
+      "/Speakers2023/Penny Crawford.png",
     title: "Founder of Crawford Boots",
   },
   {
