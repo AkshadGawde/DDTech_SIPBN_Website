@@ -3,7 +3,7 @@ import AOS from "aos";
 import Link from "next/link";
 
 function HeroMain() {
-  const eventId = 'iaEHed2PE5Te0BmBwku3'; //pelase add eventid here
+  const eventId = "iaEHed2PE5Te0BmBwku3"; //pelase add eventid here
   useEffect(() => {
     AOS.init({
       duration: 2500, // Animation duration in milliseconds
@@ -18,10 +18,7 @@ function HeroMain() {
       }}
     >
       <video className="bgVideo" autoPlay muted loop playsInline>
-        <source
-          src="https://res.cloudinary.com/dueoon8xe/video/upload/v1723785194/Speakers%20-%20Sipbn/hshdkrcut1ziuoddwwnd.mp4"
-          type="video/mp4"
-        />
+        <source src="/videos/CapTech2024.mp4" type="video/mp4" />
       </video>
       <div className="heroContent">
         <div className="box" data-aos="fade-right">
@@ -30,10 +27,8 @@ function HeroMain() {
             25th - 28th November 2024
           </h2>
           <Link href={`/ticket-purchase?eventId=${eventId}`}>
-                <button className="secondary-button">
-                    Buy Tickets
-                </button>
-            </Link>
+            <button className="secondary-button">Buy Tickets</button>
+          </Link>
           <div style={{ display: "flex" }}>
             <button
               className="button-primary"
@@ -57,7 +52,7 @@ function HeroMain() {
               </div>
             </div>
             <video style={{ width: "60%", borderRadius: "10px" }} controls>
-              <source src="https://res.cloudinary.com/dueoon8xe/video/upload/v1723785194/Speakers%20-%20Sipbn/hshdkrcut1ziuoddwwnd.mp4" />
+              <source src="/videos/CapTech2024.mp4" />
             </video>
           </div>
         </div>

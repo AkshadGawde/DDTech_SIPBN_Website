@@ -13,12 +13,7 @@ function Captech2023() {
           </div>
 
           <video autoPlay muted loop className="video-background">
-            <source
-              src={
-                "https://res.cloudinary.com/dueoon8xe/video/upload/v1723784744/Speakers%20-%20Sipbn/ulqt8fmuqteutnjrpwfz.mp4"
-              }
-              type="video/mp4"
-            />
+            <source src={"/videos/Captech2023.mp4"} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
           <div className="container">

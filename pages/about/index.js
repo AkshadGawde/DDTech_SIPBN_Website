@@ -16,7 +16,7 @@ const Agency = () => {
             <div className="presContainer">
               <div className="presImgContainer">
                 <img
-                  src="https://res.cloudinary.com/dueoon8xe/image/upload/v1721977790/Speakers%20-%20Sipbn/brqtqgoijfjvulkac0g7.png"
+                  src="/aboutimages/RamanB.png"
                   height="110px"
                   className="presImg"
                 />
