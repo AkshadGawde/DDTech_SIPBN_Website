@@ -233,12 +233,12 @@ const TicketPurchase = () => {
       // Check if the coupon is applicable to the tickets in the cart
       const allowedTickets = couponData.allowed.split(",").map(t => t.trim());
       const cartTicketNames = cart.map(ticket => ticket.name);
-      console.log(allowedTickets);
-      console.log(cartTicketNames);
-      const isApplicable = cartTicketNames.some(ticketName => allowedTickets==ticketName);
+      console.log(allowedTickets[0]);
+      console.log(cartTicketNames[0]);
+      const isApplicable = cartTicketNames.length === 1 && cartTicketNames[0] === allowedTickets[0];
 
       if (!isApplicable) {
-        setCouponError("This coupon code is not allowed for the tickets in your cart");
+        setCouponError("This coupon code is not allowed for the tickets in your cart. Retry with only one type of ticket in your card");
         return;
       }
 
@@ -547,7 +547,6 @@ const TicketPurchase = () => {
                       {appliedCoupon && (
                         <p className="coupon-applied">
                           Coupon applied: {appliedCoupon.discountPercentage}% off
-                          (max A${appliedCoupon.maxDiscount})
                         </p>
                       )}
                     </div>
