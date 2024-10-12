@@ -402,7 +402,15 @@ const TicketPurchase = () => {
                     Tue, 26 Nov 2024 8:00 AM - Wed, 27 Nov 2024 9:00 PM AEDT
                   </p> */}
                   <div className="ticket-list">
-                    {Object.keys(eventDetails.tickets).map((ticketName) => {
+                    {Object.keys(eventDetails.tickets)
+                    .sort((a, b) => {
+                      const ticketA = eventDetails.tickets[a];
+                      const ticketB = eventDetails.tickets[b];
+                      
+                      // Sort by price in ascending order
+                      return parseFloat(ticketA.price) - parseFloat(ticketB.price);
+                    })
+                    .map((ticketName) => {
                       const ticket = eventDetails.tickets[ticketName];
                       const isExpanded = expandedTickets[ticketName];
 
