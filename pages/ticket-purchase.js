@@ -146,6 +146,10 @@ const TicketPurchase = () => {
       ...quantities,
       [ticket.name]: (quantities[ticket.name] || 0) + 1,
     });
+
+    // Clear applied coupon when cart changes
+    setAppliedCoupon(null);
+    setCouponError("");
   };
 
   // Function to update ticket quantity in the cart
@@ -200,6 +204,10 @@ const TicketPurchase = () => {
       ...quantities,
       [ticketName]: newQuantity,
     });
+
+    // Clear applied coupon when cart changes
+    setAppliedCoupon(null);
+    setCouponError("");
   };
 
   // Function to apply coupon
@@ -221,6 +229,19 @@ const TicketPurchase = () => {
       }
 
       const couponData = querySnapshot.docs[0].data();
+
+      // Check if the coupon is applicable to the tickets in the cart
+      const allowedTickets = couponData.allowed.split(",").map(t => t.trim());
+      const cartTicketNames = cart.map(ticket => ticket.name);
+      console.log(allowedTickets);
+      console.log(cartTicketNames);
+      const isApplicable = cartTicketNames.some(ticketName => allowedTickets==ticketName);
+
+      if (!isApplicable) {
+        setCouponError("This coupon code is not allowed for the tickets in your cart");
+        return;
+      }
+
       setAppliedCoupon(couponData);
       setCouponCode(""); // Clear the input field
     } catch (error) {
@@ -237,7 +258,10 @@ const TicketPurchase = () => {
       (acc, ticket) => acc + ticket.price * ticket.quantity,
       0
     );
-    const discountAmount = subtotal * (appliedCoupon.discountPercentage / 100);
+    const discountAmount = Math.min(
+      subtotal * (appliedCoupon.discountPercentage / 100),
+      appliedCoupon.maxDiscount
+    );
     return discountAmount;
   };
 
@@ -382,7 +406,6 @@ const TicketPurchase = () => {
 
     setIsLoading(false);
   };
-
   return (
     <Elements stripe={stripePromise}>
       <section className="event-section">
@@ -390,7 +413,6 @@ const TicketPurchase = () => {
           {eventDetails ? (
             <>
               <h2 className="event-title">{eventDetails.name}</h2>
-              {/* <p className="event-date">Date: {eventDetails.date}</p> */}
               <p className="event-description">{eventDetails.description}</p>
 
               {/* Main layout container */}
@@ -398,9 +420,6 @@ const TicketPurchase = () => {
                 {/* Left section for ticket categories */}
                 <div className="ticket-categories">
                   <h3 className="ticket-title">Ticket Categories</h3>
-                  {/* <p className="event-time">
-                    Tue, 26 Nov 2024 8:00 AM - Wed, 27 Nov 2024 9:00 PM AEDT
-                  </p> */}
                   <div className="ticket-list">
                     {Object.keys(eventDetails.tickets)
                     .sort((a, b) => {
@@ -419,9 +438,6 @@ const TicketPurchase = () => {
                           <div className="ticket-header">
                             <div>
                               <h3 className="ticket-name">{ticket.name}</h3>
-                              {/* <p className="ticket-available">
-                                Available Tickets: {parseInt(ticket.available)}
-                              </p> */}
                             </div>
                             <div className="ticket-quantity">
                               <button
@@ -449,9 +465,6 @@ const TicketPurchase = () => {
                           <p className="ticket-price">
                             A${parseFloat(ticket.price).toFixed(2)}
                           </p>
-                          {/* <p className="ticket-description">
-                            Description: {ticket.description}
-                          </p> */}
 
                           {/* Read More Section */}
                           {isExpanded && (
@@ -515,9 +528,6 @@ const TicketPurchase = () => {
 
                     {/* Coupon Code Section */}
                     <div className="coupon-section">
-                      {/* <label htmlFor="couponCode" className="coupon-label">
-                        Coupon Code
-                      </label> */}
                       <div className="coupon-input-group">
                         <input
                           type="text"
@@ -534,12 +544,12 @@ const TicketPurchase = () => {
                       {couponError && (
                         <p className="coupon-error">{couponError}</p>
                       )}
-                      {/* {appliedCoupon && (
+                      {appliedCoupon && (
                         <p className="coupon-applied">
-                          Coupon applied: {appliedCoupon.discountPercentage}%
-                          off (max A${appliedCoupon.maxDiscount})
+                          Coupon applied: {appliedCoupon.discountPercentage}% off
+                          (max A${appliedCoupon.maxDiscount})
                         </p>
-                      )} */}
+                      )}
                     </div>
 
                     <form onSubmit={handleCheckout} className="checkout-form">
