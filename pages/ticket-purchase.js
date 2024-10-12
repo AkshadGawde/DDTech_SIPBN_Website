@@ -546,7 +546,7 @@ const TicketPurchase = () => {
                       )}
                       {appliedCoupon && (
                         <p className="coupon-applied">
-                          Coupon applied: {appliedCoupon.discountPercentage}% off
+                          Coupon applied: {appliedCoupon.code}
                         </p>
                       )}
                     </div>
