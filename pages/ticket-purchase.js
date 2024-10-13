@@ -235,7 +235,7 @@ const TicketPurchase = () => {
       const cartTicketNames = cart.map(ticket => ticket.name);
       console.log(allowedTickets);
       console.log(cartTicketNames[0]);
-      const isApplicable = cartTicketNames.length < allowedTickets.length && cartTicketNames.every(ticket => allowedTickets.includes(ticket));
+      const isApplicable = cartTicketNames.length <= allowedTickets.length && cartTicketNames.every(ticket => allowedTickets.includes(ticket));
 
       if (!isApplicable) {
         setCouponError("This coupon code is not allowed for the tickets in your cart. Retry with only one type of ticket in your card");
