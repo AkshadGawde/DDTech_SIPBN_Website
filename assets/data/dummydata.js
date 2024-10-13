@@ -303,7 +303,7 @@ export const patronsdata = [
 export const memberdata = [
   {
     id: 1,
-    title: "The Hon Anoulack Chathivong",
+    title: "The Hon. Anoulack Chanthivong, MP",
     cover: "/speakers/Anoulack.jpg",
     post: `Minister for Better Regulation and Fair Trading, Minister for Industry and Trade,
 Minister for Innovation, Science and Technology, Minister for Building,
@@ -593,7 +593,7 @@ export const moderatordata = [
 export const membersdata = [
   {
     id: "01",
-    name: "The Hon Anoulack Chathivong",
+    name: "The Hon. Anoulack Chanthivong, MP",
     description: `Victor is a seasoned government leader, having served as a Minister in NSW for 12 years, and is best known for his role as Minister for Customer Service and Digital Government. He is considered a pioneer of digital government in Australia, and his achievements have been admired, studied and modelled by other governments around the world.\n
 Since retiring from politics in 2023, Victor has been appointed to Accenture’s Global Luminaries Program to champion the cause of digital government around the world. Victor is the inaugural Chair of the Commonwealth Government’s Digital Identity Expert Panel.\n
 Victor is also the inaugural Chair of the Commonwealth Government’s Independent Advisory Panel for MyGov and Services Australia. In addition, Victor is a Professor at UNSW and Director of the Trustworthy Digital Society Hub, a joint initiative of UNSW and UTS.\n
