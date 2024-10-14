@@ -459,20 +459,23 @@ Minister for Corrections`,
     post: "AI Technology & Policy Lead, Microsoft Asia",
     href: "/team/24",
   },
+
   {
-    id: 11,
-    title: "Kunwar Aditya Saxena",
-    cover: "/speakers/Kunwar Aditya Saxena.png",
-    post: "CFO of CIMET",
-    href: "/team/11",
+    id: 38,
+    title: "Tom Forrest",
+    cover: "/speakers/TomForrest.png",
+    post: "CEO Urban Taskforce Australia​",
+    href: "/team/38",
   },
+
   {
-    id: 20,
-    title: "Ankit Jain",
-    cover: "/speakers/ankit.png",
-    post: "CEO of CIMET",
-    href: "/team/7",
+    id: 49,
+    title: "Patrick Delany",
+    cover: "/speakers/PatrickDelany.jpg",
+    post: "Chief Executive Officer, Foxtel Group",
+    href: "/team/40",
   },
+
   {
     id: 23,
     title: "Stela Solar",
@@ -551,11 +554,19 @@ Minister for Corrections`,
     href: "/team/37",
   },
   {
-    id: 38,
-    title: "Tom Forrest",
-    cover: "/speakers/TomForrest.png",
-    post: "CEO Urban Taskforce Australia​",
-    href: "/team/38",
+    id: 11,
+    title: "Kunwar Aditya Saxena",
+    cover: "/speakers/Kunwar Aditya Saxena.png",
+    post: "CFO of CIMET",
+    href: "/",
+  },
+
+  {
+    id: 20,
+    title: "Ankit Jain",
+    cover: "/speakers/ankit.png",
+    post: "CEO of CIMET",
+    href: "/team/7",
   },
   {
     id: 39,
@@ -563,6 +574,14 @@ Minister for Corrections`,
     cover: "/speakers/NeerajK.png",
     post: "Executive Director at World Trade Center Pune​",
     href: "/team/39",
+  },
+
+  {
+    id: 49,
+    title: "Jenny Junkeer",
+    cover: "/speakers/JennyJunkeer.jpg",
+    post: "CEO Intent",
+    href: "/team/41",
   },
 ];
 
@@ -1031,7 +1050,7 @@ Jua serves as the Treasurer of the Australasian Green Infrastructure Network. Wi
     image: "/speakers/claire.png",
     title:
       "Executive Director, Board and Commercial strategy advisor top tier ASX; NYSE",
-    link: "",
+    link: "https://www.linkedin.com/in/claireelkin?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
   {
     id: "34",
@@ -1067,7 +1086,7 @@ Jua serves as the Treasurer of the Australasian Green Infrastructure Network. Wi
       "Tom Forrest has held various senior roles across all sectors of property and development. He has worked as a senior adviser and Chief of Staff in NSW politics, including for various NSW Ministers (Premier, Treasurer, Planning, Health, and Olympics). He has held Senior Executive roles in the public service in the key Department of Premier and Cabinet and Transport portfolios. Tom assisted a range of private sector clients in partnership with the former Director General of Planning, Sam Haddad, including both commercial and residential developers, navigate often complex regulatory landscapes. Tom took on the role of CEO of the Urban Taskforce in November 2019 and has proven to be a strong, prolific, and vocal spokesperson for the property development and construction industry during Covid and in identifying the now obvious housing supply crisis. He is an outcomes-oriented person who is constantly advocating for an improved regulatory environment.",
     image: "/speakers/TomForrest.png",
     title: "CEO Urban Taskforce Australia​",
-    link: "",
+    link: "https://www.linkedin.com/in/tom-forrest-45599736?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
   {
     id: "39",
@@ -1087,8 +1106,34 @@ Niraj's educational background includes an MBA and a BBA from Adelphi University
 Management in New York, US. He is committed to continuing to make a positive impact in the world of international business and trade.
 `,
     image: "/speakers/NeerajK.png",
-    title: "BE, MBA, DFS, FAICD​",
-    link: "",
+    title: " Executive Director at World Trade Center Pune",
+    link: "https://www.linkedin.com/in/nirajny?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+  },
+
+  {
+    id: "40",
+    name: "Patrick Delany",
+    description: `Patrick is the Chief Executive Officer of the Foxtel Group which has interests that extend from the traditional Foxtel business and includes Kayo Sports, BINGE, Fox Sports, Foxtel Media and Hubbl. He was appointed to the role in January 2018 following his successful tenure as Chief Executive Officer of Fox Sports. \n
+Since Patrick became Chief Executive Officer, the Foxtel Group has grown rapidly in streaming with the launch of Kayo Sports in late 2018 and the arrival of the highly anticipated entertainment streaming service, BINGE, in May 2020. Patrick is also leading the Group's next major disruption in streaming, Hubbl. Previously at Fox Sports, Patrick oversaw an extensive program of renewal and invigoration, including the rebranding of Fox Sports and the introduction of weekly entertainment shows that cemented the company's reputation as the unrivalled home of sports and game-changing broadcast innovations. \n
+In 2005, Patrick was appointed Executive Director of Content, Product and Delivery at Foxtel and was responsible for introducing a string of product and service innovations including Foxtel iQ, Mobile Foxtel, Foxtel Qn Demand and Ultra HD. In 2002, as Director of Digital, he lead the rebirth and reinvigoration of Foxtel as a digital product and reshaping its consumer proposition. \n
+Patrick's career in television began in 1998, at Southern Star Entertainment as Head of Non-Drama, before taking on the role of Chief Executive Officer, XYZ - the channel creation and production business - in 2000. At XYZ, Patrick successfully revitalised and relaunched the Lifestyle Channel, Channel [V], Music Max and The Weather Channel for the Foxtel and Austar platforms.
+`,
+    image: "/speakers/PatrickDelany.jpg",
+    title: "​Chief Executive Officer, Foxtel Group",
+    link: "https://www.linkedin.com/in/patrick-delany-18b0b560?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+  },
+  {
+    id: "41",
+    name: "Jenny Junkeer",
+    description: `Her purpose in life is to provide opportunities to others, and she chooses to live out this purpose in many ways. \n
+Professionally, she has created her scaling consultancy to help businesses grow successfully, generate significant profits, and inspire them to give back to the community and employees. Her philosophy is that if enough businesses scale large enough, they can provide more opportunities to people than she ever could. She aims to make a difference through her voice and work.\n
+Personally, she seeks out projects that directly create opportunities for others, whether working with corporates striving to become great companies, social enterprises, non-profits, government organizations, or projects she initiates herself.
+Most importantly, she lives to offer her children the chance to chase their dreams. \n
+She is committed to being of service to those who are inspired to make a difference through business.
+`,
+    image: "/speakers/JennyJunkeer.jpg",
+    title: "CEO Intent",
+    link: "https://www.linkedin.com/in/jennyjunkeer?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
 ];
 export const SuccessCarouselData = [
