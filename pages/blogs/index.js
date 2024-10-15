@@ -23,8 +23,7 @@ const Blog = () => {
               data={{
                 id: 1,
                 title: "Federal Budget",
-                cover:
-                  "https://res.cloudinary.com/duv9rw1wg/image/upload/v1721736223/homePage/omer85xdmfprk3ohmdve.jpg",
+                cover: "/blogimages/AusFedralBudget.png",
                 href: "/federalbudget",
               }}
               caption={"Read Blog"}
@@ -35,8 +34,7 @@ const Blog = () => {
               data={{
                 id: 2,
                 title: "Net Zero Emissions vs. AI's Rising Energy Consumption",
-                cover:
-                  "https://res.cloudinary.com/duv9rw1wg/image/upload/v1721735819/homePage/xugbdj1vuq9gm4o5qggb.png",
+                cover: "/blogimages/ZeroEmission.png",
                 href: "/aivs",
               }}
               caption={"Read Blog"}
@@ -47,8 +45,7 @@ const Blog = () => {
               data={{
                 id: 3,
                 title: "SIPBN Clean Energy Committee's Analysis",
-                cover:
-                  "https://res.cloudinary.com/duv9rw1wg/image/upload/v1721736591/homePage/jquatrm5gch50shbjmrr.png",
+                cover: "/blogimages/2024FedralBudget.png",
                 href: "/cleanenergy",
               }}
               caption={"Read Blog"}
@@ -61,8 +58,7 @@ const Blog = () => {
                 id: 4,
                 title:
                   "Igniting Investor Interest: The Power of Passionate Presentations",
-                cover:
-                  "https://res.cloudinary.com/dueoon8xe/image/upload/v1724185196/zh5dwwxlns4z3eyaeyx1.png",
+                cover: "/blogimages/InvestorInterest.png",
                 href: "/passionate",
               }}
               caption={"Read Blog"}

@@ -22,10 +22,7 @@ const Aivs = () => {
           }
         />
 
-        <img
-          src="https://res.cloudinary.com/duv9rw1wg/image/upload/v1721735819/homePage/xugbdj1vuq9gm4o5qggb.png"
-          className="blogImg"
-        />
+        <img src="/blogimages/ZeroEmission.png" className="blogImg" />
 
         <div className="blogsContainer">
           <p className="blogsDescription2">
