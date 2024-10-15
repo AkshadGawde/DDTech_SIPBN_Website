@@ -20,7 +20,7 @@ const passionate = () => {
           }
         />
         <img
-          src="https://res.cloudinary.com/dueoon8xe/image/upload/v1724185196/zh5dwwxlns4z3eyaeyx1.png"
+          src="/blogimages/InvestorInterest.png"
           className="blogImg"
           alt="Federal Budget Highlights"
         />
