@@ -1140,16 +1140,16 @@ Patrick's career in television began in 1998, at Southern Star Entertainment as 
   {
     id: "41",
     name: "Jenny Junkeer",
-    description: `Her purpose in life is to provide opportunities to others, and she chooses to live out this purpose in many ways. \n
-Professionally, she has created her scaling consultancy to help businesses grow successfully, generate significant profits, and inspire them to give back to the community and employees. Her philosophy is that if enough businesses scale large enough, they can provide more opportunities to people than she ever could. She aims to make a difference through her voice and work.\n
-Personally, she seeks out projects that directly create opportunities for others, whether working with corporates striving to become great companies, social enterprises, non-profits, government organizations, or projects she initiates herself.
-Most importantly, she lives to offer her children the chance to chase their dreams. \n
-She is committed to being of service to those who are inspired to make a difference through business.
-`,
+    description: `Jenny Junkeer is dedicated to creating opportunities for others through her work and personal projects.\n
+  As a scaling consultant, she helps businesses grow strategically, maximizing profits while inspiring them to give back to their communities and employees. Her philosophy is rooted in the belief that by scaling companies to new heights, they can provide more opportunities to others than she could on her own.\n
+  Beyond her professional work, Jenny actively engages in projects that directly foster growth and opportunities, including working with corporates aiming to become great companies, as well as social enterprises, nonprofits, and government organizations.\n
+  She is deeply committed to making a meaningful impact and to being of service to those driven to make a difference through business.\n
+  Most importantly, Jenny is devoted to empowering her children to pursue their dreams, offering them the chance to chase their aspirations and realize their full potential.`,
     image: "/speakers/JennyJunkeer.jpg",
-    title: "CEO Intent",
+    title: "CEO, Intent",
     link: "https://www.linkedin.com/in/jennyjunkeer?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
+  
   {
     id: "42",
     name: "Jillian Kilby",
