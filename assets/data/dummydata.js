@@ -199,6 +199,11 @@ export const brand = [
     cover: "../SVG/Logo20.svg",
     link: "https://advisoryboardworld.com/events/89840",
   },
+  {
+    id: 21,
+    cover: "../SVG/Logo21.png",
+    link: "https://advisoryboardworld.com/events/89840",
+  },
 ];
 export const brand2 = [
   {
@@ -583,6 +588,16 @@ Minister for Corrections`,
     post: "CEO Intent",
     href: "/team/41",
   },
+  
+  {
+    id: 50,
+    title: "Jillian Kilby",
+    cover: "/speakers/Jillian Kilby.jpg",
+    post: "Managing Director, The Stable Group",
+    href: "/team/42",
+  },
+
+  
 ];
 
 export const moderatordata = [
@@ -1133,6 +1148,28 @@ She is committed to being of service to those who are inspired to make a differe
 `,
     image: "/speakers/JennyJunkeer.jpg",
     title: "CEO Intent",
+    link: "https://www.linkedin.com/in/jennyjunkeer?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+  },
+  {
+    id: "42",
+    name: "Jillian Kilby",
+    description: `Jillian Kilby is the Managing Director of The Stable Group, a regional consulting company firmly fixed
+in its pursuit to leave a legacy of change in regional Australia.\n
+She is a Fellow of the Institute of Engineers Australia, an Australian Sir John Monash Scholar, A
+graduate of the Australian Institute of Company Directors and holds an MBA and Public Policy
+Masters from Stanford University.\n
+In 2018, Jillian founded The Exchange, a regionally-based social impact organisation focused on the
+facilitation of space for coworking and community. Jillian bought and renovated an 1880s iconic post
+office building and a State Heritage Listed Bank in Dubbo and an old Cordial Factory precinct in
+Narrabri which have been restored and converted into vibrant coworking spaces.\n
+Jillian holds a number of advisory roles, including as Director of the James Martin Institute for Public
+Policy, Member of the Council for Women’s Economic Opportunity, Chair of the Regional Advisory
+Panel for the Daily Telegraph Bush Summit, and Member of the NSW Skills Board.\n
+This year, Jillian develops her newest venture, Good Foundations, with the acquisition and planned
+restoration of a fifth heritage building in Wagga Wagga. She was the 2013 NSW/ACT Rural Woman of
+The Y`,
+    image: "/speakers/Jillian Kilby.jpg",
+    title: "Managing Director, The Stable Group",
     link: "https://www.linkedin.com/in/jennyjunkeer?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
 ];

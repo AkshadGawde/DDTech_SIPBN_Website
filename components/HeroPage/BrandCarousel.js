@@ -172,6 +172,13 @@ const BrandCarousel = () => {
       height: 900,
       alt: "carousel Image 8",
     },
+    {
+      src: "/SVG/Logo21.png",
+      width: 600,
+      height: 900,
+      alt: "carousel Image 8",
+    },
+   
   ];
 
   return (
