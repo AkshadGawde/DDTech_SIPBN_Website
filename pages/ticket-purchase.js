@@ -426,6 +426,16 @@ const TicketPurchase = () => {
         src="https://www.googletagmanager.com/gtag/js?id=G-93NS7GQKBQ"
         strategy="afterInteractive"
       />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-93NS7GQKBQ', {
+            page_path: window.location.pathname,
+          });
+        `}
+      </Script>
       <section className="event-section">
         <div className="container">
           {eventDetails ? (
