@@ -54,7 +54,7 @@ const Advisory_board = () => {
           </div>
           <img
             className="advisoryImg"
-            src="https://res.cloudinary.com/dueoon8xe/image/upload/v1722275975/Speakers%20-%20CapTech/oretedusdyhaivpbddjf.png"
+            src="/patrons/Roderick H. McGeoch AO.png"
           />
         </div>
 
@@ -82,7 +82,7 @@ const Advisory_board = () => {
           </div>
           <img
             className="advisoryImg"
-            src="https://res.cloudinary.com/dueoon8xe/image/upload/v1721977795/Speakers%20-%20Sipbn/xzjeua3ldfcpobi5hzxm.png"
+            src="/speakers/stephen harrison.png"
             alt="Profile Image"
           />
         </div>
@@ -150,10 +150,7 @@ const Advisory_board = () => {
               DAWR Cargo Consultative Committee.
             </p>
           </div>
-          <img
-            className="advisoryImg"
-            src="https://res.cloudinary.com/dueoon8xe/image/upload/v1721977794/Speakers%20-%20Sipbn/fnjvhqfz87z7edrt7gpq.png"
-          />
+          <img className="advisoryImg" src="/speaker2022/Dianne Tipping.png" />
         </div>
 
         <hr />
@@ -200,10 +197,7 @@ const Advisory_board = () => {
               complex energy problems.
             </p>
           </div>
-          <img
-            className="advisoryImg"
-            src="https://res.cloudinary.com/dueoon8xe/image/upload/v1721977792/Speakers%20-%20Sipbn/dx8ksnkvhluhbx5jwggd.png"
-          />
+          <img className="advisoryImg" src="/speakers/Sarah Fairhurst.png" />
         </div>
 
         <hr />

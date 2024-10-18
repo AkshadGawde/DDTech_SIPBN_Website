@@ -50,10 +50,7 @@ const Executive_board = () => {
               Accountant, FCPA, CIMA and holds a Bachelor of Commerce degree.
             </p>
           </div>
-          <img
-            className="advisoryImg"
-            src="https://res.cloudinary.com/dueoon8xe/image/upload/v1721977790/Speakers%20-%20Sipbn/brqtqgoijfjvulkac0g7.png"
-          />
+          <img className="advisoryImg" src="/aboutimages/RamanB.png" />
         </div>
 
         <hr />
@@ -240,10 +237,7 @@ const Executive_board = () => {
               opportunities and foster collaborations.
             </p>
           </div>
-          <img
-            className="advisoryImg"
-            src="https://res.cloudinary.com/dueoon8xe/image/upload/v1721983854/Speakers%20-%20Sipbn/ba5oai8luvphhm4lbihh.png"
-          />
+          <img className="advisoryImg" src="/speakers/Sarah Morgan.png" />
         </div>
       </div>
     </>
