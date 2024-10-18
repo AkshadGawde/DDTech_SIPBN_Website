@@ -76,10 +76,7 @@ const Executive_board = () => {
               Graduate Diploma in Aged Care from UNSW, Sydney
             </p>
           </div>
-          <img
-            className="advisoryImg"
-            src="https://res.cloudinary.com/dueoon8xe/image/upload/v1721977793/Speakers%20-%20Sipbn/nguvxvtlkm45sskc7bpm.png"
-          />
+          <img className="advisoryImg" src="/executive/Jay Raman (OAM).png" />
         </div>
 
         <hr />
@@ -119,10 +116,7 @@ const Executive_board = () => {
               realise the many and varied commercial opportunities in Australia.
             </p>
           </div>
-          <img
-            className="advisoryImg"
-            src="https://res.cloudinary.com/dueoon8xe/image/upload/v1721977794/Speakers%20-%20Sipbn/s0cniykpc79ccgkdgomi.png"
-          />
+          <img className="advisoryImg" src="/executive/George Bilic.png" />
         </div>
 
         <hr />
@@ -151,7 +145,7 @@ const Executive_board = () => {
           </div>
           <img
             className="advisoryImg"
-            src="https://res.cloudinary.com/dueoon8xe/image/upload/v1722437142/Speakers%20-%20CapTech/phmijptzjz2ehk5ucnox.jpg"
+            src="/executive/Balvinder Ruby JP LREA.png"
           />
         </div>
 
@@ -199,10 +193,7 @@ const Executive_board = () => {
               badminton, and movies.
             </p>
           </div>
-          <img
-            className="advisoryImg"
-            src="https://res.cloudinary.com/dueoon8xe/image/upload/v1721977793/Speakers%20-%20Sipbn/fircp9meneh3yp72ej63.png"
-          />
+          <img className="advisoryImg" src="/executive/Sanjiv Bhalla.png" />
         </div>
 
         <hr />

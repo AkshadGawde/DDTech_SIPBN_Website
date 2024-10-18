@@ -54,7 +54,7 @@ const Advisory_board = () => {
           </div>
           <img
             className="advisoryImg"
-            src="/patrons/Roderick H. McGeoch AO.png"
+            src="/advisors/Roderick H. McGeoch AO.png"
           />
         </div>
 
@@ -172,10 +172,7 @@ const Advisory_board = () => {
               served on public company boards in Australia and internationally.
             </p>
           </div>
-          <img
-            className="advisoryImg"
-            src="https://res.cloudinary.com/dueoon8xe/image/upload/v1721977795/Speakers%20-%20Sipbn/f24jqtv1atmi74zad9ps.png"
-          />
+          <img className="advisoryImg" src="/advisors/Malcolm Edwards.png" />
         </div>
 
         <hr />
@@ -233,10 +230,7 @@ const Advisory_board = () => {
               funds for charity.
             </p>
           </div>
-          <img
-            className="advisoryImg"
-            src="https://res.cloudinary.com/dueoon8xe/image/upload/v1721977795/Speakers%20-%20Sipbn/nxfikokumfced7tpqwxy.png"
-          />
+          <img className="advisoryImg" src="/advisors/Dr Sandra Krishnan.png" />
         </div>
 
         <hr />
@@ -260,10 +254,7 @@ const Advisory_board = () => {
               Auditor and Registered Tax Agent.
             </p>
           </div>
-          <img
-            className="advisoryImg"
-            src="https://res.cloudinary.com/dueoon8xe/image/upload/v1721977794/Speakers%20-%20Sipbn/p4divkup6gp7m7tqwubw.png"
-          />
+          <img className="advisoryImg" src="/advisors/Schon D Condon RFD.png" />
         </div>
         <hr />
       </div>

@@ -31,10 +31,7 @@ const Executive_board = () => {
               people with big lives.
             </p>
           </div>
-          <img
-            className="advisoryImg"
-            src="https://res.cloudinary.com/dueoon8xe/image/upload/v1721977793/Speakers%20-%20Sipbn/wfbgw4h6qoo2ctavytqg.png"
-          />
+          <img className="advisoryImg" src="/committees/Dean Kilby.png" />
         </div>
 
         <hr />
@@ -87,7 +84,7 @@ const Executive_board = () => {
           </div>
           <img
             className="advisoryImg"
-            src="https://res.cloudinary.com/dueoon8xe/image/upload/v1721977792/Speakers%20-%20Sipbn/Ozge%20Fettahlioglu.png"
+            src="/committees/Ozge Fettahlioglu.png"
           />
         </div>
 
@@ -130,10 +127,7 @@ const Executive_board = () => {
               everyone involved.
             </p>
           </div>
-          <img
-            className="advisoryImg"
-            src="https://res.cloudinary.com/dueoon8xe/image/upload/v1721977793/Speakers%20-%20Sipbn/kpegt4tt65xshnftcmht.png"
-          />
+          <img className="advisoryImg" src="/committees/Reza.png" />
         </div>
         <hr />
 
@@ -171,10 +165,7 @@ const Executive_board = () => {
               lasting impact across the APAC region.
             </p>
           </div>
-          <img
-            className="advisoryImg"
-            src="https://res.cloudinary.com/dueoon8xe/image/upload/v1724772625/Speakers%20-%20Sipbn/cvigy3dft481vhuzpoze.png"
-          />
+          <img className="advisoryImg" src="/committees/Nikhil Nigam.png" />
         </div>
       </div>
     </>
