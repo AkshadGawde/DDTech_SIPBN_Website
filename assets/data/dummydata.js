@@ -197,17 +197,22 @@ export const brand = [
   {
     id: 20,
     cover: "../SVG/Logo20.svg",
-    link: "https://advisoryboardworld.com/events/89840",
+    link: "https://www.linkedin.com/company/nakheel-group/",
   },
   {
     id: 21,
     cover: "../SVG/Logo21.png",
-    link: "https://advisoryboardworld.com/events/89840",
+    link: "https://jmi.org.au/",
   },
   {
     id: 22,
     cover: "../SVG/Logo22.svg",
-    link: "https://advisoryboardworld.com/events/89840",
+    link: "https://foodagribusiness.org.au/cluster-connect/",
+  },
+  {
+    id: 23,
+    cover: "../SVG/Logo23.svg",
+    link: "https://www.investmentmarkets.com.au/",
   },
 ];
 export const brand2 = [
