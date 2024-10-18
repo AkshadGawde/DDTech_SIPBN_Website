@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import { db } from "../lib/firebase";
+import Script from "next/script";
 import {
   doc,
   getDoc,
@@ -27,6 +28,15 @@ const TicketPurchase = () => {
       [ticketName]: !prevState[ticketName],
     }));
   };
+  // Add Google Analytics
+  useEffect(() => {
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "G-93NS7GQKBQ");
+  }, []);
 
   // State variables
   const [eventDetails, setEventDetails] = useState(null);
@@ -231,14 +241,18 @@ const TicketPurchase = () => {
       const couponData = querySnapshot.docs[0].data();
 
       // Check if the coupon is applicable to the tickets in the cart
-      const allowedTickets = couponData.allowed.split(",").map(t => t.trim());
-      const cartTicketNames = cart.map(ticket => ticket.name);
+      const allowedTickets = couponData.allowed.split(",").map((t) => t.trim());
+      const cartTicketNames = cart.map((ticket) => ticket.name);
       console.log(allowedTickets);
       console.log(cartTicketNames[0]);
-      const isApplicable = cartTicketNames.length <= allowedTickets.length && cartTicketNames.every(ticket => allowedTickets.includes(ticket));
+      const isApplicable =
+        cartTicketNames.length <= allowedTickets.length &&
+        cartTicketNames.every((ticket) => allowedTickets.includes(ticket));
 
       if (!isApplicable) {
-        setCouponError("This coupon code is not allowed for the tickets in your cart. Retry with only one type of ticket in your card");
+        setCouponError(
+          "This coupon code is not allowed for the tickets in your cart. Retry with only one type of ticket in your card"
+        );
         return;
       }
 
@@ -408,6 +422,10 @@ const TicketPurchase = () => {
   };
   return (
     <Elements stripe={stripePromise}>
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-93NS7GQKBQ"
+        strategy="afterInteractive"
+      />
       <section className="event-section">
         <div className="container">
           {eventDetails ? (
@@ -422,66 +440,68 @@ const TicketPurchase = () => {
                   <h3 className="ticket-title">Ticket Categories</h3>
                   <div className="ticket-list">
                     {Object.keys(eventDetails.tickets)
-                    .sort((a, b) => {
-                      const ticketA = eventDetails.tickets[a];
-                      const ticketB = eventDetails.tickets[b];
-                      
-                      // Sort by price in ascending order
-                      return parseFloat(ticketA.price) - parseFloat(ticketB.price);
-                    })
-                    .map((ticketName) => {
-                      const ticket = eventDetails.tickets[ticketName];
-                      const isExpanded = expandedTickets[ticketName];
+                      .sort((a, b) => {
+                        const ticketA = eventDetails.tickets[a];
+                        const ticketB = eventDetails.tickets[b];
 
-                      return (
-                        <div key={ticketName} className="ticket-card">
-                          <div className="ticket-header">
-                            <div>
-                              <h3 className="ticket-name">{ticket.name}</h3>
+                        // Sort by price in ascending order
+                        return (
+                          parseFloat(ticketA.price) - parseFloat(ticketB.price)
+                        );
+                      })
+                      .map((ticketName) => {
+                        const ticket = eventDetails.tickets[ticketName];
+                        const isExpanded = expandedTickets[ticketName];
+
+                        return (
+                          <div key={ticketName} className="ticket-card">
+                            <div className="ticket-header">
+                              <div>
+                                <h3 className="ticket-name">{ticket.name}</h3>
+                              </div>
+                              <div className="ticket-quantity">
+                                <button
+                                  onClick={() =>
+                                    updateCartQuantity(ticket.name, -1)
+                                  }
+                                  className="quantity-btn"
+                                >
+                                  -
+                                </button>
+                                <span className="ticket-price">
+                                  {quantities[ticket.name]}
+                                </span>
+                                <button
+                                  onClick={() =>
+                                    updateCartQuantity(ticket.name, 1)
+                                  }
+                                  className="quantity-btn"
+                                >
+                                  +
+                                </button>
+                              </div>
                             </div>
-                            <div className="ticket-quantity">
-                              <button
-                                onClick={() =>
-                                  updateCartQuantity(ticket.name, -1)
-                                }
-                                className="quantity-btn"
-                              >
-                                -
-                              </button>
-                              <span className="ticket-price">
-                                {quantities[ticket.name]}
-                              </span>
-                              <button
-                                onClick={() =>
-                                  updateCartQuantity(ticket.name, 1)
-                                }
-                                className="quantity-btn"
-                              >
-                                +
-                              </button>
-                            </div>
+                            <hr />
+                            <p className="ticket-price">
+                              A${parseFloat(ticket.price).toFixed(2)}
+                            </p>
+
+                            {/* Read More Section */}
+                            {isExpanded && (
+                              <div className="ticket-details">
+                                <p>{ticket.description}</p>
+                              </div>
+                            )}
+
+                            <button
+                              className="read-more-btn"
+                              onClick={() => toggleExpand(ticketName)}
+                            >
+                              {isExpanded ? "Read Less ↑" : " Details ↓"}
+                            </button>
                           </div>
-                          <hr />
-                          <p className="ticket-price">
-                            A${parseFloat(ticket.price).toFixed(2)}
-                          </p>
-
-                          {/* Read More Section */}
-                          {isExpanded && (
-                            <div className="ticket-details">
-                              <p>{ticket.description}</p>
-                            </div>
-                          )}
-
-                          <button
-                            className="read-more-btn"
-                            onClick={() => toggleExpand(ticketName)}
-                          >
-                            {isExpanded ? "Read Less ↑" : " Details ↓"}
-                          </button>
-                        </div>
-                      );
-                    })}
+                        );
+                      })}
                   </div>
                 </div>
 
