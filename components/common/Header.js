@@ -228,12 +228,10 @@ const Header = () => {
             </div>
 
             <a
-              href="https://forms.gle/GLbvrFiTyUjfmadF7"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/ticket-purchase?eventId=iaEHed2PE5Te0BmBwku3"
               className="button-primary"
             >
-              Apply for Membership
+              Buy Tickets
             </a>
           </nav>
         </nav>
