@@ -588,7 +588,7 @@ Minister for Corrections`,
     post: "CEO Intent",
     href: "/team/41",
   },
-  
+
   {
     id: 50,
     title: "Jillian Kilby",
@@ -596,8 +596,6 @@ Minister for Corrections`,
     post: "Managing Director, The Stable Group",
     href: "/team/42",
   },
-
-  
 ];
 
 export const moderatordata = [
@@ -1140,16 +1138,16 @@ Patrick's career in television began in 1998, at Southern Star Entertainment as 
   {
     id: "41",
     name: "Jenny Junkeer",
-    description: `Jenny Junkeer is dedicated to creating opportunities for others through her work and personal projects.\n
-  As a scaling consultant, she helps businesses grow strategically, maximizing profits while inspiring them to give back to their communities and employees. Her philosophy is rooted in the belief that by scaling companies to new heights, they can provide more opportunities to others than she could on her own.\n
-  Beyond her professional work, Jenny actively engages in projects that directly foster growth and opportunities, including working with corporates aiming to become great companies, as well as social enterprises, nonprofits, and government organizations.\n
-  She is deeply committed to making a meaningful impact and to being of service to those driven to make a difference through business.\n
-  Most importantly, Jenny is devoted to empowering her children to pursue their dreams, offering them the chance to chase their aspirations and realize their full potential.`,
+    description: `Jenny Junkeer, a Sri Lankan-born entrepreneur, overcame significant cultural and personal challenges from a young age. Migrating to Africa, New Zealand, and eventually settling in Australia, her diverse experiences shaped her resilience and adaptability. Self-reliant, she bought her first computer at 14, fueling her passion for learning and business. Starting as a tax and management consultant, Jenny quickly developed into a successful business owner, co-founder, and adjunct Associate Professor, holding multiple C-suite roles. \n
+    Her expertise in scaling businesses is widely recognized. With over a decade of hands-on experience, Jenny has helped companies identify growth obstacles, roadblocks, and bottlenecks. Her methodical approach, grounded in design thinking, process mapping, and cognitive frameworks, has allowed her to address universal challenges faced by business leaders. This has made her one of the most sought-after keynote speakers on the topic of scaling and business strategy.\n
+    In addition to her business achievements, Jenny is committed to philanthropy, helping global communities access essential resources. Through her non-profit ForByTo, she’s scaling not just businesses but also fostering personal and societal growth.\n
+    Beyond business, Jenny is passionate about social impact. Her philanthropic efforts, including founding the non-profit start-up ForByTo, focus on providing global communities with access to food, water, and shelter. Jenny believes that social duty is integral to her work, and through her initiatives, she is helping not only businesses but also individuals and communities thrive. Her commitment to resource-sharing and social change is as impactful as her business achievements
+`,
     image: "/speakers/JennyJunkeer.jpg",
     title: "CEO, Intent",
     link: "https://www.linkedin.com/in/jennyjunkeer?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
-  
+
   {
     id: "42",
     name: "Jillian Kilby",
