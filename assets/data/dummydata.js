@@ -204,6 +204,11 @@ export const brand = [
     cover: "../SVG/Logo21.png",
     link: "https://advisoryboardworld.com/events/89840",
   },
+  {
+    id: 22,
+    cover: "../SVG/Logo22.svg",
+    link: "https://advisoryboardworld.com/events/89840",
+  },
 ];
 export const brand2 = [
   {
