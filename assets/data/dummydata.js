@@ -201,7 +201,7 @@ export const brand = [
   },
   {
     id: 21,
-    cover: "../SVG/Logo21.png",
+    cover: "../SVG/Logo21.svg",
     link: "https://jmi.org.au/",
   },
   {
@@ -606,6 +606,13 @@ Minister for Corrections`,
     post: "Managing Director, The Stable Group",
     href: "/team/42",
   },
+  // {
+  //   id: 51,
+  //   title: "Veena Sahajwalla",
+  //   cover: "/speakers/Veena Sahajwalla.jpg",
+  //   post: "Founding Director - UNSW Sustainable Materials Research & Technology (SMaRT) Centre",
+  //   href: "/team/43",
+  // },
 ];
 
 export const moderatordata = [
@@ -1180,6 +1187,21 @@ The Y`,
     title: "Managing Director, The Stable Group",
     link: "https://www.linkedin.com/in/jennyjunkeer?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
+
+  //   {
+  //     id: "43",
+  //     name: "Veena Sahajwalla",
+  //     description: `
+  // Professor Veena Sahajwalla is an internationally recognised materials scientist, engineer, and inventor revolutionising recycling science. She is renowned for pioneering the high temperature transformation of waste in the production of a new generation of green materialsat the UNSW Sustainable Materials Research and Technology (SMaRT) Centre, where she is Founding Director. \n
+  // Professor Veena is the inventor of polymer injection technology, known as green steel, an eco-friendly process for using recycled tyres in steel production. In 2018, Veena launched the world's first e-waste MICROfactorie and in 2019 she launched her plastics and Green Ceramics MICROfactories, a recycling technology breakthrough. \n
+  // Professor Veena is the director of the ARC Industrial Transformation Research Hub for microrecycling, a leading national research centre that works in collaboration with industry to ensure new recycling science is translated into real world environmental and economic benefits. Professor Veena has also been appointed hub leader of the national NESP Sustainable Communities and WasteHub. \n
+  // In 2021, Professor Veena featured in the ABCs Australian Story and she was named the2022 NSW Australian of the Year in recognition of her work. Professor Veena was named the 2022 Australian Museum Eureka Prizes winner for the Celestino Eureka Prize for PromotingUnderstanding of Science and was also awarded the Australian Academy of Technology and Engineering(ATSE) Clunies Ross Innovation Award. \n
+  // In 2023, Professor Veena was awarded the Engineering Australia Chemical College Chemical Engineer Achievement Award and the Good Design 2023 Women in Design Award.`,
+  //     image: "/speakers/Veena Sahajwalla.jpg",
+  //     title:
+  //       "Founding Director - UNSW Sustainable Materials Research & Technology (SMaRT) Centre",
+  //     link: "",
+  //   },
 ];
 export const SuccessCarouselData = [
   {
