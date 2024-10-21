@@ -304,8 +304,16 @@ const Team = () => {
       </div>
 
       <Brand />
-      <div>
-        <div className="button-holder">
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          flexDirection: "column",
+          minHeight: "10vh",
+        }}
+      >
+        <div className="button-holder" style={{ textAlign: "center" }}>
           <button
             className="button button-primary"
             onClick={() => (window.location.href = "/patrons")}
@@ -315,6 +323,13 @@ const Team = () => {
           <button
             className="button button-primary"
             onClick={() => (window.location.href = "/speakers")}
+            style={{
+              margin: "10px",
+              padding: "15px 18px",
+              fontSize: "18px",
+              width: "100%",
+              maxWidth: "250px",
+            }}
           >
             Panelist and Speakers
           </button>

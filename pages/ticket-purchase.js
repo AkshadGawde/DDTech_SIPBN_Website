@@ -563,7 +563,9 @@ const TicketPurchase = () => {
                           type="text"
                           id="couponCode"
                           value={couponCode}
-                          onChange={(e) => setCouponCode(e.target.value)}
+                          onChange={(e) =>
+                            setCouponCode(e.target.value.toUpperCase())
+                          } // Automatically convert to uppercase
                           className="coupon-input"
                           placeholder="Coupon Code"
                         />
