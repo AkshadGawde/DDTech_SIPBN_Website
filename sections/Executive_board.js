@@ -121,7 +121,7 @@ const Executive_board = () => {
 
         <hr />
 
-        <div className="advisoryContainer">
+        {/* <div className="advisoryContainer">
           <div>
             <h2 className="advisoryTitle">
               Balvinder Ruby JP LREA, Memberships And Communication
@@ -147,9 +147,9 @@ const Executive_board = () => {
             className="advisoryImg"
             src="/executive/Balvinder Ruby JP LREA.png"
           />
-        </div>
+        </div> */}
 
-        <hr />
+        {/* <hr /> */}
 
         <div className="advisoryContainer">
           <div>
