@@ -22,10 +22,10 @@ function TicketPage() {
             style={{ background: "linear-gradient(135deg, #dcdcdc, #f5f5f5)" }}
           ></div>
           <h3>
-            Early Bird Price: <br /> (Save $240)
+            Regular Price: <br />
           </h3>
-          <h2>$959</h2>
-          <h4>Regular Price: $1,199</h4>
+          <h2>$1,199</h2>
+          {/* <h4>Regular Price: $1,199</h4> */}
           <CardDropDown
             content={{
               l1: "#CapTech2024 Summit on Tuesday 26 November 2024 at ICC Sydney",
@@ -46,10 +46,10 @@ function TicketPage() {
             style={{ background: "linear-gradient(135deg, #f9d423, #ff4e50)" }}
           ></div>
           <h3>
-            Early Bird Price: <br /> (Save $300)
+            Regular Price: <br />
           </h3>
-          <h2>$1,199</h2>
-          <h4>Regular Price: $1,499</h4>
+          <h2>$1,499</h2>
+          {/* <h4>Regular Price: $1,499</h4> */}
           <CardDropDown
             content={{
               l1: "Welcome Drinks at NSW Parliament House on Monday 25 November 2024",
@@ -70,10 +70,9 @@ function TicketPage() {
             className="customHr"
             style={{ background: "linear-gradient(135deg, #b9fbc0, #00d2ff)" }}
           ></div>
-          <br />
-          <br />
-          <br />
-          <br />
+          <h3>
+            Regular Price: <br />
+          </h3>
           <h2>$2,250</h2>
           <CardDropDown
             content={{
@@ -99,10 +98,10 @@ function TicketPage() {
             style={{ background: "linear-gradient(135deg, #d50032, #c51162)" }}
           ></div>
           <h3>
-            Early Bird Price: <br /> (Save $2,398)
+            Regular Price: <br />
           </h3>
-          <h2>$9,592</h2>
-          <h4>Regular Price: $11,990</h4>
+          <h2>$11,990</h2>
+          {/* <h4>Regular Price: $11,990</h4> */}
           <CardDropDown
             content={{
               l1: "#CapTech2024 Summit on Tuesday 26 November 2024 at ICC Sydney",
