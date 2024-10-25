@@ -19,7 +19,7 @@ const Banner = () => {
                 window.location.href = `/ticket-purchase?eventId=iaEHed2PE5Te0BmBwku3`;
               }}
             >
-              book now
+              Book now
             </button>
           </div>
         </div>

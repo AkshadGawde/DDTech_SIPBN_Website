@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import { db } from "../lib/firebase";
 import Script from "next/script";
+import Banner from "@/components/Banner";
 import {
   doc,
   getDoc,
@@ -442,6 +443,8 @@ const TicketPurchase = () => {
             <>
               <h2 className="event-title">{eventDetails.name}</h2>
               <p className="event-description">{eventDetails.description}</p>
+              <Banner />
+              <br />
 
               {/* Main layout container */}
               <div className="main-layout">
