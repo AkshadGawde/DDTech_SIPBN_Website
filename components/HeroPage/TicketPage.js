@@ -73,6 +73,7 @@ function TicketPage() {
           <h3>
             Regular Price: <br />
           </h3>
+          <br />
           <h2>$2,250</h2>
           <CardDropDown
             content={{

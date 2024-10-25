@@ -606,13 +606,20 @@ Minister for Corrections`,
     post: "Managing Director, The Stable Group",
     href: "/team/42",
   },
-  // {
-  //   id: 51,
-  //   title: "Veena Sahajwalla",
-  //   cover: "/speakers/Veena Sahajwalla.jpg",
-  //   post: "Founding Director - UNSW Sustainable Materials Research & Technology (SMaRT) Centre",
-  //   href: "/team/43",
-  // },
+  {
+    id: 51,
+    title: "Veena Sahajwalla",
+    cover: "/speakers/Veena Sahajwalla.jpg",
+    post: "Founding Director - UNSW Sustainable Materials Research & Technology (SMaRT) Centre",
+    href: "/team/43",
+  },
+  {
+    id: 52,
+    title: " Jacqueline Steel",
+    cover: "/speakers/Jacqueline Steel.png",
+    post: "CEO of RDA Moreton Bay and Sunshine Coast (RDAMBSC)",
+    href: "/team/44",
+  },
 ];
 
 export const moderatordata = [
@@ -1188,20 +1195,36 @@ The Y`,
     link: "https://www.linkedin.com/in/jennyjunkeer?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
 
-  //   {
-  //     id: "43",
-  //     name: "Veena Sahajwalla",
-  //     description: `
-  // Professor Veena Sahajwalla is an internationally recognised materials scientist, engineer, and inventor revolutionising recycling science. She is renowned for pioneering the high temperature transformation of waste in the production of a new generation of green materialsat the UNSW Sustainable Materials Research and Technology (SMaRT) Centre, where she is Founding Director. \n
-  // Professor Veena is the inventor of polymer injection technology, known as green steel, an eco-friendly process for using recycled tyres in steel production. In 2018, Veena launched the world's first e-waste MICROfactorie and in 2019 she launched her plastics and Green Ceramics MICROfactories, a recycling technology breakthrough. \n
-  // Professor Veena is the director of the ARC Industrial Transformation Research Hub for microrecycling, a leading national research centre that works in collaboration with industry to ensure new recycling science is translated into real world environmental and economic benefits. Professor Veena has also been appointed hub leader of the national NESP Sustainable Communities and WasteHub. \n
-  // In 2021, Professor Veena featured in the ABCs Australian Story and she was named the2022 NSW Australian of the Year in recognition of her work. Professor Veena was named the 2022 Australian Museum Eureka Prizes winner for the Celestino Eureka Prize for PromotingUnderstanding of Science and was also awarded the Australian Academy of Technology and Engineering(ATSE) Clunies Ross Innovation Award. \n
-  // In 2023, Professor Veena was awarded the Engineering Australia Chemical College Chemical Engineer Achievement Award and the Good Design 2023 Women in Design Award.`,
-  //     image: "/speakers/Veena Sahajwalla.jpg",
-  //     title:
-  //       "Founding Director - UNSW Sustainable Materials Research & Technology (SMaRT) Centre",
-  //     link: "",
-  //   },
+  {
+    id: "43",
+    name: "Veena Sahajwalla",
+    description: `
+  Professor Veena Sahajwalla is an internationally recognised materials scientist, engineer, and inventor revolutionising recycling science. She is renowned for pioneering the high temperature transformation of waste in the production of a new generation of green materialsat the UNSW Sustainable Materials Research and Technology (SMaRT) Centre, where she is Founding Director. \n
+  Professor Veena is the inventor of polymer injection technology, known as green steel, an eco-friendly process for using recycled tyres in steel production. In 2018, Veena launched the world's first e-waste MICROfactorie and in 2019 she launched her plastics and Green Ceramics MICROfactories, a recycling technology breakthrough. \n
+  Professor Veena is the director of the ARC Industrial Transformation Research Hub for microrecycling, a leading national research centre that works in collaboration with industry to ensure new recycling science is translated into real world environmental and economic benefits. Professor Veena has also been appointed hub leader of the national NESP Sustainable Communities and WasteHub. \n
+  In 2021, Professor Veena featured in the ABCs Australian Story and she was named the2022 NSW Australian of the Year in recognition of her work. Professor Veena was named the 2022 Australian Museum Eureka Prizes winner for the Celestino Eureka Prize for PromotingUnderstanding of Science and was also awarded the Australian Academy of Technology and Engineering(ATSE) Clunies Ross Innovation Award. \n
+  In 2023, Professor Veena was awarded the Engineering Australia Chemical College Chemical Engineer Achievement Award and the Good Design 2023 Women in Design Award.`,
+    image: "/speakers/Veena Sahajwalla.jpg",
+    title:
+      "Founding Director - UNSW Sustainable Materials Research & Technology (SMaRT) Centre",
+    link: "",
+  },
+
+  {
+    id: "44",
+    name: "Jacqueline Steel",
+    description: `
+  Jacqueline (Jacki) was appointed CEO of RDA Moreton Bay and Sunshine Coast (RDAMBSC) in May 2024, following the amalgamation of the two neighbouring RDA regions. \n
+Jacki’s career in the Queensland public service spans more than 20 years, during which she has worked across various economic portfolios including state development, regional economic development, tourism industry development, and innovation. \n
+ With an evidence-based approach and a strong track record of achieving meaningful economic and social outcomes in complex environments, Jacki has an established network of leaders in innovation, government, business, and community sectors within the Moreton Bay-Sunshine Coast-Noosa region and across Queensland.\n
+ Jacki excels in driving purpose-led, place-based, and collaborative initiatives that empower regions to unlock economic potential and enhance the impact and reach of their investments. Her focus has been on supporting collaborative efforts on regionally significant issues that require the combined resources and expertise of multiple parties.\n
+Her success lies in her ability to foster collaborative engagement, build trust, ensure mutual accountability, maintain a sense of progress, and enhance capacity building. Jacki is excited to lead RDAMBSC and work on initiatives that will shape the region for decades to come.
+
+`,
+    image: "/speakers/Jacqueline Steel.png",
+    title: "CEO - RDA Moreton Bay and Sunshine Coast (RDAMBSC",
+    link: "",
+  },
 ];
 export const SuccessCarouselData = [
   {
