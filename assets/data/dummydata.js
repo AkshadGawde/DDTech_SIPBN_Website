@@ -620,6 +620,13 @@ Minister for Corrections`,
     post: "CEO of RDA Moreton Bay and Sunshine Coast (RDAMBSC)",
     href: "/team/44",
   },
+  {
+    id: 53,
+    title: " Gavin Keeley",
+    cover: "/speakers/Gavin Keeley.png",
+    post: "Technologist and business leader",
+    href: "/team/45",
+  },
 ];
 
 export const moderatordata = [
@@ -1222,7 +1229,20 @@ Her success lies in her ability to foster collaborative engagement, build trust,
 
 `,
     image: "/speakers/Jacqueline Steel.png",
-    title: "CEO - RDA Moreton Bay and Sunshine Coast (RDAMBSC",
+    title: "CEO - RDA Moreton Bay and Sunshine Coast (RDAMBSC)",
+    link: "",
+  },
+  {
+    id: "45",
+    name: "Gavin Keeley",
+    description: `
+  Gavin Keeley is an experienced technologist and business leader with a career spanning nearly 40 years in international consultancy and executive corporate roles across a diverse range of industry sectors, working in Europe, North America, Asia and Australia. \n 
+  He has consistently supported the Sunshine Coast region having researched, then lobbied Federal, State, and Local Government for seven years, to establish an undersea fibre optic connection direct to the internet from the Sunshine Coast, with the network finally commissioned and operational in March 2020. \n
+  Gavin co-founded the Silicon Coast group in 2014, which has over 2,000 supporters, where he continues to mentor founders and support the growth of the Sunshine Coast Digital Economy,and has also served as The President of SunCoast Angels. \n
+  He is an Adjunct Associate Professor at The University of The Sunshine Coast, serving as a current member of the Planning and Resources Committee of the University Council. In 2023 he joined Flower Group as Venture Partnerships Director at Australia’s first venture capital backed Venture Studio
+`,
+    image: "/speakers/Gavin Keeley.png",
+    title: " Technologist and business leader",
     link: "",
   },
 ];
