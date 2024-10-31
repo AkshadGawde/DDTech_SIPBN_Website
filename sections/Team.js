@@ -154,7 +154,7 @@ const Team = () => {
               <h2>Secure your #CapTech2024 ticket!</h2>
               <br />
               <p> Buy tickets at 20% Discount with code SIPBN20. </p>
-              <p> Offer valid until October 31, 2024.</p>
+              {/* <p> Offer valid until October 31, 2024.</p> */}
               <br />
               <a
                 href={`/ticket-purchase?eventId=iaEHed2PE5Te0BmBwku3`}

@@ -9,8 +9,8 @@ function TicketPage() {
         <Title title="TICKET AVAILABILITY IS LIMITED " />
         <Title title="GET YOURS TODAY" />
         <hr style={{ width: "20%", border: 0, borderTop: "1px solid #ccc" }} />
-        <h2>OFFER : Valid Until 31st October 2024!</h2>
-        <h3>20% Discount valid until 31st October 2024</h3>
+        {/* <h2>OFFER : Valid Until 31st October 2024!</h2>
+        <h3>20% Discount valid until 31st October 2024</h3> */}
       </div>
 
       <div className="ticketContent">
