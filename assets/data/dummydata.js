@@ -317,6 +317,13 @@ export const patronsdata = [
 
 export const memberdata = [
   {
+    id: 54,
+    title: "Daniel Mookhey",
+    cover: "/speakers/Daniel Mookhey.png",
+    post: "TREASURER OF NSW",
+    href: "/team/46",
+  },
+  {
     id: 1,
     title: "The Hon. Anoulack Chanthivong, MP",
     cover: "/speakers/Anoulack.jpg",
@@ -603,7 +610,7 @@ Minister for Corrections`,
     id: 50,
     title: "Jillian Kilby",
     cover: "/speakers/Jillian Kilby.jpg",
-    post: "Managing Director, The Stable Group",
+    post: "Director, James Martin Institute for Public Policy",
     href: "/team/42",
   },
   {
@@ -1198,7 +1205,7 @@ This year, Jillian develops her newest venture, Good Foundations, with the acqui
 restoration of a fifth heritage building in Wagga Wagga. She was the 2013 NSW/ACT Rural Woman of
 The Y`,
     image: "/speakers/Jillian Kilby.jpg",
-    title: "Managing Director, The Stable Group",
+    title: "Director, James Martin Institute for Public Policy",
     link: "https://www.linkedin.com/in/jennyjunkeer?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
 
@@ -1243,6 +1250,21 @@ Her success lies in her ability to foster collaborative engagement, build trust,
 `,
     image: "/speakers/Gavin Keeley.png",
     title: " Technologist and business leader",
+    link: "",
+  },
+
+  {
+    id: "46",
+    name: "Daniel Mookhey",
+    description: `
+  Daniel Mookhey was elected to the Parliament of NSW on 6 May 2015 as a Member of the Legislative Council.\n 
+  The son of Indian migrants, Daniel was the first MP in an Australian Parliament and the first Treasurer to be sworn in on the Hindu religious text, the Bhagavad Gita. \n
+  Daniel is a passionate advocate for the people of NSW.\n
+  As Treasurer since March 2023, Daniel has delivered two budgets, with a focus on helping the people of NSW with the cost of living, fixing essential services, addressing the housing crisis and driving reform to get the state budget back to a sustainable position. \n
+  He has done this at a challenging time for the people of NSW with high inflation and interest rates affecting both family budgets and the state budget.
+`,
+    image: "/speakers/Daniel Mookhey.png",
+    title: " TREASURER OF NSW",
     link: "",
   },
 ];
