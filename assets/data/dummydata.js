@@ -316,7 +316,6 @@ export const patronsdata = [
 ];
 
 export const memberdata = [
- 
   {
     id: 54,
     title: "HON. DANIEL MOOKHEY MLC",
@@ -324,34 +323,7 @@ export const memberdata = [
     post: "TREASURER OF NSW",
     href: "/team/46",
   },
-  {
-    id: 55,
-    title: "Jacob Elkhishin",
-    cover: "/speakers/Jacob Elkhishin.png",
-    post: "Partner in RSM Australia",
-    href: "/team/47",
-  },
-  {
-    id: 56,
-    title: "Hon John Ajaka",
-    cover: "/speakers/Hon John Ajaka.jpg",
-    post: "Partner in RSM Australia",
-    href: "/team/48",
-  },
-  {
-    id: 57,
-    title: "Anthony Smith",
-    cover: "/speakers/Anthony Smith.png",
-    post: "RSM Personnel",
-    href: "/team/49",
-  },
-  {
-    id: 58,
-    title: "Scott Farlow ",
-    cover: "/speakers/Scott Farlow.jpg",
-    post: "Partner in RSM Australia",
-    href: "/team/50",
-  },
+
   {
     id: 1,
     title: "The Hon. Anoulack Chanthivong, MP",
@@ -641,7 +613,7 @@ Minister for Corrections`,
     cover: "/speakers/Jillian Kilby.jpg",
     post: "Director, James Martin Institute for Public Policy",
     href: "/team/42",
-  },  
+  },
   {
     id: 51,
     title: "Veena Sahajwalla",
@@ -662,6 +634,34 @@ Minister for Corrections`,
     cover: "/speakers/Gavin Keeley.png",
     post: "Technologist and business leader",
     href: "/team/45",
+  },
+  {
+    id: 55,
+    title: "Jacob Elkhishin",
+    cover: "/speakers/Jacob Elkhishin.png",
+    post: "Partner in RSM Australia",
+    href: "/team/47",
+  },
+  {
+    id: 56,
+    title: "Hon John Ajaka",
+    cover: "/speakers/Hon John Ajaka.jpg",
+    post: "Partner in RSM Australia",
+    href: "/team/48",
+  },
+  {
+    id: 57,
+    title: "Anthony Smith",
+    cover: "/speakers/Anthony Smith.png",
+    post: "RSM Personnel",
+    href: "/team/49",
+  },
+  {
+    id: 58,
+    title: "Scott Farlow ",
+    cover: "/speakers/Scott Farlow.jpg",
+    post: "Partner in RSM Australia",
+    href: "/team/50",
   },
 ];
 
@@ -1335,8 +1335,7 @@ Her success lies in her ability to foster collaborative engagement, build trust,
     image: "/speakers/Scott Farlow.png",
     title: "Public Policy Specialist, NSW",
     link: "",
-  }
-  
+  },
 ];
 export const SuccessCarouselData = [
   {
