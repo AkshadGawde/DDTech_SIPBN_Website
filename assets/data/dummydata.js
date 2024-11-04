@@ -1332,7 +1332,7 @@ Her success lies in her ability to foster collaborative engagement, build trust,
     description: `
       Scott Farlow has experience in public policy and administration, contributing to initiatives in government and the private sector. His work focuses on regulatory reform and building sustainable communities in NSW.
     `,
-    image: "/speakers/Scott Farlow.png",
+    image: "/speakers/Scott Farlow.jpg",
     title: "Public Policy Specialist, NSW",
     link: "",
   },
