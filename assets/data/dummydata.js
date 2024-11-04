@@ -316,12 +316,41 @@ export const patronsdata = [
 ];
 
 export const memberdata = [
+ 
   {
     id: 54,
-    title: "Daniel Mookhey",
+    title: "HON. DANIEL MOOKHEY MLC",
     cover: "/speakers/Daniel Mookhey.png",
     post: "TREASURER OF NSW",
     href: "/team/46",
+  },
+  {
+    id: 55,
+    title: "Jacob Elkhishin",
+    cover: "/speakers/Jacob Elkhishin.png",
+    post: "Partner in RSM Australia",
+    href: "/team/47",
+  },
+  {
+    id: 56,
+    title: "Hon John Ajaka",
+    cover: "/speakers/Hon John Ajaka.jpg",
+    post: "Partner in RSM Australia",
+    href: "/team/48",
+  },
+  {
+    id: 57,
+    title: "Anthony Smith",
+    cover: "/speakers/Anthony Smith.png",
+    post: "RSM Personnel",
+    href: "/team/49",
+  },
+  {
+    id: 58,
+    title: "Scott Farlow ",
+    cover: "/speakers/Scott Farlow.jpg",
+    post: "Partner in RSM Australia",
+    href: "/team/50",
   },
   {
     id: 1,
@@ -612,7 +641,7 @@ Minister for Corrections`,
     cover: "/speakers/Jillian Kilby.jpg",
     post: "Director, James Martin Institute for Public Policy",
     href: "/team/42",
-  },
+  },  
   {
     id: 51,
     title: "Veena Sahajwalla",
@@ -1252,21 +1281,62 @@ Her success lies in her ability to foster collaborative engagement, build trust,
     title: " Technologist and business leader",
     link: "",
   },
-
   {
     id: "46",
     name: "Daniel Mookhey",
     description: `
-  Daniel Mookhey was elected to the Parliament of NSW on 6 May 2015 as a Member of the Legislative Council.\n 
-  The son of Indian migrants, Daniel was the first MP in an Australian Parliament and the first Treasurer to be sworn in on the Hindu religious text, the Bhagavad Gita. \n
-  Daniel is a passionate advocate for the people of NSW.\n
-  As Treasurer since March 2023, Daniel has delivered two budgets, with a focus on helping the people of NSW with the cost of living, fixing essential services, addressing the housing crisis and driving reform to get the state budget back to a sustainable position. \n
-  He has done this at a challenging time for the people of NSW with high inflation and interest rates affecting both family budgets and the state budget.
-`,
+      Daniel Mookhey was elected to the Parliament of NSW on 6 May 2015 as a Member of the Legislative Council.\n
+      The son of Indian migrants, Daniel was the first MP in an Australian Parliament and the first Treasurer to be sworn in on the Hindu religious text, the Bhagavad Gita.\n
+      As Treasurer since March 2023, he has delivered two budgets, focusing on cost of living relief, essential service improvements, addressing the housing crisis, and achieving a sustainable budget.\n
+      Daniel remains a passionate advocate for the people of NSW, addressing challenges posed by high inflation and interest rates impacting family and state budgets alike.
+    `,
     image: "/speakers/Daniel Mookhey.png",
-    title: " TREASURER OF NSW",
+    title: "Treasurer of NSW",
     link: "",
   },
+  {
+    id: "47",
+    name: "Jacob Elkhishin",
+    description: `
+      Jacob Elkhishin is a Partner at RSM Australia, serving as the National Lead for ESG and Climate Services and the Global Chair. Specializing in strategic ESG and Risk solutions, Jacob is a Registered Greenhouse and Energy Auditor.\n
+      His work includes climate and sustainability reporting, strategy development, risk management, sustainable finance, and assurance, with expertise in frameworks such as the Global Reporting Initiative, IFRS S1 and S2, and the EU Corporate Sustainability Reporting Directive.
+    `,
+    image: "/speakers/Jacob Elkhishin.png",
+    title: "Partner, National & Global Lead - ESG, RSM Australia",
+    link: "",
+  },
+  {
+    id: "48",
+    name: "Hon John Ajaka",
+    description: `
+      The Hon. John Ajaka began his career in law in 1982 and joined the NSW Parliament in 2007. Known for his advocacy for disability rights, he served as Minister for Disability Services, Ageing, Volunteering, and Multiculturalism from 2013 to 2017.\n
+      During his tenure, John introduced the Disability Inclusion Act and led the rollout of the National Disability Insurance Scheme (NDIS) in NSW. He served as President of the NSW Legislative Council from 2017 to 2021 and now leads initiatives in health and disability advocacy.
+    `,
+    image: "/speakers/Hon John Ajaka.png",
+    title: "Former Minister for Disability Services, NSW",
+    link: "",
+  },
+  {
+    id: "49",
+    name: "Anthony Smith",
+    description: `
+      Anthony is a Partner in Business Advisory and Managing Partner of the Sydney Office at RSM. With over 15 years in the accounting profession, he also brings experience from commercial roles, including as CFO for a wine company and a retail fashion chain.
+    `,
+    image: "/speakers/Anthony Smith.png",
+    title: "Partner, Business Advisory, RSM Australia",
+    link: "",
+  },
+  {
+    id: "50",
+    name: "Scott Farlow",
+    description: `
+      Scott Farlow has experience in public policy and administration, contributing to initiatives in government and the private sector. His work focuses on regulatory reform and building sustainable communities in NSW.
+    `,
+    image: "/speakers/Scott Farlow.png",
+    title: "Public Policy Specialist, NSW",
+    link: "",
+  }
+  
 ];
 export const SuccessCarouselData = [
   {
