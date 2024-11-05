@@ -335,7 +335,7 @@ export const memberdata = [
     id: 56,
     title: "Hon John Ajaka",
     cover: "/speakers/Hon John Ajaka.jpg",
-    post: "Partner in RSM Australia",
+    post: "Former Minister for Disability Services, NSW",
     href: "/team/48",
   },
   {
@@ -349,7 +349,7 @@ export const memberdata = [
     id: 58,
     title: "Scott Farlow ",
     cover: "/speakers/Scott Farlow.jpg",
-    post: "Partner in RSM Australia",
+    post: "Public Policy Specialist, NSW",
     href: "/team/50",
   },
   {
