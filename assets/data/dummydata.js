@@ -286,7 +286,7 @@ export const brand2 = [
 export const patronsdata = [
   {
     id: 2,
-    title: "Roderick H. McGeoch AO, LL",
+    title: "Roderick H. McGeoch AO, LLB",
     cover: "/patrons/Roderick H. McGeoch AO.png",
     post: "Chairman and Director of a wide range of major corporations",
     href: "/team/2",
