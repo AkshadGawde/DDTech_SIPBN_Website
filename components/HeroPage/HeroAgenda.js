@@ -38,34 +38,149 @@ function HeroAgenda() {
       <div className="agendaBox2">
         <div className="agendaTable">
           <div className="dateHolder">
-            <h2 className="dateMonth">26th November, 2024 </h2>
+            <h2 className="dateMonth">26th November, 2024</h2>
           </div>
         </div>
         <div className="agendaTable">
           <table>
             <tbody>
+              {/* Agenda items for 26th November */}
               <tr>
                 <td>
-                  <h3 className="dateMonth">9:00am - 5:00pm</h3>
+                  <h3 className="dateMonth">8:00 - 8:15am</h3>
                 </td>
                 <td>
-                  <h2>Global Summit - ICC Sydney</h2>
-                  <p className="agendaPara">
-                    An all-day summit featuring expert speakers from around the
-                    globe on various business topics.
-                  </p>
+                  <h3>Welcome with opening remarks</h3>
                 </td>
               </tr>
               <tr>
                 <td>
-                  <h3 className="dateMonth"> 5:00pm - 7:30pm</h3>
+                  <h3 className="dateMonth">8:15am - 8:45am</h3>
                 </td>
                 <td>
-                  <h2>Global Summit networking drinks</h2>
-                  <p className="agendaPara">
-                    End the day with a relaxing networking session and build
-                    valuable connections.
-                  </p>
+                  <h3>Keynote</h3>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <h3 className="dateMonth">8:50am to 9:25am</h3>
+                </td>
+                <td>
+                  <h3>
+                    The State of the Economy and the Emerging Opportunities
+                  </h3>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <h3 className="dateMonth">9:25am - 10:00am</h3>
+                </td>
+                <td>
+                  <h3>What is happening in the Capital Markets?</h3>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <h3 className="dateMonth">10:00am - 10:30am</h3>
+                </td>
+                <td>
+                  <h3>Morning tea</h3>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <h3 className="dateMonth">10:30am - 11:05am</h3>
+                </td>
+                <td>
+                  <h3>
+                    The Disruption and the Investment Opportunities in the
+                    Healthcare Sector
+                  </h3>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <h3 className="dateMonth">11:10am - 11:45am</h3>
+                </td>
+                <td>
+                  <h3>
+                    Emerging trends and Opportunities in the Education Sector
+                  </h3>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <h3 className="dateMonth">11:50am - 12:30pm</h3>
+                </td>
+                <td>
+                  <h3>State of play in the Real Estate Sector</h3>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <h3 className="dateMonth">12:30pm - 1:30pm</h3>
+                </td>
+                <td>
+                  <h3>Lunch and Networking break</h3>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <h3 className="dateMonth">1:30pm - 2:05pm</h3>
+                </td>
+                <td>
+                  <h3>
+                    Business Opportunities and Challenges in the Renewable
+                    Energy Space
+                  </h3>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <h3 className="dateMonth">2:10pm - 2:45pm</h3>
+                </td>
+                <td>
+                  <h3>Economic benefits of Generative AI</h3>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <h3 className="dateMonth">2:50pm - 3:25pm</h3>
+                </td>
+                <td>
+                  <h3>The Business of Sport and Entertainment</h3>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <h3 className="dateMonth">3:30pm - 4:00pm</h3>
+                </td>
+                <td>
+                  <h3>Afternoon Tea and Networking break</h3>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <h3 className="dateMonth">4:00pm</h3>
+                </td>
+                <td>
+                  <h3>Global Business Pitching Session</h3>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <h3 className="dateMonth">5:00pm</h3>
+                </td>
+                <td>
+                  <h3>Closing remarks</h3>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <h3 className="dateMonth">5:00pm</h3>
+                </td>
+                <td>
+                  <h3>Post event drinks</h3>
                 </td>
               </tr>
             </tbody>

@@ -316,7 +316,6 @@ export const patronsdata = [
 ];
 
 export const memberdata = [
- 
   {
     id: 54,
     title: "HON. DANIEL MOOKHEY MLC",
@@ -641,7 +640,7 @@ Minister for Corrections`,
     cover: "/speakers/Jillian Kilby.jpg",
     post: "Director, James Martin Institute for Public Policy",
     href: "/team/42",
-  },  
+  },
   {
     id: 51,
     title: "Veena Sahajwalla",
@@ -662,6 +661,34 @@ Minister for Corrections`,
     cover: "/speakers/Gavin Keeley.png",
     post: "Technologist and business leader",
     href: "/team/45",
+  },
+  {
+    id: 55,
+    title: "Jacob Elkhishin",
+    cover: "/speakers/Jacob Elkhishin.png",
+    post: "Partner in RSM Australia",
+    href: "/team/47",
+  },
+  {
+    id: 56,
+    title: "Hon John Ajaka",
+    cover: "/speakers/Hon John Ajaka.jpg",
+    post: "Partner in RSM Australia",
+    href: "/team/48",
+  },
+  {
+    id: 57,
+    title: "Anthony Smith",
+    cover: "/speakers/Anthony Smith.png",
+    post: "RSM Personnel",
+    href: "/team/49",
+  },
+  {
+    id: 58,
+    title: "Scott Farlow ",
+    cover: "/speakers/Scott Farlow.jpg",
+    post: "Partner in RSM Australia",
+    href: "/team/50",
   },
 ];
 
@@ -1332,11 +1359,10 @@ Her success lies in her ability to foster collaborative engagement, build trust,
     description: `
       Scott Farlow has experience in public policy and administration, contributing to initiatives in government and the private sector. His work focuses on regulatory reform and building sustainable communities in NSW.
     `,
-    image: "/speakers/Scott Farlow.png",
+    image: "/speakers/Scott Farlow.jpg",
     title: "Public Policy Specialist, NSW",
     link: "",
-  }
-  
+  },
 ];
 export const SuccessCarouselData = [
   {
