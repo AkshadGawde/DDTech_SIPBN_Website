@@ -323,7 +323,34 @@ export const memberdata = [
     post: "TREASURER OF NSW",
     href: "/team/46",
   },
-
+  {
+    id: 55,
+    title: "Jacob Elkhishin",
+    cover: "/speakers/Jacob Elkhishin.png",
+    post: "Partner in RSM Australia",
+    href: "/team/47",
+  },
+  {
+    id: 56,
+    title: "Hon John Ajaka",
+    cover: "/speakers/Hon John Ajaka.jpg",
+    post: "Former Minister for Disability Services, NSW",
+    href: "/team/48",
+  },
+  {
+    id: 57,
+    title: "Anthony Smith",
+    cover: "/speakers/Anthony Smith.png",
+    post: "RSM Personnel",
+    href: "/team/49",
+  },
+  {
+    id: 58,
+    title: "Scott Farlow ",
+    cover: "/speakers/Scott Farlow.jpg",
+    post: "Public Policy Specialist, NSW",
+    href: "/team/50",
+  },
   {
     id: 1,
     title: "The Hon. Anoulack Chanthivong, MP",
