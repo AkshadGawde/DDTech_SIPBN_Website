@@ -336,7 +336,7 @@ Minister for Corrections`,
     id: 1,
     title: "The Hon Victor Dominello",
     cover: "/speakers/The Hon Victor Dominello.png",
-    post: "Former NSW Government Minister",
+    post: "Digital and Innovation Leader",
     href: "/team/1",
   },
   {
@@ -652,12 +652,12 @@ Minister for Corrections`,
     id: 57,
     title: "Anthony Smith",
     cover: "/speakers/Anthony Smith.png",
-    post: "RSM Personnel",
+    post: "Managing Partner at RSM",
     href: "/team/49",
   },
   {
     id: 58,
-    title: "Scott Farlow ",
+    title: "The Hon Scott Farlow ",
     cover: "/speakers/Scott Farlow.jpg",
     post: "Public Policy Specialist, NSW",
     href: "/team/50",
@@ -711,7 +711,7 @@ Since retiring from politics in 2023, Victor has been appointed to Accenture’s
 Victor is also the inaugural Chair of the Commonwealth Government’s Independent Advisory Panel for MyGov and Services Australia. In addition, Victor is a Professor at UNSW and Director of the Trustworthy Digital Society Hub, a joint initiative of UNSW and UTS.\n
 Victor is a board member of the Tech Council of Australia and Adviser to the Brain and Mind Institute based at the University of Sydney. In 2023 Victor launched ServiceGen, a firm that provides advice to governments and complex organisations with a mission of profoundly reimagining services for the digital age.`,
     image: "/speakers/The Hon Victor Dominello.png",
-    title: "Former NSW Government Minister",
+    title: "Digital and Innovation Leader",
     link: "https://www.linkedin.com/in/victordominello/",
   },
   {
@@ -1322,15 +1322,18 @@ Her success lies in her ability to foster collaborative engagement, build trust,
       Anthony is a Partner in Business Advisory and Managing Partner of the Sydney Office at RSM. With over 15 years in the accounting profession, he also brings experience from commercial roles, including as CFO for a wine company and a retail fashion chain.
     `,
     image: "/speakers/Anthony Smith.png",
-    title: "Partner, Business Advisory, RSM Australia",
+    title: "Managing Partner, Business Advisory, RSM Australia",
     link: "",
   },
   {
     id: "50",
-    name: "Scott Farlow",
+    name: "The Hon Scott Farlow",
     description: `
-      Scott Farlow has experience in public policy and administration, contributing to initiatives in government and the private sector. His work focuses on regulatory reform and building sustainable communities in NSW.
-    `,
+      Scott Farlow MLC is the Shadow Minister for Planning and Public Spaces, Housing, Cities and the Hunter, and has served in the NSW Legislative Council since 2015. Scott is focused on developing policies to ensure a significant uplift in housing supply in NSW to alleviate the housing crisis whilst working with local communities to build new housing connected to vital supporting infrastructure. \n
+Growing up in Sydney’s Inner West, Scott was the first member of his family to study at university, and prior to entering Parliament served as both Mayor and Councillor on Strathfield Municipal Council. \n
+Professionally, Scott has worked as an analyst and strategic advisor for large firms, State and Federal Parliamentarians. Scott is married to Penny and the couple have two children, Christian and Colette. \n 
+Prior to entering Parliament, Scott served as both Mayor and as a Councillor on Strathfield Municipal Council, and has previously worked as an analyst and strategic advisor for large firms, State and Federal Parliamentarians. 
+`,
     image: "/speakers/Scott Farlow.jpg",
     title: "Public Policy Specialist, NSW",
     link: "",
@@ -1398,7 +1401,7 @@ export const speakers2023 = [
     id: 5,
     name: "The Hon Victor Dominello",
     image: "/Speakers2023/The Hon Victor Dominello.png",
-    title: "Former NSW Government Minister",
+    title: "Digital and Innovation Leader",
   },
   {
     id: 9,
