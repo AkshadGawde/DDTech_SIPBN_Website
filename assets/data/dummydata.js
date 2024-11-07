@@ -657,9 +657,9 @@ Minister for Corrections`,
   },
   {
     id: 58,
-    title: "The Hon Scott Farlow ",
+    title: "The Hon Scott Farlow, MLC ",
     cover: "/speakers/Scott Farlow.jpg",
-    post: "Public Policy Specialist, NSW",
+    post: "Shadow Minister for Planning and Public Spaces, Housing, Cities and the Hunter",
     href: "/team/50",
   },
 ];
@@ -1327,7 +1327,7 @@ Her success lies in her ability to foster collaborative engagement, build trust,
   },
   {
     id: "50",
-    name: "The Hon Scott Farlow",
+    name: "The Hon Scott Farlow, MLC",
     description: `
       Scott Farlow MLC is the Shadow Minister for Planning and Public Spaces, Housing, Cities and the Hunter, and has served in the NSW Legislative Council since 2015. Scott is focused on developing policies to ensure a significant uplift in housing supply in NSW to alleviate the housing crisis whilst working with local communities to build new housing connected to vital supporting infrastructure. \n
 Growing up in Sydney’s Inner West, Scott was the first member of his family to study at university, and prior to entering Parliament served as both Mayor and Councillor on Strathfield Municipal Council. \n
@@ -1335,7 +1335,8 @@ Professionally, Scott has worked as an analyst and strategic advisor for large f
 Prior to entering Parliament, Scott served as both Mayor and as a Councillor on Strathfield Municipal Council, and has previously worked as an analyst and strategic advisor for large firms, State and Federal Parliamentarians. 
 `,
     image: "/speakers/Scott Farlow.jpg",
-    title: "Public Policy Specialist, NSW",
+    title:
+      "Shadow Minister for Planning and Public Spaces, Housing, Cities and the Hunter",
     link: "",
   },
 ];
