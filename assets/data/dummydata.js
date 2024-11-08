@@ -692,10 +692,16 @@ export const membersdata = [
   {
     id: "01",
     name: "The Hon. Anoulack Chanthivong, MP",
-    description: `Victor is a seasoned government leader, having served as a Minister in NSW for 12 years, and is best known for his role as Minister for Customer Service and Digital Government. He is considered a pioneer of digital government in Australia, and his achievements have been admired, studied and modelled by other governments around the world.\n
-Since retiring from politics in 2023, Victor has been appointed to Accenture’s Global Luminaries Program to champion the cause of digital government around the world. Victor is the inaugural Chair of the Commonwealth Government’s Digital Identity Expert Panel.\n
-Victor is also the inaugural Chair of the Commonwealth Government’s Independent Advisory Panel for MyGov and Services Australia. In addition, Victor is a Professor at UNSW and Director of the Trustworthy Digital Society Hub, a joint initiative of UNSW and UTS.\n
-Victor is a board member of the Tech Council of Australia and Adviser to the Brain and Mind Institute based at the University of Sydney. In 2023 Victor launched ServiceGen, a firm that provides advice to governments and complex organisations with a mission of profoundly reimagining services for the digital age.`,
+    description: `After moving to Australia from Laos with his parents and brothers when he was just six,
+Anoulack attended Robert Townson Primary and Robert Townson High School in Raby. On the weekends and after school, Anoulack helped out at his family’s small grocery store where he learnt the value of hard work and the challenges of small business. \n
+After graduation, Anoulack completed a Bachelor of Commerce at the University of Sydney and later undertook postgraduate studies in economics and public administration at the University of Sydney and the London School of Economics. \n 
+Before entering Parliament, Anoulack worked as an economist for 13 years and served as a
+councillor and later as mayor on Campbelltown City Council. After his election as Member for Macquarie Fields in 2015, he served as Shadow Minister for Finance and Shadow Minister for Industry and Trade between 2021 and 2022. \n
+Following the election of the Minns Labor Government in March 2023, Anoulack was appointed
+Minister for Better Regulation and Fair Trading, Minister for Industry and Trade, Minister for
+Innovation, Science and Technology, Minister for Building and Minister for Corrections.
+Anoulack and his wife Anna live in South-West Sydney with their two children Audrey and
+Christopher.`,
     image: "/speakers/Anoulack.jpg",
     title: `Minister for Better Regulation and Fair Trading, Minister for Industry and Trade,
 Minister for Innovation, Science and Technology, Minister for Building,
