@@ -424,7 +424,7 @@ const TicketPurchase = () => {
   return (
     <Elements stripe={stripePromise}>
       <Script
-        src="https://www.googletagmanager.com/gtag/js?id=G-93NS7GQKBQ"
+        src="https://www.googletagmanager.com/gtag/js?id=AW-16514680195"
         strategy="afterInteractive"
       />
       <Script id="google-analytics" strategy="afterInteractive">
@@ -432,7 +432,7 @@ const TicketPurchase = () => {
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-          gtag('config', 'G-93NS7GQKBQ', {
+          gtag('config', 'AW-16514680195', {
             page_path: window.location.pathname,
           });
         `}
