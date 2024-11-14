@@ -687,7 +687,7 @@ Minister for Corrections`,
     id: 61,
     title: "John Knox",
     cover: "/speakers/John Knox.png",
-    post: "Chairman Cricket NSW and Kerrie Mather CEO Venues NSW and SCG",
+    post: "Chairman Cricket NSW",
     href: "/team/54",
   },
   {
@@ -1430,7 +1430,7 @@ Prior to entering Parliament, Scott served as both Mayor and as a Councillor on 
       Since 2018, John has been Chairman of Cricket NSW - the body responsible for running Australia’s largest sport in Australia’s most populous state. As Chairman of Cricket NSW John was critical in forcing cultural change at Cricket Australia following a period of difficult events. John’s ability to rapidly affect macro change is significantly helped by his extensive relationships across business, sport and politics.
     `,
     image: "/speakers/John Knox.png",
-    title: "Chairman Cricket NSW and Kerrie Mather CEO Venues NSW and SCG",
+    title: "Chairman Cricket NSW ",
     link: "",
   },
   {
