@@ -10,7 +10,7 @@ const Executive_board = () => {
         <br />
         <Title title={"Committees"} />
         <br />
-        <TitleSm title={"Health and wellBeing"} />
+        <TitleSm title={"Health and WellBeing"} />
         <div className="advisoryContainer">
           <div>
             <h2 className="advisoryTitle">Dean Kilby</h2>

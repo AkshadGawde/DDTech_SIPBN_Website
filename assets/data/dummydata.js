@@ -662,6 +662,41 @@ Minister for Corrections`,
     post: "Shadow Minister for Planning and Public Spaces, Housing, Cities and the Hunter",
     href: "/team/50",
   },
+  {
+    id: 59,
+    title: "Dean Kilby",
+    cover: "/committees/Dean Kilby.png",
+    post: "Health and WellBeing",
+    href: "/team/51",
+  },
+  {
+    id: 59,
+    title: "Jessica Olivier",
+    cover: "/speakers/Jessica Olivier.png",
+    post: "National Executive Partner, RSM",
+    href: "/team/52",
+  },
+  {
+    id: 60,
+    title: "Jinesh Shah",
+    cover: "/speakers/Jinesh Shah.png",
+    post: "PARTNER – ERNST & YOUNG LLP, INDIA",
+    href: "/team/53",
+  },
+  {
+    id: 61,
+    title: "John Knox",
+    cover: "/speakers/John Knox.png",
+    post: "Chairman Cricket NSW and Kerrie Mather CEO Venues NSW and SCG",
+    href: "/team/54",
+  },
+  {
+    id: 62,
+    title: "Kerrie Mather",
+    cover: "/speakers/Kerrie Mather.png",
+    post: "Chief Executive Officer at Venues NSW and SCG",
+    href: "/team/55",
+  },
 ];
 
 export const moderatordata = [
@@ -1345,7 +1380,82 @@ Prior to entering Parliament, Scott served as both Mayor and as a Councillor on 
       "Shadow Minister for Planning and Public Spaces, Housing, Cities and the Hunter",
     link: "",
   },
+  {
+    id: "51",
+    name: "Dr. Dean Kilby",
+    description: `
+      Educated in biochemistry and microbiology, Dean graduated with first class honours in biotechnology and undertook subsequent post-graduate training in molecular medicine. His scientific and clinical experience has since spanned the pharmaceutical industry, medical communication, and scientific consulting from metabolic disease to regenerative medicine – both in Australia and internationally. \n
+      Further to this, Dean has extensive experience in transformational performance coaching and has been a leading trainer across the ANZ region for almost 15 years. He founded Simplr Health with a commitment to contribute the possibility of being well to big people with big lives. \n
+`,
+    image: "/committees/Dean Kilby.png",
+    title: "Health and WellBeing",
+    link: "",
+  },
+  {
+    id: "52",
+    name: "Jessica Olivier",
+    description: `
+      Jess leads the National R&D practice for RSM Australia and New Zealand, as well as being a member of RSM Australia’s Executive. She also sits on RSM’s Global Incentives Group, covering locations including the US, UK, New Zealand, Canada and Singapore. \n
+      Jess has a Bachelor of Science and holds membership with the Institute of Chartered Accounts in both the UK and Australia. In her role as a senior R&D Partner, Jess has significant exposure to technological and manufacturing advancements, particularly as they have impacted the Healthcare sector.
+`,
+    image: "/speakers/Jessica Olivier.png",
+    title: "National Executive Partner, RSM",
+    link: "",
+  },
+  {
+    id: "53",
+    name: "Jinesh Shah",
+    description: `
+      Jinesh has over 25 years of experience in helping clients navigate complex M&As Diversified sector experience: financial services, technology, infrastructure, minerals and mines, Media, private equity, etc. Advised clients, both on buy-side as well as sell-side in evaluating the risks and opportunities of their intended transactions.\n
+      Led a number of high profile and complex transactions and thus has a deep understanding and practical experience of dealing with issues that arise on transactions from Indian tax & regulatory context	EDUCATION Commerce Graduate (1997) Bachelor of Commerce from University of Pune Chartered Accountant (1999), Institute of Chartered Accountants of India.\n
+      SKILLS AND EXPERTISE : \n
+      •	Complex transaction advisory (tax) services – both on buy-side (acquisition) as well as sell-side (divestments).
+      •	Cross-border transactions and investments.
+      •	Corporate restructuring and internal business reorganization by way of merger, demerger, balance sheet right sizing, etc.
+`,
+    image: "/speakers/Jinesh Shah.png",
+    title: "PARTNER – ERNST & YOUNG LLP, INDIA",
+    link: "",
+  },
+  {
+    id: "54",
+    name: "John Knox",
+    description: `
+      John Knox is one of the most senior and trusted leaders in Financial Services in Australia.\n
+      John is Head of Ares, Australia and New Zealand, with the mandate of driving Ares’ business expansion opportunities in the two countries. Ares has approximately US$350 billion of assets under management across North America, Europe and Asia, offering complementary, integrated investment groups that invest across Credit, Private Equity and Real Estate.\n 
+      His twenty five year career at Credit Suisse in both New York and Australia included over four years as CEO of Credit Suisse Australia. As CEO, John managed a diverse range of complex businesses and teams in a difficult and highly competitive external environment. The role included management of Investment Banking, Private Banking, Equities, Asset Finance, Fixed Income, Debt Financing and Shared Services.\n
+      John’s career includes extensive work in people leadership, originating and executing landmark transactions across multiple industries, and building nascent businesses into high return on capital / high revenue generators. His expertise in creating successful high-performance workplace cultures, building new businesses, and eliminating cross business silos led the Australian business to significant profit growth.\n  
+      John has a long history of originating and executing complex transactions across a range of industries. He has been a trusted advisor to many ASX companies.\n
+      John’s profile as a respected leader include significant roles beyond work. John was Chairman of the Australian Financial Markets Association (2016-2019), the industry body for institutional market participants in Australia, during a time of unprecedented turbulence during and post the Banking Royal Commission.\n
+      Since 2018, John has been Chairman of Cricket NSW - the body responsible for running Australia’s largest sport in Australia’s most populous state. As Chairman of Cricket NSW John was critical in forcing cultural change at Cricket Australia following a period of difficult events. John’s ability to rapidly affect macro change is significantly helped by his extensive relationships across business, sport and politics.
+    `,
+    image: "/speakers/John Knox.png",
+    title: "Chairman Cricket NSW and Kerrie Mather CEO Venues NSW and SCG",
+    link: "",
+  },
+  {
+    id: "55",
+    name: "Kerrie Mather",
+    description: `
+      Highly experienced chief executive, board member and business leader in businesses ranging from airports to sports and entertainment, and investment banking.\n
+      Kerrie is the Chief Executive Officer of Venues NSW, responsible for the operation of the world-famous Sydney Cricket Ground, Accor Stadium, Allianz Stadium, CommBank Stadium, McDonald Jones Stadium, WIN Stadium, Newcastle Entertainment Centre and WIN Entertainment Centre. \n
+      Prior to this, Kerrie’s career spanned roles such as Chief Executive Officer of Sydney Airport, Managing Director and Chief Executive Officer of Macquarie Airports (which owned a number of UK and European airports), and Executive Director of the Macquarie Investment Banking Group.\n
+      Recognised for her strong vision, excellence in stakeholder engagement and team development. An analytical thinker with a proven track record in business transformation, development of business and commercial opportunities, and building operational excellence.\n
+      Current associations include: Chairman of University of NSW Business School, Fellow of the Financial Services Institute of Australasia, Member of the Australian Institute of Company Directors, and Member of Chief Executive Women.\n
+      KEY AWARDS:\n
+      • 2017 Outstanding Contribution to the Airport Industry Award
+      • 2016 Aviation/Aerospace Australia’s prestigious Chairman’s Award
+      • 2016 Womens’ Achievement in Infrastructure Award
+      • 2015 CEO Magazine’s Transport & Logistics Executive of the Year
+      • 2014 East Coles’ Best CEO in Infrastructure & Utilities ASX 100
+      • 2012 Australian Financial Review & Westpac’s 100 Women of Influence
+    `,
+    image: "/speakers/Kerrie Mather.png",
+    title: "Chief Executive Officer at Venues NSW and SCG",
+    link: "",
+  },
 ];
+
 export const SuccessCarouselData = [
   {
     src: "/images/carousel/design.jpg",
