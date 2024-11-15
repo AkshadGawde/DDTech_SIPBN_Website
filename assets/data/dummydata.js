@@ -697,6 +697,20 @@ Minister for Corrections`,
     post: "Chief Executive Officer at Venues NSW and SCG",
     href: "/team/55",
   },
+  {
+    id: 63,
+    title: "Nicole Gibson",
+    cover: "/speakers/Nicole Gibson.png",
+    post: "Chief Executive Officer at inTruth Technologies",
+    href: "/team/56",
+  },
+  {
+    id: 64,
+    title: "Clive Mayhew",
+    cover: "/speakers/Clive Mayhew.png",
+    post: "Tech Investor",
+    href: "/team/57",
+  },
 ];
 
 export const moderatordata = [
@@ -1452,6 +1466,30 @@ Prior to entering Parliament, Scott served as both Mayor and as a Councillor on 
     `,
     image: "/speakers/Kerrie Mather.png",
     title: "Chief Executive Officer at Venues NSW and SCG",
+    link: "",
+  },
+  {
+    id: "56",
+    name: "Nicole Gibson",
+    description: `
+      Nicole Gibson is the CEO of San Francisco  based inTruth Technologies, and a globally recognised leader in health innovation. Pioneering the world’s first technology capable of tracking emotions through wearable devices, she is reshaping how individuals and organisations approach emotional intelligence and well-being.\n
+      Nicole’s career began as a performer, but she quickly transitioned into social impact entrepreneurship, dedicating her life to solving the issue of emotional incapacity. With over 15 years’ experience in social entrepreneurship, she leads with a passion for revolutionising global systems, integrating advanced biometric tools to empower self-awareness and informed decision-making.\n
+      Nicole served as the youngest national mental health commissioner in Australia for three terms, advising a 27B$ budget. Under Nicole’s leadership, in Truth Technologies has become a platform for positive social change, driving innovation in the intersection of technology, empathy, and leadership, inspiring others to challenge conventional narratives and build more compassionate, connected communities. Featured by major media outlets and a trusted voice in thought leadership, Nicole’s mission-driven approach continues to create meaningful impact across industries and borders.
+    `,
+    image: "/speakers/Nicole Gibson.png",
+    title: "Chief Executive Officer at inTruth Technologies",
+    link: "",
+  },
+  {
+    id: "57",
+    name: "Clive Mayhew",
+    description: `
+      Tech investor with over 25 years of experience in the tech sector. Clive is an expert in scaling businesses from early investment to maturity, with a proven track record in international markets.\n
+      Adept at public speaking, Clive contributes significantly to the startup ecosystem through mentoring and philanthropic initiatives, particularly in sports and wellness.\n
+      He is the founder and principal investor in Golf.ai and Clive ai, believing the future is an Ai world with endless possibilities. Proud financial supporter of the #Aiforgood movement.
+    `,
+    image: "/speakers/Clive Mayhew.png",
+    title: "Tech Investor",
     link: "",
   },
 ];
