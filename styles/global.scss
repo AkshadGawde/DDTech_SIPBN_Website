@@ -1697,6 +1697,20 @@ form {
 
 
 // india delegation
+.business-relations, .sipbn-initiative {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px;
+}
+p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #ffffff;
+  margin: 0 auto; /* Center the text within the container */
+  max-width: 100%;
+}
+
 .mission-page {
   font-family: Arial, sans-serif;
   color: #fff;
