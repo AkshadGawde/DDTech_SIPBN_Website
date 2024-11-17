@@ -211,6 +211,13 @@ const BrandCarousel = () => {
             alt="Event 1 Image"
           />
         </div>
+        <div className="SponsorCard">
+          <img
+            className="SponsorImg"
+            src="/SVG/IFLEX.svg"
+            alt="Event 1 Image"
+          />
+        </div>
         <div className="outerHrHolder">
           <div className="innerHr1"></div>
           <p>#CapTech2024 Sliver Partner </p>
