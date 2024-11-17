@@ -1451,18 +1451,13 @@ Prior to entering Parliament, Scott served as both Mayor and as a Councillor on 
     id: "55",
     name: "Kerrie Mather",
     description: `
-      Highly experienced chief executive, board member and business leader in businesses ranging from airports to sports and entertainment, and investment banking.\n
-      Kerrie is the Chief Executive Officer of Venues NSW, responsible for the operation of the world-famous Sydney Cricket Ground, Accor Stadium, Allianz Stadium, CommBank Stadium, McDonald Jones Stadium, WIN Stadium, Newcastle Entertainment Centre and WIN Entertainment Centre. \n
-      Prior to this, Kerrie’s career spanned roles such as Chief Executive Officer of Sydney Airport, Managing Director and Chief Executive Officer of Macquarie Airports (which owned a number of UK and European airports), and Executive Director of the Macquarie Investment Banking Group.\n
-      Recognised for her strong vision, excellence in stakeholder engagement and team development. An analytical thinker with a proven track record in business transformation, development of business and commercial opportunities, and building operational excellence.\n
-      Current associations include: Chairman of University of NSW Business School, Fellow of the Financial Services Institute of Australasia, Member of the Australian Institute of Company Directors, and Member of Chief Executive Women.\n
-      KEY AWARDS:\n
-      • 2017 Outstanding Contribution to the Airport Industry Award
-      • 2016 Aviation/Aerospace Australia’s prestigious Chairman’s Award
-      • 2016 Womens’ Achievement in Infrastructure Award
-      • 2015 CEO Magazine’s Transport & Logistics Executive of the Year
-      • 2014 East Coles’ Best CEO in Infrastructure & Utilities ASX 100
-      • 2012 Australian Financial Review & Westpac’s 100 Women of Influence
+       
+    Kerrie is a highly regarded and experienced chief executive, board member and leader in businesses ranging from airports to sports and entertainment, and investment banking.\n
+    Today, she is the Chief Executive Officer of Venues NSW, which is responsible for all major sport and entertainment venues in NSW, including the home of the 2000 Sydney Olympic Games Accor Stadium, the Sydney Cricket Ground and Allianz Stadium at Moore Park, Parramatta’s CommBank Stadium, McDonald Jones Stadium in Newcastle, as well as WIN Stadium and WIN Entertainment Centre in Wollongong and the Newcastle Entertainment Centre.\n
+    Prior to joining the SCG and Venues NSW, Kerrie was the CEO and MD of Sydney Airport and Executive Director at Macquarie.\n
+    Kerrie is widely recognised for her transformational leadership, built on establishing and maintaining trust and understanding with stakeholders, as well as a tireless focus on customer experience utilising cutting edge innovation and technologies.\n
+    A key achievement is overhauling the match day hospitality offerings at the Moore Park venues in partnership with Merivale, as well as celebrating the best of Western Sydney’s food culture with the Gema Group at Accor Stadium and CommBank Stadium.\n
+    Importantly, Kerrie has provided stability and strength during a period of significant change in the NSW sporting landscape, with all major venues now directly managed by Venues NSW and two new stadiums (Allianz and CommBank) open and operating, and a third about to be redeveloped in Penrith.
     `,
     image: "/speakers/Kerrie Mather.png",
     title: "Chief Executive Officer at Venues NSW and SCG",
