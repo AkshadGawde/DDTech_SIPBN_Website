@@ -711,6 +711,13 @@ Minister for Corrections`,
     post: "Tech Investor",
     href: "/team/57",
   },
+  {
+    id: 65,
+    title: "Rachel Hooke",
+    cover: "/speakers/Rachel Hooke.png",
+    post: "Partner at FB Rice, Head of Medical Technology team",
+    href: "/team/58",
+  },
 ];
 
 export const moderatordata = [
@@ -1485,6 +1492,19 @@ Prior to entering Parliament, Scott served as both Mayor and as a Councillor on 
     `,
     image: "/speakers/Clive Mayhew.png",
     title: "Tech Investor",
+    link: "",
+  },
+  {
+    id: "58",
+    name: "Rachel Hooke",
+    description: `
+      Rachel Hooke is a partner at FB Rice, and head of the medical technology team.\n
+      As a qualified patent attorney, Rachel has over 20 years of experience advising her clients in all matters related to intellectual property. From drafting and prosecuting multi-jurisdictional patent families to providing high level strategic advice, Rachel guides her clients to ensure their IP approach supports the success of their commercial goals.\n
+      Rachel is a keen angel investor and a member of the Scale Investors’ network, an organisation that provides early investment support to female-led businesses. Her experience as an investor gives further insights into the pressures and hurdles facing clients when it comes to growing their innovation from an initial idea to a viable business.\n
+      Rachel is highly acclaimed in the IP world. She was listed in the MIP Top 250 Women in IP Worldwide 2021. She has also been recognised as an IP Star for patent prosecution in Managing Intellectual Property from each year since 2018, and endorsed in the IAM Prosecution recommended list each year since 2019.
+    `,
+    image: "/speakers/Rachel Hooke.png",
+    title: "Partner at FB Rice, and Head of Medical Technology team.",
     link: "",
   },
 ];
