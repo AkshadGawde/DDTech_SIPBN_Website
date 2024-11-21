@@ -333,6 +333,16 @@ Minister for Corrections`,
     href: "/team/01",
   },
   {
+    id: 2,
+    title: "The Hon Courtney Houssos MLC",
+    cover: "/speakers/Houssos.png",
+    post: `Minister for Better Regulation and Fair Trading, Minister for Industry and Trade,
+Minister for Innovation, Science and Technology, Minister for Building,
+Minister for Corrections`,
+    href: "/team/59",
+  },
+
+  {
     id: 1,
     title: "The Hon Victor Dominello",
     cover: "/speakers/The Hon Victor Dominello.png",
@@ -717,6 +727,13 @@ Minister for Corrections`,
     cover: "/speakers/Rachel Hooke.png",
     post: "Partner at FB Rice, Head of Medical Technology team",
     href: "/team/58",
+  },
+  {
+    id: 66,
+    title: "Dianne Tipping",
+    cover: "/speaker2022/Dianne Tipping.png",
+    post: "CHAIR Export Council of Australia / Managing Director Excon International Pty. Ltd.",
+    href: "/team/60",
   },
 ];
 
@@ -1507,6 +1524,43 @@ Prior to entering Parliament, Scott served as both Mayor and as a Councillor on 
     title: "Partner at FB Rice, and Head of Medical Technology team.",
     link: "",
   },
+  {
+    id: "59",
+    name: "The Hon Courtney Houssos MLC",
+    description: `
+      Courtney Houssos is the Minister for Finance, Domestic Manufacturing and Government Procurement, and Natural Resources in New South Wales.\n
+      She is the first female Minister for Finance and the first female Minister responsible for the mining sector in the New South Wales Government. \n
+      She was elected to the New South Wales Legislative Council in 2015. Courtney was born and grew up in Forster, on the Mid North Coast of New South Wales, where she attended local public primary and high schools.\n 
+      Courtney studied at the University of New South Wales, where she was awarded a Bachelor of Arts (Politics and International Relations, Industrial
+      Relations)\n
+      Prior to entering Parliament, Courtney was elected to be the first woman to be Country Organiser for New South Wales Labor, serving for 9 years in the role.\n
+      During her time in Parliament, she has been a strong advocate on behalf of families, improving education outcomes and universal and accessible
+      healthcare.\n
+      Courtney was previously the Shadow Minister for Better Regulation and Innovation and Shadow Minister for Natural Resources. She has also served on
+      a large number of Parliamentary Committees, including on Education, Health, Electoral Matters and Budget oversight issues.\n
+      Courtney lives in Earlwood with her husband George, daughter Anna and son Arthur.
+    `,
+    image: "/speakers/Houssos.png",
+    title:
+      "Minister for Finance, Minister for Domestic Manufacturing and Government Procurement Minister for Natural Resources",
+    link: "",
+  },
+  {
+    id: "60",
+    name: "Dianne Tipping",
+    description: `
+      Dianne has enjoyed a long and varied career in international trade promotion and facilitation. Dianne has been Chair of the Export
+      Council of Australia for 10 years.\n
+      She is a commercially astute senior leader with a proven track record within the trade community. With over 40 years’ experience and a background in both business ownership and project management of greenfield projects Dianne is helping guide the growth of Australian trade by serving on several Boards and sharing critical knowledge and insights.\n
+      Dianne is involved with many public and private organisations dedicated to the betterment of international trade as well as a participant on numerous Government and Non-Government Committees including the ABF Customs Advisory Board, Dept. of Home Affairs’ National Committee on Trade Facilitation and the
+      Department of Agriculture, Fisheries and Forestry Cargo Consultative Committee as well as Co-Chair of the Australian
+      Department of Agriculture's Traceability Governance Group.\n
+    `,
+    image: "/speaker2022/Dianne Tipping.png",
+    title:
+      "CHAIR Export Council of Australia / Managing Director Excon International Pty. Ltd.",
+    link: "",
+  },
 ];
 
 export const SuccessCarouselData = [
@@ -1883,7 +1937,8 @@ export const speakers2022 = [
     id: 6,
     name: "Dianne Tipping",
     image: "/speaker2022/Dianne Tipping.png",
-    title: "Chair Export Council Of Australia",
+    title:
+      "CHAIR Export Council of Australia / Managing Director Excon International Pty. Ltd.",
   },
   {
     id: 7,
