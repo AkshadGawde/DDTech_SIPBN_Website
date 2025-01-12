@@ -37,7 +37,7 @@ const CarouselWithText = () => {
 
   return (
     <>
-      <Title title="Meet Our Speakers" />
+      <Title title="Meet Our Speaker" />
       <div style={{ width: "80%", margin: "0 auto" }}>
         <Slider {...settings}>
           {memberdata.map((slide, index) => (
